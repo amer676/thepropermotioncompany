@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — The Proper Motion Company</title>
+  <meta name="description" content="Selected projects by The Proper Motion Company. Dashboards, AI platforms, client portals — built from scratch since 2022.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="constellation.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <div class="page-transition-overlay"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-outer" id="cursorOuter"></div>
+  <div class="cursor-inner" id="cursorInner"></div>
+  <div class="scroll-gradient"></div>
+  
+
+  <header class="nav" id="nav" role="banner">
+    <a href="index.html" class="nav-logo" aria-label="Home">
+      
+      
+      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span>
+    </a>
+    <nav class="nav-right" role="navigation" aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Start a project</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a><a href="work.html">Work</a><a href="process.html">Process</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
+  </div>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="page-hero-gradient" style="background:linear-gradient(180deg, rgba(5,5,14,0.3) 0%, rgba(5,5,14,0.95) 100%)"></div>
+      <div class="page-hero-content">
+        <div class="section-label reveal">// Selected work</div>
+        <h1 class="hero-headline reveal" style="font-size:52px">Things we've<br><span class="sketch-underline" data-sketch-delay="600">shipped.<svg viewBox="0 0 200 12" preserveAspectRatio="none"><path d="M0 8 Q50 2 100 7 Q150 12 200 5"/></svg></span></h1>
+        <p class="reveal" style="font-weight:400;font-size:18px;color:var(--color-text-secondary);margin-top:24px;max-width:500px;line-height:1.7">A sample of recent projects. Each built from scratch. More available on request.</p>
+      </div>
+    </section>
+
+    <section class="work section--dark">
+      <div class="container">
+
+        <div class="case-study reveal" style="grid-template-columns:1fr">
+          <div>
+            <div class="case-study-client">SaaS Startup</div>
+            <h2 class="case-study-title">Operations Dashboard</h2>
+            <p class="case-study-desc">A complete internal operations platform built for a logistics SaaS company. Real-time data visualization, team management, automated reporting. Replaced four separate tools with a single, unified system.</p>
+            <div class="case-study-tags"><span class="case-study-tag">React</span><span class="case-study-tag">Node.js</span><span class="case-study-tag">PostgreSQL</span><span class="case-study-tag">AI</span></div>
+            <p class="case-study-outcome">Deployed in 6 weeks. <span class="sketch-wave" data-sketch-delay="300">40% reduction<svg viewBox="0 0 150 8" preserveAspectRatio="none"><path d="M0 4 Q12 0 25 4 Q37 8 50 4 Q62 0 75 4 Q87 8 100 4 Q112 0 125 4 Q137 8 150 4"/></svg></span> in operational overhead.</p>
+            <a href="contact.html" class="case-study-link">Discuss a similar project <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="case-study reveal" style="grid-template-columns:1fr;direction:ltr">
+          <div>
+            <div class="case-study-client">Real Estate</div>
+            <h2 class="case-study-title">Lead Intelligence Platform</h2>
+            <p class="case-study-desc">AI-powered lead scoring and routing system for a real estate investor network. Integrated with existing CRM, automated follow-up sequences, real-time property matching.</p>
+            <div class="case-study-tags"><span class="case-study-tag">Python</span><span class="case-study-tag">FastAPI</span><span class="case-study-tag">Next.js</span><span class="case-study-tag">OpenAI</span></div>
+            <p class="case-study-outcome"><span class="sketch-stars" data-sketch-delay="200">3&times;</span> improvement in lead conversion rate within 90 days.</p>
+            <a href="contact.html" class="case-study-link">Discuss a similar project <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="case-study reveal" style="grid-template-columns:1fr">
+          <div>
+            <div class="case-study-client">Professional Services</div>
+            <h2 class="case-study-title">Client Portal &amp; Billing</h2>
+            <p class="case-study-desc">A custom client-facing portal with project tracking, document management, invoicing, and messaging. Replaced a patchwork of email and spreadsheets.</p>
+            <div class="case-study-tags"><span class="case-study-tag">Next.js</span><span class="case-study-tag">Supabase</span><span class="case-study-tag">Stripe</span></div>
+            <p class="case-study-outcome">Onboarded 12 clients in first month. <span class="sketch-star" data-sketch-delay="400">Zero support tickets.</span></p>
+            <a href="contact.html" class="case-study-link">Discuss a similar project <span>&rarr;</span></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-banner section--mid">
+      <div class="container">
+        <div class="section-label reveal" style="text-align:center">// Your project</div>
+        <h2 class="section-headline reveal" style="text-align:center">Let's build<br><span class="sketch-underline" data-sketch-delay="400">something real.<svg viewBox="0 0 300 12" preserveAspectRatio="none"><path d="M0 8 Q75 2 150 7 Q225 12 300 5"/></svg></span></h2>
+        <p class="cta-banner-sub reveal">Every project starts with a conversation.</p>
+        <div class="reveal" style="text-align:center"><a href="contact.html" class="cta-banner-btn">Start a project <span>&rarr;</span></a></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline reveal">We build the <span class="gold">actual</span> thing.</div></div></div></div>
+    <div class="footer-links-area"><div class="container"><div class="footer-grid">
+      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
+      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="index.html">Home</a></li><li><a href="work.html">Work</a></li><li><a href="process.html">Process</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="index.html#services">Product Design</a></li><li><a href="index.html#services">Engineering</a></li><li><a href="index.html#services">AI Integration</a></li></ul></div>
+      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
+    </div></div></div>
+    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
+    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
+  </footer>
+
+</body>
+</html>

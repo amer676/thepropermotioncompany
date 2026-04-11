@@ -1,0 +1,5 @@
+.DS_Store
+*.zip
+fonts/*.pdf
+fonts/*.html
+fonts/OFL.txt
