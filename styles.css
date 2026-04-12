@@ -74,6 +74,24 @@
   --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
 }
 
+/* Skip Nav (accessibility) */
+.skip-nav {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  padding: 8px 16px;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 13px;
+  border-radius: 0 0 8px 8px;
+  z-index: 10001;
+  transition: top 0.2s ease;
+}
+
+.skip-nav:focus {
+  top: 0;
+}
+
 /* Reset */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
