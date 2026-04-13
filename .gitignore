@@ -3,3 +3,10 @@
 fonts/*.pdf
 fonts/*.html
 fonts/OFL.txt
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
