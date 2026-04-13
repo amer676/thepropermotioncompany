@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "why-we-build-from-scratch",
+    "title": "Why We Build From Scratch",
+    "description": "Templates are fast. Custom is forever. Here's why The Proper Motion Company doesn't use templates — and why it matters for your product.",
+    "date": "2026-04-13",
+    "author": "The Proper Motion Company",
+    "tags": ["philosophy", "engineering"],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "ai-integration-done-right",
+    "title": "AI Integration Done Right",
+    "description": "Most AI features are demos dressed up as products. We build AI that solves real problems — here's how we approach it.",
+    "date": "2026-04-10",
+    "author": "The Proper Motion Company",
+    "tags": ["AI", "engineering"],
+    "readTime": "5 min"
+  }
+]
