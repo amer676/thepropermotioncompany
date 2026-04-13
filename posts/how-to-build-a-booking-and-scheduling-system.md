@@ -14,6 +14,10 @@ In practice, most production systems use a **hybrid model**. Define availability
 
 The data model for availability rules needs to support: day-of-week patterns, date-specific overrides (holidays, vacations), time zone specification (critical -- store all rules in the provider's local time zone, convert at display time), and exception handling (block specific dates, modify hours for specific days). A provider's availability on any given day is the result of applying the base rule, then layering on all applicable overrides and exceptions. Think of it as a stack where each layer can add, remove, or modify slots.
 
+
+> Related: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
+
 ## Handling Time Zones Without Losing Your Mind
 
 Time zones are the single most common source of bugs in scheduling systems. The rules are straightforward in principle: store everything in UTC internally, convert for display in the viewer's time zone. But the edge cases are ferocious.
@@ -37,6 +41,10 @@ For databases that support it, use SELECT FOR UPDATE to lock the row during the 
 At higher volumes, consider a **reservation hold pattern**. When a user selects a slot, the system places a 5-10 minute hold (status: "tentative"). During this hold, the slot appears unavailable to other users. If the user completes the booking within the hold period, the status moves to "booked." If the hold expires, the slot reverts to "available." This reduces the friction of lost bookings at the cost of temporarily reducing apparent availability.
 
 For resources that can handle multiple simultaneous bookings (a yoga class with 20 spots, a conference room with variable capacity), replace the boolean available/booked status with a capacity counter. The booking operation becomes a conditional decrement: "Decrease available capacity by 1, only if current capacity is greater than 0." This needs to be atomic -- use a database transaction or an atomic operation.
+
+
+> See also: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
 
 ## Buffer Times, Padding, and Travel Time
 

@@ -14,6 +14,10 @@ The practical implication is that your product needs collateral for every stakeh
 
 Plan for procurement cycles of three to nine months. Structure your roadmap so you can show progress during that window without blocking your engineering team on a single prospect's demands.
 
+
+> Related: [Custom Software as a Competitive Moat](/blog/custom-software-as-a-competitive-moat/)
+
+
 ## Designing for Multi-Tenancy and Isolation
 
 Enterprise clients expect their data to be isolated. The question is how much isolation your architecture actually provides and how transparently you can explain it.
@@ -33,6 +37,10 @@ An effective audit trail captures who performed an action, what the action was, 
 In practice, this means creating an `audit_events` table with columns for `event_id`, `actor_id`, `actor_type` (user, system, API key), `action`, `resource_type`, `resource_id`, `previous_state` (JSONB), `new_state` (JSONB), `ip_address`, `user_agent`, and `created_at`. Index on `resource_type + resource_id` and `actor_id + created_at` to support the two most common query patterns: "show me everything that happened to this record" and "show me everything this user did."
 
 Do not mix audit logging with application logging. Application logs are for debugging and can be rotated or deleted. Audit logs are legal records and must be retained according to your client's compliance requirements, often seven years or more. Store them in a separate, append-only store with its own retention policy.
+
+
+> See also: [Why Big Software Redesigns Almost Always Fail](/blog/why-big-software-redesigns-almost-always-fail/)
+
 
 ## Handling Role-Based Access Control at Enterprise Scale
 

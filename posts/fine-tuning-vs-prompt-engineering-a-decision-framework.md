@@ -16,6 +16,10 @@ Fine-tuning changes the model itself. Your fine-tuned model is different from th
 
 There is a third option gaining traction: **Retrieval-Augmented Generation (RAG)**, which does not modify the model but dynamically provides it with relevant context from your own data at inference time. RAG is not a replacement for either prompting or fine-tuning -- it solves a different problem (knowledge grounding) -- but it is often the right first step and can reduce the need for fine-tuning in many scenarios.
 
+
+> Related: [How to Evaluate and Benchmark AI Models for Your Use Case](/blog/how-to-evaluate-and-benchmark-ai-models-for-your-use-case/)
+
+
 ## When Prompt Engineering Is Sufficient
 
 Prompt engineering is sufficient -- and preferable -- more often than most teams realize. It should be your default approach unless you have a specific reason to fine-tune.
@@ -41,6 +45,10 @@ Fine-tuning makes sense when prompt engineering hits a ceiling that matters for 
 **Latency-sensitive applications**: Fine-tuned smaller models (Llama 7B, Mistral 7B) can match or exceed the performance of prompted larger models on narrow tasks while running 5-10x faster and at a fraction of the cost. If your application needs sub-200ms inference times and the task is well-defined, fine-tuning a small model is often the right architecture. A fine-tuned 7B model serving a single classification task can run at 50-80ms per inference on a single GPU, compared to 500-2000ms for a prompted API call to GPT-4.
 
 **Proprietary behavior patterns**: If your product requires the AI to exhibit behavior that cannot be easily described in a prompt -- a specific conversational style learned from thousands of examples, a nuanced decision-making pattern based on historical data, or a complex multi-step workflow -- fine-tuning captures these implicit patterns better than explicit instructions.
+
+
+> See also: [RAG Explained: Making AI Smarter with Your Company Data](/blog/rag-explained-making-ai-smarter-with-your-company-data/)
+
 
 ## The Cost Comparison in Detail
 

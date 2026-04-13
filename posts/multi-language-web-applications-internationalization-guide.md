@@ -14,6 +14,10 @@ These terms get used interchangeably, but they describe distinct phases of work.
 
 You internationalize once. You localize for each new market. The engineering investment in i18n is a fixed cost that pays dividends every time you add a new locale. Skip it and you pay the full cost of retrofitting every single time.
 
+
+> Related: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
+
 ## String Extraction and Translation Management
 
 The most fundamental i18n task is removing hardcoded strings from your source code and replacing them with translation keys that map to locale-specific values.
@@ -69,6 +73,10 @@ new Intl.NumberFormat('de-DE').format(1234567.89)
 **Currency.** Always store monetary values as integers (cents, not dollars) to avoid floating-point precision errors. Format for display using the user's locale but show the currency appropriate to the transaction, not the user's location. A German user viewing a USD price should see `1.234,56 $`, not `1.234,56 €`.
 
 **Time zones.** Store all timestamps in UTC. Convert to the user's local time zone for display. Use libraries like `date-fns-tz` or the native `Intl.DateTimeFormat` with `timeZone` option. Never assume your server's time zone matches your user's time zone. An application that shows "Meeting at 3:00 PM" without specifying a time zone is a bug in any multi-region application.
+
+
+> See also: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
 
 ## Designing Layouts That Survive Text Expansion
 

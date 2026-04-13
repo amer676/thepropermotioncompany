@@ -14,6 +14,10 @@ Map the minimum set of steps between signup and first value. Then count the step
 
 The practical technique: map your current onboarding flow as a funnel in your analytics tool and look at the drop-off between each step. The steps with the largest drops are either confusing, unnecessary, or both. For each step, ask: can we defer this to after the user has experienced first value? Can we infer this information from data we already have? Can we provide a smart default that is correct for 80% of users?
 
+
+> Related: [Why Big Software Redesigns Almost Always Fail](/blog/why-big-software-redesigns-almost-always-fail/)
+
+
 ## Empty States That Teach Through Action
 
 The empty state — what users see when they first land in the product with no data — is one of the most neglected screens in software design, and one of the most important for onboarding. An empty state that says "No items yet. Click + to create one" is a missed opportunity.
@@ -35,6 +39,10 @@ Implementation patterns for progressive onboarding include: contextual tooltips 
 The checklist pattern deserves special attention. A persistent but dismissible checklist in the sidebar — "Getting started: Create a project, Invite a teammate, Set up your first automation" — gives users a sense of progress and direction without forcing a linear flow. Intercom, Slack, and Asana all use this pattern. The key is to keep the checklist to 4-6 items, make each item link directly to the relevant feature, and celebrate completion (a confetti animation or a "You are all set!" message) when all items are done.
 
 Track completion rates on each checklist item. If item 3 has a 40% completion rate while items 1, 2, 4, and 5 are all above 70%, item 3 is either too hard, not valuable enough to motivate the effort, or poorly explained. Fix item 3 or remove it.
+
+
+> See also: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
 
 ## Personalized Paths Based on User Intent
 

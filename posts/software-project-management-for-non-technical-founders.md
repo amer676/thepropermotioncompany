@@ -18,6 +18,10 @@ Wireframes are more effective than written descriptions for communicating layout
 
 Prioritize ruthlessly. List every feature you want in the first version. Now cut it in half. Now cut it in half again. What remains is your minimum viable product (MVP). It is tempting to include everything because each feature seems essential. It is not. Your first version needs to do one thing well enough that users will come back. Everything else can wait for version two.
 
+
+> Related: [Why Speed Beats Scale in Early-Stage Software](/blog/why-speed-beats-scale-in-early-stage-software/)
+
+
 ## Understanding How Software Development Actually Works
 
 Software development is not linear. It does not work like construction where you complete the foundation, then the framing, then the electrical, then the drywall, in order, with each stage 100 percent complete before the next begins.
@@ -41,6 +45,10 @@ A development agency provides a team with established processes, project managem
 Freelancers are the most cost-effective per hour but carry the most risk. A single freelancer is a single point of failure — if they leave the project, there is no one to continue their work. Code quality varies widely. Communication can be challenging across time zones. If you engage freelancers, hire at least two so you have redundancy, and require code reviews where each freelancer reviews the other's work.
 
 Regardless of which option you choose, establish these working agreements upfront. Weekly status updates with a written summary of what was completed, what is in progress, and what is blocked. Access to the codebase in a repository you own (not the developer's personal account). A sprint demo every two weeks where working software is demonstrated. Clear ownership of the intellectual property: the code, designs, and all assets belong to your company, not the developer or agency.
+
+
+> See also: [How to Hire Your First Developer as a Non-Technical Founder](/blog/how-to-hire-your-first-developer-as-a-non-technical-founder/)
+
 
 ## Evaluating Progress Without Technical Expertise
 

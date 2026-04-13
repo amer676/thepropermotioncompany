@@ -16,6 +16,10 @@ Sorting, filtering, and search are interaction fundamentals. Every column that a
 
 For tables with many columns, fixed columns (pinning the identifier column on the left while the rest scroll horizontally) prevent users from losing context. Column resizing lets users allocate space to the columns they care about most. Column visibility toggles let different users customize the view for their workflow without requiring separate page designs.
 
+
+> Related: [How to Run a Design Sprint for Product Development](/blog/how-to-run-a-design-sprint-for-product-development/)
+
+
 ## Choosing the Right Chart for the Right Question
 
 Every chart answers a specific type of question. Using the wrong chart type is worse than using no chart at all because it implies a relationship or comparison that the data doesn't support.
@@ -45,6 +49,10 @@ The middle tier provides context for the KPIs. If revenue is down 12 percent, th
 The bottom tier provides the detail needed for investigation. Sortable tables of individual records, drill-down links to specific time periods or segments, and access to raw data for users who need to do their own analysis.
 
 Resist the temptation to fill every pixel. White space is not wasted space -- it's the visual breathing room that lets the eye process dense information without fatigue. Group related metrics with clear section borders or background color differentiation. Limit a dashboard to seven to nine visual elements. If you need more, create multiple focused dashboards rather than one overwhelming one.
+
+
+> See also: [Data Visualization Best Practices for Business](/blog/data-visualization-best-practices-for-business/)
+
 
 ## Real-Time Data, Loading States, and Performance
 

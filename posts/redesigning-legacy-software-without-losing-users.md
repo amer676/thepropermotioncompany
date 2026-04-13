@@ -28,6 +28,10 @@ The ideal redesign addresses user-facing pain primarily, re-engineering pain sim
 
 You will discover that power users have built elaborate mental models and muscle memory around your interface. The "confusing" navigation that new users struggle with is actually efficient for experts who have memorized the paths. Your redesign must preserve that efficiency while improving discoverability.
 
+
+> Related: [Data Dashboard Design: Principles for Complex Applications](/blog/data-dashboard-design-principles-for-complex-applications/)
+
+
 ## The Strangler Fig Pattern for Gradual Migration
 
 The strangler fig is a tree that grows around its host, gradually replacing it while the host continues to function. The software architecture pattern of the same name is the safest approach to legacy redesign.
@@ -59,6 +63,10 @@ The hardest constraint in a legacy redesign is muscle memory. A user who has spe
 **Use progressive disclosure for new features.** Add new capabilities without cluttering the interface by defaulting to the familiar layout and offering new features through expandable panels, secondary menus, or opt-in settings. Let experienced users discover enhancements on their own schedule rather than forcing them to navigate around new elements they did not ask for.
 
 **Provide a transition mode.** Consider offering a "classic" layout option that preserves the old spatial arrangement with new visual styling. Google did this successfully with Gmail's periodic redesigns, and it gave users control over their transition timeline. Even if only 10 percent of users use it, those 10 percent are likely your most vocal and influential users.
+
+
+> See also: [Why Big Software Redesigns Almost Always Fail](/blog/why-big-software-redesigns-almost-always-fail/)
+
 
 ## Communication Strategy That Prevents Revolt
 

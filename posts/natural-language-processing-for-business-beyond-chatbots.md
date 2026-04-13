@@ -20,6 +20,10 @@ A practical example: a mid-size insurance company we have seen handle 15,000 cla
 
 The cost to build and deploy a production classifier is typically $15,000-$40,000 for the initial development, with ongoing infrastructure costs of $200-$500 per month for hosting the model. Against the labor cost of manual classification (often $100,000+ annually for a small team), the payback period is measured in months.
 
+
+> Related: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
+
 ## Named Entity Recognition and Data Extraction
 
 Unstructured text contains structured data waiting to be extracted. Contracts contain party names, dates, dollar amounts, and obligation clauses. Medical records contain diagnoses, medications, dosages, and provider names. Customer emails contain product names, order numbers, and complaint categories. Named Entity Recognition (NER) and its more sophisticated cousin, Relation Extraction, pull these structured elements out of free text automatically.
@@ -56,6 +60,10 @@ High-value summarization use cases:
 - **Research report condensation:** Reducing 30-page analyst reports to 2-page executive summaries while preserving the key findings, data points, and recommendations.
 
 Implementation costs for summarization are lower than classification or extraction because you can often use existing large language model APIs rather than training custom models. API costs for summarizing 1,000 documents per day using GPT-4 class models run approximately $150-$500 per month, depending on document length.
+
+
+> See also: [AI Chatbots vs AI Assistants: Choosing the Right Approach](/blog/ai-chatbots-vs-ai-assistants-choosing-the-right-approach/)
+
 
 ## Sentiment and Intent Analysis
 

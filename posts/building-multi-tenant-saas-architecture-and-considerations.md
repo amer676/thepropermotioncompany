@@ -18,6 +18,10 @@ The decision framework: start with the pool model unless you have a specific rea
 
 Most successful SaaS platforms use a hybrid: pool model for self-serve and SMB customers, bridge or silo model for enterprise customers who pay enough to justify the operational overhead. Stripe, for example, runs a pool model for most merchants but offers dedicated infrastructure for their largest enterprise clients.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Data Model Design for Multi-Tenancy
 
 The data model is where multi-tenancy succeeds or fails at the operational level. In the pool model, every table that contains tenant-specific data needs a `tenant_id` column, and every query against those tables must filter by tenant ID. No exceptions.
@@ -41,6 +45,10 @@ Automated provisioning should handle creating the tenant record and generating t
 Tenant configuration needs to be flexible enough to accommodate different customer needs without creating per-tenant code branches. Common configurable dimensions include branding (logo, primary color, favicon, custom domain), feature flags (which modules are enabled for this tenant, based on their plan), workflow settings (approval chains, notification rules, data retention periods), and integration settings (API keys for third-party services the tenant connects).
 
 Store configuration in a dedicated tenant_settings table with a key-value structure, and cache it aggressively. Tenant configuration is read on virtually every request (to determine feature access, branding, etc.) but changes rarely. A Redis cache with a 5-minute TTL and cache invalidation on writes keeps configuration lookups at sub-millisecond latency.
+
+
+> See also: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
 
 ## Performance Isolation and the Noisy Neighbor Problem
 

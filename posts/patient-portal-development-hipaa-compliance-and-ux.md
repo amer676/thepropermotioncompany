@@ -18,6 +18,10 @@ An emergency access procedure is also required. When a clinician needs to access
 
 **Encryption at rest (Addressable).** HIPAA marks encryption at rest as "addressable," meaning you must implement it or document why an equivalent alternative is in place. In practice, there is no good reason not to encrypt. Use AES-256 encryption for database storage (enabled by default in AWS RDS, Google Cloud SQL, and Azure SQL Database) and encrypt file storage (uploaded documents, imaging files) at the storage layer.
 
+
+> Related: [Telemedicine Platform Development: Features, Compliance, and Cost](/blog/telemedicine-platform-development-features-compliance-and-cost/)
+
+
 ## Authentication: Balancing Security with Patient Access
 
 Authentication is where compliance and usability collide most directly. The system must prevent unauthorized access to PHI while not locking out elderly patients who forgot their password for the third time this month.
@@ -43,6 +47,10 @@ Patient portals have the widest user demographic of any software category. Your 
 **Lab results presentation.** Lab results are the most anxiety-inducing content in the portal. Display results with clear normal/abnormal indicators using color (green/red) AND text labels (since 8% of men are color-blind). Show the normal range alongside the result. Provide a plain-language explanation where possible ("Your cholesterol is 210 mg/dL. The recommended level is below 200 mg/dL."). Include a "message your provider" button directly on the results page so patients can ask questions without navigating elsewhere.
 
 **Medication lists.** Display current medications with the brand name, generic name, dosage, and frequency. Include a photo of the pill when available (patients identify medications by appearance more reliably than by name). Provide a refill request button for each medication that sends a request to the pharmacy and notifies the provider.
+
+
+> See also: [AI for Healthcare: Applications, Compliance, and Implementation](/blog/ai-for-healthcare-applications-compliance-and-implementation/)
+
 
 ## Integration with EHR Systems: HL7 FHIR and Beyond
 

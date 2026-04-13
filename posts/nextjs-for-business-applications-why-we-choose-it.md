@@ -12,6 +12,10 @@ The practical impact is measurable. A typical business dashboard we build in Nex
 
 The data-fetching pattern also simplifies your architecture. Instead of building a REST or GraphQL API that mirrors your UI's data needs, you query your database directly from Server Components using an ORM like Prisma or Drizzle. For internal business applications that don't need a public API, this eliminates an entire architectural layer. When you do need an API (for mobile clients or third-party integrations), Next.js Route Handlers let you build one alongside the server-rendered UI without a separate service.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## The Full-Stack Monolith Reduces Operational Overhead
 
 Business applications don't need microservices. They need a well-structured monolith that one team can understand, deploy, and debug. Next.js gives you a full-stack monolith that includes: server-rendered pages, API endpoints, background job triggers (via Route Handlers called by a cron service), file uploads, authentication, and middleware -- all in a single deployable unit.
@@ -31,6 +35,10 @@ This isn't just developer convenience -- it's a communication tool. When a produ
 Layouts in Next.js deserve special attention for business applications. The `layout.tsx` file at each route level defines shared UI that persists across child routes. A business application typically has: a root layout (authentication check, global styles), a dashboard layout (sidebar navigation, header, breadcrumbs), and section-specific layouts (tabs within a settings section, sub-navigation within a CRM module). These layouts nest naturally, and navigating between child routes doesn't re-render parent layouts -- the sidebar doesn't flash, the header stays stable, the page feels fast.
 
 Parallel routes and intercepting routes handle patterns that are common in business UIs. A modal that shows a record detail while keeping the list visible in the background is an intercepting route. A page where the main content and a sidebar panel load independently is parallel routes. These patterns used to require complex client-side state management; in Next.js, they're routing primitives.
+
+
+> See also: [API Design Best Practices for Business Applications](/blog/api-design-best-practices-for-business-applications/)
+
 
 ## Authentication and Authorization Patterns That Work
 

@@ -18,6 +18,10 @@ Not every process should be automated. Automation is an investment, and like any
 
 We score each candidate on a simple 1-5 scale across these four dimensions. Anything scoring 16 or above (out of 20) goes on the priority list. In our experience, most businesses have 5 to 10 high-scoring candidates when they first evaluate their operations.
 
+
+> Related: [Claims Processing Automation for Insurance Companies](/blog/claims-processing-automation-for-insurance-companies/)
+
+
 ## Common Automations and Their Architectures
 
 Here are the automation patterns we build most frequently, with the technical approach for each:
@@ -43,6 +47,10 @@ The automation tools landscape is crowded, and the right choice depends on techn
 **Custom-built automation (Python/Node.js with a workflow engine):** Best for mission-critical processes with complex business rules, strict compliance requirements, or high volume. A custom solution gives you full control over error handling, logging, testing, and deployment. The upfront cost is higher ($20,000 to $80,000 per workflow), but the total cost of ownership over five years is often lower than a low-code platform at scale, because you avoid per-execution fees and platform lock-in.
 
 Our recommendation: start with no-code for non-critical, low-volume workflows. Graduate to custom-built for anything that touches financial data, customer-facing communication, or regulatory compliance.
+
+
+> See also: [Building Internal Tools Your Team Will Actually Adopt](/blog/building-internal-tools-your-team-will-actually-adopt/)
+
 
 ## Error Handling: The Make-or-Break Detail
 

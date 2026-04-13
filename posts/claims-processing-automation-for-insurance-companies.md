@@ -12,6 +12,10 @@ Investigation and documentation varies enormously by claim type. A straightforwa
 
 Coverage determination -- checking whether the reported loss is covered under the policy terms, conditions, and exclusions -- is technically automatable for simple claims but legally sensitive. A system can verify that the policy was in force on the date of loss, check that the reported peril (fire, theft, water damage) isn't excluded, and confirm that the deductible applies. But coverage disputes involving policy interpretation (does "flood" include water backup from a sewer line?), reservation of rights, and potential bad faith exposure require human judgment and legal review. Automate the clear-cut cases; flag the ambiguous ones for human review.
 
+
+> Related: [AI Document Processing: Extract, Classify, and Automate](/blog/ai-document-processing-extract-classify-and-automate/)
+
+
 ## Intelligent Document Processing for Claims
 
 Insurance claims generate enormous volumes of documents: loss reports, police reports, medical records, repair estimates, invoices, expert opinions, photographs, correspondence, and legal filings. Historically, claims adjusters spent 30 to 50 percent of their time reading, organizing, and extracting information from these documents.
@@ -35,6 +39,10 @@ For auto glass claims, STP rates above 80 percent are achievable. The policyhold
 For more complex but still straightforward claims -- a minor auto collision, a small water damage claim, a stolen personal item -- STP rates of 30 to 50 percent are realistic with well-designed automation. The remaining claims require human intervention at some point in the process, but automation can still reduce handling time by pre-populating claim fields, ordering necessary reports, and queuing tasks for the adjuster in priority order.
 
 Define clear rules for what qualifies for STP and what doesn't. These rules should be auditable, version-controlled, and regularly reviewed by claims leadership and compliance. Regulators are increasingly comfortable with automated claims processing, but they expect transparency about which decisions are automated and what criteria are used.
+
+
+> See also: [Automated Reporting with AI: Replace Hours of Manual Work](/blog/automated-reporting-with-ai-replace-hours-of-manual-work/)
+
 
 ## Fraud Detection and Claims Triage
 

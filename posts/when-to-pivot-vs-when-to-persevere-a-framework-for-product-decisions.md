@@ -20,6 +20,10 @@ Eric Ries identified ten types of pivots, but for practical purposes, most pivot
 
 Understanding which type of pivot you are considering matters because each has a different cost. A customer pivot might require only sales and marketing changes. A problem pivot requires product changes but may preserve your technical infrastructure. A solution pivot is often the most expensive because it can require rebuilding the product from the ground up.
 
+
+> Related: [How to Find Product-Market Fit for Software Products](/blog/how-to-find-product-market-fit-for-software-products/)
+
+
 ## The Evidence Framework: Four Signals to Evaluate
 
 Rather than relying on gut feeling or anecdotes, evaluate four categories of evidence. Score each on a scale of 1 (strongly suggests pivot) to 5 (strongly suggests persevere), then look at the pattern.
@@ -49,6 +53,10 @@ Map your four signal scores into a matrix:
 **Iterate, do not pivot (average score 3-4)**: Some signals are positive, others are weak. This is the most common and most dangerous zone because it is ambiguous enough to justify either decision. The right move is usually to set a time-boxed experiment: "We will spend the next 6 weeks testing [specific hypothesis]. If [specific metric] improves by [specific threshold], we continue. If not, we pivot." Do not iterate indefinitely in the ambiguous zone. Set a deadline.
 
 **Pivot with urgency (average score 1-2)**: Retention goes to zero, users cannot articulate why they would use this, unit economics are negative and worsening, market is contracting. Pivot now. Every week you delay burns runway on a trajectory that is clearly not working.
+
+
+> See also: [Transitioning from Services to Product: A Strategic Guide](/blog/transitioning-from-services-to-product-a-strategic-guide/)
+
 
 ## How to Execute a Pivot Without Destroying Momentum
 

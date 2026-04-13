@@ -14,6 +14,10 @@ The mechanism is perceptual grouping. The human visual system uses proximity as 
 
 In a data-heavy application, this translates directly to task performance. A table where row height is 28 pixels with no padding between the cell content and the cell border requires the user to carefully track along the row to avoid jumping to an adjacent row. The same table with 40-pixel row height and 8 pixels of padding on each side lets the user scan rows accurately at twice the speed. The table shows fewer rows per screen, but the user comprehends each row faster and makes fewer errors.
 
+
+> Related: [Designing Onboarding Flows That Reduce Churn](/blog/designing-onboarding-flows-that-reduce-churn/)
+
+
 ## Macro White Space: The Structural Framework
 
 Macro white space refers to the large-scale spacing that defines the layout structure: margins around the page, padding within content areas, spacing between major sections, and the gaps between navigation and content regions.
@@ -37,6 +41,10 @@ Micro white space is the spacing within components: padding inside buttons, marg
 **Button padding.** A button's internal padding directly affects its perceived importance and click-target size. Primary action buttons should have at least 12 pixels of vertical padding and 24 pixels of horizontal padding. This creates a comfortably large click target (meeting the 44x44 pixel minimum recommended by WCAG for touch interfaces) and gives the button visual weight appropriate to its importance. Secondary buttons can have slightly less padding (8px vertical, 16px horizontal) to create a visual hierarchy.
 
 **Table cell padding.** Cell padding of 8-12 pixels on all sides is the minimum for readable data tables. For tables with dense numerical data (financial reports, inventory lists), 12-16 pixels of vertical padding per cell prevents rows from blurring together during horizontal scanning. Left-align text columns and right-align numerical columns, with at least 16 pixels between the rightmost character of one column and the leftmost character of the next.
+
+
+> See also: [UI Design Principles for Business Software Applications](/blog/ui-design-principles-for-business-software-applications/)
+
 
 ## The Density Objection and How to Address It
 

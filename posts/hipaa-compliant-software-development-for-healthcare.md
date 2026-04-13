@@ -18,6 +18,10 @@ The **Breach Notification Rule** requires notification to affected individuals w
 
 A critical point that many development teams miss: HIPAA does not specify technologies. It does not mandate AES-256 encryption, specific database platforms, or particular authentication protocols. It requires "reasonable and appropriate" safeguards based on the organization's size, complexity, and risk profile. This is both liberating (you have architectural flexibility) and challenging (you must justify your choices through documented risk analysis).
 
+
+> Related: [Veterinary Practice Management Software](/blog/veterinary-practice-management-software/)
+
+
 ## The Business Associate Agreement: Your Legal Foundation
 
 If you are building software that handles PHI on behalf of a healthcare organization (a "covered entity"), you are a "business associate" under HIPAA. Before you touch any PHI, you need a Business Associate Agreement (BAA) with every covered entity you serve and with every subcontractor who handles PHI on your behalf.
@@ -45,6 +49,10 @@ Database-level encryption protects against physical media theft and unauthorized
 **Encryption in transit.** All API communication must use TLS 1.2 or higher. Enforce HTTPS with HSTS headers. Internal service-to-service communication should also be encrypted, even within a VPC. Use mutual TLS (mTLS) for service-to-service authentication in microservices architectures. Terminate TLS at the load balancer for external traffic, and use encrypted connections from the load balancer to application instances.
 
 **Key management** deserves dedicated attention. Use a managed KMS (AWS KMS, Google Cloud KMS, Azure Key Vault) rather than managing keys yourself. Implement key rotation on a defined schedule (annually at minimum). Maintain key access logs and restrict KMS key usage to specific IAM roles. The principle: even if an attacker gains access to encrypted data, they should not be able to access the keys through the same path.
+
+
+> See also: [HIPAA Patient Portal Development](/blog/hipaa-patient-portal-development/)
+
 
 ## Access Controls and Audit Logging
 

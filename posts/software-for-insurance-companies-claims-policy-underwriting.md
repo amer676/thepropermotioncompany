@@ -18,6 +18,10 @@ Implement the rating engine as a stateless service that accepts a risk profile a
 
 **Multi-state compliance** is a fundamental requirement. Each state has its own insurance regulations governing rate filings, policy forms, cancellation notice requirements, mandated coverages, and consumer disclosure rules. A policy issued in California has different form requirements, mandated coverages, and notice periods than the same product issued in Texas. Your PAS must manage state-specific variations systematically rather than through ad-hoc code branches. Implement state-specific rules as configurable overlays on your base product definitions, with a clear audit trail showing which rules apply to which states and when they were last updated.
 
+
+> Related: [Custom Software for Schools and Educational Institutions](/blog/custom-software-for-schools-and-educational-institutions/)
+
+
 ## Underwriting Decisioning and Risk Assessment
 
 Underwriting is where insurance companies make their money or lose it. The quality of underwriting decisions --- which risks to accept, at what price, with what conditions --- directly determines loss ratios and profitability. Modern underwriting systems augment human judgment with data-driven insights, reducing both the time to decision and the error rate.
@@ -51,6 +55,10 @@ The workflow engine must handle exceptions gracefully. Claims rarely follow the 
 Implement reserve change tracking with full audit trails: who changed the reserve, when, by how much, and the documented justification. Automated reserve recommendations based on claim characteristics and historical data can improve initial reserve accuracy by 15-25%, reducing both reserve deficiencies (which cause financial surprises) and reserve redundancies (which tie up capital unnecessarily).
 
 **Subrogation and recovery** recovers money from third parties who are liable for a loss. Subrogation potential exists in 15-25% of claims but is frequently missed because adjusters are focused on claim resolution rather than recovery identification. Build automated subrogation identification into your claims workflow: flag claims where third-party liability indicators are present (police reports indicating fault, witness statements, contractual indemnification clauses) and route them to the subrogation team.
+
+
+> See also: [Software for Accounting and Financial Advisory Firms](/blog/software-for-accounting-and-financial-advisory-firms/)
+
 
 ## Integration and Data Architecture
 

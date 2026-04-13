@@ -14,6 +14,10 @@ If AI is table stakes -- say, a chatbot that answers common customer questions, 
 
 A practical way to assess this: list your product's top five selling points as described by your sales team. If the AI feature appears on that list, lean toward building. If it does not, lean toward buying. This is a heuristic, not a rule, but it is right about 80 percent of the time.
 
+
+> Related: [How AI Changes Software Architecture](/blog/how-ai-changes-software-architecture/)
+
+
 ## Calculate the True Cost of Building
 
 Engineering leaders routinely underestimate the cost of building AI features by 3-5x. They account for initial model development but miss the long tail of production costs.
@@ -39,6 +43,10 @@ Buying AI features introduces dependencies that are harder to unwind than typica
 **Model transparency**: When a vendor's AI makes a decision, can you explain why? For internal tools, this might not matter much. For customer-facing features, especially in regulated industries like finance or healthcare, explainability is a compliance requirement. Black-box vendor models that only return a score or classification without supporting evidence may not meet your regulatory obligations.
 
 **Pricing trajectory**: AI vendor pricing is still volatile. A service that costs $0.01 per API call today might cost $0.05 next year once the vendor finishes their land-and-expand pricing strategy. Build in contractual pricing protections or, at minimum, model what your costs look like at 3x the current per-unit price.
+
+
+> See also: [AI for Healthcare: Applications, Compliance, and Implementation](/blog/ai-for-healthcare-applications-compliance-and-implementation/)
+
 
 ## The Hybrid Path: Buy the Foundation, Build the Differentiation
 

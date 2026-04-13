@@ -18,6 +18,10 @@ Each criterion should be measurable. "High quality" is not a criterion. "Capture
 
 Weight the criteria by importance. For some applications, latency matters more than quality above a baseline threshold. For others, cost per request determines unit economics and dominates the decision. A weighted scoring matrix prevents the team from being distracted by a model that scores highest on a criterion that ultimately does not matter much.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Building a Representative Test Dataset
 
 Your benchmark is only as good as your test data. The test dataset must represent the actual inputs your system will process in production, including the messy, edge-case-laden, format-inconsistent inputs that real users generate.
@@ -41,6 +45,10 @@ For each model, test with your best prompt. Prompt format preferences vary acros
 Evaluate model outputs against your gold-standard labels using automated metrics where possible. For classification, compute accuracy, precision, recall, and F1 score per category. For extraction, compute exact match rate and partial match rate. For generation tasks, automated metrics like ROUGE or BERTScore provide a starting point, but human evaluation is usually necessary for quality assessment.
 
 For human evaluation, use a blind review process. Present outputs from different models side by side, without identifying which model produced which output, and have reviewers rate them against your criteria. Use at least two independent reviewers and measure inter-rater agreement. If reviewers disagree frequently, your criteria need to be more specific.
+
+
+> See also: [Fine-Tuning vs Prompt Engineering: A Decision Framework](/blog/fine-tuning-vs-prompt-engineering-a-decision-framework/)
+
 
 ## Factoring in Cost, Latency, and Operational Complexity
 

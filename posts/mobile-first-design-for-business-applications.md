@@ -16,6 +16,10 @@ Open Instagram or Uber on your phone and every interaction feels natural. Open y
 
 Closing this gap requires treating mobile not as a viewport to support but as the primary design constraint that forces better decisions about information hierarchy, interaction patterns, and feature prioritization.
 
+
+> Related: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
+
 ## Prioritizing Actions Over Information Density
 
 Desktop business applications thrive on information density: tables with twelve columns, forms with thirty fields, dashboards with eight widgets. Mobile-first design forces you to answer a harder question: what does this user need to do right now?
@@ -41,6 +45,10 @@ Business application developers frequently underestimate how different touch int
 **Avoid hover states entirely.** Tooltips, hover menus, and hover-to-reveal buttons do not exist on touch devices. Any critical information or action hidden behind a hover state is invisible to mobile users. Replace hover tooltips with tappable info icons. Replace hover menus with explicit button menus.
 
 **Form input optimization.** Set the correct `inputmode` attribute on form fields. Phone number fields should trigger the phone keypad (`inputmode="tel"`), email fields should show the email keyboard (`inputmode="email"`), and numeric fields should show the number pad (`inputmode="numeric"`). This small detail saves users from switching keyboards manually and reduces input errors by 20-30%.
+
+
+> See also: [Designing Data-Heavy Applications: Tables, Charts, and Dashboards](/blog/designing-data-heavy-applications-tables-charts-and-dashboards/)
+
 
 ## Offline Capability: The Forgotten Business Requirement
 

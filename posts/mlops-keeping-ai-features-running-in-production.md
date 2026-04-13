@@ -14,6 +14,10 @@ The numbers are sobering. Research from Google and Microsoft suggests that produ
 
 A practical example: a logistics company deployed a demand forecasting model that performed well for three months. Then a major customer changed their ordering pattern from weekly bulk orders to daily just-in-time orders. The model's mean absolute error doubled in two weeks, but the team did not notice for another month because they were only monitoring system metrics (latency, throughput) rather than model metrics (prediction accuracy, feature distributions).
 
+
+> Related: [AI for Healthcare: Applications, Compliance, and Implementation](/blog/ai-for-healthcare-applications-compliance-and-implementation/)
+
+
 ## Building a Model Monitoring Stack That Actually Alerts You
 
 Effective model monitoring operates at three layers: system health, data health, and model performance.
@@ -51,6 +55,10 @@ A robust retraining pipeline has five stages:
 5. **Staged rollout.** Promote the candidate to serve 5 percent of traffic, then 25 percent, then 100 percent, with automated rollback triggers tied to your monitoring alerts.
 
 The cadence depends on your domain. Financial models typically retrain monthly. Recommendation models retrain weekly. Fraud models retrain biweekly. Document these cadences and treat deviations as incidents.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Feature Stores and the Data Foundation
 

@@ -16,6 +16,10 @@ Order entry should be optimized for speed. A server in a busy restaurant enters 
 
 Split checks, item transfers between tables, course firing, and void workflows are non-negotiable features that off-the-shelf POS platforms sometimes handle poorly. A custom system can model these exactly to your restaurant's service style.
 
+
+> Related: [Automotive Dealership Management Systems](/blog/automotive-dealership-management-systems/)
+
+
 ## Kitchen Display Systems and Order Routing
 
 The kitchen display system (KDS) replaces paper ticket printers and fundamentally changes how a kitchen operates. Instead of a rail of curling paper tickets, cooks see orders on screens organized by station, priority, and timing.
@@ -39,6 +43,10 @@ Middleware platforms like Olo, Chowly, or ItsaCheckmate aggregate third-party or
 Build your own direct ordering channel (website and app) in parallel. Direct orders avoid the 15% to 30% commission that third-party platforms charge. Your direct ordering system should offer feature parity with third-party apps: real-time menu availability, estimated preparation time, order tracking, and saved payment methods. Invest in a loyalty program tied to direct orders to incentivize the shift.
 
 Menu management across all these channels is a hidden complexity monster. A price change, a new item, or an 86'd ingredient needs to propagate to your POS, your KDS, your direct ordering site, and all third-party platforms within minutes. Build a single menu management system that serves as the source of truth, with push integrations to every channel. Store the menu as structured data (items, modifiers, modifier groups, prices, availability windows, station assignments) in a central database.
+
+
+> See also: [Software for Construction Companies: Project Management and Field Ops](/blog/software-for-construction-companies-project-management-and-field-ops/)
+
 
 ## Inventory Management and Cost Control
 

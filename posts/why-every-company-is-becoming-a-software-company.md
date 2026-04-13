@@ -14,6 +14,10 @@ The companies that are pulling ahead in operationally complex industries — log
 
 This is not a call to build everything from scratch. It is a recognition that the processes that make your business valuable are the processes that deserve custom software, and those processes are more numerous than most business leaders initially assume.
 
+
+> Related: [The Unbundling of Enterprise Software: Why Suites Are Dying](/blog/the-unbundling-of-enterprise-software-why-suites-are-dying/)
+
+
 ## Customer Expectations Have Been Reset by Consumer Technology
 
 Your customers use Uber, Amazon, and their banking app every day. These experiences have established a baseline expectation for how digital interactions should work: fast, intuitive, available on mobile, and personalized. When they interact with your business through a clunky portal, a PDF form that has to be emailed back, or a phone call to check the status of an order, the contrast is jarring.
@@ -35,6 +39,10 @@ Each manual handoff introduces delay, error potential, and information asymmetry
 Connecting these systems with custom integration software — an orchestration layer that moves data between systems, triggers actions based on events, and provides a unified view of order status — transforms the operation. It is not glamorous software. There is no consumer-facing app. But it is the software that determines whether the company operates with five-day order-to-delivery cycles or fifteen-day cycles.
 
 Organizations that treat this kind of internal software as an IT cost center rather than a strategic investment consistently fall behind those that treat it as a core capability.
+
+
+> See also: [The Future of No-Code Platforms: What Business Leaders Should Know](/blog/the-future-of-no-code-platforms-what-business-leaders-should-know/)
+
 
 ## The Data Advantage Compounds Over Time
 

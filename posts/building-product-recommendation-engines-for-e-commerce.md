@@ -20,6 +20,10 @@ The modern implementation generates vector embeddings from product descriptions 
 
 A production recommendation engine layers all three. Collaborative filtering captures emergent behavioral patterns, content-based filtering fills gaps where behavioral data is sparse, and business rules enforce strategic constraints.
 
+
+> Related: [How AI Changes Software Architecture](/blog/how-ai-changes-software-architecture/)
+
+
 ## Data Collection and the Event Pipeline
 
 Recommendations are only as good as the behavioral signal feeding them. The minimum viable event set for e-commerce:
@@ -48,6 +52,10 @@ A well-structured recommendation system separates three concerns:
 **Post-processing and business rules** apply final adjustments: deduplicate items already in the cart, enforce diversity (do not show five black t-shirts in a row), suppress out-of-stock items, apply promotional boosts, and enforce any brand-exclusion rules. This layer is deliberately procedural — it is the escape valve where business stakeholders can influence output without touching the model.
 
 The entire pipeline should execute in under 200 milliseconds for synchronous page loads. Pre-computation helps: for logged-in users, batch jobs can generate personalized recommendation lists nightly, with the real-time layer adjusting based on within-session behavior.
+
+
+> See also: [AI Chatbots vs AI Assistants: Choosing the Right Approach](/blog/ai-chatbots-vs-ai-assistants-choosing-the-right-approach/)
+
 
 ## Handling Cold Start Problems
 

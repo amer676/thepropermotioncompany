@@ -24,6 +24,10 @@ Every effective specification contains these sections, in this order:
 
 **Open questions.** List unresolved decisions with a deadline for resolution. This is honest and prevents developers from blocking on unanswered questions without a clear escalation path.
 
+
+> Related: [How to Write User Stories That Lead to Better Software](/blog/how-to-write-user-stories-that-lead-to-better-software/)
+
+
 ## Writing Acceptance Criteria That Eliminate Ambiguity
 
 The single highest-leverage improvement you can make to your specifications is writing better acceptance criteria. Vague criteria are the primary source of rework in software development. A study by the Standish Group found that unclear requirements account for 37 percent of project failures.
@@ -61,6 +65,10 @@ Constraints to avoid:
 - "Use React Query for data fetching." (That is a library choice. The constraint is: "Data should be cached client-side and refreshed when the user returns to the tab.")
 
 When you document constraints instead of solutions, you give engineers the information they need to make good decisions while respecting their expertise and autonomy.
+
+
+> See also: [Building a Product Roadmap That Survives Contact with Reality](/blog/building-a-product-roadmap-that-survives-contact-with-reality/)
+
 
 ## Visual Specifications: When Mockups Replace a Thousand Words
 

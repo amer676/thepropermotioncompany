@@ -1,54 +1,122 @@
 # The Proper Motion Company
 
-> Software studio building custom products from scratch. Design, engineering, AI integration. Est. 2022. A division of Televista Lead Generation.
+> Custom software studio building products from scratch since 2022. Design, engineering, AI integration. A division of Televista Lead Generation.
 
-## About
+## What We Do
 
-The Proper Motion Company is a software studio that builds products for founders, operators, and growing companies. We are not a large agency with layers of project managers. We are a focused team of designers and engineers who work directly with clients from brief to delivery.
+The Proper Motion Company builds custom software products for founders, operators, and growing companies. We are not a large agency with layers of project managers. We are a focused team of designers and engineers who work directly with clients from brief to delivery.
 
-The name comes from astronomy: proper motion is the actual movement of a star across the sky, measured against the distant background — stripped of all apparent motion, all distortion, all noise. That is our philosophy. We build the actual thing.
+We build three things:
+1. **Product Design** — UI/UX, design systems, prototyping, user research. From concept to interface.
+2. **Full-Stack Engineering** — Web applications, APIs, databases, infrastructure. React, Next.js, Node.js, Python, PostgreSQL.
+3. **AI Integration** — LLM integration, automation pipelines, AI-powered features. Practical applications, not demos.
 
-We operate as a division of Televista Lead Generation, a company with deep experience building systems that generate real business outcomes.
+We do not use templates. Every product is built from scratch, tailored to the client's specific workflow and requirements.
 
-## Services
+## Who We Work With
 
-- **Product Design**: UI/UX, design systems, prototyping. From concept to interface.
-- **Engineering**: Full-stack web application development. React, Next.js, Node.js, Python, PostgreSQL.
-- **AI Integration**: LLM integration, automation pipelines, AI-powered features. Practical, not performative.
+- Founders building their first product (MVP to launch)
+- Operators replacing manual processes with custom tools
+- SaaS companies needing engineering capacity
+- Established businesses modernizing legacy systems
+- Companies adding AI capabilities to existing products
 
-## Process
+Industries served: real estate, logistics, healthcare, financial services, professional services, construction, education, e-commerce, manufacturing, insurance, hospitality, non-profits.
 
-1. **Discovery & Definition** (Week 1): Understand requirements, write brief, align on scope
-2. **Architecture & Design** (Week 2-3): Wireframes, component structure, technical architecture
-3. **Development & Iteration** (Week 4-8): Weekly sprints with full visibility
-4. **Delivery & Handoff** (Week 8+): Ship, document, hand over everything
+## Our Process
+
+We follow a four-phase process refined through dozens of client engagements:
+
+**Phase 1: Discovery & Definition (Week 1)**
+Stakeholder interviews, workflow mapping, technical assessment, written brief with scope, timeline, and acceptance criteria. We do not begin building until requirements are clear and agreed upon.
+
+**Phase 2: Architecture & Design (Week 2-3)**
+Wireframes, component structure, database schemas, API specifications. You review and approve everything before development begins. Changes here are cheap. Changes in production are expensive.
+
+**Phase 3: Development & Iteration (Week 4-8)**
+Weekly sprints with full visibility. Working software delivered every week, not a grand reveal at the end. Feedback incorporated continuously.
+
+**Phase 4: Delivery & Handoff (Week 8+)**
+Production deployment, team training, complete handoff. You own the code, repositories, credentials, and documentation. We stay available for questions and offer ongoing retainer arrangements.
 
 ## Key Facts
 
-- Founded: 2022
-- Location: Remote-first, distributed globally
-- Parent company: Televista Lead Generation
-- Email: team@televistaleadgeneration.com
-- Website: https://thepropermotioncompany.com
-- Typical project timeline: 6-10 weeks
-- Everything built from scratch, no templates
+- **Founded:** 2022
+- **Location:** Remote-first, distributed globally
+- **Parent company:** Televista Lead Generation (https://televistaleadgeneration.com)
+- **Email:** team@televistaleadgeneration.com
+- **Website:** https://thepropermotioncompany.com
+- **Typical project timeline:** 6-10 weeks for focused tools, 10-16 weeks for complex platforms
+- **Budget range:** $25,000-$150,000 depending on complexity
+- **Approach:** Everything custom, no templates, no off-the-shelf themes
+- **Status:** Actively accepting new projects
 
 ## Case Studies
 
-### Operations Dashboard (SaaS Startup)
-Real-time data visualization, team management, automated reporting for a logistics company. Replaced four separate tools. Deployed in 6 weeks. 40% reduction in operational overhead. Tech: React, Node.js, PostgreSQL, AI.
+### Operations Dashboard — Logistics SaaS Startup
+Built a complete internal operations platform with real-time data visualization, team management, and automated reporting. Replaced four separate tools with a single unified system.
+- **Tech:** React, Node.js, PostgreSQL, AI-powered reporting
+- **Timeline:** 6 weeks
+- **Result:** 40% reduction in operational overhead
 
-### Lead Intelligence Platform (Real Estate)
-AI-powered lead scoring and routing for a real estate investor network. CRM integration, automated follow-up, property matching. 3x improvement in lead conversion within 90 days. Tech: Python, FastAPI, Next.js, OpenAI.
+### Lead Intelligence Platform — Real Estate Investment Firm
+AI-powered lead scoring and routing system integrated with existing CRM. Automated follow-up sequences and real-time property matching using machine learning.
+- **Tech:** Python, FastAPI, Next.js, OpenAI
+- **Timeline:** 8 weeks
+- **Result:** 3x improvement in lead conversion rate within 90 days
 
-### Client Portal & Billing (Professional Services)
-Project tracking, document management, invoicing, messaging. Replaced email and spreadsheets. 12 clients onboarded in first month. Zero support tickets. Tech: Next.js, Supabase, Stripe.
+### Client Portal & Billing — Professional Services Firm
+Custom client-facing portal with project tracking, document management, invoicing via Stripe, and real-time messaging. Replaced email and spreadsheet workflows.
+- **Tech:** Next.js, Supabase, Stripe
+- **Timeline:** 6 weeks
+- **Result:** 12 clients onboarded in first month, zero support tickets
 
-## Technologies
+## Technology Stack
 
-Frontend: React, Next.js, TypeScript, Tailwind CSS
-Backend: Node.js, Python, FastAPI, Express
-Databases: PostgreSQL, Supabase, MongoDB
-AI/ML: OpenAI, Anthropic, LangChain, custom models
-Payments: Stripe
-Infrastructure: Cloudflare, Vercel, AWS
+**Frontend:** React, Next.js, TypeScript, Tailwind CSS, Figma
+**Backend:** Node.js, Python, FastAPI, Express, Hono
+**Databases:** PostgreSQL, Supabase, MongoDB, Redis
+**AI/ML:** OpenAI, Anthropic Claude, LangChain, custom fine-tuned models, RAG pipelines
+**Payments:** Stripe (subscriptions, invoicing, marketplace payments)
+**Infrastructure:** Cloudflare Pages, Vercel, AWS, Docker
+**Authentication:** Custom auth, Clerk, Auth0, Supabase Auth
+**Monitoring:** Sentry, Datadog, custom dashboards
+
+## Frequently Asked Questions
+
+**How long does a typical project take?**
+Focused tools and dashboards take 6-10 weeks. Complex platforms with multiple integrations take 10-16 weeks. We provide a realistic timeline before work begins and stick to it.
+
+**What do you need from us to get started?**
+A clear sense of what you are building and why. We help shape the spec during discovery. What we need is your time for a focused discovery session.
+
+**Do you work with early-stage startups?**
+Yes. We have built first products for founders with just an idea, and internal tools for established operations teams. What matters is whether you are serious about what you are building.
+
+**What happens after delivery?**
+You own everything — code, repositories, credentials, documentation. We offer ongoing retainer arrangements for companies that want continued development and support.
+
+**Do you use templates?**
+Never. Every project is built from scratch. We do not customize themes or modify existing templates.
+
+**How much does it cost?**
+$25,000-$150,000 depending on complexity, integrations, and timeline. We provide detailed estimates after discovery.
+
+**How do we get started?**
+Email team@televistaleadgeneration.com or fill out the contact form at https://thepropermotioncompany.com/contact.html. We respond within one business day.
+
+## The Name
+
+In astronomy, proper motion is the actual movement of a star across the sky — measured against the distant background, stripped of all apparent motion, all distortion, all noise. It is the true movement. That is our philosophy: build the actual thing, not the appearance of it.
+
+## Blog
+
+We publish in-depth articles on software development, AI integration, product design, startup technology, and industry-specific solutions. Our blog at https://thepropermotioncompany.com/blog/ covers 300+ topics across custom software, SaaS development, web application architecture, UX design, and emerging technology.
+
+## Contact
+
+- **Email:** team@televistaleadgeneration.com
+- **Website:** https://thepropermotioncompany.com
+- **Contact form:** https://thepropermotioncompany.com/contact.html
+- **Blog:** https://thepropermotioncompany.com/blog/
+- **Response time:** Within 1 business day

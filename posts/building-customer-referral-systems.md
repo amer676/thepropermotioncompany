@@ -27,6 +27,10 @@ The link structure: `https://app.com/signup?ref=JANE-2847`. When the landing pag
 
 **Rewards.** Each successful referral triggers a reward for the referrer, the referred user, or both. Rewards have types (account credit, cash payout, subscription extension, free month, physical gift), amounts, and states (pending, issued, redeemed, expired).
 
+
+> Related: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
+
 ## Double-Sided Incentive Design
 
 The most effective referral programs reward both parties. This aligns incentives: the referrer is motivated to share, and the referred user has a reason to use the referral link instead of signing up directly.
@@ -64,6 +68,10 @@ Our fraud prevention architecture processes every referral through a scoring pip
 5. Score: 0-2 flags = auto-approve, 3 flags = manual review, 4+ flags = auto-reject
 
 This catches 95 percent of fraudulent referrals automatically. The remaining 5 percent go to a manual review queue.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Technical Implementation: The Referral Engine
 

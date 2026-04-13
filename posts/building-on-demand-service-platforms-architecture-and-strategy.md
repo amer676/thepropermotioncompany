@@ -14,6 +14,10 @@ The operator dashboard optimizes for visibility and control. Monitor live platfo
 
 Architecturally, these three experiences share a common backend but diverge at the API layer. Consumer-facing APIs prioritize low latency and high availability. Provider-facing APIs prioritize reliability and offline tolerance. Operator APIs prioritize flexibility and comprehensive data access.
 
+
+> Related: [Fleet Telematics Platform Development](/blog/fleet-telematics-platform-development/)
+
+
 ## Real-Time Matching and Dispatch
 
 The core algorithm of an on-demand platform is the matching engine: given a service request, which available provider should be assigned? This decision directly impacts customer wait time, provider utilization, and platform economics.
@@ -37,6 +41,10 @@ Communicate pricing transparently. Show the customer the estimated price before 
 On the provider side, show a heatmap of high-demand areas to guide positioning. Providers respond strongly to visible earning opportunities. The combination of higher prices for consumers and visible demand signals for providers creates a self-correcting system: surges attract supply, which resolves the shortage, which reduces the surge.
 
 Set a maximum multiplier cap (2x to 3x is common) to prevent PR disasters during emergencies. Uber learned this lesson after surge pricing during Hurricane Sandy generated widespread backlash. Some platforms disable surge pricing during declared emergencies entirely.
+
+
+> See also: [Fleet Management Software: Tracking, Dispatch, and Compliance](/blog/fleet-management-software-tracking-dispatch-and-compliance/)
+
 
 ## Payment Architecture and Provider Settlements
 

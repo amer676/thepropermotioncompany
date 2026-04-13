@@ -20,6 +20,10 @@ Implement session timeout and rotation. Sessions should expire after a period of
 
 Multi-factor authentication (MFA) should be available for all users and required for privileged roles. TOTP (time-based one-time passwords via apps like Google Authenticator) is the baseline. WebAuthn/FIDO2 hardware keys are the gold standard, as they are phishing-resistant because the browser verifies the origin before releasing the credential. SMS-based MFA is better than nothing but is vulnerable to SIM-swapping attacks and should not be the only option.
 
+
+> Related: [Role-Based Access Control: Implementation Guide](/blog/role-based-access-control-implementation-guide/)
+
+
 ## Input Validation and Injection Prevention
 
 Injection attacks remain the most dangerous class of web application vulnerabilities. SQL injection, cross-site scripting (XSS), command injection, and LDAP injection all exploit the same root cause: untrusted user input is treated as code or markup.
@@ -47,6 +51,10 @@ Validate and sanitize all API input. Use schema validation libraries (Joi for No
 Implement proper authorization checks at the data level, not just the endpoint level. Broken object-level authorization (BOLA), where a user can access another user's data by changing an ID in the URL, is the number one API vulnerability according to the OWASP API Security Top 10. Every database query should include a WHERE clause that filters by the authenticated user's permissions. Never rely solely on the obscurity of object IDs.
 
 Use short-lived access tokens (15 minutes) with refresh tokens (7 to 30 days) for API authentication. Store refresh tokens securely (encrypted in the database, HttpOnly cookies on web clients) and implement refresh token rotation: each time a refresh token is used, issue a new refresh token and invalidate the old one. If a stolen refresh token is used after the legitimate user has already refreshed, the rotation mechanism detects the anomaly and can invalidate all tokens for that user.
+
+
+> See also: [User Authentication and Authorization: Complete Implementation Guide](/blog/user-authentication-and-authorization-complete-implementation-guide/)
+
 
 ## Infrastructure and Deployment Security
 

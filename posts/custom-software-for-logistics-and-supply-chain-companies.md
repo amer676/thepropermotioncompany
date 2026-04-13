@@ -16,6 +16,10 @@ Custom warehouse software excels in three areas where generic systems struggle:
 
 **Receiving and quality inspection workflows**: Logistics companies that handle goods with variable quality -- fresh produce, returned merchandise, refurbished electronics -- need receiving workflows that go beyond "scan the barcode and put it on a shelf." Custom receiving modules can integrate with inspection criteria, trigger quality holds, route items to rework stations, and update inventory status in real time based on inspection outcomes.
 
+
+> Related: [Software for Construction Companies: Project Management and Field Ops](/blog/software-for-construction-companies-project-management-and-field-ops/)
+
+
 ## Transportation Management: Carrier Selection and Rate Optimization
 
 Transportation typically represents 50% to 70% of total logistics costs, making carrier selection and rate optimization the highest-impact area for custom software.
@@ -46,6 +50,10 @@ The technical architecture for track-and-trace typically involves:
 - **Exception management dashboard**: Highlights shipments that are behind schedule, stuck at a checkpoint, or flagged by the carrier. Operations staff can intervene proactively rather than waiting for the customer to call.
 
 Estimated transit time prediction is a high-value addition to basic tracking. Using historical transit data by carrier, lane, and service level, you can predict the likely delivery date with a confidence interval and update the prediction as new scan events arrive.
+
+
+> See also: [Supply Chain Management Platform Development](/blog/supply-chain-management-platform-development/)
+
 
 ## Demand Forecasting and Inventory Optimization
 

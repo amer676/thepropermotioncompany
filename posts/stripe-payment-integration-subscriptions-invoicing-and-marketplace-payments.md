@@ -24,6 +24,10 @@ Use `proration_behavior: 'create_prorations'` (the default) for most cases. Set 
 
 **Trial periods and free tiers.** Stripe supports trial periods natively on subscriptions (`trial_period_days` or `trial_end`). For free tiers, you have two options: do not create a Stripe Subscription at all (simpler -- your application checks for the absence of a subscription and grants free-tier access), or create a subscription with a $0 price (more complex but useful if you want Stripe's lifecycle management and easy upgrade paths). We recommend the first approach for most applications.
 
+
+> Related: [Next.js for Business Applications: Why We Choose It](/blog/nextjs-for-business-applications-why-we-choose-it/)
+
+
 ## Invoice Architecture for B2B Billing
 
 SaaS applications serving businesses often need invoicing capabilities beyond simple subscription charges: usage-based billing, one-time charges, tax compliance, and accounts receivable workflows.
@@ -76,6 +80,10 @@ This single API call handles payment collection, fee extraction, and seller payo
 **Handling refunds in marketplace models.** Refund logic in marketplaces is more complex than in direct sales because you need to decide: Does the platform absorb the refund? Does the seller absorb it? Is the platform fee refunded? Stripe lets you reverse the transfer to the connected account when issuing a refund, but you must explicitly configure this. By default, refunding a destination charge refunds the full amount from your platform's balance without reversing the transfer to the seller.
 
 **Onboarding compliance.** Stripe requires connected accounts to complete KYC verification. Monitor the `account.updated` webhook and check the `requirements` field. If `requirements.currently_due` is not empty, the seller has outstanding compliance requirements that will eventually result in payouts being paused. Build UI in your platform that surfaces these requirements and links the seller to their Stripe dashboard to resolve them.
+
+
+> See also: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
 
 ## Webhook Reliability and Event Processing
 

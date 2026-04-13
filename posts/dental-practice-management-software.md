@@ -16,6 +16,10 @@ Custom scheduling software can encode these constraints explicitly. When a front
 
 The most impactful scheduling feature is the automated waitlist. When a cancellation opens a slot, the system identifies patients with pending treatment whose procedure type matches the slot's constraints, and sends them an automated text or email offering the opening. Practices that implement this recover 30-60% of cancellation revenue that would otherwise be lost.
 
+
+> Related: [HIPAA Patient Portal Development](/blog/hipaa-patient-portal-development/)
+
+
 ## Insurance Verification and Claims Processing
 
 Insurance is the single largest source of administrative burden in dental practices. Verifying benefits before a patient's appointment, submitting claims after treatment, following up on unpaid claims, and managing denials consume hours of staff time daily.
@@ -35,6 +39,10 @@ A well-built digital charting system presents the dental chart as an interactive
 Treatment planning layers on top of charting. A treatment plan groups proposed procedures into phases (Phase 1: urgent/symptomatic treatment; Phase 2: necessary but non-urgent; Phase 3: elective/cosmetic), assigns estimated fees and insurance coverage, and presents the patient with a clear financial picture. The treatment plan presentation — often shown on a screen in the operatory during the case-presentation conversation — should be clean, jargon-minimal, and oriented toward the patient's understanding rather than the clinician's.
 
 Integration with imaging systems matters here. Intraoral cameras, digital radiographs (periapical, bitewing, panoramic), and CBCT scans should be accessible directly from the chart. The most common integration standard is TWAIN for direct-capture devices and DICOM for radiographic images. A unified viewer that displays the chart alongside the relevant images eliminates the alt-tab workflow that plagues practices using disconnected systems.
+
+
+> See also: [Veterinary Practice Management Software](/blog/veterinary-practice-management-software/)
+
 
 ## Patient Communication and Engagement
 

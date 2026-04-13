@@ -10,6 +10,10 @@ In agile development, work is broken into short cycles, typically one or two wee
 
 The Agile Manifesto, written in 2001 by seventeen software practitioners, boils down to four preferences: individuals and interactions over rigid processes, working software over exhaustive documentation, customer collaboration over contract negotiation, and responding to change over following a fixed plan. Notice those are preferences, not absolutes. You still need documentation. You still need contracts. The shift is in emphasis.
 
+
+> Related: [Why the Discovery Phase Is the Most Important Part of Software Development](/blog/why-the-discovery-phase-is-the-most-important-part-of-software-development/)
+
+
 ## How Sprints and Backlogs Affect Your Timeline
 
 A sprint is a fixed period, usually two weeks, during which the team commits to completing a specific set of work items. Those items come from a backlog, which is the prioritized list of everything the software needs to do. Think of the backlog as a living to-do list that the product owner (often the founder or a product manager) reorders as priorities shift.
@@ -27,6 +31,10 @@ Kanban is a lighter framework that focuses on continuous flow rather than fixed 
 Some teams blend the two, running Scrumban, using sprints for planning but Kanban boards for visualization. The right choice depends on your context. For a greenfield product build, Scrum's structure helps manage uncertainty. For ongoing maintenance and feature additions to a mature product, Kanban's flexibility often fits better.
 
 As a business leader, you do not need to dictate the framework. You need to understand the cadence of delivery and how decisions get made. Ask your team: how often will I see working software? How do we decide what gets built next? Who resolves disagreements about priority? If those questions have clear answers, the framework is working.
+
+
+> See also: [How to Write Software Requirements That Actually Work](/blog/how-to-write-software-requirements-that-actually-work/)
+
 
 ## What Agile Means for Your Budget
 

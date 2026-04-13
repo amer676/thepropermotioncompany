@@ -18,6 +18,10 @@ Analytics capabilities exist on a spectrum, and understanding where your organiz
 
 Most organizations jump from descriptive straight to predictive, skipping the diagnostic layer. That is a mistake. Without understanding causal relationships in your data, predictive models produce forecasts you cannot act on because you do not understand the levers available to influence the outcome.
 
+
+> Related: [How AI Changes Software Architecture](/blog/how-ai-changes-software-architecture/)
+
+
 ## Building the Data Foundation AI Requires
 
 AI models are only as good as the data they consume. Before investing in sophisticated analytics, you need clean, connected, and consistently structured data. Here is what that looks like in practice.
@@ -45,6 +49,10 @@ AI analytics is not one capability. It is a collection of techniques applied to 
 **Anomaly detection for operations.** Train an autoencoder or isolation forest model on normal operational data (server metrics, transaction volumes, manufacturing sensor readings) and flag deviations in real time. This catches issues that rule-based alerts miss because the AI learns what "normal" looks like and detects subtle deviations that no human would write a rule for.
 
 **Demand forecasting for inventory.** Time series models like Prophet or DeepAR can predict demand at the SKU level, accounting for seasonality, promotions, external events, and trend shifts. Accurate demand forecasting reduces both overstock (carrying costs) and stockouts (lost sales), typically improving inventory turnover by 15-25%.
+
+
+> See also: [AI Chatbots vs AI Assistants: Choosing the Right Approach](/blog/ai-chatbots-vs-ai-assistants-choosing-the-right-approach/)
+
 
 ## Choosing Between Build, Buy, and Hybrid Approaches
 

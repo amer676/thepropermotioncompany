@@ -18,6 +18,10 @@ Accessibility lawsuits in the United States have increased dramatically. In 2023
 
 The cost of a lawsuit ranges from $10,000-150,000 in legal fees and settlements for a single case. The cost of building accessibility correctly from the start is typically 5-10% of the total development budget. The math is clear.
 
+
+> Related: [Why Big Software Redesigns Almost Always Fail](/blog/why-big-software-redesigns-almost-always-fail/)
+
+
 ## WCAG 2.1 AA: The Practical Standard for Business Applications
 
 The Web Content Accessibility Guidelines (WCAG) define three conformance levels: A (minimum), AA (standard), and AAA (enhanced). For business applications, **WCAG 2.1 Level AA** is the target. It is what courts reference, what procurement requirements specify, and what balances thoroughness with feasibility.
@@ -49,6 +53,10 @@ Design a custom focus indicator that is visible against all background colors in
 **Keyboard traps must be eliminated.** A keyboard trap occurs when a user can tab into a component but cannot tab out. Modal dialogs are the most common offender. When a modal opens, focus should move to the modal. The user should be able to tab through all interactive elements in the modal. Pressing Escape should close the modal and return focus to the element that triggered it. Focus should not escape to elements behind the modal while it is open.
 
 **Custom components need keyboard patterns.** If you build custom dropdown menus, date pickers, tabs, or accordions, follow the WAI-ARIA Authoring Practices patterns. A custom dropdown should open with Enter or Space, navigate options with arrow keys, select with Enter, and close with Escape. Do not invent new keyboard patterns. Users and assistive technologies expect standard patterns.
+
+
+> See also: [Accessibility in Software Design: Requirements and Implementation](/blog/accessibility-in-software-design-requirements-and-implementation/)
+
 
 ## ARIA Attributes: When HTML Is Not Enough
 

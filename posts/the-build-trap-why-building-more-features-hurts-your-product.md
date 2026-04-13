@@ -16,6 +16,10 @@ The Standish Group found that 64 percent of software features are rarely or neve
 
 Feature factories persist because they offer psychological safety. A product manager who says "we shipped 15 features this quarter" has a clear, defensible narrative. A product manager who says "we shipped 3 features and ran 12 experiments, 8 of which showed no impact" has a harder story to tell, even though the second approach produces dramatically better products.
 
+
+> Related: [Building a Product Roadmap That Survives Contact with Reality](/blog/building-a-product-roadmap-that-survives-contact-with-reality/)
+
+
 ## The Hidden Costs of Feature Accumulation
 
 Every feature has four costs, only one of which is visible at the time of the build decision:
@@ -41,6 +45,10 @@ Escaping the build trap requires shifting from output metrics (features shipped,
 **Set a "kill threshold" for every feature before building it.** Define the usage or impact metric that justifies the feature's existence. "If fewer than 20 percent of target users adopt this feature within 60 days of launch, we will remove it." This single practice changes the conversation from "what should we build?" to "what evidence would prove this is worth keeping?"
 
 **Allocate 20 percent of engineering capacity to reducing complexity.** Dedicate one sprint in five to removing unused features, simplifying the codebase, improving performance, and paying down technical debt. This investment pays for itself by increasing the velocity of the remaining 80 percent.
+
+
+> See also: [How to Run Product Demos That Close Deals](/blog/how-to-run-product-demos-that-close-deals/)
+
 
 ## How to Say No to Feature Requests Without Losing Stakeholders
 

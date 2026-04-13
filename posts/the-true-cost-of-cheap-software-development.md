@@ -16,6 +16,10 @@ The effective cost comparison is not $80,000 versus $42,000. It is $80,000 versu
 
 We have seen this play out across dozens of engagements where clients come to us after a failed initial build. The rebuild typically costs 80 to 120 percent of what the original project would have cost with a competent team, and the total expenditure (failed build plus rebuild) is 150 to 250 percent of the original competent-team quote.
 
+
+> Related: [Why Software Rewrites Fail and How to Do Them Right](/blog/why-software-rewrites-fail-and-how-to-do-them-right/)
+
+
 ## The Seven Hidden Costs of Budget Development
 
 Beyond the obvious quality issues, cheap development creates costs that are invisible at the time of the decision but material to the business.
@@ -49,6 +53,10 @@ You can identify budget development risk before signing a contract. Watch for th
 **Unusually fast timeline estimates.** If a project that two other teams estimated at 16 weeks is quoted at 6 weeks, the budget team is either significantly more efficient (unlikely) or planning to cut corners that the other teams priced in (likely).
 
 **No discussion of post-launch support.** What happens after the code is delivered? Who fixes bugs? Who handles server issues? Who deploys updates? If the contract ends at code delivery, you inherit a system that nobody is responsible for maintaining.
+
+
+> See also: [How to Budget for Ongoing Software Maintenance](/blog/how-to-budget-for-ongoing-software-maintenance/)
+
 
 ## What Smart Investment in Software Development Looks Like
 

@@ -16,6 +16,10 @@ The architecture has three components. **Knowledge ingestion** processes your do
 
 The quality bottleneck is your knowledge base, not the AI. If your articles are outdated, incomplete, or poorly structured, the AI will generate responses that are outdated, incomplete, or poorly structured -- but with more confidence than a search results page. Invest in knowledge base quality as a prerequisite to AI deployment: audit articles for accuracy, fill coverage gaps for common questions, and establish an update cadence.
 
+
+> Related: [AI Chatbots vs AI Assistants: Choosing the Right Approach](/blog/ai-chatbots-vs-ai-assistants-choosing-the-right-approach/)
+
+
 ## Intelligent Ticket Classification and Routing
 
 Before AI, ticket routing was based on simple rules: keywords in the subject line, the form category the customer selected, or round-robin assignment. These approaches misroute 15-25% of tickets, adding unnecessary back-and-forth and frustrating customers.
@@ -39,6 +43,10 @@ The draft quality depends on context richness. Feed the AI: the current conversa
 **Conversation summarization** helps when tickets are escalated between agents. Instead of the receiving agent reading a 20-message thread, the AI generates a summary: "Customer reported that CSV exports fail for date ranges exceeding 6 months. Agent Sarah attempted the standard fix (clearing cache, regenerating the report). Issue persists. Customer's account has 2.3 million records in the affected date range, which may exceed the export limit." This summary gives the receiving agent full context in 10 seconds rather than 5 minutes.
 
 **Similar ticket surfacing** shows agents how similar issues were resolved in the past. When an agent opens a ticket, the AI searches historical tickets for similar problems and presents the top 3-5 matches with their resolution steps. This is especially valuable for new agents who haven't yet built the pattern recognition that experienced agents develop over years.
+
+
+> See also: [AI for Healthcare: Applications, Compliance, and Implementation](/blog/ai-for-healthcare-applications-compliance-and-implementation/)
+
 
 ## Sentiment Tracking and Proactive Intervention
 

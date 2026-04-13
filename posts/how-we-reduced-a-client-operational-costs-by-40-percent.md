@@ -18,6 +18,10 @@ Invoicing was disconnected from fulfillment. The accounting team generated invoi
 
 The error rate across this process chain was approximately 4.5%. For a company processing 2,500 orders per day, that meant 112 orders per day with some form of error: wrong item shipped, wrong quantity, wrong address, missed order, duplicate shipment, or invoicing discrepancy. Each error cost an average of $35 to resolve (customer service time, return shipping, reshipment, credit issuance), totaling approximately $1.4 million annually in error correction costs alone.
 
+
+> Related: [Software for Franchise Operations: Multi-Location Management](/blog/software-for-franchise-operations-multi-location-management/)
+
+
 ## Discovery: Mapping the Cost Structure
 
 Our two-week discovery phase focused on quantifying where money was being spent and where errors were being introduced. We shadowed operations staff at two of the four warehouses, interviewed 14 team members across operations, customer service, and accounting, and analyzed 6 months of order and error data.
@@ -45,6 +49,10 @@ The inventory management module replaced the four warehouse spreadsheets with a 
 The shipping module integrated with FedEx, UPS, and three regional LTL carriers via their APIs. When an order was ready to ship, the system automatically rate-shopped across all carriers based on package dimensions, weight, destination, and delivery window. The warehouse team member selected the recommended carrier with one click (or overrode it with a reason code), and the label printed automatically. The 3 to 4 hours per day of manual label generation dropped to near zero.
 
 The invoicing module triggered automatically when the shipping carrier confirmed pickup. Invoices were generated within 15 minutes of shipment, eliminating the 24 to 48 hour lag. The system matched invoices to purchase orders and flagged discrepancies for review before sending, catching most billing disputes before they reached the customer.
+
+
+> See also: [Building Internal Tools Your Team Will Actually Adopt](/blog/building-internal-tools-your-team-will-actually-adopt/)
+
 
 ## Implementation Approach
 

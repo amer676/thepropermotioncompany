@@ -18,6 +18,10 @@ The ingestion layer must handle:
 
 **Buffering for downstream reliability.** Raw telemetry events are written to a message broker (Apache Kafka is the standard choice for this scale and use case) immediately after ingestion. Kafka provides durable, ordered, replayable storage of the event stream, decoupling ingestion from processing. If the processing layer goes down, events accumulate in Kafka and are processed when the service recovers. No data is lost.
 
+
+> Related: [Building On-Demand Service Platforms: Architecture and Strategy](/blog/building-on-demand-service-platforms-architecture-and-strategy/)
+
+
 ## Real-Time Processing and Event Detection
 
 The raw telemetry stream is consumed by a stream-processing layer that transforms positions into actionable events. Apache Flink or Kafka Streams are the natural choices for stateful stream processing at this scale.
@@ -39,6 +43,10 @@ Telematics data has a steep access-frequency curve. Today's data is queried cons
 **Warm storage (recent, last 90 days):** TimescaleDB (PostgreSQL with time-series extensions) or ClickHouse stores detailed telemetry data — every position, every event, every trip. Access patterns include time-range queries ("show me all positions for vehicle 42 on March 15"), aggregation queries ("average daily mileage by vehicle for the last month"), and geospatial queries ("which vehicles were within 5 km of this address between 2 PM and 4 PM?"). TimescaleDB's hypertable partitioning and ClickHouse's columnar compression both handle the query patterns and data volume efficiently.
 
 **Cold storage (archive, beyond 90 days):** Parquet files on object storage (S3, Google Cloud Storage). The data is compressed, partitioned by date and fleet, and queryable via Athena, BigQuery, or Spark for ad-hoc analysis. Retention requirements vary by regulation: FMCSA requires ELD records for six months, and some insurance programs require telematics data retention for the policy period plus a claims window.
+
+
+> See also: [Fleet Management Software: Tracking, Dispatch, and Compliance](/blog/fleet-management-software-tracking-dispatch-and-compliance/)
+
 
 ## The Dispatch and Operations Dashboard
 

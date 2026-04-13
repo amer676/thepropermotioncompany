@@ -18,6 +18,10 @@ The most common mistake in vendor selection is starting with a Google search and
 
 **Engagement model**: Fixed-price contracts work for well-defined projects with stable requirements. Time-and-materials contracts work for projects where requirements will evolve. Dedicated team models work for long-term product development. The right model depends on your project, not on the vendor's preference.
 
+
+> Related: [The Complete Guide to Evaluating Software Development Partners](/blog/the-complete-guide-to-evaluating-software-development-partners/)
+
+
 ## Portfolio and Case Study Evaluation
 
 A company's past work is the strongest predictor of future performance. But evaluating a portfolio requires more depth than glancing at screenshots.
@@ -47,6 +51,10 @@ Evaluating technical competence is difficult if you are not a technologist yours
 **Security practices**: Ask about their approach to application security. You should hear about input validation, authentication/authorization design, encryption, dependency scanning, and security testing. If security is not mentioned until you bring it up, it is probably not embedded in their process.
 
 **Post-launch support**: What happens after the software launches? Ask about bug-fix SLAs, monitoring and alerting, on-call support, and the process for handling urgent production issues. Firms that treat launch as the finish line leave you vulnerable.
+
+
+> See also: [How to Evaluate a Software Development Company Portfolio](/blog/how-to-evaluate-a-software-development-company-portfolio/)
+
 
 ## Evaluating Proposals: Beyond the Bottom Line
 

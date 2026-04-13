@@ -10,6 +10,10 @@ Netscape's decision to rewrite its browser from scratch in 1998 is the canonical
 
 The modern variation of this effect is what you might call "architecture astronautics." Teams adopt microservices, event sourcing, CQRS, and domain-driven design all at once in the new system, when the old monolith's real problem was just poor module boundaries. Over-engineering the replacement introduces new categories of complexity that didn't exist before.
 
+
+> Related: [Designing Data-Heavy Applications: Tables, Charts, and Dashboards](/blog/designing-data-heavy-applications-tables-charts-and-dashboards/)
+
+
 ## Why the Old System Knows More Than You Think
 
 A production codebase that has been running for years contains an enormous amount of encoded knowledge. Every odd conditional, every seemingly redundant check, every piece of business logic that looks wrong -- these often represent hard-won lessons from production incidents, customer edge cases, and regulatory requirements.
@@ -25,6 +29,10 @@ One of the most underestimated costs of a big redesign is the organizational ove
 This creates a vicious cycle. Bugs fixed in the old system need to be ported to the new one, but the architectures are different, so "porting" becomes "reimplementing." New features requested by customers get built in the old system because the new one isn't ready, which means the target the new system needs to hit keeps moving. Teams report spending 30 to 40 percent of their rewrite effort just keeping the new system at feature parity with the ongoing changes to the old one.
 
 The morale effects are equally damaging. The team working on the old system feels like they're on a sinking ship. The team working on the new system faces constant pressure to ship faster while the company runs on aging infrastructure. When the rewrite inevitably takes longer than planned, executive patience runs thin, and the project gets cancelled or rushed to a premature launch.
+
+
+> See also: [Web Typography Guide for Business Applications](/blog/web-typography-guide-for-business-applications/)
+
 
 ## When Redesigns Actually Succeed (and Why)
 

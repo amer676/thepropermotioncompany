@@ -22,6 +22,10 @@ During discovery, extract these five pieces of information:
 
 5. **Their definition of success.** Ask: "If you implement a solution and it works perfectly, what does that look like in 6 months?" Their answer becomes the anchor for your entire demo narrative.
 
+
+> Related: [Building a Product Roadmap That Survives Contact with Reality](/blog/building-a-product-roadmap-that-survives-contact-with-reality/)
+
+
 ## Structuring the Demo Around a Narrative Arc
 
 Great demos tell a story. The story has three acts: the current pain, the transformation, and the new reality.
@@ -52,6 +56,10 @@ Nothing destroys credibility faster than a demo that breaks. A loading spinner, 
 **Prepare for the three most likely technical failures.** Internet drops: have a pre-recorded video of the key workflow as backup. Slow loading: know which screens are heavy and narrate through wait times. Unexpected data: verify all sample data the morning of the demo. If a critical integration is down, have screenshots ready.
 
 **Have a backup laptop configured and tested.** If your primary machine fails, you should be able to switch within 60 seconds. This seems excessive until the one time it saves you a $200,000 deal.
+
+
+> See also: [Writing Product Specifications That Developers Actually Build From](/blog/writing-product-specifications-that-developers-actually-build-from/)
+
 
 ## Handling Objections Without Losing Momentum
 

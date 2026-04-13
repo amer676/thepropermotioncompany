@@ -20,6 +20,10 @@ The foundation of any billing system is its data model. Get this right and every
 
 **Payments** record money received. Link payments to invoices, but do not assume a one-to-one relationship. A single payment can cover multiple invoices (a customer catches up on past-due invoices with one wire transfer), and a single invoice can be covered by multiple payments (a partial payment followed by the remainder).
 
+
+> Related: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
+
 ## Handling Usage-Based and Hybrid Billing
 
 Usage-based billing (charging per API call, per GB stored, per transaction processed) adds significant complexity because the billable amount is not known until the end of the billing period.
@@ -48,6 +52,10 @@ Configure your product catalog with tax codes that map to the tax service's clas
 **Store tax details at the line item level.** Record the tax rate, tax amount, tax jurisdiction, and the tax service's transaction ID for each line item. This audit trail is essential for tax filing and for responding to tax authority inquiries.
 
 **Automate tax filing** if your volume justifies it. Services like Avalara Returns can automatically file sales tax returns in all jurisdictions where you have obligations. Below approximately $50,000 in monthly taxable revenue, manual quarterly filing may be manageable. Above that threshold, automation prevents missed filings and associated penalties.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Payment Processing and Dunning
 

@@ -18,6 +18,10 @@ Check for missing indexes by examining slow query logs. PostgreSQL's `pg_stat_us
 
 **Unbounded queries** are the third. An endpoint that returns `SELECT * FROM events WHERE user_id = ?` without a `LIMIT` clause will eventually return 50,000 rows for a power user who has been active for two years. Always paginate. Always limit result sets. Default to returning 25-50 items and let the client request more explicitly.
 
+
+> Related: [Web Application Performance Optimization Guide](/blog/web-application-performance-optimization-guide/)
+
+
 ## Front-End Bundle Size and Loading Strategy
 
 A 4MB JavaScript bundle takes 3-4 seconds to download on a fast connection and 12-15 seconds on a mobile connection. During that time, the user sees a blank screen or a loading spinner. Every library, polyfill, and utility you import contributes to this budget.
@@ -41,6 +45,10 @@ The time between a user's click and the server's response is where perceived per
 **Compress responses.** Enable gzip or brotli compression on your web server. A 500KB JSON response compresses to 50-80KB, reducing transfer time by 80-90%. This is a one-line configuration change in Nginx (`gzip on;`) or Express (`app.use(compression())`), and it benefits every endpoint immediately.
 
 **Paginate and filter on the server.** An endpoint that returns 10,000 records and lets the front end handle pagination and filtering is doing 100x more work than necessary. Accept `page`, `per_page`, and filter parameters in the API. Return only the requested subset. Include pagination metadata (total count, total pages, current page) in the response headers or body.
+
+
+> See also: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
 
 ## Rendering Performance and Layout Thrashing
 

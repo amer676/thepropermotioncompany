@@ -16,6 +16,10 @@ The first step is understanding which WMS capabilities your operation actually n
 
 **Third-party logistics (3PL).** Multi-client operations where each client has unique requirements. Critical features: client-level billing (storage fees, pick fees, packing fees calculated per client), client-specific inventory segregation, client-branded packing slips and shipping labels, client portal access for inventory visibility, and multi-client wave planning that optimizes across clients while maintaining segregation.
 
+
+> Related: [Custom Software for Logistics and Supply Chain Companies](/blog/custom-software-for-logistics-and-supply-chain-companies/)
+
+
 ## Off-the-Shelf WMS Options and Their Limitations
 
 The commercial WMS market spans from $500/month cloud tools to $2M+ enterprise implementations.
@@ -39,6 +43,10 @@ Custom development is justified when specific conditions are met.
 **Complex multi-system integration.** If your WMS needs real-time bidirectional integration with a custom ERP, a proprietary order management system, custom material handling equipment (conveyors, sorters, AS/RS), and multiple e-commerce platforms simultaneously, the integration effort for a commercial WMS often exceeds the effort of building the core WMS itself. A custom system designed around your integration requirements from the start is often simpler to maintain.
 
 **3PL operations with unique billing models.** If your 3PL billing logic involves complex rate structures, custom surcharges, performance-based pricing, or client-specific SLA tracking with automated penalty calculations, building this into a custom WMS is often easier than extending a commercial system's billing module.
+
+
+> See also: [AI for Logistics: Route Optimization, Demand Forecasting, and Operations](/blog/ai-for-logistics-route-optimization-demand-forecasting-and-operations/)
+
 
 ## Architecture for a Custom WMS
 

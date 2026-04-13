@@ -16,6 +16,10 @@ The second framing does three things. It establishes a shared goal that everyone
 
 Prepare a one-sentence business justification for every major design decision before the meeting. If you cannot articulate why a decision serves the business or the user, it is worth questioning whether the decision is correct.
 
+
+> Related: [Why Big Software Redesigns Almost Always Fail](/blog/why-big-software-redesigns-almost-always-fail/)
+
+
 ## Control the Fidelity to Control the Feedback
 
 One of the most common presentation mistakes is showing high-fidelity mockups when you want strategic feedback, or showing low-fidelity wireframes when stakeholders need to approve visual direction. The fidelity of what you present directly shapes what kind of feedback you receive.
@@ -39,6 +43,10 @@ Instead, structure your presentation as a narrative. Follow a specific user thro
 Then show each screen in the context of Sarah's journey, explaining what she is thinking, feeling, and trying to accomplish at each step. Highlight the moments where your design reduces friction, prevents errors, or accelerates her task. When you reach a design decision that might seem unusual, explain it in terms of Sarah's context: "We moved the reorder button above the fold because Sarah's most common task is reordering the same parts. She should not have to scroll to do the thing she does three times a day."
 
 This narrative approach forces stakeholders to evaluate the design through the lens of user experience rather than personal preference. It is much harder to say "I don't like the button placement" when the presentation has just demonstrated exactly why that placement serves the user.
+
+
+> See also: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
 
 ## Anticipate Objections and Pre-Empt Them
 

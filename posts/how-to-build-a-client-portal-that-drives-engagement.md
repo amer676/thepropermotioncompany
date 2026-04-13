@@ -16,6 +16,10 @@ We built a portal for an architecture firm where the landing page showed a singl
 
 The first-screen test is simple: if a client can glance at the portal for five seconds and know the answer to their primary question, you have built the right landing page.
 
+
+> Related: [Why Fixed-Price Software Development Projects Fail](/blog/why-fixed-price-software-development-projects-fail/)
+
+
 ## Self-Service Actions That Replace Email Chains
 
 The portal becomes indispensable when it lets clients do things they previously had to email about. Every "Can you send me..." or "Can you update my..." email is a candidate for portal self-service.
@@ -50,6 +54,10 @@ Design a notification system with three tiers:
 **In-app notifications** appear as a badge or bell icon within the portal for low-priority updates: a team member left a comment, a minor status change occurred, a new feature was released. These provide context during the client's next visit without cluttering their inbox.
 
 Let clients control their notification preferences granularly. Some clients want an email for every status change. Others only want to hear about problems. A preference center that lets them toggle each notification type by channel (email, SMS, in-app) respects their attention and builds trust.
+
+
+> See also: [Agile Software Development Explained for Business Leaders](/blog/agile-software-development-explained-for-business-leaders/)
+
 
 ## Document Management That Eliminates the Shared Drive
 

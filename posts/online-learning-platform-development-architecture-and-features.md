@@ -14,6 +14,10 @@ AWS MediaConvert, Mux, or Cloudflare Stream are solid managed options for video 
 
 For the data layer, PostgreSQL handles the relational needs (users, courses, enrollments, permissions) while a document store or JSONB columns handle flexible content schemas. Learning content is inherently hierarchical -- courses contain modules, modules contain lessons, lessons contain blocks (text, video, quiz, assignment) -- and the schema needs to accommodate different content types without a rigid table-per-type structure.
 
+
+> Related: [AI for Education Technology: Personalized Learning at Scale](/blog/ai-for-education-technology-personalized-learning-at-scale/)
+
+
 ## Content Delivery and the Learner Experience
 
 The learner-facing interface has two critical paths: content consumption and progress tracking.
@@ -35,6 +39,10 @@ For quiz delivery, randomize question order and answer order per attempt to disc
 Assignment submissions -- file uploads, text responses, project URLs -- require a review workflow. Build a queue-based system where submitted assignments enter a review pipeline, reviewers (instructors or peers) are notified, and the assignment status progresses through submitted, in-review, graded, and returned states. Include rubric support so grading criteria are transparent and consistent across reviewers.
 
 Certificate generation should be automated and verifiable. Generate PDF certificates using a templating engine (Puppeteer rendering an HTML template to PDF works well), store them in object storage, and assign each certificate a unique verification URL. Embed the verification URL as a QR code on the certificate itself. When someone scans it or visits the URL, they see the learner's name, course title, completion date, and issuing organization. This verification step takes minimal effort to implement and dramatically increases the perceived value of your certificates.
+
+
+> See also: [Custom Software for Schools and Educational Institutions](/blog/custom-software-for-schools-and-educational-institutions/)
+
 
 ## Administrative Tools and Multi-Tenancy
 

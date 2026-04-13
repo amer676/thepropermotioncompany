@@ -16,6 +16,10 @@ The search input is the entry point to the entire search experience. Its design 
 
 **Keyboard shortcut**: Power users expect Cmd+K (Mac) or Ctrl+K (Windows) to focus the search input. This convention has been popularized by tools like Slack, VS Code, Notion, and Linear. Implementing it takes minimal effort and dramatically improves the experience for users who spend hours in your application. Display the shortcut hint in or near the search input (a subtle "Cmd+K" badge) to educate users who do not yet know it is available.
 
+
+> Related: [Designing Onboarding Flows That Reduce Churn](/blog/designing-onboarding-flows-that-reduce-churn/)
+
+
 ## Autocomplete and Suggestions: Guiding Users Before They Search
 
 Autocomplete transforms search from a recall task (the user must remember the exact term) into a recognition task (the user selects from a list of options). Recognition is cognitively easier and faster than recall, which is why autocomplete consistently improves search success rates.
@@ -45,6 +49,10 @@ The search results page is where users make decisions. Every element on this pag
 - Suggest removing filters ("Try removing the 'Status: Active' filter")
 - Offer alternative actions ("Create a new customer named 'Acme'?")
 - Link to support or help documentation if the search target might not exist yet
+
+
+> See also: [Data Dashboard Design: Principles for Complex Applications](/blog/data-dashboard-design-principles-for-complex-applications/)
+
 
 ## Filters and Faceted Search
 

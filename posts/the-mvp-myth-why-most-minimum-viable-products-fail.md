@@ -16,6 +16,10 @@ This reinterpretation creates three failure modes:
 
 The common thread is that these teams are building products when they should be testing hypotheses. The distinction matters because it changes what you build, how you evaluate results, and when you decide to invest further.
 
+
+> Related: [Transitioning from Services to Product: A Strategic Guide](/blog/transitioning-from-services-to-product-a-strategic-guide/)
+
+
 ## The Hypothesis-First Alternative
 
 Before writing a line of code, articulate the specific hypothesis you are testing. A hypothesis is not "people want a better project management tool." A hypothesis is testable and falsifiable:
@@ -42,6 +46,10 @@ The most capital-efficient approach to product validation moves through layers o
 **Layer 3: Willingness-to-pay validation ($200-$2,000, 2-4 weeks).** Create a landing page that describes the product, shows the prototype screenshots, and includes a pricing page with a signup or waitlist button. Drive targeted traffic through Google Ads, LinkedIn Ads, or direct outreach to your target market. Measure how many people click the signup button and, critically, how many enter payment information (even if you do not charge them yet). A landing page that converts at 2-5% of visitors to signups suggests genuine demand. Tools like Carrd ($19/year) or a simple static site with Stripe Checkout handle this without custom development.
 
 **Layer 4: The actual MVP ($5,000-$50,000, 4-8 weeks).** Only after Layers 1-3 confirm your hypothesis do you build software. And the software you build is focused on one workflow, not a feature set. The freelance invoicing tool MVP is: connect a time tracking tool (Toggl, Harvest) via API, transform time entries into line items, generate a professional PDF invoice, and send it to the client via email. That is it. No dashboard, no analytics, no multiple invoice templates, no expense tracking. One workflow, done well, for users who have already told you they want it and shown willingness to pay for it.
+
+
+> See also: [Software Project Management for Non-Technical Founders](/blog/software-project-management-for-non-technical-founders/)
+
 
 ## What "Viable" Actually Means
 

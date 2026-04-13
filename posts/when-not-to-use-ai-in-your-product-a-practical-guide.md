@@ -19,6 +19,10 @@ The same logic applies to:
 
 Before reaching for AI, ask: "Does this problem have exactly one correct answer?" If yes, use conventional logic. It will be faster, cheaper, and more reliable.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## When the Cost of Being Wrong Is Too High
 
 Large language models are probabilistic. They generate the most likely next token, not the objectively correct one. For many applications, this is fine. For others, it is disqualifying.
@@ -40,6 +44,10 @@ Every AI feature you ship becomes a system you have to maintain. And AI systems 
 **Prompt brittleness.** If your feature relies on prompting a language model, you have a system where small changes to input phrasing can produce wildly different outputs. This makes testing exponentially harder than testing conventional code. You cannot write a unit test that asserts "the output is correct" when the output is a free-text paragraph. You end up building evaluation harnesses, maintaining golden datasets, and running statistical tests on output quality. All of this is real engineering work that competes with feature development for resources.
 
 **Vendor dependency.** If you are using GPT-4, Claude, or Gemini through an API, you are building on a foundation that changes without your consent. OpenAI has deprecated models, changed pricing, and altered behavior between versions. Your "AI feature" is actually a feature that depends on a third party's model continuing to behave the way it did when you built the integration. This is a fundamentally different risk profile than depending on a database or a web framework.
+
+
+> See also: [Build vs Buy for AI Features: A Complete Decision Guide](/blog/build-vs-buy-for-ai-features-a-complete-decision-guide/)
+
 
 ## Problems That Are Better Solved by Design
 

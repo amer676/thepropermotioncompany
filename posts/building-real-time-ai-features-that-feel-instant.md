@@ -39,6 +39,10 @@ app.post('/api/chat', async (req, res) => {
 
 **Handling structured output during streaming.** When the AI returns JSON, you cannot parse it until it is complete. Two solutions: use a streaming JSON parser like jsonrepair that handles partial JSON gracefully, or request the model to output in a streamable format where individual items are separated by newlines (JSON Lines), allowing you to parse and render each item as it arrives.
 
+
+> Related: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
+
 ## Intelligent Caching and Pre-computation
 
 Not every AI request needs to hit the model. Strategic caching reduces both latency and cost.
@@ -62,6 +66,10 @@ Optimistic UI is a standard pattern for traditional CRUD operations, but it requ
 **Background processing with notifications.** For AI tasks that genuinely take 10 or more seconds (document analysis, image generation, complex reasoning chains), do not block the user. Accept the request, return immediately with a task ID, and process in the background. Notify the user via an in-app notification, a subtle toast, or a badge indicator when the result is ready. This pattern works well for features like "analyze this contract" or "generate a marketing plan" where users can do other work while waiting.
 
 **Cancellation and interruption.** Always provide a way to cancel an in-progress AI request. For streaming responses, implement an abort controller that terminates the stream. For background tasks, support cancellation via the task ID. Users who cannot cancel a slow request feel trapped, which destroys trust in the feature.
+
+
+> See also: [AI Chatbots vs AI Assistants: Choosing the Right Approach](/blog/ai-chatbots-vs-ai-assistants-choosing-the-right-approach/)
+
 
 ## Edge Inference and Model Selection
 

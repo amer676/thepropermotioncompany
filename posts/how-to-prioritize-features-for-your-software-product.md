@@ -18,6 +18,10 @@ Before discussing frameworks, it is worth understanding why ad hoc prioritizatio
 
 A prioritization framework does not eliminate these biases, but it makes them visible and provides a structured counterargument.
 
+
+> Related: [The Build Trap: Why Building More Features Hurts Your Product](/blog/the-build-trap-why-building-more-features-hurts-your-product/)
+
+
 ## The RICE Framework: A Quantitative Starting Point
 
 RICE (Reach, Impact, Confidence, Effort) is the most widely used quantitative prioritization framework, and for good reason: it forces explicit estimation of the variables that matter.
@@ -64,6 +68,10 @@ We recommend a two-pass prioritization process:
 
 1. Score everything with RICE.
 2. Overlay strategic alignment. Remove or deprioritize features that do not align. Add foundational work that enables aligned features. Adjust the rank order based on strategic weight (a high-RICE, low-alignment feature ranks below a moderate-RICE, high-alignment feature).
+
+
+> See also: [How to Run Product Demos That Close Deals](/blog/how-to-run-product-demos-that-close-deals/)
+
 
 ## Handling Stakeholder Input Without Losing Control
 

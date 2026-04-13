@@ -22,6 +22,10 @@ A multi-step workflow is necessary when:
 
 Attempting to force these scenarios into a single prompt typically results in unreliable outputs, hallucinations, and brittle systems that work 80% of the time but fail catastrophically on the remaining 20%.
 
+
+> Related: [OpenAI API Integration Guide for Business Applications](/blog/openai-api-integration-guide-for-business-applications/)
+
+
 ## Core LangChain Architecture Patterns
 
 LangChain provides several composition patterns for building workflows. Understanding which pattern fits your use case prevents over-engineering simple tasks and under-engineering complex ones.
@@ -51,6 +55,10 @@ RAG is the most common multi-step AI workflow in business applications, so it de
 **Source attribution builds trust.** Every generated answer should cite the specific documents and sections it drew from. Implement this by including chunk metadata (document title, page number, section header) in the LLM prompt and instructing the model to cite its sources. Validate citations in a post-processing step by checking that the claimed source text actually appears in the retrieved chunks.
 
 **Evaluation is essential.** Build an evaluation dataset of 50-100 question-answer pairs with known correct answers and the documents that contain them. Measure retrieval recall (did the correct document appear in the retrieved set?), answer correctness (does the generated answer match the ground truth?), and faithfulness (does the answer only contain information from the retrieved documents?). Run this evaluation suite on every pipeline change.
+
+
+> See also: [Fine-Tuning vs Prompt Engineering: A Decision Framework](/blog/fine-tuning-vs-prompt-engineering-a-decision-framework/)
+
 
 ## Error Handling and Reliability Patterns
 

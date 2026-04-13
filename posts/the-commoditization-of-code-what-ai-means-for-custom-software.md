@@ -14,6 +14,10 @@ AI is also effective at translation tasks: converting a React component from cla
 
 What this means in practice: the portion of a custom software project that involves writing standard, pattern-following code -- which typically accounts for 30-40 percent of total development effort -- is getting dramatically cheaper. A feature that took a developer two weeks might take one week with AI assistance, not because the developer is coding twice as fast but because they spend less time on the mechanical parts and more time on the parts that require judgment.
 
+
+> Related: [The Future of AI in Software Development: What Businesses Should Know](/blog/the-future-of-ai-in-software-development-what-businesses-should-know/)
+
+
 ## The Parts That Remain Stubbornly Expensive
 
 Here is what AI code generation does not do well, and likely will not do well for the foreseeable future.
@@ -35,6 +39,10 @@ The commoditization of code changes the cost structure of custom software, but n
 **Quality assurance becomes more critical**: AI-generated code introduces subtle bugs at a rate that varies by complexity. For boilerplate code, AI output is reliable. For complex business logic, it often looks correct but handles edge cases incorrectly. This means that code review, testing, and QA need to be more thorough, not less. The developer's role shifts from writing code to reviewing, testing, and refining code -- a higher-skill activity that commands at least the same compensation.
 
 **Maintenance and evolution costs remain unchanged**: AI can help write the initial version of a feature, but evolving that feature six months later -- when the requirements have shifted, the data model has changed, and the original context has been lost -- still requires a developer who understands the system holistically. Maintenance has always been the majority of software's lifetime cost (typically 60-80 percent), and that ratio is unlikely to change.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## The Competitive Implications for Businesses
 

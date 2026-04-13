@@ -20,6 +20,10 @@ Examine your last 20 client projects. Look for repeated patterns:
 
 The critical filter is willingness to pay. Services clients who say "I wish this existed" are expressing a preference, not a commitment. Before investing in a product, validate willingness to pay through concrete actions: "Would you pay $500/month for this? Would you sign a letter of intent? Would you pre-pay for a year of access at a discount?" Pre-sales, not surveys, validate product-market fit.
 
+
+> Related: [Software Project Management for Non-Technical Founders](/blog/software-project-management-for-non-technical-founders/)
+
+
 ## The Funding Model: Services as Your Venture Capital
 
 The single greatest advantage a services company has over a startup is cash flow. You do not need venture capital. Your services revenue is your venture capital. But you must allocate it deliberately.
@@ -41,6 +45,10 @@ The relationship between services revenue and product development creates a spec
 **The "extract, don't embed" approach.** Do not try to run the product inside client projects. Instead, build client solutions using your standard approach, and then extract generalizable components into the product codebase afterward. The extraction process forces you to remove client-specific assumptions, which produces better product code. Going the other direction — embedding a product prototype in a client project — creates coupling that makes both the client project and the product harder to evolve.
 
 **Pilot programs with willing clients.** Some clients will genuinely want to use your product. Structure these as formal pilot agreements with clear expectations: the product is early-stage, there will be bugs, feedback is expected and valued, and the pilot pricing reflects the product's maturity. Formality matters because it sets expectations. An informal "hey, try this thing we built" arrangement leads to frustration when the product does not meet production expectations.
+
+
+> See also: [When to Pivot vs When to Persevere: A Framework for Product Decisions](/blog/when-to-pivot-vs-when-to-persevere-a-framework-for-product-decisions/)
+
 
 ## Organizational Design for Dual Operations
 

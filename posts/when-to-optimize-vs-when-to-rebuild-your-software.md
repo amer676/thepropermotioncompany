@@ -12,6 +12,10 @@ These are problems with clear, bounded solutions. Adding database indexes, intro
 
 The key diagnostic is whether the pain is localized. If you can point to three or four specific bottlenecks and each has a known fix, optimization is almost certainly the right call. Profile your application with real production data. Tools like pg_stat_statements for PostgreSQL, Chrome DevTools Performance tab, or OpenTelemetry traces will show you exactly where time is being spent. If 80% of your latency comes from 20% of your code paths, you have an optimization problem, not an architecture problem.
 
+
+> Related: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
+
 ## The Signals That Point Toward Rebuilding
 
 Rebuilding becomes the rational choice when the architecture itself has become the constraint. Here are the concrete signals we look for:
@@ -33,6 +37,10 @@ In practice, this means standing up a new service behind an API gateway or rever
 We used this approach for a logistics client whose order management system was built on a monolithic Rails 4 application. Rather than freezing feature development for eight months, we built a new order service in Elixir, connected it via a shared PostgreSQL database (with strict schema ownership boundaries), and migrated endpoints over 16 weeks. The old system never went down. The new system handled 3x the throughput on half the infrastructure cost.
 
 The strangler approach works best when you can draw clear domain boundaries. If the legacy system is a tightly coupled monolith where every feature shares database tables and session state, you will need to invest in defining those boundaries first -- which is itself a valuable exercise regardless of which path you choose.
+
+
+> See also: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
 
 ## Running the Cost-Benefit Analysis
 

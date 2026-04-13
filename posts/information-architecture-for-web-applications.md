@@ -14,6 +14,10 @@ These decisions are not cosmetic. A poorly structured object hierarchy leads to 
 
 The three pillars of web application IA are: **ontology** (what objects exist and how they relate), **taxonomy** (how objects are classified and grouped), and **choreography** (how users move through the system to accomplish goals). Each one requires deliberate design.
 
+
+> Related: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
+
 ## Designing Your Object Model Before Your Interface
 
 The most common IA mistake teams make is jumping to wireframes before defining the underlying object model. Wireframes show screens. Object models show reality. If your object model is muddled, every screen you build will inherit that confusion.
@@ -37,6 +41,10 @@ Flat navigation works when you have five sections. It collapses when you have fi
 **Activity-based** navigation groups features by workflow rather than object type. An analytics platform might organize around "Build a Report," "Schedule a Dashboard," and "Explore Data" rather than "Reports," "Dashboards," and "Data Sources." This works when users think in terms of goals rather than objects.
 
 Most complex applications combine patterns. The primary navigation might be object-oriented (Customers, Orders, Products) while a secondary navigation within each section is activity-based (View, Edit, Analyze). The key principle is consistency: whatever pattern you choose for a given level, apply it uniformly.
+
+
+> See also: [Data Dashboard Design: Principles for Complex Applications](/blog/data-dashboard-design-principles-for-complex-applications/)
+
 
 ## Labeling, Search, and the Findability Problem
 

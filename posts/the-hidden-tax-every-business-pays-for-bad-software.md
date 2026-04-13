@@ -16,6 +16,10 @@ Multiply these examples across every department --- finance, HR, operations, sal
 
 For a company with 100 employees at an average fully-loaded cost of $75 per hour, even a modest 5 percent time tax --- 2 hours per week per employee wasted on software friction --- costs $780,000 per year. That is not a rounding error. It is a significant line item hiding in plain sight.
 
+
+> Related: [Why Boring Technology Wins: The Case Against Trendy Tech Stacks](/blog/why-boring-technology-wins-the-case-against-trendy-tech-stacks/)
+
+
 ## The Error Tax: When Data Integrity Breaks Down
 
 Manual workarounds do not just waste time --- they introduce errors. Every time a human re-keys data from one system to another, there is a probability of transcription error. Individually, these errors are small: a transposed digit in a phone number, a misspelled customer name, a quantity of 100 entered as 1,000.
@@ -43,6 +47,10 @@ For a B2B application, the speed tax manifests differently but is equally costly
 **Support burden.** Slow software generates support tickets. "Is the system down?" is the most common support inquiry for applications that are not actually down --- they are just slow. Each "is it down?" ticket costs $15 to $25 to handle (acknowledgment, investigation, response), and they erode user trust even when the answer is "no, it's working normally."
 
 We have measured the impact of performance improvements on real business metrics. A logistics company whose dispatch dashboard loaded in 8 seconds reduced it to 1.2 seconds. Dispatchers went from checking the dashboard twice per shift to checking it continuously, catching scheduling conflicts 3 hours earlier on average. The company estimated the improvement saved $180,000 per year in avoided overtime and missed deliveries.
+
+
+> See also: [Why Big Software Redesigns Almost Always Fail](/blog/why-big-software-redesigns-almost-always-fail/)
+
 
 ## The Morale Tax: Bad Software Drives Away Good People
 

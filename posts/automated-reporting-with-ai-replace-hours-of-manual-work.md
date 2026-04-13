@@ -21,6 +21,10 @@ The sweet spot is reports that follow a predictable pattern but still require so
 
 A typical automated reporting pipeline has four stages: data extraction, transformation, AI-powered narrative generation, and delivery. Each stage can be built independently and connected through straightforward integrations.
 
+
+> Related: [AI Document Processing: Extract, Classify, and Automate](/blog/ai-document-processing-extract-classify-and-automate/)
+
+
 ## Building the Data Pipeline: Extraction and Transformation
 
 Before AI can write a report, it needs clean, structured data. The extraction layer pulls from your source systems; the transformation layer shapes that data into a format the AI can consume.
@@ -74,6 +78,10 @@ The prompt structure that produces the most reliable results:
 **Handling accuracy:**
 
 AI-generated reports must be verifiably accurate. Build in a validation step: after the AI generates the narrative, programmatically check that every number mentioned in the text matches the source data. Flag any discrepancies for human review. This can be done with a simple regex extraction of numbers from the generated text, compared against the input data.
+
+
+> See also: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
 
 ## Delivery: Getting Reports to the Right People at the Right Time
 

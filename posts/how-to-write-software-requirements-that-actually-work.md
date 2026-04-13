@@ -26,6 +26,10 @@ Consider these examples:
 
 The pattern is consistent: good requirements include a subject (what component or actor), a verb (what action), a measurable condition (how much, how fast, how many), and a context (under what circumstances).
 
+
+> Related: [Why the Discovery Phase Is the Most Important Part of Software Development](/blog/why-the-discovery-phase-is-the-most-important-part-of-software-development/)
+
+
 ## Functional Requirements: The What and the When
 
 Functional requirements describe what the system does in response to inputs and conditions. They are the core of any requirements document and the primary basis for development and testing.
@@ -76,6 +80,10 @@ Non-functional requirements (NFRs) define how the system performs its functions.
 - "The system complies with GDPR Article 17 (right to erasure). Upon a verified deletion request, all personal data is permanently deleted from primary storage within 30 days and from backups within 90 days."
 
 For each NFR category, define at least one requirement. The act of writing these down forces conversations about expectations that would otherwise surface as crises.
+
+
+> See also: [Why Software Rewrites Fail and How to Do Them Right](/blog/why-software-rewrites-fail-and-how-to-do-them-right/)
+
 
 ## Requirements Gathering Techniques That Surface What Stakeholders Actually Need
 

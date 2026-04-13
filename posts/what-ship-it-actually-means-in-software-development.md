@@ -12,6 +12,10 @@ These ideas were reactions to a real problem. In the 2000s, enterprise software 
 
 Shipping culture was the antidote. Get something real into the world. Measure. Learn. Iterate. The emphasis was never on shipping garbage. It was on shipping the smallest thing that could teach you something true about your users.
 
+
+> Related: [What We Learned Building Software for 50 Plus Companies](/blog/what-we-learned-building-software-for-50-plus-companies/)
+
+
 ## When Ship It Goes Wrong
 
 The corruption of shipping culture typically manifests in three ways.
@@ -35,6 +39,10 @@ Before the release, the team defines success metrics and sets up dashboards. For
 The release is gradual. The feature flag is turned on for internal users first, then a small percentage of production users, then a larger percentage, then everyone. At each stage, the team checks the dashboards for anomalies: error rate spikes, performance degradation, unexpected user behavior patterns.
 
 After the release, the team reviews the data against the hypothesis. Did checkout abandonment actually decrease? By how much? What surprised them? This review is not a formality. It is the learning that justifies shipping in the first place.
+
+
+> See also: [Why the Traditional Software Agency Model Is Broken](/blog/why-the-traditional-software-agency-model-is-broken/)
+
 
 ## Speed and Quality Are Not Opposites
 

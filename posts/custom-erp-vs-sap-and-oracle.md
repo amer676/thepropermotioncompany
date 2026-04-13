@@ -14,6 +14,10 @@ These numbers are not theoretical. A 2023 Panorama Consulting survey found that 
 
 The critical insight is that a large portion of that implementation cost goes toward configuring the vendor's software to fit your processes. If your business processes are unique enough to require heavy customization of SAP or Oracle, you may be paying enterprise software prices for what is effectively custom development done within a constrained framework.
 
+
+> Related: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
+
 ## Where Off-the-Shelf ERP Wins Decisively
 
 Custom ERP is not always the right answer. Off-the-shelf systems from SAP, Oracle, Microsoft Dynamics, or NetSuite have genuine advantages in specific scenarios:
@@ -39,6 +43,10 @@ Consider these real scenarios:
 **A logistics company** whose routing optimization is a core competitive advantage. They needed their ERP to support custom route planning, real-time vehicle tracking, and dynamic pricing based on capacity utilization. Oracle's transportation management module covered 40% of their needs; the remaining 60% required custom development within Oracle's framework, which was slower and more expensive than building a purpose-built system.
 
 **A professional services firm** with a unique project management and billing model that combines fixed-fee, time-and-materials, and outcome-based billing in ways that no PSA or ERP module supports natively. Their custom system handles complex billing rules in a fraction of the time it took to work around NetSuite's limitations.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Architecture of a Modern Custom ERP
 

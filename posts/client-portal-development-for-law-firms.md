@@ -18,6 +18,10 @@ Multi-factor authentication is non-negotiable. Implement TOTP (time-based one-ti
 
 Audit logging must be comprehensive and immutable. Every login, document view, download, upload, and message should be logged with timestamp, user ID, IP address, and action taken. Store audit logs in append-only storage (separate from the main database) and retain them for at least seven years, which aligns with most state bar association record retention requirements.
 
+
+> Related: [Contract Management System Development](/blog/contract-management-system-development/)
+
+
 ## Matter-Centric Dashboard Design
 
 The portal's home screen should be organized around matters, not features. A client with three active cases does not want to navigate to a "Documents" section and then filter by case. They want to see their three cases, click on one, and see everything related to it: status, recent activity, documents, upcoming deadlines, and billing.
@@ -39,6 +43,10 @@ For client-to-firm submission, the portal needs a straightforward upload interfa
 For collaborative review, integrate a document viewer that supports annotation and commenting without requiring the client to download the file and mark it up in Word. PDF annotation (highlighting, commenting, signature placement) should work in the browser. For documents requiring signatures, embed an e-signature workflow (DocuSign or equivalent) directly within the portal so clients can review and sign without leaving the platform.
 
 File size limits matter in legal work. Litigation document productions can include files exceeding 100MB. Support chunked uploads with resume capability, and set the limit high enough (at least 500MB per file, 2GB per batch) that clients do not need to compress or split files before uploading.
+
+
+> See also: [Software Development Contracts: What to Include and What to Watch For](/blog/software-development-contracts-what-to-include-and-what-to-watch-for/)
+
 
 ## Billing Transparency and Payment Integration
 

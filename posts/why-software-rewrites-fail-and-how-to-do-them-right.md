@@ -10,6 +10,10 @@ This behavior is undocumented because it was never formally specified. It accret
 
 The only reliable way to catalog this behavior is to study the existing system systematically. Read the code, yes, but also: mine the commit history for bug fixes (each one represents a behavior that was added post-launch), read through years of support tickets to understand what users actually do with the system, and interview the longest-tenured users about their workflows. This discovery process typically takes 4-8 weeks for a mid-size application and is the most valuable investment you can make before writing any new code.
 
+
+> Related: [10 Reasons Software Projects Fail and How to Prevent Each One](/blog/10-reasons-software-projects-fail-and-how-to-prevent-each-one/)
+
+
 ## The Second System Effect and Scope Inflation
 
 Fred Brooks identified this pattern decades ago, and it remains devastatingly accurate. When a team rewrites a system they've maintained for years, they don't just replicate it -- they try to fix everything they ever hated about it. The new system becomes a vehicle for every architectural improvement, every feature request that was too risky to add to the old system, and every "if I were building this from scratch" fantasy.
@@ -31,6 +35,10 @@ This approach has several advantages over big-bang rewrites. **Risk is contained
 The technical prerequisite is a clean routing boundary. For web applications, URL-based routing is the simplest: `/reports/*` goes to the new system, everything else goes to the old system. For API-based systems, route by endpoint. For monolithic backends, the routing might need to happen at the service or module level within the application.
 
 Data is the hard part of strangler fig migration. If the new system uses a different database schema (which it usually does), you need a data synchronization strategy during the transition period. Common approaches: the new system reads from the old database (using read replicas or database views that map old schema to new), a change data capture (CDC) pipeline mirrors relevant data from old to new, or the old and new systems share a database during transition.
+
+
+> See also: [Why Fixed-Price Software Development Projects Fail](/blog/why-fixed-price-software-development-projects-fail/)
+
 
 ## Database Migration: The Hidden Complexity Center
 

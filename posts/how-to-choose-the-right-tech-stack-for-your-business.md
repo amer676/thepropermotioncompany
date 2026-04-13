@@ -14,6 +14,10 @@ The fundamental error is evaluating technology in isolation from the business co
 
 Stack decisions should be driven by four business factors: team capability, hiring market, operational simplicity, and risk tolerance. Technical factors — performance, scalability, language features — are secondary constraints that rarely disqualify a mainstream option.
 
+
+> Related: [Why Boring Technology Wins: The Case Against Trendy Tech Stacks](/blog/why-boring-technology-wins-the-case-against-trendy-tech-stacks/)
+
+
 ## Evaluating Your Team's Capabilities
 
 The most important factor in stack selection is what your team already knows. A team of three Python developers will build a better product in Django than they will in a Rust framework they are learning for the first time, regardless of Rust's theoretical performance advantages.
@@ -35,6 +39,10 @@ Niche technologies create hiring bottlenecks. Elixir, Clojure, Haskell, and Scal
 There is a counterargument that niche technologies attract higher-quality developers because only serious engineers invest in learning them. This is partially true but ignores practical constraints. If your Elixir expert leaves, replacing them takes months. If your Rails developer leaves, replacing them takes weeks. The quality argument does not survive a bus factor analysis.
 
 For the database layer, PostgreSQL is the dominant choice for relational data and the safest from a hiring perspective. MongoDB has a large community if your data model is genuinely document-oriented. For specialized needs, add purpose-built databases (Redis for caching, Elasticsearch for search, ClickHouse for analytics) alongside your primary database rather than trying to find one database that does everything.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Operational Simplicity and Total Cost of Ownership
 

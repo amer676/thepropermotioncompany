@@ -14,6 +14,10 @@ A traditional approach would involve hiring a development team to build custom d
 
 The total cost: $2,000 per month in software subscriptions, two weeks of the operator's time to build, and a few hours per week to maintain. The dispatchers now spend one hour per day on oversight instead of four hours on data entry. This is not as elegant or scalable as custom software, but it solved the problem for a fraction of the cost, in a fraction of the time, and the company can migrate to a custom solution later if the business outgrows the tooling.
 
+
+> Related: [Business Process Automation Guide](/blog/business-process-automation-guide/)
+
+
 ## The Skill Set That Defines the Role
 
 Technical operators are defined not by mastery of any single technology but by their ability to traverse the gap between business needs and technical solutions. Their skill set has distinct layers.
@@ -39,6 +43,10 @@ The second is the API economy. Almost every SaaS product now offers an API. Stri
 The third is economic pressure on mid-market companies. Venture-backed startups can hire engineering teams. Large enterprises have IT departments. Companies in between — the 10 to 500 employee range with $5M to $100M in revenue — often cannot justify the cost of a full engineering team for internal tools but have operational complexity that demands technology solutions. The technical operator fills this gap at a salary of $90,000 to $150,000, a fraction of what a three-person engineering team would cost.
 
 The emergence of AI assistants accelerates this further. A technical operator using an LLM to help write scripts, debug API integrations, and generate SQL queries is significantly more productive than one working without AI assistance. The floor of what a single technically capable person can build has risen dramatically.
+
+
+> See also: [Franchise Management Software Development](/blog/franchise-management-software-development/)
+
 
 ## Where Technical Operators Create the Most Value
 

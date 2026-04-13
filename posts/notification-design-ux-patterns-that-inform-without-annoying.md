@@ -18,6 +18,10 @@ Not all notifications are created equal, and treating them as a single channel i
 
 Build your notification system with these categories as first-class concepts. Every notification event in your application should be assigned a category, and the delivery logic should consult the category to determine which channels to use.
 
+
+> Related: [Data Dashboard Design: Principles for Complex Applications](/blog/data-dashboard-design-principles-for-complex-applications/)
+
+
 ## Designing the In-App Notification Center
 
 The in-app notification center is your primary notification channel -- it is less interruptive than email or push, it is always available within the application, and it provides a historical log that users can review at their convenience.
@@ -50,6 +54,10 @@ Email is the most abused notification channel and the one most likely to get you
 **Offer granular email preferences.** At minimum, let users choose between real-time emails, daily digest, weekly digest, and no email for each notification category. A project manager might want real-time emails for approvals but a weekly digest for comments. A team member might want no emails at all, relying entirely on in-app notifications. The preference center should be accessible from within every notification email (a link in the footer) and from the application settings.
 
 **Set sensible defaults that lean toward less email, not more.** Users who want more notifications will opt in. Users who receive too many will not opt out -- they will mark your emails as spam, which damages your sender reputation and degrades deliverability for all users.
+
+
+> See also: [Designing Data-Heavy Applications: Tables, Charts, and Dashboards](/blog/designing-data-heavy-applications-tables-charts-and-dashboards/)
+
 
 ## Push Notification Discipline
 

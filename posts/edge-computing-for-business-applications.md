@@ -16,6 +16,10 @@ The term gets used loosely. In practice, there are three distinct tiers that mat
 
 Most business applications benefit most from the network edge tier because it requires zero physical infrastructure management while delivering meaningful latency improvements. A logistics dashboard that pre-aggregates shipment data at the edge can render in under 200ms instead of 800ms. An e-commerce storefront that personalizes product recommendations at the edge eliminates the round-trip to a centralized recommendation engine.
 
+
+> Related: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
+
 ## Latency Reduction and Why Every Millisecond Matters
 
 Google found that a 500ms delay in search results reduced traffic by 20%. Amazon reported that every 100ms of added latency cost them 1% in sales. These numbers are from large-scale consumer applications, but the principle applies everywhere.
@@ -41,6 +45,10 @@ An offline-first architecture treats the network as a resource that may be avail
 **Background synchronization.** A sync engine runs continuously in the background, uploading local changes when connectivity is available and pulling down updates from the server. Service workers in web applications or background tasks in native apps handle this transparently.
 
 We built an inventory management system for a retail chain with 140 locations where roughly 15% of stores had unreliable internet. The application used IndexedDB for local storage, a CRDT-based sync engine, and background service workers. Stores could operate entirely offline for up to 48 hours, and when connectivity resumed, inventory counts reconciled automatically with less than 0.1% conflict rate.
+
+
+> See also: [Next.js for Business Applications: Why We Choose It](/blog/nextjs-for-business-applications-why-we-choose-it/)
+
 
 ## Reducing Cloud Costs by Processing Data at the Source
 

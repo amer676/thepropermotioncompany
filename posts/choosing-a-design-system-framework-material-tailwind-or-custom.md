@@ -16,6 +16,10 @@ Material UI (MUI) is a React component library that implements Google's Material
 
 **Practical advice**: Use MUI when your team needs to ship fast, the product does not need a distinctive visual identity, and the application is component-heavy (lots of forms, tables, and dialogs). Avoid MUI when brand differentiation through design is a competitive requirement or when you need pixel-perfect control over every visual detail.
 
+
+> Related: [How to Run a Design Sprint for Product Development](/blog/how-to-run-a-design-sprint-for-product-development/)
+
+
 ## Tailwind CSS: The Utility-First Toolkit
 
 Tailwind CSS takes a fundamentally different approach. Instead of providing pre-built components, it provides low-level utility classes -- `flex`, `pt-4`, `text-center`, `bg-blue-500`, `rounded-lg` -- that you compose directly in your HTML to build any design. It is not a component library; it is a styling system.
@@ -45,6 +49,10 @@ A custom system also makes sense when you have extreme performance requirements.
 Ongoing maintenance is equally significant. Every component needs to be updated when design patterns evolve, tested across browsers and screen sizes, documented for new team members, and reviewed when accessibility standards change. Without a dedicated design system team (typically 2-4 people for a medium-sized organization), the system atrophies -- documentation falls behind, new patterns are implemented ad hoc, and the system's value degrades.
 
 **Practical advice**: Build a custom design system only when you have at least 10 engineers consuming it (otherwise the investment in creating and maintaining it exceeds the value), your product's visual identity is a competitive differentiator, and you have the organizational commitment to maintain it over years. For most startups and small-to-medium teams, this is not the right choice.
+
+
+> See also: [Why Every Serious Software Product Needs a Design System](/blog/why-every-serious-software-product-needs-a-design-system/)
+
 
 ## The Hybrid Approach: Starting With a Framework and Evolving
 

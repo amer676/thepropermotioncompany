@@ -10,6 +10,10 @@ But the leap from "individuals vary in coding speed on isolated tasks" to "some 
 
 The 10x framing also confuses cause and effect. Studies of high-performing individuals in organizational contexts (like the research behind the book "Accelerate" by Forsgren, Humble, and Kim) consistently find that high performers are products of high-performing environments. Give a skilled developer a codebase with good test coverage, clear module boundaries, fast CI pipelines, and minimal bureaucratic overhead, and they'll produce significantly more than the same developer working in a tangled monolith with two-week deploy cycles and five layers of approval. The "10x" is often a property of the system, not the person.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## The Bottleneck Is Almost Never Typing Speed
 
 When teams feel unproductive, the instinct is to hire better (or more) developers. But the bottleneck in most software organizations isn't the rate at which code gets written. It's one of several systemic constraints that no amount of individual talent can overcome.
@@ -33,6 +37,10 @@ Small batch sizes are the throughflow accelerator. When work items are small (on
 Trunk-based development, where developers merge to the main branch at least daily, forces small batches and eliminates the integration hell of long-lived feature branches. It requires feature flags to hide incomplete work from users, which also enables progressive rollouts and A/B testing. Teams that adopt trunk-based development consistently report faster delivery and fewer integration bugs.
 
 Psychological safety -- the belief that you can take interpersonal risks without punishment -- is the team culture factor most strongly correlated with performance. Google's Project Aristotle research found it was the single most important predictor of team effectiveness. When developers feel safe asking "dumb" questions, admitting mistakes, raising concerns about a design decision, and pushing back on unrealistic timelines, the team catches problems earlier, shares knowledge more freely, and makes better collective decisions.
+
+
+> See also: [Next.js for Business Applications: Why We Choose It](/blog/nextjs-for-business-applications-why-we-choose-it/)
+
 
 ## The Multiplier Effect: What Makes Certain Engineers Invaluable
 

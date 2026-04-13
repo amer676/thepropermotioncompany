@@ -19,6 +19,10 @@ If you must implement authentication in-house (a rare but legitimate requirement
 
 **Multi-factor authentication (MFA)** should be available for all users and mandatory for administrators. TOTP-based MFA (Google Authenticator, Authy) is the minimum standard. WebAuthn/passkeys are the emerging standard and significantly more phishing-resistant. SMS-based MFA is better than nothing but vulnerable to SIM-swapping attacks.
 
+
+> Related: [Building Software on a Bootstrap Budget](/blog/building-software-on-a-bootstrap-budget/)
+
+
 ## Authorization: Controlling Who Can Do What
 
 Authentication confirms identity. Authorization controls access. A system where every authenticated user can access every record, modify every setting, and perform every action is a system where one compromised account leads to total exposure.
@@ -42,6 +46,10 @@ The data your application stores is the asset you are protecting. If an attacker
 **Automated, tested backups.** Back up your database at least daily. Store backups in a different region than your primary database (so a regional outage does not take both). Encrypt backups. And critically: test your backup restoration process quarterly. A backup that cannot be restored is not a backup. We have seen companies discover during an actual incident that their backup restoration process fails because of a configuration change made months ago that nobody tested.
 
 **Secrets management.** Database credentials, API keys, encryption keys, and third-party service tokens should never appear in source code, environment files committed to version control, or Slack messages. Use a secrets manager: AWS Secrets Manager, HashiCorp Vault, Doppler, or the secrets management built into your deployment platform (Vercel, Railway, Render). Rotate secrets at least quarterly, and immediately when an employee with access leaves the company.
+
+
+> See also: [How to Find Product-Market Fit for Software Products](/blog/how-to-find-product-market-fit-for-software-products/)
+
 
 ## Dependency Security: The Code You Did Not Write
 

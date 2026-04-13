@@ -14,6 +14,10 @@ For businesses, the practical implication is that AI tools accelerate delivery w
 
 The cost of these tools is modest relative to developer salaries. GitHub Copilot runs $19 per user per month. Enterprise-tier AI coding tools range from $30 to $100 per developer per month. Against fully loaded developer costs of $12,000 to $25,000 per month, even a 10% productivity improvement delivers a 10x or greater return on the tool investment.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Automated Testing and Quality Assurance
 
 AI is transforming software testing from a labor-intensive afterthought into an integrated, continuous process. AI-powered testing tools can now generate unit tests from source code, create end-to-end test scenarios from user stories, identify visual regressions in UI screenshots, and predict which tests are most likely to catch bugs based on the code changes in a given commit.
@@ -31,6 +35,10 @@ One of the less discussed but increasingly valuable applications of AI in develo
 This does not replace a senior architect, but it augments the decision-making process. Think of it as having a well-read consultant who can quickly surface relevant patterns, tradeoffs, and prior art. When a team is debating between PostgreSQL and DynamoDB for a particular workload, the AI can lay out the specific tradeoffs for that use case with concrete numbers around read/write patterns, cost projections, and operational complexity.
 
 For businesses, the value here is in reducing expensive architectural mistakes. Choosing the wrong database, the wrong hosting architecture, or the wrong integration pattern can cost $50,000 to $500,000 to correct later. AI tools that help teams evaluate these decisions more rigorously, earlier in the process, provide outsized returns even if they only prevent one major mistake per year.
+
+
+> See also: [The State of AI in 2025: What Actually Matters for Business](/blog/the-state-of-ai-in-2025-what-actually-matters-for-business/)
+
 
 ## Where the Hype Still Exceeds Reality
 

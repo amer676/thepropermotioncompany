@@ -16,6 +16,10 @@ The most obvious force is the dramatic reduction in the cost of writing, deployi
 
 The net effect is that the minimum investment to build a production-quality software product has dropped by roughly 90 percent in fifteen years. This is the enabling condition for the small-company advantage, but it is not the advantage itself.
 
+
+> Related: [How Remote Work Changed Software Development Permanently](/blog/how-remote-work-changed-software-development-permanently/)
+
+
 ## Speed as a Structural Advantage
 
 The real advantage of small software companies is speed, and speed compounds.
@@ -46,6 +50,10 @@ This intimacy produces three tangible advantages:
 **Faster problem identification.** When a customer calls and says "this report is wrong," a small team can investigate immediately, reproduce the issue, and trace it to its root cause --- often while the customer is still on the phone. Large companies route the report through support tiers, create a Jira ticket, and schedule it for a sprint two weeks from now.
 
 **Trust-based selling.** The most valuable software contracts are won on trust, not feature checklists. A small company's founder or technical lead can sit across the table from a prospect, answer every question without consulting a sales engineer, and make commitments they personally will fulfill. That kind of trust is extraordinarily difficult for a 500-person company to replicate.
+
+
+> See also: [The Commoditization of Code: What AI Means for Custom Software](/blog/the-commoditization-of-code-what-ai-means-for-custom-software/)
+
 
 ## Talent Density Over Talent Volume
 

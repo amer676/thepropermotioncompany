@@ -24,6 +24,10 @@ For automated income verification, the integration with Plaid or a similar finan
 
 **Rental history verification.** Automated landlord verification is the least mature data category. No centralized database of rental history exists. Most platforms handle this through: API integration with major property management systems (AppFolio, Buildium, Yardi) to pull rental payment history for tenants managed through those platforms, and automated reference request workflows that email or text previous landlords with a structured questionnaire and follow up automatically if no response is received within 48 hours.
 
+
+> Related: [AI for Real Estate: Property Matching, Valuation, and Lead Scoring](/blog/ai-for-real-estate-property-matching-valuation-and-lead-scoring/)
+
+
 ## Scoring Methodology and Decision Automation
 
 Raw data is not a decision. The platform must synthesize data from all sources into a recommendation that property managers can act on quickly and consistently.
@@ -49,6 +53,10 @@ Tenant screening sits at the intersection of data science and civil rights law. 
 **Audit trail and consistency.** The strongest defense against a disparate impact claim is demonstrating that criteria are applied consistently to all applicants. Your platform should log every screening decision with the exact criteria applied, the data inputs, and the resulting score. This audit trail proves that decisions are systematic, not discretionary.
 
 Build in a disparate impact analysis tool that periodically analyzes approval and denial rates across demographic groups (using ZIP code as a proxy for race where direct demographic data is not collected). If denial rates for applicants from certain ZIP codes are statistically higher than the overall rate, flag the criteria for review.
+
+
+> See also: [Software for Co-Working and Shared Office Spaces](/blog/software-for-co-working-and-shared-office-spaces/)
+
 
 ## Applicant Experience and Conversion Optimization
 

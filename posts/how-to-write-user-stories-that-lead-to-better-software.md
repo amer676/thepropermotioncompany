@@ -26,6 +26,10 @@ Notice the specificity. Each criterion is a testable statement. A developer read
 
 **5. Design references** link to mockups, wireframes, or existing UI patterns. Even a rough sketch on a whiteboard, photographed and attached to the story, eliminates hours of back-and-forth about layout and visual treatment.
 
+
+> Related: [AI Chatbots vs AI Assistants: Choosing the Right Approach](/blog/ai-chatbots-vs-ai-assistants-choosing-the-right-approach/)
+
+
 ## The INVEST Criteria Applied Practically
 
 The INVEST mnemonic (Independent, Negotiable, Valuable, Estimable, Small, Testable) is widely taught but rarely applied rigorously. Here is what each criterion means in practice and how to fix stories that violate it.
@@ -65,6 +69,10 @@ For complex stories, organize acceptance criteria into scenarios using the Given
 - **Then** the list updates to show only applicants with 6-10 years of experience, and the count updates to reflect the filtered total
 
 This format maps directly to automated test cases, which means your acceptance criteria can eventually become your test suite -- writing the criteria is writing the tests.
+
+
+> See also: [Writing Product Specifications That Developers Actually Build From](/blog/writing-product-specifications-that-developers-actually-build-from/)
+
 
 ## Handling Edge Cases and Unhappy Paths
 

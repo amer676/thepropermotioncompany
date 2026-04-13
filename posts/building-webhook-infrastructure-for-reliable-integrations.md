@@ -20,6 +20,10 @@ The core architecture has four components:
 
 After a configurable number of consecutive failures (typically 5-10), the subscription should be marked as "disabled" and the account owner notified. Continuing to hammer a dead endpoint wastes resources and can trigger abuse-detection systems on the consumer's hosting provider.
 
+
+> Related: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
+
 ## Payload Design and Versioning
 
 The webhook payload is your API's public contract with consumers. Changing it carelessly breaks integrations silently — the consumer's endpoint returns 200 but processes the data incorrectly because a field moved or changed type.
@@ -59,6 +63,10 @@ Webhooks are inbound HTTP requests to your consumer's perspective, which means t
 **Secret rotation** should be supported without downtime. Allow subscriptions to have two active secrets simultaneously — the current and the previous. During rotation, sign payloads with the new secret and include a secondary signature with the old secret. Consumers can verify against either. After a grace period, the old secret is revoked.
 
 **IP allowlisting** is an additional layer some consumers require. Publish a stable set of IP addresses from which your webhooks originate. If you deploy to a cloud provider, use NAT gateways or a dedicated egress proxy to ensure outbound webhook traffic comes from a predictable IP range.
+
+
+> See also: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
 
 ## Building a Reliable Inbound Webhook Receiver
 

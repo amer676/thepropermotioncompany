@@ -14,6 +14,10 @@ Your data model should center on a loan lifecycle state machine. Every loan move
 
 For the database layer, PostgreSQL handles the transactional workload well. Use a separate analytical data store, such as a read replica feeding into a columnar store, for regulatory reporting and portfolio analytics. Avoid the temptation to run analytics queries against your production OLTP database; a single slow portfolio query can degrade borrower-facing response times.
 
+
+> Related: [Wealth Management Software Development](/blog/wealth-management-software-development/)
+
+
 ## Navigating Regulatory Compliance
 
 Lending is one of the most heavily regulated activities in software. In the United States alone, you need to consider the Truth in Lending Act (TILA), the Equal Credit Opportunity Act (ECOA), state-by-state usury laws, the Fair Credit Reporting Act (FCRA), and the Bank Secrecy Act (BSA) / Anti-Money Laundering (AML) requirements. If you are offering consumer loans, the CFPB has direct oversight authority for larger participants.
@@ -37,6 +41,10 @@ The scoring model, whether logistic regression, gradient boosting, or a neural n
 Integrate with at least two credit bureaus (Experian, Equifax, or TransUnion) for redundancy. A single bureau outage should not stop your origination pipeline. Cache credit pulls for the regulatory maximum period (typically 30 days for the same inquiry) to avoid unnecessary hard pulls that damage borrower credit.
 
 Consider incorporating alternative data sources like bank transaction data via Plaid or MX, employment verification via Argyle or Truework, and rental payment history. Each additional data source improves predictive power but adds integration complexity and vendor dependency. Start with traditional bureau data and add alternative sources incrementally based on measured lift in model performance.
+
+
+> See also: [Custom Software for Financial Services and Fintech](/blog/custom-software-for-financial-services-and-fintech/)
+
 
 ## Payment Processing and Loan Servicing
 

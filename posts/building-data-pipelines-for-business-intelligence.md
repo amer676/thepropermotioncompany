@@ -18,6 +18,10 @@ Build extraction jobs as idempotent operations that can be safely re-run. Use cu
 
 For most mid-size companies, expect to integrate 8-15 data sources. Off-the-shelf ETL tools like Fivetran, Airbyte, or Stitch handle the most common sources with pre-built connectors, reducing the extraction effort from weeks to days. Custom extraction code is necessary for proprietary internal systems or niche SaaS tools without pre-built connectors.
 
+
+> Related: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
+
 ## Transformation: Cleaning and Shaping Data
 
 Raw extracted data is inconsistent, duplicated, and structured for the source system's needs rather than your analytical needs. The transformation layer resolves this.
@@ -41,6 +45,10 @@ Transformed data lands in a data warehouse optimized for analytical queries. The
 **Snowflake, BigQuery, or Redshift** become necessary when data volume exceeds what PostgreSQL handles efficiently, when query concurrency is high (many analysts running queries simultaneously), or when you need to separate analytical workload from transactional workload entirely. These columnar storage engines are designed for the read-heavy, aggregation-heavy query patterns typical of BI. Snowflake in particular offers pay-per-query pricing that makes it cost-effective for workloads with variable demand.
 
 Structure the warehouse using a dimensional model. Fact tables store events and measurements (orders, payments, page views, support tickets). Dimension tables store the descriptive context around those events (customers, products, dates, geographies). This star schema pattern is optimized for the aggregation and filtering queries that BI dashboards execute: "Show me total revenue by region by month" joins the orders fact table with the customer dimension (for region) and the date dimension (for month).
+
+
+> See also: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
 
 ## Orchestration: Making It Run Reliably
 

@@ -22,6 +22,10 @@ They fall short when workflows involve:
 
 **Volume and performance.** A logistics company processing 50,000 shipments per day, each following a workflow with 8 to 12 steps, needs a workflow engine that handles hundreds of concurrent workflow instances with sub-second step execution. SaaS workflow tools with API rate limits and execution time caps cannot meet this throughput.
 
+
+> Related: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
+
 ## Architecture of a Custom Workflow Engine
 
 A well-designed workflow engine has four layers: definition, execution, integration, and observability.
@@ -61,6 +65,10 @@ Individual workflow steps must be designed for the reality of distributed system
 **Use compensation actions for rollback.** In a multi-step workflow where step 3 fails after steps 1 and 2 succeeded, the engine should execute compensation actions for steps 2 and 1 in reverse order. For example, if step 1 reserved inventory and step 2 charged a credit card, the compensation for step 2 is a refund and for step 1 is releasing the reservation.
 
 **Log everything.** Every step execution should log: the step name, the input data, the output data, the execution duration, the outcome (success, failure, timeout, skipped), and the actor (user ID, system service, or scheduler). This log is the audit trail that compliance teams require and the debugging tool that operations teams rely on.
+
+
+> See also: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
 
 ## The Visual Workflow Builder: Empowering Non-Technical Users
 

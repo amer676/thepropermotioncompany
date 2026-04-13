@@ -14,6 +14,10 @@ A concrete example: deciding whether your application should be a monolith or a 
 
 An architect also establishes patterns that the rest of the team follows. How do we handle errors? Where does business logic live versus infrastructure logic? What is our approach to testing? How do we manage database migrations? These patterns, when set well, let a team of 10 developers work on the same codebase without stepping on each other's toes. When set poorly -- or not set at all -- you get a codebase where every module follows a different convention and onboarding a new developer takes six weeks instead of one.
 
+
+> Related: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
+
 ## Projects That Clearly Need Architecture Expertise
 
 Certain project characteristics are strong signals that dedicated architecture input will pay for itself many times over.
@@ -37,6 +41,10 @@ Not every project needs a dedicated architect, and hiring one too early can actu
 **Greenfield projects with no integration requirements**: If you are building a standalone application that does not need to talk to legacy systems, external APIs, or complex data pipelines, the architectural surface area is small enough that a strong senior engineer can handle it.
 
 The risk of premature architecture is real. We have seen projects where the team spent three months designing a microservices topology, event sourcing pipeline, and CQRS pattern for an application that, two years later, still has 12 active users and could have been a Rails monolith. That was three months of runway burned on decisions that did not matter.
+
+
+> See also: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
 
 ## The Fractional Architect Model
 

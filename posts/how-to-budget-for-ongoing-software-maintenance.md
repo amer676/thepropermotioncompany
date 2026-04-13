@@ -16,6 +16,10 @@ Preventive maintenance is proactive work to avoid future problems: refactoring b
 
 Security maintenance is patching vulnerabilities in your dependencies, updating authentication mechanisms, rotating credentials, and responding to security advisories. The average software project has dozens of direct dependencies and hundreds of transitive dependencies. Each is a potential attack vector that requires ongoing attention.
 
+
+> Related: [How Much Does Custom Software Development Cost in 2024](/blog/how-much-does-custom-software-development-cost-in-2024/)
+
+
 ## The 15-20% Rule and Why It Exists
 
 The industry standard for software maintenance budgets is 15 to 20 percent of the original development cost per year. If your application cost $300,000 to build, expect to spend $45,000 to $60,000 per year maintaining it. This number surprises many founders, but it reflects decades of empirical data across thousands of software projects.
@@ -43,6 +47,10 @@ Third-party service costs add up quietly. A transactional email service like Sen
 Domain registration, SSL certificates (if not using free Let's Encrypt certificates), and DNS hosting are small but recurring costs that should be tracked. More importantly, they need to be renewed, and letting a domain or certificate expire is a preventable outage.
 
 Create a spreadsheet that lists every recurring cost: hosting, databases, CDN, email service, monitoring tools, analytics, third-party APIs, domain registration, and any other services your application depends on. Review it quarterly. Services you added during development but no longer use should be canceled. Services approaching pricing tier boundaries should be evaluated for alternatives.
+
+
+> See also: [Why Software Estimation Is So Hard and How to Get Better at It](/blog/why-software-estimation-is-so-hard-and-how-to-get-better-at-it/)
+
 
 ## Dependency Management: The Hidden Time Sink
 

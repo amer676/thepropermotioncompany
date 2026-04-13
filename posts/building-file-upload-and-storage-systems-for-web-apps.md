@@ -22,6 +22,10 @@ This pattern removes your application server from the data path entirely. A 500M
 
 Provide clear, specific error messages: "This file is 250MB but the maximum is 100MB" is actionable. "Upload failed" is not.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Server-Side Processing Pipeline
 
 Once a file lands in storage, a processing pipeline transforms it into the formats your application needs.
@@ -61,6 +65,10 @@ For a typical application processing 10,000 file uploads per month with an avera
 **Database metadata schema.** Your database should track: file UUID, original filename, MIME type, file size in bytes, storage bucket and key, processing status (pending, processing, complete, failed), available variants (thumbnail, medium, large, original), upload timestamp, uploader user ID, and any application-specific metadata (which entity the file belongs to, tags, description).
 
 Index this table on `uploader_id`, `entity_type + entity_id` (for "show all files attached to this project" queries), and `created_at` for chronological listing.
+
+
+> See also: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
 
 ## Delivery and Performance Optimization
 

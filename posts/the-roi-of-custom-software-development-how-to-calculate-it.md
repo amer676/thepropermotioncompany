@@ -22,6 +22,10 @@ If you spend $200,000 on custom software and it generates $600,000 in value over
 
 For a $200,000 development project, the realistic three-year total cost of ownership is $350,000 to $450,000. Using only the development cost in your ROI calculation will overstate your return by 40 to 55 percent.
 
+
+> Related: [Why Software Estimation Is So Hard and How to Get Better at It](/blog/why-software-estimation-is-so-hard-and-how-to-get-better-at-it/)
+
+
 ## Quantifying Cost Savings: The Most Defensible Benefit
 
 Cost savings are the easiest benefit to quantify because they are based on current, measurable expenses that the software will reduce or eliminate.
@@ -53,6 +57,10 @@ Revenue benefits are harder to measure precisely but often dwarf cost savings in
 **Price premium.** Custom software can enable premium features or service levels that justify higher pricing. If a custom client portal allows you to charge $200/month instead of $150/month across 500 clients, the revenue impact is $300,000 per year.
 
 When projecting revenue benefits, apply a confidence discount. If you are 70 percent confident in a $500,000 revenue benefit, use $350,000 in your ROI calculation. This intellectual honesty makes your business case more credible and protects against over-commitment.
+
+
+> See also: [10 Reasons Software Projects Fail and How to Prevent Each One](/blog/10-reasons-software-projects-fail-and-how-to-prevent-each-one/)
+
 
 ## Risk and Strategic Value: The Intangible ROI
 

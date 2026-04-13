@@ -16,6 +16,10 @@ You do not need a usability lab, eye-tracking equipment, or a professional recru
 
 A single round of guerrilla testing takes half a day and costs under $50. It routinely prevents weeks of development work on features that would have confused users.
 
+
+> Related: [Why Big Software Redesigns Almost Always Fail](/blog/why-big-software-redesigns-almost-always-fail/)
+
+
 ## Structured Interviews: Going Deeper for $0-$500
 
 User interviews are the most versatile research method available. A well-conducted 45-minute interview reveals not just usability issues but the underlying motivations, frustrations, and workflows that should shape your product strategy.
@@ -50,6 +54,10 @@ Interviews tell you why. Surveys tell you how many. Once you have hypotheses fro
 **Distribution.** In-app surveys (triggered after a specific action) get the highest response rates, typically 10-25%. Email surveys average 5-15%. Social media distribution is unreliable unless your audience is highly engaged.
 
 **Common mistakes.** Leading questions ("How much do you love our new feature?"), double-barreled questions ("Is the product fast and easy to use?"), and asking about hypothetical behavior ("Would you use X?") all produce unreliable data. Test your survey with three people before distributing it widely.
+
+
+> See also: [How to Run a Design Sprint for Product Development](/blog/how-to-run-a-design-sprint-for-product-development/)
+
 
 ## Analytics and Behavioral Data: The Research You Already Have
 

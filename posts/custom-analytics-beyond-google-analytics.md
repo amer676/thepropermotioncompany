@@ -14,6 +14,10 @@ Then there is data ownership. GA data lives on Google's servers, processed by Go
 
 Privacy regulations add another dimension. GA has faced legal challenges under GDPR in multiple European countries. Several EU data protection authorities have ruled that transferring user data to Google's US servers violates GDPR. If your product serves European users, relying on GA introduces regulatory risk that a self-hosted analytics stack avoids.
 
+
+> Related: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
+
 ## Designing Your Event Taxonomy
 
 The foundation of any custom analytics system is the event taxonomy: the structured vocabulary of user actions and system events that you capture. Get this right and every downstream analysis becomes straightforward. Get it wrong and you spend months retrofitting your tracking.
@@ -39,6 +43,10 @@ For storage, the choice depends on your query patterns. If you primarily need ag
 If you need to query individual user timelines (show me everything user X did in the last 30 days), add a row-oriented store or use ClickHouse with appropriate indexing. For real-time dashboards, a time-series database like TimescaleDB or InfluxDB provides sub-second query performance on recent data.
 
 For the query layer, build internal APIs that serve pre-defined metrics to your dashboards, and provide a SQL interface (through ClickHouse's native SQL support or a tool like Apache Superset) for ad-hoc exploration by analysts.
+
+
+> See also: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
 
 ## Funnel Analysis and Cohort Tracking
 

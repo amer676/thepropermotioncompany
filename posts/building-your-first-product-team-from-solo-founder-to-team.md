@@ -16,6 +16,10 @@ Hiring too early wastes runway. Hiring too late burns out the founder and stalls
 
 **Repeatable processes exist that someone else can own.** If your work is still entirely exploratory (you do not know what to build next, you are still searching for product-market fit), hiring is premature. But if you have a backlog of well-defined features, a design system that new contributors can follow, and a deployment process that is documented, someone else can be productive in your codebase.
 
+
+> Related: [How to Hire Your First Developer as a Non-Technical Founder](/blog/how-to-hire-your-first-developer-as-a-non-technical-founder/)
+
+
 ## Your First Three Hires
 
 The order of your first hires matters. Each role has different impact on your ability to scale.
@@ -41,6 +45,10 @@ With 3 to 5 people, you need just enough process to coordinate without drowning 
 **Code review as knowledge sharing.** Every pull request gets reviewed by at least one other person. At this stage, code review serves two purposes: catching bugs and spreading knowledge. When only one person understands a part of the codebase, you have a bus factor of one. Code review ensures at least two people understand every change. Keep review turnaround under 4 hours; stale PRs block progress and frustrate the team.
 
 **Documentation minimum.** Document three things and only three things at this stage: how to set up the development environment (README), how to deploy to production (runbook), and your data model (schema documentation or an ER diagram). Everything else can be communicated verbally or through code review comments. Over-documenting at this stage creates maintenance burden and slows the team down.
+
+
+> See also: [Software Project Management for Non-Technical Founders](/blog/software-project-management-for-non-technical-founders/)
+
 
 ## Defining Roles Without Creating Silos
 

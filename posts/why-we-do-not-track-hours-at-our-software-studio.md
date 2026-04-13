@@ -16,6 +16,10 @@ Time tracking appears free. The tools cost $8-15 per user per month. The time to
 
 **Erosion of trust.** Time tracking communicates a message: "We do not trust you to use your time well, so we require proof." This message is corrosive to the kind of intrinsic motivation that drives the best engineering work. The engineers who build exceptional software do it because they care about craft, not because a timesheet is watching. Surveillance-oriented management selects for compliance, not creativity.
 
+
+> Related: [What Ship It Actually Means in Software Development](/blog/what-ship-it-actually-means-in-software-development/)
+
+
 ## What We Measure Instead
 
 Eliminating time tracking does not mean eliminating accountability. It means measuring things that actually correlate with client value.
@@ -39,6 +43,10 @@ Most development firms sell hours. We sell outcomes. This distinction reshapes t
 **The team optimizes for speed, not duration.** When nobody is billing hours, the fastest solution is the best solution. If an engineer can solve a problem in 30 minutes using an open-source library instead of 3 days of custom code, they choose the library without hesitation. Under an hourly model, the custom code option generates 24 more billable hours. We have watched firms operate under both models, and the behavioral difference is dramatic.
 
 **Trust replaces surveillance.** Clients trust us to manage our time because our incentives are aligned with theirs. We get paid for delivering working software, not for occupying seats. Clients do not ask how many hours we worked this week. They ask what we shipped. That shift in conversation represents a fundamentally healthier working relationship.
+
+
+> See also: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
 
 ## The Objections We Hear (and Our Responses)
 

@@ -14,6 +14,10 @@ Consider the numbers. A 2022 study by Stripe estimated that developers worldwide
 
 Sustainable software is not about writing perfect code. It is about making deliberate choices that keep the cost of change low over time.
 
+
+> Related: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
+
 ## Choosing Boring Technology on Purpose
 
 One of the most counterintuitive principles of sustainable software is that the best technology choice is usually the most boring one. PostgreSQL over the newest graph database. Server-rendered HTML over a client-side framework that appeared six months ago. REST over whatever protocol is trending on Hacker News this week.
@@ -41,6 +45,10 @@ The single most effective technique is enforcing clean boundaries between compon
 **Isolate third-party dependencies.** Wrap external APIs in an adapter layer. When Stripe changes their payment API (and they will), you update one adapter file instead of grep-replacing across 47 files. We have seen projects where a single third-party API change required three weeks of work because the SDK was called directly from dozens of places.
 
 The upfront cost of these boundaries is modest --- typically an extra day or two per major component. The payoff is measured in years of easier maintenance.
+
+
+> See also: [Building Software for the Long Term: Our Approach](/blog/building-software-for-the-long-term-our-approach/)
+
 
 ## Testing as a Sustainability Strategy
 

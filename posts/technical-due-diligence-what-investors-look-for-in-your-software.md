@@ -14,6 +14,10 @@ The output is a report that categorizes findings as strengths, concerns, and ris
 
 Investors are not looking for perfection. They are looking for a codebase and team that can scale from the current stage to the next stage. A Series A due diligence expects startup-quality code with a credible path to maturity. A Series B due diligence expects engineering practices that can support a team growing from 10 to 50 engineers.
 
+
+> Related: [Why Speed Beats Scale in Early-Stage Software](/blog/why-speed-beats-scale-in-early-stage-software/)
+
+
 ## Architecture: Monoliths, Microservices, and Everything Between
 
 Evaluators assess whether your architecture can handle the growth implied by your financial projections. If your business plan projects 10x user growth over 18 months, your architecture must have a plausible path to supporting that scale.
@@ -57,6 +61,10 @@ Commented-out code blocks, dead code, or TODO comments referencing issues from 1
 A Git history showing that one engineer authored 80 percent or more of commits. This "bus factor" risk means losing one person could cripple the team.
 
 Hardcoded credentials, API keys, or environment-specific values in the codebase. This is both a security risk and a signal of immature development practices.
+
+
+> See also: [Transitioning from Services to Product: A Strategic Guide](/blog/transitioning-from-services-to-product-a-strategic-guide/)
+
 
 ## Infrastructure and DevOps Maturity
 

@@ -16,6 +16,10 @@ The data model for the entitlement service is straightforward: a table of entitl
 
 This separation pays for itself the first time a salesperson closes a deal with custom terms that do not fit any existing plan. Instead of creating a fake Stripe subscription that sort-of-matches, you record the billing terms in your billing system and the entitlements in your entitlement service, and neither system has to compromise its data model.
 
+
+> Related: [SaaS Pricing Strategy: Models, Psychology, and Implementation](/blog/saas-pricing-strategy-models-psychology-and-implementation/)
+
+
 ## Handling Plan Changes Without Losing Money or Trust
 
 Plan changes — upgrades, downgrades, and seat adjustments — are where subscription billing complexity concentrates. The business rules around what happens to the current billing cycle when a customer changes their plan are surprisingly contentious.
@@ -37,6 +41,10 @@ For the ingestion layer, the critical requirement is that recording usage must n
 The aggregation store needs to support fast increment operations and efficient period-based queries. Redis with sorted sets (keyed by account and period, scored by timestamp) works well for real-time usage lookups. For persistent storage and billing reconciliation, a time-series table in PostgreSQL with a composite index on (account_id, period_start, metric_type) handles most SaaS-scale workloads — you would need to be processing tens of millions of events per day before this becomes a bottleneck.
 
 The tricky part is handling usage that crosses billing period boundaries, dealing with retries and deduplication (if the usage event is published but the acknowledgment is lost, you do not want to double-count), and reconciling your internal usage counts with what Stripe or your billing system records. Running a nightly reconciliation job that compares your aggregated usage with the billing system's records — and alerting on discrepancies — catches integration issues before they become customer-facing billing errors.
+
+
+> See also: [Complex Subscription Billing Architecture](/blog/complex-subscription-billing-architecture/)
+
 
 ## Dunning and Involuntary Churn Recovery
 

@@ -12,6 +12,10 @@ The architecture typically works in layers. The first layer handles image prepro
 
 For most applications, you'll combine a cloud document AI service for the heavy lifting with custom post-processing logic that validates and transforms the extracted data for your specific domain.
 
+
+> Related: [AI for Healthcare: Applications, Compliance, and Implementation](/blog/ai-for-healthcare-applications-compliance-and-implementation/)
+
+
 ## Document Classification: Sorting the Pile
 
 Before you can extract data from a document, you need to know what kind of document you're looking at. A single mortgage application package might contain a loan application, pay stubs, bank statements, tax returns, an appraisal report, and a title search -- all as one scanned PDF. A claims submission might include a claim form, police report, medical records, photos of damage, and repair estimates.
@@ -33,6 +37,10 @@ Semi-structured documents -- invoices, purchase orders, receipts -- share common
 Unstructured documents -- contracts, medical records, legal opinions -- require a different approach. Here, the task is less "find the field" and more "understand the content." Named entity recognition extracts specific items like dates, monetary amounts, party names, and addresses. Clause classification identifies relevant sections in contracts. Summarization distills a 50-page medical record into the key findings relevant to a specific claim.
 
 Large language models have transformed unstructured document processing. Feeding the OCR output of a contract into GPT-4 or Claude with a structured extraction prompt can pull out dozens of relevant fields in a single API call. The key is validation: use the model's output as a draft that human reviewers confirm, and track accuracy metrics to know when the model can be trusted to operate without review.
+
+
+> See also: [How AI Changes Software Architecture](/blog/how-ai-changes-software-architecture/)
+
 
 ## Building a Production Document Processing Pipeline
 

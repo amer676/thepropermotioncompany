@@ -14,6 +14,10 @@ Where development alone starts to strain is when the specification is incomplete
 
 These are engineering questions, and they require engineering thinking.
 
+
+> Related: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
+
 ## What Engineering Adds
 
 Software engineering, as a discipline, extends the scope of concern beyond the individual feature to the system as a whole and its behavior over time. The additional concerns fall into several categories.
@@ -39,6 +43,10 @@ The difference between development and engineering is most visible in specific s
 **The performance problem.** Page load time has increased from 200ms to 2 seconds. A developer looks at the code and tries to optimize the obviously slow parts. An engineer instruments the request path with tracing (each database query, each external call, each computation step is timed), identifies the bottleneck with data, evaluates whether the fix should be a code optimization, a caching layer, a query optimization, or an architectural change, and measures the result to verify the improvement.
 
 **The scaling event.** The application is about to be featured in a major publication, and traffic is expected to increase 10x. A developer hopes the existing infrastructure holds. An engineer load-tests the current system to find its breaking point, identifies bottlenecks, provisions additional capacity, configures auto-scaling rules, sets up a traffic management plan (rate limiting, feature flags to disable non-essential features under load), and monitors the event in real time.
+
+
+> See also: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
 
 ## What This Means for Hiring
 

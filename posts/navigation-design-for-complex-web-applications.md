@@ -18,6 +18,10 @@ The left sidebar has become the dominant navigation pattern for complex web appl
 
 The sidebar works best when the application has 10-30 top-level navigation destinations, organized into 3-5 groups, with no more than two levels of hierarchy within the sidebar itself. Beyond that, you need to combine the sidebar with other navigation patterns.
 
+
+> Related: [How to Run a Design Sprint for Product Development](/blog/how-to-run-a-design-sprint-for-product-development/)
+
+
 ## Combining Global and Local Navigation
 
 Complex applications typically have two navigation scopes:
@@ -45,6 +49,10 @@ Navigation design cannot be better than the information architecture underneath 
 **Label testing.** Navigation labels must be instantly understandable. "Reconciliation" might be clear to an accountant but opaque to a sales manager. "Match Payments" is clearer to both. Test labels independently from the navigation structure: show users a label and ask them to predict what they would find behind it. If fewer than 80% predict correctly, the label needs revision.
 
 **The rule of progressive disclosure.** Show the user only what they need at each level of navigation. A settings page with 50 options on a single screen is overwhelming. A settings page organized into 6 categories, each expanding to reveal 8-10 options, is manageable. The total number of options is the same; the cognitive load is dramatically lower because the user processes one category at a time.
+
+
+> See also: [Designing Onboarding Flows That Reduce Churn](/blog/designing-onboarding-flows-that-reduce-churn/)
+
 
 ## Search as Navigation
 

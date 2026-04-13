@@ -12,6 +12,10 @@ The inference layer should handle: model selection and routing (choosing the rig
 
 **Model routing** is particularly important. Not every request needs the most capable (and expensive) model. A classification task might run perfectly well on a smaller model at 1/20th the cost. A complex reasoning task needs the frontier model. Build routing logic that selects models based on task type, required quality, latency budget, and cost constraints. Some teams implement a "cascade" pattern: try the cheaper model first, evaluate the confidence of its output, and escalate to a more capable model only when confidence is below a threshold.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Prompt Engineering as Software Engineering
 
 Prompts are code. They have inputs, logic, and outputs. They need version control, testing, and monitoring. Yet most teams manage prompts as ad hoc strings embedded in application code, with no systematic approach to iteration or quality assurance.
@@ -33,6 +37,10 @@ The ingestion pipeline is where most quality problems originate. Chunking strate
 **Embedding model selection** affects retrieval quality directly. OpenAI's text-embedding-3-large, Cohere's embed-v3, and open-source alternatives like BGE or E5 produce meaningfully different retrieval results for different content types. Benchmark multiple embedding models against your actual document corpus before committing. Store embeddings in a vector database (Pinecone, Weaviate, pgvector in PostgreSQL) and pair vector similarity search with keyword search (BM25) for hybrid retrieval. Hybrid retrieval consistently outperforms either approach alone.
 
 **Context window management** is an optimization problem. You have a limited token budget (say, 128K tokens for a frontier model), and you need to allocate it between: the system prompt, retrieved context, conversation history, and the user's current query. Build a context budget allocator that dynamically adjusts how much space each component gets based on the task. A first-time query with no conversation history can devote more tokens to retrieved context. A deep conversational exchange needs more history tokens and fewer retrieval tokens.
+
+
+> See also: [AI for Human Resources: Recruiting, Onboarding, and Workforce Analytics](/blog/ai-for-human-resources-recruiting-onboarding-and-workforce-analytics/)
+
 
 ## Evaluation, Guardrails, and the Trust Problem
 

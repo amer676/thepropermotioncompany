@@ -14,6 +14,10 @@ The result is that clients either pay significantly more than the original estim
 
 The deeper issue is that fixed scope incentivizes the agency to build exactly what was specified, not what the client needs. If the agency discovers mid-project that a different approach would be better, they face a choice: do the right thing (which means renegotiating scope, absorbing cost, or eating the margin) or do the specified thing (which is easier, billable, and wrong). The financial pressure almost always wins.
 
+
+> Related: [What Ship It Actually Means in Software Development](/blog/what-ship-it-actually-means-in-software-development/)
+
+
 ## The Handoff Problem
 
 In the traditional model, the agency builds the software and then hands it off to the client. This handoff is where value goes to die.
@@ -33,6 +37,10 @@ Traditional agencies sell a team composition in the proposal: a senior architect
 This is not universal, but it is common enough to be a pattern. The economics make it almost inevitable. The agency wins the deal on the strength of its senior talent, but senior talent is scarce and expensive. Deploying senior people full-time on every project would destroy the agency's margins. So senior people do the proposals, the architecture, and the client-facing presentations, while less experienced developers do the majority of the actual building.
 
 The client usually does not notice until quality issues emerge weeks or months into the project. The code does not match the architectural vision presented in kickoff. Simple features take longer than expected. Bugs appear in areas that should have been straightforward. By this point, raising the issue creates an uncomfortable conversation about who is actually doing the work, and the project is already behind schedule.
+
+
+> See also: [Software Development as a Craft Not a Commodity](/blog/software-development-as-a-craft-not-a-commodity/)
+
 
 ## The Utilization Treadmill
 

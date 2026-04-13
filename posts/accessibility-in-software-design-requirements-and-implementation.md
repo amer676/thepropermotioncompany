@@ -14,6 +14,10 @@ Beyond legal compliance, the business case is straightforward. Over 1.3 billion 
 
 There is also the curb-cut effect: features designed for accessibility benefit everyone. Closed captions help users in noisy environments. Keyboard navigation helps power users work faster. High-contrast interfaces are more readable in bright sunlight. Accessible design is simply good design.
 
+
+> Related: [Designing Data-Heavy Applications: Tables, Charts, and Dashboards](/blog/designing-data-heavy-applications-tables-charts-and-dashboards/)
+
+
 ## WCAG 2.1 Level AA: What It Actually Requires
 
 The Web Content Accessibility Guidelines are organized around four principles: Perceivable, Operable, Understandable, and Robust (POUR). Level AA compliance requires meeting 50 specific success criteria. Here are the ones that most commonly trip up development teams.
@@ -39,6 +43,10 @@ The most reliable path to accessible components is using semantic HTML elements 
 **Data tables.** Use proper `<table>`, `<thead>`, `<th>`, and `<td>` elements. Add `scope="col"` to column headers and `scope="row"` to row headers. For complex tables with merged cells, use `headers` attributes. For sortable columns, add `aria-sort="ascending"`, `"descending"`, or `"none"` to the `<th>` element. Avoid using `<div>`-based grid layouts for tabular data.
 
 **Single-page application routing.** When the route changes, announce the new page to screen readers. Set focus to the main content heading or use an `aria-live` region to announce the page title. Without this, screen reader users have no indication that navigation occurred.
+
+
+> See also: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
 
 ## Testing Accessibility: Automated and Manual Approaches
 

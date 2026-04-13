@@ -12,6 +12,10 @@ The ceiling is particularly low for workflows that cross system boundaries. When
 
 Custom software eliminates those handoffs. It models your actual workflow as a single system, with data flowing automatically between stages. The operational efficiency gain compounds over time, widening the gap between your cost structure and that of competitors running on generic tools.
 
+
+> Related: [Why Software Rewrites Fail and How to Do Them Right](/blog/why-software-rewrites-fail-and-how-to-do-them-right/)
+
+
 ## The Compounding Advantage of Proprietary Data
 
 Custom software does more than automate workflows. It generates proprietary data that improves your operations in ways competitors cannot access. This is where the moat deepens.
@@ -33,6 +37,10 @@ Operational workflows unique to your business model are another high-leverage ar
 Internal tools that your team uses daily offer leverage through compounded efficiency. An operations team that saves 30 minutes per person per day through a custom tool gains 120 hours per person per year. Across a 20-person team, that is 2,400 hours annually, equivalent to adding more than one full-time employee without hiring.
 
 Areas where custom software is usually not worth the investment include commoditized functions like email, calendar, basic accounting, and standard HR processes. These are well-served by existing tools, and the differentiation potential is low.
+
+
+> See also: [10 Reasons Software Projects Fail and How to Prevent Each One](/blog/10-reasons-software-projects-fail-and-how-to-prevent-each-one/)
+
 
 ## Building for Defensibility: Architecture Decisions That Matter
 

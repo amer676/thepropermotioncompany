@@ -12,6 +12,10 @@ Tools like Textkernel and Daxtra parse resumes into structured data -- extractin
 
 Bias testing should be baked into the pipeline from day one. Run your scoring model against a diverse test set of resumes before deployment. Monitor demographic pass-through rates at each stage of the funnel after deployment. Tools like IBM's AI Fairness 360 and Google's What-If Tool can help quantify disparate impact before it reaches real candidates.
 
+
+> Related: [AI Chatbots vs AI Assistants: Choosing the Right Approach](/blog/ai-chatbots-vs-ai-assistants-choosing-the-right-approach/)
+
+
 ## Streamlining Onboarding With Intelligent Workflow Orchestration
 
 Onboarding is a process that touches IT, facilities, legal, finance, and the hiring manager -- and it fails most often at the handoff points between these groups. A new hire's laptop isn't ready because IT didn't get notified until their start date. Benefits enrollment falls through the cracks because the form link was buried in a 40-page welcome email. The hiring manager forgets to set up the first week's meetings because they're juggling their own deadlines.
@@ -31,6 +35,10 @@ The inputs that matter aren't always obvious. Research from organizations like C
 Building a retention model typically involves logistic regression or gradient-boosted trees trained on historical turnover data enriched with these features. The output isn't a binary "will leave / won't leave" prediction -- it's a risk score that helps HR business partners prioritize their check-in conversations and managers initiate stay interviews before it's too late.
 
 The ethical considerations here are significant and often underweighted. Employees should know that engagement data is being analyzed in aggregate. Individual risk scores should be treated as conversation starters, not verdicts. A system that labels someone "high flight risk" and triggers a preemptive performance improvement plan creates exactly the kind of adversarial dynamic that drives people away. The goal is to surface opportunities for support -- career development conversations, workload adjustments, compensation reviews -- not surveillance.
+
+
+> See also: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
 
 ## Workforce Planning and Skills Gap Analysis
 

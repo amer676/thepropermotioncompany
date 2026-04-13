@@ -14,6 +14,10 @@ This is not conservatism for its own sake. It is a calculated bet on the future.
 
 We do adopt newer tools when they offer a genuine, measurable advantage for the specific problem at hand. TypeScript over JavaScript is a trade we make on virtually every project because the type system catches entire categories of bugs at compile time. But we adopt it because of its concrete benefits, not because it is new.
 
+
+> Related: [Why the Traditional Software Agency Model Is Broken](/blog/why-the-traditional-software-agency-model-is-broken/)
+
+
 ## Investing in the Dependency Graph
 
 The architecture of a long-lived system is defined not by its components but by the boundaries between them. We spend significant time at the start of every project mapping out domain boundaries and defining explicit contracts between modules.
@@ -37,6 +41,10 @@ Variable names are full words: `remainingInventoryCount`, not `remInvCnt`. Funct
 We avoid abstractions until we have seen the same pattern three times. Premature abstraction -- building a generic `DataProcessor<T>` when you have only ever processed invoices -- creates code that is harder to understand and harder to change than the duplication it was meant to eliminate. When we do abstract, we favor composition over inheritance, because inheritance hierarchies are the single most common source of "I cannot change this without breaking everything" paralysis in aging codebases.
 
 Comments explain why, never what. If the code needs a comment explaining what it does, the code should be rewritten to be self-explanatory. But a comment explaining why a particular business rule exists -- "Canadian tax law requires HST to be calculated on the pre-discount amount, not the final amount, per CRA ruling 2019-0742" -- is invaluable to the developer who encounters it two years from now.
+
+
+> See also: [What We Learned Building Software for 50 Plus Companies](/blog/what-we-learned-building-software-for-50-plus-companies/)
+
 
 ## Testing as a Long-Term Investment
 

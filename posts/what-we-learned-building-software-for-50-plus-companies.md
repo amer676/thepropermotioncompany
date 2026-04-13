@@ -14,6 +14,10 @@ The most common project failure mode is not bad code. It is building the wrong t
 
 **What actually works** is a specification that is precise about outcomes and flexible about implementation. "Users should be able to see all deals in their pipeline, sorted by expected close date, and update the stage of any deal in two clicks or fewer." That is specific enough to build against and flexible enough to allow creative solutions. Pair this with a weekly review cycle where the team demonstrates working software and the founder provides feedback. We have never seen a project fail that had clear outcome definitions and weekly stakeholder reviews.
 
+
+> Related: [Building Software for the Long Term: Our Approach](/blog/building-software-for-the-long-term-our-approach/)
+
+
 ## Scope Management Is a Relationship Skill, Not a Project Management Skill
 
 Every client we have ever worked with has asked for something outside the original scope during a project. This is not a problem. It is evidence that the project is progressing and that the client is learning what they actually need. The question is not whether scope changes happen but how they are handled.
@@ -33,6 +37,10 @@ At least a dozen of our projects launched later than they should have because th
 Our rule of thumb, developed through painful experience: if the product solves the core problem for the target user and does not lose their data or money, it is ready to launch. Everything else, better error handling, smoother onboarding, additional integrations, edge case coverage, is iteration, and iteration is best guided by real usage data.
 
 The exceptions are products where failure has safety or legal consequences: healthcare applications, financial systems handling real money, and anything with regulatory requirements. For these, the launch threshold is higher and the caution is justified.
+
+
+> See also: [Why the Traditional Software Agency Model Is Broken](/blog/why-the-traditional-software-agency-model-is-broken/)
+
 
 ## Technology Choices Matter Less Than You Think (With Exceptions)
 

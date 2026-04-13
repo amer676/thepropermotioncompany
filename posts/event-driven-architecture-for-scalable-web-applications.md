@@ -35,6 +35,10 @@ Everything else happens asynchronously. The email service, inventory service, wa
 
 This is not just an architectural preference. It is a concrete improvement in reliability and user experience. An e-commerce company we worked with reduced their median order placement latency from 2.8 seconds to 340 milliseconds by moving five synchronous side effects to event handlers.
 
+
+> Related: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
+
 ## Choosing an Event Backbone: Queues, Streams, and Brokers
 
 The event backbone is the infrastructure that transports events from producers to consumers. The choice depends on your volume, durability requirements, and operational complexity tolerance.
@@ -86,6 +90,10 @@ A well-designed event payload:
 ```
 
 Every event has a unique ID for idempotency, a timestamp for ordering, a source for tracing, and a self-contained data payload.
+
+
+> See also: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
 
 ## Handling Failures: Retries, Dead Letter Queues, and Idempotency
 

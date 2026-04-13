@@ -20,6 +20,10 @@ For every AI feature, document these baseline metrics before writing any code:
 
 Collect baselines for at least 60-90 days before deployment to account for seasonal variation and normal fluctuation. A single week's data can be misleading.
 
+
+> Related: [AI for Human Resources: Recruiting, Onboarding, and Workforce Analytics](/blog/ai-for-human-resources-recruiting-onboarding-and-workforce-analytics/)
+
+
 ## The Four Categories of AI Value
 
 AI features generate value in four distinct categories, and most features contribute to multiple categories simultaneously. Your ROI framework should measure all applicable categories.
@@ -49,6 +53,10 @@ Essential dashboard components:
 **Business outcome metrics:** Connect AI feature usage to the downstream business metrics that matter. If the AI feature is supposed to reduce customer churn, track churn rates segmented by whether the customer interacted with the AI feature. If it is supposed to speed up underwriting, track time-to-decision for AI-assisted versus manual cases.
 
 Update the dashboard weekly and review it monthly with stakeholders. ROI measurement is not a one-time calculation --- it is an ongoing practice that informs whether to invest more in the feature, iterate on its design, or sunset it.
+
+
+> See also: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
 
 ## Accounting for the Full Cost of AI Features
 

@@ -12,6 +12,10 @@ We have worked with companies that estimated their switching cost at $300,000 to
 
 The lock-in equation is simple: the harder it is to leave, the more a vendor can charge you. Every month of data accumulation without a portability strategy increases the vendor's pricing power over your business.
 
+
+> Related: [10 Reasons Software Projects Fail and How to Prevent Each One](/blog/10-reasons-software-projects-fail-and-how-to-prevent-each-one/)
+
+
 ## What Data Ownership Actually Means Legally and Technically
 
 Data ownership has two dimensions that are frequently confused: legal ownership and practical control.
@@ -51,6 +55,10 @@ Data portability is not something you achieve after the fact. It is an architect
 **Document your data landscape.** Maintain an inventory of every system that holds business data, what data it holds, what export mechanisms exist, and when you last verified those mechanisms work. This inventory should be reviewed quarterly. Export mechanisms break, APIs change, and platforms deprecate features.
 
 **Negotiate data provisions in contracts.** Before signing any enterprise software agreement, negotiate explicit data portability terms: export format specifications, API access guarantees, data retention after termination (we recommend requiring 90 days minimum), and financial penalties for the vendor failing to provide complete data exports.
+
+
+> See also: [Why Software Rewrites Fail and How to Do Them Right](/blog/why-software-rewrites-fail-and-how-to-do-them-right/)
+
 
 ## The Compliance Dimension: GDPR, CCPA, and Beyond
 

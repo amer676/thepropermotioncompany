@@ -24,6 +24,10 @@ The cost is **denormalization overhead**. If a product's price changes, every or
 
 **A practical heuristic:** If your entities have stable, well-defined schemas with many relationships between them, PostgreSQL's relational model will serve you better. If your data is hierarchical, self-contained, or has schemas that vary significantly between instances of the same entity type, MongoDB's document model is a better fit.
 
+
+> Related: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
+
 ## Query Capabilities and Performance Characteristics
 
 How you query your data matters as much as how you store it.
@@ -57,6 +61,10 @@ PostgreSQL's limitation is **horizontal write scaling**. When a single server ca
 Sharding sounds elegant but introduces real complexity. Choosing a poor shard key (one with low cardinality or uneven distribution) creates "hot" shards that bottleneck performance. Cross-shard queries (queries that do not include the shard key) hit every shard and aggregate results, which is slower than querying a single server. Resharding an existing collection requires careful planning and can take hours for large datasets.
 
 **The honest answer for most applications:** You will not need horizontal write scaling. If your application has fewer than 50 million rows and fewer than 5,000 write operations per second, a single PostgreSQL or MongoDB server (with read replicas for PostgreSQL) handles the load comfortably. The scaling argument for MongoDB only becomes relevant at significant data volumes, and by that point, you have the engineering resources to handle either database's scaling mechanisms.
+
+
+> See also: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
 
 ## The JSONB Factor: PostgreSQL's Document Capabilities
 

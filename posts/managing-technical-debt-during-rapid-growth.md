@@ -18,6 +18,10 @@ Not all technical debt is the same. Different categories require different remed
 
 Map your current debt across these categories. The remediation approach differs: deliberate prudent debt just needs scheduled repayment. Reckless debt needs immediate attention. Inadvertent prudent debt needs refactoring cycles. Inadvertent reckless debt needs better onboarding, code review standards, and possibly technical mentorship.
 
+
+> Related: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
+
 ## Quantifying Debt So Leadership Takes It Seriously
 
 "We have a lot of technical debt" is not a compelling argument to leadership. "Technical debt is adding 3 days to every feature we ship, which means we will miss the Q3 roadmap by 6 weeks unless we invest 4 weeks in remediation" is compelling. To get there, you need to measure.
@@ -47,6 +51,10 @@ In a two-week sprint with a five-person team, that is approximately 80 hours of 
 - **10% on targeted refactoring.** Maintain a prioritized debt backlog. Each sprint, pull the highest-impact item and assign it to an engineer. A typical item might be: "Extract the notification logic from the order processing module into a dedicated service" or "Replace the hand-rolled CSV parser with a tested library" or "Add database indexes to the five slowest queries."
 
 - **5% on tooling and automation.** Invest in tools that prevent new debt: linters that enforce code style, pre-commit hooks that run tests, CI pipelines that measure code coverage, dependency bots that flag outdated packages. Every hour spent on tooling saves multiple hours of future debt accumulation.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Refactoring Strategies That Work During Active Development
 

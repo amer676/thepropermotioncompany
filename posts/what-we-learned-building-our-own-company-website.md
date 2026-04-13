@@ -12,6 +12,10 @@ The lesson was that self-imposed projects need the same discipline as client pro
 
 If you run a studio or any services business and your own website is perpetually under construction, the fix is not more design reviews or more technology evaluation. The fix is a deadline and a decision-maker.
 
+
+> Related: [What Proper Motion Means: The Philosophy Behind Our Name](/blog/what-proper-motion-means-the-philosophy-behind-our-name/)
+
+
 ## We Over-Engineered the First Version
 
 Our first attempt involved a React front end with server-side rendering, a headless CMS for content management, a custom animation library for page transitions, and a CI/CD pipeline with staging environments. For a site with five pages and a contact form.
@@ -31,6 +35,10 @@ What worked was being specific. Instead of saying "we build custom software," we
 The content creation process also forced useful internal conversations. Writing about our process required us to actually codify our process. Describing our ideal client forced us to define who that was. Drafting case studies required revisiting projects and articulating what we did well and what we would do differently. The website became a forcing function for organizational clarity.
 
 For anyone building a company website, budget at least 60% of the project time for content. The design and development are the easy parts. Writing honest, specific, compelling copy that differentiates you from competitors is where the real work happens.
+
+
+> See also: [Software Development as a Craft Not a Commodity](/blog/software-development-as-a-craft-not-a-commodity/)
+
 
 ## Performance as a Non-Negotiable
 

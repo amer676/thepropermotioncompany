@@ -18,6 +18,10 @@ The core data model is straightforward:
 
 The adapter pattern is critical because each channel has different semantics. Email supports rich HTML, file attachments up to 25MB, and CC/BCC recipients. SMS supports 160 characters of plain text (or 1600 with MMS). WhatsApp supports templates for outbound messages but requires pre-approval. The adapter translates between these channel-specific constraints and the unified internal format.
 
+
+> Related: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
+
 ## Message Routing and Assignment
 
 Inbound messages need to reach the right agent quickly. A naive round-robin assignment -- give the next message to whoever is least busy -- ignores context and expertise. Effective routing considers several factors:
@@ -41,6 +45,10 @@ Use WebSocket connections between the agent interface and the server. When an ag
 For the conversation locking question -- should only one agent be able to respond at a time? -- we recommend a soft lock approach. Show a warning ("Sarah is currently typing a response") rather than preventing input. Hard locks create problems when an agent steps away from their desk with a conversation locked, blocking other agents from helping the customer.
 
 Synchronization also applies to the customer's view. If the customer is using live chat and the agent responds, the response should appear in real time. If the customer sent an email, the response goes back via email. The platform must remember the customer's most recent channel and respond through it by default, with the option for the agent to choose a different channel when appropriate.
+
+
+> See also: [Next.js for Business Applications: Why We Choose It](/blog/nextjs-for-business-applications-why-we-choose-it/)
+
 
 ## Channel-Specific Optimization
 

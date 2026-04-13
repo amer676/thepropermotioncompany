@@ -20,6 +20,10 @@ Discovery is not a phase of meetings and Miro boards that produces a document no
 
 **Project roadmap with effort estimates**: A phased delivery plan that breaks the project into 2-to-4-week increments, each delivering usable functionality. Estimates at this stage are typically accurate to within 20% to 30%, compared to the 100% to 200% variance common in projects that estimate without discovery.
 
+
+> Related: [Agile Software Development Explained for Business Leaders](/blog/agile-software-development-explained-for-business-leaders/)
+
+
 ## How Discovery Prevents the Three Most Common Project Failures
 
 Software projects fail for three primary reasons, and discovery directly addresses all three.
@@ -41,6 +45,10 @@ A typical discovery engagement runs 3 to 6 weeks depending on project complexity
 **Week 3: Solution design and technical assessment.** Based on weeks 1 and 2, draft the functional requirements, create wireframes for key workflows, and design the technical architecture. Conduct a technical spike if needed -- a short, focused investigation into a specific technical question (Can we integrate with their legacy SAP system via RFC? Does the third-party API support the data we need at the volume we need?). Present wireframes to 3 to 5 users for feedback and iterate.
 
 **Week 4: Roadmap, estimates, and presentation.** Finalize the project roadmap with phased milestones, estimate effort for each phase, identify risks and mitigation strategies, and present everything to the stakeholder group. The presentation is a decision point: the stakeholders now have enough information to approve the project with confidence, adjust the scope to fit their budget, or (rarely but valuably) decide not to proceed because discovery revealed that the problem is better solved through process change rather than software.
+
+
+> See also: [Why Software Rewrites Fail and How to Do Them Right](/blog/why-software-rewrites-fail-and-how-to-do-them-right/)
+
 
 ## Common Objections to Discovery (And Why They Are Wrong)
 

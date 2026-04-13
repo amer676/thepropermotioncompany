@@ -12,6 +12,10 @@ Michael Feathers describes this approach extensively in "Working Effectively wit
 
 **Observability investment** comes next. If the system doesn't have structured logging, add it. If there's no error tracking (Sentry, Bugsnag, Datadog), set it up. If there's no performance monitoring, instrument the critical paths. You need to see what the system is actually doing in production before you can safely change it. This observability layer often reveals surprises: features that appear unused in the code are actually hit thousands of times daily, or a "rarely used" pathway is the one generating the most revenue.
 
+
+> Related: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
+
 ## The Seam Technique: Finding Safe Places to Make Changes
 
 Legacy code resists change because everything is entangled. Changing one function requires changing three others, which requires updating a database query, which affects a report somewhere else. The key to working with entangled code is finding seams -- places where you can alter behavior without modifying the existing code.
@@ -37,6 +41,10 @@ These tiny improvements compound over weeks and months. The frequently-modified 
 To make this systematic rather than ad hoc, maintain a **technical debt register**. This is a living document that catalogs known problems: "The UserService class has 47 methods and should be split," "The billing calculation duplicates logic in three places," "The notification system uses deprecated APIs." Each item includes a severity rating (how much does this hurt day-to-day?), a scope estimate (how much work to fix?), and the affected files.
 
 When planning sprints, allocate 15-20% of capacity to technical debt items from the register, prioritized by the intersection of severity and opportunity (is someone already working in that area of the code?). This sustained investment prevents debt from accumulating faster than you're paying it down, which is the failure mode of most legacy codebases: the team is always too busy shipping features to improve the foundation, so the foundation erodes until feature delivery itself becomes impossibly slow.
+
+
+> See also: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
 
 ## Dependency Archaeology: Updating Without Breaking
 

@@ -16,6 +16,10 @@ SSE has significant advantages over WebSockets for these use cases. It works ove
 
 **Long polling** is the fallback. The client sends a request, the server holds it open until there is new data or a timeout occurs, then the client immediately sends another request. It works everywhere, including behind the most restrictive firewalls, but it introduces latency (typically 100-500 ms per message round trip) and generates significantly more HTTP overhead than persistent connections. Use long polling only when WebSockets and SSE are blocked by infrastructure you cannot control.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Scaling Real-Time With Pub/Sub Architecture
 
 The moment you have more than one server instance, you need a message distribution layer. A message sent to WebSocket connections on server A needs to reach clients connected to server B.
@@ -47,6 +51,10 @@ For collaborative editing, conflict resolution becomes the central challenge. Tw
 **Conflict-free Replicated Data Types (CRDTs)** take a different approach. Each change is encoded in a data structure that is mathematically guaranteed to merge without conflicts. Libraries like Yjs and Automerge implement CRDTs for text editing, providing real-time collaboration with less implementation complexity than OT. Yjs can handle documents with 100,000+ operations with sub-millisecond merge times.
 
 For most applications that are not building a full collaborative text editor, a simpler approach works: **last-write-wins with field-level granularity.** If two users edit different fields of the same record simultaneously, both changes are applied. If they edit the same field, the later write wins, and the earlier user is notified that their change was overwritten. This handles 95% of real-world collaboration scenarios with minimal complexity.
+
+
+> See also: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
 
 ## Presence and Awareness Indicators
 

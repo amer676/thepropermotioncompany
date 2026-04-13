@@ -18,6 +18,10 @@ Your tech stack should optimize for three things in order: speed to market, hiri
 
 **Payments.** Stripe. Specifically, use Stripe Billing for subscriptions. Implement Stripe Checkout for the initial payment flow (it handles tax calculation, card validation, and 3D Secure in a hosted page), then use the Stripe Customer Portal for subscription management (upgrades, downgrades, cancellations, invoice history). This eliminates 80% of the billing code you would otherwise need to write. Budget 2 to 3 days for Stripe integration with webhooks.
 
+
+> Related: [Complex Subscription Billing Architecture](/blog/complex-subscription-billing-architecture/)
+
+
 ## Multi-Tenancy Architecture
 
 Multi-tenancy is the architectural foundation of any SaaS product. Get it right early or face a painful migration.
@@ -41,6 +45,10 @@ Billing is where SaaS gets complicated. Pricing models affect architecture decis
 **Usage metering.** If you offer usage-based pricing, instrument usage events from day one. Write events to a fast append-only store (Redis Streams or a simple Postgres table with time-partitioning). Aggregate usage on a daily cron job. Report usage to Stripe using their Usage Records API, which handles proration and invoicing automatically. Do not attempt to build your own invoicing system for usage-based billing; the edge cases around proration, mid-cycle plan changes, and tax calculation are a full product in themselves.
 
 **Trial and onboarding flow.** Offer a 14-day free trial with no credit card required. This is the current standard because it maximizes trial starts. Track activation metrics during the trial: which features does the user engage with? Set up automated emails at day 1, 3, 7, and 12 that highlight features the user has not tried yet. Convert trial users to paid by triggering a checkout flow when the trial expires or when they attempt to use a paid-only feature.
+
+
+> See also: [SaaS Subscription Management Platform](/blog/saas-subscription-management-platform/)
+
 
 ## Infrastructure and Deployment
 

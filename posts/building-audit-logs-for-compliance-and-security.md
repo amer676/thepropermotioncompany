@@ -24,6 +24,10 @@ Each audit entry should capture a consistent set of fields:
 
 Including the before-and-after diff is what separates a useful audit log from a glorified access log. When an auditor asks "What permissions did this user have before the change on March 12th?", you need the previous state, not just a record that something changed.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Choosing an Immutability Strategy
 
 Audit logs must be tamper-evident. If an attacker or a rogue insider can silently modify log entries, the entire system loses its evidentiary value. There are several approaches to achieving immutability, each with different tradeoffs.
@@ -47,6 +51,10 @@ Use transactional outbox if you need stronger guarantees. Write the audit event 
 For most applications handling under 10,000 audit events per minute, a simple queue-based pipeline with a consumer writing to PostgreSQL is sufficient. At higher volumes, consider partitioning by tenant or resource type, and writing to a columnar store like ClickHouse or BigQuery for efficient querying.
 
 Retention periods depend on your compliance requirements. SOC 2 typically expects at least one year. HIPAA requires six years. Financial regulations may demand seven years or longer. Design your storage tiers accordingly: hot storage in your primary database for the most recent 90 days, warm storage in a cheaper database or object storage for 90 days to two years, and cold storage in glacier-class object storage beyond that.
+
+
+> See also: [SOC 2 Compliance for SaaS Development](/blog/soc-2-compliance-for-saas-development/)
+
 
 ## Building a Useful Query Interface
 

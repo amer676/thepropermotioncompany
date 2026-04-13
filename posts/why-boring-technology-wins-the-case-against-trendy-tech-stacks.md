@@ -18,6 +18,10 @@ Each of these technologies may be excellent in isolation. Together, they represe
 
 A team that had chosen React (or Vue or Svelte — any framework with a large community), PostgreSQL, direct HTTP calls between services, and a managed deployment platform (Heroku, Railway, Fly.io) would have encountered none of these problems. Their infrastructure would be invisible. Their innovation tokens would be spent on the logistics domain — route optimization algorithms, carrier integration patterns, real-time tracking UX — the things their customers actually pay for.
 
+
+> Related: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
+
 ## What Makes Technology "Boring"
 
 Boring technology is not old technology. It is technology with a well-understood failure mode profile. The distinction is important.
@@ -39,6 +43,10 @@ The costs of choosing trendy technology are real but often invisible in planning
 **Upgrade and migration risk.** Young technologies change rapidly. API-breaking changes between versions are common. A major version upgrade that would be a weekend task in a mature framework becomes a multi-week project when the framework's migration path is poorly documented or does not exist. Some teams freeze their dependency versions to avoid this, which trades upgrade pain for security vulnerability accumulation.
 
 **Ecosystem gaps.** Mature technologies have rich ecosystems of libraries, plugins, and integrations. Need to add PDF generation to a Rails app? There are five well-maintained gems. Need to add it to an app built on a two-year-old framework? You may need to write the integration yourself, or use a library maintained by one person who might lose interest next month.
+
+
+> See also: [How to Choose the Right Tech Stack for Your Business](/blog/how-to-choose-the-right-tech-stack-for-your-business/)
+
 
 ## When Novelty Is Justified
 

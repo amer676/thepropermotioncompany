@@ -16,6 +16,10 @@ Calculate your cost per request for each use case. The formula is straightforwar
 
 Log token counts, not just request counts. A system making 10,000 requests per day at 500 tokens each costs one-tenth as much as one making 10,000 requests at 5,000 tokens each. Token volume is the real cost driver, and it is the lever you can pull hardest.
 
+
+> Related: [How Much Does AI Integration Cost for Business Applications](/blog/how-much-does-ai-integration-cost-for-business-applications/)
+
+
 ## Model Selection: Stop Using a Sledgehammer for Every Nail
 
 The single highest-impact optimization is matching model capability to task complexity. GPT-4o costs approximately 6x more than GPT-4o-mini per token. Claude Opus costs roughly 15x more than Claude Haiku. Yet many production systems route every request to the most powerful model available.
@@ -39,6 +43,10 @@ Techniques for reducing prompt length without losing effectiveness include: repl
 Limit output tokens explicitly. If you need a one-sentence summary, set max_tokens to 100, not 1,000. Models generate tokens until they hit the limit or produce a stop token. Without a cap, a model asked for "a brief summary" might produce 300 tokens when 50 would suffice. At scale, capping output tokens saves 20-40% on output costs.
 
 Use system prompt caching when your provider supports it. Anthropic's prompt caching feature lets you cache static system prompts so you only pay the full token cost once, then pay a reduced rate for subsequent requests using the same cached prefix. For applications with long system prompts and high request volume, this alone can reduce input token costs by 80-90%.
+
+
+> See also: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
 
 ## Caching and Deduplication: Avoid Paying Twice for the Same Answer
 

@@ -21,6 +21,10 @@ At its core, AI lead scoring is a supervised classification problem. You have hi
 
 **Output**: The model produces a conversion probability between 0 and 1 for each lead. Convert this to a score (0-100) and define thresholds: leads scoring 80+ are "hot" and should be contacted within 4 hours, leads scoring 50-79 are "warm" and should be nurtured, leads scoring below 50 are "cold" and should be deprioritized or placed in automated nurture sequences.
 
+
+> Related: [AI Chatbots vs AI Assistants: Choosing the Right Approach](/blog/ai-chatbots-vs-ai-assistants-choosing-the-right-approach/)
+
+
 ## Data Pipeline: From Raw CRM Data to Model Input
 
 The gap between "we have data in our CRM" and "we have a clean, feature-rich dataset ready for model training" is where most AI lead scoring projects stall. CRM data is messy, incomplete, and spread across multiple systems.
@@ -58,6 +62,10 @@ A model that runs in a Jupyter notebook is a prototype. A model that scores lead
 The `top_factors` field is critical for sales team adoption. Reps do not trust black-box scores. When they can see why a lead is scored high, they trust the recommendation and act on it.
 
 **CRM integration**: Write scores back to a custom field in your CRM (Salesforce custom field, HubSpot property, etc.) so scores are visible in the lead record, list views, and reports. Configure workflow automation in the CRM to trigger actions based on score changes: assign hot leads to a specific rep or round-robin, enroll warm leads in a nurture sequence, and flag leads whose scores increased by 20+ points in the last 24 hours for immediate attention.
+
+
+> See also: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
 
 ## Measuring Impact and Continuous Improvement
 

@@ -8,6 +8,10 @@ The most pervasive cause of project failure isn't technical. It's the inability 
 
 Prevention starts with investing real time in discovery before development begins. Conduct structured interviews with stakeholders, create user journey maps, and write acceptance criteria that are specific enough to test. Use the format "Given [context], when [action], then [expected result]" for key behaviors. When requirements do change -- and they will -- evaluate each change against the current scope and timeline. A change request process isn't bureaucracy; it's how you make trade-offs visible.
 
+
+> Related: [Why Software Rewrites Fail and How to Do Them Right](/blog/why-software-rewrites-fail-and-how-to-do-them-right/)
+
+
 ## 2. Absent or Disengaged Product Ownership
 
 Software projects need someone who can make authoritative decisions about what the product should do, quickly and consistently. When that person is absent, part-time, or unable to make decisions without committee approval, the development team stalls. Every unanswered question becomes a blocker. Developers start guessing, and their guesses often diverge from stakeholder expectations.
@@ -19,6 +23,10 @@ The fix is simple in principle and difficult in practice: assign a single produc
 The third failure pattern is trying to build too much at once. A twelve-month project with 120 features and a fixed deadline is a setup for failure, because the estimation error compounds with scope. If each feature's estimate is off by 20 percent (which is optimistic), and features have dependencies that create cascading delays, the project timeline can easily double.
 
 Scope projects in phases of six to eight weeks, each delivering usable functionality. Prioritize ruthlessly using a framework like MoSCoW (Must have, Should have, Could have, Won't have) and enforce the Won't Have category mercilessly. Launch the first phase, learn from real user feedback, and use that learning to inform the next phase. This approach limits downside risk: if the project gets cancelled after phase one, you've still delivered something useful.
+
+
+> See also: [Why Fixed-Price Software Development Projects Fail](/blog/why-fixed-price-software-development-projects-fail/)
+
 
 ## 4. Choosing Technology for Hype Instead of Fit
 

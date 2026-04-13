@@ -20,6 +20,10 @@ Better approaches for specific contexts:
 
 The right approach depends on how users interact with the data. If they primarily scan for specific records and then drill into details, progressive disclosure works best. If they need to compare values across rows, fixed columns with scroll preserves that capability.
 
+
+> Related: [Data Dashboard Design: Principles for Complex Applications](/blog/data-dashboard-design-principles-for-complex-applications/)
+
+
 ## Forms That Adapt Without Losing Context
 
 Complex business forms present a different responsive challenge. A desktop form might display fields in a three-column layout with logical groupings, inline validation, and contextual help text. Collapsing this to a single column on mobile creates a form that requires extensive scrolling, making it easy for users to lose their place.
@@ -45,6 +49,10 @@ Business applications have deep navigation hierarchies. A project management too
 **Mobile: bottom tab bar for top-level, full-screen navigation for sub-levels.** The bottom tab bar shows four to five top-level sections. Tapping a section opens its content. Sub-navigation within a section uses a scrollable tab bar below the header or a segmented control. Deep navigation (settings, less-frequent sections) moves to a "More" tab that opens a full-screen navigation list.
 
 **Breadcrumbs and back navigation.** On desktop, breadcrumbs (Projects > Acme Corp > Tasks) provide location context and navigation. On mobile, replace breadcrumbs with a back button and a current-location label in the header. The back button is more thumb-accessible and requires less screen width than a full breadcrumb trail.
+
+
+> See also: [Designing Data-Heavy Applications: Tables, Charts, and Dashboards](/blog/designing-data-heavy-applications-tables-charts-and-dashboards/)
+
 
 ## Dashboard Layouts: From Grid to Stack
 

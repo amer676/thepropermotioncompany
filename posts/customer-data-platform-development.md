@@ -22,6 +22,10 @@ Profile unification takes the resolved identity and constructs a comprehensive p
 
 Activation makes unified profiles available to downstream systems. Marketing automation platforms receive enriched profiles to power personalized campaigns. Sales tools receive buying signals to prioritize outreach. Support platforms receive customer context to reduce resolution time. Analytics tools receive unified data to power accurate reporting. Activation happens through real-time API access, webhook-based event forwarding, and scheduled syncs to data warehouses and marketing platforms.
 
+
+> Related: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
+
 ## Data Architecture for a Custom CDP
 
 The technical architecture of a CDP reflects the dual nature of the data: high-frequency events that arrive in real time and profile data that evolves through aggregation and computation.
@@ -47,6 +51,10 @@ Transitivity is where identity resolution gets complex. If anonymous ID abc-123 
 Guard against over-merging with rules. Certain identifier types (like shared IP addresses, company phone numbers, or generic email addresses like info@) should not create identity edges. Set maximum cluster sizes; if a merge would create a profile with more than a threshold number of distinct email addresses (say, 5), flag it for review rather than automatically merging. Implement unmerge capabilities so that incorrectly merged profiles can be separated.
 
 Store the identity graph in a graph database (Neo4j, Amazon Neptune) or as an adjacency list in PostgreSQL. Run connected-component analysis to identify identity clusters. When new events arrive with identifier pairs, update the graph and recompute affected clusters incrementally rather than re-running the full analysis.
+
+
+> See also: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
 
 ## Privacy Compliance and Consent Management
 

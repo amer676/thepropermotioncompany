@@ -12,6 +12,10 @@ Think of it as giving the model an open-book exam instead of a closed-book exam.
 
 The embedding step is what makes RAG work at scale. Rather than keyword matching (which misses synonyms, paraphrases, and conceptual relationships), embeddings capture meaning. A query about "employee time off policy" will retrieve documents about "PTO guidelines" and "vacation request procedures" even if those exact words never appear in the query. OpenAI's text-embedding-3-small, Cohere's embed-v3, and open-source models like BGE and E5 all produce high-quality embeddings suitable for RAG systems.
 
+
+> Related: [OpenAI API Integration Guide for Business Applications](/blog/openai-api-integration-guide-for-business-applications/)
+
+
 ## Building the Knowledge Base: Ingestion and Chunking
 
 The quality of a RAG system depends more on the quality of the knowledge base than on the choice of language model. Garbage in, garbage out applies with full force.
@@ -37,6 +41,10 @@ Hybrid search combines semantic similarity with keyword matching (BM25). A query
 Re-ranking applies a more expensive but more accurate model to re-score the initial retrieval results. Cohere Rerank and cross-encoder models from the sentence-transformers library can re-order the top 20 results from the initial retrieval, promoting the most relevant chunks to the top. This two-stage approach, cheap retrieval followed by expensive re-ranking, balances cost and quality.
 
 Query expansion rewrites or augments the user's query before retrieval. A short, ambiguous query like "PTO" might be expanded to "paid time off policy vacation days sick leave" before embedding. The language model itself can do this expansion: prompt it to generate three alternative phrasings of the query, embed all of them, and merge the retrieval results.
+
+
+> See also: [Fine-Tuning vs Prompt Engineering: A Decision Framework](/blog/fine-tuning-vs-prompt-engineering-a-decision-framework/)
+
 
 ## Prompt Engineering for Grounded Answers
 

@@ -14,6 +14,10 @@ Diagnostic image analysis is the most validated clinical AI application. FDA-cle
 
 Predictive analytics for operational and clinical use is the third category. Readmission risk scoring (identifying patients likely to be readmitted within 30 days), sepsis early warning systems, patient no-show prediction for scheduling optimization, and emergency department volume forecasting. These are typically gradient-boosted tree models (XGBoost, LightGBM) trained on EHR data — structured, tabular features like lab values, vital signs, diagnosis codes, and demographic information. They are less flashy than LLM-based tools but often more impactful because they drive operational decisions that affect thousands of patients.
 
+
+> Related: [AI for Human Resources: Recruiting, Onboarding, and Workforce Analytics](/blog/ai-for-human-resources-recruiting-onboarding-and-workforce-analytics/)
+
+
 ## HIPAA Compliance in the AI Pipeline
 
 Every component of your AI system that touches patient data must comply with HIPAA — and the boundaries of what constitutes "touching patient data" are wider than most engineering teams initially assume.
@@ -39,6 +43,10 @@ The integration pattern that works is: read clinical data via FHIR APIs, process
 Plan for the SMART on FHIR authorization framework. SMART (Substitutable Medical Applications, Reusable Technologies) defines how third-party applications authenticate and authorize against a FHIR server. This is OAuth2-based with healthcare-specific scopes that control which resources the application can access.
 
 Build a FHIR data normalization layer early. You will receive data in slightly different formats from different EHR installations. A normalization service that maps vendor-specific FHIR extensions and variations into a canonical internal format saves you from scattering vendor-specific logic throughout your AI pipeline.
+
+
+> See also: [How AI Changes Software Architecture](/blog/how-ai-changes-software-architecture/)
+
 
 ## Model Validation and Clinical Safety
 

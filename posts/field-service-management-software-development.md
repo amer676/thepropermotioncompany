@@ -18,6 +18,10 @@ The in-progress phase begins when the technician arrives on site. The mobile app
 
 Completion triggers a cascade of downstream actions: the work order is closed, the customer is notified, the invoice is generated (or the data is sent to the billing system), inventory is updated to reflect parts consumed, and the job history is added to the equipment record for future reference. Any warranty implications are recorded: the replaced compressor has a 5-year manufacturer warranty that starts today.
 
+
+> Related: [MLOps: Keeping AI Features Running in Production](/blog/mlops-keeping-ai-features-running-in-production/)
+
+
 ## Scheduling and Dispatch Optimization
 
 Manual scheduling is the biggest bottleneck in most field service operations. A dispatcher managing 20 technicians and 80 daily jobs faces a combinatorial optimization problem that is literally impossible to solve optimally by intuition.
@@ -45,6 +49,10 @@ Photo and video documentation is increasingly important for warranty claims, ins
 Access to equipment history and technical documentation in the field eliminates trips back to the office or phone calls to colleagues. If a technician is servicing a commercial HVAC unit, they should be able to pull up the unit's complete service history, the manufacturer's technical manual, and any notes from the previous technician's visit, all within the mobile app.
 
 Parts consumption tracking should be simple. Scanning a barcode on a part from the truck inventory records it against the work order and decrements the truck's inventory count. When truck inventory drops below a reorder threshold, the system automatically generates a replenishment order from the warehouse or the parts supplier.
+
+
+> See also: [The Rise of the Technical Operator](/blog/the-rise-of-the-technical-operator/)
+
 
 ## Customer Communication and Self-Service
 

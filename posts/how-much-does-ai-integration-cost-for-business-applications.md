@@ -39,6 +39,10 @@ For problems that require proprietary models trained from scratch on your data -
 
 Most businesses do not need Tier 3. We mention it for completeness and to set expectations: if someone quotes you $15,000 for a custom fraud detection model, they are either cutting critical corners or misunderstanding the problem.
 
+
+> Related: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
+
 ## The Hidden Costs Nobody Mentions
 
 The development and hosting costs are the visible part of the iceberg. Below the waterline are costs that consistently surprise first-time AI adopters:
@@ -66,6 +70,10 @@ Based on projects we have delivered, here are realistic all-in budgets for commo
 **Internal search and knowledge retrieval** (RAG-based system over company documents): $40,000 to $100,000 to build, $500 to $2,500 per month to operate. The most expensive component is document ingestion and chunking infrastructure. ROI is hard to measure directly but high in knowledge-intensive organizations where employees spend 20+ percent of their time searching for information.
 
 **Predictive analytics** (churn prediction, demand forecasting, lead scoring): $60,000 to $150,000 to build, $1,000 to $5,000 per month to operate. Requires clean historical data and a defined feedback loop for model improvement.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## How to Reduce Costs Without Sacrificing Quality
 

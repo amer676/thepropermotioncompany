@@ -12,6 +12,10 @@ The fee structure compounds the problem. Eventbrite charges roughly 3.7% plus $1
 
 Then there is data ownership. Off-the-shelf platforms own the customer relationship. Your attendee data lives in their system, subject to their export limitations and their marketing rules. A custom platform puts you in direct control of your attendee database, enabling segmentation, retargeting, and relationship-building that generic tools cannot support.
 
+
+> Related: [Software for Accounting and Financial Advisory Firms](/blog/software-for-accounting-and-financial-advisory-firms/)
+
+
 ## Core Architecture of a Custom Ticketing System
 
 A well-architected ticketing platform separates into four major subsystems: the storefront, the inventory engine, the payment pipeline, and the fulfillment layer.
@@ -33,6 +37,10 @@ For the map rendering, SVG is the standard approach. Each seat is an SVG element
 The backend needs to handle seat holds. When a user selects a seat, it enters a temporary hold state, typically five to ten minutes, during which no other user can select it. If the user does not complete checkout, the hold expires and the seat returns to available. This requires a background job or TTL-based mechanism. Redis sorted sets with timestamp scores work well: a scheduled job sweeps expired holds every 30 seconds.
 
 Best-available algorithms matter for phone and box office sales. When an agent says "give me four seats together in the best available section," the system needs to scan rows for contiguous available seats, ranked by a desirability score you define. This is a bin-packing problem that can be solved greedily for most venue sizes.
+
+
+> See also: [Custom Software for Professional Services Firms](/blog/custom-software-for-professional-services-firms/)
+
 
 ## Check-In, Access Control, and Day-of Operations
 

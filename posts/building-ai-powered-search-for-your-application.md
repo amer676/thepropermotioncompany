@@ -23,6 +23,10 @@ The process works in two phases:
 
 The magic is that step 3 operates on meaning, not words. "My printer is not working" and "troubleshoot printer issues" have a cosine similarity of 0.87 despite sharing only one word. This is fundamentally different from Elasticsearch's BM25 algorithm, which would score "My printer is not working" highly for documents containing "printer" and "working" but would miss documents about "troubleshooting print devices."
 
+
+> Related: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
+
 ## Choosing Your Vector Database
 
 The vector database stores your embeddings and performs fast similarity searches. The field has exploded with options, each with different characteristics.
@@ -59,6 +63,10 @@ Hybrid search combines vector similarity with traditional keyword matching (typi
 This ensures that documents matching both semantically and lexically rank highest, while documents matching only one approach still appear but lower in the results. In our testing across multiple client projects, hybrid search improved search relevance (measured by click-through rate on search results) by 15-25% compared to pure semantic search.
 
 Weaviate and Elasticsearch (via the kNN plugin with text expansion) support hybrid search natively. For other databases, implementing RRF at the application layer requires 20-30 lines of code.
+
+
+> See also: [AI for Healthcare: Applications, Compliance, and Implementation](/blog/ai-for-healthcare-applications-compliance-and-implementation/)
+
 
 ## Retrieval-Augmented Generation: Search Meets Conversation
 

@@ -16,6 +16,10 @@ For integration mapping, trace every inbound and outbound data flow. The inbound
 
 Tools that help: database schema visualization tools like SchemaSpy or DBeaver, application performance monitoring (APM) tools like Datadog or New Relic that can map service dependencies, and network traffic analysis to discover integrations that are not documented in the codebase.
 
+
+> Related: [Next.js for Business Applications: Why We Choose It](/blog/nextjs-for-business-applications-why-we-choose-it/)
+
+
 ## The Strangler Fig Pattern and Incremental Migration
 
 The highest-risk approach to migration is the big bang: build the new system in parallel, flip a switch on a Saturday night, and hope everything works Monday morning. This approach maximizes the blast radius of any problem and gives you the least ability to detect and recover from issues.
@@ -43,6 +47,10 @@ Data quality. The old system accumulated years of bad data: duplicate customer r
 Historical data. Not all historical data needs to migrate. If the old system has 10 years of transaction history, do you need all of it in the new system, or is 2 years sufficient with the rest archived? Moving less data reduces migration complexity and risk. Define a cutoff with stakeholders before you start.
 
 The migration pipeline should be repeatable and idempotent. You will run it dozens of times during development — against test databases, against copies of production data, against subsets for specific testing — before the final production run. Build it as a script or a series of scripts, not as manual SQL operations. Every run should produce a summary report: records processed, records succeeded, records failed with reasons, and a list of warnings for edge cases that need review.
+
+
+> See also: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
 
 ## Cutover Planning and the Rollback Strategy
 

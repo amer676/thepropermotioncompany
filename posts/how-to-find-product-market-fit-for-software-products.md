@@ -16,6 +16,10 @@ Usage depth within retained users matters. A user who logs in daily but only use
 
 Revenue willingness is another hard signal. If people pay you money — especially without being asked, as in "can I pay for this?" — that is unmistakable. If you are pre-revenue, ask users in interviews whether they would pay, and watch their face more than their words. A genuine "yes" sounds different from a polite one. Better yet, put up a pricing page before the product is built and see if anyone enters their credit card information.
 
+
+> Related: [Why Speed Beats Scale in Early-Stage Software](/blog/why-speed-beats-scale-in-early-stage-software/)
+
+
 ## Running Experiments That Actually Resolve Uncertainty
 
 The biggest waste in pre-PMF companies is building features that do not test a hypothesis. Every feature you build should be explicitly tied to a belief about what will drive retention, conversion, or expansion. If you cannot state the hypothesis, do not build the feature.
@@ -37,6 +41,10 @@ The characteristics of a good beachhead market: the problem is painful enough th
 A practical exercise: list every user segment that has shown interest in your product. For each segment, rate (1-5) the urgency of their problem, your ability to reach them, their willingness to pay, and the density of their network (how easily one customer's adoption leads to others in the same segment). Multiply the scores. The segment with the highest composite score is your beachhead candidate.
 
 Basecamp (originally 37signals) found their beachhead in small web design agencies who needed a simple project management tool. Not enterprise project management, not construction project management — specifically small creative agencies. That focus allowed them to build an opinionated product that resonated deeply with a specific group, and that group's recommendations drove expansion into adjacent markets.
+
+
+> See also: [Transitioning from Services to Product: A Strategic Guide](/blog/transitioning-from-services-to-product-a-strategic-guide/)
+
 
 ## Pivoting Versus Persisting: The Hardest Decision
 

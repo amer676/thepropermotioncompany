@@ -16,6 +16,10 @@ Basic scheduling tools let dispatchers manually drag and drop appointments onto 
 
 **Dynamic rescheduling** handles the inevitable disruptions. A job runs 45 minutes longer than estimated. An emergency call comes in from a premium customer. A technician calls in sick at 7 AM. The system should automatically suggest schedule adjustments that minimize the cascade of delays, notify affected customers with updated arrival windows, and present the dispatcher with options rather than leaving them to manually rework the entire day's schedule.
 
+
+> Related: [Software for Accounting and Financial Advisory Firms](/blog/software-for-accounting-and-financial-advisory-firms/)
+
+
 ## Field Operations and Mobile Experience
 
 Technicians spend their day in the field, not at a desk. The mobile experience is not a secondary consideration --- it is the primary interface for your largest employee group, and its quality directly affects job completion speed, data accuracy, and technician satisfaction.
@@ -39,6 +43,10 @@ Customer expectations in home services have been reset by ride-sharing and deliv
 **Online booking** captures customers who research and book services outside business hours. Data from home services companies shows that 35-45% of online bookings occur between 7 PM and 8 AM, when phone lines are typically closed. A booking portal that shows available time slots, collects job details, and confirms the appointment immediately captures revenue that would otherwise go to the competitor who answers their phone.
 
 **Service history portals** give customers self-service access to their complete service records: past jobs, invoices, equipment installed, warranty information, and maintenance schedules. This reduces inbound support calls and increases customer retention by making the switching cost of leaving (losing their organized service history) tangible.
+
+
+> See also: [Automotive Dealership Management Systems](/blog/automotive-dealership-management-systems/)
+
 
 ## Inventory and Parts Management
 

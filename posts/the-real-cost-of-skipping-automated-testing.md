@@ -22,6 +22,10 @@ Now track the interest payments:
 
 Total interest paid on skipping that 1.5 hours of test writing: 20+ hours in the first year alone, plus ongoing fear-driven development overhead for the life of the codebase. The ROI of that 1.5 hour test investment is roughly 13x in the first year.
 
+
+> Related: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
+
 ## Quantifying Bug Costs by Detection Stage
 
 The cost of a bug increases by an order of magnitude at each stage of the development lifecycle. This is not theoretical -- it has been consistently measured across industries.
@@ -49,6 +53,10 @@ A study by Microsoft Research found that teams with comprehensive test suites ma
 We see this pattern consistently in our client work. Teams that come to us with untested codebases describe the same symptoms: feature development that used to take two weeks now takes four; deployments that used to happen daily now happen weekly (or less) because each deployment requires a full manual regression pass; senior developers spending 30 to 50 percent of their time debugging rather than building.
 
 **The inflection point typically hits at 12 to 18 months** after the codebase reaches meaningful complexity (roughly 20,000 to 50,000 lines of code). Before that point, the codebase is small enough that developers can hold it in their heads and manually verify changes. After that point, no one can reason about the full system, and the absence of tests becomes a daily tax on every engineer.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## What to Test and What to Skip
 

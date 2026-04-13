@@ -14,6 +14,10 @@ Avoid deep nesting beyond two levels. `/organizations/{orgId}/teams/{teamId}/mem
 
 When you genuinely need an action that doesn't map cleanly to CRUD, use a sub-resource that represents the action's result. Instead of `POST /orders/{id}/cancel`, consider `POST /orders/{id}/cancellation` -- the cancellation is a resource that was created. This maintains the resource-oriented model while supporting non-CRUD operations.
 
+
+> Related: [Building a Developer Documentation Portal](/blog/building-a-developer-documentation-portal/)
+
+
 ## Pagination, Filtering, and the Performance Cliff
 
 Business applications deal with large datasets. An API that returns all 50,000 invoices in a single response will work in development and fail catastrophically in production. Pagination, filtering, and sorting must be designed into every list endpoint from the beginning.
@@ -70,6 +74,10 @@ Adopt a structured error format and use it consistently across every endpoint:
 Key principles: use machine-readable error codes (`validation_error`, `not_found`, `rate_limited`, `insufficient_permissions`) alongside human-readable messages. Include a request ID that correlates to your server logs so support teams can trace a specific failure. For validation errors, enumerate every field that failed, not just the first one -- developers hate fixing one error, resubmitting, and discovering the next error.
 
 HTTP status codes should be meaningful and consistent. 400 for client errors (bad input), 401 for unauthenticated requests, 403 for unauthorized requests (authenticated but lacking permission), 404 for resources that don't exist, 409 for conflict (trying to create a resource that already exists), 422 for semantically invalid input (syntactically valid JSON but business logic violations), and 429 for rate limiting. Reserve 500 for genuine server errors that the client can't fix.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Versioning Strategy for Long-Lived APIs
 

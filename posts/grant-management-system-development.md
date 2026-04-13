@@ -20,6 +20,10 @@ Reporting is the accountability mechanism. Each funder has its own reporting tem
 
 Closeout is often neglected but legally important. A grant closeout requires final financial reconciliation (ensuring all funds were spent or returned), final programmatic reports, disposition of any equipment purchased with grant funds, and retention of records for the period specified in the award terms (often seven to ten years).
 
+
+> Related: [Donor Management System Development Guide](/blog/donor-management-system-development-guide/)
+
+
 ## Budget Tracking and Financial Controls
 
 Grant budgets are not regular operating budgets. They have restrictions that must be enforced at the transaction level.
@@ -45,6 +49,10 @@ Program metrics vary wildly by funder and program area. A workforce development 
 Implement a report review workflow. Draft reports should be reviewed by the grant manager, then the program director, then the executive director or finance director before submission. Each reviewer can comment, request revisions, or approve. The system tracks who approved each report and when, creating an audit trail that is valuable during funder site visits.
 
 Store submitted reports as immutable records. Once a report is submitted to a funder, the system should save a snapshot of exactly what was submitted, including all data and the generated document. If a funder questions a number six months later, the organization can retrieve the exact report without recreating it.
+
+
+> See also: [Software for Non-Profit Organizations: Fundraising, Volunteers, Impact](/blog/software-for-non-profit-organizations-fundraising-volunteers-impact/)
+
 
 ## Multi-Grant Program Management
 

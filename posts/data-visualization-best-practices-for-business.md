@@ -18,6 +18,10 @@ For distribution, use histograms for continuous data and box plots when comparin
 
 For trends over time, use line charts. Never bar charts for time series --- bars imply discrete categories, not continuous progression. If you have multiple series, limit to 4-5 lines maximum. Beyond that, use small multiples or interactive filtering.
 
+
+> Related: [Designing Onboarding Flows That Reduce Churn](/blog/designing-onboarding-flows-that-reduce-churn/)
+
+
 ## Designing for Clarity: The Data-Ink Ratio Principle
 
 Edward Tufte's concept of the data-ink ratio remains the most useful principle in visualization design: maximize the share of ink (or pixels) devoted to presenting data, and minimize the share devoted to non-data elements. Every gridline, border, background color, and decorative element that does not help the viewer understand the data should be questioned and usually removed.
@@ -39,6 +43,10 @@ Limit a single dashboard view to 6-8 visualizations. Beyond that, cognitive load
 Align time axes across all charts on the same dashboard. If one chart shows 30 days and another shows 90 days, the viewer cannot compare trends at a glance. Shared axes create visual coherence and enable pattern recognition across metrics.
 
 Use consistent formatting for numbers. If revenue is in thousands on one chart and in raw dollars on another, the viewer must do mental arithmetic to compare. Choose a format (e.g., "$1.2M" or "$1,200,000") and apply it everywhere. For percentages, decide on decimal places (12% vs. 12.3%) and be consistent.
+
+
+> See also: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
 
 ## Tables vs. Charts: When Numbers Should Stay as Numbers
 

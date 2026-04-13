@@ -14,6 +14,10 @@ This cross-modal correlation is where the business value lives. It catches incon
 
 Modern foundation models like GPT-4o, Claude's vision capabilities, and Gemini handle multiple modalities natively within a single model call. You send an image and a text prompt together, and the model reasons about both simultaneously. This is a significant architectural simplification compared to running separate models and writing fusion logic yourself.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Image Understanding for Operational Workflows
 
 The most immediately deployable multimodal capability for most businesses is image understanding paired with structured data extraction. The pattern: a user captures a photo, the system extracts structured information, and that information flows into a business workflow.
@@ -37,6 +41,10 @@ Audio AI in business applications usually starts and ends with transcription -- 
 **Ambient sound classification.** In field service applications, an audio recording can supplement a technician's report. The model can identify the sound of a failing bearing, an air leak, or an electrical arc -- sounds that a technician might describe vaguely in text but that a trained audio classifier can categorize precisely.
 
 For most business applications, the audio pipeline involves three stages: transcription (Whisper or similar), enrichment (sentiment, diarization, classification), and integration (structured output fed into the business workflow). The transcription step has become remarkably cheap -- under $0.006 per minute of audio with current API pricing -- making it feasible to process every call, meeting, and voice memo rather than sampling.
+
+
+> See also: [How to Integrate AI Into Your Existing Software Product](/blog/how-to-integrate-ai-into-your-existing-software-product/)
+
 
 ## Building the Integration Layer
 

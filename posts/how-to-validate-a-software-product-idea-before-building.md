@@ -19,6 +19,10 @@ If people experience the problem rarely, have acceptable workarounds, or have ne
 
 Conduct 15-25 interviews with people in your target market. Not friends and family, who will tell you what you want to hear, but strangers who have no social incentive to be polite. Use open-ended questions. "Tell me about the last time you had to prioritize tasks for your team" reveals more than "Would you use a tool that prioritizes tasks automatically?" The first question surfaces real behavior. The second invites hypothetical enthusiasm that does not predict actual purchasing.
 
+
+> Related: [Transitioning from Services to Product: A Strategic Guide](/blog/transitioning-from-services-to-product-a-strategic-guide/)
+
+
 ## The Demand Signal Test: Measuring Interest Before Building
 
 Interviews tell you about the problem. Demand signals tell you whether people will actually pay for a solution. There are several ways to measure demand without building anything.
@@ -42,6 +46,10 @@ Interviews tell you about the problem. Demand signals tell you whether people wi
 **Quantify switching costs.** If your target customers already use a competitor, you need to be significantly better to justify the switching cost. "10% better" is not enough. You need to be 10x better on at least one dimension: dramatically cheaper, dramatically faster, dramatically simpler, or capable of something the competition cannot do at all.
 
 Research at least 10 competitors. For each one, document: their pricing model, their target customer, their core features, their weaknesses (check review sites like G2 and Capterra for complaints), and their approximate market share. This analysis takes 2-3 days and prevents you from building a product that is a marginal improvement over something that already exists.
+
+
+> See also: [Why Speed Beats Scale in Early-Stage Software](/blog/why-speed-beats-scale-in-early-stage-software/)
+
 
 ## Building the Minimum Viable Experiment
 

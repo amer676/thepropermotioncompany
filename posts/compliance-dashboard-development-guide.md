@@ -22,6 +22,10 @@ Design the schema to support historical queries. Compliance teams need to answer
 
 For a typical mid-market organization with 100 to 300 controls across 3 to 5 regulatory frameworks, the data model supports 1,000 to 5,000 assessment records per year and 10,000 to 50,000 evidence artifacts. PostgreSQL handles this volume comfortably with proper indexing.
 
+
+> Related: [SOC 2 Compliance for SaaS Development](/blog/soc-2-compliance-for-saas-development/)
+
+
 ## Real-Time Data Integration Architecture
 
 The value of a compliance dashboard depends on the freshness and accuracy of its data. A dashboard that shows yesterday's data is a report. A dashboard that shows current data is an operational tool.
@@ -75,6 +79,10 @@ Key features for the auditor view:
 - Finding lifecycle timeline (identified, acknowledged, remediated, validated)
 - Evidence integrity verification (hash comparison to confirm artifacts have not been modified)
 - Export functionality for audit workpapers (PDF, Excel)
+
+
+> See also: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
 
 ## Alerting and Escalation Logic
 

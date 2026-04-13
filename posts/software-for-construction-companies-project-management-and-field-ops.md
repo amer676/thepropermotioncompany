@@ -12,6 +12,10 @@ Field conditions change the plan daily. Weather delays a roof installation by th
 
 Drawing management is another gap. Construction runs on drawings -- architectural plans, structural details, MEP (mechanical, electrical, plumbing) layouts, shop drawings, and as-built documentation. These drawings get revised constantly, and using an outdated revision on a job site causes expensive rework. Construction software needs version-controlled drawing management with push notifications when a new revision is issued, markup and RFI (request for information) tools that link to specific drawing details, and offline access because cell service on a job site is unreliable.
 
+
+> Related: [Automotive Dealership Management Systems](/blog/automotive-dealership-management-systems/)
+
+
 ## Building an Integrated Field Operations Platform
 
 The most impactful construction software doesn't just digitize existing paper processes -- it connects the field to the office in real time. An integrated field operations platform typically includes daily reporting, time tracking, safety management, quality control, and punch list management in a single mobile-first application.
@@ -33,6 +37,10 @@ Digital takeoff tools like Bluebeam Revu, PlanSwift, and On-Screen Takeoff let e
 BIM (Building Information Modeling) integration takes estimating further. A BIM model is a 3D digital representation of the building that contains not just geometry but material specifications, manufacturer data, and spatial relationships. Linking the BIM model to the estimate (5D BIM, where the five dimensions are 3D geometry plus time and cost) enables quantity extraction directly from the model and automatic estimate updates when the design changes.
 
 Bid management software tracks which projects are being bid, deadlines, plan holder lists, and subcontractor bid solicitations. For general contractors that bid dozens of projects per month, managing this pipeline is a significant administrative burden. Automating subcontractor invitations, bid tabulation, and scope coverage analysis saves estimating departments hours per bid while reducing errors.
+
+
+> See also: [Event Management and Ticketing Platform Development](/blog/event-management-and-ticketing-platform-development/)
+
 
 ## Financial Management: Job Costing, Change Orders, and Cash Flow
 

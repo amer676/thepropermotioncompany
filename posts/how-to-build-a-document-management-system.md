@@ -20,6 +20,10 @@ The storage layer is the foundation of your DMS. The key decisions are where fil
 3. **Text extraction**: Extract text content from PDFs (using a library like Apache PDFBox or pdf.js), Office documents (using Apache POI or LibreOffice in headless mode), and images with text (using OCR via Tesseract or a cloud OCR service). The extracted text feeds the full-text search index.
 4. **Metadata extraction**: Pull embedded metadata (EXIF data from images, author and title from Office documents, creation dates from PDFs) and store it alongside user-provided metadata.
 
+
+> Related: [Next.js for Business Applications: Why We Choose It](/blog/nextjs-for-business-applications-why-we-choose-it/)
+
+
 ## Version Control and Document Lifecycle
 
 Version control is what separates a DMS from a shared folder. Without version control, the latest version of "Q4_Budget_Final_v3_REVISED_FINAL2.xlsx" is anyone's guess. With version control, there is one document with a clean history of every change.
@@ -48,6 +52,10 @@ A DMS that does not control who can see, edit, and share documents is a liabilit
 **External sharing**: When documents need to be shared outside the organization -- with clients, vendors, or auditors -- provide secure sharing links with configurable expiration (7 days, 30 days, custom), password protection, download restrictions (view-only in browser, no download), and watermarking (overlay the viewer's name/email on each page to discourage unauthorized redistribution).
 
 **Audit trail**: Log every access event: who viewed, downloaded, edited, shared, printed, or deleted each document, with a timestamp and IP address. The audit trail should be tamper-evident (append-only storage) and retained for the same period as the document itself. In regulated industries, the audit trail is often as important as the document.
+
+
+> See also: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
 
 ## Search: Full-Text, Metadata, and Semantic
 

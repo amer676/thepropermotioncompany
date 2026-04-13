@@ -18,6 +18,10 @@ A practical example: a metal stamping facility deployed a vision system that ins
 
 The total cost for a single-station inspection system: $15,000 to $40,000 for cameras and lighting, $20,000 to $50,000 for model development and integration, and $500 to $2,000 per month for cloud inference (or a one-time $5,000 to $15,000 for an edge computing device for on-premises inference).
 
+
+> Related: [How AI Changes Software Architecture](/blog/how-ai-changes-software-architecture/)
+
+
 ## Inventory Management and Shelf Analytics
 
 Retail and warehouse operations spend enormous effort counting and locating physical inventory. A typical grocery store conducts a full inventory count quarterly, a process that takes 20 to 40 labor hours and produces results that are outdated within days. Between counts, inventory records drift from reality, causing stockouts, overstock, and misplaced items.
@@ -49,6 +53,10 @@ The pipeline works in three stages:
 The ROI calculation for document processing is straightforward. A data entry clerk processes 100 to 200 documents per day at a fully loaded cost of $45,000 to $55,000 per year. An AI document processing system handles 5,000 to 20,000 documents per day at a cost of $0.01 to $0.10 per page. Even with a 10 percent human review rate, the cost reduction is 60 to 80 percent.
 
 Vendors like AWS Textract, Google Document AI, and Azure Form Recognizer provide managed document processing services. For use cases with non-standard document types, custom model training on 200 to 500 labeled documents typically outperforms generic services by 10 to 15 percentage points.
+
+
+> See also: [AI for Healthcare: Applications, Compliance, and Implementation](/blog/ai-for-healthcare-applications-compliance-and-implementation/)
+
 
 ## Safety and Compliance Monitoring
 

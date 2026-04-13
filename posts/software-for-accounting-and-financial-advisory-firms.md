@@ -12,6 +12,10 @@ Integration via APIs helps at the margins. Zapier automations can sync some data
 
 A custom platform that serves as the single source of truth for client data, with integrations to specialized tools where needed (you may still want to use Lacerte for tax preparation), eliminates the reconciliation burden and gives every team member a complete view of every client from a single interface.
 
+
+> Related: [Custom Software for Professional Services Firms](/blog/custom-software-for-professional-services-firms/)
+
+
 ## Client Portal: The Advisory Firm's Digital Front Door
 
 The client experience at most accounting firms has not fundamentally changed in two decades. Clients email documents, call for updates, receive paper invoices, and get annual check-in meetings. Firms that build a modern client portal differentiate themselves in a way that directly impacts retention and referrals.
@@ -35,6 +39,10 @@ Automated document requests save enormous time. The system knows that a client w
 Review routing should consider complexity and staff expertise. A simple individual return can go to a junior reviewer. A multi-entity return with international income should go to a senior manager with relevant experience. The system can score return complexity based on entity type, income sources, and deduction categories, then route accordingly.
 
 Deadline tracking with escalation prevents the most costly errors in public accounting: missed filing deadlines. The system maintains every applicable deadline (federal, state, estimated payments, extensions), sends alerts at 30, 14, and 7 days, and escalates to a partner if a return is not filed within 48 hours of the deadline. Extension filing should be automated for returns that will not be completed by the original deadline.
+
+
+> See also: [Custom Software for Schools and Educational Institutions](/blog/custom-software-for-schools-and-educational-institutions/)
+
 
 ## Billing Models and Revenue Recognition
 

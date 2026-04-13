@@ -18,6 +18,10 @@ Build a feature store that computes these behavioral features in real time. Apac
 
 **False positive management.** The bane of fraud detection. A system that flags 5% of transactions as potentially fraudulent when the actual fraud rate is 0.1% generates 50 false positives for every true positive. Each false positive is a declined legitimate transaction, a frustrated customer, and a support call. Optimize for precision at recall thresholds that your operations team can handle. If your fraud investigation team can review 500 alerts per day, tune your threshold so the system generates approximately 500 alerts at the highest possible precision. Use two-tier alerting: high-confidence alerts trigger automatic blocking, medium-confidence alerts trigger step-up authentication (SMS verification, biometric), and low-confidence alerts are logged for batch review.
 
+
+> Related: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
+
 ## Credit Risk Assessment and Underwriting
 
 Traditional credit scoring relies heavily on bureau data (FICO scores, credit history). AI enables more nuanced risk assessment, particularly for thin-file borrowers who lack extensive credit history.
@@ -43,6 +47,10 @@ AML compliance is one of the most labor-intensive functions in financial service
 Train anomaly detection models (Isolation Forests, autoencoders, or graph neural networks for network analysis) on historical SARs (Suspicious Activity Reports) as positive labels and non-SARs as negatives. The challenge: SAR data is highly imbalanced (perhaps 0.01% of transactions lead to SARs) and noisy (many SARs are filed defensively and do not represent actual money laundering). Use techniques like SMOTE for oversampling and focal loss for handling class imbalance.
 
 **Network analysis for entity resolution.** Money laundering often involves networks of related entities. Graph-based AI identifies connections that humans miss: shared addresses across seemingly unrelated accounts, common beneficial owners discovered through corporate registry data, transaction chains that form suspicious patterns (circular flows, fan-out/fan-in structures), and connections to known bad actors separated by multiple degrees. Implement using a graph database (Neo4j, Amazon Neptune) with graph neural network models for link prediction and community detection.
+
+
+> See also: [AI Chatbots vs AI Assistants: Choosing the Right Approach](/blog/ai-chatbots-vs-ai-assistants-choosing-the-right-approach/)
+
 
 ## Insurance Claims Processing and Fraud Detection
 

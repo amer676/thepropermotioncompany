@@ -14,6 +14,10 @@ Your objective determines your scope. A scalability audit focuses on database qu
 
 Define the scope in writing before you start. A useful format is: "We are auditing [system name] to assess [objective]. The audit will cover [list of areas] and will not cover [explicit exclusions]. The deliverable is [format] by [date]." This prevents scope creep and sets expectations with stakeholders who may want you to audit everything.
 
+
+> Related: [Next.js for Business Applications: Why We Choose It](/blog/nextjs-for-business-applications-why-we-choose-it/)
+
+
 ## Codebase Health Assessment
 
 Start with quantitative metrics before making qualitative judgments. Numbers provide a baseline and prevent the audit from being driven by whoever has the strongest opinion about code style.
@@ -37,6 +41,10 @@ Check whether infrastructure is defined as code. If the production environment w
 Review the monitoring and alerting setup. Ask these questions: If the application throws an error in production right now, who gets notified and how quickly? If the database runs out of disk space at 3 AM, will anyone know before users start seeing errors? If response times degrade from 200ms to 2 seconds over the course of an hour, is there an alert for that? If the answer to any of these is "no" or "I'm not sure," that is a finding.
 
 Examine the backup and disaster recovery strategy. Are database backups automated? How frequently do they run? When was the last time a backup was actually restored to verify it works? An untested backup is not a backup — it is a hypothesis.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Security Posture Evaluation
 

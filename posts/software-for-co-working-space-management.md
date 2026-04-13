@@ -10,6 +10,10 @@ The billing permutations alone are staggering. A single member might owe a month
 
 Existing co-working management platforms like Nexudus, OfficeRnD, and Optix handle the basics reasonably well. But the moment your model deviates from their assumptions, whether that is hybrid memberships, per-minute billing for specialty equipment, custom enterprise reporting, or integration with your building's physical infrastructure, you start building workarounds. Those workarounds become the most time-consuming part of your operations.
 
+
+> Related: [Custom Software for Real Estate Companies: A Complete Guide](/blog/custom-software-for-real-estate-companies-a-complete-guide/)
+
+
 ## Member Experience: From Booking to Badge-In
 
 The member experience starts before they walk through the door. The booking flow should allow a member to see real-time availability across all resource types, book a desk or room, extend or modify their booking, and handle payment, all from their phone in under 30 seconds. Every additional tap is friction that reduces utilization.
@@ -33,6 +37,10 @@ Implement pricing tiers that reward commitment. A month-to-month hot desk member
 Enterprise deals require flexible rate structures. A company buying 50 desk memberships expects volume pricing. They may also want the ability to add or remove seats monthly within a band (say, 40 to 60 seats) without renegotiating. Your billing system needs to handle this with a base commitment and overage charges, similar to how cloud computing bills for reserved versus on-demand capacity.
 
 A custom platform can surface utilization data that informs pricing decisions. If your data shows that private offices are 95% utilized while hot desks are at 60%, you may be underpricing offices or overpricing hot desks. If meeting rooms have 90% booking rates but 70% actual utilization (because booked rooms sit empty), you need a no-show policy or shorter default booking slots.
+
+
+> See also: [PropTech Software Development Guide](/blog/proptech-software-development-guide/)
+
 
 ## Utilization Analytics and Space Planning
 

@@ -14,6 +14,10 @@ Cache aggressively. Node modules, build caches, Docker layer caches, and test fi
 
 Parallelize where possible. Unit tests and integration tests can run simultaneously on different runners. Linting and type checking can run in parallel with each other. The build step typically depends on linting and type checking succeeding, so structure your pipeline as a directed acyclic graph rather than a linear sequence.
 
+
+> Related: [Continuous Integration and Deployment Best Practices](/blog/continuous-integration-and-deployment-best-practices/)
+
+
 ## Branch Strategy and Merge Policies
 
 Your branching strategy determines how code flows from a developer's machine to production, and it has a direct impact on deployment frequency and integration risk.
@@ -37,6 +41,10 @@ Preview environments should use production-like configuration but with isolated 
 Staging mirrors production as closely as possible: same infrastructure provider, same database engine, same environment variables (with different values), same monitoring. Its purpose is to catch configuration and infrastructure issues that don't appear in preview environments. Deploy to staging automatically when the main branch is updated. Run your end-to-end test suite against staging after each deployment.
 
 Production receives deployments that have passed staging validation. The deployment mechanism should be identical between staging and production -- only the configuration differs. If you deploy to staging with a Docker image and a Helm chart, you deploy to production with the same Docker image and the same Helm chart, just pointed at different infrastructure.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Deployment Strategies: Zero Downtime and Safe Rollbacks
 

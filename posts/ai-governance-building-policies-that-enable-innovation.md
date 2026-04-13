@@ -14,6 +14,10 @@ Each of these activities carries specific risks. Customer data entered into a th
 
 The EU AI Act, effective in stages through 2026, classifies AI systems by risk level and imposes specific requirements for high-risk applications. Several US states have passed or proposed AI transparency and discrimination laws. Industry-specific regulators (SEC, FDA, OCC) are issuing guidance on AI use in their domains. Even if your company operates outside these jurisdictions today, your customers and partners increasingly ask about your AI practices during procurement.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## The Risk-Tiered Framework
 
 The foundation of a workable AI governance framework is a risk classification system that determines the level of review required for each AI use case. Three tiers work well for most organizations.
@@ -41,6 +45,10 @@ Define four data categories and their AI usage rules:
 **Restricted data**: PII, PHI, payment card data, credentials, and other data subject to specific regulatory requirements. Can be used with AI only after Tier 3 review, with specific technical controls (data anonymization, encryption, audit logging), and only with AI systems that meet the applicable regulatory requirements (HIPAA BAA for PHI, PCI DSS for payment data). Examples: patient records, social security numbers, credit card numbers.
 
 Make these rules specific enough that an employee can self-classify without needing to ask a lawyer. Provide examples for each category relevant to your industry. Create a one-page reference card that employees can consult in the moment of decision: "I am about to paste this customer email into an AI tool. The email contains the customer's name and account number. That is confidential data. I need to use our enterprise AI tool, not the free version."
+
+
+> See also: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
 
 ## Vendor Assessment for AI Tools
 

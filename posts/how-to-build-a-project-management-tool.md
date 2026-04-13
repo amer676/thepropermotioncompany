@@ -18,6 +18,10 @@ The data model should accommodate this domain structure without becoming rigid. 
 
 **Workflow definitions** govern how tasks move through states. Rather than hardcoding a status enum (To Do, In Progress, Done), define workflows as state machines: a set of states, a set of transitions between states, and guards on each transition (which roles can trigger it, what fields must be populated). A construction tool might have: Draft -> Submitted -> Under Review -> Approved / Revision Required. A legal tool might have: Drafted -> Internal Review -> Filed -> Acknowledged -> Closed. The workflow engine evaluates transition guards and records the full state-change history for audit purposes.
 
+
+> Related: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
+
 ## Dependencies, Scheduling, and the Critical Path
 
 For many domains, the relationships between tasks matter more than the tasks themselves. A permit cannot be submitted until the engineering drawings are complete. Electrical rough-in cannot start until framing passes inspection. Post-production cannot begin until all footage is shot.
@@ -47,6 +51,10 @@ Project management is inherently collaborative. Multiple people update the same 
 **Activity streams** record every change as a structured event: "Sarah changed the status of 'Foundation Pour' from 'Scheduled' to 'Completed' at 2:14 PM." The activity stream serves three purposes: it provides a chronological narrative of project progress, it enables undo (by replaying events in reverse), and it satisfies audit requirements for regulated industries.
 
 The activity stream should be filterable: show only status changes, show only comments, show changes by a specific team member, show changes to a specific task. For long-running projects, the activity stream can accumulate thousands of entries; pagination and efficient time-range queries (a BRIN index on the timestamp column in PostgreSQL) keep performance manageable.
+
+
+> See also: [Next.js for Business Applications: Why We Choose It](/blog/nextjs-for-business-applications-why-we-choose-it/)
+
 
 ## Notifications and Escalation
 

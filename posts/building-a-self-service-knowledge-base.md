@@ -21,6 +21,10 @@ Within each category, organize articles from simple to complex: overview article
 
 Create a top-level navigation structure with no more than 7 to 9 categories. Within each category, limit sub-categories to 2 levels deep. Deeper nesting creates navigation complexity that discourages exploration. If a category needs more than 15 articles, consider splitting it into sub-categories or creating a landing page that groups articles by use case.
 
+
+> Related: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
+
 ## Writing Knowledge Base Articles That Actually Help
 
 The quality of individual articles determines whether customers find answers or give up and submit a ticket. Effective knowledge base articles share several characteristics.
@@ -53,6 +57,10 @@ If customers cannot find the right article, it does not matter how well it is wr
 - **Most-searched terms**: The queries customers perform most frequently, which should directly inform your content creation priorities.
 
 **Contextual help integration** puts knowledge base content where customers need it, without requiring them to leave your application and search a separate site. Embed article excerpts in tooltips, link "Learn more" text to relevant articles, and surface suggested articles in your in-app help widget based on the page the customer is currently viewing. Intercom, Zendesk, and Freshdesk all support this pattern, or you can build a lightweight widget that queries your knowledge base API.
+
+
+> See also: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
 
 ## Technical Platform: Build vs. Buy vs. Headless
 

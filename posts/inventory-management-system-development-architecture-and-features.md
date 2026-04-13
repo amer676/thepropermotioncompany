@@ -22,6 +22,10 @@ A ledger-based inventory table structure:
 - Current quantity = `SUM(quantity) WHERE product_variant_id = X AND location_id = Y`
 - Maintain a materialized `inventory_levels` table updated by triggers or application code for fast lookups
 
+
+> Related: [AI for Predictive Maintenance](/blog/ai-for-predictive-maintenance/)
+
+
 ## Receiving, Putaway, and Inbound Workflows
 
 The receiving process is where inventory accuracy is won or lost. Errors at receiving propagate through every downstream process.
@@ -45,6 +49,10 @@ Outbound operations are where the inventory system directly impacts customer sat
 **Packing verification.** After picking, the packing station scans each item against the order to verify accuracy. The system confirms that all items are present, flags any discrepancies, and generates shipping labels and packing slips. Weight verification (comparing actual package weight against expected weight based on item weights) adds another layer of accuracy.
 
 **Shipping integration.** Connect to carrier APIs (UPS, FedEx, USPS, DHL) to generate shipping labels, calculate rates, and book pickups from within the inventory system. Store tracking numbers against the shipment record and update order status automatically when labels are generated.
+
+
+> See also: [Quality Management Systems for Manufacturing](/blog/quality-management-systems-for-manufacturing/)
+
 
 ## Real-Time Visibility and the Dashboard Problem
 

@@ -14,6 +14,10 @@ Fine-tuning — training a model further on your specific data — makes sense i
 
 For most applications, start with prompting the best available model, measure its performance on your specific task, and only move to fine-tuning if prompting cannot meet your quality bar.
 
+
+> Related: [OpenAI API Integration Guide for Business Applications](/blog/openai-api-integration-guide-for-business-applications/)
+
+
 ## The Orchestration Layer: Frameworks for Building AI Features
 
 Raw model API calls are just the beginning. Real AI features require prompt management, context assembly, tool use, output parsing, error handling, retry logic, and evaluation. The orchestration layer handles all of this.
@@ -35,6 +39,10 @@ The typical RAG pipeline involves: chunking your documents into passages (500-10
 Vector database options have proliferated. Pinecone is the managed option with the gentlest learning curve. Weaviate and Qdrant offer more features and can be self-hosted. pgvector — a PostgreSQL extension — lets you store vectors alongside your relational data, which simplifies the architecture considerably if your dataset fits in a single Postgres instance (up to a few million vectors). For most applications, pgvector is the right starting point because it eliminates the operational overhead of a separate database.
 
 The hard part of RAG is not the infrastructure — it is the quality of retrieval. Naive similarity search returns results that are semantically similar to the query but not necessarily relevant to answering it. Techniques that improve retrieval quality include: hybrid search (combining vector similarity with keyword matching via BM25), reranking (using a cross-encoder model like Cohere Rerank to re-score the top results from the initial retrieval), query expansion (using the model to generate multiple versions of the user's query before searching), and metadata filtering (restricting search to documents that match specific attributes like date range, document type, or access level).
+
+
+> See also: [How to Integrate AI Into Your Existing Software Product](/blog/how-to-integrate-ai-into-your-existing-software-product/)
+
 
 ## The Evaluation Layer: Measuring What Matters
 

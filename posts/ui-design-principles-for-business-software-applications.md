@@ -12,6 +12,10 @@ The key is structured density. Use consistent column widths, clear row separator
 
 Specific techniques that work: freeze the first column and header row in wide tables. Use alternating row backgrounds only when column count exceeds five. Right-align numeric columns and format numbers consistently -- $1,234.56 not $1234.5600. These are small details that compound into a dramatically more usable interface when someone is staring at it for four hours straight.
 
+
+> Related: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
+
 ## Design for the 80 Percent Workflow First
 
 Every business application has power users who need access to every filter, toggle, and configuration option imaginable. It also has the other 90 percent of its user base, who perform the same three to five tasks every single day. The mistake most teams make is designing for the power users first, then trying to simplify later.
@@ -27,6 +31,10 @@ Business applications grow. What starts as a five-screen MVP becomes a 50-screen
 Invest in a component library early. At minimum, you need standardized versions of buttons (primary, secondary, destructive, disabled states), form inputs (text, select, date picker, file upload), tables, modals, toast notifications, and navigation patterns. Each component should have documented spacing, color, and typography rules.
 
 The ROI is measurable. Teams with a mature component library ship new features 34 percent faster on average, according to a 2023 survey by Sparkbox. More importantly, users develop muscle memory. They learn once that blue buttons trigger primary actions, that the gear icon always leads to settings, and that destructive actions always require a confirmation step. This predictability is the foundation of efficiency in software people use every day.
+
+
+> See also: [Dark Mode Design: A Complete Implementation Guide](/blog/dark-mode-design-a-complete-implementation-guide/)
+
 
 ## Handle Empty States and Loading States Intentionally
 

@@ -21,6 +21,10 @@ HIPAA's technical requirements come primarily from two rules: the Privacy Rule (
 
 The Security Rule distinguishes between "required" and "addressable" implementation specifications. Required specifications must be implemented. Addressable specifications must be assessed --- if the specification is reasonable and appropriate for your environment, you must implement it. If not, you must document why and implement an equivalent alternative measure. "Addressable" does not mean "optional."
 
+
+> Related: [Veterinary Practice Management Software](/blog/veterinary-practice-management-software/)
+
+
 ## Encryption and Data Protection Architecture
 
 Encryption is the most discussed HIPAA technical requirement and the one most frequently implemented incorrectly.
@@ -44,6 +48,10 @@ HIPAA requires unique user identification, which means shared accounts are prohi
 **Emergency access procedures** (the "break-glass" requirement) must allow authorized personnel to access PHI in emergencies when normal access controls would prevent it. Implement a mechanism that grants temporary elevated access, requires documentation of the emergency justification, triggers immediate alerts to privacy officers, creates an enhanced audit trail, and automatically revokes the elevated access after a defined period (2-4 hours is typical).
 
 **Minimum necessary access** is a Privacy Rule principle that requires limiting PHI access to the minimum amount necessary for each user to perform their job function. A billing specialist should see diagnosis codes and procedure codes (needed for billing) but not clinical notes (not needed for billing). Implement this through role-based access control with granular permissions at the data-element level, not just the record level.
+
+
+> See also: [HIPAA Patient Portal Development](/blog/hipaa-patient-portal-development/)
+
 
 ## Audit Logging Requirements
 

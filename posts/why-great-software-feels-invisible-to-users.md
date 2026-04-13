@@ -12,6 +12,10 @@ The practical implication is ruthless. If a screen has 12 possible actions, most
 
 Measuring cognitive load is not easy in production, but proxies exist. Task completion time for common workflows is one: if it takes a user 90 seconds to do something that should take 20, the interface is imposing unnecessary load. Error rates on form submissions is another: high error rates on a field usually indicate unclear labeling or unexpected validation rules, both of which are cognitive load failures. Session recordings from tools like PostHog or FullStory can reveal moments where users pause, backtrack, or hover indecisively — all signals of load.
 
+
+> Related: [Data Dashboard Design: Principles for Complex Applications](/blog/data-dashboard-design-principles-for-complex-applications/)
+
+
 ## Progressive Disclosure and the Art of Hiding Things
 
 The most powerful technique for invisible software is progressive disclosure: showing only what is needed at each stage of a task and revealing additional options as context demands. This is not about dumbing down the interface — it is about respecting the user's attention.
@@ -33,6 +37,10 @@ Optimistic UI requires careful engineering. You need a local state layer that ap
 For operations that genuinely take time — generating a report, processing a file upload, running a complex query — the goal shifts from speed to progress communication. A determinate progress bar (one that shows actual percentage) is dramatically better than an indeterminate spinner because it sets expectations. If you cannot measure progress, at least provide a time estimate: "This usually takes 15-30 seconds" gives the user permission to wait without anxiety.
 
 Skeleton screens — gray placeholder shapes that match the layout of the content being loaded — are superior to spinners for page loads because they establish the spatial layout before the content arrives. The user's eyes can already navigate to where they need to be. Figma, LinkedIn, and YouTube all use skeleton screens extensively.
+
+
+> See also: [Designing Data-Heavy Applications: Tables, Charts, and Dashboards](/blog/designing-data-heavy-applications-tables-charts-and-dashboards/)
+
 
 ## Error Prevention Over Error Recovery
 

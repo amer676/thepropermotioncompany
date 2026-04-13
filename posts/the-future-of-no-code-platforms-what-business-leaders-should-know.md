@@ -12,6 +12,10 @@ This infrastructure parity means that performance and scalability objections, wh
 
 The second major change is the emergence of no-code platforms designed specifically for technical users. Retool, Superblocks, and Airplane are not trying to replace developers — they are trying to make developers 10x faster at building internal tools. This distinction matters enormously. A platform designed for a developer who understands data models, API contracts, and state management is a fundamentally different product than one designed for a marketing manager building a form.
 
+
+> Related: [The Rise of the Technical Operator](/blog/the-rise-of-the-technical-operator/)
+
+
 ## Where No-Code Genuinely Excels
 
 Internal tools are the clearest win. The economics are straightforward: an internal admin panel, a customer support dashboard, or an operations workflow tool does not need pixel-perfect design, does not face competitive pressure on UX, and will be used by 10-500 people who can be trained. Building these in Retool or Superblocks takes days instead of weeks, and the maintenance burden is dramatically lower because the platform handles infrastructure updates, security patches, and database connection management.
@@ -31,6 +35,10 @@ Custom UI interactions. If your product requires drag-and-drop interfaces, real-
 Data model complexity. Most no-code databases are relational under the hood, but they expose a simplified abstraction that breaks down with complex queries, many-to-many relationships, or the need for database-level constraints and triggers. When you need a materialized view or a recursive CTE, you have outgrown the platform's data layer.
 
 Vendor lock-in is the meta-risk. Your business logic, your data model, and your UI are all expressed in a proprietary format. Migrating away from Bubble means rewriting the application from scratch. There is no "export to React" button. Some platforms mitigate this — Retool connects to your own database, so the data is always yours — but the application logic itself is still locked in.
+
+
+> See also: [The Hidden Costs of No-Code and Low-Code Platforms](/blog/the-hidden-costs-of-no-code-and-low-code-platforms/)
+
 
 ## The Hybrid Architecture That Actually Works
 

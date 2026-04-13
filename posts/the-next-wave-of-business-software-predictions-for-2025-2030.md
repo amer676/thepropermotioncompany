@@ -12,6 +12,10 @@ We're already seeing early versions of this in specific verticals. Companies lik
 
 The architectural implication for companies building software: design your systems with agent interaction in mind. APIs need to support the workflows that agents execute, not just the screens that humans click. Event streams need to expose business state changes that agents can react to. Authorization models need to accommodate non-human actors with constrained permissions.
 
+
+> Related: [The Commoditization of Code: What AI Means for Custom Software](/blog/the-commoditization-of-code-what-ai-means-for-custom-software/)
+
+
 ## The Unbundling of Enterprise Suites Into Composable Modules
 
 Large enterprise suites (Salesforce, SAP, Oracle, Microsoft Dynamics) grew through acquisition and feature accretion. The result is products that do everything adequately and nothing exceptionally. A mid-size company buys Salesforce for CRM and ends up paying for marketing automation, customer service, analytics, and app development capabilities they don't use.
@@ -31,6 +35,10 @@ This isn't speculative. GitHub Copilot and Claude are already generating functio
 The implication for custom software studios (including us) is a shift upstream. The value moves from building the tools to designing the data architecture, business logic, and integration layer that the tools sit on top of. A well-designed database schema with clean APIs becomes more valuable because it's the foundation that generated tools connect to. Poorly designed data layers produce poor generated tools regardless of how good the generation technology becomes.
 
 For companies, the advice is pragmatic: invest in your data infrastructure now. Clean up your database schemas, build proper APIs around your core data, and document your business logic. When generated tools can build your admin panel in an afternoon, the bottleneck will be having a data layer worth building on.
+
+
+> See also: [How Remote Work Changed Software Development Permanently](/blog/how-remote-work-changed-software-development-permanently/)
+
 
 ## Edge Computing Brings Business Logic Closer to Users
 

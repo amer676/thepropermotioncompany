@@ -18,6 +18,10 @@ The normalization step transforms raw sensor payloads into a standard envelope f
 
 At scale, Apache Kafka or AWS Kinesis serves as the durable message backbone. These systems handle burst traffic, provide replay capability for reprocessing, and decouple the ingestion rate from the processing rate. A sensor network that normally produces 1,000 messages per minute might produce 50,000 during a storm event when sampling rates increase. The message backbone must absorb these bursts without dropping data.
 
+
+> Related: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
+
 ## Time-Series Storage and Data Management
 
 Environmental data is inherently temporal. Every measurement is a value at a point in time, and the most common queries are "What was the PM2.5 level at station 42 between 2pm and 4pm yesterday?" and "Show me the temperature trend at all stations over the past 30 days." This access pattern demands a time-series database.
@@ -45,6 +49,10 @@ Statistical methods work well for environmental data. A z-score approach compare
 For more sophisticated detection, isolation forests and autoencoders can identify multivariate anomalies where no single parameter is out of range but the combination of values is unusual. A simultaneous drop in dissolved oxygen, spike in conductivity, and increase in turbidity might individually fall within normal ranges but together indicate a pollution event.
 
 Alert routing must be thoughtful. Not every alert needs to wake someone up at 3am. Classify alerts by severity and route them accordingly: critical alerts go to on-call staff via SMS and phone call through PagerDuty or Opsgenie, warnings go to Slack or email, and informational notifications go to a dashboard. Implement alert deduplication and cooldown periods so a flapping sensor does not generate hundreds of redundant notifications.
+
+
+> See also: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
 
 ## Visualization and Reporting
 

@@ -14,6 +14,10 @@ Organizations that handle estimation well do it in stages. At the concept stage,
 
 The mistake that causes the most damage is locking in a detailed estimate at the concept stage and treating it as a commitment. That is not an estimate — it is a guess with contractual obligations attached.
 
+
+> Related: [Why Software Rewrites Fail and How to Do Them Right](/blog/why-software-rewrites-fail-and-how-to-do-them-right/)
+
+
 ## Anchoring Bias and the Psychology of Wrong Numbers
 
 Cognitive biases systematically distort software estimates, and the most pernicious is anchoring. When someone mentions a number early in the estimation process — "the last project like this took 6 weeks" — that number anchors all subsequent estimates toward it, regardless of whether it is relevant. Teams adjust away from the anchor, but typically not enough.
@@ -33,6 +37,10 @@ The decomposition should continue until each subtask meets two criteria: the dev
 Spikes — time-boxed investigations to resolve technical uncertainty — are the most underused tool in estimation. Before estimating a feature that involves an unfamiliar API, a new technology, or a complex algorithm, spend 2-4 hours exploring the solution space. Write throwaway code. Hit the API. Read the documentation. The spike often reveals that the task is either simpler or harder than imagined, and the resulting estimate is dramatically more accurate.
 
 Document the assumptions behind each estimate explicitly. "This estimate assumes the Stripe API supports partial refunds for subscription invoices" or "This estimate assumes we can use the existing user table without schema changes." When an assumption turns out to be wrong, you can identify exactly which estimates are affected and by how much.
+
+
+> See also: [10 Reasons Software Projects Fail and How to Prevent Each One](/blog/10-reasons-software-projects-fail-and-how-to-prevent-each-one/)
+
 
 ## Three-Point Estimation and Communicating Ranges
 

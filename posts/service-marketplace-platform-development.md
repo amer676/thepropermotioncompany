@@ -10,6 +10,10 @@ Your MVP architecture needs to support asymmetric onboarding. In practice, this 
 
 A common mistake is building both sides equally from day one. Instead, consider launching the provider side as a standalone tool -- even a simple scheduling or portfolio tool -- that delivers value without any buyers present. Homebase did this effectively by giving service providers free scheduling tools, then layering on the marketplace later. Your data model should anticipate this staged rollout. Design provider profiles, service catalogs, and availability schemas that can function independently before marketplace matching exists.
 
+
+> Related: [How to Build a Marketplace Platform: Architecture and Strategy](/blog/how-to-build-a-marketplace-platform-architecture-and-strategy/)
+
+
 ## Matching Algorithms That Actually Work in Practice
 
 The matching layer is where most marketplace platforms differentiate. A naive approach -- show all available providers sorted by rating -- collapses at scale and produces terrible outcomes. Here's what works.
@@ -33,6 +37,10 @@ Your escrow model depends on when service delivery happens. For instant or same-
 Build dispute resolution into your transaction state machine from day one. You need states for: disputed, under review, partial refund, full refund, and escalated. Every state transition should generate an audit log entry. Marketplace disputes are inevitable, and having a clear paper trail is what lets you resolve them without losing both parties.
 
 Commission structures also affect your database design. Most marketplaces start with a flat percentage (15-25% is typical for service marketplaces), but you'll eventually want to support tiered pricing, volume discounts for high-performing providers, promotional rates, and category-specific commissions. Design your pricing engine as a configurable rules system rather than hardcoded percentages.
+
+
+> See also: [How to Build a Two-Sided Marketplace: Lessons from the Field](/blog/how-to-build-a-two-sided-marketplace-lessons-from-the-field/)
+
 
 ## Reviews, Trust, and the Feedback Loop Architecture
 

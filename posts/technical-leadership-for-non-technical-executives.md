@@ -16,6 +16,10 @@ You cannot audit code quality directly. But you can ask questions whose answers 
 
 **"Can you show me the trend in our deployment frequency and incident rate over the last six months?"** Trends matter more than absolute numbers. Increasing deployment frequency with a stable or decreasing incident rate means the team is getting more capable. Decreasing deployment frequency with increasing incidents means the system is degrading. These two metrics, tracked over time, are the vital signs of your engineering organization.
 
+
+> Related: [The 10x Developer Myth: What Actually Makes Teams Productive](/blog/the-10x-developer-myth-what-actually-makes-teams-productive/)
+
+
 ## Understanding Technology Investment as Capital Allocation
 
 Every dollar spent on technology is either an investment that compounds or an expense that depletes. The distinction depends on how the money is spent, and non-technical executives often lack the framework to distinguish the two.
@@ -41,6 +45,10 @@ Hiring and retaining strong engineers is critical, and it is possible to evaluat
 **Reference checks matter more than interviews.** A one-hour interview reveals how someone performs under interview conditions. A reference check with a former manager reveals how someone performs under production conditions: how they handle ambiguity, whether they hit deadlines, how they collaborate with non-technical stakeholders, and whether their teammates wanted to work with them again.
 
 **Assess the team, not just individuals.** A team of solid engineers who collaborate well will outperform a team of brilliant individuals who cannot align. Look at how quickly the team resolves disagreements, whether design decisions are documented, and whether knowledge flows freely or stays siloed.
+
+
+> See also: [Software Project Management for Non-Technical Founders](/blog/software-project-management-for-non-technical-founders/)
+
 
 ## Managing Vendor and Build-vs-Buy Decisions
 

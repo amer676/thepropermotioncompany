@@ -14,6 +14,10 @@ A custom application built specifically for IEP workflow management integrates w
 
 Similar gaps exist in substitute teacher management, facility maintenance requests, student transportation routing, after-school program enrollment, and parent-teacher conference scheduling. Each of these processes has enough institutional specificity that generic software either overcomplicates or oversimplifies the workflow.
 
+
+> Related: [Software for Construction Companies: Project Management and Field Ops](/blog/software-for-construction-companies-project-management-and-field-ops/)
+
+
 ## Data Privacy and FERPA Compliance by Design
 
 Any software that touches student data in the United States must comply with the Family Educational Rights and Privacy Act. FERPA governs who can access student education records and under what conditions. Violations carry real consequences, including loss of federal funding.
@@ -35,6 +39,10 @@ Forgiving means the interface prevents errors rather than punishing them. Confir
 Obvious means the interface requires minimal training. Schools cannot afford to run multi-day training sessions every time a new tool is introduced. The software should follow familiar patterns, use plain language instead of jargon, and provide contextual help at the point of need. A tooltip explaining what a "504 accommodation" field means is more useful than a 30-page user manual.
 
 Multi-language support is essential in many districts. Parent-facing interfaces should be available in the primary languages spoken by families in the community. This is not just a nice-to-have; in many jurisdictions, it is a legal requirement for school communications.
+
+
+> See also: [AI for Education Technology: Personalized Learning at Scale](/blog/ai-for-education-technology-personalized-learning-at-scale/)
+
 
 ## Integration With the Existing EdTech Ecosystem
 

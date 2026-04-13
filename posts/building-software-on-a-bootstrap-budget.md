@@ -14,6 +14,10 @@ A useful exercise is to describe your product in a single sentence without using
 
 Talk to potential customers before writing code. Not a survey. Not a landing page. Actual conversations where you listen more than you talk. Ask them how they solve this problem today. Ask them what is most painful about their current approach. Ask them what they have already tried that did not work. These conversations will reshape your feature list more effectively than any amount of internal brainstorming.
 
+
+> Related: [Why Speed Beats Scale in Early-Stage Software](/blog/why-speed-beats-scale-in-early-stage-software/)
+
+
 ## Choosing a Tech Stack That Minimizes Burn Rate
 
 On a bootstrap budget, your tech stack should optimize for three things: developer productivity, hosting cost, and the size of the available talent pool for when you need to hire or contract help.
@@ -39,6 +43,10 @@ For admin panels, tools like Retool, Forest Admin, or the open source AdminJS le
 For file storage and image processing, Cloudflare R2 offers S3-compatible storage with no egress fees. Cloudinary's free tier handles image transformation and optimization, which saves you from building a custom image processing pipeline.
 
 The key principle is: spend your custom development budget on the things that make your product unique. Everything else should be purchased, borrowed, or configured.
+
+
+> See also: [How to Scope an MVP That Actually Validates Your Hypothesis](/blog/how-to-scope-an-mvp-that-actually-validates-your-hypothesis/)
+
 
 ## Design on a Budget Without Looking Cheap
 

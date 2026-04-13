@@ -14,6 +14,10 @@ On the software side, you need an ingestion pipeline that can handle high-freque
 
 The live map itself should display vehicle positions, headings, and status indicators (en route, idle, stopped, off-duty) with latency under 10 seconds. Color coding by status and clustering at lower zoom levels prevents the UI from becoming unusable at scale. Geofence alerts -- notifications when a vehicle enters or leaves a defined area -- are a basic but high-value feature that dispatchers rely on for delivery confirmation and unauthorized-use detection.
 
+
+> Related: [Building On-Demand Service Platforms: Architecture and Strategy](/blog/building-on-demand-service-platforms-architecture-and-strategy/)
+
+
 ## Intelligent Dispatch and Route Optimization
 
 Dispatch is where fleet software delivers its most measurable ROI. A manual dispatcher juggles driver availability, delivery windows, vehicle capacity, traffic conditions, and customer priority -- all in their head. Software does the same calculation in milliseconds, across every vehicle in the fleet, and recalculates when conditions change.
@@ -40,6 +44,10 @@ Beyond HOS, driver management includes:
 - **Communication**: In-cab messaging that complies with distracted-driving laws -- messages are read aloud and drivers respond with voice or pre-set replies while the vehicle is in motion.
 
 The driver-facing mobile app is a critical component. It needs to work reliably in areas with poor cellular coverage (offline-first architecture with background sync), display turn-by-turn navigation, capture proof-of-delivery signatures and photos, and provide a clear HOS status display that the driver can reference at a glance.
+
+
+> See also: [Fleet Telematics Platform Development](/blog/fleet-telematics-platform-development/)
+
 
 ## Maintenance Scheduling and Cost Tracking
 

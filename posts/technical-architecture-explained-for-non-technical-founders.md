@@ -14,6 +14,10 @@ In software, architectural decisions include which database technology you use (
 
 These decisions matter because they are expensive to change later. Choosing the wrong database and realizing it 18 months in can mean a 3-6 month migration project. Building microservices when a monolith would have sufficed can triple your infrastructure costs and slow your team down. These are not coding mistakes -- they are structural decisions that affect everything built on top of them.
 
+
+> Related: [Why Speed Beats Scale in Early-Stage Software](/blog/why-speed-beats-scale-in-early-stage-software/)
+
+
 ## The Monolith vs Microservices Decision (And Why You Should Care)
 
 This is the architectural decision you are most likely to hear debated, so here is what it actually means.
@@ -39,6 +43,10 @@ Your database is where all your business data lives: customer records, transacti
 For most business applications -- SaaS platforms, marketplaces, internal tools, customer-facing portals -- PostgreSQL is the right default choice. It is mature, well-supported, handles both structured and semi-structured data (via a feature called JSONB), scales to millions of records without exotic infrastructure, and has the largest ecosystem of tools and expertise.
 
 The question to ask your technical team: "Why are we using this database instead of PostgreSQL?" If the answer is "we have a specific workload that PostgreSQL cannot handle efficiently" (graph relationships, time-series data, full-text search at massive scale), the choice makes sense. If the answer is "it is newer" or "it is what I am most familiar with," push back.
+
+
+> See also: [How to Scope an MVP That Actually Validates Your Hypothesis](/blog/how-to-scope-an-mvp-that-actually-validates-your-hypothesis/)
+
 
 ## APIs: How Your Software Talks to the World
 

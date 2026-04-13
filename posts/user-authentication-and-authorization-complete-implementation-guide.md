@@ -16,6 +16,10 @@ The choice of authentication protocol depends on your application architecture, 
 
 **API key authentication** is appropriate for server-to-server communication where there is no human user in the loop. API keys should be treated as secrets: generated with sufficient entropy (at least 256 bits), transmitted only over HTTPS, stored hashed in your database (not plaintext), and rotatable without downtime.
 
+
+> Related: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
+
 ## Token Management: JWTs, Sessions, and Refresh Strategies
 
 Once a user is authenticated, you need a mechanism to maintain their authenticated state across requests. The two dominant approaches are server-side sessions and JSON Web Tokens (JWTs).
@@ -44,6 +48,10 @@ The limitation of RBAC is that it does not handle contextual permissions well. "
 **ReBAC** defines permissions based on relationships between entities. "User A can edit Document X because User A is a member of Team Y, and Team Y owns Document X." Google Zanzibar is the canonical ReBAC system, and open-source implementations like OpenFGA and SpiceDB bring this model to application developers. ReBAC excels in collaborative applications where sharing, teams, and organizational hierarchies create complex permission graphs.
 
 For most applications, start with RBAC and extend to ABAC or ReBAC only when your permission requirements outgrow simple role assignments. Whichever model you choose, enforce authorization at the API layer, never only at the UI layer. A user who bypasses the UI (using curl, Postman, or a script) should hit the same authorization checks.
+
+
+> See also: [Building Secure Web Applications: A Complete Security Guide](/blog/building-secure-web-applications-a-complete-security-guide/)
+
 
 ## Securing the Authentication Flow Against Common Attacks
 

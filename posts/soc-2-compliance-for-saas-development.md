@@ -18,6 +18,10 @@ Processing Integrity is relevant for platforms that perform calculations, transf
 
 Privacy overlaps with regulations like GDPR and CCPA. If your SaaS collects personally identifiable information (PII), you need documented consent mechanisms, data subject access request workflows, and clear privacy notices.
 
+
+> Related: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
+
 ## Architecting for Audit-Ready Infrastructure
 
 The infrastructure layer is where SOC 2 compliance either becomes straightforward or turns into a nightmare. The single most impactful decision you can make is choosing a cloud provider that itself holds SOC 2 Type II certification -- AWS, Google Cloud, and Azure all qualify. This means the physical security controls, hardware lifecycle management, and data center redundancy are already handled by your provider's shared responsibility model.
@@ -42,6 +46,10 @@ For service-to-service authentication, use short-lived tokens or IAM roles rathe
 Access reviews are a recurring obligation. At least quarterly, your team lead or security owner should review who has access to production systems and revoke permissions for anyone who no longer needs them. Automate this with scripts that compare your IdP group memberships against your cloud IAM roles and flag discrepancies.
 
 Role-based access control (RBAC) in your application is equally important. Your SaaS customers expect that their admin users can control who sees what within their tenant. Implement RBAC at the API layer, not just the UI. Every API endpoint should verify both authentication (who is this?) and authorization (are they allowed to do this?) before processing a request.
+
+
+> See also: [Building Audit Logs for Compliance and Security](/blog/building-audit-logs-for-compliance-and-security/)
+
 
 ## Secure Development Lifecycle Practices
 

@@ -14,6 +14,10 @@ Research from the Nielsen Norman Group confirms that animated transitions betwee
 
 The key principle is that animation should match the user's mental model of what is happening. When a user clicks a row in a table and a detail panel slides in from the right, the spatial metaphor (the detail view is "to the right" of the list) helps them understand the relationship between the two views and how to get back. When a deleted item shrinks and fades rather than vanishing instantly, the user has 300 milliseconds to confirm that the correct item was removed -- and if it was wrong, their brain has already started composing the undo action.
 
+
+> Related: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
+
 ## Functional Animation Patterns That Improve Usability
 
 Not all animation is equal. The patterns that consistently improve usability in business applications fall into specific categories.
@@ -41,6 +45,10 @@ Establish a performance budget for animation:
 - **Provide a reduced-motion option**: Some users have vestibular disorders that make motion-heavy interfaces physically uncomfortable. Respect the prefers-reduced-motion media query and either reduce animation durations to near-zero or replace motion-based animations with simple opacity fades.
 
 Test animation performance on representative hardware. If your users work on thin clients, Chromebooks, or older Windows machines, test on those devices rather than your development MacBook. Chrome DevTools' Performance panel and the Rendering tab's "Frame Rendering Stats" overlay are essential profiling tools.
+
+
+> See also: [Designing Onboarding Flows That Reduce Churn](/blog/designing-onboarding-flows-that-reduce-churn/)
+
 
 ## Implementation: CSS, JavaScript, and Framework-Specific Approaches
 

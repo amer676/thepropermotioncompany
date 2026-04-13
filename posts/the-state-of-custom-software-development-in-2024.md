@@ -14,6 +14,10 @@ Second, the cost of not having custom software has increased. As industries digi
 
 Third, no-code and low-code platforms have raised the floor of software sophistication, which paradoxically increases demand for custom development. Businesses that used to accept the limitations of spreadsheets and Zapier automations now understand what software can do for them. They have tasted automation and want more, and the complex, differentiated capabilities they need next require custom engineering.
 
+
+> Related: [How Remote Work Changed Software Development Permanently](/blog/how-remote-work-changed-software-development-permanently/)
+
+
 ## AI Tooling Is Changing Delivery Economics
 
 The impact of AI on custom software development is more nuanced than the headlines suggest. It is neither the revolution that eliminates the need for developers nor the incremental improvement that skeptics claim.
@@ -37,6 +41,10 @@ The studios that thrive in remote delivery have invested in tooling and processe
 Client communication has also improved in the remote model. Weekly video demos, shared project dashboards, and asynchronous Slack or Teams channels give clients more visibility into their project than the old model of biweekly status meetings ever did. Clients who have experienced transparent remote delivery are reluctant to go back to the opaque processes of traditional on-site consulting.
 
 The cost structure of remote studios is fundamentally different. Without the overhead of office space, client-site travel, and geographic constraints on hiring, remote studios can offer competitive rates while paying their developers well. This is not a race to the bottom; it is a reallocation of spending from overhead to talent.
+
+
+> See also: [The Next Wave of Business Software: Predictions for 2025-2030](/blog/the-next-wave-of-business-software-predictions-for-2025-2030/)
+
 
 ## The Platform Ecosystem Is Fragmenting
 

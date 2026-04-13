@@ -18,6 +18,10 @@ Gather the product manager, the lead engineer, a designer, and one person from o
 
 **What is our plan when something goes wrong?** Not if -- when. Define the rollback plan before launch. Can you disable the AI feature without taking down the entire product? Can you fall back to a non-AI workflow? Who has the authority to kill the feature at 2 AM on a Saturday? How will affected users be notified and compensated? The existence of a concrete incident plan is itself an ethical decision: it says "we take the possibility of harm seriously enough to prepare for it."
 
+
+> Related: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
+
 ## Fairness Testing: Moving Beyond Aggregate Accuracy
 
 The most dangerous metric in AI product development is aggregate accuracy. A model that is 95 percent accurate overall can be 99 percent accurate for your majority user group and 70 percent accurate for a minority group. The overall number looks great in a slide deck. The disparity causes real harm to real people.
@@ -39,6 +43,10 @@ Users have a right to know when AI is making decisions that affect them, and the
 **Explainability** goes beyond disclosure to help users understand why a specific decision was made. For product recommendations, this might mean showing the factors that influenced the ranking: "Recommended because you purchased similar items" or "Trending in your region." For more consequential decisions -- loan approvals, content moderation actions, hiring screens -- users should be able to request an explanation. Techniques like SHAP (SHapley Additive exPlanations) and LIME (Local Interpretable Model-agnostic Explanations) can generate feature-importance explanations for individual predictions. These are not perfect -- they are approximations -- but they provide a meaningful answer to "why did the model make this decision about me?"
 
 **Contestability** closes the loop. When users can see and understand an AI decision, they should be able to challenge it. Build an appeal mechanism into any AI feature that makes consequential decisions. A content creator whose post was flagged by automated moderation should have a clear path to human review. A job applicant screened out by an AI tool should be able to request reconsideration. A customer flagged by a fraud detection system should be able to verify their identity and have the flag removed. The appeal process must be accessible (not buried in a help center), timely (resolved in days, not weeks), and meaningful (a human actually reviews the case, not another AI system).
+
+
+> See also: [AI for Healthcare: Applications, Compliance, and Implementation](/blog/ai-for-healthcare-applications-compliance-and-implementation/)
+
 
 ## Data Ethics: Collection, Consent, and Purpose Limitation
 

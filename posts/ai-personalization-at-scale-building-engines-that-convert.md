@@ -24,6 +24,10 @@ For most applications, this is a contextual multi-armed bandit rather than a fix
 
 Edge-side personalization is increasingly viable: CDN workers (Cloudflare Workers, Vercel Edge Middleware) can make personalization decisions at the edge, selecting content variants without a round trip to an origin server. The latency benefit is significant — edge decisions add 1-5ms versus 50-200ms for an origin round trip.
 
+
+> Related: [AI for Human Resources: Recruiting, Onboarding, and Workforce Analytics](/blog/ai-for-human-resources-recruiting-onboarding-and-workforce-analytics/)
+
+
 ## Segmentation vs. Individualization
 
 A critical design decision is the granularity of personalization. There are three levels, each with different data requirements and engineering complexity.
@@ -47,6 +51,10 @@ Personalization systems fail in predictable ways. Knowing these failure modes up
 **The creepiness factor.** There is a line between "this product understands me" and "this product is watching me." Retargeting someone with the exact product they viewed on a competitor's site crosses that line. Personalization based on declared preferences and on-platform behavior is generally well-received; personalization based on inferred personal attributes (income, health status, relationship status) is not. When in doubt, be transparent: "We are showing you this because you viewed X" is always better than silent inference.
 
 **Feedback loop bias.** The system shows Variant A to most users because it currently has the highest conversion rate. Variant A gets more data, which reinforces its lead, and Variant B never gets enough exposure to demonstrate its true potential. Thompson Sampling addresses this mathematically, but you should also implement minimum-exposure floors: every variant receives at least N impressions per evaluation period before the algorithm can deprioritize it.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Measuring Personalization Impact
 

@@ -26,6 +26,10 @@ A PostgreSQL `ILIKE` query with a GIN index on a `tsvector` column handles full-
 
 When you cross this threshold, the three primary options are Elasticsearch, Typesense, and Meilisearch. Each has distinct strengths.
 
+
+> Related: [Next.js for Business Applications: Why We Choose It](/blog/nextjs-for-business-applications-why-we-choose-it/)
+
+
 ## Choosing Your Search Engine
 
 **Elasticsearch** is the incumbent. It handles virtually any search use case, from full-text search to log analytics to vector search. It scales horizontally to billions of documents. Its query DSL is extraordinarily powerful. The trade-off is operational complexity: Elasticsearch clusters require careful tuning of heap size, shard count, refresh intervals, and mapping configurations. Running Elasticsearch well requires dedicated operational expertise or a managed service like Elastic Cloud ($95+/month for production workloads).
@@ -61,6 +65,10 @@ A search index is not a copy of your database. It is a purpose-built data struct
 **Denormalize for search.** If a customer record includes an associated company and recent orders, the search index should include the company name and order details as nested fields on the customer document. This allows a single search to return results like "John Smith at Acme Corp, Order #4521." In your primary database, this data lives in separate tables. In your search index, it belongs together.
 
 **Handle synonyms explicitly.** Business domains have their own vocabularies. "PO" means "purchase order." "RMA" means "return merchandise authorization." "NET30" means "payment due in 30 days." Configure synonym lists so that searching for "PO" returns results containing "purchase order" and vice versa. Review and expand synonym lists quarterly based on search queries that returned zero results.
+
+
+> See also: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
 
 ## Relevance Ranking: The Art and Science
 

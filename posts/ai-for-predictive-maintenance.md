@@ -20,6 +20,10 @@ The data acquisition layer collects sensor readings and transmits them to a cent
 
 Plan for data volume. A single vibration sensor sampling at 25 kHz generates roughly 2 GB per day in raw waveform data. Across 100 sensors, that is 200 GB daily. Most deployments use edge computing to perform initial signal processing (FFT transformation, feature extraction) at the gateway level, reducing the data transmitted to the cloud by 90-95%.
 
+
+> Related: [How AI Changes Software Architecture](/blog/how-ai-changes-software-architecture/)
+
+
 ## Feature Engineering for Equipment Health
 
 Raw sensor data is not directly useful for machine learning. The critical intermediate step is feature engineering: transforming time-series sensor data into meaningful numerical features that describe equipment health.
@@ -51,6 +55,10 @@ A well-trained gradient-boosted model on vibration and temperature features can 
 Autoencoders are effective at detecting that something is wrong but less effective at diagnosing what is wrong. As you accumulate labeled failure data from the anomalies the autoencoder catches, transition to supervised models that can classify specific failure modes.
 
 **Remaining useful life (RUL) estimation** is the gold standard: instead of binary healthy/failing classification, predict the number of operational hours until the component will fail. This requires run-to-failure data (sensor readings from installation through failure for multiple instances of the same component). LSTM or Transformer neural networks process the time-series history and output a continuous RUL estimate. NASA's C-MAPSS dataset is the benchmark for this approach, and well-tuned models achieve RUL predictions within 10-15% of actual failure time.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Integration With Maintenance Operations
 

@@ -20,6 +20,10 @@ The key characteristics of serverless:
 
 The major serverless platforms are AWS Lambda (the pioneer, most mature, largest ecosystem), Vercel Functions (optimized for web applications, excellent developer experience), Google Cloud Functions, and Azure Functions.
 
+
+> Related: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
+
 ## Where Serverless Excels
 
 Serverless is not the best choice for every workload, but for certain patterns, it is dramatically better than the alternatives.
@@ -49,6 +53,10 @@ Serverless has real limitations that disqualify it for certain workloads. Ignori
 **Stateful applications.** Serverless functions are stateless by design --- each invocation is independent, with no shared memory or local disk between invocations. Applications that maintain in-memory state (WebSocket connections, in-memory caches, session data) require external state stores (Redis, DynamoDB) that add latency and cost. Real-time applications like chat servers or collaborative editors are poor fits for pure serverless.
 
 **Complex local development.** Developing and debugging serverless applications locally is harder than developing traditional applications. Tools like the Serverless Framework, SAM CLI, and SST have improved significantly, but the local experience still does not perfectly replicate the cloud environment. Integration testing requires deploying to a staging environment, which slows the development feedback loop.
+
+
+> See also: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
 
 ## The Hybrid Architecture: Serverless Where It Shines
 

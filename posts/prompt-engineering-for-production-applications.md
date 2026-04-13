@@ -34,6 +34,10 @@ This separation makes it easy to update one section without risking regressions 
 
 **Pin behavioral constraints early.** Place your most important constraints in the system message and at the top of the user message. Models weight earlier instructions more heavily. If you need the model to never fabricate URLs, say so in the first 50 tokens of the system prompt, not buried in paragraph six.
 
+
+> Related: [RAG Explained: Making AI Smarter with Your Company Data](/blog/rag-explained-making-ai-smarter-with-your-company-data/)
+
+
 ## Few-Shot Examples That Actually Generalize
 
 Few-shot examples are the single most effective technique for controlling output quality, but poorly chosen examples cause more problems than they solve.
@@ -59,6 +63,10 @@ Model parameters are not artistic choices. They are engineering tradeoffs with m
 **Max tokens should be calculated, not guessed.** Estimate the maximum reasonable output length for your task, add a 30% buffer, and set that as max_tokens. An overly generous max_tokens value wastes money on tasks where the model rambles, and a value that is too low truncates valid responses. For a customer support response, 300 tokens is usually sufficient. For a document summary, 500 to 800. Track actual token usage in production and adjust.
 
 **Frequency and presence penalties.** Leave both at 0 for structured output tasks. For conversational or creative tasks, a frequency_penalty of 0.1 to 0.3 reduces repetition without making the output seem forced.
+
+
+> See also: [OpenAI API Integration Guide for Business Applications](/blog/openai-api-integration-guide-for-business-applications/)
+
 
 ## Testing and Evaluation Pipelines
 

@@ -16,6 +16,10 @@ Every SaaS pricing structure is a variation of one of five fundamental models. C
 
 **Per-feature pricing.** Charge for individual features or modules rather than bundled plans. This works for complex platforms where different customers need different capabilities. HubSpot uses this approach: Marketing Hub, Sales Hub, and Service Hub are priced independently, and customers buy only the modules they need. The advantage is that customers never pay for features they do not use. The disadvantage is pricing page complexity and the difficulty of communicating value for individual features versus a complete solution.
 
+
+> Related: [SaaS Subscription Management Platform](/blog/saas-subscription-management-platform/)
+
+
 ## The Psychology of Price Perception
 
 How you present your prices matters as much as the prices themselves. Decades of behavioral economics research reveal predictable patterns in how people evaluate prices.
@@ -41,6 +45,10 @@ Cost-plus pricing (calculating your costs and adding a margin) does not work in 
 **Step 3: Test and iterate.** Run pricing experiments on new signups. Show different pricing pages to different cohorts and measure conversion rate, plan selection, and revenue per visitor. A 10% increase in price that reduces conversion by 5% is a net positive. Tools like LaunchDarkly, PostHog, or even simple A/B testing frameworks support this.
 
 **Step 4: Raise prices regularly.** Most SaaS companies underprice their product and are afraid to raise prices. Existing customers can be grandfathered for six to twelve months (honoring your commitment), while new customers pay the updated price. A well-communicated price increase (with advance notice and a clear explanation of added value) typically results in less than 2% incremental churn for established products.
+
+
+> See also: [Complex Subscription Billing Architecture](/blog/complex-subscription-billing-architecture/)
+
 
 ## Technical Implementation: Building Pricing Into Your Product
 

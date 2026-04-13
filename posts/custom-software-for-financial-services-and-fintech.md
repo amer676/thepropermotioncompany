@@ -14,6 +14,10 @@ Financial institutions use dozens of software systems across front office, middl
 
 A mid-size asset management firm we worked with had analysts spending four hours daily copying data between their portfolio management system, risk analytics tool, and client reporting platform. A custom integration layer that synchronized data across all three systems in real time eliminated that manual work entirely, freeing senior analysts to focus on investment decisions instead of data entry.
 
+
+> Related: [Software for Construction Companies: Project Management and Field Ops](/blog/software-for-construction-companies-project-management-and-field-ops/)
+
+
 ## Common Custom Software Projects in Financial Services
 
 Across our experience building for financial firms, several project types recur because the off-the-shelf alternatives consistently fall short.
@@ -49,6 +53,10 @@ Implement data classification at the schema level: tag database columns with the
 - **Privacy:** Consent management, data minimization, retention policies, subject access request handling
 
 **PCI DSS (if handling payment card data).** If the system processes, stores, or transmits credit card numbers, PCI DSS compliance adds requirements for network segmentation, encryption, access logging, and regular vulnerability scanning. In most cases, the best approach is to avoid storing card data entirely by using a tokenization service (Stripe, Braintree, Adyen) that handles PCI scope on your behalf.
+
+
+> See also: [AI for Financial Services: Fraud Detection, Risk Assessment, and Compliance](/blog/ai-for-financial-services-fraud-detection-risk-assessment-and-compliance/)
+
 
 ## Technical Architecture for Financial Systems
 

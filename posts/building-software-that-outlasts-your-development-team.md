@@ -36,6 +36,10 @@ When a developer needs to work on billing, everything they need is in one direct
 
 **Limit the blast radius of changes.** Design modules with clear boundaries so that changes to one module do not ripple through the entire codebase. The key mechanism is defining interfaces (TypeScript interfaces, Python protocols, or Java/Kotlin interfaces) between modules. Module A depends on an interface, and Module B implements that interface. Changing Module B's implementation does not require changing Module A, as long as the interface contract is maintained.
 
+
+> Related: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
+
 ## Documentation That Actually Gets Read
 
 Most software documentation fails because it tries to be comprehensive. A 50-page architecture document written during the initial design phase is outdated within three months and read by no one. Effective documentation is specific, close to the code, and maintained as part of the development workflow.
@@ -69,6 +73,10 @@ Integration tests answer: "When this API endpoint is called with this payload, w
 End-to-end tests answer: "Can a user log in, create a work order, and see it on their dashboard?" They are the specification for user-facing workflows.
 
 **Test data builders and factories.** Create test helper functions that generate realistic test data. A `buildTenant()` factory that creates a tenant with sensible defaults and allows overriding specific fields tells a new developer what a tenant entity looks like and which fields matter for different scenarios. This is more informative than any schema diagram.
+
+
+> See also: [Sustainability in Software: Building Products That Last Decades](/blog/sustainability-in-software-building-products-that-last-decades/)
+
 
 ## Dependency Management and Upgrade Paths
 

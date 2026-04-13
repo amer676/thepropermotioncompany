@@ -20,6 +20,10 @@ Every self-service action that avoids a support ticket saves $5-15 in support co
 
 Well-designed cancellation flows recover 15-25% of subscribers who initiate cancellation. On a base of 10,000 subscribers at $40/month, recovering 20% of the 200 monthly cancellation attempts saves $19,200 in annual recurring revenue.
 
+
+> Related: [SaaS Subscription Management Platform](/blog/saas-subscription-management-platform/)
+
+
 ## Product Curation and Box Assembly
 
 Subscription boxes are ultimately a product curation business, and the software that supports curation and assembly is the operational backbone.
@@ -45,6 +49,10 @@ The forecast should be generated 8-12 weeks before the fulfillment date, alignin
 **Minimum order quantities (MOQs)** from suppliers add a constraint. If a supplier requires a minimum order of 5,000 units but your forecast calls for 3,000, you need to either negotiate the MOQ, find a use for the surplus (retail store, add-on purchases, next month's box), or choose a different product. The procurement system should flag MOQ conflicts early in the curation process, not at the last minute when alternatives are limited.
 
 **Waste management** is critical to profitability. Overordering perishable products (food boxes) or trend-sensitive products (beauty boxes) erodes margins directly. Track waste rates by product category and supplier. Set procurement targets at forecast plus a safety margin (5-10% for non-perishables, 3-5% for perishables), and monitor actual versus forecast accuracy each cycle to calibrate future forecasts.
+
+
+> See also: [Custom E-Commerce Development: When to Go Beyond Shopify](/blog/custom-e-commerce-development-when-to-go-beyond-shopify/)
+
 
 ## Fulfillment and Logistics Pipeline
 

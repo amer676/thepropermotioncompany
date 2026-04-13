@@ -12,6 +12,10 @@ Design your schema around the constituent as the central node. Use a flexible re
 
 Gift records need to capture not just amount and date, but payment method, designation (which fund or campaign), solicitation source (which appeal generated the gift), acknowledgment status, receipt status, and any soft credits (when someone other than the donor influenced the gift). Pledges are distinct from payments: a donor might pledge $50,000 over five years, with scheduled payment reminders and tracking of fulfilled versus outstanding balances.
 
+
+> Related: [How to Build a Custom CRM That Fits Your Business](/blog/how-to-build-a-custom-crm-that-fits-your-business/)
+
+
 ## Building Gift Processing and Acknowledgment Workflows
 
 Gift processing is the operational heartbeat of a donor management system, and getting it wrong has real consequences. A misrecorded gift means an incorrect tax receipt. A missed acknowledgment means a donor who feels unappreciated. A poorly handled matching gift means leaving money on the table.
@@ -35,6 +39,10 @@ The LYBUNT/SYBUNT reports (Last/Some Year But Unfortunately Not This) are founda
 A major gift pipeline tracker is essential for organizations with a development team focused on high-value prospects. Model this as a kanban-style pipeline with stages: identification, qualification, cultivation, solicitation, negotiation, stewardship. Track the estimated ask amount, probability, and expected close date for each prospect. Roll these up into pipeline reports that show total expected revenue by quarter, weighted by probability, so leadership can make informed budget decisions.
 
 Dashboards should present real-time fundraising progress against goals. Show year-to-date revenue versus target, broken down by fund, campaign, or team member. Display trend lines for key metrics: average gift size, donor retention rate, new donor acquisition rate, and online versus offline giving ratios. Make these dashboards accessible to board members through a read-only portal -- board engagement increases when members can see fundraising momentum in real time.
+
+
+> See also: [Grant Management System Development](/blog/grant-management-system-development/)
+
 
 ## Online Giving and Payment Integration
 

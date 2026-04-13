@@ -16,6 +16,10 @@ A concrete example: a specialty food distributor we worked with was spending $18
 
 Custom ERP development eliminates this class of problem entirely. Your business processes are the happy path, because the software is built around them.
 
+
+> Related: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
+
 ## Identifying the Tipping Point: Build vs. Buy Decision Framework
 
 Custom ERP development is not the right choice for every organization. It requires significant upfront investment, a clear understanding of your business processes, and the organizational commitment to maintain a software product over time. Here is a framework for evaluating whether to build or buy.
@@ -54,6 +58,10 @@ A well-designed custom ERP consists of loosely coupled modules communicating thr
 **Reporting and analytics**: Operational dashboards, financial reports, and data warehouse feeds. Build this as a separate read-optimized layer that queries replicas or a dedicated analytical database, so reporting queries never slow down transactional operations.
 
 Each module should own its data and expose it through APIs. The inventory module does not query the order management database directly -- it receives events ("order placed," "order shipped") and maintains its own projection of relevant data. This separation means you can rebuild or replace a single module without cascading changes across the system.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Data Migration: The Phase That Breaks ERP Projects
 

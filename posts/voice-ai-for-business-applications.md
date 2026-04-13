@@ -28,6 +28,10 @@ Quality markers for business TTS: natural prosody (appropriate emphasis and paus
 
 End-to-end latency -- the time from when the caller finishes speaking to when they hear the AI's response -- should be under 1.5 seconds. Above 2 seconds, the conversation feels stilted. Achieving this requires streaming at every stage: stream audio to STT as it arrives (do not wait for silence detection), stream the transcript to the LLM as words are recognized, and stream the LLM's response to TTS in chunks rather than waiting for the complete response.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Designing Voice Workflows for Business Processes
 
 A voice AI agent is not a chatbot with a microphone. Voice interactions have unique constraints that shape how you design workflows.
@@ -62,6 +66,10 @@ Never let the voice agent read back full account numbers, social security number
 **Conversation logging and analytics.** Log every voice interaction with: the full transcript, the caller's phone number and identified account (if authenticated), intents detected and actions taken, conversation duration, whether the call was resolved by the AI or transferred to a human, and caller satisfaction (if you implement a post-call survey).
 
 This data is gold for improving the system. Analyze transferred calls to identify patterns -- if 30 percent of transfers are for the same question, the voice agent should be trained to handle it. Analyze failed recognition patterns to improve your custom vocabulary. Track resolution rates over time to measure whether the system is getting better.
+
+
+> See also: [AI Chatbots vs AI Assistants: Choosing the Right Approach](/blog/ai-chatbots-vs-ai-assistants-choosing-the-right-approach/)
+
 
 ## Measuring ROI and Deciding What to Automate
 

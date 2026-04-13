@@ -14,6 +14,10 @@ Check if the portfolio shows the boring screens: settings pages, onboarding flow
 
 Ask to see the product live if it is publicly accessible. Load it on your phone. Try the search function. Click through three or four workflows. Note how fast pages load, whether the interface is responsive, and whether anything feels broken. A live product tells you more in five minutes than a portfolio deck tells you in an hour.
 
+
+> Related: [How to Write a Software Development RFP That Gets Results](/blog/how-to-write-a-software-development-rfp-that-gets-results/)
+
+
 ## Evaluating Technical Complexity and Relevance
 
 The most important portfolio question is not "is this pretty?" but "is this technically relevant to what I need built?"
@@ -37,6 +41,10 @@ Many development firms publish case studies alongside their portfolio. Good case
 Look for case studies that describe failure, pivots, or unexpected challenges. A team that writes "during user testing, we discovered our initial navigation approach was confusing and redesigned the information architecture" is telling you they test with real users and adapt. A team whose case studies describe a flawless journey from concept to launch is either lying or not doing the hard work that real projects require.
 
 The best case studies include metrics: "reduced page load time from 4.2 seconds to 1.1 seconds," "increased checkout conversion from 2.1% to 3.8%," "decreased support ticket volume by 35% after the redesign." These numbers indicate that the team measures the impact of their work, which means they are accountable for outcomes rather than just deliverables.
+
+
+> See also: [The Complete Guide to Evaluating Software Development Partners](/blog/the-complete-guide-to-evaluating-software-development-partners/)
+
 
 ## Reference Checks: Questions That Reveal the Truth
 

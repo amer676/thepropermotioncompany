@@ -14,6 +14,10 @@ A practical ratio for a typical web application is **70% unit, 20% integration, 
 
 Teams that invert the pyramid --- writing mostly E2E tests and few unit tests --- suffer from slow feedback loops (a 45-minute test suite means developers stop running tests locally), flaky tests (E2E tests are sensitive to timing, network issues, and test data state), and difficult debugging (when an E2E test fails, the root cause could be anywhere).
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Unit Testing: What to Test and What to Skip
 
 Unit tests verify that individual functions, methods, or components produce the correct output for a given input, in isolation from all other parts of the system. They are the fastest feedback loop you have, and they should cover the logic that matters most.
@@ -43,6 +47,10 @@ A typical integration test for a POST /api/users endpoint would: create a reques
 **Test third-party service integrations.** For external APIs (payment processors, email services, analytics), use a two-tier approach. Write integration tests against the provider's sandbox or test environment for critical paths (payment processing, authentication). For non-critical paths (analytics events, notification delivery), use recorded HTTP fixtures (tools like Nock or Polly.js) that replay real API responses without making network calls.
 
 **Test authentication and authorization flows.** Verify that unauthenticated requests are rejected, that users can only access resources they own, and that role-based permissions work correctly. These tests catch security regressions that unit tests cannot detect because they involve multiple components working together.
+
+
+> See also: [The Real Cost of Skipping Automated Testing](/blog/the-real-cost-of-skipping-automated-testing/)
+
 
 ## End-to-End Testing: Simulating Real User Behavior
 

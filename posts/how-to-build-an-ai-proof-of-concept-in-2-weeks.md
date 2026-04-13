@@ -16,6 +16,10 @@ Write the assumption as a falsifiable hypothesis. Not "AI can help with customer
 
 Define your success criteria numerically. What accuracy percentage makes this viable? What latency is the maximum acceptable? What cost per request is sustainable at your projected volume? Write these numbers down and get stakeholder agreement before day three. Moving the goalposts mid-sprint kills POCs.
 
+
+> Related: [AI for Human Resources: Recruiting, Onboarding, and Workforce Analytics](/blog/ai-for-human-resources-recruiting-onboarding-and-workforce-analytics/)
+
+
 ## Days 3-5: Assemble Your Data and Build the Pipeline
 
 AI systems are only as good as the data feeding them. Days three through five are about getting real, representative data into a format your model can consume.
@@ -39,6 +43,10 @@ For classification tasks, compute precision, recall, and F1 score per category, 
 For generative tasks (summarization, content creation, chatbot responses), automated metrics are less reliable. Use a combination of automated checks (response length, format compliance, keyword presence) and human evaluation. Have two evaluators rate 100 outputs on a 1-5 scale for relevance, accuracy, and completeness. Calculate inter-rater agreement to ensure your evaluation is consistent.
 
 Track cost per request during this phase. If you are calling GPT-4o at $2.50 per million input tokens and your average request uses 2,000 tokens, that is $0.005 per request. At 10,000 requests per day, that is $50 daily or $1,500 monthly. These numbers matter. If the model that meets your accuracy threshold costs $15,000 per month at projected volume, you need to know that now.
+
+
+> See also: [How AI Changes Software Architecture](/blog/how-ai-changes-software-architecture/)
+
 
 ## Days 9-11: Build a Minimal Interface for Stakeholder Review
 

@@ -16,6 +16,10 @@ If boring problems are well-understood, why are they not already solved? Several
 
 **The people closest to the problem are rarely the ones who control the technology budget.** The warehouse scheduler who spends four hours every Friday building next week's shift plan in Excel has a clear picture of how that time could be better spent. But they do not write the capital expenditure request. The decision-maker who does write the request is several layers removed from the daily pain and may not even know the problem exists in its full scope.
 
+
+> Related: [What We Learned Building Software for 50 Plus Companies](/blog/what-we-learned-building-software-for-50-plus-companies/)
+
+
 ## The Compounding Returns of Small Improvements
 
 Boring problems share a characteristic that makes solving them disproportionately valuable: they occur frequently. A process that wastes 30 minutes per day does not sound dramatic. Over a year, it is 130 hours — more than three full work weeks. If five people are affected, it is 650 hours. At a loaded cost of $50 per hour, that is $32,500 per year. For a problem that no one ever thought was worth fixing.
@@ -43,6 +47,10 @@ Not every boring problem justifies a custom software investment. The ones that d
 **Institutional dependency.** If the process depends on one person's expertise — "only Maria knows how to reconcile the Canadian accounts" — it is a risk. Encoding that expertise in software eliminates the single-point-of-failure and makes the organization more resilient.
 
 **Downstream impact.** The task is upstream of something valuable. Scheduling determines labor cost. Invoicing determines cash flow. Quoting determines close rate. Tasks that sit at the beginning of a value chain have outsized impact because their outputs cascade through subsequent steps.
+
+
+> See also: [Why the Traditional Software Agency Model Is Broken](/blog/why-the-traditional-software-agency-model-is-broken/)
+
 
 ## Building Solutions for Boring Problems
 

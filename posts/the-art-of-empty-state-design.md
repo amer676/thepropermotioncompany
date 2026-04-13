@@ -14,6 +14,10 @@ Empty states are also disproportionately visible during product demos. When a sa
 
 Investing in empty state design has an outsized return because it directly affects activation rates, first-session retention, and the overall perception of product quality.
 
+
+> Related: [Why Big Software Redesigns Almost Always Fail](/blog/why-big-software-redesigns-almost-always-fail/)
+
+
 ## The First-Use Empty State: Onboarding in Disguise
 
 The most important empty state is the one a new user encounters immediately after signing up. This is not just a blank screen -- it is an onboarding surface. The empty state should accomplish three things:
@@ -43,6 +47,10 @@ A well-designed no-results state addresses four things:
 **Avoid blame language.** "No results found" is neutral. "Your search did not match any records" subtly implies the user did something wrong. "We could not find anything matching 'acme renewal'" acknowledges the gap without attributing blame.
 
 Shopify's admin search handles this well. A search that returns no results shows the query, suggests checking for typos, offers to search in different sections (products, orders, customers), and provides a link to create a new item matching the search term.
+
+
+> See also: [How to Run a Design Sprint for Product Development](/blog/how-to-run-a-design-sprint-for-product-development/)
+
 
 ## The Cleared Empty State: Celebrating Completion
 

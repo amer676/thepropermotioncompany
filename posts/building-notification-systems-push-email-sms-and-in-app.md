@@ -35,6 +35,10 @@ Templates are per-channel, per-event-type, and often per-locale. A template engi
 
 **Stage 5: Tracking.** Every delivery attempt is logged with its outcome: delivered, bounced, failed, opened (for email, via tracking pixel), clicked (via redirect link), dismissed (for in-app). This data feeds the analytics that inform notification strategy and the debugging tools that help when a user reports "I never received that email."
 
+
+> Related: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
+
 ## The User Preference System
 
 A notification system without user preferences is a spam cannon. Users must be able to control what they receive and through which channels.
@@ -58,6 +62,10 @@ Without throttling, a notification system will abuse its users. A Slack-style ap
 **Deduplication** prevents the same notification from being sent twice. This happens more often than expected — a retry after a transient failure, a race condition between two event emitters, a database trigger that fires twice. Each delivery task should carry an idempotency key derived from the event ID and the recipient. The delivery worker checks this key against a deduplication cache (Redis with a TTL) before proceeding.
 
 **Coalescing** groups multiple related notifications into a single message. "Alice, Bob, and 3 others commented on your task" is more useful than five separate notifications. The coalescing window (how long to wait for additional events before sending) is a tradeoff between timeliness and grouping. A 30-second window works for real-time channels; a 5-minute window works for email.
+
+
+> See also: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
 
 ## Debugging and Observability
 

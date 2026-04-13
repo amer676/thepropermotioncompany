@@ -16,6 +16,10 @@ Vendors responding to overly prescriptive RFPs face a choice: follow the spec li
 
 Length is another problem. Enterprise RFPs routinely run 40 to 80 pages, with extensive sections on vendor qualifications, insurance requirements, and compliance certifications that take more effort to fill out than the technical response. Top development studios, the ones with full project pipelines and the luxury of being selective, deprioritize or skip RFPs that require 100+ hours of unpaid proposal work. You end up selecting from vendors who have the most proposal-writing capacity, not the most relevant expertise.
 
+
+> Related: [Offshore Software Development: When It Works and When It Fails](/blog/offshore-software-development-when-it-works-and-when-it-fails/)
+
+
 ## Structure Your RFP Around Problems, Not Solutions
 
 The most effective software RFPs describe the problem space thoroughly and leave the solution space open for vendors to demonstrate their thinking.
@@ -41,6 +45,10 @@ Ask for relevant case studies with specific outcomes. "Describe a project where 
 Request team composition and individual resumes. The specific people assigned to your project matter more than the vendor's overall capabilities. Ask who will be the technical lead, who will manage the project day-to-day, and what percentage of their time will be dedicated to your project. Beware of bait-and-switch: the senior architects who present in the sales process should be the ones who work on your project.
 
 Include a small technical exercise. Instead of (or in addition to) written responses, give vendors a focused problem to solve. This might be a system design exercise: "Given these requirements, sketch a high-level architecture and explain your key design decisions." Keep it to 2 to 4 hours of work. This filters out vendors who write well but cannot design, and it gives you a preview of how their team thinks.
+
+
+> See also: [How to Choose a Custom Software Development Company](/blog/how-to-choose-a-custom-software-development-company/)
+
 
 ## Evaluation Criteria That Predict Success
 

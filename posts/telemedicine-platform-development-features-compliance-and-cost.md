@@ -18,6 +18,10 @@ A telemedicine platform's feature set must support the full clinical encounter l
 
 **E-prescribing**: Integration with a certified e-prescribing network (Surescripts in the US) allows providers to send prescriptions directly to the patient's preferred pharmacy. EPCS (Electronic Prescribing for Controlled Substances) adds two-factor authentication and audit trail requirements mandated by the DEA. The prescribing workflow must check formulary coverage, display drug interaction alerts from the patient's medication list, and route controlled substance prescriptions through the additional identity verification required by EPCS.
 
+
+> Related: [Veterinary Practice Management Software](/blog/veterinary-practice-management-software/)
+
+
 ## HIPAA Compliance Architecture
 
 HIPAA compliance is not a feature you add to a telemedicine platform -- it is a constraint that shapes every architectural decision. The HIPAA Security Rule requires administrative, physical, and technical safeguards for all electronic Protected Health Information (ePHI).
@@ -44,6 +48,10 @@ Your platform should:
 - **Enforce geographic restrictions** by determining the patient's location at the time of the encounter (IP geolocation supplemented by patient attestation) and matching it against the provider's active licenses.
 - **Manage consent workflows** per state, collecting and storing state-specific telemedicine consent forms before the first encounter.
 - **Track regulatory changes** -- telemedicine regulations change frequently, especially around prescribing rules and practice authority for NPs and PAs. Build the licensing rules engine as a configurable data layer, not hardcoded logic.
+
+
+> See also: [HIPAA Patient Portal Development](/blog/hipaa-patient-portal-development/)
+
 
 ## EHR Integration and Interoperability
 

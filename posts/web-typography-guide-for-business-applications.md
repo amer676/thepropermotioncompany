@@ -16,6 +16,10 @@ Brand expression through type is a legitimate concern for marketing sites. For i
 
 **Performance consideration.** Every font weight and style you load adds to page weight. A practical approach: load two weights (Regular and SemiBold) initially, lazy-load additional weights as needed, and use `font-display: swap` to prevent invisible text during loading. Variable fonts (a single file containing all weights along a continuous axis) are ideal — Inter's variable font file is roughly 300KB and replaces what would otherwise be six or seven separate files.
 
+
+> Related: [Data Dashboard Design: Principles for Complex Applications](/blog/data-dashboard-design-principles-for-complex-applications/)
+
+
 ## Establishing a Type Scale That Works for Dense Interfaces
 
 Marketing sites can afford dramatic size variation — 72px headings with 18px body text. Business applications cannot. The information density is too high, and dramatic size jumps waste vertical space.
@@ -59,6 +63,10 @@ A common mistake is applying a single line-height to all text. Headings need tig
 For data tables, the constraint is different. Columns should be wide enough that typical content does not truncate, but narrow enough that the eye can track across a row without losing its place. Alternating row backgrounds or subtle horizontal rules help with this.
 
 **Paragraph spacing:** Use margin rather than empty lines between paragraphs. A spacing of 0.75em to 1em between paragraphs maintains visual grouping without the double-spacing feel. For lists in a sidebar or navigation, tighter spacing (0.25em to 0.5em between items) preserves grouping.
+
+
+> See also: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
 
 ## Color, Contrast, and Dark Mode
 

@@ -14,6 +14,10 @@ Study the existing process before you design the replacement. Sit with the peopl
 
 These observed workflows are your design requirements. The tool you build must accommodate them, not replace them with a "better" process that nobody asked for. You can improve the workflow incrementally after adoption, but forcing a new process simultaneously with a new tool is a recipe for rejection.
 
+
+> Related: [Software for Franchise Operations: Multi-Location Management](/blog/software-for-franchise-operations-multi-location-management/)
+
+
 ## Designing for the 80% Workflow
 
 Internal tools fail when they try to handle every edge case from day one. The result is a complex interface with 30 form fields, half of which are irrelevant to any given task. The user sees complexity and retreats to the spreadsheet.
@@ -37,6 +41,10 @@ Inline editing — clicking directly on a value in a table to edit it — elimin
 Bulk operations matter for internal tools in ways they do not for consumer products. The ability to select 50 records and change their status in one action, or upload a CSV to create 200 records at once, or apply a filter and then "update all matching records" — these are not power-user features in an internal tool. They are essential features that determine whether the tool can handle the daily volume.
 
 Keyboard navigation is another differentiator. Internal tool users are often processing high volumes of records and want to move through them quickly. Tab between fields, Enter to save and advance to the next record, Escape to cancel, and Ctrl+K (or Cmd+K) for a command palette that provides quick access to any action. These patterns feel natural to power users because they mirror the text-editing and spreadsheet interactions they already know.
+
+
+> See also: [Franchise Management Software Development](/blog/franchise-management-software-development/)
+
 
 ## The Notification and Integration Layer
 

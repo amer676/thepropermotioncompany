@@ -16,6 +16,10 @@ Not all errors are the same, and they should not be communicated the same way. T
 
 Design each category differently. User-recoverable errors appear inline, close to the element that needs attention, in a warm color (orange or amber) that signals "action needed" without panic. System errors appear as banners or toast notifications that acknowledge the problem without blocking the user's workflow. Non-recoverable errors can take over the screen because there is genuinely nothing else the user can do on this page.
 
+
+> Related: [Designing for Power Users and Beginners Simultaneously](/blog/designing-for-power-users-and-beginners-simultaneously/)
+
+
 ## Form Validation: Where Most Error UX Fails
 
 Forms are the most error-prone interaction in any application, and most teams get the validation UX wrong in at least three ways.
@@ -39,6 +43,10 @@ For read operations (loading a page, fetching data), implement a layered fallbac
 For write operations (submitting a form, saving changes, processing a payment), the stakes are higher because the user might lose their input. Implement optimistic saving: save form state to local storage as the user types, so if a submission fails, their input is preserved. Show the error with a "Retry" button that resubmits without requiring the user to re-enter anything. If the submission was partially successful (the order was created but the confirmation email failed), tell the user exactly what happened: "Your order was placed successfully. We were unable to send a confirmation email -- you can view your order at [link]."
 
 Timeout handling deserves special attention. If an API call has been pending for more than 10 seconds, show a message: "This is taking longer than usual. You can wait or try again later -- your data has been saved." The 10-second threshold is not arbitrary; research by Nielsen Norman Group established that 10 seconds is the limit at which users begin to lose attention and wonder if the system is frozen.
+
+
+> See also: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
 
 ## Permission and Authorization Errors
 

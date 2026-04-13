@@ -18,6 +18,10 @@ Separate databases. Each location gets its own database instance. Maximum isolat
 
 Regardless of approach, the permission model must enforce location-level access at the application layer. A franchise location manager should see only their location's data. A regional manager should see their region's locations. The corporate team should see everything. Row-level security in PostgreSQL (using policies tied to the authenticated user's role and assigned locations) provides a database-level safety net on top of application-level access control.
 
+
+> Related: [Business Process Automation Guide](/blog/business-process-automation-guide/)
+
+
 ## Operational Compliance and Standard Operating Procedures
 
 Franchise value comes from consistency. Customers expect the same experience at every location, and the franchisor's brand depends on it. Enforcing operational standards across dozens of independent operators is the core challenge, and software is the most scalable way to do it.
@@ -39,6 +43,10 @@ Build a POS integration layer that normalizes sales data from any source into a 
 Financial reporting for the franchisor should include: royalty revenue by location, region, and period; delinquent royalty payments with aging; franchisee P&L comparisons (if franchisees share their financial data, which many franchise agreements require); and forecasts based on historical sales trends.
 
 For franchisees, the financial reporting should include: their own sales trends, royalty obligations (current and upcoming), marketing fund balances, and benchmarking against system averages (anonymized — no franchisee wants to see their neighbor's exact numbers, but everyone wants to know if they are above or below the network average).
+
+
+> See also: [Field Service Management Software Development](/blog/field-service-management-software-development/)
+
 
 ## Territory Management and Expansion Planning
 

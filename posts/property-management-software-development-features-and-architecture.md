@@ -24,6 +24,10 @@ Model lease status as a state machine: Prospect -> Application -> Approved -> Ac
 
 **Tenant accounts.** Every tenant has a ledger that tracks all financial activity: rent charges, payments, late fees, utility charges, security deposit transactions, and any credits or adjustments. The account balance at any point in time is the sum of all charges minus the sum of all payments. This running balance is the foundation for delinquency tracking, payment application, and move-out accounting.
 
+
+> Related: [Tenant Screening Platform Development](/blog/tenant-screening-platform-development/)
+
+
 ## Rent Collection and Financial Processing
 
 Rent collection is the core revenue function, and the software must handle it with precision and flexibility.
@@ -55,6 +59,10 @@ When a work order requires an external vendor, the dispatch workflow should: ide
 **Tenant communication.** Every status change on a work order should generate a notification to the tenant: "Your maintenance request has been received," "A technician has been scheduled for Tuesday between 10am and 12pm," "Your maintenance request has been completed." These notifications should go through the tenant's preferred channel (email, SMS, or in-app push notification). Automated communication reduces the volume of "What is the status of my request?" calls to the office by 40 to 60 percent based on our experience.
 
 **Preventive maintenance scheduling.** Beyond reactive maintenance, schedule recurring preventive tasks: HVAC filter replacements every 90 days, fire extinguisher inspections annually, gutter cleaning in the fall, pest control quarterly. Build these as recurring work order templates that auto-generate based on a calendar schedule, pre-assigned to the appropriate vendor or technician.
+
+
+> See also: [AI for Real Estate: Property Matching, Valuation, and Lead Scoring](/blog/ai-for-real-estate-property-matching-valuation-and-lead-scoring/)
+
 
 ## Owner Reporting and Investor Communications
 

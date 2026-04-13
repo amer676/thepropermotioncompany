@@ -12,6 +12,10 @@ A common mistake is to start the search by asking "Who builds good React apps?" 
 
 Partners who ask probing questions about your problem before proposing a solution are demonstrating the single most important trait you should be evaluating: the ability to think about your business, not just their code. If a firm jumps straight to a tech stack recommendation in the first meeting, that is a signal they are selling a hammer, not solving your problem.
 
+
+> Related: [Offshore Software Development: When It Works and When It Fails](/blog/offshore-software-development-when-it-works-and-when-it-fails/)
+
+
 ## Evaluating Technical Competence Beyond the Portfolio
 
 Every development shop has a portfolio. Most portfolios look impressive. The challenge is that a polished landing page screenshot tells you almost nothing about the code underneath it. Here is how to dig deeper.
@@ -35,6 +39,10 @@ Test their responsiveness. Send them a technical question by email and note how 
 Evaluate their escalation process. Ask them to describe a time a project went sideways and what they did about it. Every experienced development firm has had projects go wrong. The honest ones will tell you about it. The ones who claim a perfect track record are either lying or too inexperienced to have encountered real challenges.
 
 Look for a dedicated point of contact. Firms that route all communication through a project manager can be effective, but you should have the ability to speak directly with the technical lead when needed. If there is a strict wall between you and the engineers, misunderstandings multiply.
+
+
+> See also: [How to Choose a Custom Software Development Company](/blog/how-to-choose-a-custom-software-development-company/)
+
 
 ## Contract Structure and Engagement Models
 

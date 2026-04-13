@@ -14,6 +14,10 @@ Prompt injection is the most discussed AI security vulnerability, but most teams
 
 **Tool-augmented attacks** escalate the impact. Modern AI applications give LLMs access to tools -- database queries, API calls, file system operations, code execution. Prompt injection in a tool-augmented system is not just an information disclosure problem; it is a remote code execution problem. If your AI agent can query a database, an attacker who controls any text the agent processes can potentially craft queries against that database. If your agent can send emails, the attacker can send emails. The blast radius scales with the capabilities you grant the model.
 
+
+> Related: [How AI Changes Software Architecture](/blog/how-ai-changes-software-architecture/)
+
+
 ## Defensive Architecture: Layered Security for LLM Applications
 
 There is no single defense against prompt injection. Anyone who tells you their prompt engineering technique "solves" injection is wrong. Effective defense requires multiple layers, each reducing the probability and impact of a successful attack.
@@ -37,6 +41,10 @@ The fix is to enforce access control at the retrieval layer, not the generation 
 **Training data memorization** is a subtler leakage vector. LLMs memorize portions of their training data, and sufficiently targeted prompting can extract it. If you fine-tune a model on proprietary data -- customer records, internal documents, code repositories -- that data can potentially be extracted through adversarial prompting. Differential privacy techniques during fine-tuning add noise that reduces memorization, but they also reduce model quality. The practical mitigation is to never fine-tune on data that should never be revealed, use retrieval-augmented generation instead (where the data stays in a controlled datastore), and apply output filtering to catch any leakage that occurs.
 
 **Context window contamination** happens when sensitive data from one user's session persists and leaks into another user's session. In a multi-user application, ensure that each conversation maintains a strictly isolated context. Never share conversation history, system prompt state, or retrieved documents across sessions. If you are using a stateful API or caching layer, implement strong session isolation. This sounds obvious, but shared GPU instances, connection pooling, and caching optimizations can inadvertently create cross-session leakage paths.
+
+
+> See also: [AI for Healthcare: Applications, Compliance, and Implementation](/blog/ai-for-healthcare-applications-compliance-and-implementation/)
+
 
 ## Securing the AI Supply Chain
 

@@ -20,6 +20,10 @@ A custom scheduling system can model your actual production constraints:
 
 The scheduling engine should recalculate automatically when conditions change: a machine breaks down, a material delivery is delayed, a rush order arrives, or an operator calls in sick. Static schedules that require manual rebuilding every time something changes are the status quo in most factories -- and they consume 3 to 5 hours of production management time per day.
 
+
+> Related: [Event Management and Ticketing Platform Development](/blog/event-management-and-ticketing-platform-development/)
+
+
 ## Shop Floor Data Collection
 
 You cannot improve what you do not measure. Shop floor data collection (SFDC) captures real-time production data -- cycle times, quantities produced, scrap counts, downtime events, and machine states -- and feeds it into your production management system.
@@ -52,6 +56,10 @@ A custom quality management system (QMS) integrates directly with production:
 **Non-conformance and CAPA management**: When a defect is detected, the system creates a non-conformance record (NCR) with the defect description, affected quantity, containment actions, and disposition (rework, scrap, use-as-is with customer approval). If the defect recurs or is systemic, a corrective and preventive action (CAPA) is initiated with root cause analysis (5 Whys, fishbone diagram support), corrective action plan, verification of effectiveness, and documentation for audit readiness.
 
 **Traceability**: For regulated industries, full lot traceability from raw material receipt through finished goods shipment is mandatory. The system records which material lots went into which production runs, which operators performed the work, which inspection results were recorded, and which customers received the finished product. In the event of a recall, you can identify every affected unit within minutes rather than days.
+
+
+> See also: [AI for Predictive Maintenance](/blog/ai-for-predictive-maintenance/)
+
 
 ## Inventory Management for Manufacturing
 

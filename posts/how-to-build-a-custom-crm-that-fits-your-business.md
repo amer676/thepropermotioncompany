@@ -20,6 +20,10 @@ Custom CRM development is a significant investment -- typically $100,000 to $350
 
 **Your team has given up on the current CRM.** This is the most telling signal. When your sales team maintains their own spreadsheets alongside the CRM, when data entry feels like busywork rather than a natural part of the workflow, when reports cannot be trusted because the data is incomplete -- the CRM has failed its primary purpose. A custom build designed around how people actually work gets adopted where the generic tool did not.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Designing the Data Model Around Your Business
 
 The data model is the foundation of a custom CRM, and getting it right requires deep understanding of how your business actually works -- not how a CRM vendor thinks it should work.
@@ -49,6 +53,10 @@ This single integration -- automatic email capture -- typically increases CRM da
 **Notification routing.** Build intelligent notifications based on CRM events: notify a sales manager when a deal over $500,000 changes stage, alert the team when a contact they have not spoken to in 30 days views a proposal, send a Slack message when a new lead is assigned. Use an event-driven architecture (publish CRM events to a message queue, let notification handlers subscribe to relevant events) so adding new notification rules does not require modifying core CRM logic.
 
 **Document generation.** If your sales process involves proposals, quotes, contracts, or reports, build template-based document generation into the CRM. A salesperson should be able to generate a proposal by clicking one button, with the prospect's name, deal details, pricing, and terms automatically populated from CRM data. Use a templating engine (Handlebars, Liquid, or Jinja2) with a PDF rendering pipeline.
+
+
+> See also: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
 
 ## The User Interface That Gets Adopted
 

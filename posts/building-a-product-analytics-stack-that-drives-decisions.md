@@ -16,6 +16,10 @@ The most common mistake is starting with a tool. "Let's install Mixpanel" is not
 
 Document this framework in a single page: the core action, the activation sequence with events at each step, and your hypothesized retention predictors. This document drives every analytics implementation decision that follows.
 
+
+> Related: [How to Run Product Demos That Close Deals](/blog/how-to-run-product-demos-that-close-deals/)
+
+
 ## Event Taxonomy: The Foundation Nobody Gets Right
 
 Raw event data is only useful if it is consistent, well-named, and well-structured. An event taxonomy is the naming convention and schema that every tracked event follows.
@@ -60,6 +64,10 @@ Transformation tools like dbt (data build tool) let you define these models as S
 - **Early stage (under 1,000 users):** PostHog (open-source, self-hostable) or Amplitude's free tier. Both provide funnels, retention charts, and user paths out of the box. Cost: $0 to $100/month.
 - **Growth stage (1,000 to 50,000 users):** Amplitude, Mixpanel, or PostHog Cloud. Add a BI tool like Metabase (open-source) or Looker for warehouse-connected dashboards. Cost: $500 to $3,000/month.
 - **Scale stage (50,000+ users):** Full warehouse-centric stack with Snowflake/BigQuery, dbt for transformation, and Looker or Tableau for visualization. The analytics platform becomes a query layer for exploration, not the source of truth. Cost: $3,000 to $15,000/month.
+
+
+> See also: [How to Write User Stories That Lead to Better Software](/blog/how-to-write-user-stories-that-lead-to-better-software/)
+
 
 ## Five Dashboards Every Product Team Needs
 

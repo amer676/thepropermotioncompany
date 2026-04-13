@@ -12,6 +12,10 @@ At the far end, you have autonomous AI assistants -- systems that can plan multi
 
 Most real applications should live somewhere in the middle of this spectrum, but marketing pressure pushes teams toward the autonomous end before their use case warrants it.
 
+
+> Related: [AI for Healthcare: Applications, Compliance, and Implementation](/blog/ai-for-healthcare-applications-compliance-and-implementation/)
+
+
 ## When a Scripted Chatbot Is the Right Answer
 
 There's no shame in a scripted chatbot. For many business problems, it's the optimal solution -- and teams that build something more complex when a decision tree would suffice are wasting money and introducing unnecessary risk.
@@ -37,6 +41,10 @@ Chunk your documents thoughtfully. Splitting a 20-page policy document into para
 The generation step should be constrained. Use system prompts that instruct the model to answer only from the provided context, to say "I don't have information about that" when the retrieved documents don't contain a relevant answer, and to suggest contacting a human for questions outside its domain. This dramatically reduces hallucination risk compared to an unconstrained model.
 
 Frameworks like LangChain, LlamaIndex, and Haystack provide the plumbing for RAG systems. For production deployments, pay attention to caching (identical or similar questions should reuse previous retrievals), monitoring (track which questions the system can't answer to identify knowledge base gaps), and feedback loops (let users flag incorrect answers to improve the system over time).
+
+
+> See also: [AI Document Processing: Extract, Classify, and Automate](/blog/ai-document-processing-extract-classify-and-automate/)
+
 
 ## When You Actually Need an AI Assistant
 

@@ -14,6 +14,10 @@ The most mature systems add a third tier: component tokens. These map semantic t
 
 The W3C Design Tokens Community Group has been developing a specification (formerly called the Design Tokens Format Module) that standardizes how tokens are defined in JSON. Adopting this format, or something close to it, future-proofs your token files against tooling changes.
 
+
+> Related: [Why Big Software Redesigns Almost Always Fail](/blog/why-big-software-redesigns-almost-always-fail/)
+
+
 ## Structuring Your Token Taxonomy
 
 The biggest mistake teams make is jumping straight into tooling before defining their taxonomy. A poorly structured token system is worse than no tokens at all, because it creates a false sense of consistency while making changes harder.
@@ -70,6 +74,10 @@ Here is a simplified Style Dictionary configuration:
 Custom transforms handle platform-specific conversions. A color defined as hex in your source file might need to become a UIColor initializer on iOS, a `@ColorRes` reference on Android, and a CSS custom property on web. Spacing values defined in pixels might need to convert to `rem` for web and `dp` for Android.
 
 For teams using Tailwind CSS, generate a Tailwind theme extension directly from your tokens. Map `color.primary` to `theme.extend.colors.primary`, `spacing.4` to `theme.extend.spacing.4`, and so on. This lets developers use familiar Tailwind classes (`bg-primary`, `p-4`) while the underlying values stay synchronized with the token system.
+
+
+> See also: [Designing Data-Heavy Applications: Tables, Charts, and Dashboards](/blog/designing-data-heavy-applications-tables-charts-and-dashboards/)
+
 
 ## Implementing Theming and Dark Mode
 

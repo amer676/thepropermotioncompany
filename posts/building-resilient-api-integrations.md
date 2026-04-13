@@ -18,6 +18,10 @@ Behavioral changes are the most dangerous because they are silent. The API conti
 
 Infrastructure-level failures include DNS resolution failures, TLS certificate expiration, IP address changes, and provider-side region outages. These are rare but catastrophic when they happen.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Circuit Breakers and Retry Strategies
 
 The circuit breaker pattern prevents a failing integration from consuming resources indefinitely. When failures exceed a threshold, the circuit "opens" and subsequent requests fail immediately without calling the external API. After a cooldown period, the circuit moves to "half-open" and allows a single test request through. If it succeeds, the circuit closes and normal traffic resumes.
@@ -49,6 +53,10 @@ Configure three separate timeouts. The connection timeout (how long to wait for 
 Connection pooling is essential for high-throughput integrations. Creating a new TCP connection and TLS handshake for every request adds 100 to 300ms of overhead. Maintain a pool of persistent connections to each external host. Configure the pool size based on your expected concurrency: if you make up to 50 concurrent requests to Stripe, set the pool to 50 connections with a maximum of 75. Set idle connection timeouts to 90 seconds to avoid using stale connections that the remote end has closed.
 
 DNS caching introduces a subtle failure mode. If a provider rotates IP addresses (common with cloud-hosted APIs behind load balancers), stale DNS cache entries can cause all requests to hit a decommissioned IP. Set DNS TTL in your HTTP client to respect the provider's DNS TTL rather than caching indefinitely. Most cloud providers use 60-second DNS TTLs.
+
+
+> See also: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
 
 ## Graceful Degradation and Fallback Strategies
 

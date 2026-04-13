@@ -18,6 +18,10 @@ The wrong first developer costs you 6-12 months of wasted time, $80,000-150,000 
 
 A clear role definition might look like this: "Full-time full-stack developer to build a B2B SaaS web application from scratch. Technology stack likely React and Node.js with PostgreSQL. Must be able to make infrastructure decisions, set up CI/CD, and write production code. Remote, US time zone overlap of at least 5 hours. Budget: $100,000-130,000 plus 0.5-1.5% equity."
 
+
+> Related: [How to Scope an MVP That Actually Validates Your Hypothesis](/blog/how-to-scope-an-mvp-that-actually-validates-your-hypothesis/)
+
+
 ## Where to Find Candidates Who Are Actually Good
 
 The best developers are rarely actively job hunting. They are employed, busy, and not scrolling LinkedIn job boards. Reaching them requires going where they already spend time.
@@ -45,6 +49,10 @@ What your advisor should look for: code organization and readability, appropriat
 A strong candidate will say things like: "It depends on expected traffic. If you have under 10,000 users, a simple monolith on a single server is fine. If you need to scale beyond that, we should consider separating these services." A weak candidate will propose over-engineered solutions without understanding your actual needs.
 
 **Reference checks that actually reveal something.** Do not ask references if the candidate is "good." Ask specific questions: "Can you describe a time this person disagreed with a technical decision? How did they handle it?" and "If you were starting a new project tomorrow and could pick any developer, would you pick this person? Why or why not?" and "What type of work does this person struggle with?"
+
+
+> See also: [Building Your First Product Team: From Solo Founder to Team](/blog/building-your-first-product-team-from-solo-founder-to-team/)
+
 
 ## Structuring Compensation and Equity Fairly
 

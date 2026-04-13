@@ -16,6 +16,10 @@ The most common mistake in dark mode design is starting from your light mode pal
 
 **Semantic colors.** Error reds, success greens, and warning yellows all need dark-mode variants. The standard approach is to use lighter, less saturated versions: shift error red from #DC2626 to #F87171, success green from #16A34A to #4ADE80, warning yellow from #CA8A04 to #FACC15. These lighter variants maintain readability and emotional association without blinding users on dark backgrounds.
 
+
+> Related: [White Space in Application Design: Why Less Is More](/blog/white-space-in-application-design-why-less-is-more/)
+
+
 ## CSS Implementation with Custom Properties
 
 Modern CSS makes dark mode implementation clean and maintainable. The key is building a design token system that switches at one level while everything else references tokens.
@@ -85,6 +89,10 @@ Images are where most dark mode implementations break down. Photos, illustration
 ```
 
 **Shadows and depth.** Box shadows are nearly invisible on dark backgrounds. Replace shadows with subtle light borders (1px solid rgba(255, 255, 255, 0.08)) or slightly lighter background colors to indicate elevation. The visual hierarchy should remain clear without relying on shadow visibility.
+
+
+> See also: [UI Design Principles for Business Software Applications](/blog/ui-design-principles-for-business-software-applications/)
+
 
 ## Managing User Preferences and Persistence
 

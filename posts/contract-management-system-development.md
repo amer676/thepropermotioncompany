@@ -24,6 +24,10 @@ Approval and execution. Once terms are finalized, the contract enters an approva
 
 Custom workflow engines model these approval chains as configurable rules. Approvers receive notifications, can review the contract and its metadata, and approve or request revisions directly in the system. Electronic signature integration via DocuSign or an open-source alternative like DocuSeal handles the execution step, capturing legally binding signatures and storing the executed document.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Data Model and Search Architecture
 
 The data model for a contract management system goes well beyond storing PDF files. Each contract is an entity with structured metadata that enables search, reporting, and automation.
@@ -47,6 +51,10 @@ Reminders should escalate. Sixty days before a renewal deadline, the contract ow
 Beyond dates, obligation tracking monitors ongoing commitments. If a vendor contract requires quarterly compliance reports, the system tracks whether those reports have been received. If a customer contract includes SLA commitments, the system can integrate with your monitoring tools to track actual performance against contractual targets.
 
 Dashboard views give executives visibility into the contract portfolio: total contract value by category, upcoming renewals by month, contracts expiring without a renewal plan, and contracts with flagged compliance issues. This visibility transforms contract management from a reactive, fire-fighting exercise into a proactive, strategic function.
+
+
+> See also: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
 
 ## Integration With Business Systems
 

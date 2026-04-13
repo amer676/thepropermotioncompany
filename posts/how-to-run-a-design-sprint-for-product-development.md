@@ -12,6 +12,10 @@ Second, assemble the right team. A design sprint typically includes five to seve
 
 Third, recruit test users. You'll need five users for Friday's testing sessions. Research by Jakob Nielsen demonstrated that five users uncover roughly 85 percent of usability issues. These should be people in your target audience who haven't been involved in the sprint -- fresh eyes who will interact with your prototype the way a real customer would. Recruit them before the sprint starts and schedule 60-minute sessions for Friday. Offering compensation ($50-100 gift cards for consumers, more for specialized B2B users) dramatically improves show-up rates.
 
+
+> Related: [Why Big Software Redesigns Almost Always Fail](/blog/why-big-software-redesigns-almost-always-fail/)
+
+
 ## Monday: Map the Problem Space
 
 Monday is about building shared understanding. The team maps the user journey, identifies the biggest pain points, and selects a specific target for the sprint.
@@ -33,6 +37,10 @@ Then move to individual sketching. This is not brainstorming -- it's the opposit
 On Wednesday morning, the team reviews the sketches using a structured process. Tape all sketches on a wall. Each team member silently reviews them for 20 minutes, placing small dot stickers on elements they find compelling. Then discuss the clusters of dots -- what drew people's attention and why. Finally, the Decider selects the sketch (or combination of elements from multiple sketches) that will become the prototype.
 
 Create a detailed storyboard -- typically 10 to 15 panels -- that maps out the user experience of the selected solution from start to finish. This storyboard is the blueprint for Thursday's prototyping work.
+
+
+> See also: [Designing Data-Heavy Applications: Tables, Charts, and Dashboards](/blog/designing-data-heavy-applications-tables-charts-and-dashboards/)
+
 
 ## Thursday: Build a Realistic Prototype
 

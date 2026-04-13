@@ -16,6 +16,10 @@ Fitness platforms generally fall into three architectural categories, and your c
 
 For most founders reading this, option two is the right starting point. You can always extract performance-critical modules into native code later.
 
+
+> Related: [Custom Software for Schools and Educational Institutions](/blog/custom-software-for-schools-and-educational-institutions/)
+
+
 ## Core Feature Set That Drives Retention
 
 Fitness apps have a notoriously steep drop-off curve. Industry data from Adjust shows that the average fitness app retains only 14.1% of users after 30 days. The features below are specifically designed to bend that curve upward.
@@ -39,6 +43,10 @@ Getting the data model right early saves enormous refactoring pain. Here is a sc
 **Programs and progression.** Programs are ordered collections of workout templates assigned to specific days or sequences. Track program enrollment separately from program definitions so multiple users can follow the same program with independent progress states.
 
 Use UUIDs as primary keys from the start. Fitness apps frequently need offline support, and UUID generation on the client prevents ID collision when syncing.
+
+
+> See also: [Event Management and Ticketing Platform Development](/blog/event-management-and-ticketing-platform-development/)
+
 
 ## Video and Media Delivery Strategy
 

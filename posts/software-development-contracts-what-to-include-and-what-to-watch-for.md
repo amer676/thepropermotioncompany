@@ -18,6 +18,10 @@ Protect yourself in T&M contracts with a **not-to-exceed cap** and **weekly burn
 
 A hybrid model combines both: fixed-price for well-defined phases (design, infrastructure setup) and T&M for phases with more uncertainty (feature development, user testing). This is often the most practical approach for projects with a mix of known and unknown requirements.
 
+
+> Related: [Why Fixed-Price Software Development Projects Fail](/blog/why-fixed-price-software-development-projects-fail/)
+
+
 ## Intellectual Property: Who Owns the Code
 
 IP ownership is the most consequential clause in the entire contract, and it is the one clients most often overlook or misunderstand.
@@ -41,6 +45,10 @@ Every change order process should include four elements. First, a written descri
 Be wary of "implied requirements." A spec that says "the system shall support user registration" could mean a simple email/password form or a full OAuth integration with social login, multi-factor authentication, and email verification. Ambiguity in the spec benefits whoever did not write it. Pin down the details or accept that you will pay for clarification later.
 
 Include a provision for scope reduction as well as scope addition. If halfway through the project you realize that a planned feature is unnecessary, you should be able to remove it and reduce the cost. Fixed-price contracts often resist this --- the firm has already priced the work and does not want to give money back. Negotiate scope reduction rights upfront.
+
+
+> See also: [Why Software Estimation Is So Hard and How to Get Better at It](/blog/why-software-estimation-is-so-hard-and-how-to-get-better-at-it/)
+
 
 ## Payment Structure and Milestone Definitions
 

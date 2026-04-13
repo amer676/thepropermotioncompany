@@ -24,6 +24,10 @@ A construction company with 500 active subcontractors might be tracking 3,000 to
 
 **Performance tracking and relationship management.** Over time, you build a data-driven picture of each contractor: reliability (percentage of assignments completed on time), quality (callback rate, inspection pass rate, client satisfaction scores), rate competitiveness, and capacity. This data transforms contractor selection from a manual, relationship-dependent process into a data-informed one.
 
+
+> Related: [Technical Leadership for Non-Technical Executives](/blog/technical-leadership-for-non-technical-executives/)
+
+
 ## Core Architecture Decisions
 
 Contractor management platforms have several architectural characteristics that shape technology decisions.
@@ -55,6 +59,10 @@ Your platform should include guardrails that help hiring companies stay on the r
 **Engagement duration tracking.** Many states have rules about how long a contractor can work for a single client before the relationship starts to look like employment. California's AB5 law is particularly strict. Build duration tracking with configurable thresholds by jurisdiction, and alert administrators before those thresholds are reached.
 
 This is not legal advice, and the platform cannot make classification determinations. But it can surface data that helps companies identify risk before a lawsuit or audit does.
+
+
+> See also: [The 10x Developer Myth: What Actually Makes Teams Productive](/blog/the-10x-developer-myth-what-actually-makes-teams-productive/)
+
 
 ## Payment Processing Architecture
 

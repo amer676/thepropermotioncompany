@@ -16,6 +16,10 @@ A co-working member is not a simple subscription. Members have complex lifecycle
 
 The biggest mistake we see operators make is starting with a generic CRM or property management tool and bolting on co-working-specific features through integrations and workarounds. This creates data silos, breaks when integrations change, and requires manual reconciliation. A purpose-built co-working platform handles these workflows natively.
 
+
+> Related: [AI for Real Estate: Property Matching, Valuation, and Lead Scoring](/blog/ai-for-real-estate-property-matching-valuation-and-lead-scoring/)
+
+
 ## Space Booking and Resource Optimization
 
 The economic model of co-working depends on resource utilization. An empty meeting room and an empty hot-desk are lost revenue that can never be recovered. Smart booking systems maximize utilization while maintaining member satisfaction.
@@ -39,6 +43,10 @@ Hardware options include: Kisi (cloud-based access control with strong API), Sal
 **Permission-based access zones.** Not every member should access every area. A hot-desk member should have access to the common area and meeting rooms they have booked, but not to private office corridors. An after-hours event attendee should have access to the event space and restrooms, but not to member areas. Your access control system should support zone-based permissions that map directly to membership types and booking states.
 
 **Visitor management.** When a member's guest arrives, the front desk (or a self-service kiosk) should be able to issue temporary credentials that grant access to specific areas for a defined time window. The member should receive a notification that their guest has arrived. After the visit, credentials expire automatically. For compliance-heavy tenants (financial services, healthcare), visitor logs with timestamps and photo capture may be required.
+
+
+> See also: [Software for Co-Working Space Management](/blog/software-for-co-working-space-management/)
+
 
 ## Billing, Invoicing, and Revenue Management
 

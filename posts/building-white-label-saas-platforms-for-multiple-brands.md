@@ -14,6 +14,10 @@ The foundational decision in any white-label platform is your tenancy model. The
 
 Most white-label platforms start with shared database/shared schema and migrate their largest or most demanding tenants to dedicated databases later. Design your data access layer to support both models from the beginning. An abstraction that resolves a tenant's database connection at runtime -- whether that's the shared database with a tenant filter or a dedicated instance -- saves you a painful migration later.
 
+
+> Related: [Building Multi-Tenant SaaS: Architecture and Considerations](/blog/building-multi-tenant-saas-architecture-and-considerations/)
+
+
 ## Theming Architecture That Goes Beyond CSS Variables
 
 The visible differentiator of a white-label product is branding. The naive approach is a set of CSS variables for primary colors and a logo upload. This works for a demo but falls apart with real brand requirements.
@@ -35,6 +39,10 @@ The tenant resolution flow works like this: request arrives at your load balance
 For authentication, support multiple strategies per tenant. Some tenants will want your built-in auth (email/password with MFA). Enterprise tenants will require SAML or OIDC SSO integration with their corporate identity provider. Build your auth layer on a flexible foundation like Auth0 or a self-hosted solution like Keycloak that supports per-tenant identity provider configuration. The key data model insight: a user belongs to a tenant, and the same email address in different tenants represents different users with separate accounts.
 
 Authorization layers also need tenant awareness. Role definitions may vary by tenant -- one tenant's "admin" might have different permissions than another's. Use a role-permission model where roles are defined per tenant, and permissions are drawn from a global set. This lets you offer a standard role template while allowing enterprise tenants to customize their permission structure.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Feature Flags and Per-Tenant Configuration
 

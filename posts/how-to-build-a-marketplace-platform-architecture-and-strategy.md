@@ -18,6 +18,10 @@ For your marketplace, define the minimum viable market: the smallest segment whe
 
 **Engineer for a manual backend during early stages.** Your first 100 transactions do not need automated matching, algorithmic pricing, or instant booking. They need successful outcomes. If that means you personally match buyers with sellers via email for the first month, do it. The goal of early-stage marketplace engineering is to validate the transaction model, not to automate it. Automation comes after you have confirmed that the transaction works.
 
+
+> Related: [Next.js for Business Applications: Why We Choose It](/blog/nextjs-for-business-applications-why-we-choose-it/)
+
+
 ## Transaction Architecture: Payments, Escrow, and Fees
 
 The payment flow is the backbone of a marketplace. Get it wrong and you lose trust, violate regulations, or create financial liability for your company.
@@ -53,6 +57,10 @@ Elasticsearch implementation for a marketplace typically involves: indexing list
 **Ranking algorithm.** Beyond keyword relevance, the ranking algorithm should factor in: listing quality (completeness of profile, photo quality score, description length), seller reliability (response rate, completion rate, average rating), recency (recently updated listings signal active sellers), and personalization (if you have enough behavioral data, rank listings based on the buyer's past interactions).
 
 **Search result quality metrics.** Track: search-to-click rate (are users clicking on results?), search-to-transaction rate (are searches leading to purchases?), null result rate (how often does search return zero results?), and query refinement rate (how often do users modify their initial search?). A null result rate above 15% indicates missing inventory or poor search relevance. A high refinement rate indicates that initial results are not matching user intent.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Trust, Safety, and Dispute Resolution Systems
 

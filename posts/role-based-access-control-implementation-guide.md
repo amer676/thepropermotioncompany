@@ -24,6 +24,10 @@ Before writing code, map out your permission model on paper. The quality of your
 
 Resist the temptation to create too many roles upfront. Start with 4-6 roles that cover your primary user personas. You can always add roles later when a genuine need arises. Organizations with 15+ roles often find that the proliferation creates confusion rather than clarity.
 
+
+> Related: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
+
 ## Database Schema and Core Implementation
 
 The RBAC database schema is straightforward but must be designed for both query performance and administrative flexibility.
@@ -58,6 +62,10 @@ Implement scope resolution as an upward traversal: when checking if a user has a
 **Resource-level permissions** handle cases where the scope hierarchy is not sufficient. Sometimes access depends on the specific resource instance, not just its type. A document might be shared with specific users regardless of their organizational role. Implement this with a separate `resource_grants` table that links users to specific resource instances with specific permissions. Check resource-level grants in addition to role-based permissions during authorization.
 
 **Row-level filtering** extends RBAC to database queries. Rather than fetching all records and filtering in application code (which is wasteful and insecure), inject scope-based filters into database queries. If a user has access to projects 1, 5, and 12, the query should include `WHERE project_id IN (1, 5, 12)` rather than fetching all projects and filtering afterward. PostgreSQL Row-Level Security (RLS) policies can enforce this at the database layer as a defense-in-depth measure.
+
+
+> See also: [User Authentication and Authorization: Complete Implementation Guide](/blog/user-authentication-and-authorization-complete-implementation-guide/)
+
 
 ## Middleware Integration and API Protection
 

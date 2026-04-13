@@ -10,6 +10,10 @@ These are legitimate use cases, and the platforms serve them well. The cost calc
 
 The trouble starts when these conditions change. The prototype gets traction and becomes the production system. The internal tool grows in complexity and user count. The simple workflow accumulates exceptions and edge cases. The platform that accelerated the first 80% becomes the bottleneck for the remaining 20%, and that 20% is where the actual business value lives.
 
+
+> Related: [Why Software Estimation Is So Hard and How to Get Better at It](/blog/why-software-estimation-is-so-hard-and-how-to-get-better-at-it/)
+
+
 ## Platform Lock-In and the Export Problem
 
 The most significant hidden cost is lock-in. When you build on Bubble, your application logic, your data model, your user interface, and your integrations all exist within Bubble's proprietary environment. There is no "export to code" button that produces a maintainable application in a standard programming language.
@@ -33,6 +37,10 @@ Airtable charges per seat and limits records, automations, and storage by plan t
 Zapier charges by task (a single action in a workflow). The free tier allows 100 tasks per month. The Starter plan at $20 per month allows 750 tasks. At scale, a busy workflow processing 50,000 tasks per month requires a $600+ per month plan. The same automation built as a serverless function on AWS Lambda would cost under $5 per month.
 
 The pattern is consistent: platforms price affordably for small-scale use and extract increasing margins as you scale. This is the opposite of custom software, where infrastructure costs decrease per unit as scale increases.
+
+
+> See also: [10 Reasons Software Projects Fail and How to Prevent Each One](/blog/10-reasons-software-projects-fail-and-how-to-prevent-each-one/)
+
 
 ## Performance Ceilings and Technical Limitations
 

@@ -18,6 +18,10 @@ Quality cost: inconsistency erodes user trust. When every form in your applicati
 
 Accessibility cost: accessibility requirements (WCAG compliance, screen reader support, keyboard navigation) must be implemented for every interactive component. Without a design system, each implementation is a separate accessibility effort. The modal on the reporting page might trap focus correctly while the modal on the billing page does not. A design system lets you invest deeply in making each component accessible once, and every usage inherits that investment.
 
+
+> Related: [Designing Data-Heavy Applications: Tables, Charts, and Dashboards](/blog/designing-data-heavy-applications-tables-charts-and-dashboards/)
+
+
 ## What a Design System Actually Contains
 
 A design system is more than a component library, though a component library is its most visible artifact. A complete design system has four layers.
@@ -45,6 +49,10 @@ Adopting an open-source system makes sense when speed matters more than visual d
 The hybrid approach — adopting an open-source system as a foundation and customizing it — is the most common and usually the best path. Use a system like Radix (unstyled, accessible primitives) or shadcn/ui (copy-paste components you own) as the behavioral foundation, and apply your own design tokens and styles on top. This gives you accessible, well-tested component behavior without the visual similarity to other products that pre-styled libraries produce.
 
 Whichever path you choose, assign ownership. A design system without a maintainer decays. Someone — a designer, a frontend engineer, or a dedicated design systems team in larger organizations — must be responsible for reviewing component contributions, updating documentation, and evolving the system as the product's needs change.
+
+
+> See also: [Why Big Software Redesigns Almost Always Fail](/blog/why-big-software-redesigns-almost-always-fail/)
+
 
 ## Implementation Strategy: Incremental Adoption
 

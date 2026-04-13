@@ -12,6 +12,10 @@ The integration tax was real but hidden. Companies spent 25-40% of their enterpr
 
 The total cost of ownership for a major ERP implementation routinely reached 5-10x the licensing cost when you factored in implementation consulting, data migration, customization, training, and ongoing maintenance. A $2 million SAP license became a $12 million commitment over five years.
 
+
+> Related: [Why Every Company Is Becoming a Software Company](/blog/why-every-company-is-becoming-a-software-company/)
+
+
 ## What Changed: APIs, Cloud, and the Best-of-Breed Renaissance
 
 Three shifts made the unbundling possible.
@@ -39,6 +43,10 @@ Here is what a modern, unbundled enterprise stack looks like for a 200-person B2
 Each tool is chosen because it is the best at its specific job, not because it came bundled with something else. The total cost is often 40-60% less than the suite equivalent, and each component can be replaced independently if a better option emerges.
 
 The key insight is that the integration cost for this stack is now lower than the integration cost within a suite. Connecting HubSpot to Xero through their native API takes an afternoon. Getting an ERP's CRM module to talk to its own financial module often takes a consulting engagement.
+
+
+> See also: [The Rise of the Technical Operator](/blog/the-rise-of-the-technical-operator/)
+
 
 ## The Data Layer Is the New Moat
 

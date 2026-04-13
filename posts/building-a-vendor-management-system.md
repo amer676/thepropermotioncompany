@@ -14,6 +14,10 @@ Before diving into system architecture, it is worth understanding why existing t
 
 A custom VMS fills the gap: purpose-built for your specific vendor landscape, integrated with your existing systems, and priced proportionally to your scale.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Core Data Model: Vendors, Contracts, and Relationships
 
 The data model for a VMS must capture the full lifecycle of a vendor relationship, from initial qualification through ongoing performance management.
@@ -39,6 +43,10 @@ Bringing a new vendor into the system should be a structured process, not an ad-
 **Approval workflow.** After a vendor submits their registration, route the application through an approval workflow. The workflow should be configurable: small-value vendors (under $10,000 annually) might need only procurement team approval, while strategic vendors (over $100,000 annually) might require department head and finance approval. Each approver reviews the vendor profile, questionnaire responses, and uploaded documents before approving or requesting additional information.
 
 **Automated document verification.** Insurance certificates and business licenses have expiration dates. Build automated checks that flag documents expiring within 60 days and send renewal reminders to the vendor contact. If a required document expires, automatically update the vendor's status to "compliance hold" and notify the procurement team.
+
+
+> See also: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
 
 ## Performance Scoring and Vendor Scorecards
 

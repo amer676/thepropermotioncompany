@@ -18,6 +18,10 @@ AI-powered multi-touch attribution models solve this by analyzing the full seque
 
 The practical impact: teams that switch from last-click to AI-driven attribution typically reallocate 15 to 30 percent of their budget, with particularly large shifts away from branded search (which captures demand) and toward upper-funnel channels (which create demand).
 
+
+> Related: [AI for Human Resources: Recruiting, Onboarding, and Workforce Analytics](/blog/ai-for-human-resources-recruiting-onboarding-and-workforce-analytics/)
+
+
 ## Predictive Audience Targeting and Lookalike Modeling
 
 Traditional audience targeting relies on demographic and firmographic segments: "CMOs at companies with 200 to 1,000 employees in the healthcare vertical." These segments are coarse, static, and based on assumptions about who buys rather than data about who actually converts.
@@ -47,6 +51,10 @@ The math is compelling. A manual A/B test comparing 5 ad variants needs roughly 
 **AI-powered copy generation** has matured significantly. Language models can generate ad copy variations that match your brand voice and optimize for specific objectives. The workflow that works: generate 20 to 50 headline variations using AI, have a human marketer filter to the top 10, run them through DCO, and let performance data determine the winner. This process produces winning copy 40 to 60 percent faster than traditional creative workflows.
 
 **Visual analysis for creative insights.** Computer vision models can analyze your ad image library and correlate visual elements with performance. Findings from real campaigns: images with people outperform product-only images by 25 percent on average in B2C social ads. Images with bright, warm color palettes outperform cool palettes by 15 percent on Instagram. These patterns are specific to your audience and brand; the AI surfaces them from your own performance data.
+
+
+> See also: [How AI Changes Software Architecture](/blog/how-ai-changes-software-architecture/)
+
 
 ## Budget Allocation and Bid Optimization
 

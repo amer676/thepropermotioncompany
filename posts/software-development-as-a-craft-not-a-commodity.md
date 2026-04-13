@@ -12,6 +12,10 @@ The gap is not in the specification. It is in the hundreds of micro-decisions th
 
 These decisions are matters of judgment, taste, and experience. They are the decisions of a craftsperson, not a factory worker following an assembly manual.
 
+
+> Related: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
+
 ## What Craft Looks Like in Practice
 
 Software craftsmanship is not about writing "elegant" code or using the newest framework. It is about consistently making decisions that serve the end user and the long-term health of the codebase.
@@ -37,6 +41,10 @@ We have taken over projects where the previous team delivered features quickly f
 **Hidden rework costs.** A 2018 Stripe survey estimated that developers spend 42% of their time dealing with technical debt and bad code. Applied to a team of five developers at a blended cost of $150,000 per year per developer, that is $315,000 annually spent fixing the consequences of commodity thinking rather than building new capabilities.
 
 **User abandonment.** Software that technically works but is frustrating to use does not get used. Internal tools with poor UX lead employees to create workarounds in spreadsheets. Customer-facing products with rough edges drive users to competitors. The indirect cost of poor craftsmanship shows up in adoption metrics, support ticket volume, and customer churn, not in the development invoice.
+
+
+> See also: [Why the Traditional Software Agency Model Is Broken](/blog/why-the-traditional-software-agency-model-is-broken/)
+
 
 ## How to Identify Craft-Oriented Teams
 

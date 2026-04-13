@@ -26,6 +26,10 @@ These projects require dedicated architecture planning (2-4 weeks before develop
 
 **Tier 5: Enterprise-scale systems (9-18+ months).** Full ERP replacements, large-scale data migration projects, platforms processing millions of transactions daily, systems requiring extensive security certification. These projects are rare and typically involve multiple teams, phased rollouts, and parallel operation of old and new systems during migration.
 
+
+> Related: [Why Software Rewrites Fail and How to Do Them Right](/blog/why-software-rewrites-fail-and-how-to-do-them-right/)
+
+
 ## The Factors That Actually Move the Timeline
 
 Within each tier, specific factors push the timeline toward the shorter or longer end. Understanding these lets you predict more accurately and optimize deliberately.
@@ -57,6 +61,10 @@ Even experienced teams estimate software projects within a range because softwar
 **Requirements evolve.** Even with detailed specifications, clients learn things during development that change requirements. A user testing session reveals that the planned workflow is confusing. A competitor launches a feature that shifts priorities. A regulatory change introduces new compliance requirements. These are not "scope creep" if they represent genuine improvements. They are the natural result of learning during the development process.
 
 The most productive approach to estimates is to define a fixed timeline and adjust scope to fit, rather than defining fixed scope and adjusting the timeline. "What can we build in 8 weeks?" is a more useful question than "How long will it take to build everything on this list?" The first question leads to prioritized delivery. The second leads to an ever-expanding timeline.
+
+
+> See also: [Why Software Estimation Is So Hard and How to Get Better at It](/blog/why-software-estimation-is-so-hard-and-how-to-get-better-at-it/)
+
 
 ## How to Accelerate Without Sacrificing Quality
 

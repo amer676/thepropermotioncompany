@@ -16,6 +16,10 @@ Customer development starts by defining who you are building for with enough spe
 
 **Segment sizing.** Estimate the total addressable market for your specific segment. Use a bottom-up approach: how many companies match your criteria (LinkedIn Sales Navigator can filter by headcount, industry, and job titles), multiplied by your estimated annual contract value. If the segment is smaller than $10M in annual revenue potential, it may not sustain a venture-scale business, but it could be a very profitable niche product.
 
+
+> Related: [Building Software on a Bootstrap Budget](/blog/building-software-on-a-bootstrap-budget/)
+
+
 ## Conducting Customer Discovery Interviews
 
 Interviews are the core of customer development. Most founders do them badly by pitching instead of listening.
@@ -41,6 +45,10 @@ Identifying a problem is necessary but not sufficient. The problem must be painf
 **Competitive spending analysis.** Research what your target customers currently spend on the problem. This includes direct software costs (competitor tools they use), labor costs (salary of the people performing the task manually), and indirect costs (revenue lost due to inefficiency, error correction costs). If the total current spend is $500/month and your product costs $200/month, the value proposition is clear. If the current spend is $50/month, you need to demonstrate 10x value improvement to justify switching costs.
 
 **Pricing anchoring from interviews.** Never ask "What would you pay?" in isolation. Instead, present two options: "Would you prefer a $99/month plan with these features, or a $299/month plan with these additional capabilities?" This forces the interviewee into a relative evaluation rather than an abstract valuation. The pattern of responses reveals price sensitivity: if most choose the higher tier, your lower tier is underpriced.
+
+
+> See also: [How to Scope an MVP That Actually Validates Your Hypothesis](/blog/how-to-scope-an-mvp-that-actually-validates-your-hypothesis/)
+
 
 ## Building and Testing Your Minimum Viable Product
 

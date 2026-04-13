@@ -14,6 +14,10 @@ The second issue is workflow rigidity. Every dealership has its own way of movin
 
 Third, legacy DMS platforms were designed around the assumption that every transaction happens in-store. Digital retailing — where a customer completes 80% of the deal online before arriving — requires fundamentally different data flows that bolt-on modules handle poorly.
 
+
+> Related: [Custom Software for Schools and Educational Institutions](/blog/custom-software-for-schools-and-educational-institutions/)
+
+
 ## The Inventory and Pricing Intelligence Layer
 
 Inventory is the heartbeat of a dealership, and the data around it is surprisingly complex. You are tracking not just VINs and stock numbers but also days on lot, reconditioning status, floor plan costs, OEM allocation constraints, and competitive pricing across a regional market.
@@ -33,6 +37,10 @@ Custom service workflow tools focus on two things: reducing the time between han
 The technician dispatch problem is essentially a constraint satisfaction problem. You have N technicians with different certifications (some can do warranty transmission work, some cannot), M repair orders with varying complexity and required skills, and time windows driven by customer promises and parts availability. A simple priority queue that matches skill requirements and estimated labor time can outperform the manual whiteboard assignment that most shops still use.
 
 Integration with parts ordering is another high-value target. When a technician flags a part needed during an inspection, the system can immediately check on-hand inventory, query the OEM parts portal for availability, and if the part is not in stock, present the advisor with an ETA and the option to source from a nearby dealer's surplus inventory. This alone can cut "parts delay" RO holds by 30-40%.
+
+
+> See also: [Event Management and Ticketing Platform Development](/blog/event-management-and-ticketing-platform-development/)
+
 
 ## F&I Product Presentation and Compliance Tracking
 

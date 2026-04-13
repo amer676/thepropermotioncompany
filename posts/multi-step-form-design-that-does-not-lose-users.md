@@ -16,6 +16,10 @@ The optimal number of steps is 3-7. Fewer than 3 and you might as well use a sin
 
 Each step should have a clear, descriptive title that tells the user what this step is about and why the information is needed. "Step 3 of 5" is not a title. "Your Coverage Preferences" is a title. The step title also serves as an implicit justification: it signals that the questions on this page are related and relevant to the stated topic.
 
+
+> Related: [Designing Data-Heavy Applications: Tables, Charts, and Dashboards](/blog/designing-data-heavy-applications-tables-charts-and-dashboards/)
+
+
 ## Progress Indicators That Actually Help
 
 Users need to know where they are in the process, how far they have come, and how much remains. A well-designed progress indicator provides all three signals.
@@ -39,6 +43,10 @@ Error messages must be specific and actionable. "Invalid input" helps no one. "P
 For fields with complex validation requirements, show the requirements proactively. A password field should display its requirements (minimum length, character types) before the user starts typing, with each requirement checking off as it is satisfied. This turns validation from a punishment for mistakes into guidance for success.
 
 When a user clicks "Next" and there are errors on the current step, do not navigate. Keep the user on the current step, scroll to the first error, set focus on the first errored field, and display all error messages simultaneously. This prevents the disorienting experience of clicking "Next," seeing a brief flash of the next step, and being bounced back.
+
+
+> See also: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
 
 ## State Persistence: Never Lose User Data
 

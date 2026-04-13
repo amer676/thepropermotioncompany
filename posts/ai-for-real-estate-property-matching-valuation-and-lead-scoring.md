@@ -18,6 +18,10 @@ From these signals, the model builds a multidimensional preference profile. It m
 
 The ROI is measurable. Agents using AI-powered matching report 25-40% reduction in the number of showings required before a buyer makes an offer, because the properties they show are more aligned with actual preferences. For a brokerage doing 500 transactions a year, reducing average showings from 12 to 8 per buyer saves thousands of agent hours annually.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Automated Valuation Models That Complement Human Expertise
 
 Automated Valuation Models (AVMs) estimate property values using statistical and machine learning techniques applied to market data. Every major real estate platform uses some form of AVM. Zillow's Zestimate, Redfin Estimate, and Realtor.com's valuations are all AVMs. The question is not whether AVMs are useful but how accurate they need to be for your specific use case.
@@ -49,6 +53,10 @@ AI-powered lead scoring assigns a probability of conversion to each lead based o
 **Operational impact.** Route hot leads to your best agents immediately, with context about which properties the lead has viewed and what their likely preferences are. Assign warm leads to automated nurture sequences with periodic agent touchpoints. Cool leads get long-term drip campaigns. Cold leads are deprioritized entirely.
 
 Brokerages that implement lead scoring consistently report 30-50% improvement in agent productivity (measured as transactions per agent per month) and 20-30% improvement in lead-to-close conversion rates. The gains come not from converting unconvertible leads but from concentrating agent effort where it matters.
+
+
+> See also: [AI for Real Estate Investors: Deal Sourcing and Analysis](/blog/ai-for-real-estate-investors-deal-sourcing-and-analysis/)
+
 
 ## Practical Implementation: Starting Small and Scaling
 

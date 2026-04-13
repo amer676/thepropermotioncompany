@@ -16,6 +16,10 @@ For Excel exports (XLSX format), streaming is harder because the XLSX format req
 
 **Important detail:** Set the `Content-Disposition` header to `attachment; filename="export-2025-05-12.csv"` to trigger a download rather than inline display. Include a meaningful filename with the date and a description of the data (e.g., `orders-2025-Q1.csv`).
 
+
+> Related: [Building Data Pipelines for Business Intelligence](/blog/building-data-pipelines-for-business-intelligence/)
+
+
 ## CSV Gotchas That Will Bite You
 
 CSV is "simple" the way English is "simple" — everyone thinks they understand it until edge cases appear.
@@ -50,6 +54,10 @@ Row 78: duplicate "employee_id" — conflicts with row 23
 **Step 4: Preview and confirmation.** Show the user a preview of what will be imported: total rows, rows that will succeed, rows with errors. Let them download just the error rows as a separate CSV for correction. Allow them to proceed with partial import (skip error rows) or cancel and fix.
 
 **Step 5: Execution.** The actual database writes should happen in a background job, not in the HTTP request. For large imports, batch the inserts (500-1000 rows per batch), wrap each batch in a transaction, and update a progress indicator via WebSocket or polling. If a batch fails, roll back that batch and continue with the next, recording which rows failed.
+
+
+> See also: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
 
 ## Handling Large Files Without Killing Your Server
 

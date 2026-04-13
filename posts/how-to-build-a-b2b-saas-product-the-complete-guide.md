@@ -19,6 +19,10 @@ Before building the product, validate willingness to pay. Create a landing page 
 
 Superhuman validated this way, charging $30/month for early access before the product existed. Ironclad sold annual contracts to law firms based on product demos. This approach is not just for venture-backed companies. It is the most capital-efficient way to build any B2B product.
 
+
+> Related: [SaaS Subscription Management Platform](/blog/saas-subscription-management-platform/)
+
+
 ## Multi-Tenancy Architecture Decisions
 
 The defining architectural challenge of B2B SaaS is multi-tenancy: serving multiple customer organizations from a shared infrastructure while keeping their data isolated and their experiences independent.
@@ -44,6 +48,10 @@ B2B authentication is not "sign up with email and password." It is SSO integrati
 **Team management is a product feature, not an afterthought.** The person who buys your product is rarely the only person who uses it. Build invitation flows, seat management, and team administration into the core product. Track seats for billing purposes from the start, even if you launch with flat-rate pricing. You will want usage-based or per-seat pricing eventually, and retrofitting seat tracking is painful.
 
 **Audit logs are a sales tool.** Enterprise buyers ask about audit logs in every security questionnaire. Log every significant action (login, data export, permission change, record creation/deletion) with the acting user, timestamp, IP address, and the before/after state of changed records. Store audit logs immutably. Tools like PowerTrail or a simple append-only table with a retention policy handle this.
+
+
+> See also: [SaaS Pricing Strategy: Models, Psychology, and Implementation](/blog/saas-pricing-strategy-models-psychology-and-implementation/)
+
 
 ## Billing and Subscription Infrastructure
 

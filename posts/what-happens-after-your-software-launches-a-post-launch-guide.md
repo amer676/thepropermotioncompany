@@ -16,6 +16,10 @@ Pre-define your severity levels and response times. A severity-1 issue (applicat
 
 During the first 72 hours, deploy fixes fast but carefully. Use feature flags to disable problematic features without a full deployment. Have rollback procedures documented and tested. Know exactly how to revert to the pre-launch state if something goes catastrophically wrong. The rollback plan should be a single command, not a 15-step manual process.
 
+
+> Related: [Why Every Software Project Needs a Technical Writer](/blog/why-every-software-project-needs-a-technical-writer/)
+
+
 ## Setting Up Production Monitoring and Alerting
 
 If you launched without monitoring, fix that immediately. If you have monitoring but it is limited to "is the server up," expand it. Comprehensive monitoring covers four layers.
@@ -41,6 +45,10 @@ Schedule user interviews within the first two weeks post-launch. Talk to 8-10 us
 Monitor app store reviews if applicable, social media mentions, and support ticket themes. Create a weekly digest that categorizes feedback into bugs, feature requests, and usability issues. Rank by frequency and severity. This digest should drive your sprint planning for the first several months post-launch.
 
 Do not promise timelines for feature requests. Do acknowledge every piece of feedback and communicate when you have addressed it. Users who feel heard remain loyal through rough patches. Users who feel ignored leave.
+
+
+> See also: [Why Fixed-Price Software Development Projects Fail](/blog/why-fixed-price-software-development-projects-fail/)
+
 
 ## Managing Technical Debt and Iterative Improvement
 

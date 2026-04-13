@@ -16,6 +16,10 @@ Finally, custom development is warranted when the LMS is your product, not just 
 
 If your needs are standard courses with video content, quizzes, and discussion forums, use Canvas or Teachable and spend your engineering budget elsewhere.
 
+
+> Related: [Online Learning Platform Development: Architecture and Features](/blog/online-learning-platform-development-architecture-and-features/)
+
+
 ## Content Architecture: Courses, Modules, and Learning Objects
 
 The data model for a custom LMS starts with a flexible content hierarchy. A rigid three-level hierarchy (course > module > lesson) will seem adequate initially and become a constraint within months.
@@ -51,6 +55,10 @@ Model these rules as a simple DSL stored in the learning object's metadata:
 ```
 
 Your progress engine evaluates these rules against the event stream to determine current status. This approach lets instructors define completion criteria through an admin interface without requiring code changes.
+
+
+> See also: [Custom Software for Schools and Educational Institutions](/blog/custom-software-for-schools-and-educational-institutions/)
+
 
 ## Assessment Engine Design
 

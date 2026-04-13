@@ -22,6 +22,10 @@ Weight these signals using historical data. Analyze your churned customers from 
 
 Express the health score on a simple scale: green (healthy, likely to renew), yellow (at risk, needs attention), red (critical, likely to churn). Resist the temptation to use a 100-point scale; CSMs need to triage their book of business quickly, and a three-tier system with clear thresholds enables that. Under the hood, the score can be a continuous value (0 to 100) that maps to the three tiers, allowing you to rank customers within each tier.
 
+
+> Related: [How to Build a B2B SaaS Product: The Complete Guide](/blog/how-to-build-a-b2b-saas-product-the-complete-guide/)
+
+
 ## Building the Customer 360 View
 
 CSMs need a single screen that gives them complete context on any account in under 30 seconds. This is the customer 360 view, and it is the most used interface in the platform.
@@ -51,6 +55,10 @@ Renewal playbook: triggered 120 days before contract renewal. Defines the renewa
 At-risk playbook: triggered when the health score turns red. Defines an escalation sequence: immediate CSM outreach, executive sponsor engagement within 48 hours, custom save plan creation, and weekly monitoring until the health score improves.
 
 Expansion playbook: triggered when usage exceeds contracted tier by 20% or more, or when the customer consistently uses features available in a higher tier. Prompt the CSM to initiate an expansion conversation with a tailored proposal.
+
+
+> See also: [Building Multi-Tenant SaaS: Architecture and Considerations](/blog/building-multi-tenant-saas-architecture-and-considerations/)
+
 
 ## Analytics and Reporting
 

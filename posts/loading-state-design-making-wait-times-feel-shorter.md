@@ -16,6 +16,10 @@ The key insight is that uncertainty amplifies perceived duration. When a user cl
 
 Facebook's engineering team discovered that replacing their news feed's loading spinner with content-shaped placeholder skeletons reduced perceived load time significantly, even though the actual time-to-interactive remained the same. Users reported the experience felt faster because the transition from empty to populated was less jarring.
 
+
+> Related: [Designing Onboarding Flows That Reduce Churn](/blog/designing-onboarding-flows-that-reduce-churn/)
+
+
 ## Skeleton Screens: The Gold Standard
 
 Skeleton screens are placeholder UI elements that match the shape and layout of the content being loaded. Instead of a spinner in the center of the page, the user sees gray blocks where text will appear, rounded rectangles where images will load, and outlined shapes where buttons will render.
@@ -62,6 +66,10 @@ An e-commerce product page might fetch data in this order:
 4. Related products carousel (cross-sell, lowest priority)
 
 Each section renders as soon as its data arrives, with skeleton placeholders for sections still loading.
+
+
+> See also: [How to Run a Design Sprint for Product Development](/blog/how-to-run-a-design-sprint-for-product-development/)
+
 
 ## Optimistic Updates and Instant Feedback
 

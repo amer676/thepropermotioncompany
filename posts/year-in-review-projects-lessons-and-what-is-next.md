@@ -12,6 +12,10 @@ The domain mix was wider than any previous year: two healthcare projects, two fi
 
 Three projects involved AI features — not as the core product, but as capability layers added to existing workflows. Document classification for an insurance intake process, predictive scheduling for a field service operation, and a natural language query interface for a business intelligence dashboard. In each case, the AI component was maybe 15% of the total engineering effort, but it was the feature that got the most attention in demos. That ratio — small engineering effort, outsized perceived value — is worth paying attention to.
 
+
+> Related: [What We Learned Building Our Own Company Website](/blog/what-we-learned-building-our-own-company-website/)
+
+
 ## A Project That Went Sideways and What We Changed
 
 Our biggest stumble was a project that started in February and should have been done by June. It was a customer portal for a B2B company — their clients needed to submit requests, track status, manage invoices, and communicate with their account team. Straightforward scope, or so we thought.
@@ -35,6 +39,10 @@ Next.js was the frontend framework on 8 of 11 projects. The two exceptions were 
 For deployment, Vercel handled the Next.js projects and Railway or Render handled the backend services. We stopped using AWS directly for application hosting on new projects. The operational overhead of managing ECS or EKS does not make sense for teams under 10 engineers, and every client we work with falls into that category.
 
 Tailwind CSS on every project. We experimented with Panda CSS on one project early in the year and switched back. Tailwind's ecosystem — particularly the component libraries and the utility-first approach — makes it the fastest path to a professional-looking interface. Combined with shadcn/ui components, we can build production-quality UIs about 40% faster than we could two years ago.
+
+
+> See also: [What Proper Motion Means: The Philosophy Behind Our Name](/blog/what-proper-motion-means-the-philosophy-behind-our-name/)
+
 
 ## What AI Changed About How We Build
 

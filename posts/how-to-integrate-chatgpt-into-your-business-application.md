@@ -20,6 +20,10 @@ Not every LLM integration looks like a chatbot. The integration pattern you choo
 
 Choose the simplest pattern that meets your requirements. Most business value comes from classification, extraction, and RAG --- not from building autonomous agents.
 
+
+> Related: [AI for Healthcare: Applications, Compliance, and Implementation](/blog/ai-for-healthcare-applications-compliance-and-implementation/)
+
+
 ## API Architecture and Implementation
 
 The OpenAI API (and compatible APIs from Anthropic, Google, and others) is straightforward to call but requires careful architecture for production use.
@@ -55,6 +59,10 @@ LLM API costs are consumption-based and can grow rapidly if not managed proactiv
 **Set per-user and per-feature budgets.** Implement token or cost budgets at the user level and the feature level. Alert when a user or feature approaches its budget threshold. This prevents a single misconfigured integration or an abusive user from running up a $10,000 bill overnight.
 
 **Monitor cost per business outcome, not just cost per API call.** If an AI feature costs $5,000/month in API calls but generates $50,000/month in labor savings, the cost is irrelevant. If it costs $5,000/month and generates $4,000/month in savings, you have an optimization problem or a feature that should be reconsidered.
+
+
+> See also: [AI for Human Resources: Recruiting, Onboarding, and Workforce Analytics](/blog/ai-for-human-resources-recruiting-onboarding-and-workforce-analytics/)
+
 
 ## Data Privacy and Security Considerations
 

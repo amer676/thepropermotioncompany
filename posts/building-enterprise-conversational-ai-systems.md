@@ -14,6 +14,10 @@ For enterprise deployments, prefer explicit orchestration over autonomous agent 
 
 Frameworks like Microsoft's Semantic Kernel, LangGraph, and Amazon Bedrock Agents provide scaffolding for multi-agent systems. Evaluate them based on your observability requirements and your ability to constrain behavior rather than just their feature lists.
 
+
+> Related: [How AI Changes Software Architecture](/blog/how-ai-changes-software-architecture/)
+
+
 ## Enterprise Knowledge Management for RAG
 
 Retrieval-augmented generation is the backbone of enterprise conversational AI, but enterprise knowledge management is a different beast from indexing a few documentation pages.
@@ -41,6 +45,10 @@ Build these guardrails as modular, composable middleware rather than monolithic 
 NVIDIA's NeMo Guardrails framework and Guardrails AI provide open-source tooling for building these pipelines. For enterprise deployments, you'll likely need custom guardrails trained on your specific compliance requirements, brand guidelines, and risk tolerance.
 
 Maintain a blocklist of topics the system should not engage with, and design graceful deflection responses. A financial services bot should not provide tax advice. A healthcare bot should not diagnose conditions. These boundaries should be clearly communicated to users and consistently enforced.
+
+
+> See also: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
 
 ## Observability, Testing, and Continuous Improvement
 

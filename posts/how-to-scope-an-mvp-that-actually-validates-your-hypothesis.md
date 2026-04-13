@@ -14,6 +14,10 @@ Your hypothesis should have a clear falsification criterion. What result would c
 
 Write down three to five hypotheses ranked by risk. The riskiest assumption -- the one that, if wrong, invalidates the entire business -- should be what your MVP tests first. For most startups, this is demand risk (will anyone want this?) rather than feasibility risk (can we build it?). Engineers tend to focus on the latter because it's in their comfort zone, but the graveyard of startups is full of technically impressive products that nobody needed.
 
+
+> Related: [Why Speed Beats Scale in Early-Stage Software](/blog/why-speed-beats-scale-in-early-stage-software/)
+
+
 ## The One-Feature MVP Framework
 
 Once you have your primary hypothesis, identify the single feature that tests it. Not the three most important features. One feature.
@@ -37,6 +41,10 @@ Fake the things that need to feel real to the user but don't need to work automa
 Skip everything else. No admin panel -- use a database GUI. No user settings page -- pick sensible defaults. No onboarding flow -- onboard users yourself over a video call (you'll learn more from watching them use the product anyway). No analytics dashboard -- use Mixpanel or PostHog with a manual query. No notification system -- send a manual email when something important happens.
 
 The skip list should be long. If your skip list isn't uncomfortable, you haven't cut enough.
+
+
+> See also: [How to Find Product-Market Fit for Software Products](/blog/how-to-find-product-market-fit-for-software-products/)
+
 
 ## Setting Measurable Success Criteria Before You Build
 

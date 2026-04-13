@@ -18,6 +18,10 @@ Most documentation portals fail because they mix these layers. A reference page 
 
 **Versioning strategy.** If your API has multiple active versions, your docs must too. Use URL-based versioning (/v2/docs/endpoints) and a prominent version selector. Always default to the latest stable version, but keep older versions accessible. Archive documentation for deprecated versions after 12 months past end-of-life.
 
+
+> Related: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
+
 ## Auto-Generating Reference Documentation
 
 Hand-writing reference documentation is a maintenance disaster. The moment a developer adds a parameter and forgets to update the docs, trust erodes. Auto-generation is the only sustainable approach.
@@ -41,6 +45,10 @@ Static code snippets are the minimum. Interactive elements dramatically improve 
 **API explorer.** Build or integrate an API explorer that lets developers construct requests visually, fill in parameters with a form UI, and see the raw request and response. This serves as both a learning tool and a debugging tool. Developers frequently use the explorer to verify their understanding before writing code. Swagger UI provides this out of the box, but a custom-built explorer matched to your design system creates a more polished experience.
 
 **Environment configuration.** Let developers toggle between sandbox and production environments in the docs UI. Pre-populate authentication headers from their dashboard session so they can test immediately without copying API keys.
+
+
+> See also: [API Design Best Practices for Business Applications](/blog/api-design-best-practices-for-business-applications/)
+
 
 ## Search, Discovery, and Developer Experience
 

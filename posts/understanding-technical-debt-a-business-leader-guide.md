@@ -14,6 +14,10 @@ Technical debt is **not** the same as bad code. Deliberately choosing a shortcut
 
 Common forms of technical debt include: outdated dependencies that no longer receive security patches, duplicated code that must be updated in multiple places for every change, missing automated tests that force manual testing and slow down releases, tightly coupled components that make it impossible to change one thing without breaking another, and manual processes that should be automated (deployments, data migrations, environment setup).
 
+
+> Related: [How to Plan and Execute a Software Migration](/blog/how-to-plan-and-execute-a-software-migration/)
+
+
 ## How Technical Debt Affects Your Business Metrics
 
 Technical debt does not appear on a balance sheet, but its effects show up in metrics that business leaders track daily.
@@ -41,6 +45,10 @@ Engineers often describe technical debt in abstract terms: "the code is messy," 
 **Mean time to recovery (MTTR).** When something breaks in production, how long does it take to fix? In a well-structured system with good logging and clear component boundaries, MTTR might be 30 minutes. In a heavily indebted system where the root cause could be anywhere and debugging requires SSH access to production servers, MTTR might be 4 hours. Each hour of downtime has a calculable revenue impact.
 
 Present these metrics quarterly to leadership alongside the engineering team's proposed debt reduction investments. This frames technical debt management as a business decision with measurable inputs and outputs, not an engineering indulgence.
+
+
+> See also: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
 
 ## Strategic Approaches to Managing Technical Debt
 

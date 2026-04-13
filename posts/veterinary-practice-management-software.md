@@ -16,6 +16,10 @@ Client communication is typically limited to appointment reminders. Modern pet o
 
 Financial reporting across multiple locations is often impossible without exporting data to spreadsheets, because the systems were not designed for multi-entity reporting. A practice group with five locations cannot see consolidated revenue, provider productivity, or inventory costs without manual aggregation.
 
+
+> Related: [HIPAA-Compliant Software Development for Healthcare](/blog/hipaa-compliant-software-development-for-healthcare/)
+
+
 ## Designing the Clinical Workflow Engine
 
 The core of veterinary practice management software is the clinical workflow engine — the system that guides a patient visit from check-in to discharge.
@@ -37,6 +41,10 @@ For controlled substances (ketamine, butorphanol, diazepam), the system must mai
 Vaccine management requires lot number and expiration tracking. When a vaccine is administered, the system records the lot number on the patient's record and decrements inventory for that specific lot. When lots approach expiration, the system alerts staff to use those lots first (FEFO — first expiring, first out). This is both a patient safety feature (expired vaccines are ineffective) and a financial feature (expired inventory is a direct loss).
 
 Build automated reorder points. For each inventory item, track average daily usage over the trailing 30, 60, and 90 days. Set a reorder point at the quantity that represents lead-time-days multiplied by average daily usage, plus a safety stock buffer. When inventory drops below the reorder point, generate a purchase order draft for the practice manager to review and approve. This prevents both stockouts (which disrupt patient care) and overstocking (which ties up cash and increases waste).
+
+
+> See also: [Dental Practice Management Software](/blog/dental-practice-management-software/)
+
 
 ## Client Portal and Communication
 

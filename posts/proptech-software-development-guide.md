@@ -20,6 +20,10 @@ PropTech is not a single product category. It spans at least five distinct segme
 
 Before writing a line of code, map your product to one of these segments and identify which incumbents you are displacing. If you cannot name them, you probably do not understand the workflow well enough to build something better.
 
+
+> Related: [Why Generic CRMs Fail Real Estate Teams and What to Build Instead](/blog/why-generic-crms-fail-real-estate-teams-and-what-to-build-instead/)
+
+
 ## Core Architecture Decisions for Real Estate Software
 
 Real estate applications have a few characteristics that shape architecture in ways generic SaaS patterns do not fully address.
@@ -45,6 +49,10 @@ No PropTech product exists in isolation. The integrations you support on launch 
 **Smart building systems.** Access control (Brivo, Openpath), IoT sensors (temperature, leak detection), and energy management systems are increasingly expected in tenant-experience platforms. These integrations are typically REST or MQTT-based and require handling intermittent connectivity from edge devices.
 
 **Background screening and identity verification.** Tenant applications require credit checks, criminal background checks, and income verification. TransUnion, Experian, and specialized providers like Plaid (for income) offer APIs, but each has its own consent workflow and adverse action notice requirements that your UI must support.
+
+
+> See also: [Tenant Screening Platform Development](/blog/tenant-screening-platform-development/)
+
 
 ## Building for Real Estate Workflows, Not Generic CRUD
 

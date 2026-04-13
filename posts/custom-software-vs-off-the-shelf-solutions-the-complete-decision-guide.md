@@ -29,6 +29,10 @@ The true five-year cost of a $150,000 custom build is $300,000 to $500,000 inclu
 
 When you compare the realistic total cost of ownership, the gap between build and buy is much smaller than the initial sticker prices suggest. The decision should be driven by strategic fit, not cost alone.
 
+
+> Related: [Why Fixed-Price Software Development Projects Fail](/blog/why-fixed-price-software-development-projects-fail/)
+
+
 ## The Competitive Advantage Test
 
 The single most important question in the build-vs-buy decision: **Does this software differentiate your business?**
@@ -56,6 +60,10 @@ We score this on a simple rubric:
 **Below 70% fit: Build.** The tool's assumptions about how the process works are fundamentally different from your reality. No amount of configuration will bridge the gap. Common examples: a logistics company whose routing optimization is its core competency, a financial services firm with a proprietary risk model, a marketplace with a unique matching algorithm.
 
 To score workflow fit, list the 20 most important things you need the software to do, weighted by frequency and business impact. Demo the off-the-shelf tool against each requirement and score it: fully supported (1.0), supported with configuration (0.8), partially supported with workarounds (0.5), not supported (0). The weighted average is your workflow fit score.
+
+
+> See also: [Why Every Software Project Needs a Technical Writer](/blog/why-every-software-project-needs-a-technical-writer/)
+
 
 ## The Hybrid Approach: Buy the Platform, Build the Differentiation
 

@@ -18,6 +18,10 @@ Not every real estate company needs custom software. If your brokerage has five 
 
 **You have outgrown your current tools but the enterprise alternatives are overbuilt.** Yardi, RealPage, and MRI Software are powerful, but they are designed for REITs managing 50,000+ units. If you manage 2,000 units, you are paying for complexity you do not need and fighting against workflows designed for organizations ten times your size.
 
+
+> Related: [Software for Co-Working Space Management](/blog/software-for-co-working-space-management/)
+
+
 ## Identifying Your Highest-Impact First Build
 
 The worst custom software mistake in real estate is trying to replace everything at once. A "custom ERP" project with a 24-month timeline and $1.5 million budget will almost certainly fail -- scope will creep, requirements will change, and the team will lose momentum before delivering anything usable.
@@ -49,6 +53,10 @@ A proven schema approach uses a `portfolios` table as the top-level organization
 **Document generation pipeline.** Real estate generates enormous volumes of documents: offering memorandums, lease abstracts, investor reports, rent rolls, operating statements, and closing packages. Implement a template engine (we typically use a combination of Handlebars templates with a PDF rendering service like Puppeteer or a dedicated service like DocSpring) that populates documents from your database. This eliminates the "export to Excel, format manually, save as PDF" workflow that consumes hours every week.
 
 **Geospatial data layer.** Properties have locations, and location context matters. Store coordinates on every property record and use PostGIS for spatial queries. This enables features like "show me all properties within 2 miles of this transit station" or "calculate the average rent per square foot in this submarket" without relying on third-party APIs for every query.
+
+
+> See also: [PropTech Software Development Guide](/blog/proptech-software-development-guide/)
+
 
 ## Budgeting and Timeline Expectations
 

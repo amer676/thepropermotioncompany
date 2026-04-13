@@ -18,6 +18,10 @@ For embeddings, text-embedding-3-small provides excellent quality at a low cost 
 
 A mature integration often uses multiple models. Route simple requests to GPT-4o mini, complex requests to GPT-4o, and use embedding models for search and retrieval. This tiered approach can reduce API costs by 40-60% compared to routing everything through a single premium model.
 
+
+> Related: [RAG Explained: Making AI Smarter with Your Company Data](/blog/rag-explained-making-ai-smarter-with-your-company-data/)
+
+
 ## Architecting for Reliability and Latency
 
 The OpenAI API is an external dependency, and like all external dependencies, it will occasionally be slow or unavailable. Your application architecture must account for this.
@@ -43,6 +47,10 @@ Structure your prompts with a system message that defines the assistant's role a
 Use few-shot examples in the system message for tasks where the model needs to match a specific output format. If you need the model to extract structured data from invoices, include 2-3 examples of input invoices and the expected JSON output. Few-shot examples are more reliable than elaborate verbal instructions for format compliance.
 
 Implement output validation. Parse the model's response and verify it matches expected formats before passing it downstream. For classification tasks, verify the response is one of the valid categories. For JSON extraction, validate against a JSON schema. When validation fails, retry with a more explicit prompt or fall back to a default behavior. Never trust that the model's output will be perfectly formatted 100% of the time.
+
+
+> See also: [Multimodal AI: Combining Text, Image, and Audio in Business Apps](/blog/multimodal-ai-combining-text-image-and-audio-in-business-apps/)
+
 
 ## Cost Management and Monitoring
 

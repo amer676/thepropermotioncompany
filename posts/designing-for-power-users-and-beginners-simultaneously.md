@@ -16,6 +16,10 @@ Progressive disclosure applies beyond forms. Navigation menus can show primary s
 
 The critical implementation detail: the advanced state should be sticky. If a power user expands advanced options on the invoice form, the form should remember that preference next time. Store this in a user preferences table or local storage. Forcing a power user to click "Advanced" on every single interaction is a tax on expertise.
 
+
+> Related: [Why Big Software Redesigns Almost Always Fail](/blog/why-big-software-redesigns-almost-always-fail/)
+
+
 ## Keyboard Shortcuts as an Acceleration Layer
 
 Power users live on the keyboard. Every time they reach for the mouse to click a button they can see coming, they lose two to three seconds and a thread of concentration. Across hundreds of daily interactions, this adds up to thirty minutes or more of lost productivity.
@@ -37,6 +41,10 @@ Build a density toggle that offers two or three presets: Comfortable (generous s
 For table-heavy applications, add column customization. Let users choose which columns are visible, drag columns to reorder them, and resize column widths. Persist these preferences per user. A sales representative needs to see deal value, close date, and stage. A sales manager needs to see those plus rep name, deal age, and last activity date. Same table, different configurations.
 
 Implementation-wise, store layout preferences as a JSON object in your user settings. On the front end, read these preferences at mount time and configure the table accordingly. Default configurations should work well for beginners; power users opt into customization when they are ready.
+
+
+> See also: [Designing Onboarding Flows That Reduce Churn](/blog/designing-onboarding-flows-that-reduce-churn/)
+
 
 ## Smart Defaults With Override Capability
 

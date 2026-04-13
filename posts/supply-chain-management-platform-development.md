@@ -22,6 +22,10 @@ A robust SCM data model centers on five core entities:
 
 Getting this data model right takes two to three weeks of intensive domain modeling with warehouse managers, procurement leads, and logistics coordinators. It is the single most valuable phase of the project.
 
+
+> Related: [Warehouse Management Systems: Build Custom or Buy Off-the-Shelf](/blog/warehouse-management-systems-build-custom-or-buy-off-the-shelf/)
+
+
 ## Real-Time Visibility and Event-Driven Architecture
 
 The core value proposition of a custom SCM platform is visibility: knowing where every item is, where it is going, and when it will arrive. This requires an event-driven architecture rather than a traditional request-response model.
@@ -49,6 +53,10 @@ A well-built SCM platform includes three levels of inventory intelligence:
 **Demand forecasting.** Historical sales data, combined with external signals (seasonality, promotions, economic indicators), feeds a forecasting model that projects demand 4 to 12 weeks out. We typically start with Facebook's Prophet library for time-series forecasting, which handles seasonality and holidays well and requires minimal tuning. For businesses with fewer than 50 SKUs, a well-tuned Prophet model outperforms more complex deep learning approaches at a fraction of the infrastructure cost.
 
 The ROI on inventory optimization is direct and measurable. Reducing safety stock by 15 percent while maintaining the same fill rate frees working capital. For a company carrying $10 million in inventory, a 15 percent reduction puts $1.5 million back on the balance sheet.
+
+
+> See also: [AI for Logistics: Route Optimization, Demand Forecasting, and Operations](/blog/ai-for-logistics-route-optimization-demand-forecasting-and-operations/)
+
 
 ## Integration Architecture: Connecting the Ecosystem
 

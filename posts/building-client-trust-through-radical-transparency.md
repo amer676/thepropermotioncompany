@@ -14,6 +14,10 @@ When something goes wrong during a project -- and something always goes wrong --
 
 We share our financials with clients when it is relevant. If a client asks why our rates are what they are, we walk them through our cost structure: salaries, benefits, overhead, tooling, the margin we need to sustain the business and invest in our team. We do not negotiate rates by pretending we are doing them a favor with a discount. We explain what a lower rate would mean: a less experienced developer, less code review, or less testing. Then they make an informed decision.
 
+
+> Related: [Building Software for the Long Term: Our Approach](/blog/building-software-for-the-long-term-our-approach/)
+
+
 ## Why Uncomfortable Honesty Builds Stronger Relationships
 
 The fear behind opacity is always the same: if the client knows everything, they will use it against us. They will negotiate harder. They will micromanage. They will lose confidence and leave. This fear is understandable but wrong. It is wrong because it misunderstands what clients actually want.
@@ -35,6 +39,10 @@ When we tell a prospective client during a sales call that their timeline is unr
 Clients who respond poorly to honesty -- who want the agency that will say yes to everything, who interpret pushback as a lack of enthusiasm, who need their vendor to perform confidence rather than practice it -- will create problems regardless of how skilled your team is. They will change requirements without acknowledging it. They will blame the development team for outcomes driven by their own decisions. They will withhold information and then be surprised when the software does not account for it.
 
 By being transparent from the first conversation, we self-select into engagements that have a high probability of success. This is not arrogance; it is risk management. The engagements that fail in our industry almost always fail because of a relationship problem, not a technical one. Transparency surfaces relationship incompatibilities before you have signed a contract and allocated a team.
+
+
+> See also: [The Value of Solving Boring Problems Well](/blog/the-value-of-solving-boring-problems-well/)
+
 
 ## The Mechanics of Transparent Communication
 

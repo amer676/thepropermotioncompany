@@ -14,6 +14,10 @@ The cost is significant. A competent startup CTO in the US expects $150,000-$220
 
 A CTO makes sense when you have secured funding or revenue sufficient to support a senior technical salary for at least 18 months, your product roadmap is complex enough to require ongoing architectural decisions, you plan to build an internal engineering team of five or more people, and technology decisions need to be tightly integrated with your business strategy on a daily basis.
 
+
+> Related: [How to Find Product-Market Fit for Software Products](/blog/how-to-find-product-market-fit-for-software-products/)
+
+
 ## The Case for a Development Agency
 
 An agency is the right choice when you need to build something specific and well-defined, you want to move fast, and you are not ready to manage a technical team yourself.
@@ -35,6 +39,10 @@ The advantage is alignment. A co-founder with 20-40 percent equity is invested i
 The challenge is finding one. Good technical co-founders are scarce. The kind of engineer who can build a product from scratch, make sound architectural decisions, recruit other engineers, and operate at a strategic level has many options. They can earn $200,000-$400,000 in salary at an established company, or they can pursue their own startup idea. Convincing them to join your venture requires a compelling vision, a strong market opportunity, and -- critically -- a meaningful equity stake. Offering 5 percent to a technical co-founder is not a co-founder arrangement; it is an underpaid job.
 
 A technical co-founder makes sense when you are at the earliest stage (pre-seed or idea stage), you cannot afford to pay market-rate salary for technical talent, the product is technically complex and will require deep ongoing technical leadership, and you are willing to share meaningful equity (typically 30-50 percent) and decision-making authority.
+
+
+> See also: [Why Speed Beats Scale in Early-Stage Software](/blog/why-speed-beats-scale-in-early-stage-software/)
+
 
 ## The Hybrid and Staged Approaches
 

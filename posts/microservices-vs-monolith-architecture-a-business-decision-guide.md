@@ -18,6 +18,10 @@ The advantages of a monolith are concrete and measurable:
 
 **Refactoring ease.** Renaming a function, changing a data model, or moving logic between modules is a code change in a monolith. In microservices, it is a coordinated API migration across services with backward compatibility requirements and deployment ordering.
 
+
+> Related: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
+
 ## When Microservices Become Worth the Complexity
 
 Microservices are not an upgrade from monoliths. They are a trade-off: you accept significant operational complexity in exchange for specific capabilities that a monolith cannot provide at your scale.
@@ -43,6 +47,10 @@ Before choosing an architecture, answer these questions honestly:
 **Do you have operational maturity for distributed systems?** Microservices require centralized logging (ELK, Datadog), distributed tracing (Jaeger, OpenTelemetry), service meshes or API gateways (Istio, Kong, AWS API Gateway), container orchestration (Kubernetes, ECS), and on-call rotations that cover each service. If you do not have this infrastructure or the team to manage it, microservices will create more outages than they prevent.
 
 **What is your budget for infrastructure and tooling?** A monolith on a single $200/month server can handle remarkable traffic. The same application split into 8 microservices might require $1,500/month in Kubernetes cluster costs, plus $500/month in monitoring and logging infrastructure, plus the engineering time to manage it. The complexity tax is real and recurring.
+
+
+> See also: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
 
 ## The Modular Monolith: The Best of Both Worlds
 

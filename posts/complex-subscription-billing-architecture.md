@@ -12,6 +12,10 @@ Each of these realizations pushes the billing system toward greater complexity. 
 
 Twilio, Snowflake, AWS, and Datadog all built custom billing infrastructure. Not because they enjoy building billing systems, but because their pricing models are core to their competitive strategy and too complex for off-the-shelf tools.
 
+
+> Related: [Building Multi-Tenant SaaS: Architecture and Considerations](/blog/building-multi-tenant-saas-architecture-and-considerations/)
+
+
 ## Usage Metering: The Foundation Layer
 
 In any usage-based billing model, the metering system is the foundational layer. It answers the question: how much of what did each customer use during each billing period?
@@ -39,6 +43,10 @@ Dimension: api_calls. Tiers: 0-100000 at $0.00 (included), 100001-1000000 at $0.
 This configuration is interpreted by a generic rating function that applies tiers and modifiers to the aggregated usage data. The configuration lives in a database and can be versioned (each pricing change creates a new version), enabling retroactive billing adjustments and audit trails.
 
 For committed-use discounts (where a customer pre-commits to a volume and receives a lower rate), the rating engine needs to track cumulative usage against the commitment. Usage within the commitment is rated at the committed rate. Usage above the commitment is rated at the on-demand rate. If the customer under-utilizes their commitment, the shortfall may still be billed (a "use it or lose it" model) or rolled over (a "rollover credits" model). Each approach has different implications for the rating logic.
+
+
+> See also: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
 
 ## Invoice Generation and Ledger Design
 

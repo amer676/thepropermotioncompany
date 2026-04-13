@@ -24,6 +24,10 @@ Measure these in the field (real user monitoring) using tools like Google's `web
 
 Set up a performance budget: LCP under 2.5s, API p95 under 500ms, database p95 under 100ms. Alert when any metric exceeds its budget for more than 5 minutes.
 
+
+> Related: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
+
 ## Database Query Optimization
 
 The database is the most common performance bottleneck in business applications. Here are the patterns we fix most frequently:
@@ -55,6 +59,10 @@ Beyond the database, backend response time is determined by how efficiently your
 **Offload non-critical work.** When a user submits an order, the response should confirm the order --- not wait for the email confirmation to send, the analytics event to fire, and the inventory system to update. Use a background job queue (Sidekiq, Celery, BullMQ) for non-blocking operations. The API responds in 50ms; the background work completes in its own time.
 
 **Compress responses.** Enable gzip or Brotli compression for API responses. JSON compresses extremely well --- a 50KB response typically compresses to 5-8KB. Most web servers and frameworks support this with a single configuration line. Brotli achieves 15-20 percent better compression than gzip at similar CPU cost.
+
+
+> See also: [Web Application Performance: Why Your App Is Slow](/blog/web-application-performance-why-your-app-is-slow/)
+
 
 ## Frontend Performance: Rendering and Loading
 

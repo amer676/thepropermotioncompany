@@ -12,6 +12,10 @@ Interview the actual users before designing anything. Not executives describing 
 
 A technique that works well is the "five questions" exercise. Ask each user to write down the five questions they need answered most frequently. Collect answers from ten users and look for overlap. The top five to eight questions across all users become your dashboard's core content. Everything else goes into a secondary view or an on-demand drill-down.
 
+
+> Related: [Web Typography Guide for Business Applications](/blog/web-typography-guide-for-business-applications/)
+
+
 ## Visual Hierarchy and Layout Patterns
 
 Human visual attention follows predictable patterns. On a dashboard, users scan from top-left to top-right, then down. The most critical information belongs in the top-left quadrant. Summary metrics and alerts go at the top. Detailed breakdowns and time-series charts sit in the middle. Tables and logs belong at the bottom.
@@ -37,6 +41,10 @@ For showing distribution, histograms and box plots serve different purposes. His
 For showing correlation, scatter plots are standard. When dealing with thousands of points, use hexbin plots or 2D density plots to avoid overplotting.
 
 Tables are underrated. When users need to compare specific values, sort by a column, or look up individual records, a well-designed table outperforms any chart. Add conditional formatting (color-coded cells based on thresholds) to make tables scan like heatmaps.
+
+
+> See also: [Why Great Software Feels Invisible to Users](/blog/why-great-software-feels-invisible-to-users/)
+
 
 ## Handling Real-Time Data Without Overwhelming Users
 

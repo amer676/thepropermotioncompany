@@ -14,6 +14,10 @@ A monolithic application with good internal module boundaries would let those sa
 
 The same logic applies to database choices. Teams reach for distributed databases, event sourcing, and CQRS before they have exhausted the capacity of a single PostgreSQL instance, which can comfortably handle tens of thousands of concurrent users with proper indexing and connection pooling. Every layer of architectural complexity you add before you need it is a tax on every future feature.
 
+
+> Related: [How to Find Product-Market Fit for Software Products](/blog/how-to-find-product-market-fit-for-software-products/)
+
+
 ## Choosing Tools for Iteration Speed
 
 The right technology for early-stage software is the technology your team can ship with fastest. This is not the most trendy technology, the most performant technology, or the technology that would be optimal at 100x your current scale.
@@ -37,6 +41,10 @@ When you eventually need to extract a domain into a separate service, these inte
 Write tests for your business logic, not your plumbing. A comprehensive test suite for your core domain logic (pricing calculations, access control rules, workflow state machines) catches the bugs that cost real money. Tests for CRUD endpoints and database serialization catch bugs that are trivially debuggable from error logs. In the early stage, spend your limited testing budget on the logic that is hard to debug in production.
 
 Use feature flags instead of long-lived branches. A feature flag library lets you deploy partially complete features to production behind a flag, enable them for specific users or internal testers, and roll them out gradually. This keeps your main branch deployable at all times and lets you ship to production multiple times per day without worrying about incomplete features being visible to users.
+
+
+> See also: [CTO vs Development Agency vs Technical Co-Founder: Which Do You Need](/blog/cto-vs-development-agency-vs-technical-co-founder-which-do-you-need/)
+
 
 ## The Metrics That Actually Matter Pre-Scale
 

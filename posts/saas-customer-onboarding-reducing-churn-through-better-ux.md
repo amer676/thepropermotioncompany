@@ -14,6 +14,10 @@ Onboarding completion rate tracks what percentage of users complete each step of
 
 Track these metrics by cohort (signup week), by acquisition channel, by plan tier, and by user role. Aggregate numbers hide the segments where onboarding is broken. You might discover that self-serve signups activate at 30% but sales-assisted signups activate at 70%, which tells you that the self-serve onboarding path needs work.
 
+
+> Related: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
+
 ## Designing for the First Five Minutes
 
 The first five minutes after signup determine whether a user engages or bounces. The goal is not to teach the entire product. It is to deliver a single, tangible moment of value as fast as possible.
@@ -37,6 +41,10 @@ Each message should be triggered by behavior, not just time. If a user completed
 In-app tooltips, checklists, and contextual hints complement email for users who are active in the product. A checklist that shows "3 of 5 setup steps complete" creates progress momentum. Tooltips that appear when a user encounters a new feature for the first time provide just-in-time education. Both should be dismissible and should not reappear once acknowledged.
 
 Product tours, the guided walkthroughs that highlight features sequentially, have a bad reputation because most are poorly implemented. They interrupt the user's flow, highlight features the user does not care about yet, and often cannot be revisited. If you use a product tour, make it optional, keep it under 60 seconds, and focus it on the single most important action rather than a comprehensive feature overview.
+
+
+> See also: [How to Build a B2B SaaS Product: The Complete Guide](/blog/how-to-build-a-b2b-saas-product-the-complete-guide/)
+
 
 ## Segmented Onboarding for Different User Types
 

@@ -12,6 +12,10 @@ This requires a data architecture with three layers. The first is the location l
 
 Role-based access control maps naturally to this structure. A franchise owner sees their location layer plus network benchmarks. A multi-unit franchisee sees all their locations plus benchmarks. A franchisor operations manager sees all locations in their region. The corporate team sees everything. Permissions cascade from the franchise agreement, not from generic user roles.
 
+
+> Related: [The Rise of the Technical Operator](/blog/the-rise-of-the-technical-operator/)
+
+
 ## Standardizing Operations Without Strangling Flexibility
 
 The operational playbook is the backbone of any franchise. It defines how things should be done: opening procedures, food safety protocols, customer service scripts, maintenance schedules, and quality checklists. Translating this playbook into software ensures compliance is measurable rather than aspirational.
@@ -35,6 +39,10 @@ The calculation should be transparent. Franchisees should be able to see exactly
 Advertising fund contributions, technology fees, and other contractual payments follow the same pattern. Each fee has its own calculation method, timing, and reconciliation process. Automating all of them in a single system eliminates the patchwork of spreadsheets, invoices, and manual bank transfers that plagues most franchise networks.
 
 Financial dashboards should serve both audiences. The franchisee dashboard shows revenue trends, labor cost percentages, food cost ratios (for restaurant franchises), and profit margins, benchmarked against network averages. The franchisor dashboard shows network-wide revenue, royalty collections, compliance rates, and location-level P&L summaries.
+
+
+> See also: [Franchise Management Software Development](/blog/franchise-management-software-development/)
+
 
 ## Supply Chain and Vendor Management
 

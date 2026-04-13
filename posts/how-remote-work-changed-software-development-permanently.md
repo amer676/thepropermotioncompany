@@ -18,6 +18,10 @@ Pull request culture deepened. Code reviews became more thorough because they ha
 
 This shift toward written, asynchronous communication has a compounding benefit: it creates an institutional memory. Decisions are searchable. Context is preserved. New team members can read the history of why something was built a certain way instead of relying on oral tradition from whoever happens to still be at the company.
 
+
+> Related: [The Future of No-Code Platforms: What Business Leaders Should Know](/blog/the-future-of-no-code-platforms-what-business-leaders-should-know/)
+
+
 ## Documentation Became a Core Engineering Practice
 
 Related to but distinct from asynchronous communication, documentation went from a nice-to-have to a necessity. In a co-located team, undocumented knowledge lives in people's heads and is accessible through conversation. In a distributed team, undocumented knowledge is inaccessible knowledge.
@@ -39,6 +43,10 @@ The meetings that survived became more structured. Agendas were written in advan
 Stand-up meetings evolved. Many teams replaced synchronous daily standups with asynchronous standup bots in Slack, where each team member posts what they worked on yesterday, what they are working on today, and what is blocking them. The bot collates the responses and posts a summary. This takes two minutes of each person's time instead of fifteen minutes of everyone's time simultaneously.
 
 Retrospectives, planning sessions, and design reviews remained synchronous because they benefit from real-time discussion and the energy of group conversation. But they were scheduled intentionally, with preparation required in advance, and with documented outcomes afterward.
+
+
+> See also: [The Unbundling of Enterprise Software: Why Suites Are Dying](/blog/the-unbundling-of-enterprise-software-why-suites-are-dying/)
+
 
 ## Hiring Geography Expanded Permanently
 

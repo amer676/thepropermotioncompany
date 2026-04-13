@@ -26,6 +26,10 @@ Build the aggregation pipeline with these stages:
 
 4. **Enrichment.** Add market data (closing prices, yields, credit ratings) from a pricing service. Bloomberg Terminal data feeds are the gold standard but expensive ($20,000+ per year). Alternatives include IEX Cloud ($9/month for basic equity data), Refinitiv, or the SEC's EDGAR for fundamental data. For fixed income pricing, which is less transparent than equity pricing, Interactive Data Corporation (IDC) or ICE are standard sources.
 
+
+> Related: [AI for Financial Services: Fraud Detection, Risk Assessment, and Compliance](/blog/ai-for-financial-services-fraud-detection-risk-assessment-and-compliance/)
+
+
 ## Portfolio Analytics and Performance Measurement
 
 Once data is aggregated, the system must calculate the metrics that advisors and clients care about: portfolio value, performance, risk, and attribution.
@@ -72,6 +76,10 @@ The client-facing portal is where the advisory firm's technology investment beco
 **Document vault.** A secure area where the advisor uploads and the client accesses: financial plans, investment policy statements, quarterly reports, tax documents (1099s, K-1s), and estate planning documents. Role-based access ensures that a client's adult children can see trust documents but not the client's individual account statements.
 
 **Reporting engine.** Generate quarterly performance reports (PDF) that the advisor reviews and personalizes before sending to the client. The report includes: portfolio summary, performance vs. benchmark, asset allocation changes, realized gains/losses, income received, and advisor commentary. Automated generation saves 2 to 4 hours per client per quarter. For a firm with 200 client households, that is 400 to 800 hours per year redirected from report compilation to client service.
+
+
+> See also: [Custom Software for Financial Services and Fintech](/blog/custom-software-for-financial-services-and-fintech/)
+
 
 ## Regulatory Compliance and Security Requirements
 

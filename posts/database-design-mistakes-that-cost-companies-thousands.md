@@ -10,6 +10,10 @@ Here is a concrete example. A team building an e-commerce platform defines a Pro
 
 The better approach is to spend two to four hours designing your data model on paper before writing any code. Ask three questions for every entity: What queries will run against this data? What are the relationships? What will change over time? Those questions surface the need for proper normalization, indexes, and join tables before the ORM creates technical debt.
 
+
+> Related: [Privacy-First Software Development as Competitive Advantage](/blog/privacy-first-software-development-as-competitive-advantage/)
+
+
 ## Ignoring Indexing Until Performance Degrades
 
 Indexes are the single most impactful performance tool in any relational database, yet they are routinely neglected. We have audited databases with hundreds of thousands of rows where not a single non-primary-key index existed. The symptoms are predictable: page loads that creep from 200ms to 2 seconds to 12 seconds as data grows.
@@ -40,6 +44,10 @@ The fix involves several principles:
 **Normalize optional data into separate tables.** If only 20% of customers have a shipping address, a `customer_shipping_addresses` table is cleaner than four nullable columns on the customers table.
 
 **Audit column usage quarterly.** Run queries to find columns that are null for more than 80% of rows. Those columns either need to be populated consistently or moved to a separate table.
+
+
+> See also: [Building White-Label SaaS Platforms for Multiple Brands](/blog/building-white-label-saas-platforms-for-multiple-brands/)
+
 
 ## Over-Normalizing (Yes, It Is Possible)
 

@@ -14,6 +14,10 @@ Feature-based limits — where certain capabilities are locked behind a paywall 
 
 The technical implementation of usage limits matters more than you would think. Hard cutoffs ("you have hit your limit, upgrade to continue") create frustration. Soft limits with degraded experience ("your workspace exceeds the free plan — older items will be archived in 7 days") create urgency without blocking work. The infrastructure to support this — tracking usage metrics per account in real-time, displaying contextual upgrade prompts, and gracefully degrading rather than hard-blocking — needs to be designed into the system from the beginning, not bolted on after launch.
 
+
+> Related: [The Build Trap: Why Building More Features Hurts Your Product](/blog/the-build-trap-why-building-more-features-hurts-your-product/)
+
+
 ## Activation Metrics and the Aha Moment
 
 Every successful PLG product has a specific, measurable action that correlates strongly with long-term retention. For Slack, it was a team sending 2,000 messages. For Dropbox, it was placing a file in the synced folder. For Zoom, it was completing a meeting with more than one participant. These are not vanity metrics — they are the empirical signal that a user has experienced the core value proposition.
@@ -35,6 +39,10 @@ Output loops: the product creates artifacts that are shared externally and carry
 Network effect loops: the product becomes more valuable as more people in an organization or ecosystem adopt it. Slack within a company, GitHub within open source, Stripe within e-commerce. These are the hardest to engineer but the most defensible once established.
 
 The technical foundation for all three patterns is a robust sharing and permissions system, a seamless guest or anonymous user experience, and instrumentation to track the full viral loop from share event to recipient engagement to conversion.
+
+
+> See also: [How to Run Product Demos That Close Deals](/blog/how-to-run-product-demos-that-close-deals/)
+
 
 ## Pricing Architecture for Self-Serve Revenue
 

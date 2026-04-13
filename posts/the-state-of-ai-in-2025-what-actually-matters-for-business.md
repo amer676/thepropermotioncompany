@@ -24,6 +24,10 @@ The most significant AI development for business is the maturation of large lang
 
 *Long-horizon planning and reasoning* over complex, multi-variable problems exceeds current LLM capabilities. Strategic planning, architecture design for novel systems, and nuanced negotiation require reasoning chains that today's models cannot sustain reliably. They can assist with sub-tasks within these processes but cannot replace the human judgment that ties them together.
 
+
+> Related: [How AI Is Changing the Software Development Business](/blog/how-ai-is-changing-the-software-development-business/)
+
+
 ## Computer Vision in Business Operations
 
 Computer vision has reached production maturity for several business-critical applications, driven by better models, cheaper inference, and widespread camera infrastructure.
@@ -45,6 +49,10 @@ While LLMs dominate headlines, traditional machine learning for prediction remai
 **Pricing optimization** uses demand elasticity models to set prices that maximize revenue or margin. Airlines and hotels have used this for decades, but the capability is now accessible to mid-market businesses --- e-commerce, SaaS, professional services, and subscription businesses. A/B testing different price points and analyzing purchase propensity at each level lets you find the revenue-maximizing price for each customer segment.
 
 **Fraud detection** models are among the most mature AI applications in business. Payment processors, insurance companies, and financial institutions use ensemble models that analyze transaction patterns, device fingerprints, behavioral biometrics, and network relationships to flag suspicious activity in real-time. Modern fraud models achieve 95-99% detection rates with false positive rates under 2%, a level of performance that manual review cannot approach.
+
+
+> See also: [AI for Healthcare: Applications, Compliance, and Implementation](/blog/ai-for-healthcare-applications-compliance-and-implementation/)
+
 
 ## What to Budget for AI in 2025
 

@@ -18,6 +18,10 @@ Break MRR into its components: New MRR (revenue from customers who subscribed th
 
 **Revenue growth rate.** Calculate month-over-month MRR growth rate. Early-stage SaaS companies (under $1M ARR) should target 15% to 20% month-over-month growth. Companies between $1M and $10M ARR should target 8% to 12%. Beyond $10M ARR, 5% to 8% month-over-month is strong. These are aggressive benchmarks; many successful companies grow slower. But if your growth rate is below 3% month-over-month at any stage, you have a structural problem to diagnose.
 
+
+> Related: [Building Multi-Tenant SaaS: Architecture and Considerations](/blog/building-multi-tenant-saas-architecture-and-considerations/)
+
+
 ## Customer Acquisition Metrics
 
 How much it costs to acquire a customer and how long it takes to recoup that cost are survival-level questions for SaaS.
@@ -45,6 +49,10 @@ Retention is the engine of SaaS. Improving retention by even 1% has cascading ef
 NRR above 100% means your existing customers are generating more revenue over time even without new customer acquisition. Benchmark: NRR above 100% is the minimum for a healthy SaaS business. Above 110% is good. Above 120% is excellent and indicates strong product-market fit with expansion potential. Best-in-class public SaaS companies (Snowflake, Datadog, Twilio) have achieved NRR above 130%.
 
 **Cohort retention analysis.** Track retention by monthly signup cohort. A healthy SaaS product shows cohorts flattening after 3 to 6 months: initial churn occurs as poor-fit customers leave, then retention stabilizes. If cohorts continue declining after 6 months, you have a product value problem, not an onboarding problem. Plot cohort curves monthly and look for changes: improving cohorts indicate product improvements are working; deteriorating cohorts indicate emerging problems.
+
+
+> See also: [How to Build a B2B SaaS Product: The Complete Guide](/blog/how-to-build-a-b2b-saas-product-the-complete-guide/)
+
 
 ## Engagement and Product Health Metrics
 

@@ -16,6 +16,10 @@ Third, **the software is a product, not a tool.** If you are building something 
 
 Custom software does not make sense when a SaaS tool does 90% of what you need and the missing 10% is a convenience, not a necessity. It does not make sense when your processes are still changing rapidly --- build custom software to automate a stable process, not a process you are still figuring out. And it does not make sense when you cannot commit to ongoing maintenance. Custom software is not a one-time purchase. It is a living system that needs updates, bug fixes, and evolution.
 
+
+> Related: [MLOps: Keeping AI Features Running in Production](/blog/mlops-keeping-ai-features-running-in-production/)
+
+
 ## Scoping Your Project: Turning Business Problems Into Software Requirements
 
 The biggest source of project failure is not bad engineering. It is unclear requirements. As an operator, you are the requirements expert. Nobody understands your business processes better than you. The challenge is translating that understanding into something a development team can build.
@@ -39,6 +43,10 @@ If you have never been through a custom software development project, the proces
 **Testing (2-4 weeks, overlapping with development).** The team tests the software for bugs, performance, and security. You and your team test it for usability and workflow correctness. Your testers should include the people who will use the software daily, not just managers. The person who enters data 200 times per day will catch usability issues that a manager reviewing the system once will miss.
 
 **Launch (1-2 weeks).** Data migration, user training, and deployment. Plan for a transition period where your team uses both the old and new systems. Do not cut over to the new system on a Friday. Launch on a Tuesday morning when the development team is available to respond to issues.
+
+
+> See also: [Franchise Management Software Development](/blog/franchise-management-software-development/)
+
 
 ## Managing the Engagement: What Good Looks Like
 

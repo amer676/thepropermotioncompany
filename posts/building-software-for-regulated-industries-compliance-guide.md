@@ -18,6 +18,10 @@ Before writing a single line of code, map the specific regulations that apply to
 
 Engage a compliance consultant with specific experience in your target industry before you begin architecture design. The $10,000-$30,000 investment in expert guidance upfront prevents $100,000+ in rework later.
 
+
+> Related: [Why Fixed-Price Software Development Projects Fail](/blog/why-fixed-price-software-development-projects-fail/)
+
+
 ## Architecting for Data Protection
 
 Regulated data requires protection at rest, in transit, and in use. Start with a data classification exercise that categorizes every data element your application handles into sensitivity tiers.
@@ -45,6 +49,10 @@ Layer attribute-based access control (ABAC) on top of RBAC for fine-grained rule
 Every data access must produce an audit log entry. This includes read access, not just writes. HIPAA specifically requires tracking who viewed a patient's records. Financial regulators expect the ability to reconstruct who had access to material non-public information and when. Log the user identity, timestamp, action performed, resource accessed, fields viewed or modified, and the source IP address.
 
 Implement break-glass procedures for emergency access. There are legitimate scenarios where a user needs access beyond their normal permissions (an emergency department physician treating a patient not in their care panel). Design a mechanism that grants elevated access temporarily, requires a justification, triggers immediate alerts to compliance officers, and creates an enhanced audit trail.
+
+
+> See also: [Why Every Software Project Needs a Technical Writer](/blog/why-every-software-project-needs-a-technical-writer/)
+
 
 ## Development Process Controls
 

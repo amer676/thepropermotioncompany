@@ -12,6 +12,10 @@ The typical response to this paradox is padding. Development shops that regularl
 
 Worse, padding creates perverse incentives. If the vendor padded generously and the project runs smoothly, they capture the buffer as profit. If the project hits unexpected complexity (which it almost always does), the buffer absorbs it quietly, and neither party learns from the experience. There's no transparent feedback loop between actual effort and cost.
 
+
+> Related: [Why Software Rewrites Fail and How to Do Them Right](/blog/why-software-rewrites-fail-and-how-to-do-them-right/)
+
+
 ## How Scope Becomes the Sacrificial Variable
 
 In a fixed-price contract, three variables interact: scope, budget, and timeline. The budget is locked by definition. The timeline is usually fixed by business need. That leaves scope as the only flexible variable -- and it always flexes downward.
@@ -31,6 +35,10 @@ A spec might describe Feature A (user authentication) and Feature B (role-based 
 The specification also can't capture what the team will learn during implementation. When you start building the reporting module, you discover that the data model established in the user management module doesn't support the aggregations the reports need. Restructuring the data model is unspecified work that has cascading effects across multiple "specified" features. This isn't scope creep -- it's the natural process of learning about the problem by building the solution.
 
 The most honest specification document would include a section titled "Things We Don't Know Yet" that listed all the open questions, unresolved design decisions, and untested assumptions. But that's precisely the document you can't put a fixed price on.
+
+
+> See also: [Why Software Estimation Is So Hard and How to Get Better at It](/blog/why-software-estimation-is-so-hard-and-how-to-get-better-at-it/)
+
 
 ## Pricing Models That Actually Align Incentives
 

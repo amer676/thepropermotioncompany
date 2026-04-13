@@ -16,6 +16,10 @@ We chose the name Proper Motion because we wanted to commit to a different kind 
 
 This is not a rejection of new technology. We adopt new tools constantly. But we adopt them because they solve a specific problem for a specific client, not because they appeared on a trend report. The distinction is between "We are using TypeScript because its type system catches bugs that cost our client money" and "We are using TypeScript because everyone is talking about it." The outcome might be the same; the reasoning process -- and the likelihood of making good decisions consistently -- is not.
 
+
+> Related: [Software Development as a Craft Not a Commodity](/blog/software-development-as-a-craft-not-a-commodity/)
+
+
 ## The Value of Sustained, Precise Observation
 
 Detecting a star's proper motion requires patience and precision. You cannot observe it in a single night. You need repeated measurements, taken carefully, over an extended period. Only then does the true trajectory become clear.
@@ -35,6 +39,10 @@ We think about our work the same way. The daily improvements are small. A slight
 But compounded over years, they produce software that is qualitatively different from what is built in a rush. The codebase that receives consistent, small improvements for three years is not 156 times better than the one that received one big improvement -- it is better in ways that multiplication cannot capture. It is navigable. It is trustworthy. New developers can onboard in days instead of weeks. Changes ship confidently instead of fearfully.
 
 This philosophy extends to how we run the company itself. We are not trying to grow into a 500-person agency. We are trying to get measurably better at our craft each year, serve our clients more effectively, and build a body of work that we are proud of on a twenty-year timescale. The annual increments are small. The compounded result, we hope, will be significant.
+
+
+> See also: [Why the Traditional Software Agency Model Is Broken](/blog/why-the-traditional-software-agency-model-is-broken/)
+
 
 ## Measuring What Matters, Ignoring What Doesn't
 

@@ -18,6 +18,10 @@ Structure your roadmap with three explicit horizons:
 
 This structure gives stakeholders what they need: certainty about what is happening now, visibility into what is coming, and confidence that the team has a long-term direction. It also gives the team what they need: permission to adapt as they learn.
 
+
+> Related: [AI Chatbots vs AI Assistants: Choosing the Right Approach](/blog/ai-chatbots-vs-ai-assistants-choosing-the-right-approach/)
+
+
 ## Prioritization That Accounts for Uncertainty
 
 The most common prioritization mistake is treating every feature request as equally well-understood. A customer asking for "bulk import" might mean a CSV upload that takes thirty minutes to build, or it might mean a complex ETL pipeline with validation rules, error handling, and rollback capability that takes three months. Prioritizing before you understand scope is guessing.
@@ -41,6 +45,10 @@ Review this intake monthly. Look for patterns rather than individual requests. I
 Weight feedback by customer segment. A request from a customer who represents your ideal target profile matters more than a request from an outlier who happens to be the loudest. A request from a churned customer (why did they leave?) can be more informative than a request from your happiest customer (who would stay regardless).
 
 Never promise a specific customer that their feature will ship by a specific date. Promise that you have heard their feedback, that it is in your intake system, and that you will share updates as your plans develop. Customers are remarkably patient when they feel heard and remarkably frustrated when they feel promised-to and then forgotten.
+
+
+> See also: [Writing Product Specifications That Developers Actually Build From](/blog/writing-product-specifications-that-developers-actually-build-from/)
+
 
 ## Managing Stakeholder Expectations
 

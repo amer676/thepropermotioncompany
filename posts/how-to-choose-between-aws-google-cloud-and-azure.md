@@ -16,6 +16,10 @@ Compute is typically 40% to 60% of your cloud bill. The differences between prov
 
 **Pricing comparison.** For a standard web application workload (4 vCPU, 16 GB RAM, running 24/7), approximate monthly costs with 1-year committed pricing: AWS $120 to $140, GCP $110 to $130, Azure $115 to $135. GCP is typically 5% to 15% cheaper for sustained workloads due to automatic sustained-use discounts that require no upfront commitment. AWS and Azure require purchasing reserved instances or savings plans to achieve comparable rates.
 
+
+> Related: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
+
 ## Database Services and Data Platform Capabilities
 
 Your database choice often locks you into a provider more tightly than your compute choice.
@@ -41,6 +45,10 @@ These services are less visible but create the deepest lock-in.
 **Compliance certifications.** All three providers hold the major certifications: SOC 1/2/3, ISO 27001, PCI DSS, HIPAA, FedRAMP. Azure has the broadest compliance portfolio (over 100 compliance offerings) and is the only provider with IL5 authorization for Department of Defense workloads across all regions. AWS GovCloud provides dedicated regions for government workloads. GCP has strong healthcare and financial services compliance but a narrower set of government-specific certifications.
 
 **Data residency.** If your data must remain in a specific country, verify that the provider has a region there. AWS operates in 33 geographic regions. Azure in 60+ regions (the most of any provider). GCP in 40 regions. Azure's broader geographic coverage matters for companies with strict data residency requirements in countries where AWS and GCP have no presence.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Cost Management and Financial Operations
 

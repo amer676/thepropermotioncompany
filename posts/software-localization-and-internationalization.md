@@ -28,6 +28,10 @@ Libraries that implement ICU MessageFormat include FormatJS (JavaScript/React), 
 
 A date displayed as "04/05/2023" means April 5th in the US, May 4th in the UK, and is ambiguous to everyone. Use Intl.DateTimeFormat with the user's locale, and the API handles the rest: "April 5, 2023" for en-US, "5 April 2023" for en-GB, "2023年4月5日" for ja-JP.
 
+
+> Related: [How to Build a Booking and Scheduling System](/blog/how-to-build-a-booking-and-scheduling-system/)
+
+
 ## Database and API Design for Multi-Language Content
 
 User-generated content and CMS-managed content require a different approach than UI strings. You cannot externalize a product description into a resource file -- it needs to be stored in the database with translations managed by content editors or translators.
@@ -62,6 +66,10 @@ Set the document direction with the `dir` attribute on the `<html>` element: `<h
 Bidirectional (bidi) text -- where LTR and RTL text appear in the same paragraph -- introduces additional complexity. An Arabic sentence containing an English brand name or a URL will have text flowing in both directions. The Unicode Bidirectional Algorithm handles most cases automatically, but edge cases (numbers next to RTL text, nested directional runs) may require explicit Unicode direction marks (LRM, RLM) or the `<bdo>` HTML element.
 
 Test RTL layouts by actually reading the interface with an Arabic or Hebrew speaker, not just visually checking that elements flipped correctly. Visual flipping can look correct while creating confusing reading order or obscuring important UI elements.
+
+
+> See also: [The AI Technology Stack: Models, Frameworks, and Infrastructure Guide](/blog/the-ai-technology-stack-models-frameworks-and-infrastructure-guide/)
+
 
 ## Translation Workflow and Quality Management
 

@@ -18,6 +18,10 @@ The sticker price of a SaaS subscription is only the beginning. The total cost o
 
 **Compliance and data residency.** For regulated industries (healthcare, finance, government contracting), every SaaS vendor must be evaluated for compliance. SOC 2 reports, BAA agreements for HIPAA, data residency certifications. Each vendor evaluation takes legal and security team time. And if a vendor fails an audit, you have an emergency migration on your hands.
 
+
+> Related: [Building Internal Tools Your Team Will Actually Adopt](/blog/building-internal-tools-your-team-will-actually-adopt/)
+
+
 ## The True Cost of Building Custom
 
 Building custom tools is not free either. Teams that choose to build frequently underestimate the ongoing cost.
@@ -43,6 +47,10 @@ Use the following criteria to evaluate each build-vs-buy decision systematically
 **Criterion 4: Rate of change.** If your requirements are stable (you know exactly what you need and it will not change much), buying is efficient because you avoid maintenance costs. If your requirements evolve rapidly (new fields, new workflows, new user roles every quarter), building gives you the flexibility to iterate without waiting on a vendor's product roadmap.
 
 **Criterion 5: Data sensitivity.** If the tool handles PII, financial data, health records, or trade secrets, self-hosted custom tools reduce compliance surface area. Every SaaS vendor is a potential breach vector and a compliance liability. For highly sensitive data, the risk reduction of keeping it in-house may outweigh the higher build cost.
+
+
+> See also: [Why Big Software Redesigns Almost Always Fail](/blog/why-big-software-redesigns-almost-always-fail/)
+
 
 ## Common Scenarios and Recommendations
 

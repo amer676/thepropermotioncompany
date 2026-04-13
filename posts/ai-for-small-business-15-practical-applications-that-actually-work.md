@@ -56,6 +56,10 @@ Expected results: Response time to reviews drops from days to hours. Response ra
 
 Cost: $2,000 to $5,000 for setup. $100 to $200 per month for ongoing API and monitoring costs.
 
+
+> Related: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
+
 ## Operations and Back-Office AI Applications
 
 **6. Invoice Processing and Data Extraction**
@@ -159,6 +163,10 @@ Implementation: Build web scraping pipelines for each competitor's public-facing
 Expected results: Eliminates hours of manual competitor research per week. Catches competitive moves within days instead of months. Job posting analysis reveals strategic direction months before public announcements.
 
 Cost: $5,000 to $12,000 for development. $200 to $500 per month for scraping infrastructure and API costs.
+
+
+> See also: [AI Chatbots vs AI Assistants: Choosing the Right Approach](/blog/ai-chatbots-vs-ai-assistants-choosing-the-right-approach/)
+
 
 ## Getting Started: Choosing Your First AI Project
 

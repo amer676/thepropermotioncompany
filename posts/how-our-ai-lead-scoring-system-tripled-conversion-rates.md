@@ -14,6 +14,10 @@ First, the rules were static. They reflected marketing's assumptions from six mo
 
 We proposed replacing the manual scoring system with a machine learning model trained on the company's own historical conversion data.
 
+
+> Related: [How AI Changes Software Architecture](/blog/how-ai-changes-software-architecture/)
+
+
 ## Data Collection and Feature Engineering
 
 The model is only as good as the data feeding it. We started by auditing what was available.
@@ -37,6 +41,10 @@ The biggest error source was leads from small companies in niche industries. The
 The second error source was timing. Leads that converted quickly (within 48 hours of first touch) looked different from leads that converted slowly (over 30-60 days). The model was averaging these patterns and performing poorly on both. We added a set of recency-weighted features that gave more importance to recent behavior, and we trained separate sub-models for "fast-track" and "nurture" lead segments.
 
 After three iteration cycles over six weeks, the final model achieved an AUC-ROC of 0.89 on the held-out test set. More importantly, the top decile of scored leads converted at 14.2%, compared to the 1.8% baseline. The model was concentrating the highest-value leads at the top of the queue with high reliability.
+
+
+> See also: [AI for Customer Support: Beyond Basic Chatbots](/blog/ai-for-customer-support-beyond-basic-chatbots/)
+
 
 ## Integration With the Sales Workflow
 

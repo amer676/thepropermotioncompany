@@ -12,6 +12,10 @@ Technical documentation directly reduces this ramp-up time. Teams with well-docu
 
 A technical writer captures knowledge proactively and systematically, rather than relying on engineers to document their own work (which they won't do consistently, because it's not what they were hired for, and it doesn't feel productive in the moment). The writer interviews engineers, reads the code, and produces documentation that would survive the departure of any individual team member.
 
+
+> Related: [Agile Software Development Explained for Business Leaders](/blog/agile-software-development-explained-for-business-leaders/)
+
+
 ## Architecture Decision Records: Capturing the "Why"
 
 Code tells you what the system does. Comments sometimes tell you how. Almost nothing tells you why -- why this approach was chosen over alternatives, what tradeoffs were considered, what constraints existed at the time, what we tried that didn't work.
@@ -39,6 +43,10 @@ A runbook for a common incident should include: **symptoms** (what alerts fire, 
 Technical writers transform tribal knowledge into runbooks through a systematic process. They shadow on-call rotations, debrief after incidents, and document the implicit procedures that experienced engineers follow intuitively. The first draft is reviewed by the engineer who handled the incident. The runbook is then tested by having a different engineer follow it during the next occurrence of the same incident type.
 
 The ROI of runbooks is measurable. Track mean time to resolution (MTTR) for incidents before and after runbook creation. We've seen teams reduce MTTR by 50-70% for documented incident types. For a business where downtime costs $10,000-100,000 per hour (depending on the application), the runbook investment pays for itself after a single faster resolution.
+
+
+> See also: [Why Software Rewrites Fail and How to Do Them Right](/blog/why-software-rewrites-fail-and-how-to-do-them-right/)
+
 
 ## API Documentation That Developers Actually Use
 
