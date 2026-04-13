@@ -1,20 +1,3602 @@
 [
   {
-    "slug": "why-we-build-from-scratch",
-    "title": "Why We Build From Scratch",
-    "description": "Templates are fast. Custom is forever. Here's why The Proper Motion Company doesn't use templates — and why it matters for your product.",
-    "date": "2026-04-13",
+    "slug": "software-for-franchise-operations",
+    "title": "Software for Franchise Operations",
+    "description": "Multi-location management tools.",
+    "date": "2026-04-12",
     "author": "The Proper Motion Company",
-    "tags": ["philosophy", "engineering"],
+    "tags": [
+      "franchise",
+      "operations"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "software-estimation-why-it-is-hard",
+    "title": "Software Estimation: Why It Is Hard",
+    "description": "Why estimates are wrong and how to get better at them.",
+    "date": "2026-04-08",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "estimation"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "ai-governance-for-product-teams",
+    "title": "AI Governance for Product Teams",
+    "description": "Creating AI governance frameworks.",
+    "date": "2026-03-31",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "governance"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "how-to-build-a-patient-portal",
+    "title": "How to Build a Patient Portal",
+    "description": "HIPAA-compliant patient access.",
+    "date": "2026-03-29",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "healthcare",
+      "portals"
+    ],
     "readTime": "4 min"
   },
   {
-    "slug": "ai-integration-done-right",
-    "title": "AI Integration Done Right",
-    "description": "Most AI features are demos dressed up as products. We build AI that solves real problems — here's how we approach it.",
-    "date": "2026-04-10",
+    "slug": "field-service-management-platforms",
+    "title": "Field Service Management Platforms",
+    "description": "Dispatch and field operations.",
+    "date": "2026-03-26",
     "author": "The Proper Motion Company",
-    "tags": ["AI", "engineering"],
+    "tags": [
+      "field service",
+      "operations"
+    ],
     "readTime": "5 min"
+  },
+  {
+    "slug": "progressive-web-apps-when-they-make-sense",
+    "title": "Progressive Web Apps: When They Make Sense",
+    "description": "Understanding PWAs for business.",
+    "date": "2026-03-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "mobile"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "the-cost-of-not-having-automated-tests",
+    "title": "The Cost of Not Having Automated Tests",
+    "description": "How skipping tests slows development and increases bugs.",
+    "date": "2026-03-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "testing"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "building-custom-analytics-platforms",
+    "title": "Building Custom Analytics Platforms",
+    "description": "Beyond Google Analytics.",
+    "date": "2026-03-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "analytics"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "building-recommendation-systems",
+    "title": "Building Recommendation Systems",
+    "description": "How product recommendations work.",
+    "date": "2026-03-10",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "e-commerce"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "building-notification-systems",
+    "title": "Building Notification Systems",
+    "description": "Unified push, email, and SMS notifications.",
+    "date": "2026-03-01",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "notifications"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "software-for-fitness-businesses",
+    "title": "Software for Fitness Businesses",
+    "description": "Booking and member management.",
+    "date": "2026-02-23",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "fitness",
+      "industry"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "the-art-of-empty-states",
+    "title": "The Art of Empty States",
+    "description": "Designing for no-data scenarios.",
+    "date": "2026-02-17",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "UX"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "ai-security-preventing-prompt-injection",
+    "title": "AI Security: Preventing Prompt Injection",
+    "description": "Security for AI-powered applications.",
+    "date": "2026-02-15",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "security"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "the-commoditization-of-code",
+    "title": "The Commoditization of Code",
+    "description": "What AI-written code means for businesses.",
+    "date": "2026-02-07",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "trends"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "continuous-integration-best-practices",
+    "title": "Continuous Integration Best Practices",
+    "description": "CI/CD pipelines that improve quality and speed.",
+    "date": "2026-01-31",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "DevOps"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "responsive-design-in-2024",
+    "title": "Responsive Design in 2024",
+    "description": "Modern responsive techniques.",
+    "date": "2026-01-27",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "responsive"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "software-for-co-working-spaces",
+    "title": "Software for Co-Working Spaces",
+    "description": "Member and space management tools.",
+    "date": "2026-01-24",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "real estate",
+      "coworking"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "software-for-event-management",
+    "title": "Software for Event Management",
+    "description": "Event planning and ticketing.",
+    "date": "2026-01-18",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "events",
+      "industry"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "software-as-competitive-advantage",
+    "title": "Software as Competitive Advantage",
+    "description": "Custom software creates moats.",
+    "date": "2026-01-17",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "strategy",
+      "competitive"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "how-to-build-a-subscription-management-platform",
+    "title": "How to Build a Subscription Management Platform",
+    "description": "Complex subscription billing.",
+    "date": "2026-01-13",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "SaaS",
+      "billing"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "when-not-to-use-ai",
+    "title": "When NOT to Use AI",
+    "description": "Not every problem needs AI.",
+    "date": "2026-01-07",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "strategy"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "dark-mode-design-done-right",
+    "title": "Dark Mode Design Done Right",
+    "description": "Implementing dark mode properly.",
+    "date": "2026-01-04",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "UI"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "user-research-on-a-budget",
+    "title": "User Research on a Budget",
+    "description": "Getting insights without a research team.",
+    "date": "2025-12-26",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "research"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "the-future-of-small-software-companies",
+    "title": "The Future of Small Software Companies",
+    "description": "Why small focused teams build better.",
+    "date": "2025-12-20",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "trends",
+      "philosophy"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "designing-for-complex-data",
+    "title": "Designing for Complex Data",
+    "description": "Tables, charts, and data-heavy UX.",
+    "date": "2025-12-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "data"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "software-for-financial-services",
+    "title": "Software for Financial Services",
+    "description": "Fintech solutions development.",
+    "date": "2025-12-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "fintech",
+      "industry"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "software-for-media-publishing",
+    "title": "Software for Media Publishing",
+    "description": "Content management and distribution.",
+    "date": "2025-12-06",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "media",
+      "industry"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "dashboard-design-principles",
+    "title": "Dashboard Design Principles",
+    "description": "Designing dashboards that inform decisions.",
+    "date": "2025-12-01",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "dashboards"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "the-roi-of-custom-software",
+    "title": "The ROI of Custom Software",
+    "description": "How to calculate return on investment.",
+    "date": "2025-11-22",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "ROI"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "choosing-the-right-tech-stack",
+    "title": "Choosing the Right Tech Stack",
+    "description": "How to make technology choices that serve your business.",
+    "date": "2025-11-18",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "strategy"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "conversational-ai-for-enterprise",
+    "title": "Conversational AI for Enterprise",
+    "description": "Enterprise-grade conversational AI patterns.",
+    "date": "2025-11-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "enterprise"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "software-on-a-bootstrap-budget",
+    "title": "Software on a Bootstrap Budget",
+    "description": "Maximizing impact with limited resources.",
+    "date": "2025-11-05",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "budget"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "technical-debt-is-a-business-decision",
+    "title": "Technical Debt Is a Business Decision",
+    "description": "Understanding technical debt as a strategic tool.",
+    "date": "2025-10-29",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "strategy"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "how-to-run-a-design-sprint",
+    "title": "How to Run a Design Sprint",
+    "description": "Practical design sprint guide.",
+    "date": "2025-10-27",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "process"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "how-to-build-a-marketplace-platform",
+    "title": "How to Build a Marketplace Platform",
+    "description": "Two-sided marketplace architecture.",
+    "date": "2025-10-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "marketplace"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "ticketing-platform-development",
+    "title": "Ticketing Platform Development",
+    "description": "Custom event registration.",
+    "date": "2025-10-15",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "events",
+      "ticketing"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "ai-content-generation-opportunities-and-risks",
+    "title": "AI Content Generation: Opportunities and Risks",
+    "description": "Using AI for content and avoiding pitfalls.",
+    "date": "2025-10-05",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "content"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "supply-chain-management-platforms",
+    "title": "Supply Chain Management Platforms",
+    "description": "Supply chain visibility tools.",
+    "date": "2025-09-30",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "supply chain",
+      "logistics"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "multi-language-web-applications",
+    "title": "Multi-Language Web Applications",
+    "description": "Internationalization for global apps.",
+    "date": "2025-09-25",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "i18n"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "building-a-product-team-from-zero",
+    "title": "Building a Product Team from Zero",
+    "description": "Growing from founder to team.",
+    "date": "2025-09-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "hiring"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "how-to-evaluate-a-software-development-portfolio",
+    "title": "How to Evaluate a Software Development Portfolio",
+    "description": "What to look for when reviewing past work.",
+    "date": "2025-09-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "hiring"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "the-ai-tech-stack-guide",
+    "title": "The AI Tech Stack Guide",
+    "description": "Choosing models, frameworks, and infrastructure.",
+    "date": "2025-09-07",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "engineering"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "building-quality-management-systems",
+    "title": "Building Quality Management Systems",
+    "description": "QMS for manufacturing and compliance.",
+    "date": "2025-09-07",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "manufacturing",
+      "quality"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "software-for-dental-practices",
+    "title": "Software for Dental Practices",
+    "description": "Practice management for dentists.",
+    "date": "2025-09-05",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "healthcare",
+      "dental"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "software-for-restaurants",
+    "title": "Software for Restaurants",
+    "description": "Ordering and operations systems.",
+    "date": "2025-08-31",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "hospitality",
+      "industry"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "building-ai-powered-search",
+    "title": "Building AI-Powered Search",
+    "description": "Semantic search that transforms information discovery.",
+    "date": "2025-08-27",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "search"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "software-for-agriculture",
+    "title": "Software for Agriculture",
+    "description": "Farm management and crop tracking.",
+    "date": "2025-08-22",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "agriculture",
+      "industry"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "privacy-first-software-development",
+    "title": "Privacy-First Software Development",
+    "description": "Privacy as competitive advantage.",
+    "date": "2025-08-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "privacy",
+      "engineering"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "scoping-an-mvp-that-validates",
+    "title": "Scoping an MVP That Validates",
+    "description": "Truly minimum, truly viable products.",
+    "date": "2025-08-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "MVP"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "how-to-build-a-fleet-telematics-platform",
+    "title": "How to Build a Fleet Telematics Platform",
+    "description": "Vehicle tracking and analytics.",
+    "date": "2025-08-06",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "transportation",
+      "telematics"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "how-to-write-better-user-stories",
+    "title": "How to Write Better User Stories",
+    "description": "User stories that lead to better software.",
+    "date": "2025-08-03",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "product",
+      "process"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "data-export-and-import-features",
+    "title": "Data Export and Import Features",
+    "description": "CSV, Excel, and bulk data operations.",
+    "date": "2025-07-27",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "data"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "planning-a-software-migration",
+    "title": "Planning a Software Migration",
+    "description": "How to migrate legacy systems without losing data.",
+    "date": "2025-07-21",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "migration"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "building-ai-workflows-with-langchain",
+    "title": "Building AI Workflows with LangChain",
+    "description": "Multi-step AI workflow patterns.",
+    "date": "2025-07-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "engineering"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "color-psychology-in-software-design",
+    "title": "Color Psychology in Software Design",
+    "description": "How color affects user behavior.",
+    "date": "2025-07-11",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "psychology"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "software-for-professional-services",
+    "title": "Software for Professional Services",
+    "description": "Tools for law, consulting, accounting.",
+    "date": "2025-07-04",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "professional services",
+      "industry"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "ai-for-real-estate",
+    "title": "AI for Real Estate",
+    "description": "Property matching, valuation, and lead scoring.",
+    "date": "2025-06-29",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "real estate"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "subscription-box-software",
+    "title": "Subscription Box Software",
+    "description": "Platforms for subscription businesses.",
+    "date": "2025-06-25",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "e-commerce",
+      "subscriptions"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "building-custom-lms-solutions",
+    "title": "Building Custom LMS Solutions",
+    "description": "Learning management beyond Moodle.",
+    "date": "2025-06-21",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "education",
+      "LMS"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "software-for-veterinary-practices",
+    "title": "Software for Veterinary Practices",
+    "description": "Custom vet practice management.",
+    "date": "2025-06-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "healthcare",
+      "veterinary"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "how-to-write-software-requirements-that-work",
+    "title": "How to Write Software Requirements That Work",
+    "description": "A practical guide to writing specs developers can build from.",
+    "date": "2025-06-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "process"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "nextjs-for-business-applications",
+    "title": "Next.js for Business Applications",
+    "description": "Why we choose Next.js for business apps.",
+    "date": "2025-06-11",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "Next.js"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "services-to-product-transition",
+    "title": "Services to Product Transition",
+    "description": "Building products from a services company.",
+    "date": "2025-06-05",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "strategy"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "the-future-of-ai-in-software",
+    "title": "The Future of AI in Software",
+    "description": "How AI is changing software development.",
+    "date": "2025-05-29",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "trends"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "build-vs-buy-for-ai-features",
+    "title": "Build vs Buy for AI Features",
+    "description": "When to build custom vs use off-the-shelf AI.",
+    "date": "2025-05-25",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "strategy"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "chatgpt-integration-for-business",
+    "title": "ChatGPT Integration for Business",
+    "description": "Integrating large language models into workflows.",
+    "date": "2025-05-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "LLMs"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "how-to-build-a-grant-management-system",
+    "title": "How to Build a Grant Management System",
+    "description": "Non-profit grant tracking tools.",
+    "date": "2025-05-15",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "non-profit",
+      "grants"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "designing-for-power-users",
+    "title": "Designing for Power Users",
+    "description": "Interfaces for both new and expert users.",
+    "date": "2025-05-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "UX"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "contractor-management-platforms",
+    "title": "Contractor Management Platforms",
+    "description": "Managing subcontractors and timelines.",
+    "date": "2025-05-10",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "construction",
+      "management"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "startup-tech-stack-decision-guide",
+    "title": "Startup Tech Stack Decision Guide",
+    "description": "Choosing technology for a new product.",
+    "date": "2025-05-01",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "engineering"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "user-authentication-complete-guide",
+    "title": "User Authentication Complete Guide",
+    "description": "Authentication patterns and implementation.",
+    "date": "2025-04-24",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "security"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "the-unbundling-of-enterprise-software",
+    "title": "The Unbundling of Enterprise Software",
+    "description": "Why suites are being replaced.",
+    "date": "2025-04-22",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "enterprise",
+      "trends"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "building-for-enterprise-clients",
+    "title": "Building for Enterprise Clients",
+    "description": "Enterprise product development.",
+    "date": "2025-04-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "enterprise",
+      "strategy"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "the-build-trap-when-more-features-hurt",
+    "title": "The Build Trap: When More Features Hurt",
+    "description": "Why more features do not equal more value.",
+    "date": "2025-04-06",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "product",
+      "strategy"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "software-for-insurance-companies",
+    "title": "Software for Insurance Companies",
+    "description": "Claims and policy management.",
+    "date": "2025-04-02",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "insurance",
+      "industry"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "ai-powered-analytics",
+    "title": "AI-Powered Analytics",
+    "description": "From raw data to actionable insights.",
+    "date": "2025-03-28",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "analytics"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "the-developer-shortage-myth",
+    "title": "The Developer Shortage Myth",
+    "description": "The real issue with tech hiring.",
+    "date": "2025-03-20",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "hiring",
+      "trends"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "building-multi-tenant-saas-applications",
+    "title": "Building Multi-Tenant SaaS Applications",
+    "description": "Architecture patterns for multi-tenant software.",
+    "date": "2025-03-18",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "SaaS"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "building-product-roadmaps-that-work",
+    "title": "Building Product Roadmaps That Work",
+    "description": "Roadmaps that survive contact with reality.",
+    "date": "2025-03-12",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "product",
+      "strategy"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "technical-leadership-for-non-technical-people",
+    "title": "Technical Leadership for Non-Technical People",
+    "description": "Guiding software projects effectively.",
+    "date": "2025-03-06",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "leadership",
+      "management"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "component-libraries-build-vs-buy",
+    "title": "Component Libraries: Build vs Buy",
+    "description": "Choosing your design system approach.",
+    "date": "2025-02-28",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "engineering"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "building-environmental-monitoring-software",
+    "title": "Building Environmental Monitoring Software",
+    "description": "IoT and environmental data platforms.",
+    "date": "2025-02-24",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "IoT"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "validating-a-software-product-idea",
+    "title": "Validating a Software Product Idea",
+    "description": "Practical validation before investing.",
+    "date": "2025-02-23",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "validation"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "the-true-cost-of-cheap-software-development",
+    "title": "The True Cost of Cheap Software Development",
+    "description": "Why the lowest bid often costs the most in the long run.",
+    "date": "2025-02-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "cost"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "ai-for-financial-services",
+    "title": "AI for Financial Services",
+    "description": "Fraud detection, risk, and compliance.",
+    "date": "2025-02-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "fintech"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "navigation-design-for-complex-apps",
+    "title": "Navigation Design for Complex Apps",
+    "description": "Navigation that scales with complexity.",
+    "date": "2025-02-02",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "navigation"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "software-for-telecom-companies",
+    "title": "Software for Telecom Companies",
+    "description": "Custom telecom operations software.",
+    "date": "2025-02-02",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "telecom",
+      "industry"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "accessibility-from-day-one",
+    "title": "Accessibility from Day One",
+    "description": "Inclusive design that benefits everyone.",
+    "date": "2025-01-26",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "accessibility"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "ai-for-logistics-optimization",
+    "title": "AI for Logistics Optimization",
+    "description": "How AI transforms logistics operations.",
+    "date": "2025-01-24",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "logistics"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "ai-chatbots-vs-ai-assistants",
+    "title": "AI Chatbots vs AI Assistants",
+    "description": "Understanding the spectrum of AI interactions.",
+    "date": "2025-01-18",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "product"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "the-next-wave-of-business-software",
+    "title": "The Next Wave of Business Software",
+    "description": "What next-gen business apps look like.",
+    "date": "2025-01-12",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "trends",
+      "future"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "fleet-management-software",
+    "title": "Fleet Management Software",
+    "description": "Fleet tracking and compliance.",
+    "date": "2025-01-06",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "transportation",
+      "fleet"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "choosing-a-design-system-framework",
+    "title": "Choosing a Design System Framework",
+    "description": "Comparing Material UI, Tailwind, and others.",
+    "date": "2024-12-30",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "engineering"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "how-to-build-a-contract-management-system",
+    "title": "How to Build a Contract Management System",
+    "description": "Digital contract lifecycle management.",
+    "date": "2024-12-29",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "legal"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "saas-customer-onboarding",
+    "title": "SaaS Customer Onboarding",
+    "description": "Reducing churn through better onboarding.",
+    "date": "2024-12-24",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "SaaS",
+      "onboarding"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "building-reliable-email-systems",
+    "title": "Building Reliable Email Systems",
+    "description": "Transactional email and deliverability.",
+    "date": "2024-12-17",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "email"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "building-customer-data-platforms",
+    "title": "Building Customer Data Platforms",
+    "description": "Unified customer data architecture.",
+    "date": "2024-12-17",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "CDP"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "postgresql-vs-mongodb",
+    "title": "PostgreSQL vs MongoDB",
+    "description": "Choosing the right database.",
+    "date": "2024-12-13",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "databases"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "mobile-app-design-for-business",
+    "title": "Mobile App Design for Business",
+    "description": "Business mobile UI patterns.",
+    "date": "2024-12-07",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "mobile"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "the-10x-developer-myth",
+    "title": "The 10x Developer Myth",
+    "description": "What actually makes teams productive.",
+    "date": "2024-11-29",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "management"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "the-real-meaning-of-ship-it",
+    "title": "The Real Meaning of Ship It",
+    "description": "What shipping culture means in practice.",
+    "date": "2024-11-26",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "philosophy",
+      "culture"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "role-based-access-control-guide",
+    "title": "Role-Based Access Control Guide",
+    "description": "Permission systems that scale.",
+    "date": "2024-11-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "security"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "remote-work-changed-software-development",
+    "title": "Remote Work Changed Software Development",
+    "description": "Distributed teams and their impact.",
+    "date": "2024-11-13",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "remote",
+      "trends"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "ai-personalization-at-scale",
+    "title": "AI Personalization at Scale",
+    "description": "Building personalization that improves engagement.",
+    "date": "2024-11-07",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "personalization"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "when-to-optimize-vs-rebuild",
+    "title": "When to Optimize vs Rebuild",
+    "description": "The rebuild decision framework.",
+    "date": "2024-11-03",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "scaling"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "open-source-in-business",
+    "title": "Open Source in Business",
+    "description": "When to use, contribute, or build proprietary.",
+    "date": "2024-10-28",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "open source"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "ai-document-processing-for-business",
+    "title": "AI Document Processing for Business",
+    "description": "Extract, classify, and process documents at scale.",
+    "date": "2024-10-20",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "automation"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "software-for-recruitment-agencies",
+    "title": "Software for Recruitment Agencies",
+    "description": "ATS and candidate management.",
+    "date": "2024-10-15",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "recruitment",
+      "industry"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "when-to-pivot-vs-persevere",
+    "title": "When to Pivot vs Persevere",
+    "description": "Signals for changing direction.",
+    "date": "2024-10-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "strategy"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "designing-better-error-states",
+    "title": "Designing Better Error States",
+    "description": "Error UX that helps users recover.",
+    "date": "2024-10-04",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "UX"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "building-webhook-infrastructure",
+    "title": "Building Webhook Infrastructure",
+    "description": "Reliable webhooks for integrations.",
+    "date": "2024-09-25",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "integrations"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "edge-computing-for-business-applications",
+    "title": "Edge Computing for Business Applications",
+    "description": "Processing data closer to users.",
+    "date": "2024-09-22",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "edge"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "what-we-learned-building-our-website",
+    "title": "What We Learned Building Our Website",
+    "description": "Behind the scenes of our site.",
+    "date": "2024-09-20",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "company",
+      "engineering"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "onboarding-flows-that-convert",
+    "title": "Onboarding Flows That Convert",
+    "description": "First-time UX that reduces churn.",
+    "date": "2024-09-15",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "onboarding"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "the-hidden-tax-of-bad-software",
+    "title": "The Hidden Tax of Bad Software",
+    "description": "How poor quality costs organizations.",
+    "date": "2024-09-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "strategy",
+      "quality"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "how-to-build-a-tenant-screening-platform",
+    "title": "How to Build a Tenant Screening Platform",
+    "description": "Real estate tenant verification tools.",
+    "date": "2024-09-08",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "real estate",
+      "screening"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "year-in-review-what-we-shipped",
+    "title": "Year in Review: What We Shipped",
+    "description": "Annual retrospective.",
+    "date": "2024-09-05",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "company",
+      "retrospective"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "online-learning-platform-development",
+    "title": "Online Learning Platform Development",
+    "description": "Custom LMS architecture.",
+    "date": "2024-08-31",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "education",
+      "LMS"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "ai-for-education-technology",
+    "title": "AI for Education Technology",
+    "description": "AI in educational software and learning.",
+    "date": "2024-08-22",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "education"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "building-on-demand-service-platforms",
+    "title": "Building On-Demand Service Platforms",
+    "description": "Ride-sharing and delivery architecture.",
+    "date": "2024-08-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "transportation",
+      "on-demand"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "building-custom-workflow-engines",
+    "title": "Building Custom Workflow Engines",
+    "description": "Automating complex business processes.",
+    "date": "2024-08-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "workflow"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "case-study-ai-lead-scoring-that-3x-conversions",
+    "title": "Case Study: AI Lead Scoring That 3x Conversions",
+    "description": "How we built an AI system that tripled conversions.",
+    "date": "2024-08-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "case study"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "ai-ethics-for-product-teams",
+    "title": "AI Ethics for Product Teams",
+    "description": "Practical ethical guidelines for AI products.",
+    "date": "2024-08-07",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "ethics"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "why-we-use-typescript-for-everything",
+    "title": "Why We Use TypeScript for Everything",
+    "description": "The business case for TypeScript.",
+    "date": "2024-07-31",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "TypeScript"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "building-a-custom-crm",
+    "title": "Building a Custom CRM",
+    "description": "When and how to build a tailored CRM.",
+    "date": "2024-07-25",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "CRM"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "software-for-wealth-management",
+    "title": "Software for Wealth Management",
+    "description": "Portfolio and client management tools.",
+    "date": "2024-07-22",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "fintech",
+      "wealth"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "computer-vision-for-business",
+    "title": "Computer Vision for Business",
+    "description": "Real-world computer vision applications.",
+    "date": "2024-07-21",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "computer vision"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "rag-making-ai-smarter-with-your-data",
+    "title": "RAG: Making AI Smarter with Your Data",
+    "description": "How retrieval-augmented generation works.",
+    "date": "2024-07-15",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "engineering"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "how-to-handle-legacy-code",
+    "title": "How to Handle Legacy Code",
+    "description": "Strategies for working with inherited codebases.",
+    "date": "2024-07-06",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "legacy"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "software-for-construction-companies",
+    "title": "Software for Construction Companies",
+    "description": "Project management and field tools.",
+    "date": "2024-07-03",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "construction",
+      "industry"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "presenting-design-to-stakeholders",
+    "title": "Presenting Design to Stakeholders",
+    "description": "Getting buy-in from non-designers.",
+    "date": "2024-06-23",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "communication"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "how-to-build-a-b2b-saas-product",
+    "title": "How to Build a B2B SaaS Product",
+    "description": "The complete B2B SaaS guide.",
+    "date": "2024-06-18",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "SaaS",
+      "B2B"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "developer-vs-engineer-why-the-distinction-matters",
+    "title": "Developer vs Engineer: Why the Distinction Matters",
+    "description": "Understanding the difference when hiring for your project.",
+    "date": "2024-06-13",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "hiring"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "web-typography-practical-guide",
+    "title": "Web Typography Practical Guide",
+    "description": "Choosing and implementing type.",
+    "date": "2024-06-07",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "typography"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "how-to-do-a-technical-audit",
+    "title": "How to Do a Technical Audit",
+    "description": "Step-by-step guide to evaluating your codebase.",
+    "date": "2024-06-03",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "audit"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "how-to-build-a-compliance-dashboard",
+    "title": "How to Build a Compliance Dashboard",
+    "description": "Regulatory compliance monitoring.",
+    "date": "2024-05-28",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "compliance"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "building-analytics-dashboards",
+    "title": "Building Analytics Dashboards",
+    "description": "Data visualization architecture.",
+    "date": "2024-05-25",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "analytics"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "building-multi-channel-communication-tools",
+    "title": "Building Multi-Channel Communication Tools",
+    "description": "Unified messaging for business.",
+    "date": "2024-05-23",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "communication"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "building-a-product-analytics-stack",
+    "title": "Building a Product Analytics Stack",
+    "description": "Analytics that drive decisions.",
+    "date": "2024-05-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "product",
+      "analytics"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "building-for-the-long-term",
+    "title": "Building for the Long Term",
+    "description": "Software that lasts.",
+    "date": "2024-05-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "philosophy",
+      "sustainability"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "the-business-case-for-code-quality",
+    "title": "The Business Case for Code Quality",
+    "description": "Clean code saves money.",
+    "date": "2024-05-12",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "quality"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "lessons-from-50-plus-software-projects",
+    "title": "Lessons from 50 Plus Software Projects",
+    "description": "Patterns from our client portfolio.",
+    "date": "2024-05-02",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "philosophy",
+      "lessons"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "api-design-best-practices",
+    "title": "API Design Best Practices",
+    "description": "Well-designed APIs save time and headaches.",
+    "date": "2024-04-30",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "APIs"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "building-ai-features-users-trust",
+    "title": "Building AI Features Users Trust",
+    "description": "Designing for trust in AI-powered products.",
+    "date": "2024-04-20",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "UX"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "outsourcing-software-development-when-it-works",
+    "title": "Outsourcing Software Development: When It Works",
+    "description": "When offshore development makes sense and when it fails.",
+    "date": "2024-04-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "hiring"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "property-management-software-development",
+    "title": "Property Management Software Development",
+    "description": "Platforms for rental management.",
+    "date": "2024-04-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "real estate",
+      "software"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "ai-for-predictive-maintenance",
+    "title": "AI for Predictive Maintenance",
+    "description": "Using AI to prevent equipment failures.",
+    "date": "2024-04-05",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "manufacturing"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "ai-data-requirements",
+    "title": "AI Data Requirements",
+    "description": "How much data do you really need.",
+    "date": "2024-04-04",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "data"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "why-big-redesigns-fail",
+    "title": "Why Big Redesigns Fail",
+    "description": "Incremental change beats big redesigns.",
+    "date": "2024-04-01",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "strategy"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "how-to-add-ai-to-your-existing-product",
+    "title": "How to Add AI to Your Existing Product",
+    "description": "Integrating AI features into products that already exist.",
+    "date": "2024-03-22",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "engineering"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "the-future-of-no-code",
+    "title": "The Future of No-Code",
+    "description": "Where no-code is headed.",
+    "date": "2024-03-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "no-code",
+      "trends"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "how-to-build-a-data-pipeline",
+    "title": "How to Build a Data Pipeline",
+    "description": "ETL and data processing architecture.",
+    "date": "2024-03-11",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "data"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "web-application-deployment-guide",
+    "title": "Web Application Deployment Guide",
+    "description": "CI/CD and hosting strategies.",
+    "date": "2024-03-10",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "DevOps"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "how-to-budget-for-software-maintenance",
+    "title": "How to Budget for Software Maintenance",
+    "description": "Planning for ongoing costs after launch.",
+    "date": "2024-03-04",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "cost"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "inventory-management-systems",
+    "title": "Inventory Management Systems",
+    "description": "Custom inventory solutions.",
+    "date": "2024-03-02",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "manufacturing",
+      "inventory"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "the-state-of-software-development",
+    "title": "The State of Software Development",
+    "description": "Trends and opportunities in software.",
+    "date": "2024-02-23",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "trends",
+      "engineering"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "react-vs-vue-vs-angular-for-business-apps",
+    "title": "React vs Vue vs Angular for Business Apps",
+    "description": "A practical comparison for stakeholders.",
+    "date": "2024-02-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "frontend"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "ai-for-marketing-teams",
+    "title": "AI for Marketing Teams",
+    "description": "Attribution, targeting, and creative AI.",
+    "date": "2024-02-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "marketing"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "agile-vs-waterfall-the-debate-that-misses-the-point",
+    "title": "Agile vs Waterfall: The Debate That Misses the Point",
+    "description": "Why methodology matters less than communication.",
+    "date": "2024-02-04",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "process"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "software-for-property-technology",
+    "title": "Software for Property Technology",
+    "description": "PropTech custom development.",
+    "date": "2024-02-01",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "real estate",
+      "proptech"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "web-application-testing-strategies",
+    "title": "Web Application Testing Strategies",
+    "description": "Testing that catches bugs efficiently.",
+    "date": "2024-01-31",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "testing"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "building-custom-erp-solutions",
+    "title": "Building Custom ERP Solutions",
+    "description": "When off-the-shelf ERP is not enough.",
+    "date": "2024-01-28",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "ERP"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "how-much-does-custom-software-cost-in-2024",
+    "title": "How Much Does Custom Software Cost in 2024",
+    "description": "A realistic breakdown of custom software development costs and what drives pricing.",
+    "date": "2024-01-26",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "cost"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "technical-architecture-for-founders",
+    "title": "Technical Architecture for Founders",
+    "description": "Architecture at the founder level.",
+    "date": "2024-01-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "engineering"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "search-experience-design",
+    "title": "Search Experience Design",
+    "description": "Search UX that helps users find things.",
+    "date": "2024-01-13",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "search"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "why-your-software-rewrite-keeps-failing",
+    "title": "Why Your Software Rewrite Keeps Failing",
+    "description": "Common reasons software rewrites go wrong and how to fix them.",
+    "date": "2024-01-08",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "strategy"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "how-to-prioritize-software-features",
+    "title": "How to Prioritize Software Features",
+    "description": "A framework for deciding what to build first.",
+    "date": "2024-01-01",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "product",
+      "strategy"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "telemedicine-platform-development",
+    "title": "Telemedicine Platform Development",
+    "description": "Telehealth compliance and development.",
+    "date": "2023-12-26",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "healthcare",
+      "telemedicine"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "microservices-vs-monolith-a-practical-guide",
+    "title": "Microservices vs Monolith: A Practical Guide",
+    "description": "When each architecture makes sense.",
+    "date": "2023-12-20",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "architecture"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "claims-processing-automation",
+    "title": "Claims Processing Automation",
+    "description": "Faster insurance claims.",
+    "date": "2023-12-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "insurance",
+      "automation"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "software-accessibility-requirements-and-benefits",
+    "title": "Software Accessibility Requirements and Benefits",
+    "description": "Why accessibility improves your product for everyone.",
+    "date": "2023-12-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "accessibility"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "software-for-logistics-companies",
+    "title": "Software for Logistics Companies",
+    "description": "Fleet management and operations.",
+    "date": "2023-12-05",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "logistics",
+      "industry"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "file-upload-and-storage-systems",
+    "title": "File Upload and Storage Systems",
+    "description": "Handling files in modern web apps.",
+    "date": "2023-11-27",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "infrastructure"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "ai-for-small-business-practical-applications",
+    "title": "AI for Small Business: Practical Applications",
+    "description": "Real AI use cases beyond the hype.",
+    "date": "2023-11-21",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "small business"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "customer-development-for-software",
+    "title": "Customer Development for Software",
+    "description": "Incorporating customer feedback.",
+    "date": "2023-11-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "research"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "sustainability-in-software",
+    "title": "Sustainability in Software",
+    "description": "Long-term thinking in software.",
+    "date": "2023-11-10",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "sustainability",
+      "engineering"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "how-to-build-a-vendor-management-system",
+    "title": "How to Build a Vendor Management System",
+    "description": "Managing supplier relationships.",
+    "date": "2023-11-08",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "procurement"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "restaurant-ordering-systems",
+    "title": "Restaurant Ordering Systems",
+    "description": "Custom ordering platforms.",
+    "date": "2023-11-04",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "hospitality",
+      "ordering"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "task-automation-for-business-operations",
+    "title": "Task Automation for Business Operations",
+    "description": "Replacing manual processes with software.",
+    "date": "2023-10-30",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "automation",
+      "operations"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "multi-step-form-design",
+    "title": "Multi-Step Form Design",
+    "description": "Form UX for complex data collection.",
+    "date": "2023-10-27",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "forms"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "how-to-build-a-referral-system",
+    "title": "How to Build a Referral System",
+    "description": "Referral and loyalty program development.",
+    "date": "2023-10-27",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "growth"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "software-for-healthcare-practices",
+    "title": "Software for Healthcare Practices",
+    "description": "HIPAA-compliant custom software.",
+    "date": "2023-10-25",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "healthcare",
+      "compliance"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "building-booking-and-scheduling-systems",
+    "title": "Building Booking and Scheduling Systems",
+    "description": "Reservation app architecture patterns.",
+    "date": "2023-10-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "scheduling"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "building-soc-2-compliant-applications",
+    "title": "Building SOC 2 Compliant Applications",
+    "description": "Security compliance for SaaS.",
+    "date": "2023-10-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "compliance"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "when-to-build-internal-tools-vs-buy-saas",
+    "title": "When to Build Internal Tools vs Buy SaaS",
+    "description": "A framework for the build vs buy decision.",
+    "date": "2023-10-12",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "internal tools",
+      "strategy"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "writing-technical-briefs",
+    "title": "Writing Technical Briefs",
+    "description": "Communicating vision to dev teams.",
+    "date": "2023-10-07",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "product",
+      "process"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "software-localization-guide",
+    "title": "Software Localization Guide",
+    "description": "Adapting products for different markets.",
+    "date": "2023-10-07",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "i18n"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "managing-technical-debt-at-scale",
+    "title": "Managing Technical Debt at Scale",
+    "description": "Keeping codebases healthy during growth.",
+    "date": "2023-09-30",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "technical debt"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "the-case-for-boring-technology",
+    "title": "The Case for Boring Technology",
+    "description": "Why proven tech outperforms trendy alternatives.",
+    "date": "2023-09-23",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "strategy"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "software-for-manufacturing",
+    "title": "Software for Manufacturing",
+    "description": "ERP and production tracking.",
+    "date": "2023-09-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "manufacturing",
+      "industry"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "donor-management-systems",
+    "title": "Donor Management Systems",
+    "description": "CRM for non-profit fundraising.",
+    "date": "2023-09-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "non-profit",
+      "CRM"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "building-search-for-your-application",
+    "title": "Building Search for Your Application",
+    "description": "Full-text search and filtering UX.",
+    "date": "2023-09-06",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "search"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "automated-reporting-with-ai",
+    "title": "Automated Reporting with AI",
+    "description": "Using AI to generate reports automatically.",
+    "date": "2023-09-02",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "automation"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "how-long-does-it-take-to-build-custom-software",
+    "title": "How Long Does It Take to Build Custom Software",
+    "description": "Realistic timelines for custom software projects of different sizes.",
+    "date": "2023-08-26",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "timeline"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "how-to-build-a-knowledge-base",
+    "title": "How to Build a Knowledge Base",
+    "description": "Self-service support documentation.",
+    "date": "2023-08-25",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "support"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "why-every-project-needs-documentation",
+    "title": "Why Every Project Needs Documentation",
+    "description": "How documentation saves money.",
+    "date": "2023-08-22",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "documentation"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "integrating-openai-api-into-your-app",
+    "title": "Integrating OpenAI API Into Your App",
+    "description": "Working with OpenAI for business applications.",
+    "date": "2023-08-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "engineering"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "client-portals-for-law-firms",
+    "title": "Client Portals for Law Firms",
+    "description": "Communication and admin portals.",
+    "date": "2023-08-08",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "legal",
+      "portals"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "ai-for-real-estate-deal-sourcing",
+    "title": "AI for Real Estate Deal Sourcing",
+    "description": "AI-powered property analysis.",
+    "date": "2023-07-31",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "real estate",
+      "AI"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "the-hidden-costs-of-no-code-platforms",
+    "title": "The Hidden Costs of No-Code Platforms",
+    "description": "Understanding no-code limitations and transition costs.",
+    "date": "2023-07-25",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "no-code"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "why-software-projects-fail-10-patterns",
+    "title": "Why Software Projects Fail: 10 Patterns",
+    "description": "Recurring failure patterns and how to avoid them.",
+    "date": "2023-07-23",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "strategy"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "software-security-for-founders",
+    "title": "Software Security for Founders",
+    "description": "Security decisions founders must make.",
+    "date": "2023-07-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "security"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "building-products-that-sell-themselves",
+    "title": "Building Products That Sell Themselves",
+    "description": "Product-led growth strategies.",
+    "date": "2023-07-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "product",
+      "growth"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "software-development-contracts-guide",
+    "title": "Software Development Contracts Guide",
+    "description": "What to include and what to watch out for.",
+    "date": "2023-07-05",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "legal"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "nlp-for-business-applications",
+    "title": "NLP for Business Applications",
+    "description": "Practical NLP beyond chatbots.",
+    "date": "2023-06-27",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "NLP"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "building-an-ai-proof-of-concept",
+    "title": "Building an AI Proof of Concept",
+    "description": "Validating AI features before full development.",
+    "date": "2023-06-20",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "process"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "building-offline-first-applications",
+    "title": "Building Offline-First Applications",
+    "description": "When and how to build apps that work offline.",
+    "date": "2023-06-15",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "mobile"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "managing-software-projects-as-a-non-technical-founder",
+    "title": "Managing Software Projects as a Non-Technical Founder",
+    "description": "Practical advice for founders overseeing development.",
+    "date": "2023-06-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "management"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "ui-design-for-business-applications",
+    "title": "UI Design for Business Applications",
+    "description": "Design principles for usable business software.",
+    "date": "2023-06-03",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "UI"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "software-for-education",
+    "title": "Software for Education",
+    "description": "Platforms for schools and training.",
+    "date": "2023-06-01",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "education",
+      "industry"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "building-scalable-backend-systems",
+    "title": "Building Scalable Backend Systems",
+    "description": "Architecture for backends that handle growth.",
+    "date": "2023-05-26",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "backend"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "integrating-third-party-apis-reliably",
+    "title": "Integrating Third-Party APIs Reliably",
+    "description": "Building resilient API integrations.",
+    "date": "2023-05-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "integrations"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "react-vs-nextjs-which-to-use",
+    "title": "React vs Next.js: Which to Use",
+    "description": "When each framework makes sense.",
+    "date": "2023-05-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "React"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "cto-vs-agency-vs-technical-co-founder",
+    "title": "CTO vs Agency vs Technical Co-Founder",
+    "description": "Comparing options for technical leadership.",
+    "date": "2023-05-10",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "strategy"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "the-importance-of-boring-problems",
+    "title": "The Importance of Boring Problems",
+    "description": "Best opportunities in mundane problems.",
+    "date": "2023-05-06",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "philosophy",
+      "business"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "why-we-avoid-fixed-price-software-projects",
+    "title": "Why We Avoid Fixed-Price Software Projects",
+    "description": "Problems with fixed-price contracts and what works better.",
+    "date": "2023-05-01",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "process"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "why-your-app-is-slow-and-how-to-fix-it",
+    "title": "Why Your App Is Slow and How to Fix It",
+    "description": "Common performance bottlenecks and solutions.",
+    "date": "2023-04-26",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "performance"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "internal-tools-teams-actually-use",
+    "title": "Internal Tools Teams Actually Use",
+    "description": "Why most internal tools fail at adoption.",
+    "date": "2023-04-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "internal tools",
+      "operations"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "building-a-two-sided-marketplace",
+    "title": "Building a Two-Sided Marketplace",
+    "description": "Marketplace development lessons.",
+    "date": "2023-04-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "marketplace"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "the-rise-of-the-technical-operator",
+    "title": "The Rise of the Technical Operator",
+    "description": "How operations leaders are becoming more technical.",
+    "date": "2023-04-06",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "operations",
+      "trends"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "software-development-rfp-best-practices",
+    "title": "Software Development RFP Best Practices",
+    "description": "Why traditional RFPs fail and how to evaluate vendors better.",
+    "date": "2023-03-30",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "hiring"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "building-software-for-regulated-industries",
+    "title": "Building Software for Regulated Industries",
+    "description": "Compliance considerations for healthcare, finance, and more.",
+    "date": "2023-03-25",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "compliance"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "building-secure-web-applications",
+    "title": "Building Secure Web Applications",
+    "description": "Security best practices for modern web apps.",
+    "date": "2023-03-20",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "security"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "ai-powered-email-automation",
+    "title": "AI-Powered Email Automation",
+    "description": "AI that transforms email workflows.",
+    "date": "2023-03-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "automation"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "how-to-build-a-customer-success-platform",
+    "title": "How to Build a Customer Success Platform",
+    "description": "Tools for customer retention.",
+    "date": "2023-03-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "SaaS",
+      "customer success"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "information-architecture-for-web-apps",
+    "title": "Information Architecture for Web Apps",
+    "description": "Organizing features and content.",
+    "date": "2023-03-08",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "IA"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "writing-product-specs-developers-love",
+    "title": "Writing Product Specs Developers Love",
+    "description": "Specifications that work.",
+    "date": "2023-03-01",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "product",
+      "process"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "what-is-a-software-architect",
+    "title": "What Is a Software Architect",
+    "description": "Understanding the role and when you need one.",
+    "date": "2023-02-26",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "hiring"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "animation-in-business-applications",
+    "title": "Animation in Business Applications",
+    "description": "Using animation effectively.",
+    "date": "2023-02-20",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "animation"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "web-app-performance-optimization",
+    "title": "Web App Performance Optimization",
+    "description": "Making your web app faster.",
+    "date": "2023-02-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "performance"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "how-to-measure-ai-roi",
+    "title": "How to Measure AI ROI",
+    "description": "Frameworks for measuring AI investment returns.",
+    "date": "2023-02-10",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "ROI"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "product-market-fit-signals",
+    "title": "Product Market Fit Signals",
+    "description": "How to know when you have PMF.",
+    "date": "2023-02-01",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "PMF"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "why-your-software-needs-a-design-system",
+    "title": "Why Your Software Needs a Design System",
+    "description": "How design systems reduce cost and improve consistency.",
+    "date": "2023-01-26",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "engineering"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "building-white-label-saas-platforms",
+    "title": "Building White-Label SaaS Platforms",
+    "description": "Multi-brand platform architecture.",
+    "date": "2023-01-22",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "SaaS"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "building-hipaa-compliant-software",
+    "title": "Building HIPAA-Compliant Software",
+    "description": "Healthcare compliance in software.",
+    "date": "2023-01-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "healthcare",
+      "compliance"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "database-design-mistakes-that-cost-thousands",
+    "title": "Database Design Mistakes That Cost Thousands",
+    "description": "Common database errors and how to avoid them.",
+    "date": "2023-01-15",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "databases"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "why-good-software-feels-invisible",
+    "title": "Why Good Software Feels Invisible",
+    "description": "Great UX goes unnoticed.",
+    "date": "2023-01-07",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "philosophy"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "full-stack-development-explained",
+    "title": "Full-Stack Development Explained",
+    "description": "What full-stack means for business stakeholders.",
+    "date": "2023-01-05",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "hiring"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "software-for-energy-utilities",
+    "title": "Software for Energy Utilities",
+    "description": "Energy management platforms.",
+    "date": "2022-12-28",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "energy",
+      "industry"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "the-minimum-viable-product-myth",
+    "title": "The Minimum Viable Product Myth",
+    "description": "Why most MVPs fail and a better approach to product validation.",
+    "date": "2022-12-22",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "MVP"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "multimodal-ai-for-business",
+    "title": "Multimodal AI for Business",
+    "description": "Combining text, image, and audio processing.",
+    "date": "2022-12-18",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "engineering"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "what-happens-after-your-software-launches",
+    "title": "What Happens After Your Software Launches",
+    "description": "Post-launch maintenance and the reality of production software.",
+    "date": "2022-12-10",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "operations"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "fitness-platform-development",
+    "title": "Fitness Platform Development",
+    "description": "Software for gyms and studios.",
+    "date": "2022-12-06",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "fitness",
+      "management"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "serverless-architecture-guide",
+    "title": "Serverless Architecture Guide",
+    "description": "When serverless makes sense and when not.",
+    "date": "2022-11-27",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "serverless"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "custom-software-vs-off-the-shelf-solutions",
+    "title": "Custom Software vs Off-the-Shelf Solutions",
+    "description": "When to buy and when to build. A practical guide for business leaders.",
+    "date": "2022-11-25",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "strategy"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "data-visualization-best-practices",
+    "title": "Data Visualization Best Practices",
+    "description": "Charts and graphs that communicate clearly.",
+    "date": "2022-11-25",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "data"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "speed-matters-more-than-scale-early-on",
+    "title": "Speed Matters More Than Scale Early On",
+    "description": "Velocity over scalability in early stages.",
+    "date": "2022-11-20",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "strategy"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "hiring-your-first-developer",
+    "title": "Hiring Your First Developer",
+    "description": "Evaluating technical talent as a non-technical founder.",
+    "date": "2022-11-11",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "hiring"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "how-to-build-a-developer-portal",
+    "title": "How to Build a Developer Portal",
+    "description": "Documentation and API portal development.",
+    "date": "2022-11-06",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "APIs"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "how-ai-changes-software-architecture",
+    "title": "How AI Changes Software Architecture",
+    "description": "Architectural patterns for AI-first products.",
+    "date": "2022-11-04",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "architecture"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "custom-applicant-tracking-systems",
+    "title": "Custom Applicant Tracking Systems",
+    "description": "ATS for your workflow.",
+    "date": "2022-11-02",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "recruitment",
+      "ATS"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "the-complete-guide-to-saas-metrics",
+    "title": "The Complete Guide to SaaS Metrics",
+    "description": "MRR, churn, LTV, and the metrics that matter.",
+    "date": "2022-10-25",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "SaaS",
+      "metrics"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "warehouse-management-build-vs-buy",
+    "title": "Warehouse Management Build vs Buy",
+    "description": "Custom WMS evaluation.",
+    "date": "2022-10-24",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "logistics",
+      "WMS"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "graphql-vs-rest-apis",
+    "title": "GraphQL vs REST APIs",
+    "description": "Choosing your API strategy.",
+    "date": "2022-10-18",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "APIs"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "building-accessible-mobile-applications",
+    "title": "Building Accessible Mobile Applications",
+    "description": "Mobile accessibility best practices.",
+    "date": "2022-10-15",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "accessibility"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "evaluating-ai-models-for-your-use-case",
+    "title": "Evaluating AI Models for Your Use Case",
+    "description": "How to benchmark AI models.",
+    "date": "2022-10-11",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "engineering"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "ai-for-human-resources",
+    "title": "AI for Human Resources",
+    "description": "Recruiting, onboarding, and operations.",
+    "date": "2022-10-08",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "HR"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "every-company-is-a-software-company",
+    "title": "Every Company Is a Software Company",
+    "description": "The convergence of ops and tech.",
+    "date": "2022-10-04",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "trends",
+      "transformation"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "the-first-90-days-after-launch",
+    "title": "The First 90 Days After Launch",
+    "description": "Post-launch priorities.",
+    "date": "2022-09-28",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "launch"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "ai-will-change-software-development",
+    "title": "AI Will Change Software Development",
+    "description": "Predictions for AI in our industry.",
+    "date": "2022-09-21",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "trends"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "the-discovery-phase-in-software-development",
+    "title": "The Discovery Phase in Software Development",
+    "description": "How proper discovery prevents project failures.",
+    "date": "2022-09-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "process"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "designing-settings-pages",
+    "title": "Designing Settings Pages",
+    "description": "Application configuration UX.",
+    "date": "2022-09-07",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "UX"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "how-we-cut-operational-costs-by-40%",
+    "title": "How We Cut Operational Costs by 40%",
+    "description": "Case study: replacing manual processes with software.",
+    "date": "2022-08-31",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "case study",
+      "operations"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "ai-for-healthcare-applications",
+    "title": "AI for Healthcare Applications",
+    "description": "Practical AI with HIPAA compliance.",
+    "date": "2022-08-27",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "healthcare"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "the-real-cost-of-ai-integration",
+    "title": "The Real Cost of AI Integration",
+    "description": "What AI features cost to build and maintain.",
+    "date": "2022-08-22",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "cost"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "building-real-time-web-features",
+    "title": "Building Real-Time Web Features",
+    "description": "WebSockets and real-time architecture.",
+    "date": "2022-08-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "real-time"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "why-digital-transformations-fail",
+    "title": "Why Digital Transformations Fail",
+    "description": "Organizational and technical failure patterns.",
+    "date": "2022-08-12",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "strategy",
+      "transformation"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "stripe-payment-integration-guide",
+    "title": "Stripe Payment Integration Guide",
+    "description": "Subscriptions, invoicing, and payments.",
+    "date": "2022-08-03",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "payments"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "pricing-your-software-product",
+    "title": "Pricing Your Software Product",
+    "description": "SaaS pricing strategies.",
+    "date": "2022-07-30",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "SaaS",
+      "pricing"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "software-for-real-estate-companies",
+    "title": "Software for Real Estate Companies",
+    "description": "Custom software for real estate.",
+    "date": "2022-07-22",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "real estate",
+      "industry"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "ai-cost-optimization-strategies",
+    "title": "AI Cost Optimization Strategies",
+    "description": "Reducing API spend as usage scales.",
+    "date": "2022-07-20",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "cost"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "software-for-non-profits",
+    "title": "Software for Non-Profits",
+    "description": "Fundraising and volunteer tools.",
+    "date": "2022-07-12",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "non-profit",
+      "industry"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "the-software-agency-model-is-broken",
+    "title": "The Software Agency Model Is Broken",
+    "description": "What we do differently.",
+    "date": "2022-07-05",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "philosophy",
+      "company"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "voice-ai-for-business",
+    "title": "Voice AI for Business",
+    "description": "Voice AI in business applications.",
+    "date": "2022-07-01",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "voice"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "the-state-of-ai-what-matters-for-business",
+    "title": "The State of AI: What Matters for Business",
+    "description": "A grounded look at where AI actually is.",
+    "date": "2022-06-23",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "trends"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "crm-for-real-estate-teams",
+    "title": "CRM for Real Estate Teams",
+    "description": "Why generic CRMs fail real estate.",
+    "date": "2022-06-20",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "real estate",
+      "CRM"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "running-effective-product-demos",
+    "title": "Running Effective Product Demos",
+    "description": "Demos that close deals.",
+    "date": "2022-06-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "product",
+      "sales"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "why-we-do-not-track-hours",
+    "title": "Why We Do Not Track Hours",
+    "description": "Against time-tracking in development.",
+    "date": "2022-06-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "philosophy",
+      "process"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "the-craft-of-software-development",
+    "title": "The Craft of Software Development",
+    "description": "Software as craft, not commodity.",
+    "date": "2022-06-03",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "philosophy",
+      "company"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "building-trust-through-transparency",
+    "title": "Building Trust Through Transparency",
+    "description": "How transparency drives client relationships.",
+    "date": "2022-05-27",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "philosophy",
+      "trust"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "technical-due-diligence-for-fundraising",
+    "title": "Technical Due Diligence for Fundraising",
+    "description": "What investors look for technically.",
+    "date": "2022-05-22",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "startup",
+      "fundraising"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "notification-ux-that-works",
+    "title": "Notification UX That Works",
+    "description": "Notifications that inform without annoying.",
+    "date": "2022-05-16",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "notifications"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "how-to-choose-between-cloud-providers",
+    "title": "How to Choose Between Cloud Providers",
+    "description": "AWS vs GCP vs Azure for your project.",
+    "date": "2022-05-13",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "engineering",
+      "cloud"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "white-space-in-application-design",
+    "title": "White Space in Application Design",
+    "description": "How negative space improves usability.",
+    "date": "2022-05-06",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "design",
+      "UI"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "building-a-technology-strategy",
+    "title": "Building a Technology Strategy",
+    "description": "Tech decisions that serve business goals.",
+    "date": "2022-05-04",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "strategy",
+      "technology"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "prompt-engineering-for-production",
+    "title": "Prompt Engineering for Production",
+    "description": "Writing prompts that work at scale.",
+    "date": "2022-04-26",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "engineering"
+    ],
+    "readTime": "6 min"
+  },
+  {
+    "slug": "mlops-deploying-ai-in-production",
+    "title": "MLOps: Deploying AI in Production",
+    "description": "Keeping AI features running reliably.",
+    "date": "2022-04-23",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "operations"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "real-time-ai-features",
+    "title": "Real-Time AI Features",
+    "description": "Architecture for AI that responds instantly.",
+    "date": "2022-04-14",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "performance"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "how-to-build-a-saas-application",
+    "title": "How to Build a SaaS Application",
+    "description": "Step-by-step guide to SaaS development.",
+    "date": "2022-04-08",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "SaaS",
+      "engineering"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "digital-publishing-platform-development",
+    "title": "Digital Publishing Platform Development",
+    "description": "Custom CMS for publishers.",
+    "date": "2022-04-02",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "media",
+      "CMS"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "building-a-lending-platform",
+    "title": "Building a Lending Platform",
+    "description": "Architecture for lending software.",
+    "date": "2022-03-30",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "fintech",
+      "lending"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "what-to-look-for-in-a-software-development-company",
+    "title": "What to Look for in a Software Development Company",
+    "description": "Key criteria for evaluating software development partners.",
+    "date": "2022-03-24",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "hiring"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "ai-for-customer-support",
+    "title": "AI for Customer Support",
+    "description": "Advanced AI support patterns that reduce tickets.",
+    "date": "2022-03-15",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "customer support"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "custom-e-commerce-development",
+    "title": "Custom E-Commerce Development",
+    "description": "When to go beyond Shopify.",
+    "date": "2022-03-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "e-commerce",
+      "engineering"
+    ],
+    "readTime": "5 min"
+  },
+  {
+    "slug": "how-to-build-a-client-portal",
+    "title": "How to Build a Client Portal",
+    "description": "Lessons from building client-facing portals.",
+    "date": "2022-03-03",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "software development",
+      "portals"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "the-operator-guide-to-software",
+    "title": "The Operator Guide to Software",
+    "description": "What ops leaders need to know.",
+    "date": "2022-02-27",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "operations",
+      "strategy"
+    ],
+    "readTime": "8 min"
+  },
+  {
+    "slug": "data-ownership-matters",
+    "title": "Data Ownership Matters",
+    "description": "Why vendor lock-in is risky.",
+    "date": "2022-02-19",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "strategy",
+      "data"
+    ],
+    "readTime": "7 min"
+  },
+  {
+    "slug": "ai-powered-lead-scoring-guide",
+    "title": "AI-Powered Lead Scoring Guide",
+    "description": "How AI lead scoring works and how to implement it.",
+    "date": "2022-02-13",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "sales"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "fine-tuning-vs-prompt-engineering",
+    "title": "Fine-Tuning vs Prompt Engineering",
+    "description": "When to customize models vs craft better prompts.",
+    "date": "2022-02-09",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "AI",
+      "engineering"
+    ],
+    "readTime": "4 min"
+  },
+  {
+    "slug": "what-proper-motion-means",
+    "title": "What Proper Motion Means",
+    "description": "The astronomy concept behind our name.",
+    "date": "2022-02-04",
+    "author": "The Proper Motion Company",
+    "tags": [
+      "philosophy",
+      "company"
+    ],
+    "readTime": "8 min"
   }
 ]

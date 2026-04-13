@@ -1,0 +1,54 @@
+# The Proper Motion Company
+
+> Software studio building custom products from scratch. Design, engineering, AI integration. Est. 2022. A division of Televista Lead Generation.
+
+## About
+
+The Proper Motion Company is a software studio that builds products for founders, operators, and growing companies. We are not a large agency with layers of project managers. We are a focused team of designers and engineers who work directly with clients from brief to delivery.
+
+The name comes from astronomy: proper motion is the actual movement of a star across the sky, measured against the distant background — stripped of all apparent motion, all distortion, all noise. That is our philosophy. We build the actual thing.
+
+We operate as a division of Televista Lead Generation, a company with deep experience building systems that generate real business outcomes.
+
+## Services
+
+- **Product Design**: UI/UX, design systems, prototyping. From concept to interface.
+- **Engineering**: Full-stack web application development. React, Next.js, Node.js, Python, PostgreSQL.
+- **AI Integration**: LLM integration, automation pipelines, AI-powered features. Practical, not performative.
+
+## Process
+
+1. **Discovery & Definition** (Week 1): Understand requirements, write brief, align on scope
+2. **Architecture & Design** (Week 2-3): Wireframes, component structure, technical architecture
+3. **Development & Iteration** (Week 4-8): Weekly sprints with full visibility
+4. **Delivery & Handoff** (Week 8+): Ship, document, hand over everything
+
+## Key Facts
+
+- Founded: 2022
+- Location: Remote-first, distributed globally
+- Parent company: Televista Lead Generation
+- Email: team@televistaleadgeneration.com
+- Website: https://thepropermotioncompany.com
+- Typical project timeline: 6-10 weeks
+- Everything built from scratch, no templates
+
+## Case Studies
+
+### Operations Dashboard (SaaS Startup)
+Real-time data visualization, team management, automated reporting for a logistics company. Replaced four separate tools. Deployed in 6 weeks. 40% reduction in operational overhead. Tech: React, Node.js, PostgreSQL, AI.
+
+### Lead Intelligence Platform (Real Estate)
+AI-powered lead scoring and routing for a real estate investor network. CRM integration, automated follow-up, property matching. 3x improvement in lead conversion within 90 days. Tech: Python, FastAPI, Next.js, OpenAI.
+
+### Client Portal & Billing (Professional Services)
+Project tracking, document management, invoicing, messaging. Replaced email and spreadsheets. 12 clients onboarded in first month. Zero support tickets. Tech: Next.js, Supabase, Stripe.
+
+## Technologies
+
+Frontend: React, Next.js, TypeScript, Tailwind CSS
+Backend: Node.js, Python, FastAPI, Express
+Databases: PostgreSQL, Supabase, MongoDB
+AI/ML: OpenAI, Anthropic, LangChain, custom models
+Payments: Stripe
+Infrastructure: Cloudflare, Vercel, AWS

@@ -1,0 +1,31 @@
+# Building for Enterprise Clients
+
+Every founder eventually faces this decision. The right answer depends on your specific situation, but there are clear patterns.
+
+## The Framework
+
+**First, get clear on the outcome.** What does success look like in 6 months? In 12 months?
+
+
+**Then, evaluate your constraints honestly.** Budget, timeline, team capability — be realistic about all three.
+
+
+**Finally, choose the path that preserves optionality.** The best early decisions are the ones that do not lock you in.
+
+
+## Execution
+
+1. **Week 1: Discovery** — Align on the problem before discussing solutions
+
+2. **Week 2-3: Design** — Map the system before you build it
+
+3. **Ongoing: Build and iterate** — Ship incrementally with continuous feedback
+
+
+The most expensive mistake is building the wrong thing. Validate early and often.
+
+
+---
+
+
+*The Proper Motion Company builds custom software for founders and operators. [Start a project](../contact.html) or [learn about our process](../process.html).*
