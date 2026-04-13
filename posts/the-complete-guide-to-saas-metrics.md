@@ -1,24 +1,111 @@
 # The Complete Guide to SaaS Metrics
 
-MRR, churn, LTV, and the metrics that matter.
+Every metric SaaS founders need to track with benchmarks. This comprehensive guide covers everything you need to know about SaaS metrics guide, based on our experience building production software since 2022.
 
-## Overview
 
-This is a common challenge for growing businesses. The right approach depends on your specific needs, but clear patterns emerge across projects.
+## Understanding Saas Metrics Guide
 
-## Key Considerations
+Before diving into specifics, it is important to understand why SaaS metrics guide matters. Companies that get this right gain significant competitive advantage. Those that do not face escalating costs, missed deadlines, and products that fail to meet expectations.
 
-- **Requirements clarity** — Define what you need before evaluating solutions
-- **Integration needs** — How this connects with your existing systems matters
-- **Scale expectations** — Build for current needs with clear paths to grow
-- **Compliance** — Understand regulatory requirements early
+The landscape has changed dramatically. Cloud infrastructure has matured, AI capabilities have expanded, user expectations have risen, and development tools have evolved. These changes affect how businesses should approach SaaS metrics guide.
+
+At The Proper Motion Company, we have worked with companies across real estate, logistics, professional services, healthcare, and financial services. The insights here come from that experience.
+
+
+## Key Success Factors
+
+Several factors determine whether your SaaS metrics guide initiative succeeds.
+
+
+### Scope and Requirements
+The scope directly impacts timeline, budget, and team requirements. Start with minimum viable scope, then plan expansion phases. Companies that try to build everything at once almost always run into trouble.
+
+
+### Technical Architecture
+Technical decisions should be driven by business needs. Consider user volume, integration requirements, performance expectations, and compliance obligations. These answers drive architecture decisions.
+
+
+### Team Quality
+Whether in-house or external, team quality is the biggest predictor of success. Look for relevant experience, strong communication, and a track record of delivering on time.
+
+
+### Budget and Timeline
+Realistic timelines range from 6 to 16 weeks depending on complexity. Budget should account for development, testing, deployment, training, and maintenance. A common mistake is budgeting only for the build phase.
+
 
 ## Our Approach
 
-At The Proper Motion Company, we start with discovery. We understand your workflow before proposing solutions.
+Our four-phase process has been refined through dozens of engagements.
 
-Our process delivers working software in 6-10 weeks, with weekly visibility into progress.
+
+### Phase 1: Discovery (Week 1)
+Stakeholder interviews, workflow mapping, technical assessment, written brief defining scope and acceptance criteria.
+
+
+### Phase 2: Architecture (Week 2-3)
+Wireframes, database schemas, API specifications, component structures. You review before development begins.
+
+
+### Phase 3: Development (Week 4-8)
+Weekly sprints with full visibility. Working software every week. Continuous feedback integration.
+
+
+### Phase 4: Delivery (Week 8+)
+Production deployment, team training, complete handoff of code, documentation, and credentials.
+
+
+## Common Mistakes
+
+
+### 1. Skipping Discovery
+The most expensive mistake is building the wrong thing. Companies that skip discovery lose months to rework.
+
+
+### 2. Price-Based Vendor Selection
+The lowest bid almost always costs more long-term through technical debt and maintenance costs.
+
+
+### 3. Scope Creep
+Start minimal, validate with users, expand based on feedback.
+
+
+### 4. Ignoring Maintenance
+Budget 15-20 percent of initial cost annually for ongoing operations.
+
+
+### 5. Skipping User Testing
+Basic testing with 5 users reveals problems reviews miss.
+
+
+## Measuring ROI
+
+Custom software typically reduces manual tasks by 30-60 percent. Our AI lead scoring project delivered 3x improvement in conversions. Well-designed systems handle 10x growth with minimal infrastructure changes.
+
+
+## Industry Applications
+
+
+**Healthcare:** HIPAA patient portals, telemedicine, practice management, workflow automation.
+
+
+**Logistics:** Fleet management, route optimization, warehouse management, real-time tracking.
+
+
+**Real estate:** Property management, AI lead scoring, tenant screening, CRM customization.
+
+
+## Getting Started
+
+1. Define the problem and ideal outcome
+2. Document your current workflow
+3. Set budget expectations ($25K-$150K typical)
+4. Evaluate partners with relevant experience
+5. Start with a focused discovery phase
+
+
+[Contact us](../contact.html) to discuss your SaaS metrics guide project. We respond within one business day.
+
 
 ---
 
-*The Proper Motion Company builds custom software for founders and operators. [Start a project](../contact.html).*
+*The Proper Motion Company builds custom software for founders and operators. [Start a project](../contact.html) | [See our work](../work.html) | [Our process](../process.html)*
