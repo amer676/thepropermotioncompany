@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,138 +6,54 @@
   <title>How to Build a SaaS Application From Scratch in 2024</title>
   <meta name="description" content="How to Build a SaaS Application From Scratch in 2024. SaaS development Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/how-to-build-a-saas-application-from-scratch-in-2024/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="How to Build a SaaS Application From Scratch in 2024">
-  <meta property="og:description" content="How to Build a SaaS Application From Scratch in 2024. SaaS development Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-build-a-saas-application-from-scratch-in-2024/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How to Build a SaaS Application From Scratch in 2024">
-  <meta name="twitter:description" content="How to Build a SaaS Application From Scratch in 2024. SaaS development Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="How to Build a SaaS Application From Scratch in 2024"><meta property="og:description" content="How to Build a SaaS Application From Scratch in 2024. SaaS development Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-build-a-saas-application-from-scratch-in-2024/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Build a SaaS Application From Scratch in 2024"><meta name="twitter:description" content="How to Build a SaaS Application From Scratch in 2024. SaaS development Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">March 07, 2022</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">SaaS</span><span class="blog-card-tag">engineering</span>
-            </div>
-            <h1 class="blog-post-title">How to Build a SaaS Application From Scratch in 2024</h1>
-            <p class="blog-post-desc">How to Build a SaaS Application From Scratch in 2024. SaaS development Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>How to Build a SaaS Application From Scratch in 2024</h1>
-<p>SaaS development</p>
-<p>Before you make any decisions about how to build a, read this. It will save you time, money, and the particular frustration that comes from learning expensive lessons the hard way.</p>
-<h2>What Most Teams Get Wrong About How To Build A</h2>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For how to build a, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning how to build a.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for how to build a.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>One of our clients, a real estate investment firm, was manually scoring leads in spreadsheets. Their sales team spent more time on data entry than on selling. We built an automated scoring system that ranked leads by conversion probability. Within 90 days, their close rate improved significantly — not because the AI was magic, but because the sales team could finally focus on the leads that mattered.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a how to build a project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>When How To Build A Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about how to build a, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">March 07, 2022</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">SaaS</span><span class="blog-card-tag">engineering</span></div><h1 class="blog-post-title">How to Build a SaaS Application From Scratch in 2024</h1><p class="blog-post-desc">How to Build a SaaS Application From Scratch in 2024. SaaS development Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>How to Build a SaaS Application From Scratch in 2024</h1>
+<p>Building a SaaS product is more accessible than ever, but the decisions you make in the first 90 days determine whether you ship a product that can scale or one that needs a costly rewrite six months later. The frameworks, hosting platforms, and third-party services available today let a small team go from zero to a production-ready SaaS application in 8 to 16 weeks, but only if you make the right architectural choices upfront.</p>
+<p>This guide covers the full stack of decisions and trade-offs for building a SaaS product in 2024, written for founders and technical leaders starting from scratch.</p>
+<h2>Choosing Your Tech Stack</h2>
+<p>Your tech stack should optimize for three things in order: speed to market, hiring availability, and scalability. Premature optimization for scale kills more startups than technical debt ever does.</p>
+<p><strong>Frontend framework.</strong> Next.js (React) is the default choice for SaaS products in 2024, and for good reason. It handles server-side rendering for SEO-critical pages (marketing site, blog), client-side rendering for the application dashboard, and API routes for lightweight backend needs. The ecosystem of component libraries (shadcn/ui, Radix), state management tools, and developer tooling is unmatched. Alternatives: Remix if you prefer its data loading patterns, SvelteKit if your team is experienced with Svelte, Nuxt if you are a Vue shop. All are production-capable; the best choice is the one your team knows.</p>
+<p><strong>Backend and API layer.</strong> For most SaaS products, your Next.js API routes handle initial needs. When you outgrow that (typically at 50 to 100 concurrent users or when you need background job processing), extract to a dedicated backend. Node.js with Express or Fastify is the path of least resistance from a Next.js frontend. Python with FastAPI is excellent if your product has ML/AI components. Go or Rust are premature for 95% of early-stage SaaS products. Choose what your team ships fastest in.</p>
+<p><strong>Database.</strong> PostgreSQL. This is not a nuanced recommendation. Postgres handles relational data, JSON documents (via jsonb), full-text search, time-series data (via TimescaleDB extension), and vector embeddings (via pgvector). It eliminates the need for separate databases for different data types until you reach significant scale. Use Neon, Supabase, or AWS RDS for managed hosting. Start with a single instance. You can add read replicas later.</p>
+<p><strong>Authentication.</strong> Do not build auth from scratch. Use Clerk, Auth0, or Supabase Auth. Clerk has the best developer experience and most complete feature set for SaaS (organizations, roles, invitations). Auth0 is the enterprise standard with more granular configuration. Supabase Auth is free and good enough for MVPs. Whichever you choose, implement organization/team-level access from the start. Retrofitting multi-tenant auth is painful.</p>
+<p><strong>Payments.</strong> Stripe. Specifically, use Stripe Billing for subscriptions. Implement Stripe Checkout for the initial payment flow (it handles tax calculation, card validation, and 3D Secure in a hosted page), then use the Stripe Customer Portal for subscription management (upgrades, downgrades, cancellations, invoice history). This eliminates 80% of the billing code you would otherwise need to write. Budget 2 to 3 days for Stripe integration with webhooks.</p>
+<h2>Multi-Tenancy Architecture</h2>
+<p>Multi-tenancy is the architectural foundation of any SaaS product. Get it right early or face a painful migration.</p>
+<p><strong>Database-level tenancy.</strong> You have three options. Shared database with a tenant_id column on every table is the simplest and most common approach. It works well for up to thousands of tenants. Separate schemas per tenant (in Postgres, each tenant gets its own schema within the same database) offers better isolation without the operational overhead of separate databases. Separate databases per tenant provides the strongest isolation but is only justified for enterprise customers with strict data segregation requirements.</p>
+<p>For 90% of SaaS startups, the shared database with tenant_id approach is correct. Enforce tenant isolation at the application layer with middleware that injects the tenant_id into every query. Use Postgres Row Level Security (RLS) as a defense-in-depth measure to prevent cross-tenant data leakage even if your application logic has a bug.</p>
+<p><strong>Application-level tenancy.</strong> Every API request must be scoped to a tenant. Extract the tenant context from the authenticated user&rsquo;s session (the user belongs to an organization; the organization is the tenant). Never pass tenant_id as a URL parameter or request body field where it could be tampered with.</p>
+<p><strong>Tenant-aware data models.</strong> Design your database schema with tenancy from the start. Every business-logic table needs a tenant_id foreign key. Create a composite index on (tenant_id, id) for every table. This ensures that queries scoped to a tenant are efficient even as the total data volume grows across all tenants.</p>
+<h2>Building the Subscription and Billing System</h2>
+<p>Billing is where SaaS gets complicated. Pricing models affect architecture decisions.</p>
+<p><strong>Pricing model archetypes.</strong> Flat-rate pricing (one price, one feature set) is the simplest to implement. Tiered pricing (Good/Better/Best plans with different feature sets and limits) is the SaaS standard and requires feature flagging at the plan level. Usage-based pricing (pay per API call, per seat, per GB of storage) requires metering infrastructure. Hybrid pricing (base subscription plus usage overages) is increasingly common and combines the complexity of both.</p>
+<p><strong>Feature flagging by plan.</strong> Implement a feature entitlement system from the start. Create a plan_features table that maps plan IDs to feature keys and limits. Check entitlements at the API layer, not the UI layer (the UI can hide features, but the API must enforce access). A middleware that checks hasFeature(tenantId, &lsquo;advanced_analytics&rsquo;) before every restricted endpoint is cleaner and more secure than scattering permission checks throughout your codebase.</p>
+<p><strong>Usage metering.</strong> If you offer usage-based pricing, instrument usage events from day one. Write events to a fast append-only store (Redis Streams or a simple Postgres table with time-partitioning). Aggregate usage on a daily cron job. Report usage to Stripe using their Usage Records API, which handles proration and invoicing automatically. Do not attempt to build your own invoicing system for usage-based billing; the edge cases around proration, mid-cycle plan changes, and tax calculation are a full product in themselves.</p>
+<p><strong>Trial and onboarding flow.</strong> Offer a 14-day free trial with no credit card required. This is the current standard because it maximizes trial starts. Track activation metrics during the trial: which features does the user engage with? Set up automated emails at day 1, 3, 7, and 12 that highlight features the user has not tried yet. Convert trial users to paid by triggering a checkout flow when the trial expires or when they attempt to use a paid-only feature.</p>
+<h2>Infrastructure and Deployment</h2>
+<p>Choosing the right hosting and deployment setup saves money and headaches.</p>
+<p><strong>Platform-as-a-Service (PaaS) for speed.</strong> Vercel for the Next.js frontend and API routes. Railway or Render for any dedicated backend services. Neon or Supabase for the database. This combination gets you to production with zero DevOps overhead. You can deploy with a git push, environments are created automatically per branch, and scaling is handled by the platform. Total infrastructure cost at launch: $0 to $50/month.</p>
+<p><strong>When to move to IaaS.</strong> PaaS pricing becomes expensive above approximately $500/month in platform costs. At that point, migrating to AWS, GCP, or Azure with containerized deployments (ECS, Cloud Run, or GKE) reduces costs by 40% to 60% but requires DevOps expertise. Most SaaS products do not hit this threshold until they have meaningful revenue, so this is a good problem to have.</p>
+<p><strong>Environment strategy.</strong> Set up three environments from the start: development (local), staging (deployed, mirrors production configuration with test data), and production. Use environment variables for all configuration. Never hardcode API keys, database URLs, or feature flags. Use a secrets manager (Vercel&rsquo;s built-in env vars, Doppler, or AWS Secrets Manager) to manage configuration across environments.</p>
+<p><strong>CI/CD pipeline.</strong> Automate everything. Run linting, type checking, and tests on every pull request. Deploy to staging automatically on merge to main. Deploy to production via a manual approval step or an automatic promotion after staging passes health checks. Use GitHub Actions; the ecosystem and free tier are more than sufficient for early-stage SaaS.</p>
+<h2>Launching and Iterating Post-Launch</h2>
+<p>Shipping the first version is the beginning, not the end.</p>
+<p><strong>Analytics instrumentation.</strong> Instrument product analytics before launch, not after. Track user sign-ups, feature usage (which features, how often, what sequence), subscription events, and errors. Use PostHog (open-source, self-hostable) or Mixpanel. Define your activation metric (the action that correlates most strongly with retention) and measure it obsessively. For most SaaS products, the activation metric is something like &ldquo;created their first [core object] within 48 hours of signing up.&rdquo;</p>
+<p><strong>Error monitoring.</strong> Set up Sentry for application error tracking. Configure alerting so that new errors notify the team within 5 minutes. In the first month, aim for zero unhandled errors. Every error in a SaaS product is a user experiencing a broken feature, and early users have zero tolerance for bugs.</p>
+<p><strong>Feedback collection.</strong> Build a simple feedback mechanism into the product (a &ldquo;?&rdquo; icon that opens a feedback form, or integrate with Canny for feature request tracking). Review feedback weekly. In the first 90 days, personally respond to every piece of feedback. This builds relationships with early users who become your best advocates and most valuable source of product direction.</p>
+<p><strong>Performance monitoring.</strong> Track page load times, API response times, and database query performance. Set budgets: pages should load in under 2 seconds, API responses in under 500ms, and database queries in under 100ms. Use Vercel&rsquo;s built-in analytics for frontend performance and a tool like Datadog or Grafana Cloud for backend monitoring.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Building a SaaS application in 2024 is a well-understood process with excellent tooling at every layer. The key is making deliberate choices early and resisting the urge to over-engineer before you have users. Ship fast, measure everything, and iterate based on real feedback. If you are planning a SaaS product and want an experienced team to help you make the right technical decisions from the start, <a href="/contact.html">reach out to us</a>.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Build a SaaS Application From Scratch in 2024",
@@ -159,7 +73,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/how-to-build-a-saas-application-from-scratch-in-2024/",
   "articleSection": "SaaS"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

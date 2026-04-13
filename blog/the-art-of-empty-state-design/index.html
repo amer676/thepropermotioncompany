@@ -1,153 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Art of Empty State Design | The Proper Motion Company</title>
+  <title>The Art of Empty State Design | Proper Motion</title>
   <meta name="description" content="The Art of Empty State Design. empty state design Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/the-art-of-empty-state-design/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="The Art of Empty State Design | The Proper Motion Company">
-  <meta property="og:description" content="The Art of Empty State Design. empty state design Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/the-art-of-empty-state-design/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Art of Empty State Design | The Proper Motion Company">
-  <meta name="twitter:description" content="The Art of Empty State Design. empty state design Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="The Art of Empty State Design | Proper Motion"><meta property="og:description" content="The Art of Empty State Design. empty state design Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/the-art-of-empty-state-design/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="The Art of Empty State Design | Proper Motion"><meta name="twitter:description" content="The Art of Empty State Design. empty state design Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">October 19, 2023</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">design</span><span class="blog-card-tag">UX</span>
-            </div>
-            <h1 class="blog-post-title">The Art of Empty State Design</h1>
-            <p class="blog-post-desc">The Art of Empty State Design. empty state design Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>The Art of Empty State Design</h1>
-<p>empty state design</p>
-<p>We have been building custom software since 2022 — working directly with founders, operators, and technical leaders. This guide captures the patterns that separate projects that succeed from projects that stall.</p>
-<h2>The Build Process</h2>
-<p>Building the art of empty well requires discipline in a few specific areas.</p>
-<p><strong>Requirements documentation</strong> does not need to be a 50-page spec. It needs to be specific enough that two different developers reading it would build the same thing. User stories with acceptance criteria work well for most projects.</p>
-<p><strong>Design before development.</strong> Wireframes and prototypes are cheap to change. Production code is expensive to change. Invest a week in design review before starting development. This single practice prevents more problems than any other.</p>
-<p><strong>Weekly delivery cadence.</strong> Ship something testable every week. Not a demo — a working piece of software that a real person can use and give feedback on. Weekly delivery creates accountability and catches problems early.</p>
-<p><strong>Automated testing</strong> is an investment that pays for itself within weeks. Manual testing does not scale. Every feature should have tests that run automatically on every code change. This is what allows you to move fast without breaking things.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>An e-commerce company outgrew Shopify but was terrified of the migration. Their catalog was complex, their integrations were fragile, and their team had no backend experience. We ran the migration in phases — zero downtime, zero lost orders, and a 40% improvement in page load time on the new stack.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a the art of empty project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>When The Art Of Empty Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for the art of empty.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<h2>A Decision Framework for The Art Of Empty</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality the art of empty typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about the art of empty, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">October 19, 2023</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">design</span><span class="blog-card-tag">UX</span></div><h1 class="blog-post-title">The Art of Empty State Design</h1><p class="blog-post-desc">The Art of Empty State Design. empty state design Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>The Art of Empty State Design</h1>
+<p>The most neglected screen in most applications is the one users see first. Before any data has been entered, before any content has been created, before any connections have been made &ndash; there is the empty state. A blank table. An inbox with zero messages. A dashboard with no metrics. A project board with no tasks.</p>
+<p>Most applications handle this moment poorly: a bare container with no data rows, or worse, a technical error message like &ldquo;No records found.&rdquo; This is the moment the user is most uncertain, most likely to abandon, and most in need of guidance. A well-designed empty state transforms that moment of blankness into a moment of clarity, motivation, and direction.</p>
+<h2>Why Empty States Matter More Than You Think</h2>
+<p>Empty states are not edge cases. They are guaranteed touchpoints. Every new user encounters them. Every user who creates a new project, a new workspace, or a new category encounters them. Users who archive or delete content encounter them. Users who apply filters that return no results encounter them.</p>
+<p>The numbers make the case. Appcues found that 40-60% of users who sign up for a SaaS product never return after their first session. A significant portion of that drop-off happens because the first session ends in an empty state that provides no direction. The user signed up because a marketing page promised them value. They logged in and found a blank screen. The gap between the promise and the experience was too large, and they left.</p>
+<p>Empty states are also disproportionately visible during product demos. When a sales representative shows the application to a prospect, they often create a new workspace to demonstrate the setup flow. If that workspace opens to a barren dashboard with placeholder text, the demo starts on the wrong foot. The prospect&rsquo;s first impression is emptiness, not capability.</p>
+<p>Investing in empty state design has an outsized return because it directly affects activation rates, first-session retention, and the overall perception of product quality.</p>
+<h2>The First-Use Empty State: Onboarding in Disguise</h2>
+<p>The most important empty state is the one a new user encounters immediately after signing up. This is not just a blank screen &ndash; it is an onboarding surface. The empty state should accomplish three things:</p>
+<p><strong>Orient the user.</strong> Tell them where they are and what this area of the application is for. &ldquo;This is your project dashboard. It will show all your active projects, their status, and upcoming deadlines.&rdquo; This single sentence eliminates the ambiguity of a blank screen.</p>
+<p><strong>Show what success looks like.</strong> Display a preview or illustration of what the screen will look like once it has data. A lightly styled mockup of a populated dashboard &ndash; with sample project cards, a timeline, and a status summary &ndash; gives the user a mental model of the end state. This is not real data. It is an aspirational image that answers the question &ldquo;What will this look like when I am using it?&rdquo;</p>
+<p><strong>Provide a single, clear next action.</strong> One button. Not three. Not a list of options. One: &ldquo;Create your first project.&rdquo; The cognitive load of choosing between multiple actions paralyzes new users. Give them one clear path forward, and make the button visually prominent &ndash; large, high-contrast, impossible to miss.</p>
+<p>Basecamp&rsquo;s empty project screen is a good reference. It shows a friendly message (&ldquo;No projects yet&rdquo;), a brief description of what projects are for, and a single &ldquo;Create a new project&rdquo; button. There is no ambiguity about what to do next.</p>
+<p>For applications where the first action is complex (setting up an integration, importing data, configuring preferences), break it into a numbered checklist. &ldquo;Step 1: Connect your Salesforce account. Step 2: Choose which objects to sync. Step 3: Review your first data import.&rdquo; Show progress as each step completes. Checklists with visible progress have a 45% higher completion rate than unstructured onboarding, because people are motivated by incomplete progress bars &ndash; the Zeigarnik effect in action.</p>
+<h2>The No-Results Empty State: Preventing Dead Ends</h2>
+<p>When a user searches for something and gets no results, or applies filters that exclude all records, the default behavior in most applications is to show an empty table with the text &ldquo;No results.&rdquo; This is a dead end. The user does not know why there are no results or what to do about it.</p>
+<p>A well-designed no-results state addresses four things:</p>
+<p><strong>Acknowledge what the user did.</strong> &ldquo;No projects match &lsquo;acme renewal&rsquo;.&rdquo; Repeat the search query or active filters so the user can verify they searched for the right thing.</p>
+<p><strong>Suggest corrections.</strong> If the search term is close to a known term, suggest it: &ldquo;Did you mean &lsquo;Acme Renewal Project&rsquo;?&rdquo; If there are active filters that might be too restrictive, point it out: &ldquo;Try removing the &lsquo;Completed&rsquo; status filter to see all projects.&rdquo;</p>
+<p><strong>Offer alternative paths.</strong> &ldquo;Search all workspaces instead of just this one&rdquo; or &ldquo;Browse projects by category&rdquo; or &ldquo;Create a new project called &lsquo;acme renewal&rsquo;.&rdquo; The user came to this screen with intent. Help them fulfill that intent through a different path rather than leaving them at a blank wall.</p>
+<p><strong>Avoid blame language.</strong> &ldquo;No results found&rdquo; is neutral. &ldquo;Your search did not match any records&rdquo; subtly implies the user did something wrong. &ldquo;We could not find anything matching &lsquo;acme renewal&rsquo;&rdquo; acknowledges the gap without attributing blame.</p>
+<p>Shopify&rsquo;s admin search handles this well. A search that returns no results shows the query, suggests checking for typos, offers to search in different sections (products, orders, customers), and provides a link to create a new item matching the search term.</p>
+<h2>The Cleared Empty State: Celebrating Completion</h2>
+<p>Some empty states are achievements. An inbox with zero messages, a task list with no remaining items, a bug tracker with no open issues &ndash; these are moments of completion that deserve recognition, not a blank screen.</p>
+<p>The cleared empty state should celebrate the accomplishment. A simple illustration (a completed checkbox, a tidy desk, a sunrise) paired with a congratulatory message (&ldquo;You&rsquo;re all caught up&rdquo; or &ldquo;All tasks complete&rdquo;) transforms the empty state from a void into a reward. This positive reinforcement encourages the behavior that led to the cleared state.</p>
+<p>Pair the celebration with a gentle suggestion for what to do next. &ldquo;All tasks complete. Review tomorrow&rsquo;s schedule?&rdquo; or &ldquo;Inbox zero! Here are three projects that could use your input.&rdquo; The user has momentum from clearing their queue. Channel that momentum toward the next productive action rather than letting them drift.</p>
+<p>The tone should match your product&rsquo;s personality. A project management tool might use a clean, professional illustration. A consumer app might use a playful animation. A financial application might skip the illustration entirely and use a simple checkmark with clean typography. The emotional register should be consistent with the rest of the experience.</p>
+<h2>Empty States in Data-Heavy Applications</h2>
+<p>Dashboards, analytics pages, and reporting interfaces have a particular empty state challenge: they depend on data that may take time to accumulate. A new user&rsquo;s analytics dashboard will be meaningless for the first few days or weeks because there is insufficient data to show trends, averages, or comparisons.</p>
+<p>Instead of showing blank charts with zero values (which looks broken) or hiding the charts entirely (which hides the product&rsquo;s value proposition), show the chart structure with an explanatory overlay: &ldquo;Revenue trends will appear here after your first week of data.&rdquo; This teaches the user what the dashboard will show, sets an expectation for when it will become useful, and demonstrates the product&rsquo;s analytical capabilities even before there is data to analyze.</p>
+<p>For metrics that require a minimum data threshold, be explicit: &ldquo;Customer retention analysis requires at least 30 days of data. Check back after December 15.&rdquo; Specificity builds trust. &ldquo;Not enough data&rdquo; feels like a bug. &ldquo;Requires 30 days of data &ndash; available December 15&rdquo; feels like a feature that is loading.</p>
+<p>Where appropriate, populate charts with sample data and label it clearly: &ldquo;Sample data shown. Your data will replace this once available.&rdquo; This approach lets the user interact with the dashboard immediately &ndash; clicking through charts, exploring filters, understanding the layout &ndash; so that when real data arrives, they already know how to use the interface.</p>
+<h2>Designing Empty States Systematically</h2>
+<p>Most applications have 15-30 distinct empty states: one for each major data type, each list view, each dashboard widget, and each search context. Designing them ad hoc leads to inconsistency. Design them systematically.</p>
+<p>Create an empty state component library with three variants:</p>
+<ol>
+<li><strong>First-use</strong> (illustration + description + primary CTA)</li>
+<li><strong>No-results</strong> (search context + suggestions + alternative paths)</li>
+<li><strong>Completion</strong> (celebration + next action)</li>
+</ol>
+<p>Each variant should have consistent spacing, typography, and illustration style. The illustration set does not need to be large &ndash; six to eight custom illustrations (one per major product area) are sufficient for most applications. Avoid generic stock illustrations of people sitting at computers. Invest in illustrations that are specific to your product and your brand.</p>
+<p>Audit every screen in your application for empty states. For each one, determine which variant applies, write the copy, and assign the illustration. Build the empty states into your component library so that new features automatically inherit the pattern. Add empty state screenshots to your design review checklist so they receive the same scrutiny as populated screens.</p>
+<p>Test empty states with new users. Run a five-second test: show the empty state for five seconds, then ask the user what the screen is for and what they would do next. If they cannot answer both questions confidently, the empty state needs work.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If your application&rsquo;s first impression is a blank screen, there is a significant opportunity to improve activation and retention. <a href="/contact.html">Get in touch</a> and let&rsquo;s design empty states that guide your users from sign-up to success.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "The Art of Empty State Design",
@@ -167,7 +83,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/the-art-of-empty-state-design/",
   "articleSection": "design"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

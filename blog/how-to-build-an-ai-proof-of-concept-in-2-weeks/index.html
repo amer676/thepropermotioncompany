@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,139 +6,57 @@
   <title>How to Build an AI Proof of Concept in 2 Weeks | Proper Motion</title>
   <meta name="description" content="A fast-track approach to validating AI features before committing to full development.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/how-to-build-an-ai-proof-of-concept-in-2-weeks/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="How to Build an AI Proof of Concept in 2 Weeks | Proper Motion">
-  <meta property="og:description" content="A fast-track approach to validating AI features before committing to full development.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-build-an-ai-proof-of-concept-in-2-weeks/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How to Build an AI Proof of Concept in 2 Weeks | Proper Motion">
-  <meta name="twitter:description" content="A fast-track approach to validating AI features before committing to full development.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="How to Build an AI Proof of Concept in 2 Weeks | Proper Motion"><meta property="og:description" content="A fast-track approach to validating AI features before committing to full development."><meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-build-an-ai-proof-of-concept-in-2-weeks/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Build an AI Proof of Concept in 2 Weeks | Proper Motion"><meta name="twitter:description" content="A fast-track approach to validating AI features before committing to full development."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">June 22, 2022</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">AI</span><span class="blog-card-tag">process</span>
-            </div>
-            <h1 class="blog-post-title">How to Build an AI Proof of Concept in 2 Weeks</h1>
-            <p class="blog-post-desc">A fast-track approach to validating AI features before committing to full development.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>How to Build an AI Proof of Concept in 2 Weeks</h1>
-<p>A fast-track approach to validating AI features before committing to full development.</p>
-<p>Before you make any decisions about how to build an, read this. It will save you time, money, and the particular frustration that comes from learning expensive lessons the hard way.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for how to build an.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a how to build an project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>What Most Teams Get Wrong About How To Build An</h2>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For how to build an, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Not defining success criteria upfront.</strong> If you cannot articulate what success looks like for your how to build an initiative, you will not know when you have achieved it. Define specific, measurable outcomes before development begins.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Skipping user research.</strong> Building how to build an without talking to the people who will actually use it is like designing a house without asking who lives there. Five conversations with real users will save you more money than any amount of internal brainstorming.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A healthcare organization needed to digitize a paper-based intake process while maintaining HIPAA compliance. Their previous vendor quoted twelve months and half a million dollars. We delivered a compliant system in eight weeks at a fraction of the cost. The difference: we did not build a platform. We built exactly what they needed.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>A Decision Framework for How To Build An</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality how to build an typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Taking Action</h2>
-<p>Reading about how to build an is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">June 22, 2022</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">AI</span><span class="blog-card-tag">process</span></div><h1 class="blog-post-title">How to Build an AI Proof of Concept in 2 Weeks</h1><p class="blog-post-desc">A fast-track approach to validating AI features before committing to full development.</p></div><div class="blog-post-content"><h1>How to Build an AI Proof of Concept in 2 Weeks</h1>
+<p>Your team has an idea for an AI-powered feature. Maybe it is a document classifier that routes support tickets automatically, a recommendation engine that surfaces relevant products, or a natural language search interface that replaces a dozen dropdown filters. The idea sounds promising, but nobody knows if it will actually work with your data, your users, and your constraints.</p>
+<p>This is the moment where most companies make one of two mistakes. They either spend six months building a full production system that turns out to solve the wrong problem, or they talk about it in meetings for a year and never build anything. The correct move is in between: build a focused proof of concept in two weeks that answers the critical unknowns before committing real resources.</p>
+<p>A two-week AI proof of concept is not a toy demo. Done correctly, it produces a working system that ingests real data, generates real outputs, and gives stakeholders enough evidence to make a confident go or no-go decision. Here is how to structure those fourteen days.</p>
+<h2>Days 1-2: Define the Single Question Your POC Must Answer</h2>
+<p>The most important work happens before you write any code. A POC that tries to prove everything proves nothing. You need to isolate the single riskiest assumption about your AI feature and design the entire two weeks around testing it.</p>
+<p>Common riskiest assumptions include: Can the model achieve acceptable accuracy on our specific data? Will the latency be low enough for real-time use? Can we get the cost per inference below a viable threshold? Do users actually want this capability, or are we building something nobody asked for?</p>
+<p>Write the assumption as a falsifiable hypothesis. Not &ldquo;AI can help with customer support,&rdquo; but &ldquo;GPT-4o can classify incoming support tickets into our 12 existing categories with at least 85% accuracy using only the ticket subject and first 200 words of body text.&rdquo; This specificity is what makes the POC actionable.</p>
+<p>Define your success criteria numerically. What accuracy percentage makes this viable? What latency is the maximum acceptable? What cost per request is sustainable at your projected volume? Write these numbers down and get stakeholder agreement before day three. Moving the goalposts mid-sprint kills POCs.</p>
+<h2>Days 3-5: Assemble Your Data and Build the Pipeline</h2>
+<p>AI systems are only as good as the data feeding them. Days three through five are about getting real, representative data into a format your model can consume.</p>
+<p>Start with the data you already have. For the support ticket classifier example, export 1,000 to 5,000 recent tickets with their existing category labels. If you do not have labeled data, you will need to create a labeling session &mdash; get two team members to manually label 500 examples in a shared spreadsheet. This takes roughly four hours and is non-negotiable. Skipping this step means you have no ground truth to evaluate against.</p>
+<p>Clean the data ruthlessly. Remove duplicates, strip HTML artifacts, handle encoding issues, and standardize the label set. A common pitfall is discovering that your &ldquo;12 categories&rdquo; actually contain 47 variations due to typos and inconsistent naming. Normalize now.</p>
+<p>Build a minimal data pipeline using straightforward tools. A Python script that reads from a CSV or database, formats prompts, calls the API, and writes results to another CSV is perfectly adequate for a POC. Do not build a production-grade pipeline with message queues, retry logic, and monitoring. That comes later. Use a Jupyter notebook or a simple script.</p>
+<p>If you are using a large language model via API (OpenAI, Anthropic, etc.), design your prompt template during this phase. For classification tasks, few-shot prompting with 3-5 examples per category often outperforms zero-shot by 15-25 percentage points. Test a handful of examples manually before running the full batch.</p>
+<h2>Days 6-8: Run Experiments and Measure Results</h2>
+<p>With data and pipeline in place, days six through eight are for systematic experimentation. Run your model against your evaluation dataset and measure performance against the success criteria you defined on day two.</p>
+<p>Structure your experiments as a grid. Vary one dimension at a time: prompt strategy (zero-shot vs. few-shot vs. chain-of-thought), model selection (GPT-4o vs. GPT-4o-mini vs. Claude Sonnet), temperature settings (0.0 vs. 0.3 vs. 0.7), and input preprocessing (full text vs. truncated vs. summarized). Log every experiment with its parameters and results in a spreadsheet or simple tracking system.</p>
+<p>For classification tasks, compute precision, recall, and F1 score per category, not just overall accuracy. Aggregate accuracy can hide catastrophic failures in low-frequency categories. If your model gets 95% accuracy overall but misclassifies &ldquo;billing dispute&rdquo; tickets 60% of the time, you have a problem that the headline number masks.</p>
+<p>For generative tasks (summarization, content creation, chatbot responses), automated metrics are less reliable. Use a combination of automated checks (response length, format compliance, keyword presence) and human evaluation. Have two evaluators rate 100 outputs on a 1-5 scale for relevance, accuracy, and completeness. Calculate inter-rater agreement to ensure your evaluation is consistent.</p>
+<p>Track cost per request during this phase. If you are calling GPT-4o at $2.50 per million input tokens and your average request uses 2,000 tokens, that is $0.005 per request. At 10,000 requests per day, that is $50 daily or $1,500 monthly. These numbers matter. If the model that meets your accuracy threshold costs $15,000 per month at projected volume, you need to know that now.</p>
+<h2>Days 9-11: Build a Minimal Interface for Stakeholder Review</h2>
+<p>Numbers on a spreadsheet do not persuade executives. A working demo does. Days nine through eleven are for wrapping your AI pipeline in a minimal interface that stakeholders can interact with directly.</p>
+<p>This does not need to be beautiful. A Streamlit app, a simple Next.js page, or even a Slack bot will do. The interface needs to accept an input (paste a support ticket, upload a document, type a question), send it through your pipeline, and display the result with the confidence score or relevant metadata.</p>
+<p>Build in a feedback mechanism. Add a thumbs-up and thumbs-down button next to each result. This gives you real qualitative signal from stakeholders and future users. During your demo, ask people to try it with cases they know the answer to. Their reactions to correct and incorrect outputs will tell you more than any metric.</p>
+<p>Include a side-by-side comparison view if possible. Show the AI output next to the current manual process result. If your ticket classifier matches the human-assigned category 88% of the time, showing that directly is more persuasive than stating a number.</p>
+<p>If latency is a concern, display the response time for each request. Stakeholders need to feel the performance, not just hear about it. A system that returns results in 400 milliseconds feels instant. One that takes 8 seconds feels broken, even if the output is perfect.</p>
+<h2>Day 12-13: Document Findings and Production Requirements</h2>
+<p>With experiments complete and stakeholder feedback collected, days twelve and thirteen are for synthesis. Compile your findings into a brief, decision-oriented document.</p>
+<p>The document should cover five areas. First, <strong>results against success criteria</strong>: did you hit the numbers? Be honest. If accuracy was 78% against an 85% target, say so, but also explain what would likely close the gap (more training data, fine-tuning, better prompts, a different model). Second, <strong>cost projections</strong>: what will this cost at production volume? Include model API costs, infrastructure costs, and the engineering time to build and maintain the production system. Third, <strong>technical risks</strong>: what could go wrong? Model degradation over time, data drift, adversarial inputs, API rate limits, and vendor lock-in are common risks. Fourth, <strong>production requirements</strong>: what infrastructure, monitoring, and human-in-the-loop processes are needed? Fifth, <strong>recommended next steps</strong>: build, iterate, or kill.</p>
+<p>Be candid about what the POC did not test. A two-week POC cannot validate long-term model drift, edge cases in the long tail, or user adoption at scale. Name these gaps explicitly so stakeholders understand what remains uncertain.</p>
+<h2>Day 14: Present, Decide, and Plan the Path Forward</h2>
+<p>The final day is for the decision meeting. Present your findings to the stakeholders who will fund or kill the project. Structure the presentation around the original hypothesis, the evidence, and the recommendation.</p>
+<p>If the POC succeeded, propose a phased production plan. Phase one: build the production pipeline with monitoring, error handling, and human review for low-confidence outputs. Phase two: integrate into the existing product workflow. Phase three: expand to additional use cases. Estimate each phase in weeks, not months. If the POC took two weeks, phase one should take four to six weeks, not four to six months.</p>
+<p>If the POC failed, explain why and whether the failure is fixable. Sometimes the answer is &ldquo;this model cannot do this task with this data,&rdquo; and the right move is to stop. Other times the answer is &ldquo;we need 10x more labeled data&rdquo; or &ldquo;we need a different modeling approach,&rdquo; and the right move is a second, targeted POC.</p>
+<p>The worst outcome is ambiguity. If your POC did not produce a clear signal, the hypothesis was too broad or the success criteria were too vague. Learn from that and tighten the scope if you run another one.</p>
+<p>Two weeks is enough time to separate AI hype from AI value for your specific business. The discipline is in staying focused, measuring honestly, and letting the evidence drive the decision.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Ready to validate an AI feature for your product? <a href="/contact.html">Reach out to our team</a> and we will help you design and execute a focused proof of concept.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Build an AI Proof of Concept in 2 Weeks",
@@ -160,7 +76,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/how-to-build-an-ai-proof-of-concept-in-2-weeks/",
   "articleSection": "AI"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

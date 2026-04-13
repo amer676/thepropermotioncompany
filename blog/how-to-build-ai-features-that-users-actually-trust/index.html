@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,144 +6,53 @@
   <title>How to Build AI Features That Users Actually Trust</title>
   <meta name="description" content="Trust is the biggest barrier to AI adoption. Here is how to design AI features that users rely on.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/how-to-build-ai-features-that-users-actually-trust/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="How to Build AI Features That Users Actually Trust">
-  <meta property="og:description" content="Trust is the biggest barrier to AI adoption. Here is how to design AI features that users rely on.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-build-ai-features-that-users-actually-trust/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How to Build AI Features That Users Actually Trust">
-  <meta name="twitter:description" content="Trust is the biggest barrier to AI adoption. Here is how to design AI features that users rely on.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="How to Build AI Features That Users Actually Trust"><meta property="og:description" content="Trust is the biggest barrier to AI adoption. Here is how to design AI features that users rely on."><meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-build-ai-features-that-users-actually-trust/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Build AI Features That Users Actually Trust"><meta name="twitter:description" content="Trust is the biggest barrier to AI adoption. Here is how to design AI features that users rely on."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">November 11, 2022</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">AI</span><span class="blog-card-tag">UX</span>
-            </div>
-            <h1 class="blog-post-title">How to Build AI Features That Users Actually Trust</h1>
-            <p class="blog-post-desc">Trust is the biggest barrier to AI adoption. Here is how to design AI features that users rely on.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>How to Build AI Features That Users Actually Trust</h1>
-<p>Trust is the biggest barrier to AI adoption. Here is how to design AI features that users rely on.</p>
-<p>This is not a theoretical overview. Everything in this guide comes from production experience — systems we have built, problems we have solved, and patterns we have seen work across real projects.</p>
-<h2>What Most Teams Get Wrong About How To Build Ai</h2>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For how to build ai, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<p><strong>Not defining success criteria upfront.</strong> If you cannot articulate what success looks like for your how to build ai initiative, you will not know when you have achieved it. Define specific, measurable outcomes before development begins.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a how to build ai project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for how to build ai.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<h2>When How To Build Ai Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>A Decision Framework for How To Build Ai</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality how to build ai typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Architecture Patterns That Work</h2>
-<p>For how to build ai projects, certain architectural patterns consistently deliver better outcomes.</p>
-<p><strong>Start with a monolith.</strong> Microservices add complexity that early-stage projects do not need. Build a well-structured monolith first, then extract services when you have enough traffic and team size to justify the operational overhead.</p>
-<p><strong>Use managed services where possible.</strong> Managed databases, managed hosting, managed authentication — these save hundreds of hours of infrastructure maintenance. Your team should be building features, not managing servers.</p>
-<p><strong>Design for replaceability.</strong> Every third-party integration should be wrapped in an abstraction layer. When (not if) you need to swap out a vendor, the change should be isolated to one module, not spread across your codebase.</p>
-<p><strong>Cache strategically.</strong> Identify the most frequently accessed data and cache it close to the user. A simple caching layer can improve performance by 10x and reduce infrastructure costs significantly.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A healthcare organization needed to digitize a paper-based intake process while maintaining HIPAA compliance. Their previous vendor quoted twelve months and half a million dollars. We delivered a compliant system in eight weeks at a fraction of the cost. The difference: we did not build a platform. We built exactly what they needed.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about how to build ai, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">November 11, 2022</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">AI</span><span class="blog-card-tag">UX</span></div><h1 class="blog-post-title">How to Build AI Features That Users Actually Trust</h1><p class="blog-post-desc">Trust is the biggest barrier to AI adoption. Here is how to design AI features that users rely on.</p></div><div class="blog-post-content"><h1>How to Build AI Features That Users Actually Trust</h1>
+<p>Trust is the single biggest barrier to AI adoption in production software. Users have seen enough chatbots that hallucinate, recommendation engines that miss the mark, and automated decisions they cannot understand. The result is a credibility deficit: even when AI features work well, users approach them with skepticism that undermines adoption.</p>
+<p>The problem is not the technology. It is the design. Most AI features are shipped with the engineering team&rsquo;s priorities in mind (model accuracy, latency, throughput) rather than the user&rsquo;s priorities (reliability, predictability, control). Bridging this gap requires specific design patterns that build trust incrementally, give users agency, and communicate uncertainty honestly.</p>
+<h2>Set Expectations Before the First Interaction</h2>
+<p>Trust begins before the user ever sees an AI output. The framing you provide, what the feature does, what it does not do, and how confident it is, determines whether users evaluate outputs charitably or suspiciously.</p>
+<p>Be explicit about the AI&rsquo;s scope and limitations. Instead of &ldquo;AI-powered insights,&rdquo; say &ldquo;This summary is generated from your last 30 days of transaction data. It may miss transactions from linked accounts that sync with a delay.&rdquo; The first framing invites disappointment when the insights are imperfect. The second sets a specific expectation that makes imperfection understandable.</p>
+<p>Provide a brief, non-technical explanation of how the feature works. Users do not need to understand gradient descent, but they do need a mental model. &ldquo;We analyze patterns in similar projects to estimate your timeline&rdquo; is far more trustworthy than a black box. Research from the Stanford HAI group found that users who received simple explanations of AI reasoning were 28% more likely to follow AI recommendations compared to users who received no explanation.</p>
+<p>Avoid anthropomorphizing the AI. Language like &ldquo;I think&rdquo; or &ldquo;I believe&rdquo; from a non-human system triggers the uncanny valley of expectations. Users unconsciously apply human-level reliability expectations to systems that use human-like language, then feel betrayed when the system makes a clearly non-human error. Use language like &ldquo;Based on the available data, this analysis suggests&hellip;&rdquo; which is both more accurate and more trustworthy.</p>
+<p>Introduce AI features gradually. Do not launch with full automation. Start with AI-assisted workflows where the human remains in control: suggestions they can accept or reject, drafts they can edit, flags they can dismiss. As users experience the feature&rsquo;s accuracy firsthand, they develop calibrated trust. Only then should you offer options for increased automation.</p>
+<h2>Communicate Uncertainty Honestly</h2>
+<p>The most trust-destroying behavior an AI feature can exhibit is false confidence. When a model is 60% sure of something but presents it as fact, and it turns out to be wrong, users lose trust not just in that prediction but in the entire system. When the same model says &ldquo;we&rsquo;re moderately confident&rdquo; and it is wrong, users mentally file it as a reasonable miss.</p>
+<p>Display confidence levels in a way users can interpret. Raw probability scores (0.73) are meaningless to most users. Translate them into intuitive categories: high confidence, moderate confidence, low confidence. Better yet, tie confidence to actionable guidance: &ldquo;High confidence — safe to proceed without review&rdquo; versus &ldquo;Low confidence — we recommend manual review before acting on this.&rdquo;</p>
+<p>Use visual design to encode uncertainty. A recommendation shown with a solid border and a checkmark icon communicates certainty. The same recommendation with a dashed border and a question mark icon signals tentativeness. Color saturation is another effective channel: high-confidence outputs in full color, low-confidence outputs in a muted or desaturated palette. These visual cues are processed pre-attentively, meaning users calibrate their expectations before they even read the content.</p>
+<p>Show the inputs that drove the output. When an AI feature recommends a price of $45 for a product, show the user: &ldquo;Based on 12 comparable products in the same category, priced between $38 and $52, with an average of $44.60.&rdquo; This lets the user evaluate the recommendation using their own domain knowledge. If they know their product has a premium feature that the comparables lack, they can adjust upward with confidence rather than wondering whether the AI already accounted for it.</p>
+<p>Provide explicit escape hatches. Every AI-generated output should have a clear path to a non-AI alternative. If the AI-generated email subject line does not feel right, the user should be able to type their own with zero friction. If the automated categorization is wrong, correcting it should take one click. The existence of the escape hatch reduces anxiety even when users rarely use it.</p>
+<h2>Design Feedback Loops That Actually Work</h2>
+<p>User feedback is essential for improving AI features, but most feedback mechanisms are designed for the engineering team&rsquo;s convenience rather than the user&rsquo;s natural workflow. A thumbs-up/thumbs-down button on an AI output captures a signal, but it is a weak one. The user cannot express why the output was bad, and the binary signal has low information density.</p>
+<p>Design feedback that fits the user&rsquo;s task flow. Instead of a standalone rating widget, let users provide feedback by acting on the AI output. If the AI suggests three email responses, the one the user clicks and sends is positive feedback. The ones they ignore are weak negative signals. The one they click, heavily edit, and then send is rich negative feedback that includes the correction. This implicit feedback is far more abundant and reliable than explicit ratings.</p>
+<p>When you do need explicit feedback, make it contextual and specific. Instead of &ldquo;Was this helpful? Yes/No,&rdquo; ask &ldquo;Was this price estimate: Too high / About right / Too low.&rdquo; This gives the user a question they can answer in one second while providing directionally useful training data.</p>
+<p>Close the feedback loop visibly. When a user corrects an AI output, acknowledge it: &ldquo;Thanks, we&rsquo;ll use this to improve future suggestions.&rdquo; Even better, show the improvement over time: &ldquo;Your corrections have improved categorization accuracy from 78% to 91% for your account.&rdquo; This transforms the user from a passive consumer of AI output into an active participant in the system&rsquo;s improvement, which deepens engagement and trust.</p>
+<p>Be cautious about feedback-driven personalization that narrows too quickly. If a user corrects three recommendations in a row, do not dramatically shift the model&rsquo;s behavior. Gradual adaptation prevents the system from overreacting to temporary preference changes and maintains the user&rsquo;s sense that the system is stable and predictable.</p>
+<h2>Handle Errors and Edge Cases Gracefully</h2>
+<p>AI features will produce wrong outputs. The question is not whether errors happen but how the system handles them. Error handling is the highest-leverage trust-building opportunity because users form lasting impressions from recovery experiences.</p>
+<p>Never fail silently. If the AI cannot produce a result (model timeout, insufficient data, confidence below threshold), say so explicitly. &ldquo;We don&rsquo;t have enough data to generate a reliable estimate for this category yet. Here&rsquo;s what we can show you based on the data we do have.&rdquo; A transparent limitation is infinitely better than a silently bad result.</p>
+<p>Distinguish between different error types in your UX. A temporary failure (the model service is briefly unavailable) should show a clear &ldquo;try again&rdquo; option with no alarm. A data insufficiency (the user has not generated enough history for the feature to work well) should explain what is needed and set a timeline: &ldquo;After 30 days of usage, your personalized insights will become available.&rdquo; A known limitation (the model does not handle a specific edge case well) should redirect to an alternative: &ldquo;For international transactions, we recommend using the manual categorization tool.&rdquo;</p>
+<p>Implement anomaly detection on AI outputs before showing them to users. If your pricing model suddenly recommends a product at $5 when comparable products are $50, that output should be caught by a sanity check and withheld rather than displayed. Set bounds based on historical output distributions: any output more than 3 standard deviations from the mean gets flagged for review or replaced with a safe default.</p>
+<p>When errors do reach users, make correction frictionless. One-tap correction, inline editing, and &ldquo;undo&rdquo; functionality should be immediate and obvious. The cost of correcting an AI mistake should never exceed the cost of doing the task manually in the first place.</p>
+<h2>Measure Trust, Not Just Accuracy</h2>
+<p>Most teams measure AI feature success through model accuracy metrics: precision, recall, F1 score, RMSE. These metrics matter for the engineering team, but they are poor proxies for user trust. A model with 90% accuracy that users do not trust will see lower adoption than a model with 80% accuracy that users trust and use comfortably.</p>
+<p>Track adoption metrics: what percentage of eligible users engage with the AI feature, how often they accept AI suggestions versus overriding them, and how these metrics trend over time. A healthy trust curve shows increasing acceptance rates over a user&rsquo;s first 30 to 60 days as they calibrate their expectations.</p>
+<p>Measure override patterns. If users consistently override the AI for specific input types, that reveals a systematic weakness worth fixing. If override rates are uniformly distributed, the AI is not systematically biased but might need a general accuracy improvement.</p>
+<p>Run qualitative research. In-app surveys that ask &ldquo;How much do you trust the AI-generated [feature]?&rdquo; on a 1-5 scale, sampled from 5% of interactions, give you a direct trust metric. Combine this with user interviews to understand the why behind the numbers. Trust is emotional and contextual; quantitative metrics alone do not capture the full picture.</p>
+<p>A/B test trust-building interventions. Compare acceptance rates between users who see confidence indicators versus those who do not. Compare users who receive explanations versus those who see raw outputs. These experiments let you invest your design effort where it has the highest impact on user behavior.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Building AI features that users trust is a design discipline, not just a modeling discipline. If you are adding AI capabilities to your product and want to ensure they drive adoption rather than skepticism, <a href="/contact.html">talk to our team</a> about designing AI experiences that earn user confidence.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Build AI Features That Users Actually Trust",
@@ -165,7 +72,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/how-to-build-ai-features-that-users-actually-trust/",
   "articleSection": "AI"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

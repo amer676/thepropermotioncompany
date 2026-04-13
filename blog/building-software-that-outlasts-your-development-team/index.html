@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,144 +6,75 @@
   <title>Building Software That Outlasts Your Development Team</title>
   <meta name="description" content="Architecture, documentation, and handoff practices that ensure software longevity.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/building-software-that-outlasts-your-development-team/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Building Software That Outlasts Your Development Team">
-  <meta property="og:description" content="Architecture, documentation, and handoff practices that ensure software longevity.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/building-software-that-outlasts-your-development-team/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Building Software That Outlasts Your Development Team">
-  <meta name="twitter:description" content="Architecture, documentation, and handoff practices that ensure software longevity.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Building Software That Outlasts Your Development Team"><meta property="og:description" content="Architecture, documentation, and handoff practices that ensure software longevity."><meta property="og:url" content="https://thepropermotioncompany.com/blog/building-software-that-outlasts-your-development-team/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Building Software That Outlasts Your Development Team"><meta name="twitter:description" content="Architecture, documentation, and handoff practices that ensure software longevity."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">August 01, 2023</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">sustainability</span>
-            </div>
-            <h1 class="blog-post-title">Building Software That Outlasts Your Development Team</h1>
-            <p class="blog-post-desc">Architecture, documentation, and handoff practices that ensure software longevity.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Building Software That Outlasts Your Development Team</h1>
-<p>Architecture, documentation, and handoff practices that ensure software longevity.</p>
-<p>Before you make any decisions about building software that outlasts, read this. It will save you time, money, and the particular frustration that comes from learning expensive lessons the hard way.</p>
-<h2>The Build Process</h2>
-<p>Building building software that outlasts well requires discipline in a few specific areas.</p>
-<p><strong>Requirements documentation</strong> does not need to be a 50-page spec. It needs to be specific enough that two different developers reading it would build the same thing. User stories with acceptance criteria work well for most projects.</p>
-<p><strong>Design before development.</strong> Wireframes and prototypes are cheap to change. Production code is expensive to change. Invest a week in design review before starting development. This single practice prevents more problems than any other.</p>
-<p><strong>Weekly delivery cadence.</strong> Ship something testable every week. Not a demo — a working piece of software that a real person can use and give feedback on. Weekly delivery creates accountability and catches problems early.</p>
-<p><strong>Automated testing</strong> is an investment that pays for itself within weeks. Manual testing does not scale. Every feature should have tests that run automatically on every code change. This is what allows you to move fast without breaking things.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for building software that outlasts.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<h2>What Most Teams Get Wrong About Building Software That Outlasts</h2>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For building software that outlasts, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For building software that outlasts, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Skipping user research.</strong> Building building software that outlasts without talking to the people who will actually use it is like designing a house without asking who lives there. Five conversations with real users will save you more money than any amount of internal brainstorming.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>When Building Software That Outlasts Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>A Decision Framework for Building Software That Outlasts</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality building software that outlasts typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>An e-commerce company outgrew Shopify but was terrified of the migration. Their catalog was complex, their integrations were fragile, and their team had no backend experience. We ran the migration in phases — zero downtime, zero lost orders, and a 40% improvement in page load time on the new stack.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Taking Action</h2>
-<p>Reading about building software that outlasts is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">August 01, 2023</span><span class="blog-card-read">8 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">sustainability</span></div><h1 class="blog-post-title">Building Software That Outlasts Your Development Team</h1><p class="blog-post-desc">Architecture, documentation, and handoff practices that ensure software longevity.</p></div><div class="blog-post-content"><h1>Building Software That Outlasts Your Development Team</h1>
+<p>The average tenure of a software developer at a single company is 2.2 years. For startups, it is closer to 18 months. This means that within three years of launching a product, the people who designed and built it are likely gone. The question is not whether your development team will turn over &ndash; it will. The question is whether the software they built will remain comprehensible, maintainable, and extensible after they leave.</p>
+<p>Most software does not survive this transition well. The new team inherits a codebase they did not build, with architectural decisions they do not understand, conventions they cannot identify, and implicit knowledge that exists only in the heads of people who no longer work there. They spend months navigating the code through trial and error, afraid to change things they do not understand, and slowly the software ossifies into a system that can be maintained but not improved.</p>
+<p>This is not inevitable. Software can be built to survive team turnover gracefully. It requires deliberate practices in architecture, documentation, testing, and knowledge transfer &ndash; practices that add modest cost during initial development but pay enormous dividends when the team changes.</p>
+<h2>Architecture That Explains Itself</h2>
+<p>The most maintainable codebases are the ones where a new developer can open the project, look at the directory structure, and understand how the application is organized within the first 30 minutes.</p>
+<p><strong>Use conventional project structure.</strong> Every framework community has established project structures. Rails applications have <code>app/models</code>, <code>app/controllers</code>, <code>app/views</code>. Next.js projects use <code>pages/</code> or <code>app/</code> for routing, <code>components/</code> for UI elements, and <code>lib/</code> for utilities. Django projects organize by apps. Follow these conventions exactly. A new developer who has worked with the framework before can navigate a conventional project immediately. A &ldquo;creative&rdquo; directory structure that makes sense to the original team is an indecipherable maze to everyone else.</p>
+<p><strong>Organize by domain, not by layer.</strong> For applications of moderate complexity (more than 20 models or resource types), organize code by business domain rather than technical layer. Instead of putting all models in one directory, all services in another, and all controllers in a third, group related code together:</p>
+<pre><code>/src
+  /billing
+    billing.controller.ts
+    billing.service.ts
+    invoice.model.ts
+    payment.model.ts
+    billing.test.ts
+  /properties
+    properties.controller.ts
+    properties.service.ts
+    property.model.ts
+    unit.model.ts
+    properties.test.ts
+</code></pre>
+<p>When a developer needs to work on billing, everything they need is in one directory. They do not need to hunt across six directories to find the four files related to billing.</p>
+<p><strong>Explicit dependency injection.</strong> When a service depends on another service or on external systems (databases, APIs, message queues), pass those dependencies explicitly through constructor parameters or function arguments rather than importing them directly. This makes dependencies visible (you can see what a service needs by looking at its constructor), makes testing straightforward (pass mock dependencies in tests), and makes the system&rsquo;s architecture legible (the dependency graph is explicit, not hidden in import statements scattered throughout the code).</p>
+<p><strong>Limit the blast radius of changes.</strong> Design modules with clear boundaries so that changes to one module do not ripple through the entire codebase. The key mechanism is defining interfaces (TypeScript interfaces, Python protocols, or Java/Kotlin interfaces) between modules. Module A depends on an interface, and Module B implements that interface. Changing Module B&rsquo;s implementation does not require changing Module A, as long as the interface contract is maintained.</p>
+<h2>Documentation That Actually Gets Read</h2>
+<p>Most software documentation fails because it tries to be comprehensive. A 50-page architecture document written during the initial design phase is outdated within three months and read by no one. Effective documentation is specific, close to the code, and maintained as part of the development workflow.</p>
+<p><strong>README as the entry point.</strong> The project README should answer five questions in under two minutes of reading: What does this application do (one paragraph)? How do I run it locally (step-by-step commands)? How do I run the tests? How is the project organized (directory structure with one-line descriptions)? Where do I find more detailed documentation?</p>
+<p>If a new developer cannot go from cloning the repository to a running local instance in under 15 minutes by following the README, the documentation has failed its primary mission.</p>
+<p><strong>Architecture Decision Records (ADRs).</strong> The most valuable documentation is not what the architecture is &ndash; a new developer can figure that out by reading the code. The most valuable documentation is why the architecture is the way it is. Architecture Decision Records capture the context, options considered, and rationale for significant technical decisions.</p>
+<p>An ADR is a short document (one page) that records: the decision title (&ldquo;Use PostgreSQL instead of MongoDB for the primary database&rdquo;), the date, the context (what was the situation and the forces at play), the decision (what was chosen), the consequences (what trade-offs were accepted), and the status (accepted, superseded, deprecated).</p>
+<p>Store ADRs in the repository (a <code>/docs/adr/</code> directory) so they are versioned alongside the code. When a new developer asks &ldquo;Why did you choose this approach instead of the obvious alternative?&rdquo;, the ADR answers that question even when the original team is gone. Twelve to twenty ADRs covering the major decisions in a project prevent hundreds of hours of &ldquo;why was this done this way?&rdquo; conversations.</p>
+<p><strong>Inline documentation for the non-obvious.</strong> Do not document what the code does &ndash; the code itself communicates that (if it is well-written). Document why the code does something unexpected. If there is a workaround for a third-party API bug, explain the bug and link to the issue tracker. If a performance optimization makes the code less readable, explain the performance problem it solves with numbers. If a business rule seems arbitrary, explain the business context.</p>
+<p><strong>Runbooks for operational procedures.</strong> Document how to perform every operational task that happens more than once a year: deploying to production, rolling back a deployment, restoring a database backup, rotating API keys, handling a security incident, adding a new environment, and onboarding a new developer. Each runbook should be a step-by-step checklist that a developer who has never performed the task can follow successfully.</p>
+<h2>Testing as Living Documentation</h2>
+<p>A comprehensive test suite is the most reliable form of documentation because it is verified every time the CI pipeline runs. Tests that pass are documentation that is, by definition, accurate.</p>
+<p><strong>Name tests as specifications.</strong> Test names should read as statements about the system&rsquo;s behavior: &ldquo;when a tenant submits a maintenance request after hours, an emergency notification is sent to the on-call technician.&rdquo; A new developer reading the test file should understand the system&rsquo;s requirements without reading any other documentation.</p>
+<p><strong>Test at the right level.</strong> Unit tests document how individual functions behave. Integration tests document how components work together. End-to-end tests document the critical user paths through the application. Each level serves a different documentation purpose:</p>
+<p>Unit tests answer: &ldquo;Given these inputs, what does this function return?&rdquo; They are the specification for individual behaviors.</p>
+<p>Integration tests answer: &ldquo;When this API endpoint is called with this payload, what happens in the database and what is returned?&rdquo; They are the specification for component contracts.</p>
+<p>End-to-end tests answer: &ldquo;Can a user log in, create a work order, and see it on their dashboard?&rdquo; They are the specification for user-facing workflows.</p>
+<p><strong>Test data builders and factories.</strong> Create test helper functions that generate realistic test data. A <code>buildTenant()</code> factory that creates a tenant with sensible defaults and allows overriding specific fields tells a new developer what a tenant entity looks like and which fields matter for different scenarios. This is more informative than any schema diagram.</p>
+<h2>Dependency Management and Upgrade Paths</h2>
+<p>One of the most common ways software becomes unmaintainable after team turnover is through dependency rot. Dependencies stop being updated, security vulnerabilities accumulate, and eventually the application is running on frameworks and libraries that are years out of date.</p>
+<p><strong>Pin major versions, allow patches.</strong> In your package manager configuration, pin the major version of every dependency and allow automatic patch updates. In npm terms, use <code>~1.2.3</code> (allows patches) rather than <code>^1.2.3</code> (allows minor version bumps that sometimes introduce breaking changes) or <code>*</code> (allows anything). Run <code>npm audit</code> or <code>bundle audit</code> weekly in CI and treat high-severity vulnerabilities as blocking issues.</p>
+<p><strong>Document your dependency choices.</strong> For every dependency that is not immediately obvious, document why it was chosen and what it would take to replace it. If you use a specific charting library, note the alternatives you considered and why this one was selected. When the dependency becomes unmaintained (a near certainty over a five-year horizon), the replacement decision has a head start.</p>
+<p><strong>Avoid deep dependencies on volatile libraries.</strong> Wrap third-party libraries behind your own abstraction layers for functionality that is likely to change providers. If you use a specific email sending service, create a <code>MailService</code> interface that your application depends on and implement it with the specific provider. When the provider changes pricing or goes out of business, you replace one implementation file, not fifty call sites scattered across the codebase.</p>
+<p><strong>Keep the framework current.</strong> The single highest-impact dependency maintenance task is keeping your web framework within one major version of current. A Rails app on Rails 6 when Rails 7 is current is manageable. A Rails app on Rails 4 when Rails 7 is current is a multi-month migration project. Schedule framework updates every six to twelve months, test thoroughly, and deploy incrementally.</p>
+<h2>Handoff Practices That Preserve Knowledge</h2>
+<p>Even with excellent architecture, documentation, and tests, the transition between teams requires deliberate knowledge transfer.</p>
+<p><strong>Structured handoff sessions.</strong> When a developer leaves, schedule three to five recorded video sessions covering: the overall architecture and how the pieces fit together, the three to five most complex areas of the codebase and why they are complex, the deployment and operational procedures, known technical debt and areas that need improvement, and tribal knowledge that is not documented anywhere (the &ldquo;gotchas&rdquo; that the leaving developer has learned through experience).</p>
+<p>Record these sessions and store them in the repository or a shared drive. A 30-minute video of the original developer walking through the billing module is worth more than ten pages of written documentation because it captures nuance, emphasis, and context that writing misses.</p>
+<p><strong>Pair programming during transitions.</strong> Before a developer leaves, have them pair with their replacement on actual feature work for at least two weeks. The new developer drives (writes the code) while the departing developer navigates (provides context and guidance). This transfers not just knowledge about the codebase but knowledge about the development workflow, debugging techniques, and the reasoning behind conventions.</p>
+<p><strong>Maintain a &ldquo;questions&rdquo; channel.</strong> After a developer leaves, the remaining team will have questions. If the departing developer is willing, establish a time-limited channel (30 days of Slack access, for example) where the team can ask specific questions. Most questions cluster in the first two weeks and taper off quickly. This small investment prevents days of reverse-engineering time.</p>
+<p>Software that survives team turnover is not built with exotic techniques. It is built with discipline: consistent structure, explicit decisions, comprehensive tests, and documentation that answers &ldquo;why&rdquo; rather than &ldquo;what.&rdquo; The teams that practice this discipline ship software that remains an asset for years. The teams that do not ship software that becomes a liability the moment the original developers leave.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If you are building software that needs to last beyond your current team, or if you have inherited a codebase that needs to be made maintainable, <a href="/contact.html">contact The Proper Motion Company</a>. We build software with longevity as a first-class requirement and help teams establish the practices that make codebases survivable.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building Software That Outlasts Your Development Team",
@@ -165,7 +94,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/building-software-that-outlasts-your-development-team/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

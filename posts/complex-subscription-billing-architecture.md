@@ -1,0 +1,79 @@
+# Complex Subscription Billing Architecture
+
+Simple subscription billing, charging a flat monthly fee for access to a product, is a solved problem. Stripe Billing, Chargebee, and Recurly handle it well. But the moment your pricing model involves usage-based components, tiered thresholds, multi-dimensional metering, seat-based charges with overage, annual commitments with monthly true-ups, or marketplace revenue splits, those platforms start requiring workarounds that become the most fragile part of your system. Understanding the architecture of complex billing, and deciding what to build versus what to buy, is a critical infrastructure decision for any SaaS company moving beyond simple tiers.
+
+## Why Billing Complexity Grows with Product-Market Fit
+
+Early-stage products launch with simple pricing because the goal is adoption, not revenue optimization. Three tiers (starter, pro, enterprise) with flat monthly fees. This works until the product finds product-market fit and the revenue team starts hearing the same objection from different customer segments: "Your pricing does not match how we get value from the product."
+
+An API company discovers that small customers prefer pay-per-call pricing while enterprise customers want committed-use discounts. A data platform learns that customers want to pay based on data volume ingested, queries run, and seats, all in the same invoice. A marketplace realizes that take rates should vary by transaction type, seller tier, and geography.
+
+Each of these realizations pushes the billing system toward greater complexity. The business need is legitimate: aligning price with value increases willingness to pay, reduces churn, and opens new market segments. The engineering challenge is that billing is an area where bugs have direct financial consequences and where the combinatorial explosion of pricing dimensions quickly outpaces what generic billing platforms were designed to handle.
+
+Twilio, Snowflake, AWS, and Datadog all built custom billing infrastructure. Not because they enjoy building billing systems, but because their pricing models are core to their competitive strategy and too complex for off-the-shelf tools.
+
+## Usage Metering: The Foundation Layer
+
+In any usage-based billing model, the metering system is the foundational layer. It answers the question: how much of what did each customer use during each billing period?
+
+Metering requires instrumenting your product to emit usage events. An API platform emits an event for each API call. A storage platform tracks bytes stored per hour. A compute platform measures CPU-seconds consumed. These events must be durable (no event lost), idempotent (no event counted twice), and attributable (each event linked to a specific customer and billable dimension).
+
+The volume of metering data is often orders of magnitude larger than any other data in the system. An API product serving 1,000 customers making an average of 100,000 calls per day generates 100 million metering events per day. Storing and aggregating this data efficiently requires purpose-built infrastructure.
+
+A practical architecture uses a message queue (Kafka) to collect raw usage events from the product. A stream processor (Flink, Kafka Streams, or even a simple consumer) aggregates events into per-customer, per-dimension, per-hour buckets and writes the aggregated counts to a database. The billing system reads from these aggregated buckets at invoice time rather than re-processing raw events.
+
+Pre-aggregation is critical for performance and cost. A billing run that sums raw events for 10,000 customers across a month of data is expensive and slow. A billing run that reads pre-aggregated hourly buckets is fast and cheap. The trade-off is that pre-aggregation introduces a fixed granularity (hourly, in this example) that cannot be refined after the fact. Choose a granularity that is fine enough for your billing precision requirements. Hourly is sufficient for most use cases. Per-minute is necessary for compute and telephony billing.
+
+Idempotency deserves special attention. If a usage event is processed twice, the customer is overbilled. If an event is lost, the customer is underbilled. Event IDs plus deduplication at the consumer layer handle double-processing. Durable message queues with at-least-once delivery plus idempotent processing handle event loss. The metering system should have automated reconciliation that compares raw event counts against aggregated counts and flags discrepancies.
+
+## Rating Engines and Price Calculation
+
+The rating engine takes aggregated usage data and applies pricing rules to compute charges. This is where the real complexity lives, because pricing rules are inherently business-specific and change frequently.
+
+A simple rating rule might be: API calls cost $0.001 each. A modestly complex rule: the first 100,000 calls per month are included in the base fee, calls 100,001 to 1,000,000 cost $0.0008 each, and calls above 1,000,000 cost $0.0005 each. A genuinely complex rule: the per-call price depends on the API endpoint called (standard versus premium), the response latency tier (standard versus low-latency), the customer's committed annual volume, and whether the call occurred during peak or off-peak hours.
+
+The rating engine must be able to evaluate these rules efficiently and correctly. A rules-based approach, where pricing logic is expressed as data (JSON or a DSL) rather than hard-coded, provides the flexibility to change pricing without deploying new code. The pricing configuration might look like:
+
+Dimension: api_calls. Tiers: 0-100000 at $0.00 (included), 100001-1000000 at $0.0008, 1000001+ at $0.0005. Modifiers: premium_endpoint multiplier 1.5x, low_latency_tier multiplier 1.2x.
+
+This configuration is interpreted by a generic rating function that applies tiers and modifiers to the aggregated usage data. The configuration lives in a database and can be versioned (each pricing change creates a new version), enabling retroactive billing adjustments and audit trails.
+
+For committed-use discounts (where a customer pre-commits to a volume and receives a lower rate), the rating engine needs to track cumulative usage against the commitment. Usage within the commitment is rated at the committed rate. Usage above the commitment is rated at the on-demand rate. If the customer under-utilizes their commitment, the shortfall may still be billed (a "use it or lose it" model) or rolled over (a "rollover credits" model). Each approach has different implications for the rating logic.
+
+## Invoice Generation and Ledger Design
+
+The invoice is the financial artifact that customers see, accountants reconcile, and auditors examine. Getting it right matters for trust, compliance, and operational efficiency.
+
+An invoice consists of line items, each representing a charge for a specific product, plan, or usage dimension during the billing period. The line item includes a description, a quantity, a unit price, a total, and any applicable taxes or discounts. For usage-based charges, the line item should reference the metering data that produced the quantity, enabling the customer to verify the charge.
+
+The double-entry ledger is the backbone of a correct billing system. Every financial event (charge, payment, credit, refund, adjustment) is recorded as a pair of debits and credits that balance. A charge creates a debit to the customer's accounts receivable and a credit to revenue. A payment creates a debit to cash and a credit to accounts receivable. A refund reverses the payment entries and creates new ones.
+
+Implementing a proper ledger is more work than maintaining a single "balance" field on the customer record, but it provides auditability, enables accurate revenue recognition, and prevents the subtle accounting errors that arise from ad-hoc balance tracking. Open-source ledger libraries and purpose-built billing ledger databases exist, but even a well-designed PostgreSQL schema with immutable transaction records (insert-only, never update or delete) serves the purpose.
+
+Proration handles mid-cycle plan changes. If a customer upgrades from a $100/month plan to a $200/month plan on day 15 of a 30-day billing cycle, they should be credited for the unused portion of the old plan ($50) and charged for the remaining portion of the new plan ($100), resulting in a net charge of $50. The calculation is straightforward for flat-rate plans but becomes complex when multiple usage-based dimensions are involved. Define a clear proration policy (prorated, immediate full charge, or effective next cycle) and implement it consistently.
+
+## Revenue Recognition and Financial Reporting
+
+For SaaS companies, especially those with committed contracts and usage-based components, revenue recognition under ASC 606 is a significant accounting challenge that the billing system must support.
+
+ASC 606 requires identifying performance obligations in a contract, determining the transaction price, allocating the price to each obligation, and recognizing revenue as each obligation is satisfied. For a SaaS product with a $120,000 annual contract that includes a platform fee and usage-based charges, the platform fee is recognized ratably over the contract term (monthly), while usage-based charges are recognized as usage occurs.
+
+The billing system should track contract terms, performance obligations, and recognized versus deferred revenue. At minimum, provide monthly reports showing: total billed revenue, recognized revenue, deferred revenue, and the reconciliation between them. Your finance team and auditors will need this data, and reconstructing it from invoices and payment records after the fact is time-consuming and error-prone.
+
+Stripe Revenue Recognition and specialized tools like Leapfin or Softrax handle revenue recognition for straightforward billing models. For complex models with multi-element arrangements, variable consideration, and contract modifications, the billing system often needs to provide structured data that feeds into these tools rather than relying on them to infer the accounting treatment from raw transactions.
+
+## Build, Buy, or Hybrid
+
+The build-versus-buy decision for billing depends on your pricing model's complexity and how central pricing is to your competitive strategy.
+
+For standard seat-based or flat-tier pricing, Stripe Billing handles everything. Do not build custom billing infrastructure for a $49/$99/$199 three-tier pricing page.
+
+For moderate complexity (usage-based with a single dimension, or seats plus overage), platforms like Stripe Billing with usage records, Chargebee, or Orb can handle the model with configuration. The rating logic is simple enough that a generic platform can express it.
+
+For high complexity (multi-dimensional usage, committed-use discounts, marketplace splits, custom enterprise pricing per contract), a hybrid approach typically works best. Use Stripe as the payment processor and subscription management layer. Build a custom metering, rating, and invoicing layer on top. Feed calculated charges into Stripe as invoice line items. Let Stripe handle payment collection, retry logic, and receipt generation.
+
+The hybrid approach gives you full control over the billing logic that differentiates your pricing while avoiding the undifferentiated heavy lifting of payment processing, PCI compliance, and dunning management.
+
+---
+
+If your pricing model has outgrown your billing infrastructure, or if you are designing a usage-based pricing model and want to get the architecture right from the start, [reach out to us](/contact.html). We build billing systems that handle the complexity so your revenue team can focus on growth.

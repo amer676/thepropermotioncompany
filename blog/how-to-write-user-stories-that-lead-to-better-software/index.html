@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,151 +6,82 @@
   <title>How to Write User Stories That Lead to Better Software</title>
   <meta name="description" content="How to Write User Stories That Lead to Better Software. A practical guide to user stories that developers can build from effectively. Expert insights from The P">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/how-to-write-user-stories-that-lead-to-better-software/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="How to Write User Stories That Lead to Better Software">
-  <meta property="og:description" content="How to Write User Stories That Lead to Better Software. A practical guide to user stories that developers can build from effectively. Expert insights from The P">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-write-user-stories-that-lead-to-better-software/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How to Write User Stories That Lead to Better Software">
-  <meta name="twitter:description" content="How to Write User Stories That Lead to Better Software. A practical guide to user stories that developers can build from effectively. Expert insights from The P">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="How to Write User Stories That Lead to Better Software"><meta property="og:description" content="How to Write User Stories That Lead to Better Software. A practical guide to user stories that developers can build from effectively. Expert insights from The P"><meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-write-user-stories-that-lead-to-better-software/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Write User Stories That Lead to Better Software"><meta name="twitter:description" content="How to Write User Stories That Lead to Better Software. A practical guide to user stories that developers can build from effectively. Expert insights from The P"><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">March 30, 2024</span>
-              <span class="blog-card-read">7 min read</span>
-              <span class="blog-card-tag">product</span><span class="blog-card-tag">process</span>
-            </div>
-            <h1 class="blog-post-title">How to Write User Stories That Lead to Better Software</h1>
-            <p class="blog-post-desc">How to Write User Stories That Lead to Better Software. A practical guide to user stories that developers can build from effectively. Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>How to Write User Stories That Lead to Better Software</h1>
-<p>A practical guide to user stories that developers can build from effectively.</p>
-<p>Before you make any decisions about how to write user, read this. It will save you time, money, and the particular frustration that comes from learning expensive lessons the hard way.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A professional services firm was running their client communication through a combination of email, Slack, shared drives, and a CRM that nobody updated. Their clients were frustrated. Their team was drowning. We built a single portal that unified everything. The first month after launch, client satisfaction scores jumped and internal time spent on admin tasks dropped measurably.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>A Decision Framework for How To Write User</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality how to write user typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>What Most Teams Get Wrong About How To Write User</h2>
-<p><strong>Skipping user research.</strong> Building how to write user without talking to the people who will actually use it is like designing a house without asking who lives there. Five conversations with real users will save you more money than any amount of internal brainstorming.</p>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For how to write user, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For how to write user, identify the three things that matter most and make those excellent before adding anything else.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for how to write user.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<h2>When How To Write User Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a how to write user project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>The Build Process</h2>
-<p>Building how to write user well requires discipline in a few specific areas.</p>
-<p><strong>Requirements documentation</strong> does not need to be a 50-page spec. It needs to be specific enough that two different developers reading it would build the same thing. User stories with acceptance criteria work well for most projects.</p>
-<p><strong>Design before development.</strong> Wireframes and prototypes are cheap to change. Production code is expensive to change. Invest a week in design review before starting development. This single practice prevents more problems than any other.</p>
-<p><strong>Weekly delivery cadence.</strong> Ship something testable every week. Not a demo — a working piece of software that a real person can use and give feedback on. Weekly delivery creates accountability and catches problems early.</p>
-<p><strong>Automated testing</strong> is an investment that pays for itself within weeks. Manual testing does not scale. Every feature should have tests that run automatically on every code change. This is what allows you to move fast without breaking things.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about how to write user, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">March 30, 2024</span><span class="blog-card-read">10 min read</span><span class="blog-card-tag">product</span><span class="blog-card-tag">process</span></div><h1 class="blog-post-title">How to Write User Stories That Lead to Better Software</h1><p class="blog-post-desc">How to Write User Stories That Lead to Better Software. A practical guide to user stories that developers can build from effectively. Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>How to Write User Stories That Lead to Better Software</h1>
+<p>User stories are the bridge between what a business needs and what a development team builds. When written well, they give developers the context to make good implementation decisions, testers the criteria to verify that the feature works, and product managers a clear unit of work to prioritize and track. When written poorly, they become a game of telephone where the original intent gets distorted at every stage.</p>
+<p>The gap between good and bad user stories is not about following a template. The classic &ldquo;As a [user], I want [goal], so that [reason]&rdquo; format is a starting point, not a finish line. Most teams get the format right but miss the substance &ndash; the details that prevent a developer from having to guess what the product manager actually meant, and the boundaries that prevent scope creep from turning a two-day task into a two-week rabbit hole.</p>
+<h2>Anatomy of a Story That Developers Can Build From</h2>
+<p>A complete user story has five components. The narrative (the &ldquo;As a / I want / So that&rdquo; statement) is just the first.</p>
+<p><strong>1. The narrative</strong> establishes context and intent. &ldquo;As a hiring manager, I want to filter applicants by years of experience, so that I can quickly identify candidates who meet the minimum qualification for a role.&rdquo; This tells the developer who the user is, what they want to accomplish, and why it matters. The &ldquo;so that&rdquo; clause is often skipped, and it should not be &ndash; it gives the developer permission to suggest alternative implementations that achieve the same goal.</p>
+<p><strong>2. Acceptance criteria</strong> define what &ldquo;done&rdquo; looks like. These are testable conditions that must be true for the story to be accepted. For the filter example:
+- The filter appears on the applicant list page as a dropdown or range input.
+- The filter supports &ldquo;minimum years&rdquo; (e.g., &ldquo;5+ years&rdquo;), &ldquo;range&rdquo; (e.g., &ldquo;3-7 years&rdquo;), and &ldquo;exact&rdquo; (e.g., &ldquo;5 years&rdquo;).
+- Filtering updates the applicant list without a full page reload.
+- The active filter is displayed as a removable chip above the list.
+- When no applicants match the filter, a message reads &ldquo;No applicants match your filters. Try broadening your criteria.&rdquo;
+- The filter state persists if the user navigates away and returns to the page within the same session.</p>
+<p>Notice the specificity. Each criterion is a testable statement. A developer reading these criteria knows exactly what to build, and a QA engineer knows exactly what to verify. Vague criteria like &ldquo;the filter should work well&rdquo; or &ldquo;users should be able to filter easily&rdquo; are useless because they mean different things to every person who reads them.</p>
+<p><strong>3. Scope boundaries</strong> explicitly state what is not included. &ldquo;This story does not include: filtering by multiple criteria simultaneously (covered in Story #247), saving filters as presets, or exporting filtered results.&rdquo; Scope boundaries prevent two common problems: developers building more than intended, and stakeholders expecting more than was planned.</p>
+<p><strong>4. Technical notes</strong> capture any implementation constraints or decisions that have already been made. &ldquo;The applicant data includes a <code>years_experience</code> integer field that is already populated. Use the existing filtering infrastructure from the job listing page. The API endpoint should accept <code>min_experience</code> and <code>max_experience</code> query parameters.&rdquo; These notes save the developer from re-deriving decisions that the team has already discussed.</p>
+<p><strong>5. Design references</strong> link to mockups, wireframes, or existing UI patterns. Even a rough sketch on a whiteboard, photographed and attached to the story, eliminates hours of back-and-forth about layout and visual treatment.</p>
+<h2>The INVEST Criteria Applied Practically</h2>
+<p>The INVEST mnemonic (Independent, Negotiable, Valuable, Estimable, Small, Testable) is widely taught but rarely applied rigorously. Here is what each criterion means in practice and how to fix stories that violate it.</p>
+<p><strong>Independent</strong>: The story can be developed and delivered without waiting for another story to be completed first. When stories have dependencies, make them explicit and consider reordering or restructuring. If Story A cannot be built until Story B is done, and Story B is not in the current sprint, Story A should not be either.</p>
+<p>A common violation: &ldquo;As a user, I want to receive email notifications when my application status changes.&rdquo; If the email infrastructure has not been set up yet, this story has a hidden dependency. Split it: one story for setting up the email delivery infrastructure, another for the application status notification that uses it.</p>
+<p><strong>Negotiable</strong>: The implementation details are open to discussion. The story defines the what and why; the how is decided collaboratively between the product manager and the development team. If a story prescribes the exact database schema, API endpoint structure, and UI component to use, it is over-specified. Give the development team room to propose the best technical approach.</p>
+<p>The exception: when a specific technical approach has been decided for business or compliance reasons (&ldquo;We must use the Twilio API for SMS delivery because we have a contractual agreement&rdquo;), include that as a technical note, not as the story&rsquo;s core definition.</p>
+<p><strong>Valuable</strong>: The story delivers value to a user or to the business. &ldquo;As a developer, I want to refactor the authentication module&rdquo; is not a user story &ndash; it is a technical task. Refactoring is important, but it should be framed in terms of the value it enables: &ldquo;As a security team lead, I want authentication tokens to expire after 30 minutes of inactivity, which requires refactoring the token management module.&rdquo; If you cannot articulate the value, the story might not need to exist.</p>
+<p><strong>Estimable</strong>: The team can estimate how much effort the story requires. If they cannot estimate it, the story is either too large (break it down) or too vague (add more detail). A useful test: can at least two developers on the team agree within one estimation unit (e.g., both say &ldquo;3 story points&rdquo; or one says &ldquo;3&rdquo; and another says &ldquo;5&rdquo;)? If estimates diverge widely (one says &ldquo;2&rdquo; and another says &ldquo;13&rdquo;), the story needs clarification.</p>
+<p><strong>Small</strong>: The story can be completed within one sprint (typically one to two weeks). Stories that take more than five days of development effort are too large and should be split. A story with eight acceptance criteria can often be split into two stories of four criteria each, with the more critical criteria in the first story.</p>
+<p><strong>Testable</strong>: Every acceptance criterion can be verified with a concrete test. &ldquo;The system should be fast&rdquo; is not testable. &ldquo;The applicant list loads within 2 seconds with up to 500 applicants&rdquo; is testable. &ldquo;The user should have a good experience&rdquo; is not testable. &ldquo;The filter updates results within 300ms of the user changing the selection&rdquo; is testable.</p>
+<h2>Writing Acceptance Criteria That Prevent Misinterpretation</h2>
+<p>Acceptance criteria are where most user stories fail. The two most common problems are criteria that are too vague (&ldquo;the feature should work correctly&rdquo;) and criteria that are too prescriptive (&ldquo;use a 250px-wide dropdown with a 14px Helvetica font in #333333&rdquo;).</p>
+<p>Effective acceptance criteria specify behavior, not implementation. They describe what the system does from the user&rsquo;s perspective, not how it is built. Here is the difference:</p>
+<p><strong>Too prescriptive</strong>: &ldquo;A React Select component with the options [&lsquo;Entry Level&rsquo;, &lsquo;Mid Level&rsquo;, &lsquo;Senior&rsquo;, &lsquo;Executive&rsquo;] appears in the filter sidebar.&rdquo;</p>
+<p><strong>Behavior-focused</strong>: &ldquo;The user can filter applicants by experience level. The available options are Entry Level (0-2 years), Mid Level (3-5 years), Senior (6-10 years), and Executive (10+ years). The filter is accessible from the applicant list page without navigating to a separate screen.&rdquo;</p>
+<p>The behavior-focused version gives the developer flexibility on implementation (maybe a dropdown, maybe radio buttons, maybe a segmented control) while specifying exactly what the user can do and what the options mean.</p>
+<p>For complex stories, organize acceptance criteria into scenarios using the Given/When/Then format:</p>
+<ul>
+<li><strong>Given</strong> a hiring manager is viewing the applicant list with 200 applicants</li>
+<li><strong>When</strong> they select the &ldquo;Senior (6-10 years)&rdquo; experience filter</li>
+<li><strong>Then</strong> the list updates to show only applicants with 6-10 years of experience, and the count updates to reflect the filtered total</li>
+</ul>
+<p>This format maps directly to automated test cases, which means your acceptance criteria can eventually become your test suite &ndash; writing the criteria is writing the tests.</p>
+<h2>Handling Edge Cases and Unhappy Paths</h2>
+<p>Most user stories describe the happy path: everything works, the data is clean, the user does exactly what is expected. But software in production encounters unhappy paths constantly, and stories that ignore them create features that break in predictable ways.</p>
+<p>For every story, explicitly consider and document at least these scenarios:</p>
+<p><strong>Empty state</strong>: What happens when there is no data? If the applicant list has zero applicants, what does the filter UI look like? Is the filter still visible (suggesting the user should check back later) or hidden (since there is nothing to filter)?</p>
+<p><strong>Error state</strong>: What happens when something goes wrong? If the API call to fetch filtered results fails, does the UI show the previous results with an error message, or does it clear the list? Is there a retry option?</p>
+<p><strong>Boundary conditions</strong>: What happens at the limits? If a user enters &ldquo;99&rdquo; in the minimum years field, what happens? Is there a maximum value? What about decimal values like &ldquo;3.5 years&rdquo;? What about negative numbers?</p>
+<p><strong>Permission edge cases</strong>: What happens if the user&rsquo;s permissions change while they are using the feature? If a hiring manager is viewing applicants and their access is revoked mid-session, what happens on their next filter action?</p>
+<p>You do not need to solve all edge cases in the initial story. But you do need to document which edge cases are in scope and which are explicitly deferred. A note like &ldquo;Error handling for API failures will use the standard error banner pattern established in Sprint 12. Boundary validation will cap experience at 50 years.&rdquo; is sufficient.</p>
+<h2>Story Splitting: The Art of Making Stories Smaller</h2>
+<p>Large stories are the most reliable predictor of missed sprint commitments. A story estimated at 13 points has a dramatically higher chance of being incomplete at sprint end than two stories estimated at 5 and 8 points, even though the total effort is the same. This is because large stories hide complexity that only becomes visible during implementation.</p>
+<p>Here are practical splitting strategies that preserve value in each resulting story:</p>
+<p><strong>Split by workflow step</strong>: A story about &ldquo;user creates and publishes a blog post&rdquo; splits into &ldquo;user creates a draft blog post&rdquo; and &ldquo;user publishes a draft blog post.&rdquo; Each story is independently valuable (a draft is useful even without publishing) and independently testable.</p>
+<p><strong>Split by data variation</strong>: A story about &ldquo;user uploads a profile photo&rdquo; might split into &ldquo;user uploads a JPEG or PNG profile photo&rdquo; (core case) and &ldquo;user uploads and crops a profile photo&rdquo; (enhancement). The first story covers the 90 percent case; the second adds the polish.</p>
+<p><strong>Split by operation</strong>: A CRUD story can be split into C, R, U, and D. &ldquo;User manages their notification preferences&rdquo; becomes four stories: view current preferences, update email notification settings, update push notification settings, and reset to default preferences.</p>
+<p><strong>Split by persona</strong>: If a story serves multiple user types with slightly different needs, split by persona. &ldquo;Users can export reports&rdquo; becomes &ldquo;Managers can export weekly summary reports as PDF&rdquo; and &ldquo;Analysts can export raw data reports as CSV.&rdquo; Each persona&rsquo;s needs are likely different enough to warrant separate stories.</p>
+<p>The test for a good split: each resulting story must be independently deployable and independently valuable. If Story B only makes sense after Story A is complete and provides no value on its own, the split is artificial.</p>
+<h2>Common Anti-Patterns and How to Fix Them</h2>
+<p><strong>The &ldquo;technical task disguised as a user story&rdquo;</strong>: &ldquo;As a developer, I want to migrate the database from MySQL to PostgreSQL.&rdquo; This is not a story; it is a task. If it is necessary, frame it as enabling value: &ldquo;As a product team, we need to support full-text search on customer records, which requires migrating to PostgreSQL for its native full-text search capabilities.&rdquo;</p>
+<p><strong>The &ldquo;epic pretending to be a story&rdquo;</strong>: &ldquo;As a user, I want a complete dashboard for managing my account.&rdquo; This is three months of work compressed into one sentence. Break it down into individual dashboard components, each as its own story.</p>
+<p><strong>The &ldquo;solution-first story&rdquo;</strong>: &ldquo;As a user, I want a modal dialog that shows my payment history.&rdquo; Maybe a modal is the right pattern. Maybe an inline expandable section is better. The story should describe the need: &ldquo;As a user, I want to review my payment history from the account page without navigating to a separate screen.&rdquo;</p>
+<p><strong>The &ldquo;acceptance criteria by absence&rdquo;</strong>: A story with no acceptance criteria, or criteria so vague they do not constrain anything. If the criteria are missing, the story is not ready for development. Period. Send it back.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Good user stories are not just documentation &ndash; they are a communication tool that aligns everyone on what is being built, why, and how to know when it is done. Investing 30 extra minutes in writing a thorough story saves hours of rework, prevents misunderstandings, and gives your development team the clarity they need to build the right thing the first time.</p>
+<p>If your team struggles with the gap between product vision and engineering execution, <a href="/contact.html">let us help</a>. We work with product teams to establish processes that turn business requirements into software that actually meets them.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Write User Stories That Lead to Better Software",
@@ -172,7 +101,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/how-to-write-user-stories-that-lead-to-better-software/",
   "articleSection": "product"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

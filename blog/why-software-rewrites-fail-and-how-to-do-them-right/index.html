@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,151 +6,48 @@
   <title>Why Software Rewrites Fail and How to Do Them Right</title>
   <meta name="description" content="The patterns behind failed software rewrites and a proven approach for successful system modernization.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/why-software-rewrites-fail-and-how-to-do-them-right/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Why Software Rewrites Fail and How to Do Them Right">
-  <meta property="og:description" content="The patterns behind failed software rewrites and a proven approach for successful system modernization.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/why-software-rewrites-fail-and-how-to-do-them-right/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Why Software Rewrites Fail and How to Do Them Right">
-  <meta name="twitter:description" content="The patterns behind failed software rewrites and a proven approach for successful system modernization.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Why Software Rewrites Fail and How to Do Them Right"><meta property="og:description" content="The patterns behind failed software rewrites and a proven approach for successful system modernization."><meta property="og:url" content="https://thepropermotioncompany.com/blog/why-software-rewrites-fail-and-how-to-do-them-right/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Why Software Rewrites Fail and How to Do Them Right"><meta name="twitter:description" content="The patterns behind failed software rewrites and a proven approach for successful system modernization."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">December 07, 2025</span>
-              <span class="blog-card-read">7 min read</span>
-              <span class="blog-card-tag">software development</span><span class="blog-card-tag">strategy</span>
-            </div>
-            <h1 class="blog-post-title">Why Software Rewrites Fail and How to Do Them Right</h1>
-            <p class="blog-post-desc">The patterns behind failed software rewrites and a proven approach for successful system modernization.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Why Software Rewrites Fail and How to Do Them Right</h1>
-<p>The patterns behind failed software rewrites and a proven approach for successful system modernization.</p>
-<p>We have been building custom software since 2022 — working directly with founders, operators, and technical leaders. This guide captures the patterns that separate projects that succeed from projects that stall.</p>
-<h2>What Most Teams Get Wrong About Why Software Rewrites Fail</h2>
-<p><strong>Not defining success criteria upfront.</strong> If you cannot articulate what success looks like for your why software rewrites fail initiative, you will not know when you have achieved it. Define specific, measurable outcomes before development begins.</p>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning why software rewrites fail.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For why software rewrites fail, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for why software rewrites fail.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<h2>Technical Considerations</h2>
-<p>The architecture decisions you make early in a why software rewrites fail project have outsized impact on long-term costs and capabilities.</p>
-<p><strong>Data model design</strong> matters more than most teams realize. A well-designed data model makes features easier to build, queries faster to run, and integrations simpler to maintain. A poorly designed one creates friction that compounds with every new feature.</p>
-<p><strong>API design</strong> determines how easily your system can evolve and integrate with other tools. REST is the safe default for most business applications. GraphQL makes sense when your frontend needs flexibility in data fetching. The choice should be driven by your specific integration requirements, not industry trends.</p>
-<p><strong>Authentication and authorization</strong> need to be right from the start. Retrofitting security is expensive and risky. Plan your permission model before you build your first feature, even if it seems like overkill for the initial scope.</p>
-<p><strong>Monitoring and observability</strong> are not optional extras. You need to know when something breaks before your users tell you. Set up error tracking, performance monitoring, and uptime alerting from day one.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A healthcare organization needed to digitize a paper-based intake process while maintaining HIPAA compliance. Their previous vendor quoted twelve months and half a million dollars. We delivered a compliant system in eight weeks at a fraction of the cost. The difference: we did not build a platform. We built exactly what they needed.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>A Decision Framework for Why Software Rewrites Fail</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality why software rewrites fail typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>When Why Software Rewrites Fail Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a why software rewrites fail project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>Taking Action</h2>
-<p>Reading about why software rewrites fail is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">December 07, 2025</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">software development</span><span class="blog-card-tag">strategy</span></div><h1 class="blog-post-title">Why Software Rewrites Fail and How to Do Them Right</h1><p class="blog-post-desc">The patterns behind failed software rewrites and a proven approach for successful system modernization.</p></div><div class="blog-post-content"><h1>Why Software Rewrites Fail and How to Do Them Right</h1>
+<p>Few decisions in software carry more risk than a full system rewrite. Joel Spolsky called it &ldquo;the single worst strategic mistake that any software company can make.&rdquo; Netscape&rsquo;s rewrite of Navigator destroyed their market position. Basecamp&rsquo;s HEY email launch required years longer than anticipated. Yet legacy systems do eventually become untenable, and modernization becomes unavoidable. The question isn&rsquo;t whether to modernize &ndash; it&rsquo;s how to do it without the catastrophic outcomes that make rewrites infamous.</p>
+<h2>The Iceberg of Undocumented Behavior</h2>
+<p>The primary reason rewrites fail is that the existing system encodes far more business logic than anyone realizes. The codebase isn&rsquo;t just features visible in the UI &ndash; it&rsquo;s years of accumulated edge case handling, workarounds for upstream bugs, implicit data validation, timezone adjustments for specific customers, and conditional logic that exists because a critical client complained in 2019.</p>
+<p>This behavior is undocumented because it was never formally specified. It accreted over time through bug fixes, support tickets, and hallway conversations. When you build the new system from a specification document (or worse, from the product team&rsquo;s memory of how the system works), you&rsquo;re capturing maybe 60-70% of actual behavior. The remaining 30-40% surfaces as bugs in the new system &ndash; bugs that aren&rsquo;t bugs at all, but missing functionality that users depended on without anyone labeling it as a &ldquo;feature.&rdquo;</p>
+<p>The only reliable way to catalog this behavior is to study the existing system systematically. Read the code, yes, but also: mine the commit history for bug fixes (each one represents a behavior that was added post-launch), read through years of support tickets to understand what users actually do with the system, and interview the longest-tenured users about their workflows. This discovery process typically takes 4-8 weeks for a mid-size application and is the most valuable investment you can make before writing any new code.</p>
+<h2>The Second System Effect and Scope Inflation</h2>
+<p>Fred Brooks identified this pattern decades ago, and it remains devastatingly accurate. When a team rewrites a system they&rsquo;ve maintained for years, they don&rsquo;t just replicate it &ndash; they try to fix everything they ever hated about it. The new system becomes a vehicle for every architectural improvement, every feature request that was too risky to add to the old system, and every &ldquo;if I were building this from scratch&rdquo; fantasy.</p>
+<p>The result is a project that&rsquo;s not a rewrite &ndash; it&rsquo;s a rewrite plus a redesign plus a re-architecture plus a feature expansion. Scope balloons. Timelines extend. The team is simultaneously learning a new technology stack, reimagining the product, and trying to maintain feature parity. Something has to give, and it&rsquo;s usually the timeline, the quality, or both.</p>
+<p>Discipline requires separating modernization from improvement. Phase 1 is a faithful reproduction of existing functionality on the new stack. No new features. No UX redesign. No &ldquo;while we&rsquo;re at it&rdquo; improvements. The goal is feature parity with the existing system, verified by running the same test scenarios against both systems and getting identical results. Phase 2, after the migration is complete and stable, introduces improvements. This sequencing is emotionally difficult &ndash; the team wants to build the better version immediately &ndash; but it&rsquo;s the only approach that keeps the project on track.</p>
+<p>Set a hard rule: any improvement idea goes on a &ldquo;Phase 2&rdquo; list. Review the list weekly to acknowledge it, but do not pull items into Phase 1 under any circumstances. The Phase 2 list becomes a motivational tool &ndash; the team can see all the improvements waiting for them once migration is complete.</p>
+<h2>The Strangler Fig Pattern: Incremental Over Big Bang</h2>
+<p>The most successful modernization strategy isn&rsquo;t a rewrite at all &ndash; it&rsquo;s the strangler fig pattern. Named after the tropical fig that gradually envelops and replaces its host tree, this approach migrates functionality piece by piece from the old system to the new one.</p>
+<p>The mechanics work like this: place a routing layer (a reverse proxy, an API gateway, or a load balancer with URL-based routing) in front of both the old and new systems. Initially, 100% of traffic goes to the old system. When a specific feature is rebuilt in the new system, update the routing to send traffic for that feature to the new system while everything else continues hitting the old system. Over months (or years, for large systems), the new system takes over more and more routes until the old system serves nothing and can be decommissioned.</p>
+<p>This approach has several advantages over big-bang rewrites. <strong>Risk is contained</strong>: if the new version of a feature has problems, you route traffic back to the old version immediately. <strong>Value is delivered incrementally</strong>: each migrated feature is a deliverable that stakeholders can evaluate. <strong>The team learns as they go</strong>: insights from migrating early features improve the approach for later ones. <strong>The old system continues serving users</strong>: there&rsquo;s no &ldquo;launch day&rdquo; where everything has to work perfectly.</p>
+<p>The technical prerequisite is a clean routing boundary. For web applications, URL-based routing is the simplest: <code>/reports/*</code> goes to the new system, everything else goes to the old system. For API-based systems, route by endpoint. For monolithic backends, the routing might need to happen at the service or module level within the application.</p>
+<p>Data is the hard part of strangler fig migration. If the new system uses a different database schema (which it usually does), you need a data synchronization strategy during the transition period. Common approaches: the new system reads from the old database (using read replicas or database views that map old schema to new), a change data capture (CDC) pipeline mirrors relevant data from old to new, or the old and new systems share a database during transition.</p>
+<h2>Database Migration: The Hidden Complexity Center</h2>
+<p>Schema migration is where rewrite timelines go to die. The new system invariably has a different data model &ndash; better normalized, differently structured, with new entities that didn&rsquo;t exist before. Migrating data from old schema to new is a multi-step process that requires surgical precision.</p>
+<p><strong>Schema mapping</strong> comes first. For every table and column in the old database, determine: does it map to the new schema? How? What transformations are needed? What data will be lost or restructured? Document these mappings exhaustively. Common transformation patterns include: splitting a single table into multiple entities (an &ldquo;orders&rdquo; table that conflates orders and invoices becomes separate &ldquo;orders&rdquo; and &ldquo;invoices&rdquo; tables), merging multiple tables into one (three different &ldquo;settings&rdquo; tables consolidate into a unified configuration store), changing data types (string-encoded dates become proper timestamps, comma-separated lists become join tables), and handling historical data that doesn&rsquo;t conform to new validation rules.</p>
+<p><strong>Migration scripts</strong> should be runnable, repeatable, and verifiable. Write them as code (not manual SQL), version-control them, and run them against a copy of production data in a staging environment. After each run, validate the output against expected counts, checksums, and sample records. Build automated validation that compares the old and new systems&rsquo; outputs for the same inputs &ndash; if you ask both systems for a customer&rsquo;s order history and get different results, the migration has a bug.</p>
+<p><strong>Cutover timing</strong> depends on your tolerance for downtime. A maintenance window approach takes the old system offline, runs the final migration, validates, and brings the new system online. For systems that can&rsquo;t tolerate downtime, use a dual-write pattern: during the transition, writes go to both old and new databases. The new system is the source of truth, and a reconciliation process ensures consistency. After a confidence period, cut over reads to the new system and decommission the old database.</p>
+<h2>Managing the Parallel Operation Period</h2>
+<p>During any modernization &ndash; whether big-bang or incremental &ndash; there&rsquo;s a period where both systems coexist. This parallel operation is operationally expensive and organizationally confusing, and minimizing its duration should be a project priority.</p>
+<p><strong>Team allocation</strong> during parallel operation is a constant tension. The old system still needs bug fixes and critical updates. The new system needs all available engineering attention. Splitting the team between both systems reduces velocity on both. The best approach we&rsquo;ve seen: designate a small &ldquo;maintenance crew&rdquo; (1-2 engineers) for the old system and protect the rest of the team&rsquo;s focus on the new system. The maintenance crew handles only critical issues &ndash; no new features, no non-critical improvements.</p>
+<p><strong>User communication</strong> is often neglected but critical. Users need to understand the migration timeline, what changes they&rsquo;ll experience, and when. For B2B products, provide a migration guide for each customer: what changes, what stays the same, what they need to do (update integrations, retrain staff, adjust workflows). Offer a preview environment where power users can test the new system before cutover. Their feedback during preview will catch issues that internal testing misses.</p>
+<p><strong>Rollback planning</strong> is non-negotiable. For every migration step, define the rollback procedure. If the new reporting module has critical bugs after launch, can you route traffic back to the old reporting module? If the data migration has integrity issues, can you revert to the old database? Rollback procedures should be tested in staging before the production migration. The confidence to move forward comes from knowing you can move backward.</p>
+<p>Set a hard deadline for decommissioning the old system. Without one, the parallel operation period extends indefinitely as low-priority features keep getting deferred. &ldquo;We&rsquo;ll migrate that last module next quarter&rdquo; becomes &ldquo;next half&rdquo; becomes &ldquo;next year.&rdquo; Publicly commit to a decommission date, and let it create the urgency to finish.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If you&rsquo;re facing a legacy system that needs modernization and want to avoid the common failure modes, <a href="/contact.html">let&rsquo;s plan the right approach together</a>. We&rsquo;ve guided teams through incremental migrations that deliver value continuously without the risk of a big-bang rewrite.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Why Software Rewrites Fail and How to Do Them Right",
@@ -172,7 +67,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/why-software-rewrites-fail-and-how-to-do-them-right/",
   "articleSection": "software development"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

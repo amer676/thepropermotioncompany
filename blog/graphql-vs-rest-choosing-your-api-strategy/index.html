@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,139 +6,56 @@
   <title>GraphQL vs REST: Choosing Your API Strategy | Proper Motion</title>
   <meta name="description" content="GraphQL vs REST: Choosing Your API Strategy. GraphQL vs REST Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/graphql-vs-rest-choosing-your-api-strategy/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="GraphQL vs REST: Choosing Your API Strategy | Proper Motion">
-  <meta property="og:description" content="GraphQL vs REST: Choosing Your API Strategy. GraphQL vs REST Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/graphql-vs-rest-choosing-your-api-strategy/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="GraphQL vs REST: Choosing Your API Strategy | Proper Motion">
-  <meta name="twitter:description" content="GraphQL vs REST: Choosing Your API Strategy. GraphQL vs REST Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="GraphQL vs REST: Choosing Your API Strategy | Proper Motion"><meta property="og:description" content="GraphQL vs REST: Choosing Your API Strategy. GraphQL vs REST Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/graphql-vs-rest-choosing-your-api-strategy/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="GraphQL vs REST: Choosing Your API Strategy | Proper Motion"><meta name="twitter:description" content="GraphQL vs REST: Choosing Your API Strategy. GraphQL vs REST Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">September 04, 2025</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">APIs</span>
-            </div>
-            <h1 class="blog-post-title">GraphQL vs REST: Choosing Your API Strategy</h1>
-            <p class="blog-post-desc">GraphQL vs REST: Choosing Your API Strategy. GraphQL vs REST Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>GraphQL vs REST: Choosing Your API Strategy</h1>
-<p>We get asked about graphql vs rest: choosing constantly. The answer is always &ldquo;it depends&rdquo; — but it depends on specific, identifiable factors that you can evaluate for your situation. This guide walks you through each one.</p>
-<h2>A Decision Framework for Graphql Vs Rest: Choosing</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality graphql vs rest: choosing typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>What Most Teams Get Wrong About Graphql Vs Rest: Choosing</h2>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning graphql vs rest: choosing.</p>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For graphql vs rest: choosing, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<h2>Technical Considerations</h2>
-<p>The architecture decisions you make early in a graphql vs rest: choosing project have outsized impact on long-term costs and capabilities.</p>
-<p><strong>Data model design</strong> matters more than most teams realize. A well-designed data model makes features easier to build, queries faster to run, and integrations simpler to maintain. A poorly designed one creates friction that compounds with every new feature.</p>
-<p><strong>API design</strong> determines how easily your system can evolve and integrate with other tools. REST is the safe default for most business applications. GraphQL makes sense when your frontend needs flexibility in data fetching. The choice should be driven by your specific integration requirements, not industry trends.</p>
-<p><strong>Authentication and authorization</strong> need to be right from the start. Retrofitting security is expensive and risky. Plan your permission model before you build your first feature, even if it seems like overkill for the initial scope.</p>
-<p><strong>Monitoring and observability</strong> are not optional extras. You need to know when something breaks before your users tell you. Set up error tracking, performance monitoring, and uptime alerting from day one.</p>
-<h2>When Graphql Vs Rest: Choosing Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for graphql vs rest: choosing.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about graphql vs rest: choosing, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">September 04, 2025</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">APIs</span></div><h1 class="blog-post-title">GraphQL vs REST: Choosing Your API Strategy</h1><p class="blog-post-desc">GraphQL vs REST: Choosing Your API Strategy. GraphQL vs REST Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>GraphQL vs REST: Choosing Your API Strategy</h1>
+<p>The GraphQL-versus-REST debate has generated more heat than light in the engineering community. Advocates on both sides present their preference as universally superior, which isn&rsquo;t helpful when you&rsquo;re making a concrete technology decision for a specific project. Both are valid API strategies with distinct trade-off profiles. REST is the simpler, more mature option that works well for most applications. GraphQL solves specific problems that REST handles poorly, but introduces complexity that&rsquo;s only justified when those problems are real. Here&rsquo;s how to make the right call for your situation.</p>
+<h2>How REST and GraphQL Actually Differ</h2>
+<p>REST (Representational State Transfer) organizes APIs around resources. You have a <code>/users</code> endpoint that returns user objects, a <code>/users/123/orders</code> endpoint that returns orders for a specific user, and a <code>/products</code> endpoint that returns products. Each endpoint returns a fixed data shape. The client gets what the server sends, no more, no less.</p>
+<p>GraphQL organizes APIs around a typed schema and a query language. The client specifies exactly which fields it needs, and the server returns precisely that data. A single GraphQL query can fetch a user&rsquo;s name, their three most recent orders, and the products in those orders &ndash; data that would require three separate REST calls.</p>
+<p>The fundamental architectural difference is who controls the data shape. In REST, the server defines what each endpoint returns. In GraphQL, the client defines what it needs per request. This distinction drives every practical trade-off between the two approaches.</p>
+<p>REST uses HTTP semantics directly: GET for reads, POST for creates, PUT/PATCH for updates, DELETE for removals. Status codes (200, 201, 404, 422) communicate outcomes. Caching leverages HTTP&rsquo;s built-in cache-control headers, ETags, and CDN support. This alignment with HTTP means REST APIs benefit from decades of infrastructure tooling.</p>
+<p>GraphQL uses a single endpoint (typically POST /graphql) for all operations. Queries read data, mutations modify it. Responses always return HTTP 200 with success or error information in the response body. This means HTTP-level caching doesn&rsquo;t work out of the box &ndash; you need application-level caching solutions like persisted queries or cache directives.</p>
+<h2>Where REST Wins Decisively</h2>
+<p>REST is the right choice for most server-to-server APIs, public-facing APIs, and applications with straightforward data access patterns. Its advantages are practical, not just theoretical.</p>
+<p>Caching is REST&rsquo;s strongest advantage. A GET request to <code>/products/456</code> can be cached at the CDN layer, the reverse proxy layer, and the browser layer using standard HTTP cache headers. For read-heavy applications, this can reduce server load by 80 to 95 percent. GraphQL&rsquo;s POST-based queries can&rsquo;t leverage HTTP caching without additional infrastructure (persisted queries mapped to GET requests, or cache layers that parse GraphQL query structures).</p>
+<p>Simplicity of understanding and debugging is significant. A REST API can be tested with curl, explored with a browser&rsquo;s address bar, and monitored with standard HTTP logging tools. When something goes wrong, the HTTP status code immediately communicates the nature of the failure. GraphQL always returns 200, so you need to parse the response body to determine whether the operation succeeded &ndash; which complicates monitoring, alerting, and debugging.</p>
+<p>File uploads, webhooks, streaming, and server-sent events all map naturally to REST&rsquo;s HTTP-native approach. GraphQL has workarounds for these (multipart form uploads, subscriptions via WebSockets), but they add complexity.</p>
+<p>Rate limiting is straightforward with REST because each endpoint represents a known unit of server work. A GET to <code>/users</code> always executes the same query. A GraphQL request might be trivial (&ldquo;give me the user&rsquo;s name&rdquo;) or expensive (&ldquo;give me all users with their orders, order items, product details, and supplier information for the past year&rdquo;) &ndash; making it difficult to assign a cost to requests without query analysis.</p>
+<p>For public APIs consumed by external developers, REST&rsquo;s maturity matters. Developers know REST. The learning curve is minimal. Documentation tools like Swagger/OpenAPI are industry standard. Client libraries are automatically generated. GraphQL has its own tooling (GraphiQL, Apollo Studio), but it asks external consumers to learn a query language, which is a meaningful adoption barrier.</p>
+<h2>Where GraphQL Solves Real Problems</h2>
+<p>GraphQL&rsquo;s design addresses specific pain points that REST handles clumsily. If your application has these problems, GraphQL is worth the added complexity.</p>
+<p>Over-fetching and under-fetching are the classic motivators. A mobile application displaying a list of orders needs the order ID, date, total, and status &ndash; but the REST <code>/orders</code> endpoint returns 30 fields per order, including shipping address, payment details, and line items. That&rsquo;s over-fetching: the client receives (and the server computes) far more data than needed. Conversely, to display an order detail page, the client needs the order, its line items, product names, and the customer&rsquo;s shipping address &ndash; requiring three or four REST calls. That&rsquo;s under-fetching.</p>
+<p>On mobile networks with high latency, the difference between one round trip and four is substantial. GraphQL&rsquo;s ability to fetch exactly the needed data in a single request directly reduces page load times for data-intensive mobile applications. This is why Facebook built GraphQL &ndash; to serve their mobile app efficiently over slow network connections.</p>
+<p>Rapidly evolving frontends with multiple client types benefit from GraphQL&rsquo;s flexibility. If your web app, mobile app, and internal admin dashboard all need different views of the same data, REST forces you to either create client-specific endpoints (duplicating server logic) or return the superset of all data that any client might need (wasting bandwidth). GraphQL lets each client request exactly what it needs without server changes.</p>
+<p>Schema introspection and strong typing provide excellent developer tooling. GraphQL&rsquo;s type system means your IDE can autocomplete field names, catch type errors at write time, and generate TypeScript interfaces automatically. Tools like GraphQL Code Generator create type-safe client code directly from the schema. This developer experience accelerates frontend development, especially on teams where frontend and backend engineers coordinate through the schema as a contract.</p>
+<h2>Practical Architecture Patterns for Each</h2>
+<p>If you choose REST, adopt these patterns to avoid common pitfalls. Use JSON:API or a similar specification for consistent response formats. Implement sparse fieldsets (a <code>?fields=name,email</code> query parameter) to address over-fetching for bandwidth-sensitive clients. Use compound documents or sideloading to include related resources in a single response, reducing under-fetching without abandoning REST principles. Version your API through URL paths (<code>/v2/users</code>) or headers to enable backward-compatible evolution.</p>
+<p>If you choose GraphQL, address complexity proactively. Implement query complexity analysis to prevent expensive queries from overwhelming your server &ndash; assign a cost to each field and reject queries that exceed a budget. Use DataLoader (originally from Facebook) to batch and deduplicate database queries within a single GraphQL request, preventing the N+1 query problem that naive resolvers create. Implement persisted queries in production: clients send a query hash instead of the full query string, which improves performance and prevents arbitrary query execution.</p>
+<p>On the server side, GraphQL resolvers should call a service layer, not query the database directly. This separation lets you swap the underlying data access without changing resolver logic, and it makes the GraphQL layer a thin translation layer rather than a monolith.</p>
+<p>Consider a hybrid approach for applications where each solves different problems. Use REST for simple CRUD operations, file handling, and webhook endpoints. Use GraphQL for complex, client-driven data fetching. A single application can expose both &ndash; they&rsquo;re not mutually exclusive. The API gateway or reverse proxy routes requests to the appropriate handler.</p>
+<h2>Migration Paths Between the Two</h2>
+<p>If you have an existing REST API and you&rsquo;re considering GraphQL, don&rsquo;t rewrite. Layer GraphQL on top of your existing REST endpoints. GraphQL resolvers call your REST services under the hood. This approach lets you adopt GraphQL incrementally &ndash; start with one screen or feature that suffers most from over-fetching or under-fetching, build the GraphQL schema for that use case, and expand as the value proves out.</p>
+<p>Apollo Federation and schema stitching enable this pattern across multiple backend services. Each service exposes its own GraphQL schema (or REST API wrapped in a thin GraphQL layer), and a gateway composes them into a unified graph that clients query as a single endpoint.</p>
+<p>Going the other direction &ndash; from GraphQL to REST &ndash; is less common but happens when teams find GraphQL&rsquo;s complexity isn&rsquo;t justified for their use case. The migration is typically straightforward: identify the distinct queries your clients actually execute, create REST endpoints that return those specific data shapes, and migrate clients endpoint by endpoint.</p>
+<h2>Making the Decision for Your Project</h2>
+<p>Here&rsquo;s a decision framework distilled from the trade-offs above.</p>
+<p>Choose REST if: your API is public-facing, you have straightforward CRUD operations, caching is critical for performance, your clients have similar data needs, you value simplicity and debugging ease, or you&rsquo;re building server-to-server integrations.</p>
+<p>Choose GraphQL if: you have multiple client types (web, mobile, third-party) with divergent data needs, your frontend changes frequently and you want to avoid backend changes for each UI iteration, your data model is deeply relational and clients need to traverse those relationships flexibly, or mobile performance on slow networks is a primary concern.</p>
+<p>Choose both if: different parts of your application have different needs and a single approach creates awkward compromises.</p>
+<p>Whatever you choose, invest in documentation, monitoring, and testing. A well-documented, well-monitored REST API will outperform a poorly maintained GraphQL API every time, and vice versa. The technology choice matters less than the discipline you bring to building and operating it.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Choosing the right API strategy affects your team&rsquo;s velocity for years. If you&rsquo;re evaluating GraphQL, REST, or a hybrid approach for a new project or a migration, <a href="/contact.html">talk to our team</a> for an assessment tailored to your specific requirements.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "GraphQL vs REST: Choosing Your API Strategy",
@@ -160,7 +75,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/graphql-vs-rest-choosing-your-api-strategy/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

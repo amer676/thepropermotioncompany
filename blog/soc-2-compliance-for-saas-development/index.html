@@ -1,147 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SOC 2 Compliance for SaaS Development | The Proper Motion Company</title>
+  <title>SOC 2 Compliance for SaaS Development | Proper Motion</title>
   <meta name="description" content="SOC 2 Compliance for SaaS Development. Building SOC 2 compliant software. Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/soc-2-compliance-for-saas-development/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="SOC 2 Compliance for SaaS Development | The Proper Motion Company">
-  <meta property="og:description" content="SOC 2 Compliance for SaaS Development. Building SOC 2 compliant software. Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/soc-2-compliance-for-saas-development/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SOC 2 Compliance for SaaS Development | The Proper Motion Company">
-  <meta name="twitter:description" content="SOC 2 Compliance for SaaS Development. Building SOC 2 compliant software. Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="SOC 2 Compliance for SaaS Development | Proper Motion"><meta property="og:description" content="SOC 2 Compliance for SaaS Development. Building SOC 2 compliant software. Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/soc-2-compliance-for-saas-development/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="SOC 2 Compliance for SaaS Development | Proper Motion"><meta name="twitter:description" content="SOC 2 Compliance for SaaS Development. Building SOC 2 compliant software. Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">February 18, 2023</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">compliance</span>
-            </div>
-            <h1 class="blog-post-title">SOC 2 Compliance for SaaS Development</h1>
-            <p class="blog-post-desc">SOC 2 Compliance for SaaS Development. Building SOC 2 compliant software. Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>SOC 2 Compliance for SaaS Development</h1>
-<p>Let us cut straight to what matters about soc 2 compliance for. No filler, no padding, no obvious advice dressed up as insight. Just the practical knowledge that actually affects outcomes.</p>
-<p>Building SOC 2 compliant software.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A professional services firm was running their client communication through a combination of email, Slack, shared drives, and a CRM that nobody updated. Their clients were frustrated. Their team was drowning. We built a single portal that unified everything. The first month after launch, client satisfaction scores jumped and internal time spent on admin tasks dropped measurably.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for soc 2 compliance for.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<h2>The Build Process</h2>
-<p>Building soc 2 compliance for well requires discipline in a few specific areas.</p>
-<p><strong>Requirements documentation</strong> does not need to be a 50-page spec. It needs to be specific enough that two different developers reading it would build the same thing. User stories with acceptance criteria work well for most projects.</p>
-<p><strong>Design before development.</strong> Wireframes and prototypes are cheap to change. Production code is expensive to change. Invest a week in design review before starting development. This single practice prevents more problems than any other.</p>
-<p><strong>Weekly delivery cadence.</strong> Ship something testable every week. Not a demo — a working piece of software that a real person can use and give feedback on. Weekly delivery creates accountability and catches problems early.</p>
-<p><strong>Automated testing</strong> is an investment that pays for itself within weeks. Manual testing does not scale. Every feature should have tests that run automatically on every code change. This is what allows you to move fast without breaking things.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>A Decision Framework for Soc 2 Compliance For</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality soc 2 compliance for typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a soc 2 compliance for project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>Taking Action</h2>
-<p>Reading about soc 2 compliance for is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">February 18, 2023</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">compliance</span></div><h1 class="blog-post-title">SOC 2 Compliance for SaaS Development</h1><p class="blog-post-desc">SOC 2 Compliance for SaaS Development. Building SOC 2 compliant software. Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>SOC 2 Compliance for SaaS Development</h1>
+<p>If you are building a SaaS product that handles customer data, SOC 2 compliance is not optional &ndash; it is a prerequisite for closing enterprise deals. Procurement teams at companies with more than 500 employees almost always require a SOC 2 Type II report before signing a contract. Yet many development teams treat compliance as a bolt-on afterthought, scrambling to retrofit controls months before an audit. The far better approach is to bake SOC 2 principles into your software architecture and development workflow from day one.</p>
+<p>This guide walks through the practical engineering decisions that make SOC 2 compliance achievable without derailing your product roadmap.</p>
+<h2>Understanding the Five Trust Service Criteria</h2>
+<p>SOC 2 is organized around five Trust Service Criteria (TSC) defined by the AICPA: Security, Availability, Processing Integrity, Confidentiality, and Privacy. Not every SaaS product needs to address all five &ndash; most startups begin with Security alone, then layer in Availability and Confidentiality as their customer base matures.</p>
+<p>Security is the baseline. It covers access controls, network firewalls, intrusion detection, and change management. If you can only focus on one criterion for your first audit, this is the one.</p>
+<p>Availability addresses uptime commitments. If your SaaS offers an SLA of 99.9% or higher, your auditor will want evidence that you monitor availability, respond to incidents, and have disaster recovery procedures in place.</p>
+<p>Confidentiality applies when you store data that customers have explicitly classified as confidential &ndash; trade secrets, financial projections, pre-release product information. Encryption at rest and in transit is table stakes, but the criterion also covers data retention and disposal policies.</p>
+<p>Processing Integrity is relevant for platforms that perform calculations, transformations, or transactions on behalf of customers. Think payroll processing, billing engines, or analytics pipelines where an incorrect output has real financial consequences.</p>
+<p>Privacy overlaps with regulations like GDPR and CCPA. If your SaaS collects personally identifiable information (PII), you need documented consent mechanisms, data subject access request workflows, and clear privacy notices.</p>
+<h2>Architecting for Audit-Ready Infrastructure</h2>
+<p>The infrastructure layer is where SOC 2 compliance either becomes straightforward or turns into a nightmare. The single most impactful decision you can make is choosing a cloud provider that itself holds SOC 2 Type II certification &ndash; AWS, Google Cloud, and Azure all qualify. This means the physical security controls, hardware lifecycle management, and data center redundancy are already handled by your provider&rsquo;s shared responsibility model.</p>
+<p>On top of that foundation, you need to enforce infrastructure-as-code (IaC) for every environment. Terraform or Pulumi templates should define your VPCs, security groups, IAM roles, and database configurations. When an auditor asks how you ensure consistent security configurations across environments, you point them to your version-controlled IaC repository and the CI pipeline that deploys it. No manual console changes, no configuration drift.</p>
+<p>Specific infrastructure controls to implement early include:</p>
+<ul>
+<li><strong>Network segmentation</strong>: Place databases and internal services in private subnets with no direct internet access. Use NAT gateways for outbound traffic and load balancers for inbound.</li>
+<li><strong>Encryption everywhere</strong>: Enable TLS 1.2 or higher for all data in transit. Use AES-256 encryption for data at rest, with keys managed through your cloud provider&rsquo;s KMS rather than self-managed key files.</li>
+<li><strong>Immutable deployments</strong>: Use container images or machine images that are built once and deployed without modification. This prevents post-deployment tampering and gives you a clear audit trail of what code is running in production.</li>
+<li><strong>Centralized logging</strong>: Ship all application logs, access logs, and infrastructure events to a tamper-evident log store like AWS CloudTrail or a dedicated SIEM. Retain logs for at least 12 months.</li>
+</ul>
+<h2>Access Control and Identity Management</h2>
+<p>Access control is the area auditors scrutinize most closely. The principle of least privilege must be applied consistently &ndash; every engineer, service account, and third-party integration should have only the minimum permissions required for its function.</p>
+<p>Start with a robust identity provider (IdP) such as Okta, Azure AD, or Google Workspace. Enforce multi-factor authentication (MFA) for all human accounts with no exceptions. SSO should be the only way to access your cloud console, CI/CD platform, version control system, and monitoring dashboards.</p>
+<p>For service-to-service authentication, use short-lived tokens or IAM roles rather than long-lived API keys. If you must use API keys, rotate them on a 90-day cycle and store them in a secrets manager like HashiCorp Vault or AWS Secrets Manager &ndash; never in environment variables baked into container images.</p>
+<p>Access reviews are a recurring obligation. At least quarterly, your team lead or security owner should review who has access to production systems and revoke permissions for anyone who no longer needs them. Automate this with scripts that compare your IdP group memberships against your cloud IAM roles and flag discrepancies.</p>
+<p>Role-based access control (RBAC) in your application is equally important. Your SaaS customers expect that their admin users can control who sees what within their tenant. Implement RBAC at the API layer, not just the UI. Every API endpoint should verify both authentication (who is this?) and authorization (are they allowed to do this?) before processing a request.</p>
+<h2>Secure Development Lifecycle Practices</h2>
+<p>Your development process is itself a control that auditors evaluate. The goal is to demonstrate that code changes go through a repeatable, documented review and deployment process.</p>
+<p>At minimum, implement these practices:</p>
+<p><strong>Branch protection rules</strong>: Require pull requests for all changes to the main branch. Require at least one approving review from a developer who did not write the code. Disable force pushes.</p>
+<p><strong>Automated testing gates</strong>: Run unit tests, integration tests, and static analysis on every pull request. Block merges when tests fail. Your test suite does not need 100% coverage, but it should cover authentication flows, authorization checks, and data validation logic.</p>
+<p><strong>Dependency scanning</strong>: Use tools like Snyk, Dependabot, or Trivy to scan your dependency tree for known vulnerabilities. Set a policy that critical and high-severity CVEs must be patched within 14 days of disclosure. Track this in a vulnerability management log.</p>
+<p><strong>Static application security testing (SAST)</strong>: Run a SAST tool like Semgrep or CodeQL in your CI pipeline to catch common vulnerability patterns &ndash; SQL injection, cross-site scripting, insecure deserialization. Treat findings above a configurable severity threshold as build failures.</p>
+<p><strong>Change management documentation</strong>: Every production deployment should be traceable to a set of pull requests, each linked to a ticket in your project management system. This traceability is what allows an auditor to ask &ldquo;what changed on March 15th?&rdquo; and get a definitive answer within minutes.</p>
+<h2>Monitoring, Incident Response, and Evidence Collection</h2>
+<p>SOC 2 is not a one-time checkbox. Type II audits cover a period of 6 to 12 months and require evidence that your controls operated effectively throughout that window. This means your monitoring and incident response procedures need to be continuously active and generating artifacts.</p>
+<p>Set up alerting for the events that matter most: unauthorized access attempts, changes to IAM policies, database query patterns that deviate from baseline, deployment failures, and availability drops below your SLA threshold. Route alerts to a dedicated channel (Slack, PagerDuty, Opsgenie) and define an on-call rotation so every alert has a named responder.</p>
+<p>Document your incident response plan with clear severity levels. A common framework is:</p>
+<ul>
+<li><strong>SEV 1</strong>: Customer-facing outage or confirmed data breach. Response within 15 minutes. CEO and legal notified.</li>
+<li><strong>SEV 2</strong>: Degraded performance or potential security incident. Response within 1 hour.</li>
+<li><strong>SEV 3</strong>: Minor issue with no customer impact. Response within 1 business day.</li>
+</ul>
+<p>After every SEV 1 or SEV 2 incident, write a blameless post-mortem that includes a timeline, root cause analysis, and remediation actions with owners and deadlines. Auditors love post-mortems because they demonstrate a culture of continuous improvement.</p>
+<p>For evidence collection, automate as much as possible. Screenshots and manual exports are fragile. Instead, use APIs to pull access review logs, deployment histories, and vulnerability scan results into a compliance platform like Vanta, Drata, or Secureframe. These platforms map your evidence directly to SOC 2 control requirements and flag gaps before your auditor finds them.</p>
+<h2>Planning Your First Audit Without Stalling Product Development</h2>
+<p>A common misconception is that SOC 2 preparation requires freezing feature work for months. In reality, the engineering effort is front-loaded in setting up controls, and after that, maintenance is incremental.</p>
+<p>Plan for a 3-to-6-month readiness period before engaging an auditor. During the first month, conduct a gap assessment: compare your current practices against the SOC 2 criteria you plan to include. Use a spreadsheet or compliance platform to list every control, its current state (implemented, partially implemented, or missing), and the owner responsible for closing the gap.</p>
+<p>Prioritize gaps by risk and effort. Controls that are purely procedural &ndash; like writing an information security policy or defining an incident response plan &ndash; can be completed in a few days. Infrastructure changes like enabling encryption or configuring centralized logging may take a sprint or two. Application-level changes like implementing RBAC or audit logging for sensitive actions are the most time-intensive and should start first.</p>
+<p>Budget between $20,000 and $60,000 for the audit itself, depending on your auditor and scope. Add $10,000 to $25,000 per year for a compliance automation platform if you choose to use one. The ROI is straightforward: a single enterprise deal that requires SOC 2 typically exceeds the total cost of compliance by a wide margin.</p>
+<p>After your Type I report (point-in-time assessment), immediately begin the observation period for your Type II report (typically 6 months). This is where all the monitoring, evidence collection, and incident response practices pay off. Your auditor will sample controls throughout the period, so consistency matters more than perfection.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Building SOC 2 compliance into your SaaS product is an investment that pays dividends in enterprise credibility, reduced sales friction, and genuinely stronger security posture. If you are planning a SOC 2 initiative and need engineering support &ndash; from architecture design through audit readiness &ndash; <a href="/contact.html">get in touch with our team</a>. We have guided SaaS companies through the entire compliance lifecycle and can help you get audit-ready without sacrificing your product velocity.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "SOC 2 Compliance for SaaS Development",
@@ -161,7 +90,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/soc-2-compliance-for-saas-development/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

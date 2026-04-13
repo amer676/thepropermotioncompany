@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,149 +6,54 @@
   <title>How to Evaluate and Benchmark AI Models for Your Use Case</title>
   <meta name="description" content="A practical guide to comparing AI models on the metrics that matter for your application.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/how-to-evaluate-and-benchmark-ai-models-for-your-use-case/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="How to Evaluate and Benchmark AI Models for Your Use Case">
-  <meta property="og:description" content="A practical guide to comparing AI models on the metrics that matter for your application.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-evaluate-and-benchmark-ai-models-for-your-use-case/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How to Evaluate and Benchmark AI Models for Your Use Case">
-  <meta name="twitter:description" content="A practical guide to comparing AI models on the metrics that matter for your application.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="How to Evaluate and Benchmark AI Models for Your Use Case"><meta property="og:description" content="A practical guide to comparing AI models on the metrics that matter for your application."><meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-evaluate-and-benchmark-ai-models-for-your-use-case/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Evaluate and Benchmark AI Models for Your Use Case"><meta name="twitter:description" content="A practical guide to comparing AI models on the metrics that matter for your application."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">November 17, 2024</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">AI</span><span class="blog-card-tag">engineering</span>
-            </div>
-            <h1 class="blog-post-title">How to Evaluate and Benchmark AI Models for Your Use Case</h1>
-            <p class="blog-post-desc">A practical guide to comparing AI models on the metrics that matter for your application.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>How to Evaluate and Benchmark AI Models for Your Use Case</h1>
-<p>A practical guide to comparing AI models on the metrics that matter for your application.</p>
-<p>We wrote this because we kept having the same conversation with clients. The questions come up in almost every discovery call, and the answers are nuanced enough that they deserve a thorough treatment.</p>
-<h2>A Decision Framework for How To Evaluate And</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality how to evaluate and typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>When How To Evaluate And Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>We worked with a SaaS startup that had been in development for fourteen months with no launch in sight. Their team kept adding features because they were afraid the product was not ready. We helped them cut scope to the core workflow, launched in six weeks, and their first paying customers told them exactly what to build next.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Architecture Patterns That Work</h2>
-<p>For how to evaluate and projects, certain architectural patterns consistently deliver better outcomes.</p>
-<p><strong>Start with a monolith.</strong> Microservices add complexity that early-stage projects do not need. Build a well-structured monolith first, then extract services when you have enough traffic and team size to justify the operational overhead.</p>
-<p><strong>Use managed services where possible.</strong> Managed databases, managed hosting, managed authentication — these save hundreds of hours of infrastructure maintenance. Your team should be building features, not managing servers.</p>
-<p><strong>Design for replaceability.</strong> Every third-party integration should be wrapped in an abstraction layer. When (not if) you need to swap out a vendor, the change should be isolated to one module, not spread across your codebase.</p>
-<p><strong>Cache strategically.</strong> Identify the most frequently accessed data and cache it close to the user. A simple caching layer can improve performance by 10x and reduce infrastructure costs significantly.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for how to evaluate and.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<h2>What Most Teams Get Wrong About How To Evaluate And</h2>
-<p><strong>Not defining success criteria upfront.</strong> If you cannot articulate what success looks like for your how to evaluate and initiative, you will not know when you have achieved it. Define specific, measurable outcomes before development begins.</p>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning how to evaluate and.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a how to evaluate and project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>Taking Action</h2>
-<p>Reading about how to evaluate and is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">November 17, 2024</span><span class="blog-card-read">6 min read</span><span class="blog-card-tag">AI</span><span class="blog-card-tag">engineering</span></div><h1 class="blog-post-title">How to Evaluate and Benchmark AI Models for Your Use Case</h1><p class="blog-post-desc">A practical guide to comparing AI models on the metrics that matter for your application.</p></div><div class="blog-post-content"><h1>How to Evaluate and Benchmark AI Models for Your Use Case</h1>
+<p>The AI model landscape is crowded and moving fast. OpenAI, Anthropic, Google, Meta, Mistral, Cohere, and dozens of smaller players each offer models with different strengths, pricing, and constraints. Public leaderboards like LMSYS Chatbot Arena and benchmarks like MMLU, HumanEval, and HellaSwag provide directional signal, but they measure general capability, not fitness for your specific task. A model that ranks first on a coding benchmark may perform poorly on your legal document classification task. A model that excels at creative writing may hallucinate confidently when asked to extract structured data from invoices.</p>
+<p>The only way to know which model works best for your use case is to build your own evaluation pipeline and benchmark the candidates against data that represents your actual production workload.</p>
+<h2>Defining Your Evaluation Criteria</h2>
+<p>Before running any benchmarks, define what &ldquo;good&rdquo; means for your application. This sounds obvious but is frequently skipped. Teams default to vague criteria like &ldquo;accuracy&rdquo; or &ldquo;quality&rdquo; without specifying what they mean in context.</p>
+<p>For a customer support classification system, good might mean: correctly classifies the support category at least 95% of the time, responds in under 500 milliseconds, costs less than $0.002 per classification, and never generates text that could be interpreted as a commitment or promise to the customer.</p>
+<p>For a medical document summarization system, good might mean: captures all clinically significant findings mentioned in the source document, does not introduce information not present in the source, structures the summary in SOAP note format, and processes a 10-page document in under 15 seconds.</p>
+<p>For a code generation assistant, good might mean: generates syntactically valid code at least 98% of the time, uses the libraries and patterns consistent with the team&rsquo;s codebase, handles edge cases mentioned in the prompt, and includes error handling without being prompted.</p>
+<p>Each criterion should be measurable. &ldquo;High quality&rdquo; is not a criterion. &ldquo;Captures 95% of key entities as determined by a human reviewer&rdquo; is a criterion. Write these down before you start testing, because the temptation to move goalposts after seeing results is strong.</p>
+<p>Weight the criteria by importance. For some applications, latency matters more than quality above a baseline threshold. For others, cost per request determines unit economics and dominates the decision. A weighted scoring matrix prevents the team from being distracted by a model that scores highest on a criterion that ultimately does not matter much.</p>
+<h2>Building a Representative Test Dataset</h2>
+<p>Your benchmark is only as good as your test data. The test dataset must represent the actual inputs your system will process in production, including the messy, edge-case-laden, format-inconsistent inputs that real users generate.</p>
+<p>Collect at least 200-500 examples from your production data or realistic simulated data. For classification tasks, ensure the dataset includes examples of every category, including rare categories and ambiguous cases that could reasonably belong to multiple categories. For generation tasks, include a range of input complexities: short inputs, long inputs, inputs with formatting irregularities, inputs in multiple languages if your users are multilingual.</p>
+<p>Create gold-standard labels for each example. For classification, this means the correct category. For extraction, the correct extracted entities. For summarization, a reference summary written by a domain expert. For generation, a set of criteria that a correct output must satisfy.</p>
+<p>The labeling process is where domain expertise is essential. A developer cannot accurately label medical documents. A lawyer cannot accurately label engineering specifications. Involve the people who will use the system&rsquo;s output in real life to create or verify the labels.</p>
+<p>Split the dataset into a development set (for iterating on prompts and configurations) and a held-out test set (for final evaluation). Never tune your prompts or select your model based on the test set, or you will overfit to the test data and be surprised by production performance. This is the same train/test split discipline that machine learning practitioners follow, and it applies to prompt engineering just as rigorously.</p>
+<h2>Running Structured Model Comparisons</h2>
+<p>With criteria defined and test data prepared, set up a systematic evaluation pipeline. Do not test models by manually trying a few examples in a chat interface. That is anecdotal evidence, not a benchmark.</p>
+<p>Build a script that runs every example in your test dataset through each model you are evaluating, captures the output, measures latency, and logs token usage and cost. The script should use the same prompt template across models to ensure a fair comparison. Store results in a structured format (CSV, JSON, or a database) for analysis.</p>
+<p>For each model, test with your best prompt. Prompt format preferences vary across models. Claude tends to perform well with detailed system prompts and XML-tagged structure. GPT models respond well to clear role definitions and few-shot examples. Llama models may need different formatting conventions. Spend time optimizing the prompt for each model before comparing, because a poorly prompted GPT-4o will underperform a well-prompted GPT-4o mini, which tells you nothing about model capability.</p>
+<p>Evaluate model outputs against your gold-standard labels using automated metrics where possible. For classification, compute accuracy, precision, recall, and F1 score per category. For extraction, compute exact match rate and partial match rate. For generation tasks, automated metrics like ROUGE or BERTScore provide a starting point, but human evaluation is usually necessary for quality assessment.</p>
+<p>For human evaluation, use a blind review process. Present outputs from different models side by side, without identifying which model produced which output, and have reviewers rate them against your criteria. Use at least two independent reviewers and measure inter-rater agreement. If reviewers disagree frequently, your criteria need to be more specific.</p>
+<h2>Factoring in Cost, Latency, and Operational Complexity</h2>
+<p>Model quality is not the only dimension. Two models that produce equivalent quality outputs may differ dramatically in cost, latency, and operational complexity.</p>
+<p>Cost per request depends on input token count, output token count, and the per-token price of the model. Calculate cost per request for your typical workload, not for the shortest example in your test set. If your average input is 2,000 tokens and your average output is 500 tokens, multiply by the model&rsquo;s pricing. At production volume, small per-request cost differences compound. A $0.001 difference per request across 1 million monthly requests is $1,000/month.</p>
+<p>Latency matters for user-facing applications. Measure time-to-first-token for streaming applications and total response time for synchronous applications. Test at realistic concurrency, not in isolation. A model that responds in 200ms with one concurrent request may respond in 2 seconds with 50 concurrent requests if you are hitting rate limits.</p>
+<p>Operational complexity includes factors like: does the model require self-hosting (open source models like Llama), or is it available as a managed API? If self-hosting, what GPU infrastructure is required, and what is the total cost of ownership including compute, maintenance, and engineering time? If using a managed API, what are the rate limits, SLA guarantees, and data processing terms?</p>
+<p>For regulated industries, data residency and processing terms may constrain your options. Some organizations cannot send data to US-based API endpoints. Some require that data is not retained by the model provider. These constraints may eliminate otherwise attractive options.</p>
+<h2>Continuous Evaluation in Production</h2>
+<p>Model evaluation is not a one-time exercise. Model providers update their models, your data distribution shifts over time, and new models enter the market regularly.</p>
+<p>Implement production monitoring that continuously evaluates model performance. Log every model input and output with a unique request ID. Sample a percentage of production requests (5-10% is usually sufficient) for human evaluation on a regular cadence: weekly for high-volume applications, monthly for lower volume.</p>
+<p>Track aggregate metrics over time. If classification accuracy drops from 96% to 91% over two months, something has changed: either the model&rsquo;s behavior shifted (after a provider update) or the input distribution shifted (users are submitting new types of requests that the model handles less well). Both scenarios require investigation and potentially prompt adjustment, model switching, or additional training data.</p>
+<p>Build A/B testing infrastructure so you can evaluate new models against your current production model on live traffic. Route a small percentage of requests to the candidate model, compare outputs against the production model using your evaluation criteria, and promote the candidate only if it meets or exceeds the current model&rsquo;s performance across all weighted criteria.</p>
+<p>Maintain a model evaluation log that records every major comparison: which models were tested, on what data, with what prompts, and with what results. This institutional knowledge prevents the team from re-running evaluations unnecessarily and provides context for future decisions.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Choosing the right AI model for your application is an engineering decision that deserves the same rigor as any other architecture choice. If you are integrating AI into your product and want help building a structured evaluation process, <a href="/contact.html">reach out to us</a>. We help teams move from experimentation to production with confidence.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Evaluate and Benchmark AI Models for Your Use Case",
@@ -170,7 +73,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/how-to-evaluate-and-benchmark-ai-models-for-your-use-case/",
   "articleSection": "AI"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

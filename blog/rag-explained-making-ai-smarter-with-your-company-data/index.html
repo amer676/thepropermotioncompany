@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,147 +6,62 @@
   <title>RAG Explained: Making AI Smarter with Your Company Data</title>
   <meta name="description" content="How retrieval-augmented generation works and why it is the most practical AI pattern for business.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/rag-explained-making-ai-smarter-with-your-company-data/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="RAG Explained: Making AI Smarter with Your Company Data">
-  <meta property="og:description" content="How retrieval-augmented generation works and why it is the most practical AI pattern for business.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/rag-explained-making-ai-smarter-with-your-company-data/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="RAG Explained: Making AI Smarter with Your Company Data">
-  <meta name="twitter:description" content="How retrieval-augmented generation works and why it is the most practical AI pattern for business.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="RAG Explained: Making AI Smarter with Your Company Data"><meta property="og:description" content="How retrieval-augmented generation works and why it is the most practical AI pattern for business."><meta property="og:url" content="https://thepropermotioncompany.com/blog/rag-explained-making-ai-smarter-with-your-company-data/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="RAG Explained: Making AI Smarter with Your Company Data"><meta name="twitter:description" content="How retrieval-augmented generation works and why it is the most practical AI pattern for business."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">June 22, 2025</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">AI</span><span class="blog-card-tag">engineering</span>
-            </div>
-            <h1 class="blog-post-title">RAG Explained: Making AI Smarter with Your Company Data</h1>
-            <p class="blog-post-desc">How retrieval-augmented generation works and why it is the most practical AI pattern for business.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>RAG Explained: Making AI Smarter with Your Company Data</h1>
-<p>How retrieval-augmented generation works and why it is the most practical AI pattern for business.</p>
-<p>We have been building custom software since 2022 — working directly with founders, operators, and technical leaders. This guide captures the patterns that separate projects that succeed from projects that stall.</p>
-<h2>A Decision Framework for Rag Explained: Making Ai</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality rag explained: making ai typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>When Rag Explained: Making Ai Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Technical Considerations</h2>
-<p>The architecture decisions you make early in a rag explained: making ai project have outsized impact on long-term costs and capabilities.</p>
-<p><strong>Data model design</strong> matters more than most teams realize. A well-designed data model makes features easier to build, queries faster to run, and integrations simpler to maintain. A poorly designed one creates friction that compounds with every new feature.</p>
-<p><strong>API design</strong> determines how easily your system can evolve and integrate with other tools. REST is the safe default for most business applications. GraphQL makes sense when your frontend needs flexibility in data fetching. The choice should be driven by your specific integration requirements, not industry trends.</p>
-<p><strong>Authentication and authorization</strong> need to be right from the start. Retrofitting security is expensive and risky. Plan your permission model before you build your first feature, even if it seems like overkill for the initial scope.</p>
-<p><strong>Monitoring and observability</strong> are not optional extras. You need to know when something breaks before your users tell you. Set up error tracking, performance monitoring, and uptime alerting from day one.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for rag explained: making ai.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a rag explained: making ai project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>What Most Teams Get Wrong About Rag Explained: Making Ai</h2>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning rag explained: making ai.</p>
-<p><strong>Not defining success criteria upfront.</strong> If you cannot articulate what success looks like for your rag explained: making ai initiative, you will not know when you have achieved it. Define specific, measurable outcomes before development begins.</p>
-<h2>Taking Action</h2>
-<p>Reading about rag explained: making ai is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">June 22, 2025</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">AI</span><span class="blog-card-tag">engineering</span></div><h1 class="blog-post-title">RAG Explained: Making AI Smarter with Your Company Data</h1><p class="blog-post-desc">How retrieval-augmented generation works and why it is the most practical AI pattern for business.</p></div><div class="blog-post-content"><h1>RAG Explained: Making AI Smarter with Your Company Data</h1>
+<p>Large language models are impressive generalists. They can draft emails, summarize documents, and answer questions across a wide range of topics. But ask one about your company&rsquo;s return policy, your internal engineering standards, or the status of a specific customer account, and it will either hallucinate a confident but wrong answer or admit it does not know. Retrieval-Augmented Generation, or RAG, is the architectural pattern that solves this problem by connecting a language model to your actual data at query time. It is the most practical, production-ready approach to making AI useful for business-specific tasks.</p>
+<h2>How RAG Works Under the Hood</h2>
+<p>A standard language model generates answers purely from patterns learned during training. It has no access to information created after its training cutoff, no access to private data, and no way to verify its claims against authoritative sources. RAG changes this by adding a retrieval step before generation.</p>
+<p>The process has three stages. First, the user&rsquo;s question is converted into a numerical representation called an embedding, a dense vector that captures the semantic meaning of the query. Second, that embedding is compared against a pre-built index of your company&rsquo;s documents, also represented as embeddings. The most semantically similar document chunks are retrieved. Third, those retrieved chunks are inserted into the prompt alongside the user&rsquo;s question, and the language model generates an answer grounded in the provided context.</p>
+<p>Think of it as giving the model an open-book exam instead of a closed-book exam. The model&rsquo;s reasoning ability stays the same, but it now has access to relevant reference material.</p>
+<p>The embedding step is what makes RAG work at scale. Rather than keyword matching (which misses synonyms, paraphrases, and conceptual relationships), embeddings capture meaning. A query about &ldquo;employee time off policy&rdquo; will retrieve documents about &ldquo;PTO guidelines&rdquo; and &ldquo;vacation request procedures&rdquo; even if those exact words never appear in the query. OpenAI&rsquo;s text-embedding-3-small, Cohere&rsquo;s embed-v3, and open-source models like BGE and E5 all produce high-quality embeddings suitable for RAG systems.</p>
+<h2>Building the Knowledge Base: Ingestion and Chunking</h2>
+<p>The quality of a RAG system depends more on the quality of the knowledge base than on the choice of language model. Garbage in, garbage out applies with full force.</p>
+<p>Ingestion starts with collecting the source documents: internal wikis, policy documents, product manuals, support ticket archives, Slack conversations, CRM notes, and any other text that contains knowledge your AI should be able to reference. Each source requires its own extraction pipeline. PDFs need text extraction (PyMuPDF or Apache Tika handle most formats). Confluence pages need API extraction with HTML parsing. Slack messages need thread reconstruction to maintain conversational context.</p>
+<p>Chunking is the process of splitting documents into pieces small enough for the embedding model to handle effectively and for the language model&rsquo;s context window to accommodate. This is where many RAG implementations stumble. Chunk too large and you dilute the embedding with irrelevant content, reducing retrieval precision. Chunk too small and you lose context, making the retrieved text useless without its surrounding paragraphs.</p>
+<p>A practical starting point is 300 to 500 tokens per chunk with 50 to 100 tokens of overlap between adjacent chunks. The overlap ensures that information at chunk boundaries is not lost. For structured documents with clear sections (headers, numbered lists), chunk on section boundaries rather than at fixed token counts. A section about &ldquo;Refund Eligibility&rdquo; should be one chunk, not split across two.</p>
+<p>Metadata attached to each chunk dramatically improves retrieval. Store the source document title, the section header, the creation or update date, the author, and any relevant tags. This metadata can be used for filtered retrieval (only search documents from the HR department when answering an HR question) and for source attribution in the answer.</p>
+<h2>Vector Databases and Retrieval Strategies</h2>
+<p>The indexed chunks live in a vector database, a specialized data store optimized for similarity search over high-dimensional vectors. Pinecone, Weaviate, Qdrant, Milvus, and pgvector (a PostgreSQL extension) are the leading options.</p>
+<p>For most business applications, pgvector is the pragmatic choice. If your application already uses PostgreSQL, adding pgvector gives you vector search without introducing a new infrastructure component. Performance is adequate for knowledge bases up to a few million chunks. For larger scale or lower-latency requirements, a dedicated vector database like Qdrant or Pinecone offers better query performance through purpose-built indexing algorithms like HNSW (Hierarchical Navigable Small World).</p>
+<p>Basic retrieval returns the top-k chunks most similar to the query embedding, typically k=5 to k=10. But similarity alone is not always sufficient. Several strategies improve retrieval quality.</p>
+<p>Hybrid search combines semantic similarity with keyword matching (BM25). A query about &ldquo;SOC 2 compliance requirements&rdquo; benefits from both the semantic understanding of embeddings and the exact-match precision of keyword search for the term &ldquo;SOC 2.&rdquo; Reciprocal Rank Fusion (RRF) is a simple method for combining the two ranked lists into a single result set.</p>
+<p>Re-ranking applies a more expensive but more accurate model to re-score the initial retrieval results. Cohere Rerank and cross-encoder models from the sentence-transformers library can re-order the top 20 results from the initial retrieval, promoting the most relevant chunks to the top. This two-stage approach, cheap retrieval followed by expensive re-ranking, balances cost and quality.</p>
+<p>Query expansion rewrites or augments the user&rsquo;s query before retrieval. A short, ambiguous query like &ldquo;PTO&rdquo; might be expanded to &ldquo;paid time off policy vacation days sick leave&rdquo; before embedding. The language model itself can do this expansion: prompt it to generate three alternative phrasings of the query, embed all of them, and merge the retrieval results.</p>
+<h2>Prompt Engineering for Grounded Answers</h2>
+<p>The retrieved chunks are useful only if the language model uses them correctly. The system prompt must instruct the model to base its answers on the provided context and to acknowledge when the context does not contain sufficient information.</p>
+<p>A system prompt that works well in practice:</p>
+<p>&ldquo;You are an assistant that answers questions using only the provided context. If the context does not contain enough information to answer the question, say so. Do not make up information. Cite the source document for each claim.&rdquo;</p>
+<p>Include the retrieved chunks in a clearly delimited section of the prompt:</p>
+<p>&ldquo;Context: [chunk 1 text, source: Employee Handbook, section: PTO Policy] [chunk 2 text, source: HR FAQ, updated: 2025-03-01] &hellip;&rdquo;</p>
+<p>Then append the user&rsquo;s question. The model generates an answer grounded in the provided context, with citations that the user can verify.</p>
+<p>Temperature settings matter. For factual Q&amp;A, set the temperature to 0 or near 0. Higher temperatures increase creativity, which is the opposite of what you want when the answer should come from a specific document.</p>
+<p>Handle edge cases explicitly. If the retrieval returns no chunks above a relevance threshold, skip the generation step and return a &ldquo;I don&rsquo;t have information about that&rdquo; message. This is far better than letting the model generate an answer from its training data, which might be wrong.</p>
+<h2>Evaluation: Measuring RAG System Quality</h2>
+<p>Deploying a RAG system without evaluation is like launching a product without testing. You need quantitative metrics to know whether the system is working and where it is failing.</p>
+<p>Retrieval quality is measured separately from generation quality. For retrieval, use precision@k (what fraction of the top k results are relevant) and recall@k (what fraction of all relevant documents appear in the top k). To compute these, you need a test set: 50 to 100 questions with manually identified relevant documents. Building this test set is tedious but essential.</p>
+<p>Generation quality is harder to measure automatically. Human evaluation remains the gold standard: have subject matter experts rate answers on a 1-5 scale for correctness, completeness, and relevance. For automated evaluation, LLM-as-judge approaches (using a language model to evaluate the output of another language model) correlate reasonably well with human judgment. RAGAS is an open-source framework that automates several RAG evaluation metrics including faithfulness (does the answer stick to the context?) and answer relevance (does the answer actually address the question?).</p>
+<p>Monitor production quality continuously. Log every query, the retrieved chunks, and the generated answer. Sample a percentage (5 to 10 percent) for human review weekly. Track user feedback signals: thumbs up/down ratings, follow-up questions that suggest the initial answer was insufficient, and escalations to human support.</p>
+<p>Common failure modes include: retrieval misses (the relevant document exists but is not retrieved, usually a chunking or embedding problem), context stuffing (too many marginally relevant chunks dilute the context, confusing the model), and hallucination despite context (the model ignores the provided context and generates from its training data, usually a prompt engineering problem). Each failure mode has a different fix, so categorizing failures is as important as counting them.</p>
+<h2>Practical Use Cases That Deliver ROI Fast</h2>
+<p>RAG is not a research project. It is a production pattern with well-understood implementation paths. The use cases with the fastest return on investment are those where employees currently spend significant time searching for information.</p>
+<p>Internal knowledge base Q&amp;A, where employees ask questions about policies, procedures, and institutional knowledge, is the most common starting point. A mid-size company with 500 employees might field 200 HR-related questions per week. A RAG-powered chatbot that answers 70% of those questions accurately saves roughly 100 hours of HR staff time per week.</p>
+<p>Customer support augmentation, where support agents get AI-suggested answers based on the knowledge base, reduces average handle time and improves answer consistency. The agent reviews and edits the suggestion before sending it, keeping a human in the loop while reducing the time spent searching for information.</p>
+<p>Document summarization and comparison, where legal or compliance teams need to understand how a new regulation affects existing policies, benefits from RAG by retrieving relevant sections of existing documents and generating a comparative analysis.</p>
+<p>Sales enablement, where account executives need quick answers about product capabilities, pricing rules, and competitive positioning, uses RAG to surface the right information from product documentation, pricing sheets, and competitive intelligence without the rep having to search through a shared drive.</p>
+<p>The key to fast ROI is starting with a well-defined scope, a single department or use case, with a clean and well-maintained document set. Expand from there as the system proves its value.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If you want to make your company&rsquo;s knowledge accessible through AI without the risks of hallucination or data leakage, <a href="/contact.html">let&rsquo;s talk about building a RAG system for your organization</a>. We design retrieval pipelines that ground AI in your actual data.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "RAG Explained: Making AI Smarter with Your Company Data",
@@ -168,7 +81,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/rag-explained-making-ai-smarter-with-your-company-data/",
   "articleSection": "AI"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

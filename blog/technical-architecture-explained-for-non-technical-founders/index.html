@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,141 +6,59 @@
   <title>Technical Architecture Explained for Non-Technical Founders</title>
   <meta name="description" content="Technical Architecture Explained for Non-Technical Founders. architecture for founders Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/technical-architecture-explained-for-non-technical-founders/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Technical Architecture Explained for Non-Technical Founders">
-  <meta property="og:description" content="Technical Architecture Explained for Non-Technical Founders. architecture for founders Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/technical-architecture-explained-for-non-technical-founders/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Technical Architecture Explained for Non-Technical Founders">
-  <meta name="twitter:description" content="Technical Architecture Explained for Non-Technical Founders. architecture for founders Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Technical Architecture Explained for Non-Technical Founders"><meta property="og:description" content="Technical Architecture Explained for Non-Technical Founders. architecture for founders Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/technical-architecture-explained-for-non-technical-founders/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Technical Architecture Explained for Non-Technical Founders"><meta name="twitter:description" content="Technical Architecture Explained for Non-Technical Founders. architecture for founders Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">April 27, 2024</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">startup</span><span class="blog-card-tag">engineering</span>
-            </div>
-            <h1 class="blog-post-title">Technical Architecture Explained for Non-Technical Founders</h1>
-            <p class="blog-post-desc">Technical Architecture Explained for Non-Technical Founders. architecture for founders Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Technical Architecture Explained for Non-Technical Founders</h1>
-<p>architecture for founders</p>
-<p>This is not a theoretical overview. Everything in this guide comes from production experience — systems we have built, problems we have solved, and patterns we have seen work across real projects.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>An e-commerce company outgrew Shopify but was terrified of the migration. Their catalog was complex, their integrations were fragile, and their team had no backend experience. We ran the migration in phases — zero downtime, zero lost orders, and a 40% improvement in page load time on the new stack.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a technical architecture explained for project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>Architecture Patterns That Work</h2>
-<p>For technical architecture explained for projects, certain architectural patterns consistently deliver better outcomes.</p>
-<p><strong>Start with a monolith.</strong> Microservices add complexity that early-stage projects do not need. Build a well-structured monolith first, then extract services when you have enough traffic and team size to justify the operational overhead.</p>
-<p><strong>Use managed services where possible.</strong> Managed databases, managed hosting, managed authentication — these save hundreds of hours of infrastructure maintenance. Your team should be building features, not managing servers.</p>
-<p><strong>Design for replaceability.</strong> Every third-party integration should be wrapped in an abstraction layer. When (not if) you need to swap out a vendor, the change should be isolated to one module, not spread across your codebase.</p>
-<p><strong>Cache strategically.</strong> Identify the most frequently accessed data and cache it close to the user. A simple caching layer can improve performance by 10x and reduce infrastructure costs significantly.</p>
-<h2>A Decision Framework for Technical Architecture Explained For</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality technical architecture explained for typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for technical architecture explained for.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about technical architecture explained for, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">April 27, 2024</span><span class="blog-card-read">8 min read</span><span class="blog-card-tag">startup</span><span class="blog-card-tag">engineering</span></div><h1 class="blog-post-title">Technical Architecture Explained for Non-Technical Founders</h1><p class="blog-post-desc">Technical Architecture Explained for Non-Technical Founders. architecture for founders Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Technical Architecture Explained for Non-Technical Founders</h1>
+<p>When a developer tells you they need to &ldquo;refactor the architecture&rdquo; or that your application has &ldquo;too much coupling between services,&rdquo; it can feel like they are speaking a different language designed specifically to make you feel out of your depth. This is not intentional, but it is a real problem. Founders who do not understand technical architecture at a conceptual level cannot evaluate whether their technical team is making good decisions, cannot meaningfully participate in build-vs-buy conversations, and cannot assess risk when the CTO says &ldquo;we need to stop building features for two months to address technical debt.&rdquo;</p>
+<p>You do not need to learn to code. You do need to understand what architecture is, why it matters, and how to ask the right questions about it. Think of this as the same level of financial literacy you need to read a P&amp;L statement &ndash; you are not doing the accounting, but you need to understand what the numbers mean.</p>
+<h2>What Architecture Actually Means in Software</h2>
+<p>Software architecture is the set of structural decisions about how a system is organized. It answers questions like: where does the data live? How do different parts of the system communicate with each other? What happens when something fails? How does the system handle 10x more users than it has today?</p>
+<p>An analogy that works well: architecture is to software what a floor plan is to a building. The floor plan determines where the load-bearing walls are, how rooms connect to each other, where the plumbing and electrical run, and how many floors the building can support. You can remodel a kitchen without changing the floor plan. You cannot add a third floor without structural engineering.</p>
+<p>In software, architectural decisions include which database technology you use (PostgreSQL, MongoDB, DynamoDB &ndash; each has different strengths), whether your application is one unified codebase (a monolith) or many small services that communicate over a network (microservices), how your frontend (what users see) communicates with your backend (where the logic and data live), and how your system integrates with external services like payment processors, email providers, or third-party APIs.</p>
+<p>These decisions matter because they are expensive to change later. Choosing the wrong database and realizing it 18 months in can mean a 3-6 month migration project. Building microservices when a monolith would have sufficed can triple your infrastructure costs and slow your team down. These are not coding mistakes &ndash; they are structural decisions that affect everything built on top of them.</p>
+<h2>The Monolith vs Microservices Decision (And Why You Should Care)</h2>
+<p>This is the architectural decision you are most likely to hear debated, so here is what it actually means.</p>
+<p>A <strong>monolith</strong> is a single application that contains all your features. Your user authentication, your payment processing, your notification system, and your core business logic all live in one codebase, deployed as one unit. When you push an update, the entire application is redeployed.</p>
+<p><strong>Microservices</strong> break the application into separate, independently deployable services. The user service handles authentication, the payment service handles billing, the notification service handles emails and push notifications, and they communicate with each other over the network.</p>
+<p>The microservices approach sounds superior in the abstract &ndash; independent scaling, independent deployment, fault isolation. But here is the reality: microservices are dramatically more complex to build and operate. Each service needs its own deployment pipeline, its own monitoring, its own error handling for network failures between services. A team of three developers managing eight microservices is spending most of their time on infrastructure rather than features.</p>
+<p>The practical guidance for founders: if your team is fewer than 15-20 engineers, a well-structured monolith is almost certainly the right choice. It is faster to build, simpler to debug, cheaper to host, and easier to reason about. Companies like Shopify, Basecamp, and Stack Overflow ran monoliths at enormous scale. The threshold where microservices genuinely pay off is when organizational scaling (many teams needing to deploy independently) becomes the bottleneck, not technical scaling.</p>
+<p>When someone on your team advocates for microservices, ask: &ldquo;What specific problem does this solve that a monolith cannot?&rdquo; If the answer is theoretical (&ldquo;what if we need to scale the notification service independently?&rdquo;), push back. If the answer is concrete (&ldquo;our video processing pipeline consumes all the CPU on the server and degrades the user experience during peak hours&rdquo;), that is a legitimate reason to extract one specific service.</p>
+<h2>Databases: The Decisions That Shape Everything</h2>
+<p>Your database is where all your business data lives: customer records, transactions, content, relationships, logs, everything. The choice of database technology and how your data is structured (the &ldquo;schema&rdquo;) is arguably the most consequential architectural decision in any project.</p>
+<p><strong>Relational databases</strong> (PostgreSQL, MySQL) store data in tables with defined relationships. Think of it like a spreadsheet where each sheet has defined columns, and you can link rows across sheets. An order row in the Orders table links to a customer row in the Customers table. Relational databases are excellent when your data has clear structure, relationships matter, and you need complex queries (&ldquo;show me all orders over $500 from customers in Texas who signed up in the last 90 days&rdquo;).</p>
+<p><strong>Document databases</strong> (MongoDB, DynamoDB) store data as flexible documents, similar to JSON files. Each document can have a different structure. They excel when your data varies widely in shape (different product types have different attributes) or when you need extremely fast reads at massive scale.</p>
+<p>For most business applications &ndash; SaaS platforms, marketplaces, internal tools, customer-facing portals &ndash; PostgreSQL is the right default choice. It is mature, well-supported, handles both structured and semi-structured data (via a feature called JSONB), scales to millions of records without exotic infrastructure, and has the largest ecosystem of tools and expertise.</p>
+<p>The question to ask your technical team: &ldquo;Why are we using this database instead of PostgreSQL?&rdquo; If the answer is &ldquo;we have a specific workload that PostgreSQL cannot handle efficiently&rdquo; (graph relationships, time-series data, full-text search at massive scale), the choice makes sense. If the answer is &ldquo;it is newer&rdquo; or &ldquo;it is what I am most familiar with,&rdquo; push back.</p>
+<h2>APIs: How Your Software Talks to the World</h2>
+<p>An API (Application Programming Interface) is how different software systems communicate with each other. Your mobile app talks to your server through an API. Your website talks to your server through an API. Your server talks to Stripe for payments, Twilio for SMS, and AWS for file storage through their APIs.</p>
+<p>The two architectural styles you will hear about are <strong>REST</strong> and <strong>GraphQL</strong>.</p>
+<p>REST is the established standard. It defines specific URLs (endpoints) for specific actions: GET /api/customers returns a list of customers, POST /api/orders creates a new order. It is well-understood, works with every programming language and platform, and has decades of tooling support.</p>
+<p>GraphQL is a newer approach that lets the client specify exactly what data it needs. Instead of hitting three different REST endpoints to get a customer&rsquo;s profile, their orders, and their payment methods, a GraphQL query fetches all three in one request with exactly the fields needed. It reduces over-fetching (getting more data than you need) and under-fetching (needing multiple requests to get all the data).</p>
+<p>For most projects, REST is the right default. It is simpler, more widely understood, and easier to cache and monitor. GraphQL makes sense when you have multiple client applications (web, iOS, Android) with significantly different data needs for the same screens, or when the API is consumed by third-party developers who need flexibility.</p>
+<h2>Infrastructure and Hosting: Where Your Software Lives</h2>
+<p>Your application needs to run somewhere. The three main options are cloud platforms (AWS, Google Cloud, Azure), platform-as-a-service providers (Heroku, Render, Railway, Vercel), and traditional hosting (dedicated servers, colocation).</p>
+<p>For startups and small-to-medium businesses, platform-as-a-service (PaaS) is almost always the right starting point. A service like Render or Railway lets you deploy your application without managing servers, operating systems, or networking. You push your code, they run it. Monthly costs for a typical early-stage application range from $50-$500, and these platforms handle SSL certificates, automatic scaling, database backups, and deployment pipelines.</p>
+<p>As you grow, you may move to AWS or Google Cloud for more control and cost optimization. But this transition typically makes sense only when your monthly hosting bill exceeds $5,000-$10,000, because the operational complexity of managing raw cloud infrastructure requires dedicated DevOps expertise.</p>
+<p>The question for founders: &ldquo;What is our monthly infrastructure cost, and what do we get for it?&rdquo; You should be able to get a clear answer about server costs, database costs, file storage costs, CDN costs, and any third-party service costs. If your team cannot itemize these, they do not have sufficient visibility into where the money is going.</p>
+<h2>How to Evaluate Architectural Decisions Without Being Technical</h2>
+<p>You do not need to evaluate the technical merits of every decision. You need to evaluate the decision-making process. Here are the questions that reveal whether architectural decisions are being made well.</p>
+<p><strong>&ldquo;What are the alternatives, and why did we choose this one?&rdquo;</strong> Good architects consider multiple options and choose based on explicit tradeoffs. Bad architects default to what they know or what is popular.</p>
+<p><strong>&ldquo;What is the cost of being wrong?&rdquo;</strong> Some decisions are easily reversible (choosing a CSS framework, selecting a logging library). Some are expensive to reverse (database choice, monolith vs microservices, programming language). The expensive-to-reverse decisions deserve more deliberation.</p>
+<p><strong>&ldquo;How does this scale to 10x our current needs?&rdquo;</strong> You do not need a system that handles 100x today&rsquo;s load. But you should understand the path to 10x. The answer should be concrete: &ldquo;We add a read replica to the database&rdquo; or &ldquo;We put a caching layer in front of the API.&rdquo; Vague answers like &ldquo;we will figure it out when we get there&rdquo; are a yellow flag.</p>
+<p><strong>&ldquo;What is the simplest version of this that could work?&rdquo;</strong> Complexity is the enemy of early-stage products. If the proposed architecture sounds elaborate, ask what a simpler version looks like and what you would give up. Often, the simpler version is sufficient for the next 12-18 months, and you can always add complexity later.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Understanding technical architecture at this level will not make you an engineer. It will make you a better founder &ndash; one who can participate in technical conversations, evaluate recommendations critically, and ensure that architectural decisions align with your business goals rather than your team&rsquo;s personal preferences.</p>
+<p>If you are a non-technical founder who wants a trusted partner to help navigate technical decisions, <a href="/contact.html">get in touch with us</a>. We specialize in translating between business objectives and technical execution.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Technical Architecture Explained for Non-Technical Founders",
@@ -162,7 +78,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/technical-architecture-explained-for-non-technical-founders/",
   "articleSection": "startup"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

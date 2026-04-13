@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,142 +6,83 @@
   <title>Building Search Functionality for Business Applications</title>
   <meta name="description" content="Building Search Functionality for Business Applications. search implementation Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/building-search-functionality-for-business-applications/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Building Search Functionality for Business Applications">
-  <meta property="og:description" content="Building Search Functionality for Business Applications. search implementation Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/building-search-functionality-for-business-applications/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Building Search Functionality for Business Applications">
-  <meta name="twitter:description" content="Building Search Functionality for Business Applications. search implementation Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Building Search Functionality for Business Applications"><meta property="og:description" content="Building Search Functionality for Business Applications. search implementation Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/building-search-functionality-for-business-applications/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Building Search Functionality for Business Applications"><meta name="twitter:description" content="Building Search Functionality for Business Applications. search implementation Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">March 15, 2023</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">search</span>
-            </div>
-            <h1 class="blog-post-title">Building Search Functionality for Business Applications</h1>
-            <p class="blog-post-desc">Building Search Functionality for Business Applications. search implementation Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Building Search Functionality for Business Applications</h1>
-<p>If you are researching building search functionality for, you have probably noticed that most guides online are either too surface-level to be useful or too technical to be actionable. This guide sits in the middle — practical enough to inform real decisions, detailed enough to be worth your time.</p>
-<p>search implementation</p>
-<h2>What Most Teams Get Wrong About Building Search Functionality For</h2>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For building search functionality for, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For building search functionality for, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning building search functionality for.</p>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<h2>Technical Considerations</h2>
-<p>The architecture decisions you make early in a building search functionality for project have outsized impact on long-term costs and capabilities.</p>
-<p><strong>Data model design</strong> matters more than most teams realize. A well-designed data model makes features easier to build, queries faster to run, and integrations simpler to maintain. A poorly designed one creates friction that compounds with every new feature.</p>
-<p><strong>API design</strong> determines how easily your system can evolve and integrate with other tools. REST is the safe default for most business applications. GraphQL makes sense when your frontend needs flexibility in data fetching. The choice should be driven by your specific integration requirements, not industry trends.</p>
-<p><strong>Authentication and authorization</strong> need to be right from the start. Retrofitting security is expensive and risky. Plan your permission model before you build your first feature, even if it seems like overkill for the initial scope.</p>
-<p><strong>Monitoring and observability</strong> are not optional extras. You need to know when something breaks before your users tell you. Set up error tracking, performance monitoring, and uptime alerting from day one.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for building search functionality for.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<h2>A Decision Framework for Building Search Functionality For</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality building search functionality for typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>When Building Search Functionality For Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about building search functionality for, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">March 15, 2023</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">search</span></div><h1 class="blog-post-title">Building Search Functionality for Business Applications</h1><p class="blog-post-desc">Building Search Functionality for Business Applications. search implementation Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Building Search Functionality for Business Applications</h1>
+<p>Search is the feature that users never praise when it works and always curse when it does not. In a business application &mdash; an internal knowledge base, a customer portal, an e-commerce catalog, an administrative dashboard &mdash; search is often the primary way users navigate. When it is fast and accurate, users find what they need in seconds. When it is slow, irrelevant, or absent, they file support tickets, call colleagues, or build personal spreadsheets to track what the application should have surfaced.</p>
+<p>This guide covers the technical decisions behind building search that actually works: choosing the right engine, designing the index, handling relevance ranking, and scaling for real-world data volumes.</p>
+<h2>When You Actually Need a Search Engine</h2>
+<p>Not every application needs a dedicated search engine. The decision depends on data volume, query complexity, and user expectations.</p>
+<p><strong>Database queries are sufficient when:</strong>
+- The dataset is under 100,000 records
+- Users search by exact or near-exact matches (order number, customer name, email address)
+- Search is a secondary navigation method (most users browse or filter)
+- Query latency under 200ms is achievable with proper indexing</p>
+<p>A PostgreSQL <code>ILIKE</code> query with a GIN index on a <code>tsvector</code> column handles full-text search surprisingly well for datasets up to a few hundred thousand records. For a 50,000-record product catalog, PostgreSQL full-text search returns results in 10 to 50 milliseconds with proper indexing. Do not add infrastructure complexity you do not need.</p>
+<p><strong>A dedicated search engine is necessary when:</strong>
+- The dataset exceeds 500,000 records or grows rapidly
+- Users expect typo tolerance, synonym matching, or fuzzy matching (&ldquo;recieve&rdquo; should match &ldquo;receive&rdquo;)
+- Search needs to span multiple entity types (search across customers, orders, and products simultaneously)
+- Faceted search (filtering by category, date range, price range alongside the text query) is required
+- Relevance ranking needs to consider multiple signals (text match, recency, popularity, user context)
+- Sub-100ms response time is required at scale</p>
+<p>When you cross this threshold, the three primary options are Elasticsearch, Typesense, and Meilisearch. Each has distinct strengths.</p>
+<h2>Choosing Your Search Engine</h2>
+<p><strong>Elasticsearch</strong> is the incumbent. It handles virtually any search use case, from full-text search to log analytics to vector search. It scales horizontally to billions of documents. Its query DSL is extraordinarily powerful. The trade-off is operational complexity: Elasticsearch clusters require careful tuning of heap size, shard count, refresh intervals, and mapping configurations. Running Elasticsearch well requires dedicated operational expertise or a managed service like Elastic Cloud ($95+/month for production workloads).</p>
+<p>Best for: Large datasets (10M+ records), complex query requirements, teams with existing Elasticsearch experience, applications that also need log analytics.</p>
+<p><strong>Typesense</strong> is purpose-built for application search. It is fast (sub-10ms queries on million-record datasets), operationally simple (single binary, no JVM, no cluster management for moderate scale), and comes with typo tolerance and ranking built in. It lacks some of Elasticsearch&rsquo;s advanced features (complex aggregations, scripted scoring) but covers 90 percent of application search needs with 10 percent of the operational burden.</p>
+<p>Best for: Product catalogs, directory search, knowledge bases, teams that want search to &ldquo;just work&rdquo; without a dedicated search engineer. Open-source and self-hostable, or available as Typesense Cloud ($30+/month).</p>
+<p><strong>Meilisearch</strong> occupies a similar niche to Typesense, with an emphasis on developer experience. Its API is RESTful and intuitive, its default relevance is surprisingly good, and it handles typos and prefixes out of the box. It is slightly less mature than Typesense for production workloads but is improving rapidly.</p>
+<p>Best for: Developer-facing products, documentation search, rapid prototyping. Open-source, with Meilisearch Cloud available.</p>
+<p>For most business applications we build, Typesense is the default choice unless the client has specific requirements that push toward Elasticsearch.</p>
+<h2>Designing Your Search Index</h2>
+<p>A search index is not a copy of your database. It is a purpose-built data structure optimized for the queries users will run. Designing it well requires thinking about what users search for, not what your database schema looks like.</p>
+<p><strong>Choose searchable fields carefully.</strong> Not every field should be searchable. In a customer database, users search by name, email, phone number, and company name. They do not search by internal ID, creation timestamp, or account status. Including non-searchable fields in the index increases index size and can introduce false-positive results.</p>
+<p><strong>Add filterable attributes.</strong> Filters are not search &mdash; they are constraints applied alongside search. A user searching for &ldquo;wireless headphones&rdquo; and filtering by &ldquo;price under $100&rdquo; and &ldquo;brand: Sony&rdquo; is issuing a query with two filters. Your index needs these fields marked as filterable (not searchable), which uses a different storage structure optimized for range and equality comparisons.</p>
+<p><strong>Configure field weights.</strong> A match in the product title should rank higher than a match in the product description, which should rank higher than a match in customer reviews. Configure field weights to reflect this hierarchy. Typical weights for a product search:</p>
+<ul>
+<li>Product name: weight 10</li>
+<li>Brand: weight 8</li>
+<li>Category: weight 5</li>
+<li>Description: weight 3</li>
+<li>Tags/keywords: weight 4</li>
+</ul>
+<p><strong>Denormalize for search.</strong> If a customer record includes an associated company and recent orders, the search index should include the company name and order details as nested fields on the customer document. This allows a single search to return results like &ldquo;John Smith at Acme Corp, Order #4521.&rdquo; In your primary database, this data lives in separate tables. In your search index, it belongs together.</p>
+<p><strong>Handle synonyms explicitly.</strong> Business domains have their own vocabularies. &ldquo;PO&rdquo; means &ldquo;purchase order.&rdquo; &ldquo;RMA&rdquo; means &ldquo;return merchandise authorization.&rdquo; &ldquo;NET30&rdquo; means &ldquo;payment due in 30 days.&rdquo; Configure synonym lists so that searching for &ldquo;PO&rdquo; returns results containing &ldquo;purchase order&rdquo; and vice versa. Review and expand synonym lists quarterly based on search queries that returned zero results.</p>
+<h2>Relevance Ranking: The Art and Science</h2>
+<p>Default relevance ranking (typically BM25 or a TF-IDF variant) works well for generic text search but poorly for business applications, because it considers only text similarity. Business search needs to factor in additional signals:</p>
+<p><strong>Recency.</strong> In a support ticket system, recent tickets should rank higher than tickets from three years ago, even if the older ticket is a better text match. Implement a time-decay function that reduces the score of older documents. A common approach: multiply the text relevance score by <code>1 / (1 + days_since_update * decay_factor)</code>, where decay_factor is tuned to your domain (0.01 for slow-moving content, 0.1 for fast-moving content).</p>
+<p><strong>Popularity.</strong> In an e-commerce catalog, a product with 500 purchases should rank higher than a product with 5 purchases, all else being equal. Include a popularity signal (sales count, view count, click count) as a ranking factor with a moderate weight &mdash; enough to boost popular results but not enough to bury niche products.</p>
+<p><strong>Personalization.</strong> If you know the user&rsquo;s department, location, or role, use it to boost relevant results. A search for &ldquo;policy&rdquo; by an HR manager should surface HR policies before IT policies. Implement this as a query-time boost on documents tagged with the user&rsquo;s context.</p>
+<p><strong>Business rules.</strong> Sometimes you need to override algorithmic ranking. Promoted products, featured articles, or pinned announcements should appear at the top regardless of text relevance. Implement this as a separate &ldquo;pinned results&rdquo; layer that precedes the ranked results.</p>
+<p>Test relevance changes using a judgment set: a list of 50 to 100 common queries with manually rated expected results. Run the judgment set against your search engine before and after ranking changes, computing NDCG (Normalized Discounted Cumulative Gain) or a simpler precision@10 metric. This prevents relevance regressions.</p>
+<h2>Search UX Patterns That Improve Findability</h2>
+<p>The search engine is half the problem. The other half is how search is presented in the interface.</p>
+<p><strong>Instant search (search-as-you-type).</strong> Show results after every keystroke, with a debounce of 150 to 300 milliseconds to avoid overwhelming the server. This requires sub-100ms query latency from the search engine, which modern engines like Typesense handle comfortably. Instant search reduces the time to first result by 60 to 70 percent compared to submit-and-wait search.</p>
+<p><strong>Highlighted matches.</strong> Show exactly which words in the result matched the query, using bold or color highlighting. This helps users scan results quickly and builds trust in the search system.</p>
+<p><strong>Faceted navigation.</strong> After showing results, display filter options derived from the result set: categories, date ranges, statuses, authors. Each facet shows a count of matching results, so users know before clicking whether narrowing will help. Update facet counts in real-time as the user applies filters.</p>
+<p><strong>Zero-result handling.</strong> A blank screen with &ldquo;No results found&rdquo; is a dead end. Instead, offer: spelling correction suggestions, related search terms, recently popular queries in the same category, or a direct link to support. Every zero-result query is a signal that either your content has a gap or your search has a coverage gap &mdash; track them.</p>
+<p><strong>Recent and saved searches.</strong> For internal business applications where users run the same queries repeatedly (a support agent searching for a customer, a procurement officer checking a vendor), save recent searches and allow bookmarking frequent ones. This turns search from a navigation tool into a workspace.</p>
+<h2>Scaling Search in Production</h2>
+<p>As data volume and query volume grow, search performance requires ongoing attention:</p>
+<ul>
+<li><strong>Index size management.</strong> Archive old records that are rarely searched. A support ticket system might keep the last 2 years in the primary search index and move older tickets to a cold archive index with slower response times.</li>
+<li><strong>Query performance monitoring.</strong> Track p50, p95, and p99 query latency. Investigate any query that exceeds 500ms. Common causes: overly broad wildcard queries, unoptimized filter conditions, or insufficient hardware.</li>
+<li><strong>Index refresh strategy.</strong> How quickly do new or updated records appear in search results? Real-time indexing (within 1 second) requires more resources. Near-real-time (within 1 to 5 minutes) is sufficient for most business applications and is dramatically cheaper.</li>
+<li><strong>Reindexing plan.</strong> When you change the index schema (adding fields, changing analyzers), you need to rebuild the index from source data. For a million-record index, this takes minutes. For a hundred-million-record index, it can take hours. Have a zero-downtime reindexing strategy: build the new index alongside the old one, switch the alias when the new index is ready.</li>
+</ul>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If your application&rsquo;s search experience is frustrating users or holding back productivity, <a href="/contact.html">contact The Proper Motion Company</a>. We build search systems that help users find exactly what they need, fast.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building Search Functionality for Business Applications",
@@ -163,7 +102,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/building-search-functionality-for-business-applications/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,144 +6,57 @@
   <title>OpenAI API Integration Guide for Business Applications</title>
   <meta name="description" content="A practical guide to working with OpenAI API in production business applications.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/openai-api-integration-guide-for-business-applications/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="OpenAI API Integration Guide for Business Applications">
-  <meta property="og:description" content="A practical guide to working with OpenAI API in production business applications.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/openai-api-integration-guide-for-business-applications/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="OpenAI API Integration Guide for Business Applications">
-  <meta name="twitter:description" content="A practical guide to working with OpenAI API in production business applications.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="OpenAI API Integration Guide for Business Applications"><meta property="og:description" content="A practical guide to working with OpenAI API in production business applications."><meta property="og:url" content="https://thepropermotioncompany.com/blog/openai-api-integration-guide-for-business-applications/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="OpenAI API Integration Guide for Business Applications"><meta name="twitter:description" content="A practical guide to working with OpenAI API in production business applications."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">December 16, 2024</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">AI</span><span class="blog-card-tag">engineering</span>
-            </div>
-            <h1 class="blog-post-title">OpenAI API Integration Guide for Business Applications</h1>
-            <p class="blog-post-desc">A practical guide to working with OpenAI API in production business applications.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>OpenAI API Integration Guide for Business Applications</h1>
-<p>A practical guide to working with OpenAI API in production business applications.</p>
-<p>Before you make any decisions about openai api integration guide, read this. It will save you time, money, and the particular frustration that comes from learning expensive lessons the hard way.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A healthcare organization needed to digitize a paper-based intake process while maintaining HIPAA compliance. Their previous vendor quoted twelve months and half a million dollars. We delivered a compliant system in eight weeks at a fraction of the cost. The difference: we did not build a platform. We built exactly what they needed.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>When Openai Api Integration Guide Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>A Decision Framework for Openai Api Integration Guide</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality openai api integration guide typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for openai api integration guide.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a openai api integration guide project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>What Most Teams Get Wrong About Openai Api Integration Guide</h2>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For openai api integration guide, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Skipping user research.</strong> Building openai api integration guide without talking to the people who will actually use it is like designing a house without asking who lives there. Five conversations with real users will save you more money than any amount of internal brainstorming.</p>
-<h2>Architecture Patterns That Work</h2>
-<p>For openai api integration guide projects, certain architectural patterns consistently deliver better outcomes.</p>
-<p><strong>Start with a monolith.</strong> Microservices add complexity that early-stage projects do not need. Build a well-structured monolith first, then extract services when you have enough traffic and team size to justify the operational overhead.</p>
-<p><strong>Use managed services where possible.</strong> Managed databases, managed hosting, managed authentication — these save hundreds of hours of infrastructure maintenance. Your team should be building features, not managing servers.</p>
-<p><strong>Design for replaceability.</strong> Every third-party integration should be wrapped in an abstraction layer. When (not if) you need to swap out a vendor, the change should be isolated to one module, not spread across your codebase.</p>
-<p><strong>Cache strategically.</strong> Identify the most frequently accessed data and cache it close to the user. A simple caching layer can improve performance by 10x and reduce infrastructure costs significantly.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about openai api integration guide, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">December 16, 2024</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">AI</span><span class="blog-card-tag">engineering</span></div><h1 class="blog-post-title">OpenAI API Integration Guide for Business Applications</h1><p class="blog-post-desc">A practical guide to working with OpenAI API in production business applications.</p></div><div class="blog-post-content"><h1>OpenAI API Integration Guide for Business Applications</h1>
+<p>Integrating the OpenAI API into a business application is straightforward in a prototype and surprisingly complex in production. The gap between a working demo and a reliable, cost-efficient, production-grade integration is where most teams underestimate the effort. Rate limits, prompt management, cost control, latency optimization, content filtering, and graceful degradation all become real concerns the moment actual users are involved.</p>
+<p>This guide covers the practical engineering decisions you need to make when moving beyond the playground and into a production business application.</p>
+<h2>Choosing the Right Model for Your Use Case</h2>
+<p>OpenAI offers a range of models, and selecting the right one is a cost-performance trade-off that directly impacts your unit economics.</p>
+<p>GPT-4o is the current flagship for most business applications. It handles complex reasoning, multi-step instructions, and nuanced text generation well. For tasks like contract summarization, customer email drafting, or analyzing support tickets, GPT-4o delivers quality that users trust. Its pricing per million tokens makes it economical for moderate-volume use cases.</p>
+<p>GPT-4o mini is significantly cheaper and faster, with surprisingly strong performance on straightforward tasks. For classification, extraction, simple summarization, and routing logic, GPT-4o mini often produces results that are indistinguishable from GPT-4o at a fraction of the cost. Before defaulting to the most powerful model, benchmark GPT-4o mini on your specific task with a representative sample of inputs. Many teams discover that 70-80% of their API calls can use the smaller model without any quality degradation.</p>
+<p>The o1 and o3 series models excel at complex reasoning tasks that benefit from extended &ldquo;thinking&rdquo; time. If your application involves multi-step logical analysis, mathematical computation, or complex code generation, these models may justify their higher cost and latency. For most text processing business applications, they are overkill.</p>
+<p>For embeddings, text-embedding-3-small provides excellent quality at a low cost for semantic search, document clustering, and retrieval-augmented generation pipelines. The large variant offers marginal quality improvement at higher cost and is usually only worth it for applications where embedding quality is the bottleneck.</p>
+<p>A mature integration often uses multiple models. Route simple requests to GPT-4o mini, complex requests to GPT-4o, and use embedding models for search and retrieval. This tiered approach can reduce API costs by 40-60% compared to routing everything through a single premium model.</p>
+<h2>Architecting for Reliability and Latency</h2>
+<p>The OpenAI API is an external dependency, and like all external dependencies, it will occasionally be slow or unavailable. Your application architecture must account for this.</p>
+<p>Implement circuit breaker patterns. If the API returns errors or times out repeatedly, stop sending requests for a cool-down period rather than hammering the endpoint and degrading your user experience with slow failures. Libraries like opossum for Node.js or pybreaker for Python implement this pattern cleanly.</p>
+<p>Use streaming responses for any user-facing text generation. Rather than waiting for the complete response before displaying anything, stream tokens to the user as they are generated. This reduces perceived latency dramatically. A response that takes 8 seconds to complete feels instantaneous when the first tokens appear after 200 milliseconds. The OpenAI API supports server-sent events for streaming, and most SDKs provide streaming helpers.</p>
+<p>Cache responses aggressively where the input is deterministic. If your application summarizes the same document multiple times, or classifies the same support ticket category, cache the result keyed on a hash of the input and model parameters. Redis or even an in-memory LRU cache can eliminate redundant API calls and reduce both cost and latency. Set reasonable TTLs based on how frequently the underlying data changes.</p>
+<p>Implement request queuing for batch operations. If your application needs to process 10,000 documents through the API, do not fire 10,000 concurrent requests. Use a job queue like BullMQ or Celery to process requests at a controlled rate that respects API rate limits. Implement exponential backoff with jitter for rate limit errors (HTTP 429).</p>
+<p>Set explicit timeouts on every API call. A 30-second timeout is reasonable for most generation tasks. For embedding calls, 10 seconds is usually sufficient. Without explicit timeouts, a single slow API response can tie up a server thread or connection pool slot indefinitely.</p>
+<h2>Prompt Engineering for Production Systems</h2>
+<p>Prompt engineering in a demo is experimentation. Prompt engineering in production is software engineering. Treat prompts as code: version them, test them, review them, and deploy them through your normal release process.</p>
+<p>Store prompts as templated strings in your codebase, not hardcoded inline. Use a consistent templating format like Mustache or simple string interpolation to inject dynamic values. This makes prompts testable and reviewable in pull requests.</p>
+<p>Structure your prompts with a system message that defines the assistant&rsquo;s role and constraints, and a user message that provides the specific input. For a customer email classification system, the system message might be: &ldquo;You are a customer support classifier. Classify the following email into exactly one of these categories: billing, technical, account, feedback, spam. Respond with only the category name, no explanation.&rdquo; The user message is the email text. This separation keeps the instruction stable while the input varies.</p>
+<p>Use few-shot examples in the system message for tasks where the model needs to match a specific output format. If you need the model to extract structured data from invoices, include 2-3 examples of input invoices and the expected JSON output. Few-shot examples are more reliable than elaborate verbal instructions for format compliance.</p>
+<p>Implement output validation. Parse the model&rsquo;s response and verify it matches expected formats before passing it downstream. For classification tasks, verify the response is one of the valid categories. For JSON extraction, validate against a JSON schema. When validation fails, retry with a more explicit prompt or fall back to a default behavior. Never trust that the model&rsquo;s output will be perfectly formatted 100% of the time.</p>
+<h2>Cost Management and Monitoring</h2>
+<p>API costs can escalate quickly in production, especially as usage grows. Build cost awareness into your architecture from the start.</p>
+<p>Track token usage per request. The API response includes usage information showing prompt tokens and completion tokens consumed. Log these values alongside the model used, the feature that triggered the request, and the user or account. This data lets you understand your cost structure at a granular level: which features are expensive, which users consume the most tokens, and where optimization efforts will have the highest impact.</p>
+<p>Set budget alerts. Most organizations set a monthly budget ceiling and configure alerts at 50%, 75%, and 90% of that ceiling. OpenAI&rsquo;s usage dashboard provides basic alerting, but for production systems, pull usage data into your own monitoring stack (Datadog, Grafana, or similar) where you can correlate API costs with business metrics.</p>
+<p>Optimize prompt length. Verbose system prompts that repeat the same instructions in multiple ways consume tokens on every request. Audit your prompts regularly and eliminate redundancy. A system prompt that is 500 tokens instead of 1,500 tokens saves $X per thousand requests at scale, and this savings compounds linearly with volume.</p>
+<p>Implement max_tokens limits on completions. Without a limit, a model might generate a lengthy response when a short one was expected. For a classification task, set max_tokens to 10. For a summary task, set it to 300. This prevents runaway token consumption on unexpected inputs.</p>
+<p>Consider batching where possible. The OpenAI Batch API allows you to submit large volumes of requests at a 50% discount, with results returned within 24 hours. For non-real-time workloads like nightly report generation, batch processing of historical data, or periodic content enrichment, the Batch API delivers significant savings.</p>
+<h2>Security and Compliance Considerations</h2>
+<p>Business applications handle sensitive data, and sending that data to an external API requires careful consideration of security and compliance requirements.</p>
+<p>Understand the data processing terms. OpenAI&rsquo;s API data usage policies state that data submitted through the API is not used to train models by default. However, verify this for your specific plan and review the Data Processing Addendum if you handle data subject to GDPR, HIPAA, or other regulatory frameworks.</p>
+<p>Implement input sanitization. Before sending user-provided content to the API, strip or redact personally identifiable information if it is not needed for the task. For example, if you are classifying the sentiment of customer feedback, you do not need to include the customer&rsquo;s name, email, or account number in the prompt. Build a preprocessing step that redacts PII before the API call and re-attaches it afterward if needed.</p>
+<p>Secure your API keys. Store keys in environment variables or a secrets manager like AWS Secrets Manager, HashiCorp Vault, or Doppler. Never commit API keys to version control, log them in application logs, or expose them in client-side code. Use separate API keys for development, staging, and production environments so you can revoke a compromised key without affecting other environments.</p>
+<p>Implement content filtering on both inputs and outputs. Even in business applications, users may submit content that triggers the model to generate inappropriate responses. The Moderation API endpoint is free and can screen content before it reaches your primary model. For sensitive applications, add a secondary check on model outputs before displaying them to users.</p>
+<p>Log API interactions for audit purposes, but do so thoughtfully. Log the request metadata (timestamp, model, token count, latency) and a reference ID that can be used to retrieve the full request and response from a separate, access-controlled audit store. Do not log full prompts and responses in your general application logs where they might be accessible to a broad set of developers or operators.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Building a production-grade AI integration requires balancing capability, cost, and reliability. If you are planning to integrate OpenAI or other language model APIs into your business application and want engineering guidance, <a href="/contact.html">reach out to us</a>. We help teams move from prototype to production with confidence.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "OpenAI API Integration Guide for Business Applications",
@@ -165,7 +76,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/openai-api-integration-guide-for-business-applications/",
   "articleSection": "AI"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

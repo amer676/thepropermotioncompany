@@ -1,145 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Building a Vendor Management System | The Proper Motion Company</title>
+  <title>Building a Vendor Management System | Proper Motion</title>
   <meta name="description" content="Building a Vendor Management System. Supplier relationship management platforms. Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/building-a-vendor-management-system/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Building a Vendor Management System | The Proper Motion Company">
-  <meta property="og:description" content="Building a Vendor Management System. Supplier relationship management platforms. Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/building-a-vendor-management-system/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Building a Vendor Management System | The Proper Motion Company">
-  <meta name="twitter:description" content="Building a Vendor Management System. Supplier relationship management platforms. Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Building a Vendor Management System | Proper Motion"><meta property="og:description" content="Building a Vendor Management System. Supplier relationship management platforms. Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/building-a-vendor-management-system/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Building a Vendor Management System | Proper Motion"><meta name="twitter:description" content="Building a Vendor Management System. Supplier relationship management platforms. Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">May 21, 2023</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">procurement</span>
-            </div>
-            <h1 class="blog-post-title">Building a Vendor Management System</h1>
-            <p class="blog-post-desc">Building a Vendor Management System. Supplier relationship management platforms. Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Building a Vendor Management System</h1>
-<p>If you are researching building a vendor management, you have probably noticed that most guides online are either too surface-level to be useful or too technical to be actionable. This guide sits in the middle — practical enough to inform real decisions, detailed enough to be worth your time.</p>
-<p>Supplier relationship management platforms.</p>
-<h2>Technical Considerations</h2>
-<p>The architecture decisions you make early in a building a vendor management project have outsized impact on long-term costs and capabilities.</p>
-<p><strong>Data model design</strong> matters more than most teams realize. A well-designed data model makes features easier to build, queries faster to run, and integrations simpler to maintain. A poorly designed one creates friction that compounds with every new feature.</p>
-<p><strong>API design</strong> determines how easily your system can evolve and integrate with other tools. REST is the safe default for most business applications. GraphQL makes sense when your frontend needs flexibility in data fetching. The choice should be driven by your specific integration requirements, not industry trends.</p>
-<p><strong>Authentication and authorization</strong> need to be right from the start. Retrofitting security is expensive and risky. Plan your permission model before you build your first feature, even if it seems like overkill for the initial scope.</p>
-<p><strong>Monitoring and observability</strong> are not optional extras. You need to know when something breaks before your users tell you. Set up error tracking, performance monitoring, and uptime alerting from day one.</p>
-<h2>A Decision Framework for Building A Vendor Management</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality building a vendor management typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A professional services firm was running their client communication through a combination of email, Slack, shared drives, and a CRM that nobody updated. Their clients were frustrated. Their team was drowning. We built a single portal that unified everything. The first month after launch, client satisfaction scores jumped and internal time spent on admin tasks dropped measurably.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>When Building A Vendor Management Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for building a vendor management.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<h2>Taking Action</h2>
-<p>Reading about building a vendor management is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">May 21, 2023</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">procurement</span></div><h1 class="blog-post-title">Building a Vendor Management System</h1><p class="blog-post-desc">Building a Vendor Management System. Supplier relationship management platforms. Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Building a Vendor Management System</h1>
+<p>As organizations grow, their supplier relationships multiply and become harder to manage. What starts as a handful of vendors tracked in a spreadsheet evolves into hundreds of relationships spanning multiple categories, contract terms, performance histories, and compliance requirements. A vendor management system (VMS) centralizes these relationships into a platform that gives procurement teams visibility, control, and leverage. This article covers the architecture, feature set, and integration considerations for building a custom VMS that actually improves procurement operations rather than adding another tool to the pile.</p>
+<h2>Why Spreadsheets and Generic CRMs Fail at Vendor Management</h2>
+<p>Before diving into system architecture, it is worth understanding why existing tools fall short. Many procurement teams start with Excel or Google Sheets, then graduate to using their CRM (Salesforce, HubSpot) with custom fields. Both approaches break down at scale.</p>
+<p><strong>Spreadsheets</strong> cannot enforce data consistency. Vendor names are spelled differently across sheets. Contract expiration dates live in one file while performance ratings live in another. Nobody knows which version is current. A single spreadsheet error in a contract renewal date can result in auto-renewal of an unfavorable agreement, costing tens of thousands of dollars.</p>
+<p><strong>CRMs</strong> are designed for managing customer relationships, not supplier relationships. The data model is inverted: in a CRM, your organization is the seller and the contact is the buyer. In vendor management, you are the buyer. CRM workflows (lead scoring, pipeline stages, opportunity management) do not map to procurement workflows (RFP management, contract negotiation, performance evaluation, risk assessment). Forcing vendor data into a CRM creates confusion and limits functionality.</p>
+<p><strong>Generic procurement suites</strong> like SAP Ariba, Coupa, or Jaggaer are powerful but carry enterprise pricing ($50,000-$200,000+ annually) and implementation complexity that is disproportionate for organizations with fewer than 500 vendors. They also impose standardized workflows that may not match your organization&rsquo;s procurement processes.</p>
+<p>A custom VMS fills the gap: purpose-built for your specific vendor landscape, integrated with your existing systems, and priced proportionally to your scale.</p>
+<h2>Core Data Model: Vendors, Contracts, and Relationships</h2>
+<p>The data model for a VMS must capture the full lifecycle of a vendor relationship, from initial qualification through ongoing performance management.</p>
+<p><strong>Vendor profiles.</strong> The vendor entity is the central record, containing: legal name, trade name (DBA), tax identification number, business classification (minority-owned, woman-owned, small business, veteran-owned), primary contact information, remittance address, payment terms, insurance certificates, and compliance documentation. Store documents (W-9 forms, certificates of insurance, signed agreements) as attachments linked to the vendor record.</p>
+<p><strong>Contacts and roles.</strong> A single vendor may have multiple contacts serving different roles: a sales representative for new orders, an account manager for ongoing support, an accounts receivable contact for payment inquiries, and a technical contact for integration issues. Model contacts as a separate entity with a many-to-many relationship to vendors, each link carrying a role designation.</p>
+<p><strong>Contracts.</strong> Each vendor may have multiple active contracts covering different categories of goods or services. The contract entity stores: contract number, start date, end date, auto-renewal flag and terms, total contract value, rate schedules (unit prices, hourly rates, volume discounts), payment terms, SLA commitments, termination clauses, and the signed contract document. Index contracts by expiration date to power the renewal dashboard.</p>
+<p><strong>Categories and classifications.</strong> Organize vendors into procurement categories (IT Services, Facilities Maintenance, Office Supplies, Professional Services, Raw Materials) to enable spend analysis, category management, and diversification tracking. Allow vendors to belong to multiple categories.</p>
+<p><strong>Compliance records.</strong> Track required compliance items per vendor: insurance certificates with coverage amounts and expiration dates, business licenses, safety certifications, data processing agreements (for vendors handling personal data), and background check documentation. Each compliance item has a status (current, expiring soon, expired, not submitted) computed from its dates.</p>
+<h2>Vendor Onboarding and Qualification Workflows</h2>
+<p>Bringing a new vendor into the system should be a structured process, not an ad-hoc data entry exercise.</p>
+<p><strong>Self-service vendor registration portal.</strong> Provide a web form where prospective vendors can submit their information, upload required documents, and complete qualification questionnaires. The form should be publicly accessible (no login required for initial submission) and capture all fields needed for your organization&rsquo;s vendor qualification criteria.</p>
+<p><strong>Qualification questionnaire engine.</strong> Different vendor categories require different qualification criteria. An IT services vendor needs to demonstrate SOC 2 compliance and cybersecurity practices. A food service vendor needs health department certifications. Build a configurable questionnaire system where procurement administrators define questions by category, including question text, response type (text, multiple choice, file upload, yes/no), and scoring weight.</p>
+<p><strong>Approval workflow.</strong> After a vendor submits their registration, route the application through an approval workflow. The workflow should be configurable: small-value vendors (under $10,000 annually) might need only procurement team approval, while strategic vendors (over $100,000 annually) might require department head and finance approval. Each approver reviews the vendor profile, questionnaire responses, and uploaded documents before approving or requesting additional information.</p>
+<p><strong>Automated document verification.</strong> Insurance certificates and business licenses have expiration dates. Build automated checks that flag documents expiring within 60 days and send renewal reminders to the vendor contact. If a required document expires, automatically update the vendor&rsquo;s status to &ldquo;compliance hold&rdquo; and notify the procurement team.</p>
+<h2>Performance Scoring and Vendor Scorecards</h2>
+<p>Vendor performance management is where a custom VMS delivers the most value over generic alternatives. Performance scoring provides objective data for contract renewal decisions, rate negotiations, and vendor consolidation.</p>
+<p><strong>Define measurable KPIs by category.</strong> Each vendor category has different performance criteria:</p>
+<ul>
+<li><strong>Delivery vendors:</strong> On-time delivery rate, order accuracy, damage rate, lead time consistency</li>
+<li><strong>Service providers:</strong> Response time, resolution time, first-call resolution rate, customer satisfaction scores from internal stakeholders</li>
+<li><strong>IT vendors:</strong> System uptime, ticket resolution time, security incident frequency, SLA compliance</li>
+<li><strong>Construction/facilities:</strong> Project completion vs. timeline, budget adherence, safety incident rate, warranty claim frequency</li>
+</ul>
+<p><strong>Automated data collection.</strong> Where possible, pull performance data automatically from other systems. On-time delivery rates can come from your ERP or receiving system. IT vendor uptime can come from your monitoring tools. Automated data collection eliminates the subjectivity and inconsistency of manual performance reviews.</p>
+<p><strong>Stakeholder feedback.</strong> For qualitative performance measures (communication quality, flexibility, technical expertise), collect periodic feedback from the internal stakeholders who work directly with each vendor. Send brief surveys (three to five questions, Likert scale responses) quarterly. Aggregate scores across respondents to produce a balanced assessment.</p>
+<p><strong>Scorecard visualization.</strong> Present vendor performance as a scorecard combining quantitative KPIs and qualitative feedback into an overall score (typically on a 100-point scale). Display trend lines showing performance over time, not just the current score. A vendor whose score has dropped from 85 to 72 over three quarters tells a different story than a vendor with a stable 72.</p>
+<p><strong>Performance-triggered actions.</strong> Configure automated actions based on performance thresholds: vendors scoring below 60 trigger a performance improvement plan notification to the procurement manager, vendors scoring below 40 trigger a review for potential replacement, and vendors maintaining scores above 90 for four consecutive quarters are flagged for preferred status and potential volume consolidation.</p>
+<h2>Spend Analytics and Procurement Intelligence</h2>
+<p>A VMS that only stores vendor records is a database. A VMS that provides procurement intelligence is a strategic tool.</p>
+<p><strong>Spend by category and vendor.</strong> Aggregate purchase order and invoice data to show total spend broken down by procurement category, vendor, department, and time period. Identify categories where spend is concentrated in a single vendor (supply risk) or fragmented across too many vendors (consolidation opportunity).</p>
+<p><strong>Contract utilization.</strong> Compare actual spend against contracted volumes and rates. If a contract commits to purchasing $500,000 annually from a supplier and actual spend is $200,000, you are either over-committed or under-utilizing a favorable rate. If actual spend exceeds the contracted amount, you may be paying non-contract rates for the overage.</p>
+<p><strong>Savings tracking.</strong> When a new contract is negotiated at better terms than the previous agreement, calculate and track the annualized savings. This provides procurement teams with documented value delivery that supports budget justifications and team performance reviews.</p>
+<p><strong>Diversity spend reporting.</strong> Many organizations have goals for spending with minority-owned, woman-owned, and small businesses. Calculate diversity spend as a percentage of total addressable spend by category and in aggregate. Flag categories where diversity spend falls below organizational targets.</p>
+<p><strong>Maverick spend detection.</strong> Identify purchases made outside of contracted terms or from non-approved vendors. This &ldquo;maverick spend&rdquo; typically accounts for 15-25% of total procurement spend and represents a significant savings opportunity. Detect it by comparing purchase records against the approved vendor list and contract terms.</p>
+<h2>Integration Architecture and Data Flow</h2>
+<p>A VMS does not operate in isolation. It exchanges data with financial systems, ERP platforms, document management systems, and communication tools.</p>
+<p><strong>ERP and accounting integration.</strong> Sync vendor master data between the VMS and your ERP or accounting system (QuickBooks, NetSuite, SAP). The VMS should be the system of record for vendor profile data, pushing approved vendor records to the financial system. Purchase order and invoice data flows from the financial system to the VMS for spend analysis.</p>
+<p><strong>E-procurement integration.</strong> If your organization uses a purchase order system, the VMS vendor approval status should gate purchasing. Only vendors in &ldquo;approved&rdquo; status should appear as options in the PO system. This prevents purchases from non-qualified vendors.</p>
+<p><strong>Document management.</strong> Store signed contracts and compliance documents in the VMS with version control. Integrate with DocuSign or Adobe Sign for electronic contract execution. When a contract is signed through the e-signature platform, the signed document is automatically filed against the vendor and contract records.</p>
+<p><strong>Communication logging.</strong> Capture significant vendor communications (emails, meeting notes, formal correspondence) against the vendor record. Integration with email (via BCC forwarding or API integration with Outlook/Gmail) ensures important exchanges are documented without requiring manual data entry.</p>
+<p><strong>Notification infrastructure.</strong> The VMS generates numerous notifications: contract expirations, compliance document renewals, performance review due dates, and approval requests. Deliver notifications through the channels your team actually uses: email for formal communications, Slack or Teams messages for time-sensitive alerts, and in-app notifications for workflow items.</p>
+<p>Building a custom vendor management system typically takes three to six months and costs $100,000-$250,000, depending on the complexity of workflows and integrations. The ROI comes from consolidated spending (3-7% savings through better contract utilization), reduced compliance risk, and procurement team productivity (eliminating 10-15 hours per week of manual vendor tracking).</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Managing dozens or hundreds of vendor relationships with spreadsheets and workarounds? We build custom vendor management systems that give procurement teams the visibility and control they need. <a href="/contact.html">Contact us</a> to discuss your vendor management challenges.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building a Vendor Management System",
@@ -159,7 +88,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/building-a-vendor-management-system/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

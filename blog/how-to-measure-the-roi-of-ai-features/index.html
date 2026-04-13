@@ -1,150 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Measure the ROI of AI Features | The Proper Motion Company</title>
+  <title>How to Measure the ROI of AI Features | Proper Motion</title>
   <meta name="description" content="How to Measure the ROI of AI Features. Frameworks for quantifying whether your AI investment is actually paying off. Expert insights from The Proper Motion Comp">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/how-to-measure-the-roi-of-ai-features/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="How to Measure the ROI of AI Features | The Proper Motion Company">
-  <meta property="og:description" content="How to Measure the ROI of AI Features. Frameworks for quantifying whether your AI investment is actually paying off. Expert insights from The Proper Motion Comp">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-measure-the-roi-of-ai-features/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How to Measure the ROI of AI Features | The Proper Motion Company">
-  <meta name="twitter:description" content="How to Measure the ROI of AI Features. Frameworks for quantifying whether your AI investment is actually paying off. Expert insights from The Proper Motion Comp">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="How to Measure the ROI of AI Features | Proper Motion"><meta property="og:description" content="How to Measure the ROI of AI Features. Frameworks for quantifying whether your AI investment is actually paying off. Expert insights from The Proper Motion Comp"><meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-measure-the-roi-of-ai-features/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Measure the ROI of AI Features | Proper Motion"><meta name="twitter:description" content="How to Measure the ROI of AI Features. Frameworks for quantifying whether your AI investment is actually paying off. Expert insights from The Proper Motion Comp"><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">August 17, 2022</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">AI</span><span class="blog-card-tag">ROI</span>
-            </div>
-            <h1 class="blog-post-title">How to Measure the ROI of AI Features</h1>
-            <p class="blog-post-desc">How to Measure the ROI of AI Features. Frameworks for quantifying whether your AI investment is actually paying off. Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>How to Measure the ROI of AI Features</h1>
-<p>The conventional wisdom about how to measure the is about five years out of date. Cloud infrastructure, AI capabilities, and development tooling have changed the calculus significantly. Here is what the landscape actually looks like today.</p>
-<p>Frameworks for quantifying whether your AI investment is actually paying off.</p>
-<h2>What Most Teams Get Wrong About How To Measure The</h2>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For how to measure the, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Not defining success criteria upfront.</strong> If you cannot articulate what success looks like for your how to measure the initiative, you will not know when you have achieved it. Define specific, measurable outcomes before development begins.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a how to measure the project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>The Build Process</h2>
-<p>Building how to measure the well requires discipline in a few specific areas.</p>
-<p><strong>Requirements documentation</strong> does not need to be a 50-page spec. It needs to be specific enough that two different developers reading it would build the same thing. User stories with acceptance criteria work well for most projects.</p>
-<p><strong>Design before development.</strong> Wireframes and prototypes are cheap to change. Production code is expensive to change. Invest a week in design review before starting development. This single practice prevents more problems than any other.</p>
-<p><strong>Weekly delivery cadence.</strong> Ship something testable every week. Not a demo — a working piece of software that a real person can use and give feedback on. Weekly delivery creates accountability and catches problems early.</p>
-<p><strong>Automated testing</strong> is an investment that pays for itself within weeks. Manual testing does not scale. Every feature should have tests that run automatically on every code change. This is what allows you to move fast without breaking things.</p>
-<h2>When How To Measure The Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for how to measure the.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A healthcare organization needed to digitize a paper-based intake process while maintaining HIPAA compliance. Their previous vendor quoted twelve months and half a million dollars. We delivered a compliant system in eight weeks at a fraction of the cost. The difference: we did not build a platform. We built exactly what they needed.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Taking Action</h2>
-<p>Reading about how to measure the is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">August 17, 2022</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">AI</span><span class="blog-card-tag">ROI</span></div><h1 class="blog-post-title">How to Measure the ROI of AI Features</h1><p class="blog-post-desc">How to Measure the ROI of AI Features. Frameworks for quantifying whether your AI investment is actually paying off. Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>How to Measure the ROI of AI Features</h1>
+<p>Every company adding AI to their product faces the same uncomfortable question six months after launch: &ldquo;Is this actually working?&rdquo; The excitement of deploying a large language model or a recommendation engine fades quickly when the CFO asks for hard numbers. Yet most teams struggle to answer because they never established a measurement framework before building the feature. They tracked whether the model was accurate but not whether it moved the business metrics that justified the investment.</p>
+<p>Measuring AI ROI is harder than measuring traditional software ROI because AI features often improve existing workflows incrementally rather than enabling entirely new capabilities. The value is distributed across reduced labor, faster decisions, fewer errors, and improved user experience &mdash; all of which are real but require deliberate instrumentation to quantify.</p>
+<h2>Establishing a Baseline Before You Build</h2>
+<p>The most common ROI measurement failure happens before development begins: teams skip the baseline. If you do not measure the current state of the process your AI feature will improve, you have no way to calculate the delta after deployment.</p>
+<p>For every AI feature, document these baseline metrics before writing any code:</p>
+<p><strong>Time metrics:</strong> How long does the current process take? Measure end-to-end cycle time, not just active work time. If a claims adjuster spends 45 minutes reviewing a claim but the claim sits in a queue for 3 days before being picked up, both numbers matter. The AI feature might reduce the 45-minute review to 15 minutes, but the queue wait time is where the larger business impact often lives.</p>
+<p><strong>Cost metrics:</strong> What does the current process cost per unit? Include labor (fully loaded employee cost divided by units processed), tooling costs, error correction costs, and opportunity costs. A manual document review process costing $12 per document gives you a clear target: if the AI-assisted process costs $3 per document (including API costs, infrastructure, and reduced human review time), the savings are $9 per document.</p>
+<p><strong>Quality metrics:</strong> What is the current error rate, accuracy, or quality score? If customer support agents currently resolve 72% of tickets on the first response, that is your baseline for measuring whether AI-suggested responses improve first-contact resolution.</p>
+<p><strong>Volume metrics:</strong> How many units flow through this process per time period? This determines the total impact. A $9 per-document savings means nothing without knowing you process 50,000 documents per year ($450,000 annual savings) versus 500 per year ($4,500 annual savings).</p>
+<p>Collect baselines for at least 60-90 days before deployment to account for seasonal variation and normal fluctuation. A single week&rsquo;s data can be misleading.</p>
+<h2>The Four Categories of AI Value</h2>
+<p>AI features generate value in four distinct categories, and most features contribute to multiple categories simultaneously. Your ROI framework should measure all applicable categories.</p>
+<p><strong>Labor efficiency:</strong> The AI reduces the time humans spend on a task. This is the most straightforward category to measure. Calculate hours saved per unit, multiply by the hourly cost of the relevant role. Be honest about whether saved time translates to actual cost reduction (headcount reduction or avoided hiring) or capacity creation (existing staff can handle more volume or focus on higher-value work). Both are real value, but they appear differently on the P&amp;L.</p>
+<p>A concrete example: an AI-powered invoice processing system reduces the accounts payable team&rsquo;s processing time from 8 minutes per invoice to 2 minutes per invoice. With 3,000 invoices per month, that is 300 hours saved monthly. At $35/hour fully loaded, the monthly labor savings are $10,500. If the AI system costs $2,000/month to operate (API costs, infrastructure, maintenance), the net monthly savings are $8,500.</p>
+<p><strong>Error reduction:</strong> The AI catches mistakes that humans miss or makes fewer mistakes than the manual process. Quantify this by measuring error rates before and after deployment, then calculating the cost per error. Errors in financial processing might trigger regulatory penalties ($10,000+ per incident). Errors in customer-facing content might increase support tickets ($15-25 per ticket). Errors in manufacturing quality control might cause product returns ($50-200 per return including shipping and processing).</p>
+<p><strong>Revenue impact:</strong> The AI directly increases revenue through better recommendations, improved conversion rates, or new capabilities that attract customers. Measure with A/B testing where possible. If an AI-powered product recommendation engine increases average order value from $67 to $74, the $7 increase multiplied by monthly order volume gives you the revenue lift attributable to the AI feature.</p>
+<p><strong>Speed and responsiveness:</strong> The AI reduces cycle times, enabling faster decisions and better customer experience. A mortgage pre-approval that takes 3 days manually but 15 minutes with AI processing directly affects conversion rates (applicants who wait 3 days often apply elsewhere). Measure the conversion rate improvement and calculate the revenue impact of captured deals that would have been lost.</p>
+<h2>Building a Measurement Dashboard</h2>
+<p>Abstract ROI calculations are useful for initial business cases but insufficient for ongoing management. Build a live dashboard that tracks AI feature performance against your baseline metrics.</p>
+<p>Essential dashboard components:</p>
+<p><strong>Usage metrics:</strong> How often is the AI feature being used? Track daily/weekly active usage, adoption rate across your user base, and the ratio of AI-assisted versus manual completions. If you built an AI feature that only 15% of users actually use, your theoretical ROI is irrelevant &mdash; actual ROI is 85% lower than projected.</p>
+<p><strong>Quality metrics:</strong> Track the AI&rsquo;s accuracy, the rate at which users accept versus override AI suggestions, and the downstream impact of AI-assisted decisions. If customer support agents accept the AI-suggested response 60% of the time but edit it 30% of the time and reject it 10% of the time, those ratios tell you a lot about actual value delivered.</p>
+<p><strong>Cost metrics:</strong> Monitor real-time API costs, infrastructure costs, and the human time still required for oversight and correction. AI costs can spike unexpectedly &mdash; a change in user behavior might double your API call volume, or a model provider might increase prices. Track cost per AI-assisted transaction to catch these changes early.</p>
+<p><strong>Business outcome metrics:</strong> Connect AI feature usage to the downstream business metrics that matter. If the AI feature is supposed to reduce customer churn, track churn rates segmented by whether the customer interacted with the AI feature. If it is supposed to speed up underwriting, track time-to-decision for AI-assisted versus manual cases.</p>
+<p>Update the dashboard weekly and review it monthly with stakeholders. ROI measurement is not a one-time calculation &mdash; it is an ongoing practice that informs whether to invest more in the feature, iterate on its design, or sunset it.</p>
+<h2>Accounting for the Full Cost of AI Features</h2>
+<p>Teams consistently underestimate the total cost of AI features by focusing on API costs and ignoring the full picture. A complete cost accounting includes:</p>
+<p><strong>Development costs:</strong> The initial engineering time to build, test, and deploy the feature. For a typical AI feature (RAG-based search, classification pipeline, or recommendation system), expect 400-1,200 engineering hours, translating to $60,000-$200,000 at market rates.</p>
+<p><strong>API and infrastructure costs:</strong> Ongoing costs for model API calls, vector database hosting, GPU compute for fine-tuned models, and associated infrastructure. These costs scale with usage and can grow significantly if the feature is successful. Budget $500-$5,000/month for moderate-usage features; $5,000-$50,000/month for high-volume production features.</p>
+<p><strong>Data preparation costs:</strong> Labeling training data, cleaning document corpuses, building evaluation datasets, and maintaining data pipelines. This is often 30-50% of the initial development cost and recurs partially as you update and improve the system.</p>
+<p><strong>Maintenance costs:</strong> AI systems require ongoing attention &mdash; monitoring for model drift, updating prompts as the underlying model changes, retraining on new data, and debugging quality regressions. Budget 15-25% of the initial development cost annually for maintenance.</p>
+<p><strong>Opportunity cost:</strong> The engineering time spent building and maintaining the AI feature could have been spent on other product improvements. This is the hardest cost to quantify but should be part of the conversation when evaluating whether the AI feature delivers sufficient value to justify continued investment.</p>
+<p>Total cost of ownership for a typical AI feature over three years: $150,000-$500,000 for moderate-complexity features. The feature needs to deliver at least this much in measurable value to justify the investment.</p>
+<h2>When to Double Down, Iterate, or Sunset</h2>
+<p>Not every AI feature delivers the projected ROI. A disciplined approach to evaluating results and making investment decisions prevents throwing good money after bad.</p>
+<p><strong>Double down</strong> when the feature exceeds ROI projections and users are actively adopting it. Invest in improving accuracy, expanding to additional use cases, and reducing per-unit costs through optimization. A feature delivering 3x projected ROI with 80%+ user adoption is a clear winner.</p>
+<p><strong>Iterate</strong> when the feature shows promise but underperforms projections. Diagnose the gap: Is it an adoption problem (users are not using the feature), a quality problem (the AI output is not good enough), or a measurement problem (the feature delivers value that your metrics are not capturing)? Each diagnosis leads to different corrective actions. Adoption problems often respond to UX improvements and user education. Quality problems require model tuning, better prompts, or more training data. Set a 90-day iteration window with specific improvement targets.</p>
+<p><strong>Sunset</strong> when the feature consistently underperforms after one or two iteration cycles, user adoption remains low despite UX improvements, or the cost of maintaining the feature exceeds its measured value. Sunsetting an AI feature is not a failure &mdash; it is a rational investment decision. Reallocate the engineering resources to higher-value initiatives. Document the learnings so future AI projects benefit from the experience.</p>
+<p>The discipline to sunset underperforming features is what separates organizations that generate real value from AI from those that accumulate expensive, low-impact AI projects.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If you are planning an AI feature and want to build it with a clear measurement framework from day one, or if you have existing AI features and need help evaluating whether they are delivering real value, <a href="/contact.html">let&rsquo;s have a conversation</a>. We help teams build AI features that are accountable to business outcomes, not just technical benchmarks.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Measure the ROI of AI Features",
@@ -164,7 +79,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/how-to-measure-the-roi-of-ai-features/",
   "articleSection": "AI"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

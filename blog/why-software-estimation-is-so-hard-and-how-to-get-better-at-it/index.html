@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,143 +6,48 @@
   <title>Why Software Estimation Is So Hard and How to Get Better at It</title>
   <meta name="description" content="The science behind estimation uncertainty and practical techniques for more accurate projections.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/why-software-estimation-is-so-hard-and-how-to-get-better-at-it/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Why Software Estimation Is So Hard and How to Get Better at It">
-  <meta property="og:description" content="The science behind estimation uncertainty and practical techniques for more accurate projections.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/why-software-estimation-is-so-hard-and-how-to-get-better-at-it/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Why Software Estimation Is So Hard and How to Get Better at It">
-  <meta name="twitter:description" content="The science behind estimation uncertainty and practical techniques for more accurate projections.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Why Software Estimation Is So Hard and How to Get Better at It"><meta property="og:description" content="The science behind estimation uncertainty and practical techniques for more accurate projections."><meta property="og:url" content="https://thepropermotioncompany.com/blog/why-software-estimation-is-so-hard-and-how-to-get-better-at-it/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Why Software Estimation Is So Hard and How to Get Better at It"><meta name="twitter:description" content="The science behind estimation uncertainty and practical techniques for more accurate projections."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">February 07, 2026</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">software development</span><span class="blog-card-tag">estimation</span>
-            </div>
-            <h1 class="blog-post-title">Why Software Estimation Is So Hard and How to Get Better at It</h1>
-            <p class="blog-post-desc">The science behind estimation uncertainty and practical techniques for more accurate projections.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Why Software Estimation Is So Hard and How to Get Better at It</h1>
-<p>The science behind estimation uncertainty and practical techniques for more accurate projections.</p>
-<p>We wrote this because we kept having the same conversation with clients. The questions come up in almost every discovery call, and the answers are nuanced enough that they deserve a thorough treatment.</p>
-<h2>The Build Process</h2>
-<p>Building why software estimation is well requires discipline in a few specific areas.</p>
-<p><strong>Requirements documentation</strong> does not need to be a 50-page spec. It needs to be specific enough that two different developers reading it would build the same thing. User stories with acceptance criteria work well for most projects.</p>
-<p><strong>Design before development.</strong> Wireframes and prototypes are cheap to change. Production code is expensive to change. Invest a week in design review before starting development. This single practice prevents more problems than any other.</p>
-<p><strong>Weekly delivery cadence.</strong> Ship something testable every week. Not a demo — a working piece of software that a real person can use and give feedback on. Weekly delivery creates accountability and catches problems early.</p>
-<p><strong>Automated testing</strong> is an investment that pays for itself within weeks. Manual testing does not scale. Every feature should have tests that run automatically on every code change. This is what allows you to move fast without breaking things.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A professional services firm was running their client communication through a combination of email, Slack, shared drives, and a CRM that nobody updated. Their clients were frustrated. Their team was drowning. We built a single portal that unified everything. The first month after launch, client satisfaction scores jumped and internal time spent on admin tasks dropped measurably.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>What Most Teams Get Wrong About Why Software Estimation Is</h2>
-<p><strong>Skipping user research.</strong> Building why software estimation is without talking to the people who will actually use it is like designing a house without asking who lives there. Five conversations with real users will save you more money than any amount of internal brainstorming.</p>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning why software estimation is.</p>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<p><strong>Not defining success criteria upfront.</strong> If you cannot articulate what success looks like for your why software estimation is initiative, you will not know when you have achieved it. Define specific, measurable outcomes before development begins.</p>
-<h2>When Why Software Estimation Is Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for why software estimation is.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<h2>A Decision Framework for Why Software Estimation Is</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality why software estimation is typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a why software estimation is project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>Taking Action</h2>
-<p>Reading about why software estimation is is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
-<hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">February 07, 2026</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">software development</span><span class="blog-card-tag">estimation</span></div><h1 class="blog-post-title">Why Software Estimation Is So Hard and How to Get Better at It</h1><p class="blog-post-desc">The science behind estimation uncertainty and practical techniques for more accurate projections.</p></div><div class="blog-post-content"><h1>Why Software Estimation Is So Hard and How to Get Better at It</h1>
+<p>Software estimation has a deserved reputation for unreliability. Studies consistently show that large software projects overrun their budgets by 50-100% and their schedules by 25-50%. This is not because developers are bad at estimating — it is because the task itself has structural properties that make accurate prediction genuinely difficult. Understanding those properties does not magically fix the problem, but it changes how you approach estimation and, critically, how you communicate uncertainty to stakeholders.</p>
+<p>The estimation problem is fundamentally different from estimation in physical construction or manufacturing, where the tasks are well-understood, the materials are predictable, and experience compounds linearly. In software, you are estimating how long it will take to solve problems you have not fully defined, using tools that are constantly evolving, with requirements that will change before you finish.</p>
+<h2>The Uncertainty Cone and Why Early Estimates Are Meaningless</h2>
+<p>Steve McConnell&rsquo;s &ldquo;Cone of Uncertainty&rdquo; describes a phenomenon that every experienced developer recognizes intuitively: estimates made at the beginning of a project have an inherent variance of 4x in both directions. A feature estimated at 2 weeks at the concept stage might actually take anywhere from 3 days to 8 weeks. As the project progresses and uncertainty is resolved — requirements are clarified, technical spikes complete, integrations are tested — the cone narrows. By the time you are 50% through implementation, estimates are typically accurate to within 20%.</p>
+<p>The practical implication is that detailed estimates at the beginning of a project are theater. They feel productive because they produce specific numbers, but those numbers have massive error bars that are rarely communicated. A 12-week estimate presented without qualification implies a precision that does not exist. &ldquo;We estimate 8-16 weeks, with our best guess at 12&rdquo; is more honest and more useful, but it is also harder to put in a budget spreadsheet.</p>
+<p>Organizations that handle estimation well do it in stages. At the concept stage, provide an order-of-magnitude estimate: is this a 1-month project, a 3-month project, or a 6-month project? Do not attempt finer granularity. At the requirements stage, provide a range estimate: 10-16 weeks, with a confidence level. At the design stage, provide a detailed estimate by component, with explicit assumptions documented. Re-estimate at each stage as uncertainty decreases.</p>
+<p>The mistake that causes the most damage is locking in a detailed estimate at the concept stage and treating it as a commitment. That is not an estimate — it is a guess with contractual obligations attached.</p>
+<h2>Anchoring Bias and the Psychology of Wrong Numbers</h2>
+<p>Cognitive biases systematically distort software estimates, and the most pernicious is anchoring. When someone mentions a number early in the estimation process — &ldquo;the last project like this took 6 weeks&rdquo; — that number anchors all subsequent estimates toward it, regardless of whether it is relevant. Teams adjust away from the anchor, but typically not enough.</p>
+<p>Planning poker and other group estimation techniques partially mitigate anchoring by having individuals estimate independently before revealing their numbers. The disagreements that emerge — when one developer says 3 story points and another says 13 — are the most valuable part of the exercise, because they surface different assumptions about scope, complexity, or approach. The resolution of that disagreement produces a better estimate than either individual would have made.</p>
+<p>Optimism bias is the other major distortion. Developers (and humans in general) consistently underestimate the time required for tasks, even when they have experience with similar tasks that took longer than expected. This is not laziness or dishonesty — it is a deep cognitive tendency to imagine the happy path, where the code works on the first try, the API documentation is accurate, and the edge cases are minimal.</p>
+<p>The corrective technique is reference class forecasting: instead of estimating a task based on imagining how you will complete it (the inside view), estimate it based on how long similar tasks actually took (the outside view). If your last 10 features each took 30-50% longer than initially estimated, applying a 40% buffer to your next estimate is not padding — it is calibration.</p>
+<h2>Breaking Down Tasks Until They Are Estimable</h2>
+<p>The accuracy of an estimate is inversely proportional to the size of the task being estimated. A 2-week task estimated in a single block might be off by 100%. The same task broken into 8-10 subtasks of 1-4 hours each will typically be off by 20-30% in aggregate, because the overestimates and underestimates partially cancel out.</p>
+<p>The decomposition should continue until each subtask meets two criteria: the developer can describe, concretely, how they will implement it (not &ldquo;build the authentication system&rdquo; but &ldquo;integrate NextAuth with the Google OAuth provider and set up session handling&rdquo;), and the estimated duration is no more than 2 days. If a subtask resists decomposition — if the developer cannot describe the implementation steps — that is a signal that a technical spike is needed before estimation can proceed.</p>
+<p>Spikes — time-boxed investigations to resolve technical uncertainty — are the most underused tool in estimation. Before estimating a feature that involves an unfamiliar API, a new technology, or a complex algorithm, spend 2-4 hours exploring the solution space. Write throwaway code. Hit the API. Read the documentation. The spike often reveals that the task is either simpler or harder than imagined, and the resulting estimate is dramatically more accurate.</p>
+<p>Document the assumptions behind each estimate explicitly. &ldquo;This estimate assumes the Stripe API supports partial refunds for subscription invoices&rdquo; or &ldquo;This estimate assumes we can use the existing user table without schema changes.&rdquo; When an assumption turns out to be wrong, you can identify exactly which estimates are affected and by how much.</p>
+<h2>Three-Point Estimation and Communicating Ranges</h2>
+<p>Single-point estimates (&ldquo;this will take 3 weeks&rdquo;) communicate false certainty. Three-point estimation asks for three numbers: the optimistic estimate (everything goes right), the pessimistic estimate (everything goes wrong, but the task is still feasible), and the most likely estimate (the realistic case). These three points define a distribution.</p>
+<p>The PERT formula — (Optimistic + 4 * Most Likely + Pessimistic) / 6 — produces a weighted average that accounts for the typical right-skew of software task durations (tasks are more likely to be late than early). The standard deviation, calculated as (Pessimistic - Optimistic) / 6, quantifies the uncertainty.</p>
+<p>For a task with estimates of 3 days (optimistic), 5 days (most likely), and 12 days (pessimistic): the PERT estimate is (3 + 20 + 12) / 6 = 5.8 days, with a standard deviation of 1.5 days. You can tell a stakeholder: &ldquo;We expect this to take about 6 days, with a 68% confidence interval of 4.3 to 7.3 days and a 95% confidence interval of 2.8 to 8.8 days.&rdquo;</p>
+<p>This level of precision is not always appropriate for every task, but for project-level estimates it is invaluable. When you aggregate three-point estimates across all tasks in a project, the central limit theorem works in your favor: the individual variances partially cancel, and the project-level estimate becomes more reliable than any individual task estimate. A project with 20 tasks, each estimated with three points, produces a project-level distribution that meaningfully constrains the likely delivery date.</p>
+<p>Present estimates to stakeholders as ranges with confidence levels. &ldquo;We are 50% confident we will deliver by March 15, 80% confident by March 29, and 95% confident by April 15.&rdquo; This gives decision-makers the information they need to manage risk. If they need the 95% date, plan for April 15. If they are comfortable with more risk, plan for March 15 and have a contingency plan.</p>
+<h2>Tracking Accuracy and Building an Estimation Database</h2>
+<p>The only way to get better at estimation is to measure how wrong you were and adjust. After every project or sprint, compare actual durations against estimates for each task. Calculate the ratio (actual / estimated) for every task. Over time, this produces a calibration factor for your team: if your average ratio is 1.4, your estimates are systematically 40% too optimistic.</p>
+<p>Build an estimation database — a spreadsheet or a simple database table — that records: the task description, the estimated duration, the actual duration, the developer who made the estimate, and notes about what was different from expectations. Over months, this database reveals patterns: which types of tasks are consistently underestimated (integration work, almost always), which developers tend to overestimate or underestimate (everyone has a bias direction), and which project phases consume more time than expected (testing and deployment, reliably).</p>
+<p>This data is organizational gold. When a new project comes in, you can query the database for similar tasks and base your estimate on historical actuals rather than optimistic projections. This is reference class forecasting applied systematically, and it produces meaningfully better estimates over time.</p>
+<p>The meta-lesson is that estimation is a skill that improves with deliberate practice and feedback. Teams that track their accuracy and review their misses get better. Teams that estimate by gut feel and never look back do not. The difference over a few years is enormous.</p>
+<p>If you are planning a project and want estimates you can actually trust — or want to build a better estimation practice within your team — <a href="/contact.html">we bring both methodology and historical data to the conversation</a>.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Why Software Estimation Is So Hard and How to Get Better at It",
@@ -164,7 +67,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/why-software-estimation-is-so-hard-and-how-to-get-better-at-it/",
   "articleSection": "software development"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

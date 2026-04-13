@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,142 +6,98 @@
   <title>Loading State Design: Making Wait Times Feel Shorter</title>
   <meta name="description" content="Loading State Design: Making Wait Times Feel Shorter. loading state design Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/loading-state-design-making-wait-times-feel-shorter/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Loading State Design: Making Wait Times Feel Shorter">
-  <meta property="og:description" content="Loading State Design: Making Wait Times Feel Shorter. loading state design Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/loading-state-design-making-wait-times-feel-shorter/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Loading State Design: Making Wait Times Feel Shorter">
-  <meta name="twitter:description" content="Loading State Design: Making Wait Times Feel Shorter. loading state design Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Loading State Design: Making Wait Times Feel Shorter"><meta property="og:description" content="Loading State Design: Making Wait Times Feel Shorter. loading state design Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/loading-state-design-making-wait-times-feel-shorter/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Loading State Design: Making Wait Times Feel Shorter"><meta name="twitter:description" content="Loading State Design: Making Wait Times Feel Shorter. loading state design Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">February 07, 2024</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">design</span><span class="blog-card-tag">performance</span></div><h1 class="blog-post-title">Loading State Design: Making Wait Times Feel Shorter</h1><p class="blog-post-desc">Loading State Design: Making Wait Times Feel Shorter. loading state design Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Loading State Design: Making Wait Times Feel Shorter</h1>
+<p>The difference between an application that feels fast and one that feels slow is rarely about actual speed. It is about perceived speed. A 200-millisecond operation with no visual feedback feels slower than a 500-millisecond operation with a well-designed loading state. The psychology of waiting is as important as the engineering of performance, and the companies that understand this build products that feel responsive even when they are not.</p>
+<h2>The Psychology of Perceived Performance</h2>
+<p>Research from the Nielsen Norman Group established that users perceive response times in three tiers:</p>
+<ul>
+<li><strong>Under 100 ms:</strong> Feels instantaneous. The user perceives no delay.</li>
+<li><strong>100 ms to 1 second:</strong> Noticeable but acceptable. The user feels the system is working.</li>
+<li><strong>Over 1 second:</strong> The user&rsquo;s flow is broken. Attention shifts. Anxiety increases.</li>
+</ul>
+<p>But these thresholds are not fixed. They are influenced by what the user sees during the wait. A study published in the International Journal of Human-Computer Studies found that progress indicators reduced perceived wait time by up to 40% compared to a static spinner, even when the actual wait was identical.</p>
+<p>The key insight is that uncertainty amplifies perceived duration. When a user clicks a button and nothing happens for 800 milliseconds, their brain starts asking questions: Did my click register? Is the app frozen? Should I click again? Each question adds cognitive load and makes the wait feel longer. A loading state is not decoration. It is an answer to those questions.</p>
+<p>Facebook&rsquo;s engineering team discovered that replacing their news feed&rsquo;s loading spinner with content-shaped placeholder skeletons reduced perceived load time significantly, even though the actual time-to-interactive remained the same. Users reported the experience felt faster because the transition from empty to populated was less jarring.</p>
+<h2>Skeleton Screens: The Gold Standard</h2>
+<p>Skeleton screens are placeholder UI elements that match the shape and layout of the content being loaded. Instead of a spinner in the center of the page, the user sees gray blocks where text will appear, rounded rectangles where images will load, and outlined shapes where buttons will render.</p>
+<p>The implementation is straightforward. For a card component that will display a user profile:</p>
+<pre><code class="language-css">.skeleton-text {
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+  height: 16px;
+}
 
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">February 07, 2024</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">design</span><span class="blog-card-tag">performance</span>
-            </div>
-            <h1 class="blog-post-title">Loading State Design: Making Wait Times Feel Shorter</h1>
-            <p class="blog-post-desc">Loading State Design: Making Wait Times Feel Shorter. loading state design Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Loading State Design: Making Wait Times Feel Shorter</h1>
-<p>We get asked about loading state design: making constantly. The answer is always &ldquo;it depends&rdquo; — but it depends on specific, identifiable factors that you can evaluate for your situation. This guide walks you through each one.</p>
-<h2>When Loading State Design: Making Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>A Decision Framework for Loading State Design: Making</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality loading state design: making typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A logistics company came to us after spending eight months with a development shop that delivered a system their team refused to use. The interface was confusing, the reports were wrong, and the integrations broke weekly. We rebuilt it in ten weeks. The difference was not technical skill — it was the three days we spent shadowing their operations team before writing a single line of code.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>What Most Teams Get Wrong About Loading State Design: Making</h2>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For loading state design: making, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a loading state design: making project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for loading state design: making.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<h2>Taking Action</h2>
-<p>Reading about loading state design: making is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+</code></pre>
+<p>The shimmer animation is critical. A static gray block looks like a broken UI element. A shimmering block communicates &ldquo;content is on its way.&rdquo; The direction of the shimmer (left to right in LTR interfaces) reinforces the sense of progress.</p>
+<p>Design skeleton screens to match your actual content dimensions closely. If your card titles are typically 40-60 characters, make the skeleton text block that width. If your avatars are 48x48 pixels, make the skeleton circle 48x48. Mismatched dimensions cause a jarring &ldquo;jump&rdquo; when real content replaces the skeleton, which undermines the smoothness you are trying to create.</p>
+<p>Libraries that implement skeleton screens well include <code>react-loading-skeleton</code> for React, <code>ngx-skeleton-loader</code> for Angular, and <code>vue-content-loading</code> for Vue. For server-rendered applications, you can embed skeleton HTML directly in the page template so it appears before JavaScript even loads.</p>
+<h2>Progressive Loading and Content Prioritization</h2>
+<p>Not all content on a page is equally important. Progressive loading renders high-priority content first and fills in secondary content afterward. This is not lazy loading in the performance optimization sense, though they are related. It is a UX strategy that ensures the user can start working before everything is ready.</p>
+<p><strong>Above-the-fold prioritization.</strong> Content visible in the initial viewport should load before content below the fold. For a dashboard, this means the primary metric cards load before the charts further down the page. For an email client, the inbox list loads before the folder sidebar.</p>
+<p><strong>Text before images.</strong> Text renders faster and provides more information density than images. Load text content first, then populate images. The <code>&lt;img loading="lazy"&gt;</code> attribute handles images below the fold natively in modern browsers. For above-the-fold images, use <code>fetchpriority="high"</code> and preload hints.</p>
+<p><strong>Interactive elements before decorative elements.</strong> A user needs the search bar, navigation, and primary action buttons immediately. Background images, promotional banners, and secondary sidebar content can load after. Prioritize the elements that let users take their next action.</p>
+<p><strong>Staggered data fetching.</strong> Instead of one massive API call that blocks the entire page, break data fetching into multiple calls ordered by priority. React&rsquo;s Suspense boundaries make this elegant: wrap each section of your page in its own Suspense boundary with a fallback skeleton, and each section loads independently as its data arrives. This pattern replaced the &ldquo;blank page until everything loads&rdquo; approach that plagued single-page applications for years.</p>
+<p>An e-commerce product page might fetch data in this order:
+1. Product name, price, and primary image (above-the-fold essentials)
+2. Product description and specifications (below-the-fold text content)
+3. Customer reviews summary (social proof)
+4. Related products carousel (cross-sell, lowest priority)</p>
+<p>Each section renders as soon as its data arrives, with skeleton placeholders for sections still loading.</p>
+<h2>Optimistic Updates and Instant Feedback</h2>
+<p>The fastest loading state is no loading state at all. Optimistic updates assume the server will succeed and immediately reflect the user&rsquo;s action in the UI, rolling back only if the server returns an error.</p>
+<p>This pattern is appropriate when:
+- The success rate exceeds 99% (most CRUD operations on a healthy system).
+- The action is reversible (sending a like, adding an item to a list, toggling a setting).
+- The consequence of a temporary incorrect state is low (showing a like count of 43 instead of 42 for 200 ms is acceptable).</p>
+<p>This pattern is not appropriate when:
+- The operation has financial implications (payment processing, fund transfers).
+- The operation is irreversible (deleting an account, sending a message to an external system).
+- The success rate is uncertain (operations that depend on external APIs with variable reliability).</p>
+<p>For appropriate cases, the implementation follows a consistent pattern. When the user clicks &ldquo;favorite&rdquo; on an item:</p>
+<ol>
+<li>Immediately update the local state to reflect the new favorite status.</li>
+<li>Render the filled heart icon instantly.</li>
+<li>Send the API request in the background.</li>
+<li>If the request succeeds, do nothing. The UI is already correct.</li>
+<li>If the request fails, revert the local state and show a non-intrusive error notification.</li>
+</ol>
+<p>React Query, SWR, and Apollo Client all have built-in support for optimistic updates with automatic rollback on failure. The key UX detail is that the rollback should be smooth, not jarring. Animate the state change back rather than snapping to the previous state.</p>
+<h2>Micro-Interactions That Communicate Progress</h2>
+<p>Between the extremes of &ldquo;no feedback&rdquo; and &ldquo;full skeleton screen,&rdquo; there is a rich vocabulary of micro-interactions that communicate progress for small, fast operations.</p>
+<p><strong>Button loading states.</strong> When a user clicks a submit button, replace the button text with a small spinner or animated dots and disable the button. This prevents double-submission and confirms the click was registered. The button should maintain its exact dimensions to prevent layout shifts. Measure the button width before the state change and set it explicitly.</p>
+<p><strong>Inline progress for uploads.</strong> File uploads should show a progress bar with percentage and estimated time remaining. The browser&rsquo;s <code>XMLHttpRequest.upload.onprogress</code> event or the Fetch API&rsquo;s <code>ReadableStream</code> provides real progress data. Never use a fake progress bar that advances on a timer for uploads; users can tell when progress does not correlate with their network speed.</p>
+<p><strong>Transition animations for route changes.</strong> When navigating between pages, a brief fade or slide transition of 150-300 ms masks the rendering delay and creates a sense of spatial continuity. Longer transitions feel sluggish. Shorter ones look glitchy. The <code>View Transitions API</code> now supported in Chrome and Edge makes this trivial to implement without JavaScript animation libraries.</p>
+<p><strong>Toast notifications for background operations.</strong> When an action triggers a background process (exporting a report, syncing data), show an immediate toast notification: &ldquo;Export started. We will notify you when it is ready.&rdquo; This acknowledges the action and sets expectations about timing. Follow up with a second notification when the process completes.</p>
+<p><strong>Pulsing indicators for live data.</strong> When a dashboard metric updates in real time, a brief pulse animation on the changed value draws attention to the update without being distracting. A subtle background color flash that fades over 500 ms works well. Avoid blinking or bouncing animations that become annoying when data updates frequently.</p>
+<h2>Measuring Perceived Performance</h2>
+<p>You cannot improve what you do not measure. Traditional performance metrics like Time to First Byte (TTFB) and DOMContentLoaded are server and browser metrics. They do not measure what the user experiences.</p>
+<p>The metrics that matter for perceived performance:</p>
+<p><strong>First Contentful Paint (FCP).</strong> When the first piece of content renders. This is when the blank white screen ends and the user sees something. Target under 1.8 seconds.</p>
+<p><strong>Largest Contentful Paint (LCP).</strong> When the largest visible content element renders. This is when the page feels &ldquo;loaded.&rdquo; Target under 2.5 seconds.</p>
+<p><strong>Cumulative Layout Shift (CLS).</strong> How much the page layout shifts during loading. High CLS means content jumps around as new elements load, which is disorienting and frustrating. Target under 0.1. Skeleton screens help here: they reserve space for content, preventing shifts when real content replaces them.</p>
+<p><strong>Interaction to Next Paint (INP).</strong> How quickly the page responds to user interactions. This measures the perceived responsiveness after the page has loaded. Target under 200 ms.</p>
+<p>Use Google&rsquo;s web-vitals JavaScript library to capture these metrics from real users. Send the data to your analytics platform and segment by device type, connection speed, and geographic region. A dashboard that loads in 1.2 seconds on a developer&rsquo;s MacBook Pro with fiber internet might take 4.5 seconds on a customer&rsquo;s Chromebook on hotel Wi-Fi.</p>
+<p>Run A/B tests on loading state designs. Measure not just performance metrics but business metrics: task completion rate, session duration, and conversion rate. We have seen skeleton screen implementations increase conversion rates by 8-12% compared to spinner-based loading, even with identical actual load times. Perception drives behavior.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Want to make your application feel faster without rewriting the backend? <a href="/contact.html">Let us design loading experiences</a> that keep your users engaged.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Loading State Design: Making Wait Times Feel Shorter",
@@ -163,7 +117,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/loading-state-design-making-wait-times-feel-shorter/",
   "articleSection": "design"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

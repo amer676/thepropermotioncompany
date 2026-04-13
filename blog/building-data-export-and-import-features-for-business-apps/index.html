@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,143 +6,66 @@
   <title>Building Data Export and Import Features for Business Apps</title>
   <meta name="description" content="Building Data Export and Import Features for Business Apps. data export import Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/building-data-export-and-import-features-for-business-apps/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Building Data Export and Import Features for Business Apps">
-  <meta property="og:description" content="Building Data Export and Import Features for Business Apps. data export import Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/building-data-export-and-import-features-for-business-apps/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Building Data Export and Import Features for Business Apps">
-  <meta name="twitter:description" content="Building Data Export and Import Features for Business Apps. data export import Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Building Data Export and Import Features for Business Apps"><meta property="og:description" content="Building Data Export and Import Features for Business Apps. data export import Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/building-data-export-and-import-features-for-business-apps/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Building Data Export and Import Features for Business Apps"><meta name="twitter:description" content="Building Data Export and Import Features for Business Apps. data export import Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">May 12, 2025</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">data</span>
-            </div>
-            <h1 class="blog-post-title">Building Data Export and Import Features for Business Apps</h1>
-            <p class="blog-post-desc">Building Data Export and Import Features for Business Apps. data export import Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Building Data Export and Import Features for Business Apps</h1>
-<p>There is a lot of noise around building data export and. Vendors want to sell you their platform. Consultants want to sell you their time. This guide has no agenda beyond sharing what we have learned from building production software since 2022.</p>
-<p>data export import</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for building data export and.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a building data export and project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>What Most Teams Get Wrong About Building Data Export And</h2>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Not defining success criteria upfront.</strong> If you cannot articulate what success looks like for your building data export and initiative, you will not know when you have achieved it. Define specific, measurable outcomes before development begins.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<h2>A Decision Framework for Building Data Export And</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality building data export and typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>The Build Process</h2>
-<p>Building building data export and well requires discipline in a few specific areas.</p>
-<p><strong>Requirements documentation</strong> does not need to be a 50-page spec. It needs to be specific enough that two different developers reading it would build the same thing. User stories with acceptance criteria work well for most projects.</p>
-<p><strong>Design before development.</strong> Wireframes and prototypes are cheap to change. Production code is expensive to change. Invest a week in design review before starting development. This single practice prevents more problems than any other.</p>
-<p><strong>Weekly delivery cadence.</strong> Ship something testable every week. Not a demo — a working piece of software that a real person can use and give feedback on. Weekly delivery creates accountability and catches problems early.</p>
-<p><strong>Automated testing</strong> is an investment that pays for itself within weeks. Manual testing does not scale. Every feature should have tests that run automatically on every code change. This is what allows you to move fast without breaking things.</p>
-<h2>When Building Data Export And Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>An e-commerce company outgrew Shopify but was terrified of the migration. Their catalog was complex, their integrations were fragile, and their team had no backend experience. We ran the migration in phases — zero downtime, zero lost orders, and a 40% improvement in page load time on the new stack.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about building data export and, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">May 12, 2025</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">data</span></div><h1 class="blog-post-title">Building Data Export and Import Features for Business Apps</h1><p class="blog-post-desc">Building Data Export and Import Features for Business Apps. data export import Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Building Data Export and Import Features for Business Apps</h1>
+<p>Data export and import are the features nobody gets excited about building but everybody gets frustrated about when they do not work. A CFO who cannot get last quarter&rsquo;s transactions into a spreadsheet for board reporting will not care how elegant your API is. A customer success team that cannot bulk-import 10,000 contact records from a CSV will abandon your product for one that lets them. These are table-stakes features for any serious business application, yet they are riddled with subtle engineering challenges: character encoding, date format ambiguity, memory management for large files, error handling granularity, and the ever-present question of how much processing to do synchronously versus asynchronously.</p>
+<p>This post covers the design and engineering of data export and import features that handle real-world data — messy, large, and demanding.</p>
+<h2>Export Architecture: Streaming, Not Buffering</h2>
+<p>The naive approach to CSV export is to load all matching records into memory, serialize them, and send the result as a single response. This works for 100 rows. At 100,000 rows, your application server runs out of memory, times out, or both.</p>
+<p>The correct approach is streaming. In a streaming export, the application opens a database cursor that fetches rows in batches (1,000 at a time is a reasonable default), serializes each batch to CSV, and writes it to the HTTP response as a chunked transfer-encoded stream. The client begins downloading immediately, and the server&rsquo;s memory footprint stays constant regardless of dataset size.</p>
+<p>In Node.js, this looks like piping a readable stream (from the database cursor) through a transform stream (CSV serialization) to the response writable stream. In Python with Django or Flask, generator-based responses achieve the same effect. In Ruby on Rails, <code>ActionController::Live</code> or the <code>send_data</code> approach with an <code>Enumerator</code> provides streaming.</p>
+<p>For Excel exports (XLSX format), streaming is harder because the XLSX format requires random access to write sheet dimensions and shared string tables. The <code>streaming-xlsx-writer</code> pattern works around this by writing a temporary file on disk using a library like <code>openpyxl</code> in write-only mode or <code>exceljs</code> in streaming mode, then sending that file. The temporary file should be written to a fast local disk (or tmpfs in Linux) and deleted after transmission.</p>
+<p><strong>Important detail:</strong> Set the <code>Content-Disposition</code> header to <code>attachment; filename="export-2025-05-12.csv"</code> to trigger a download rather than inline display. Include a meaningful filename with the date and a description of the data (e.g., <code>orders-2025-Q1.csv</code>).</p>
+<h2>CSV Gotchas That Will Bite You</h2>
+<p>CSV is &ldquo;simple&rdquo; the way English is &ldquo;simple&rdquo; — everyone thinks they understand it until edge cases appear.</p>
+<p><strong>Encoding:</strong> Always export as UTF-8 with a byte-order mark (BOM: <code>\xEF\xBB\xBF</code>). Without the BOM, Excel on Windows defaults to the system&rsquo;s locale encoding (often Windows-1252), which mangles non-ASCII characters. The BOM is invisible to most other tools and solves the single most common CSV-in-Excel complaint.</p>
+<p><strong>Delimiter ambiguity:</strong> Some locales (Germany, France, Brazil) use a comma as the decimal separator, which means Excel in those locales interprets semicolons as the CSV delimiter. Two strategies: (1) offer a delimiter choice in the export dialog, or (2) include a <code>sep=,</code> directive as the first line of the CSV, which tells Excel to use a comma regardless of locale.</p>
+<p><strong>Date formatting:</strong> Export dates in ISO 8601 format (<code>2025-05-12T14:30:00Z</code>). It is unambiguous and parseable by every tool. Never export dates in locale-specific formats like <code>05/12/2025</code> because it is unclear whether that is May 12 or December 5. If your users specifically need locale-formatted dates for presentation, offer it as an export option alongside a machine-readable format.</p>
+<p><strong>Newlines in cell values:</strong> If a field contains a newline character, the entire field must be enclosed in double quotes. If it contains a double quote, the quote must be escaped by doubling it (<code>""</code>). Use a proper CSV library rather than string concatenation — hand-rolled CSV serialization is the number-one source of export bugs.</p>
+<p><strong>Numeric precision:</strong> JavaScript&rsquo;s <code>Number.toString()</code> can produce scientific notation for very large or very small numbers (<code>1e-7</code>). Excel will not interpret this as a number. Format numbers explicitly with fixed decimal precision.</p>
+<h2>Import: Where the Real Complexity Lives</h2>
+<p>Export is a controlled operation — you know your data model, your encoding, your formats. Import is the opposite: you are accepting data shaped by whatever tool the user used to create it, with whatever encoding, whatever date format, and whatever creative interpretations of your expected schema they produced.</p>
+<p><strong>Step 1: File validation.</strong> Before parsing, check file size (reject files above your limit — 50MB is reasonable for CSV), MIME type (though MIME detection is unreliable for CSV), and encoding. Use a library like <code>chardet</code> (Python) or <code>jschardet</code> (JavaScript) to detect encoding and transcode to UTF-8 before parsing.</p>
+<p><strong>Step 2: Header mapping.</strong> The user&rsquo;s CSV columns will not match your field names exactly. &ldquo;First Name,&rdquo; &ldquo;first_name,&rdquo; &ldquo;FirstName,&rdquo; &ldquo;fname,&rdquo; and &ldquo;given name&rdquo; all mean the same thing. Provide an interactive column-mapping step where the user maps their columns to your fields. Pre-populate mappings using fuzzy string matching (Levenshtein distance or simple normalization: lowercase, strip whitespace and punctuation, compare). This mapping step is the most important UX decision in the entire import flow.</p>
+<p><strong>Step 3: Validation.</strong> Parse each row against your field-level validation rules: required fields, data types, value ranges, referential integrity (does this referenced record actually exist?), uniqueness constraints. Collect all errors, do not stop at the first one. Return a validation report that shows the user exactly which rows have which problems:</p>
+<pre><code>Row 12: &quot;email&quot; is not a valid email address (&quot;john@&quot;)
+Row 45: &quot;department_id&quot; references a department that does not exist (&quot;DEPT-999&quot;)
+Row 45: &quot;start_date&quot; could not be parsed as a date (&quot;next Monday&quot;)
+Row 78: duplicate &quot;employee_id&quot; — conflicts with row 23
+</code></pre>
+<p><strong>Step 4: Preview and confirmation.</strong> Show the user a preview of what will be imported: total rows, rows that will succeed, rows with errors. Let them download just the error rows as a separate CSV for correction. Allow them to proceed with partial import (skip error rows) or cancel and fix.</p>
+<p><strong>Step 5: Execution.</strong> The actual database writes should happen in a background job, not in the HTTP request. For large imports, batch the inserts (500-1000 rows per batch), wrap each batch in a transaction, and update a progress indicator via WebSocket or polling. If a batch fails, roll back that batch and continue with the next, recording which rows failed.</p>
+<h2>Handling Large Files Without Killing Your Server</h2>
+<p>A 100MB CSV with a million rows is not unusual in business contexts. Processing it requires attention to memory and time.</p>
+<p><strong>Parse incrementally.</strong> Use a streaming CSV parser that emits rows one at a time rather than loading the entire file into memory. <code>papaparse</code> (JavaScript) and Python&rsquo;s built-in <code>csv</code> module both support streaming. Read from a file on disk, not from a buffer in memory.</p>
+<p><strong>Validate in a background job.</strong> Upload the file, store it (on disk or in object storage like S3), and return immediately. A background worker picks up the file, parses it, runs validation, and stores the validation report. The user polls for status or receives a notification when validation is complete.</p>
+<p><strong>Use COPY for bulk inserts.</strong> PostgreSQL&rsquo;s <code>COPY</code> command ingests CSV data at roughly 100,000 rows per second, orders of magnitude faster than individual INSERT statements. Format your validated, transformed data as a CSV stream and pipe it directly to <code>COPY</code>. For databases that lack a COPY equivalent, use multi-row INSERT statements (batches of 500-1000 rows) within transactions.</p>
+<p><strong>Provide progress feedback.</strong> For a million-row import, the user needs to know the job is progressing. Track rows processed, rows succeeded, rows failed, and estimated time remaining. Update a progress record in the database every 1,000 rows. The frontend polls this record (or subscribes via WebSocket) and displays a progress bar.</p>
+<h2>Export Formats Beyond CSV</h2>
+<p>CSV is universal, but it is not always sufficient. Business applications should support multiple export formats, each serving a different use case:</p>
+<p><strong>XLSX (Excel):</strong> When the export is destined for manual review, formatting matters. XLSX supports column widths, number formatting, date formatting, header styling, and multiple sheets. Use it for reports — a &ldquo;Summary&rdquo; sheet with aggregates and a &ldquo;Detail&rdquo; sheet with row-level data. AutoFilter headers (the dropdown arrows on column headers) are a small touch that users deeply appreciate.</p>
+<p><strong>PDF:</strong> For reports that will be printed, shared externally, or archived. Generate PDFs server-side using a headless browser (Puppeteer rendering an HTML report) or a dedicated library (PDFKit for Node.js, ReportLab for Python). Include page numbers, a generation timestamp, and the filters/parameters used to generate the report.</p>
+<p><strong>JSON and JSON Lines:</strong> For developer-oriented consumers and API-driven workflows. JSON Lines (one JSON object per line, newline-delimited) is preferable to a single JSON array for large exports because it supports streaming and incremental processing.</p>
+<p><strong>Parquet and other columnar formats:</strong> For data engineering consumers who will load the export into a data warehouse. Parquet files are compressed, column-oriented, and carry schema information. This is an advanced feature but a meaningful differentiator for data-heavy B2B applications.</p>
+<h2>Access Control and Audit Logging</h2>
+<p>Export and import features handle bulk data, which makes them high-value targets for data exfiltration and high-risk operations for data corruption.</p>
+<p><strong>Export permissions</strong> should be granular. A user who can view a single customer record should not necessarily be able to export all 50,000 customer records. Implement export-specific permissions and consider row-level limits: &ldquo;users in the Support role can export up to 1,000 records per export.&rdquo;</p>
+<p><strong>Audit logging</strong> for every export and import operation should record who performed it, when, what filters were applied (for exports), how many records were affected, and the file&rsquo;s hash. This audit trail is essential for compliance frameworks (SOC 2, GDPR, HIPAA) and for incident investigation.</p>
+<p><strong>Rate limiting</strong> on export endpoints prevents abuse. A reasonable limit is 10 exports per user per hour, with higher limits for admin roles.</p>
+<p><strong>Data minimization:</strong> Export only the fields the user has permission to see. If a user lacks access to salary data, the export should not include salary columns — even if the underlying query could include them.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Data export and import might not be glamorous, but they are the features that determine whether your application fits into your customers&rsquo; real workflows or remains an island. If you need these capabilities built right — robust, scalable, and tested against the messy reality of production data — <a href="/contact.html">reach out to us</a>.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building Data Export and Import Features for Business Apps",
@@ -164,7 +85,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/building-data-export-and-import-features-for-business-apps/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

@@ -1,152 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Building Customer Referral Systems | The Proper Motion Company</title>
+  <title>Building Customer Referral Systems | Proper Motion</title>
   <meta name="description" content="Building Customer Referral Systems. Referral program architecture for growth. Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/building-customer-referral-systems/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Building Customer Referral Systems | The Proper Motion Company">
-  <meta property="og:description" content="Building Customer Referral Systems. Referral program architecture for growth. Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/building-customer-referral-systems/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Building Customer Referral Systems | The Proper Motion Company">
-  <meta name="twitter:description" content="Building Customer Referral Systems. Referral program architecture for growth. Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Building Customer Referral Systems | Proper Motion"><meta property="og:description" content="Building Customer Referral Systems. Referral program architecture for growth. Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/building-customer-referral-systems/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Building Customer Referral Systems | Proper Motion"><meta name="twitter:description" content="Building Customer Referral Systems. Referral program architecture for growth. Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">March 12, 2023</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">growth</span>
-            </div>
-            <h1 class="blog-post-title">Building Customer Referral Systems</h1>
-            <p class="blog-post-desc">Building Customer Referral Systems. Referral program architecture for growth. Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Building Customer Referral Systems</h1>
-<p>Referral program architecture for growth.</p>
-<p>We have been building custom software since 2022 — working directly with founders, operators, and technical leaders. This guide captures the patterns that separate projects that succeed from projects that stall.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A professional services firm was running their client communication through a combination of email, Slack, shared drives, and a CRM that nobody updated. Their clients were frustrated. Their team was drowning. We built a single portal that unified everything. The first month after launch, client satisfaction scores jumped and internal time spent on admin tasks dropped measurably.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for building customer referral systems.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<h2>When Building Customer Referral Systems Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>The Build Process</h2>
-<p>Building building customer referral systems well requires discipline in a few specific areas.</p>
-<p><strong>Requirements documentation</strong> does not need to be a 50-page spec. It needs to be specific enough that two different developers reading it would build the same thing. User stories with acceptance criteria work well for most projects.</p>
-<p><strong>Design before development.</strong> Wireframes and prototypes are cheap to change. Production code is expensive to change. Invest a week in design review before starting development. This single practice prevents more problems than any other.</p>
-<p><strong>Weekly delivery cadence.</strong> Ship something testable every week. Not a demo — a working piece of software that a real person can use and give feedback on. Weekly delivery creates accountability and catches problems early.</p>
-<p><strong>Automated testing</strong> is an investment that pays for itself within weeks. Manual testing does not scale. Every feature should have tests that run automatically on every code change. This is what allows you to move fast without breaking things.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>What Most Teams Get Wrong About Building Customer Referral Systems</h2>
-<p><strong>Not defining success criteria upfront.</strong> If you cannot articulate what success looks like for your building customer referral systems initiative, you will not know when you have achieved it. Define specific, measurable outcomes before development begins.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For building customer referral systems, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a building customer referral systems project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about building customer referral systems, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">March 12, 2023</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">growth</span></div><h1 class="blog-post-title">Building Customer Referral Systems</h1><p class="blog-post-desc">Building Customer Referral Systems. Referral program architecture for growth. Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Building Customer Referral Systems</h1>
+<p>Referral programs are the most efficient customer acquisition channel that most companies never build properly. The economics are compelling: referred customers have a 16 percent higher lifetime value than non-referred customers, according to a Wharton School study, and their acquisition cost is a fraction of paid advertising. Dropbox grew from 100,000 to 4,000,000 users in 15 months largely through its referral program. PayPal spent $60 million on referral bonuses in its early days and considered it the best marketing investment the company ever made.</p>
+<p>Yet most referral programs fail. They fail not because the incentive is wrong or the market is unresponsive, but because the technical implementation creates too much friction. A referral program that requires users to copy a link, paste it into an email, and then wait for the recipient to sign up, make a purchase, and have it manually attributed to the referrer is not a referral program &mdash; it is a wishful thinking program.</p>
+<p>This guide covers the architecture, mechanics, and optimization strategies for building referral systems that actually drive growth.</p>
+<h2>The Referral Data Model</h2>
+<p>A referral system has four core entities:</p>
+<p><strong>Referral codes.</strong> Each referrer gets a unique, persistent code. This can be a short alphanumeric string (e.g., JANE-2847), a vanity URL (app.com/r/jane), or an encoded token. The code must be:</p>
+<ul>
+<li>Unique per referrer (obviously)</li>
+<li>Short enough to share verbally (under 10 characters)</li>
+<li>Permanent &mdash; changing codes breaks existing shares</li>
+<li>Trackable across channels (the same code works in email, SMS, social media, and direct URL)</li>
+</ul>
+<p>We generate codes using a combination of the user&rsquo;s first name and a random 4-digit suffix, with collision checking. This produces codes that feel personal (&ldquo;Share your code JANE-2847&rdquo;) rather than anonymous (&ldquo;Share code X7K9M2Q&rdquo;).</p>
+<p><strong>Referral links.</strong> A URL containing the referral code that, when clicked, sets a first-party cookie with the referrer&rsquo;s ID and a 30-day expiration. This is critical because the referred user may not sign up immediately. They might click the link on Monday, browse the site, and sign up on Thursday. Without cookie-based tracking, the referral attribution is lost.</p>
+<p>The link structure: <code>https://app.com/signup?ref=JANE-2847</code>. When the landing page loads, the application reads the <code>ref</code> parameter, sets a <code>referrer_id</code> cookie, and stores the referral code in the user&rsquo;s session. When the referred user eventually creates an account, the system checks for the cookie/session value and creates the referral relationship.</p>
+<p><strong>Referral relationships.</strong> A join table linking the referrer user ID, the referred user ID, the referral code used, the timestamp, the channel (if detectable), and the current status of the referral (pending, qualified, rewarded, expired).</p>
+<p><strong>Rewards.</strong> Each successful referral triggers a reward for the referrer, the referred user, or both. Rewards have types (account credit, cash payout, subscription extension, free month, physical gift), amounts, and states (pending, issued, redeemed, expired).</p>
+<h2>Double-Sided Incentive Design</h2>
+<p>The most effective referral programs reward both parties. This aligns incentives: the referrer is motivated to share, and the referred user has a reason to use the referral link instead of signing up directly.</p>
+<p>Common incentive structures:</p>
+<p><strong>Credit-based (SaaS/subscription products).</strong> &ldquo;Give $25, Get $25.&rdquo; Both parties receive account credit. This is Dropbox&rsquo;s model (extra storage) and Airbnb&rsquo;s model (travel credit). Advantages: no cash outflow (credits are redeemed against future revenue), creates lock-in (credit encourages continued usage), and the effective cost per referral is the marginal cost of the credited service, not the face value. A $25 credit on a product with 80 percent gross margins costs the company $5 in actual resources.</p>
+<p><strong>Cash-based (marketplaces, financial products).</strong> &ldquo;Refer a friend, you both get $50.&rdquo; PayPal, Uber, and most fintech products use cash incentives because their users are already transacting in money. Cash is the most universally motivating incentive but the most expensive, because the cost is 1:1 with the face value.</p>
+<p><strong>Tiered (high-volume referral programs).</strong> Increase the reward as the referrer hits milestones: first 3 referrals earn $25 each, next 5 earn $50 each, 10+ earn $75 each. This motivates power referrers who drive the majority of program volume. In most referral programs, 5 percent of participants generate 50 percent of referrals.</p>
+<p><strong>Subscription extension (content/media products).</strong> &ldquo;Refer a friend and get a free month.&rdquo; The New York Times and similar subscription businesses use this model. The cost is the marginal cost of one additional month of access (nearly zero for digital products), making it extremely capital-efficient.</p>
+<p>When designing incentives, calibrate the reward to customer lifetime value (LTV). A healthy referral cost-per-acquisition is 10 to 20 percent of LTV. If your average customer generates $500 in lifetime revenue, spending $50 to $100 on the combined referral reward (both sides) is sustainable.</p>
+<h2>Fraud Prevention and Abuse Detection</h2>
+<p>Every referral program with real monetary value will attract abuse. Common fraud patterns:</p>
+<p><strong>Self-referral.</strong> A user creates a second account using a different email address and refers themselves. Detection: flag referral pairs that share the same IP address, device fingerprint, browser fingerprint, or payment method. Block rewards when two or more signals match.</p>
+<p><strong>Referral farms.</strong> Organized groups create hundreds of fake accounts to harvest referral rewards. Detection: monitor for unusual patterns &mdash; a single referrer generating 50+ referrals in a day, referrals from email addresses with sequential patterns (user1@mail.com, user2@mail.com), or referrals from newly created accounts.</p>
+<p><strong>Reward gaming.</strong> Users sign up, claim the referral bonus, and immediately cancel or churn. Prevention: delay reward issuance until the referred user meets a qualification event &mdash; making their first purchase, maintaining their subscription for 30 days, or reaching a usage threshold. This is the most important anti-fraud mechanism and should be implemented from day one.</p>
+<p><strong>Attribution manipulation.</strong> Users share their referral link in coupon forums or deal sites, hoping to capture credit for users who would have signed up anyway. Prevention: apply a last-touch attribution window (e.g., the referral cookie must have been set within the last 7 days) and exclude referrals from known coupon/deal domains.</p>
+<p>Our fraud prevention architecture processes every referral through a scoring pipeline:</p>
+<ol>
+<li>Check for shared device fingerprint or IP address between referrer and referred (high risk)</li>
+<li>Check referrer&rsquo;s referral velocity (more than 10 per day is flagged)</li>
+<li>Check referred user&rsquo;s email domain and age (disposable email services are flagged)</li>
+<li>Check referred user&rsquo;s payment method against existing accounts</li>
+<li>Score: 0-2 flags = auto-approve, 3 flags = manual review, 4+ flags = auto-reject</li>
+</ol>
+<p>This catches 95 percent of fraudulent referrals automatically. The remaining 5 percent go to a manual review queue.</p>
+<h2>Technical Implementation: The Referral Engine</h2>
+<p>The referral engine is the backend service that processes referral events and manages the reward lifecycle. Its key responsibilities:</p>
+<p><strong>Attribution.</strong> When a new user signs up, the engine determines whether the signup was referred and by whom. The attribution waterfall:</p>
+<ol>
+<li>Check for a <code>ref</code> parameter in the signup URL</li>
+<li>Check for a <code>referrer_id</code> cookie</li>
+<li>Check for a referral code entered manually during signup</li>
+<li>If none found, the user is organic (not referred)</li>
+</ol>
+<p>If multiple sources conflict (URL says referrer A, cookie says referrer B), we use last-touch attribution: the most recent referral interaction wins.</p>
+<p><strong>Qualification.</strong> After attribution, the engine monitors the referred user for the qualification event (first purchase, 30-day retention, etc.). This is implemented as an event listener: when the qualifying event fires, the engine checks whether the user has a pending referral and advances it to &ldquo;qualified&rdquo; status.</p>
+<p><strong>Reward issuance.</strong> Once a referral qualifies, the engine issues rewards to both parties. For account credits, this is an API call to the billing system. For cash payouts, it is a record in the payout queue (processed in batch via ACH or PayPal). For subscription extensions, it is an update to the user&rsquo;s subscription end date.</p>
+<p><strong>Notification.</strong> At each stage (referral received, referral qualified, reward issued), both the referrer and the referred user receive notifications via email or in-app messaging. Timely notifications are critical for engagement: a referrer who sees &ldquo;Jane just signed up using your referral!&rdquo; feels rewarded immediately, reinforcing the sharing behavior.</p>
+<p>The engine must be idempotent: processing the same referral event twice must not issue duplicate rewards. We achieve this with a unique constraint on the (referrer_id, referred_user_id) pair and a state machine that prevents transitions from &ldquo;rewarded&rdquo; back to &ldquo;qualified.&rdquo;</p>
+<h2>Measuring and Optimizing Program Performance</h2>
+<p>Track these metrics to evaluate and improve your referral program:</p>
+<p><strong>Participation rate.</strong> What percentage of your active users have shared their referral code at least once? Industry benchmark: 5 to 15 percent. Below 5 percent, your sharing UX has too much friction or the incentive is not compelling enough.</p>
+<p><strong>Share-to-signup conversion rate.</strong> Of the people who click a referral link, what percentage sign up? Benchmark: 10 to 25 percent. Low conversion here indicates a problem with the landing page experience for referred users.</p>
+<p><strong>Qualification rate.</strong> Of referred signups, what percentage reach the qualification event? Benchmark: 30 to 60 percent. Low qualification means either the product is not retaining referred users or the qualification bar is too high.</p>
+<p><strong>Viral coefficient (K-factor).</strong> The average number of new users each existing user generates through referrals. K = (participation rate) x (average invites per participant) x (share-to-signup conversion) x (qualification rate). A K-factor above 0.5 means referrals are meaningfully contributing to growth. Above 1.0 means the product grows virally without any other acquisition spending.</p>
+<p><strong>Cost per qualified referral.</strong> Total rewards issued divided by total qualified referrals. Compare this to your cost per acquisition from paid channels. Referrals should be 30 to 60 percent cheaper than paid acquisition; if they are not, recalibrate the incentive.</p>
+<p>Optimization levers:</p>
+<ul>
+<li><strong>Reduce sharing friction.</strong> Pre-populate share messages. Support one-tap sharing via SMS, WhatsApp, and email. Display the referral code prominently on the dashboard, not buried in settings.</li>
+<li><strong>Time the ask.</strong> Prompt users to share immediately after a positive experience: completing their first project, receiving a positive review, saving money. This is the moment of highest enthusiasm and lowest friction.</li>
+<li><strong>Test incentive levels.</strong> A/B test $20 vs. $30 vs. $50 rewards. Higher is not always better &mdash; above a certain threshold, incremental reward increases do not materially change sharing behavior.</li>
+<li><strong>Leaderboards and gamification.</strong> Show top referrers (with permission) and create friendly competition. A monthly &ldquo;top referrer&rdquo; recognition with a bonus reward motivates power users.</li>
+</ul>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If you want to build a referral system that drives measurable customer acquisition, <a href="/contact.html">contact The Proper Motion Company</a>. We design and build referral engines that are fraud-resistant, easy to share, and optimized for conversion.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building Customer Referral Systems",
@@ -166,7 +108,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/building-customer-referral-systems/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

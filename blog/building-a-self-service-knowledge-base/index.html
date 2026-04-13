@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,146 +6,76 @@
   <title>Building a Self-Service Knowledge Base | Proper Motion</title>
   <meta name="description" content="Building a Self-Service Knowledge Base. Support documentation that reduces tickets. Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/building-a-self-service-knowledge-base/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Building a Self-Service Knowledge Base | Proper Motion">
-  <meta property="og:description" content="Building a Self-Service Knowledge Base. Support documentation that reduces tickets. Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/building-a-self-service-knowledge-base/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Building a Self-Service Knowledge Base | Proper Motion">
-  <meta name="twitter:description" content="Building a Self-Service Knowledge Base. Support documentation that reduces tickets. Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Building a Self-Service Knowledge Base | Proper Motion"><meta property="og:description" content="Building a Self-Service Knowledge Base. Support documentation that reduces tickets. Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/building-a-self-service-knowledge-base/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Building a Self-Service Knowledge Base | Proper Motion"><meta name="twitter:description" content="Building a Self-Service Knowledge Base. Support documentation that reduces tickets. Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">January 13, 2023</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">support</span>
-            </div>
-            <h1 class="blog-post-title">Building a Self-Service Knowledge Base</h1>
-            <p class="blog-post-desc">Building a Self-Service Knowledge Base. Support documentation that reduces tickets. Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Building a Self-Service Knowledge Base</h1>
-<p>Support documentation that reduces tickets.</p>
-<p>Before you make any decisions about building a self-service knowledge, read this. It will save you time, money, and the particular frustration that comes from learning expensive lessons the hard way.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A logistics company came to us after spending eight months with a development shop that delivered a system their team refused to use. The interface was confusing, the reports were wrong, and the integrations broke weekly. We rebuilt it in ten weeks. The difference was not technical skill — it was the three days we spent shadowing their operations team before writing a single line of code.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>The Build Process</h2>
-<p>Building building a self-service knowledge well requires discipline in a few specific areas.</p>
-<p><strong>Requirements documentation</strong> does not need to be a 50-page spec. It needs to be specific enough that two different developers reading it would build the same thing. User stories with acceptance criteria work well for most projects.</p>
-<p><strong>Design before development.</strong> Wireframes and prototypes are cheap to change. Production code is expensive to change. Invest a week in design review before starting development. This single practice prevents more problems than any other.</p>
-<p><strong>Weekly delivery cadence.</strong> Ship something testable every week. Not a demo — a working piece of software that a real person can use and give feedback on. Weekly delivery creates accountability and catches problems early.</p>
-<p><strong>Automated testing</strong> is an investment that pays for itself within weeks. Manual testing does not scale. Every feature should have tests that run automatically on every code change. This is what allows you to move fast without breaking things.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a building a self-service knowledge project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for building a self-service knowledge.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<h2>When Building A Self-Service Knowledge Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>A Decision Framework for Building A Self-Service Knowledge</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality building a self-service knowledge typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about building a self-service knowledge, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">January 13, 2023</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">support</span></div><h1 class="blog-post-title">Building a Self-Service Knowledge Base</h1><p class="blog-post-desc">Building a Self-Service Knowledge Base. Support documentation that reduces tickets. Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Building a Self-Service Knowledge Base</h1>
+<p>Every support ticket that a customer submits costs your company between $15 and $35 to resolve, according to data from HDI and Gartner. A well-built self-service knowledge base lets customers resolve their own issues for effectively $0 per interaction, while simultaneously improving customer satisfaction &ndash; 67% of customers prefer self-service over speaking to a company representative, per a Zendesk survey. Yet most knowledge bases fail to deliver on this promise. They are disorganized, hard to search, written in jargon customers do not understand, and outdated within months of launch.</p>
+<p>This guide covers how to build a knowledge base that actually reduces support ticket volume &ndash; from information architecture and content strategy through search optimization and maintenance workflows.</p>
+<h2>Information Architecture: Organizing Knowledge for Findability</h2>
+<p>The biggest mistake in knowledge base design is organizing content around your company&rsquo;s internal structure rather than your customers&rsquo; mental models. Your engineering team thinks in terms of &ldquo;authentication module,&rdquo; &ldquo;billing service,&rdquo; and &ldquo;API gateway.&rdquo; Your customers think in terms of &ldquo;I cannot log in,&rdquo; &ldquo;I was charged twice,&rdquo; and &ldquo;my integration is broken.&rdquo;</p>
+<p>Start by analyzing your support ticket data. Export the last 6 to 12 months of tickets and categorize them by topic. You will typically find that 20% of topics account for 80% of ticket volume. These high-volume topics are your priority content. For a SaaS product, the top categories are usually:</p>
+<ol>
+<li>Account and access issues (login, password reset, SSO, MFA)</li>
+<li>Billing and subscription management (plan changes, invoices, refunds)</li>
+<li>Getting started and onboarding (initial setup, configuration, first-time use)</li>
+<li>Feature-specific how-to guides (grouped by product area)</li>
+<li>Integrations and API usage</li>
+<li>Troubleshooting and error messages</li>
+</ol>
+<p>Within each category, organize articles from simple to complex: overview articles first, step-by-step guides next, and advanced troubleshooting last. Use clear, descriptive titles that match the language customers use in support tickets, not internal jargon. &ldquo;How to export your data as a CSV file&rdquo; is findable. &ldquo;Data export functionality overview&rdquo; is not.</p>
+<p>Create a top-level navigation structure with no more than 7 to 9 categories. Within each category, limit sub-categories to 2 levels deep. Deeper nesting creates navigation complexity that discourages exploration. If a category needs more than 15 articles, consider splitting it into sub-categories or creating a landing page that groups articles by use case.</p>
+<h2>Writing Knowledge Base Articles That Actually Help</h2>
+<p>The quality of individual articles determines whether customers find answers or give up and submit a ticket. Effective knowledge base articles share several characteristics.</p>
+<p><strong>Task-oriented titles</strong>: Start titles with an action verb or a problem statement. &ldquo;How to reset your password,&rdquo; &ldquo;Fix: Payment method declined error,&rdquo; &ldquo;Connecting Slack to your workspace.&rdquo; Avoid noun-phrase titles like &ldquo;Password Management&rdquo; or &ldquo;Payment Methods&rdquo; &ndash; they tell the customer what the article is about, not whether it will solve their problem.</p>
+<p><strong>Structured format</strong>: Every article should follow a consistent structure:
+- <strong>Problem statement or goal</strong>: One sentence describing what the article helps the customer accomplish or resolve.
+- <strong>Prerequisites</strong>: Any requirements (permissions, plan tier, browser version) that must be met before following the steps.
+- <strong>Step-by-step instructions</strong>: Numbered steps with one action per step. Include screenshots for steps that involve navigating to a specific location or interacting with a specific UI element. Annotate screenshots with numbered callouts that correspond to the steps.
+- <strong>Expected outcome</strong>: What the customer should see when they have completed the steps successfully.
+- <strong>Troubleshooting</strong>: Common issues that arise during the process and how to resolve them. Link to related articles for issues outside the scope of this article.</p>
+<p><strong>Plain language</strong>: Write at a 6th-to-8th-grade reading level. Avoid technical jargon unless your audience is exclusively technical (API documentation for developers). Replace &ldquo;authenticate your credentials&rdquo; with &ldquo;log in.&rdquo; Replace &ldquo;provision your instance&rdquo; with &ldquo;set up your account.&rdquo; The Hemingway App and Grammarly&rsquo;s readability checker are useful tools for calibrating reading level.</p>
+<p><strong>Accurate and current information</strong>: An article with outdated screenshots or incorrect steps is worse than no article at all &ndash; it wastes the customer&rsquo;s time and erodes trust. Every article should display a &ldquo;last updated&rdquo; date, and your process should include regular review cycles (more on this below).</p>
+<h2>Search Optimization: Making Content Discoverable</h2>
+<p>If customers cannot find the right article, it does not matter how well it is written. Knowledge base search is the primary way customers access content &ndash; only 15% to 20% browse by category, according to data from knowledge management platforms.</p>
+<p><strong>Full-text search</strong> is the minimum viable capability. Use a search engine like Elasticsearch, Algolia, or Typesense rather than basic SQL LIKE queries. These engines support stemming (matching &ldquo;connecting&rdquo; when the user searches &ldquo;connect&rdquo;), typo tolerance (matching &ldquo;integation&rdquo; to &ldquo;integration&rdquo;), and relevance ranking based on field weights (title matches rank higher than body matches).</p>
+<p><strong>Synonym mapping</strong> dramatically improves search hit rates. Map the terms customers actually use to the terms your articles use. If your article says &ldquo;workspace&rdquo; but customers search for &ldquo;account,&rdquo; &ldquo;organization,&rdquo; or &ldquo;team,&rdquo; add those as synonyms. Build your synonym list by analyzing search queries that return zero results &ndash; your search analytics will show you exactly which terms customers are using that your content does not match.</p>
+<p><strong>Search analytics</strong> are essential for continuous improvement. Track:
+- <strong>Zero-result searches</strong>: Queries that returned no articles. These represent content gaps or missing synonyms.
+- <strong>Search-to-ticket rate</strong>: How often a search session ends with a support ticket submission. High rates indicate that search results are not satisfying customer needs.
+- <strong>Click-through rate by position</strong>: Whether customers click the first result, scroll to lower results, or refine their search. Low click-through on top results suggests relevance ranking needs tuning.
+- <strong>Most-searched terms</strong>: The queries customers perform most frequently, which should directly inform your content creation priorities.</p>
+<p><strong>Contextual help integration</strong> puts knowledge base content where customers need it, without requiring them to leave your application and search a separate site. Embed article excerpts in tooltips, link &ldquo;Learn more&rdquo; text to relevant articles, and surface suggested articles in your in-app help widget based on the page the customer is currently viewing. Intercom, Zendesk, and Freshdesk all support this pattern, or you can build a lightweight widget that queries your knowledge base API.</p>
+<h2>Technical Platform: Build vs. Buy vs. Headless</h2>
+<p>The knowledge base platform decision depends on your scale, technical resources, and integration requirements.</p>
+<p><strong>SaaS knowledge base platforms</strong> (Zendesk Guide, Freshdesk Knowledge Base, HelpScout Docs, Document360) offer the fastest time to value. You get a WYSIWYG editor, built-in search, analytics, categorization, and often integration with the vendor&rsquo;s support ticketing system. These platforms work well for companies with fewer than 500 articles that do not need extensive customization. Typical costs range from $25 to $100 per agent per month as part of a broader support platform subscription.</p>
+<p><strong>Static site generators</strong> (Hugo, Jekyll, Docusaurus, MkDocs) are popular for developer documentation. They produce fast, SEO-friendly static HTML from Markdown files stored in a Git repository. Content updates go through pull requests, enabling review workflows and version history. The trade-off is that search, analytics, and feedback collection require additional tooling (Algolia for search, Google Analytics for page metrics, a custom feedback widget).</p>
+<p><strong>Headless CMS with custom frontend</strong> (Contentful, Sanity, Strapi, or a custom CMS) offers the most flexibility. Content editors work in a structured CMS interface, and the frontend is a custom application that fetches content via API. This approach is ideal for knowledge bases that need to serve content across multiple channels (web, in-app widget, chatbot, mobile app) or that require deep integration with your product&rsquo;s authentication and personalization systems.</p>
+<p><strong>Custom-built knowledge base</strong> makes sense when your requirements include role-based content visibility (different articles visible to different user tiers), deep integration with your product&rsquo;s data model (articles that reference the customer&rsquo;s specific configuration), or workflow features that no off-the-shelf platform supports (automated article generation from resolved tickets, AI-powered content suggestions).</p>
+<h2>Maintenance: Keeping Content Fresh and Accurate</h2>
+<p>A knowledge base that is not maintained actively degrades. Product updates change UI layouts, making screenshots inaccurate. Feature deprecations make articles about removed features misleading. New features go undocumented because no one assigned the task.</p>
+<p>Establish a maintenance cadence with clear ownership:</p>
+<p><strong>Triggered reviews</strong>: Whenever a product release changes a feature documented in the knowledge base, the release checklist should include &ldquo;update knowledge base articles.&rdquo; Link each article to the product features it covers, and when a feature changes, the linked articles are automatically flagged for review.</p>
+<p><strong>Scheduled audits</strong>: Review every article at least once every 6 months. Assign article ownership to specific team members &ndash; typically support engineers or technical writers who are closest to the content. During an audit, verify that steps are accurate, screenshots are current, links are functional, and the article is still relevant.</p>
+<p><strong>Feedback-driven updates</strong>: Add a &ldquo;Was this article helpful?&rdquo; widget to every article with Yes/No buttons and an optional comment field. Articles with helpfulness ratings below 60% should be prioritized for rewriting. Comments from customers who clicked &ldquo;No&rdquo; often contain specific information about what was wrong or missing.</p>
+<p><strong>Content lifecycle management</strong>: Archive articles about deprecated features rather than deleting them &ndash; some customers may still be on older product versions. Mark archived articles clearly (&ldquo;This article applies to Version 2.x. For Version 3.x, see [updated article]&rdquo;) and exclude them from default search results while keeping them accessible via direct URL.</p>
+<p><strong>Performance reporting</strong>: Track knowledge base KPIs monthly:
+- Total article views (trending up means more customers are finding your content)
+- Ticket deflection rate (percentage of knowledge base sessions that do not result in a ticket)
+- Average helpfulness rating across all articles
+- Content coverage ratio (percentage of top support topics that have corresponding knowledge base articles)</p>
+<p>Target a ticket deflection rate of 30% to 50%. Top-performing knowledge bases achieve 60% or higher.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>A well-built knowledge base is one of the highest-ROI investments a product company can make &ndash; it reduces support costs, improves customer satisfaction, and scales infinitely without adding headcount. If you are ready to build a knowledge base that genuinely deflects tickets and serves your customers well, <a href="/contact.html">reach out to our team</a>. We design and develop knowledge base platforms that integrate with your product, your support workflow, and your content operations.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building a Self-Service Knowledge Base",
@@ -167,7 +95,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/building-a-self-service-knowledge-base/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

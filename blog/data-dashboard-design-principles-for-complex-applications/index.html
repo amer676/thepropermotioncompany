@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,135 +6,58 @@
   <title>Data Dashboard Design: Principles for Complex Applications</title>
   <meta name="description" content="How to design dashboards that enable faster decisions for data-heavy operations.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/data-dashboard-design-principles-for-complex-applications/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Data Dashboard Design: Principles for Complex Applications">
-  <meta property="og:description" content="How to design dashboards that enable faster decisions for data-heavy operations.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/data-dashboard-design-principles-for-complex-applications/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Data Dashboard Design: Principles for Complex Applications">
-  <meta name="twitter:description" content="How to design dashboards that enable faster decisions for data-heavy operations.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Data Dashboard Design: Principles for Complex Applications"><meta property="og:description" content="How to design dashboards that enable faster decisions for data-heavy operations."><meta property="og:url" content="https://thepropermotioncompany.com/blog/data-dashboard-design-principles-for-complex-applications/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Data Dashboard Design: Principles for Complex Applications"><meta name="twitter:description" content="How to design dashboards that enable faster decisions for data-heavy operations."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">July 29, 2025</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">design</span><span class="blog-card-tag">dashboards</span>
-            </div>
-            <h1 class="blog-post-title">Data Dashboard Design: Principles for Complex Applications</h1>
-            <p class="blog-post-desc">How to design dashboards that enable faster decisions for data-heavy operations.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Data Dashboard Design: Principles for Complex Applications</h1>
-<p>If you are researching data dashboard design: principles, you have probably noticed that most guides online are either too surface-level to be useful or too technical to be actionable. This guide sits in the middle — practical enough to inform real decisions, detailed enough to be worth your time.</p>
-<p>How to design dashboards that enable faster decisions for data-heavy operations.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for data dashboard design: principles.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A logistics company came to us after spending eight months with a development shop that delivered a system their team refused to use. The interface was confusing, the reports were wrong, and the integrations broke weekly. We rebuilt it in ten weeks. The difference was not technical skill — it was the three days we spent shadowing their operations team before writing a single line of code.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>What Most Teams Get Wrong About Data Dashboard Design: Principles</h2>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning data dashboard design: principles.</p>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For data dashboard design: principles, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<h2>A Decision Framework for Data Dashboard Design: Principles</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality data dashboard design: principles typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Architecture Patterns That Work</h2>
-<p>For data dashboard design: principles projects, certain architectural patterns consistently deliver better outcomes.</p>
-<p><strong>Start with a monolith.</strong> Microservices add complexity that early-stage projects do not need. Build a well-structured monolith first, then extract services when you have enough traffic and team size to justify the operational overhead.</p>
-<p><strong>Use managed services where possible.</strong> Managed databases, managed hosting, managed authentication — these save hundreds of hours of infrastructure maintenance. Your team should be building features, not managing servers.</p>
-<p><strong>Design for replaceability.</strong> Every third-party integration should be wrapped in an abstraction layer. When (not if) you need to swap out a vendor, the change should be isolated to one module, not spread across your codebase.</p>
-<p><strong>Cache strategically.</strong> Identify the most frequently accessed data and cache it close to the user. A simple caching layer can improve performance by 10x and reduce infrastructure costs significantly.</p>
-<h2>When Data Dashboard Design: Principles Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Taking Action</h2>
-<p>Reading about data dashboard design: principles is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">July 29, 2025</span><span class="blog-card-read">6 min read</span><span class="blog-card-tag">design</span><span class="blog-card-tag">dashboards</span></div><h1 class="blog-post-title">Data Dashboard Design: Principles for Complex Applications</h1><p class="blog-post-desc">How to design dashboards that enable faster decisions for data-heavy operations.</p></div><div class="blog-post-content"><h1>Data Dashboard Design: Principles for Complex Applications</h1>
+<p>A dashboard that shows everything shows nothing. The most common failure mode in data-heavy applications is the &ldquo;wall of charts&rdquo; approach, where every metric gets a visualization, every KPI gets a card, and the user is left scrolling through a dense grid trying to figure out what actually matters. Good dashboard design is an exercise in ruthless prioritization, turning raw data into decisions by surfacing the right information at the right moment with the right context.</p>
+<h2>Start with Decisions, Not Data</h2>
+<p>The first question is never &ldquo;what data do we have?&rdquo; It is &ldquo;what decisions does this dashboard need to support?&rdquo; Every chart, number, and table on the screen should connect to a specific action a user might take.</p>
+<p>A logistics operations dashboard, for example, might need to support three decisions: which shipments need attention right now, whether today&rsquo;s delivery targets are on track, and where capacity constraints are emerging. Those three decisions imply three dashboard zones, each with a focused set of visualizations. Everything else is noise.</p>
+<p>Interview the actual users before designing anything. Not executives describing what they think their teams need, but the operators, analysts, and managers who will stare at this dashboard eight hours a day. Ask them: what do you check first when you sit down? What triggers you to take action? What information do you currently have to dig for? Their answers will reveal the decision hierarchy that your layout should mirror.</p>
+<p>A technique that works well is the &ldquo;five questions&rdquo; exercise. Ask each user to write down the five questions they need answered most frequently. Collect answers from ten users and look for overlap. The top five to eight questions across all users become your dashboard&rsquo;s core content. Everything else goes into a secondary view or an on-demand drill-down.</p>
+<h2>Visual Hierarchy and Layout Patterns</h2>
+<p>Human visual attention follows predictable patterns. On a dashboard, users scan from top-left to top-right, then down. The most critical information belongs in the top-left quadrant. Summary metrics and alerts go at the top. Detailed breakdowns and time-series charts sit in the middle. Tables and logs belong at the bottom.</p>
+<p>The inverted pyramid model from journalism applies: lead with the headline, follow with supporting context, and put the details last. A manufacturing plant dashboard might show defect rate and throughput as large numbers at the top, trend charts for the current shift in the middle, and a sortable table of individual production line metrics at the bottom.</p>
+<p>Grid-based layouts with consistent card sizes create visual rhythm. Most effective dashboards use a 12-column grid with cards spanning 3, 4, 6, or 12 columns. Avoid mixing too many card sizes on a single view. Two or three sizes per row keeps things scannable.</p>
+<p>White space is not wasted space. Dense dashboards feel overwhelming and slow users down. Generous padding between cards, consistent margins, and clear separation between sections reduce cognitive load. A dashboard with 12 well-spaced cards will outperform one with 24 cramped cards in every usability test.</p>
+<h2>Choosing the Right Chart for the Right Data</h2>
+<p>Chart selection is where most dashboard projects go wrong. The choice should be driven by the question being answered, not by what looks impressive.</p>
+<p>For comparing values across categories (which region has the most sales, which product has the highest defect rate), use horizontal bar charts. Humans compare lengths more accurately than areas or angles. Vertical bar charts work when the categories are time periods.</p>
+<p>For showing change over time, line charts are the default. Use area charts only when you need to show part-to-whole relationships over time, such as the composition of revenue by segment. Avoid area charts for multiple overlapping series. They become unreadable past three series.</p>
+<p>For showing composition, use stacked bar charts for a small number of categories (under seven) or treemaps for hierarchical data. Pie charts are almost never the right choice. They are difficult to read accurately when segments are similar in size, and they waste space. If you must show proportion, a 100% stacked bar chart is more precise.</p>
+<p>For showing distribution, histograms and box plots serve different purposes. Histograms show the shape of the distribution, while box plots compare distributions across categories. For large datasets, violin plots combine the benefits of both.</p>
+<p>For showing correlation, scatter plots are standard. When dealing with thousands of points, use hexbin plots or 2D density plots to avoid overplotting.</p>
+<p>Tables are underrated. When users need to compare specific values, sort by a column, or look up individual records, a well-designed table outperforms any chart. Add conditional formatting (color-coded cells based on thresholds) to make tables scan like heatmaps.</p>
+<h2>Handling Real-Time Data Without Overwhelming Users</h2>
+<p>Real-time dashboards introduce unique challenges. Data that updates every second creates visual noise. Numbers that flicker constantly are harder to read than numbers that update at human-digestible intervals.</p>
+<p>Batch visual updates to a reasonable cadence. For most operational dashboards, updating every 15 to 30 seconds is sufficient. For monitoring dashboards where seconds matter, update continuously but use animation to smooth transitions rather than snapping from one value to another.</p>
+<p>Sparklines, small inline charts without axes, are effective for showing recent trends alongside current values. A metric card showing &ldquo;Current: 342 orders/hour&rdquo; with a sparkline of the last 60 minutes gives both the current state and the trajectory without needing a separate chart.</p>
+<p>Alerts and anomaly detection should be built into the dashboard rather than relying on users to notice deviations. Color-code metrics based on thresholds: green for normal, yellow for warning, red for critical. Use threshold lines on time-series charts so users can see at a glance whether the current trend is crossing into concerning territory.</p>
+<p>For high-frequency data, consider using a &ldquo;calm technology&rdquo; approach. The dashboard should be ambient most of the time, requiring no active attention. When something requires action, the visual change should be unmistakable: a color shift, a notification badge, or a banner that appears only when intervention is needed.</p>
+<h2>Drill-Down Architecture and Progressive Disclosure</h2>
+<p>A single dashboard view cannot serve both the executive who wants a three-second overview and the analyst who needs to investigate root causes. Progressive disclosure solves this by layering information depth.</p>
+<p>The top level shows summary metrics and high-level trends. Clicking on any element drills into a more detailed view. Clicking again reaches the raw data. Three levels of depth handle most use cases. More than four levels means users lose context about where they are.</p>
+<p>Breadcrumb navigation is essential for drill-down interfaces. Users need to know their current position in the hierarchy and be able to jump back to any level. A common pattern is a breadcrumb bar at the top of the dashboard that updates as users drill deeper.</p>
+<p>Cross-filtering is powerful for exploratory analysis. Clicking on a bar in one chart filters all other charts on the dashboard to that segment. Tableau and Power BI popularized this pattern, and it works well in custom dashboards too. Implement it by maintaining a global filter state that all chart components subscribe to. When a filter changes, each chart re-queries or re-filters its data.</p>
+<p>Preserve context during transitions. When a user drills from a regional overview into a specific city, carry forward the time range and any active filters. Losing context forces users to re-establish their analytical state, which breaks flow.</p>
+<h2>Performance Optimization for Data-Heavy Dashboards</h2>
+<p>A dashboard that takes 10 seconds to load is a dashboard that nobody uses. Performance is a feature, and it requires attention at every layer.</p>
+<p>On the data layer, pre-aggregate where possible. If a dashboard shows daily revenue by region, do not query individual transactions and sum them on every page load. Maintain a materialized view or summary table that updates on a schedule. PostgreSQL materialized views, dbt incremental models, or purpose-built OLAP databases like ClickHouse or Apache Druid handle this well.</p>
+<p>On the API layer, design endpoints that return exactly what the dashboard needs. Avoid generic endpoints that return large payloads for the front end to filter. Each dashboard card should map to one API call that returns pre-formatted data. Consider GraphQL if different dashboard views need different subsets of the same underlying data.</p>
+<p>On the front end, lazy-load charts that are below the fold. Use skeleton screens to show layout before data arrives. Cache API responses on the client with a short TTL for data that does not change frequently. For charts with thousands of data points, downsample on the server. A line chart on a 1920-pixel-wide screen has roughly 1920 horizontal pixels to work with. Sending 100,000 data points when the chart can only render 1920 distinct x-positions is wasteful. Largest Triangle Three Buckets (LTTB) is an efficient downsampling algorithm that preserves visual fidelity.</p>
+<p>Measure dashboard load time and track it over time. Set a performance budget: the dashboard should be interactive within 2 seconds on a typical connection. When a new feature pushes load time past the budget, optimize before shipping.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If you are building a data-intensive application and need dashboards that actually drive decisions, <a href="/contact.html">get in touch</a>. We design and build dashboard experiences that turn complex data into clear action.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Data Dashboard Design: Principles for Complex Applications",
@@ -156,7 +77,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/data-dashboard-design-principles-for-complex-applications/",
   "articleSection": "design"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

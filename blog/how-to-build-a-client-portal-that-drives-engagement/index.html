@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,140 +6,71 @@
   <title>How to Build a Client Portal That Drives Engagement</title>
   <meta name="description" content="How to Build a Client Portal That Drives Engagement. Design principles and features that make client portals successful. Expert insights from The Proper Motion ">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/how-to-build-a-client-portal-that-drives-engagement/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="How to Build a Client Portal That Drives Engagement">
-  <meta property="og:description" content="How to Build a Client Portal That Drives Engagement. Design principles and features that make client portals successful. Expert insights from The Proper Motion ">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-build-a-client-portal-that-drives-engagement/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How to Build a Client Portal That Drives Engagement">
-  <meta name="twitter:description" content="How to Build a Client Portal That Drives Engagement. Design principles and features that make client portals successful. Expert insights from The Proper Motion ">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="How to Build a Client Portal That Drives Engagement"><meta property="og:description" content="How to Build a Client Portal That Drives Engagement. Design principles and features that make client portals successful. Expert insights from The Proper Motion "><meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-build-a-client-portal-that-drives-engagement/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Build a Client Portal That Drives Engagement"><meta name="twitter:description" content="How to Build a Client Portal That Drives Engagement. Design principles and features that make client portals successful. Expert insights from The Proper Motion "><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">November 29, 2023</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">software development</span><span class="blog-card-tag">portals</span>
-            </div>
-            <h1 class="blog-post-title">How to Build a Client Portal That Drives Engagement</h1>
-            <p class="blog-post-desc">How to Build a Client Portal That Drives Engagement. Design principles and features that make client portals successful. Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>How to Build a Client Portal That Drives Engagement</h1>
-<p>Design principles and features that make client portals successful.</p>
-<p>Before you make any decisions about how to build a, read this. It will save you time, money, and the particular frustration that comes from learning expensive lessons the hard way.</p>
-<h2>A Decision Framework for How To Build A</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality how to build a typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a how to build a project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A logistics company came to us after spending eight months with a development shop that delivered a system their team refused to use. The interface was confusing, the reports were wrong, and the integrations broke weekly. We rebuilt it in ten weeks. The difference was not technical skill — it was the three days we spent shadowing their operations team before writing a single line of code.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for how to build a.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<h2>When How To Build A Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about how to build a, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">November 29, 2023</span><span class="blog-card-read">6 min read</span><span class="blog-card-tag">software development</span><span class="blog-card-tag">portals</span></div><h1 class="blog-post-title">How to Build a Client Portal That Drives Engagement</h1><p class="blog-post-desc">How to Build a Client Portal That Drives Engagement. Design principles and features that make client portals successful. Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>How to Build a Client Portal That Drives Engagement</h1>
+<p>A client portal that nobody logs into is worse than no portal at all. It represents a development investment that delivers zero return, and it signals to your clients that you built something for your convenience, not theirs. The difference between a portal that gets daily logins and one that collects dust comes down to whether it solves problems clients actually have or merely digitizes processes that were fine on email.</p>
+<p>We have built client portals for professional services firms, logistics companies, and SaaS platforms. The ones that drive real engagement share a set of design principles that go far beyond putting a login screen in front of a dashboard.</p>
+<h2>Anchoring Around the Client&rsquo;s Primary Anxiety</h2>
+<p>Every client relationship has a primary anxiety &ndash; the one question that sits in the back of the client&rsquo;s mind between interactions. For a law firm client, it is &ldquo;What is happening with my case?&rdquo; For a freight customer, it is &ldquo;Where is my shipment?&rdquo; For an agency client, it is &ldquo;Is my project on track and on budget?&rdquo;</p>
+<p>The portal&rsquo;s landing page &ndash; the first thing a client sees after logging in &ndash; must answer that question instantly. Not after two clicks. Not behind a navigation menu. Immediately.</p>
+<p>For a logistics client portal, this means a real-time shipment tracker front and center, showing active shipments with ETAs, current locations, and any exceptions flagged in red. For a professional services portal, it means a project status card showing phase, percent complete, next milestone, and days until deadline.</p>
+<p>We built a portal for an architecture firm where the landing page showed a single project timeline with photos of the latest site visit, the next scheduled review date, and any outstanding items requiring client input. Portal logins increased 340% compared to the previous version, which had opened to a generic dashboard with six navigation tiles.</p>
+<p>The first-screen test is simple: if a client can glance at the portal for five seconds and know the answer to their primary question, you have built the right landing page.</p>
+<h2>Self-Service Actions That Replace Email Chains</h2>
+<p>The portal becomes indispensable when it lets clients do things they previously had to email about. Every &ldquo;Can you send me&hellip;&rdquo; or &ldquo;Can you update my&hellip;&rdquo; email is a candidate for portal self-service.</p>
+<p>Map out the top ten client requests your team handles by email or phone. For a typical B2B services company, these might include:</p>
+<ol>
+<li>Downloading the latest invoice or statement</li>
+<li>Updating billing or contact information</li>
+<li>Requesting a status update on an active project</li>
+<li>Submitting a new request or ticket</li>
+<li>Approving a deliverable or milestone</li>
+<li>Scheduling a meeting or call</li>
+<li>Accessing past reports or documents</li>
+<li>Adding or removing users from their account</li>
+<li>Viewing contract terms or service agreements</li>
+<li>Exporting data for their own reporting</li>
+</ol>
+<p>Build self-service flows for at least the top five. Each one you digitize removes friction for the client and frees your team from repetitive administrative work. A client who can download their own invoice at 10 PM on a Sunday does not need to wait until Monday morning and does not need to interrupt your accounts receivable team.</p>
+<p>The critical detail: these flows must be genuinely faster than email. If downloading an invoice requires logging in, navigating to Billing, selecting a date range, finding the invoice, and clicking Download, the client will just email your bookkeeper instead. One click from the dashboard &ndash; &ldquo;View Latest Invoice&rdquo; &ndash; with a direct download link is the bar to clear.</p>
+<h2>Notification Architecture That Pulls Clients Back</h2>
+<p>A portal without notifications is a portal that gets forgotten. Clients will not check your portal proactively unless you give them a reason to return.</p>
+<p>Design a notification system with three tiers:</p>
+<p><strong>Critical notifications</strong> go to email and, if the client opts in, SMS. These are events that require client action: an approval is needed, a document is ready for review, a payment is due. The email should contain enough context for the client to understand the situation and a direct deep-link to the relevant portal page &ndash; not the login screen, not the dashboard, but the specific item requiring attention.</p>
+<p><strong>Informational notifications</strong> go to email with a weekly digest option. These are status updates: a milestone was completed, a shipment departed, a report was generated. Clients who want real-time updates get them. Clients who prefer a weekly summary get a Friday afternoon digest with everything that happened that week.</p>
+<p><strong>In-app notifications</strong> appear as a badge or bell icon within the portal for low-priority updates: a team member left a comment, a minor status change occurred, a new feature was released. These provide context during the client&rsquo;s next visit without cluttering their inbox.</p>
+<p>Let clients control their notification preferences granularly. Some clients want an email for every status change. Others only want to hear about problems. A preference center that lets them toggle each notification type by channel (email, SMS, in-app) respects their attention and builds trust.</p>
+<h2>Document Management That Eliminates the Shared Drive</h2>
+<p>Clients accumulate documents throughout a relationship: contracts, proposals, invoices, deliverables, reports, correspondence. These documents end up scattered across email attachments, Google Drive folders, and Dropbox links. The portal can consolidate all of them into a single, searchable, organized repository.</p>
+<p>Structure the document area by project or engagement, with predefined categories: Contracts, Invoices, Deliverables, Reports, Correspondence. Every document uploaded by your team appears automatically in the correct category. Documents requiring client signature or approval are flagged with a status badge.</p>
+<p>Implement full-text search across all documents. A client searching for &ldquo;Q3 performance&rdquo; should find the Q3 performance report regardless of what the file was named. Index PDF content, not just filenames.</p>
+<p>Version control matters for documents that go through revisions. When a new version of a proposal is uploaded, the previous versions remain accessible in a version history. The current version is displayed by default. This eliminates the &ldquo;which version is the latest?&rdquo; confusion that plagues email-based document exchange.</p>
+<p>For bonus points, add a document request workflow. Your team marks certain documents as &ldquo;Requested from Client&rdquo; &ndash; things like signed contracts, tax forms, or required certifications. These appear as action items on the client&rsquo;s dashboard with clear deadlines and upload buttons. Completion rates for document collection through portal workflows are typically 60-70% higher than email-based collection.</p>
+<h2>Collaboration Features That Reduce Meetings</h2>
+<p>The highest-engagement portals we have built include lightweight collaboration features that reduce the need for scheduled calls and meetings.</p>
+<p><strong>Threaded comments on deliverables.</strong> When your team uploads a design mockup or a project plan, clients can leave comments directly on the item. Comments are threaded, so conversations stay organized. Team members are notified of new comments and can respond asynchronously. This replaces the &ldquo;Let&rsquo;s schedule a call to discuss the mockup&rdquo; pattern with a more efficient written exchange.</p>
+<p><strong>Approval workflows with context.</strong> Instead of sending a PDF and asking the client to &ldquo;let us know what you think,&rdquo; present the deliverable within the portal alongside an Approve/Request Changes interface. If the client requests changes, they are prompted to specify what needs to change. This structured feedback is dramatically more actionable than a reply-all email thread.</p>
+<p><strong>Shared task lists.</strong> For projects where the client has responsibilities &ndash; providing content, reviewing deliverables, making decisions &ndash; a shared task list with assignments and due dates keeps both sides accountable. The client sees their outstanding items on their dashboard. Your team sees the same items on their internal project management tool. Both sides have visibility into what is blocking progress.</p>
+<p>These features do not need to be sophisticated. A comment system, a binary approval flow, and a checklist cover 90% of the collaboration that happens in a typical client relationship. Do not build a full project management suite &ndash; build the collaboration layer that fits your specific workflow.</p>
+<h2>Measuring Portal Health</h2>
+<p>Track three metrics to understand whether your portal is driving engagement:</p>
+<p><strong>Monthly active users (MAU) as a percentage of total clients.</strong> If you have 200 clients and 40 log into the portal each month, your MAU rate is 20%. For a well-designed B2B portal, aim for 60-80%. Below 40% means the portal is not solving a real problem.</p>
+<p><strong>Actions per session.</strong> A client who logs in, glances at the dashboard, and logs out is not engaged. A client who logs in, downloads an invoice, approves a deliverable, and leaves a comment on a project update is engaged. Track the average number of meaningful actions per session. Aim for 2.5 or higher.</p>
+<p><strong>Support ticket deflection.</strong> Compare the volume of &ldquo;Can you send me&hellip;&rdquo; emails before and after portal launch. If the portal is working, these should drop by 40-60% within three months. If they do not drop, the self-service features are not accessible or functional enough.</p>
+<p>Review these metrics monthly and iterate. A portal is not a launch-and-forget product. It is an ongoing relationship tool that should evolve as your client relationships evolve.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Ready to build a client portal that your clients will actually use? <a href="/contact.html">Contact us</a> to discuss what engagement looks like for your specific client relationships.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Build a Client Portal That Drives Engagement",
@@ -161,7 +90,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/how-to-build-a-client-portal-that-drives-engagement/",
   "articleSection": "software development"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

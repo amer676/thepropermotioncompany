@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,139 +6,83 @@
   <title>MLOps: Keeping AI Features Running in Production | Proper Motion</title>
   <meta name="description" content="MLOps: Keeping AI Features Running in Production. Best practices for deploying and maintaining AI features reliably. Expert insights from The Proper Motion Comp">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/mlops-keeping-ai-features-running-in-production/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="MLOps: Keeping AI Features Running in Production | Proper Motion">
-  <meta property="og:description" content="MLOps: Keeping AI Features Running in Production. Best practices for deploying and maintaining AI features reliably. Expert insights from The Proper Motion Comp">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/mlops-keeping-ai-features-running-in-production/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MLOps: Keeping AI Features Running in Production | Proper Motion">
-  <meta name="twitter:description" content="MLOps: Keeping AI Features Running in Production. Best practices for deploying and maintaining AI features reliably. Expert insights from The Proper Motion Comp">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="MLOps: Keeping AI Features Running in Production | Proper Motion"><meta property="og:description" content="MLOps: Keeping AI Features Running in Production. Best practices for deploying and maintaining AI features reliably. Expert insights from The Proper Motion Comp"><meta property="og:url" content="https://thepropermotioncompany.com/blog/mlops-keeping-ai-features-running-in-production/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="MLOps: Keeping AI Features Running in Production | Proper Motion"><meta name="twitter:description" content="MLOps: Keeping AI Features Running in Production. Best practices for deploying and maintaining AI features reliably. Expert insights from The Proper Motion Comp"><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">August 13, 2024</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">AI</span><span class="blog-card-tag">operations</span>
-            </div>
-            <h1 class="blog-post-title">MLOps: Keeping AI Features Running in Production</h1>
-            <p class="blog-post-desc">MLOps: Keeping AI Features Running in Production. Best practices for deploying and maintaining AI features reliably. Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>MLOps: Keeping AI Features Running in Production</h1>
-<p>Best practices for deploying and maintaining AI features reliably.</p>
-<p>This is not a theoretical overview. Everything in this guide comes from production experience — systems we have built, problems we have solved, and patterns we have seen work across real projects.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a mlops: keeping ai features project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>We worked with a SaaS startup that had been in development for fourteen months with no launch in sight. Their team kept adding features because they were afraid the product was not ready. We helped them cut scope to the core workflow, launched in six weeks, and their first paying customers told them exactly what to build next.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>A Decision Framework for Mlops: Keeping Ai Features</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality mlops: keeping ai features typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>When Mlops: Keeping Ai Features Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>What Most Teams Get Wrong About Mlops: Keeping Ai Features</h2>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For mlops: keeping ai features, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning mlops: keeping ai features.</p>
-<p><strong>Skipping user research.</strong> Building mlops: keeping ai features without talking to the people who will actually use it is like designing a house without asking who lives there. Five conversations with real users will save you more money than any amount of internal brainstorming.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for mlops: keeping ai features.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about mlops: keeping ai features, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">August 13, 2024</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">AI</span><span class="blog-card-tag">operations</span></div><h1 class="blog-post-title">MLOps: Keeping AI Features Running in Production</h1><p class="blog-post-desc">MLOps: Keeping AI Features Running in Production. Best practices for deploying and maintaining AI features reliably. Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>MLOps: Keeping AI Features Running in Production</h1>
+<p>Shipping a machine learning model to production is the easy part. Keeping it accurate, reliable, and cost-effective over months and years is where most teams struggle. The gap between a working Jupyter notebook and a production AI feature that serves thousands of users without incident is vast, and it is filled with monitoring, pipeline engineering, and operational discipline that data science curricula rarely cover.</p>
+<p>This guide covers the concrete practices that keep AI features running reliably in production, drawn from real deployments across fintech, logistics, and SaaS applications.</p>
+<h2>Why ML Models Degrade and What That Looks Like in Practice</h2>
+<p>Every machine learning model in production is decaying. The question is how fast and whether you will notice before your users do.</p>
+<p>Model degradation happens for three primary reasons. First, <strong>data drift</strong>: the statistical distribution of your input data changes over time. A fraud detection model trained on 2023 transaction patterns will see different spending behaviors in 2024 as consumer habits, merchant ecosystems, and economic conditions shift. Second, <strong>concept drift</strong>: the relationship between inputs and outputs changes. What constituted a fraudulent transaction six months ago may look different today as fraud tactics evolve. Third, <strong>infrastructure drift</strong>: upstream data sources change their schemas, latency characteristics, or availability patterns without warning.</p>
+<p>The numbers are sobering. Research from Google and Microsoft suggests that production ML models lose 5 to 10 percent of their predictive accuracy per quarter without retraining. In fast-moving domains like advertising and fraud detection, significant degradation can occur within weeks.</p>
+<p>A practical example: a logistics company deployed a demand forecasting model that performed well for three months. Then a major customer changed their ordering pattern from weekly bulk orders to daily just-in-time orders. The model&rsquo;s mean absolute error doubled in two weeks, but the team did not notice for another month because they were only monitoring system metrics (latency, throughput) rather than model metrics (prediction accuracy, feature distributions).</p>
+<h2>Building a Model Monitoring Stack That Actually Alerts You</h2>
+<p>Effective model monitoring operates at three layers: system health, data health, and model performance.</p>
+<p><strong>System health</strong> is table stakes. Monitor prediction latency (p50, p95, p99), throughput (predictions per second), error rates, memory usage, and GPU utilization if applicable. Set alerts for p99 latency exceeding your SLA (typically 100 to 500 milliseconds for real-time inference) and error rates above 0.1 percent.</p>
+<p><strong>Data health</strong> catches drift before it affects model performance. For each input feature, track the statistical distribution over rolling windows (hourly, daily, weekly) and compare against your training data distribution. The Population Stability Index (PSI) is a practical metric here: a PSI below 0.1 indicates no significant change, 0.1 to 0.25 warrants investigation, and above 0.25 requires immediate attention.</p>
+<p>Implement these checks:
+- Null rate per feature (alert if it exceeds training-time null rate by more than 2x)
+- Feature range validation (alert on values outside training range)
+- Categorical feature distribution (alert on new, unseen categories)
+- Input volume anomalies (alert on throughput drops exceeding 30 percent)</p>
+<p><strong>Model performance</strong> is the ultimate measure. If you have ground truth labels available (even delayed), compute your target metrics on a rolling basis. For classification models, track precision, recall, and F1 score. For regression models, track MAE, RMSE, and R-squared. For ranking models, track NDCG and MAP.</p>
+<p>Many production models lack immediate ground truth. In those cases, use proxy metrics. For a recommendation system, track click-through rates and engagement time. For a fraud model, track the rate of customer disputes filed within 30 days of a flagged transaction. These proxy metrics should have automated alerts tied to statistically significant deviations from baseline.</p>
+<p>Tools that work well in 2024: Evidently AI for open-source monitoring dashboards, Arize for hosted monitoring with automatic drift detection, and custom Prometheus/Grafana dashboards for teams that prefer full control.</p>
+<h2>The Retraining Pipeline: Automated but Not Autonomous</h2>
+<p>Retraining should be automated but never fully autonomous. The pipeline should run without human intervention, but a human should approve model promotion to production.</p>
+<p>A robust retraining pipeline has five stages:</p>
+<ol>
+<li>
+<p><strong>Data collection and validation.</strong> Pull new training data from your feature store or data warehouse. Validate schema, completeness, and distribution before proceeding. If validation fails, alert the team and halt the pipeline.</p>
+</li>
+<li>
+<p><strong>Training and hyperparameter optimization.</strong> Train candidate models using your established architecture. Use Bayesian optimization (Optuna is excellent) rather than grid search to efficiently explore the hyperparameter space. Train on the latest 6 to 12 months of data, depending on your domain&rsquo;s volatility.</p>
+</li>
+<li>
+<p><strong>Evaluation against the current production model.</strong> Compare the candidate model against the production model on a held-out test set that represents recent data. The candidate must outperform on your primary metric by a statistically significant margin (we use a 2 percent improvement threshold with a p-value below 0.05).</p>
+</li>
+<li>
+<p><strong>Shadow deployment.</strong> Run the candidate model alongside the production model for 24 to 72 hours, serving real traffic but not using the candidate&rsquo;s predictions for anything user-facing. Compare predictions between the two models and investigate any significant divergence.</p>
+</li>
+<li>
+<p><strong>Staged rollout.</strong> Promote the candidate to serve 5 percent of traffic, then 25 percent, then 100 percent, with automated rollback triggers tied to your monitoring alerts.</p>
+</li>
+</ol>
+<p>The cadence depends on your domain. Financial models typically retrain monthly. Recommendation models retrain weekly. Fraud models retrain biweekly. Document these cadences and treat deviations as incidents.</p>
+<h2>Feature Stores and the Data Foundation</h2>
+<p>The single highest-leverage MLOps investment is a feature store. Without one, every model training run involves writing custom SQL queries, every retraining pipeline duplicates data transformation logic, and feature computation between training and serving inevitably diverges (the dreaded training-serving skew).</p>
+<p>A feature store provides three capabilities:</p>
+<p><strong>Feature computation and storage.</strong> Define features once as transformation logic, compute them on a schedule (batch) or in real-time (streaming), and store the results. Feast is the leading open-source option. Tecton and Databricks Feature Store are strong managed alternatives.</p>
+<p><strong>Consistent serving.</strong> The same feature definitions used in training are used at inference time, eliminating training-serving skew. This alone prevents a category of subtle bugs that can take weeks to diagnose.</p>
+<p><strong>Feature reuse across models.</strong> A &ldquo;customer lifetime value&rdquo; feature computed for your churn model can be reused by your upsell model without recomputation. As your model portfolio grows, the time savings compound dramatically.</p>
+<p>If a full feature store is premature for your scale, start with a simpler practice: maintain all feature transformation logic in a shared Python package that is imported by both your training pipelines and your serving code. This does not give you the storage and serving layers, but it eliminates the most dangerous source of bugs.</p>
+<h2>Cost Management: Inference Is Where the Bill Lives</h2>
+<p>Training costs are a one-time expense per model version. Inference costs are ongoing and scale with traffic. For a typical production deployment, inference accounts for 80 to 90 percent of total ML infrastructure cost.</p>
+<p>Concrete cost reduction strategies:</p>
+<p><strong>Model optimization.</strong> Quantize your models from FP32 to INT8, which typically reduces inference cost by 60 to 75 percent with less than 1 percent accuracy loss. ONNX Runtime makes this straightforward for most model architectures. For transformer-based models, apply knowledge distillation to create smaller models that approximate the performance of larger ones.</p>
+<p><strong>Batching.</strong> If your use case tolerates latency of 50 to 200 milliseconds, batch inference requests. A batch size of 32 on a GPU instance can deliver 10x the throughput of individual predictions at the same cost.</p>
+<p><strong>Caching.</strong> For models with a finite input space or inputs that repeat frequently, cache predictions. A Redis cache in front of a recommendation model can reduce inference calls by 40 to 60 percent for popular items.</p>
+<p><strong>Right-sizing infrastructure.</strong> Most teams over-provision GPU instances. Start with CPU inference (which handles many sklearn and XGBoost models perfectly well) and only move to GPU when you have measured the latency requirement and confirmed that CPU cannot meet it. A single g5.xlarge instance on AWS ($1.006/hour) can serve 500 to 2,000 predictions per second for a medium-complexity neural network.</p>
+<p><strong>Spot instances for batch inference.</strong> If you run daily or weekly batch prediction jobs, use spot instances to reduce compute costs by 60 to 90 percent. Design your batch pipeline to checkpoint progress so that spot interruptions do not require restarting from zero.</p>
+<h2>Incident Response for ML Systems</h2>
+<p>ML incidents are fundamentally different from traditional software incidents. A web server either works or it does not. A model can silently return confidently wrong predictions while every system metric looks healthy.</p>
+<p>Build your ML incident response around these principles:</p>
+<p><strong>Define what &ldquo;broken&rdquo; means quantitatively.</strong> A fraud model is broken when its false negative rate exceeds 3 percent over a 4-hour window. A recommendation model is broken when click-through rate drops below 2 percent for more than 6 hours. Write these thresholds down and wire them to PagerDuty.</p>
+<p><strong>Maintain a fallback strategy.</strong> For every ML-powered feature, define what happens when the model is unavailable or unreliable. This might be a rule-based heuristic, the previous model version, or graceful degradation to a non-personalized experience. The fallback should be deployable in under five minutes.</p>
+<p><strong>Postmortem ML-specific details.</strong> After every ML incident, document: what metric degraded, when it started, when it was detected, what caused it (data drift, code change, upstream dependency), and what monitoring gap allowed delayed detection. Feed these findings back into your monitoring configuration.</p>
+<p>Production ML is a discipline, not a project. The teams that treat it as ongoing operational work, with dedicated monitoring, rehearsed incident response, and continuous pipeline improvement, are the ones whose AI features actually deliver sustained business value.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If your team is deploying AI features and wants to ensure they stay reliable in production, <a href="/contact.html">let&rsquo;s talk</a>. The Proper Motion Company builds MLOps infrastructure that keeps models accurate and costs predictable.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "MLOps: Keeping AI Features Running in Production",
@@ -160,7 +102,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/mlops-keeping-ai-features-running-in-production/",
   "articleSection": "AI"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

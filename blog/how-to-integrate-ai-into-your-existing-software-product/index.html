@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,137 +6,56 @@
   <title>How to Integrate AI Into Your Existing Software Product</title>
   <meta name="description" content="A step-by-step guide to adding AI capabilities to software products that are already in production.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/how-to-integrate-ai-into-your-existing-software-product/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="How to Integrate AI Into Your Existing Software Product">
-  <meta property="og:description" content="A step-by-step guide to adding AI capabilities to software products that are already in production.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-integrate-ai-into-your-existing-software-product/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How to Integrate AI Into Your Existing Software Product">
-  <meta name="twitter:description" content="A step-by-step guide to adding AI capabilities to software products that are already in production.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="How to Integrate AI Into Your Existing Software Product"><meta property="og:description" content="A step-by-step guide to adding AI capabilities to software products that are already in production."><meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-integrate-ai-into-your-existing-software-product/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Integrate AI Into Your Existing Software Product"><meta name="twitter:description" content="A step-by-step guide to adding AI capabilities to software products that are already in production."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">February 23, 2025</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">AI</span><span class="blog-card-tag">engineering</span>
-            </div>
-            <h1 class="blog-post-title">How to Integrate AI Into Your Existing Software Product</h1>
-            <p class="blog-post-desc">A step-by-step guide to adding AI capabilities to software products that are already in production.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>How to Integrate AI Into Your Existing Software Product</h1>
-<p>A step-by-step guide to adding AI capabilities to software products that are already in production.</p>
-<p>We have been building custom software since 2022 — working directly with founders, operators, and technical leaders. This guide captures the patterns that separate projects that succeed from projects that stall.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>We worked with a SaaS startup that had been in development for fourteen months with no launch in sight. Their team kept adding features because they were afraid the product was not ready. We helped them cut scope to the core workflow, launched in six weeks, and their first paying customers told them exactly what to build next.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>The Build Process</h2>
-<p>Building how to integrate ai well requires discipline in a few specific areas.</p>
-<p><strong>Requirements documentation</strong> does not need to be a 50-page spec. It needs to be specific enough that two different developers reading it would build the same thing. User stories with acceptance criteria work well for most projects.</p>
-<p><strong>Design before development.</strong> Wireframes and prototypes are cheap to change. Production code is expensive to change. Invest a week in design review before starting development. This single practice prevents more problems than any other.</p>
-<p><strong>Weekly delivery cadence.</strong> Ship something testable every week. Not a demo — a working piece of software that a real person can use and give feedback on. Weekly delivery creates accountability and catches problems early.</p>
-<p><strong>Automated testing</strong> is an investment that pays for itself within weeks. Manual testing does not scale. Every feature should have tests that run automatically on every code change. This is what allows you to move fast without breaking things.</p>
-<h2>A Decision Framework for How To Integrate Ai</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality how to integrate ai typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>When How To Integrate Ai Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a how to integrate ai project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Taking Action</h2>
-<p>Reading about how to integrate ai is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">February 23, 2025</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">AI</span><span class="blog-card-tag">engineering</span></div><h1 class="blog-post-title">How to Integrate AI Into Your Existing Software Product</h1><p class="blog-post-desc">A step-by-step guide to adding AI capabilities to software products that are already in production.</p></div><div class="blog-post-content"><h1>How to Integrate AI Into Your Existing Software Product</h1>
+<p>Adding AI to an existing product is fundamentally different from building an AI-first product from scratch. You have existing users with established workflows, a production database with real data, and an architecture that was not designed with machine learning inference in mind. The integration has to enhance the product without disrupting what already works.</p>
+<p>Most failed AI integrations share a common pattern: the team picks a technology (usually a large language model), finds a place to put it (usually a chatbot), launches it, and discovers that users either ignore it or actively dislike it because it was not designed around a real user need. Successful integrations start with a specific user problem, evaluate whether AI is the right tool for that problem, and implement it in a way that degrades gracefully when the AI gets things wrong.</p>
+<h2>Identifying Where AI Actually Adds Value</h2>
+<p>Not every feature benefits from AI. The first step is identifying use cases where AI capabilities align with user needs that are currently unmet or poorly met.</p>
+<p>AI adds clear value in three categories. The first is tasks that require pattern recognition across large datasets: anomaly detection, fraud scoring, predictive maintenance, demand forecasting. A human cannot review 10,000 transactions looking for subtle patterns of fraudulent behavior. A model trained on historical fraud cases can flag suspicious transactions for human review in milliseconds.</p>
+<p>The second is tasks that involve generating or transforming content: summarizing long documents, translating between languages, extracting structured data from unstructured text, generating first drafts of routine communications. These are tasks where &ldquo;good enough&rdquo; output that a human reviews and edits is dramatically faster than creating from scratch.</p>
+<p>The third is tasks that benefit from personalization at scale: product recommendations, content curation, adaptive interfaces that adjust based on user behavior. A manually curated recommendation is better for any individual user, but you cannot manually curate for 50,000 users. An AI recommendation that is 80 percent as good as a human curator&rsquo;s, delivered to every user, creates more total value.</p>
+<p>AI does not add value for simple CRUD operations, deterministic business logic, or tasks where correctness is binary and errors are unacceptable. Do not use a language model to calculate taxes, validate email formats, or enforce business rules. These tasks are better served by traditional code because they require precision, not intelligence.</p>
+<p>For each candidate use case, answer two questions. First, what does the user do today without AI, and how painful is it? If the current workflow is already fast and reliable, AI will not meaningfully improve it. Second, what happens when the AI is wrong? If a wrong answer causes a minor inconvenience (a bad recommendation that the user ignores), the tolerance for error is high. If a wrong answer causes financial loss, legal liability, or safety risk, you need much higher accuracy or a mandatory human review step.</p>
+<h2>Choosing the Right AI Approach</h2>
+<p>&ldquo;AI&rdquo; is not a single technology. The right approach depends on your use case, data availability, and accuracy requirements.</p>
+<p>For text generation, summarization, classification, and extraction, large language models (LLMs) accessed through APIs are the fastest path to production. OpenAI, Anthropic, Google, and others offer API access to capable models. You send a prompt with context, receive a response, and integrate the result into your product. The advantage is zero training infrastructure and fast implementation. The disadvantage is ongoing API costs, latency (typically 500ms to 3 seconds for a response), and limited control over model behavior.</p>
+<p>For structured prediction tasks — churn prediction, lead scoring, pricing optimization, demand forecasting — traditional machine learning models (gradient-boosted trees, logistic regression, neural networks) trained on your own data are more appropriate. These models are faster at inference time (sub-millisecond), cheaper to run, and produce numerical outputs that are easier to integrate into business logic. They require labeled training data and a training pipeline, but the model itself is smaller and runs on standard infrastructure.</p>
+<p>For image and document processing — OCR, object detection in images, document classification — use specialized models or cloud services. AWS Textract, Google Document AI, and Azure Form Recognizer extract structured data from invoices, receipts, and forms. These services handle the model complexity for you and charge per document processed.</p>
+<p>For search and retrieval, embedding models paired with vector databases provide semantic search that understands meaning rather than just matching keywords. Store your content as vector embeddings, and at query time, convert the user&rsquo;s query to an embedding and find the nearest neighbors. This is the foundation of retrieval-augmented generation (RAG), where search results provide context for an LLM to generate an accurate answer.</p>
+<p>Do not default to the most powerful model. GPT-4-class models are expensive and slow for tasks that a fine-tuned smaller model or a traditional classifier handles equally well. Use the simplest approach that meets your accuracy requirements.</p>
+<h2>Architectural Patterns for AI Integration</h2>
+<p>Integrating AI into an existing system requires careful architectural decisions to avoid coupling your product&rsquo;s reliability to a probabilistic component.</p>
+<p>The most important pattern is the AI gateway. Create a dedicated service or module that sits between your application and AI providers. All AI requests flow through this gateway, which handles prompt construction, API key management, request logging, rate limiting, caching, and fallback behavior. If you call an LLM directly from twenty different places in your codebase, you cannot add caching, switch providers, or implement fallback logic without modifying all twenty call sites.</p>
+<p>Your AI gateway should implement these behaviors: cache identical requests to avoid redundant API calls and costs, log every request and response for debugging and evaluation, enforce rate limits to prevent runaway costs, implement circuit breaker logic (if the AI provider returns errors, stop sending requests and fall back to a non-AI path), and apply output validation before returning results to the calling code.</p>
+<p>For LLM integrations, use structured output wherever possible. Instead of parsing free-text responses, request JSON output and validate it against a schema. Most major LLM APIs support structured output modes or function calling, which constrain the model to produce responses in a predefined format. This eliminates an entire category of integration bugs where the model returns well-written text that your code cannot parse.</p>
+<p>Design every AI-powered feature with a fallback path. If the AI summarization service is unavailable, show the original text with a &ldquo;summary unavailable&rdquo; notice. If the recommendation engine fails, show popular items. If the document extraction model returns low-confidence results, prompt the user to enter the data manually. Users will tolerate an AI feature that is sometimes unavailable far more than they will tolerate a product that crashes because an AI API returned an error.</p>
+<h2>Handling the Accuracy Problem</h2>
+<p>AI models produce probabilistic outputs. They are wrong some percentage of the time, and that percentage varies depending on the input. Designing your integration to handle inaccuracy gracefully is the difference between a feature users trust and one they disable.</p>
+<p>Surface confidence scores when they are available. A document extraction model that says &ldquo;invoice amount: $4,350.00 (confidence: 98%)&rdquo; gives the user reason to trust the result and move quickly. The same model on a poorly scanned document might return &ldquo;invoice amount: $4,850.00 (confidence: 62%)&rdquo; — that lower confidence should trigger a visual indicator telling the user to verify the value.</p>
+<p>Implement human-in-the-loop workflows for high-stakes decisions. The AI does the first pass, the human reviews and approves. This pattern works for content moderation (AI flags, human decides), financial data extraction (AI extracts, human verifies), and customer communication drafts (AI writes, human edits and sends). The AI reduces the work from creation to review, which is typically 5x to 10x faster.</p>
+<p>Build evaluation pipelines before you launch. Create a test dataset of representative inputs with known correct outputs. Run your AI integration against this dataset and measure accuracy, precision, recall, and latency. Monitor these metrics continuously in production by sampling a percentage of AI-processed items for human review. If accuracy drops below your threshold, you have early warning before users notice.</p>
+<p>Track user corrections. When a user edits an AI-generated summary, overrides a recommendation, or fixes an extraction error, log the correction. This data is invaluable for improving your prompts, fine-tuning models, and identifying categories of inputs where the AI consistently underperforms.</p>
+<h2>Cost Management and Performance Optimization</h2>
+<p>AI inference costs are variable and can scale quickly if not managed. A single LLM API call might cost one to ten cents, which seems trivial until you multiply by thousands of daily requests.</p>
+<p>Profile your AI costs per feature and per user action. Understand exactly which features drive AI spend. You may find that 80 percent of your AI costs come from a single feature that only 10 percent of users value. That is an optimization opportunity — either make the feature opt-in or find a cheaper model that serves it adequately.</p>
+<p>Cache aggressively. Many AI requests have overlapping or identical inputs. If ten users ask your AI assistant the same question about your product&rsquo;s return policy, the answer should be cached after the first request. Implement semantic caching for LLM requests: hash the prompt, store the response, and return the cached response for identical prompts.</p>
+<p>Use tiered models. Route simple queries to smaller, cheaper, faster models and reserve expensive models for complex queries. A classification task (is this email a support request, a sales inquiry, or spam?) does not need GPT-4. A fine-tuned lightweight model or even a well-crafted prompt to a smaller model handles this at a fraction of the cost and latency.</p>
+<p>Batch requests where latency is not critical. If you need to generate embeddings for 1,000 documents, send them in a single batch request rather than 1,000 individual API calls. Most AI APIs offer batch endpoints with lower per-unit pricing.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Integrating AI into existing software is a product design challenge first and an engineering challenge second. The teams that succeed are the ones that start with a specific user need, choose the simplest AI approach that addresses it, design for graceful degradation, and measure relentlessly.</p>
+<p>If you are looking to add AI capabilities to your product and want to avoid the common pitfalls, <a href="/contact.html">reach out to our team</a>. We help product teams identify high-value AI use cases, architect reliable integrations, and ship features that users trust.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Integrate AI Into Your Existing Software Product",
@@ -158,7 +75,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/how-to-integrate-ai-into-your-existing-software-product/",
   "articleSection": "AI"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

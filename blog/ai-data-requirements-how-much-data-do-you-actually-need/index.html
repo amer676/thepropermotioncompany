@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,137 +6,58 @@
   <title>AI Data Requirements: How Much Data Do You Actually Need</title>
   <meta name="description" content="Understanding data requirements and quality thresholds for different types of AI features.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/ai-data-requirements-how-much-data-do-you-actually-need/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="AI Data Requirements: How Much Data Do You Actually Need">
-  <meta property="og:description" content="Understanding data requirements and quality thresholds for different types of AI features.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/ai-data-requirements-how-much-data-do-you-actually-need/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI Data Requirements: How Much Data Do You Actually Need">
-  <meta name="twitter:description" content="Understanding data requirements and quality thresholds for different types of AI features.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="AI Data Requirements: How Much Data Do You Actually Need"><meta property="og:description" content="Understanding data requirements and quality thresholds for different types of AI features."><meta property="og:url" content="https://thepropermotioncompany.com/blog/ai-data-requirements-how-much-data-do-you-actually-need/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AI Data Requirements: How Much Data Do You Actually Need"><meta name="twitter:description" content="Understanding data requirements and quality thresholds for different types of AI features."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">October 02, 2024</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">AI</span><span class="blog-card-tag">data</span>
-            </div>
-            <h1 class="blog-post-title">AI Data Requirements: How Much Data Do You Actually Need</h1>
-            <p class="blog-post-desc">Understanding data requirements and quality thresholds for different types of AI features.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>AI Data Requirements: How Much Data Do You Actually Need</h1>
-<p>Let us cut straight to what matters about ai data requirements: how. No filler, no padding, no obvious advice dressed up as insight. Just the practical knowledge that actually affects outcomes.</p>
-<p>Understanding data requirements and quality thresholds for different types of AI features.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a ai data requirements: how project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>A Decision Framework for Ai Data Requirements: How</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality ai data requirements: how typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A logistics company came to us after spending eight months with a development shop that delivered a system their team refused to use. The interface was confusing, the reports were wrong, and the integrations broke weekly. We rebuilt it in ten weeks. The difference was not technical skill — it was the three days we spent shadowing their operations team before writing a single line of code.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for ai data requirements: how.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<h2>When Ai Data Requirements: How Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>What Most Teams Get Wrong About Ai Data Requirements: How</h2>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For ai data requirements: how, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For ai data requirements: how, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Skipping user research.</strong> Building ai data requirements: how without talking to the people who will actually use it is like designing a house without asking who lives there. Five conversations with real users will save you more money than any amount of internal brainstorming.</p>
-<h2>Taking Action</h2>
-<p>Reading about ai data requirements: how is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">October 02, 2024</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">AI</span><span class="blog-card-tag">data</span></div><h1 class="blog-post-title">AI Data Requirements: How Much Data Do You Actually Need</h1><p class="blog-post-desc">Understanding data requirements and quality thresholds for different types of AI features.</p></div><div class="blog-post-content"><h1>AI Data Requirements: How Much Data Do You Actually Need</h1>
+<p>&ldquo;We want to add AI to our product&rdquo; is the most common request we hear from founders and product leaders. The second most common question, once we start scoping the feature, is &ldquo;how much data do we need?&rdquo; The answer is almost never what they expect. It is not a single number. It depends on the type of AI feature, the complexity of the problem, the quality of the data, and the accuracy threshold that the business requires.</p>
+<p>Some AI features work with 500 labeled examples. Others need 500,000. Some work with no training data at all by leveraging pre-trained foundation models. Understanding the data requirements for your specific use case is the difference between launching an AI feature in 8 weeks and spending 18 months collecting data that may never be enough.</p>
+<h2>Data Requirements by AI Feature Type</h2>
+<p>Different AI capabilities have fundamentally different data appetites. Here is a practical breakdown by feature category.</p>
+<p><strong>Text classification (spam filtering, sentiment analysis, ticket routing).</strong> For a binary classifier (is this spam or not?), 500-2,000 labeled examples per class typically produce a model with 85-92% accuracy. For multi-class classification (routing support tickets to one of 10 departments), you need 200-500 examples per class, so 2,000-5,000 total. The key constraint is that each class must be adequately represented. If &ldquo;billing disputes&rdquo; accounts for 2% of your training data but 15% of real tickets, the model will underperform on that category.</p>
+<p>With modern large language models (LLMs), you can often skip custom training entirely. A well-crafted prompt with 5-10 examples (few-shot learning) given to GPT-4 or Claude can achieve 80-90% accuracy on text classification tasks, especially if the categories are intuitive and well-defined. This approach needs zero training data but costs more per inference ($0.01-0.05 per classification versus $0.0001 for a custom model).</p>
+<p><strong>Recommendation systems (product recommendations, content suggestions).</strong> Collaborative filtering requires interaction data: user A bought items X, Y, Z. For a basic recommendation engine, you need at least 50,000 user-item interactions, with a minimum of 20 interactions per user and 20 interactions per item. Below these thresholds, the system lacks enough signal to identify meaningful patterns.</p>
+<p>For cold-start scenarios (new users with no history), content-based recommendations work with item metadata alone. If your product catalog has rich descriptions, categories, and attributes, you can recommend similar items based on feature similarity with zero behavioral data.</p>
+<p><strong>Computer vision (image classification, object detection, defect inspection).</strong> Image classification typically needs 1,000-5,000 labeled images per class for a fine-tuned model. Object detection (drawing bounding boxes around objects) needs 2,000-10,000 annotated images. However, transfer learning from pre-trained models like ResNet or YOLO dramatically reduces these requirements. Fine-tuning a pre-trained model with 200-500 images per class can achieve production-quality results for many use cases.</p>
+<p>For industrial inspection (detecting defects on a manufacturing line), the challenge is often that defect images are rare. If defects occur in 0.5% of products, collecting 1,000 defect images requires processing 200,000 units. Synthetic data generation and anomaly detection approaches (training only on &ldquo;normal&rdquo; images and flagging deviations) address this imbalance.</p>
+<p><strong>Natural language generation (summarization, report writing, chatbots).</strong> If you are using a pre-trained LLM via API (OpenAI, Anthropic, Cohere), you need zero training data. The model&rsquo;s pre-trained knowledge, combined with your domain-specific context provided through prompts or retrieval-augmented generation (RAG), handles most business text generation tasks.</p>
+<p>If you need fine-tuned behavior (matching a specific brand voice, generating outputs in a proprietary format), 500-2,000 high-quality input-output pairs are sufficient for fine-tuning. Quality matters far more than quantity here. Two hundred carefully crafted examples produce better fine-tuned results than 2,000 sloppy ones.</p>
+<p><strong>Time series forecasting (demand prediction, financial forecasting).</strong> Statistical models like ARIMA need a minimum of 50-100 data points per time series. Machine learning models like LightGBM or Prophet need 2-5 years of historical data with at least weekly granularity to capture seasonal patterns. For daily granularity, 1-2 years is often sufficient.</p>
+<p>The critical factor is capturing full seasonal cycles. A demand forecasting model trained on 8 months of data has never seen the holiday season and will produce wildly inaccurate Q4 predictions. Always ensure your training data spans at least two complete annual cycles.</p>
+<h2>Data Quality Trumps Data Quantity Every Time</h2>
+<p>A model trained on 10,000 high-quality labeled examples will outperform one trained on 100,000 noisy, inconsistently labeled examples. Data quality has several dimensions.</p>
+<p><strong>Label accuracy.</strong> If humans labeled your training data, how consistent were they? Measure inter-annotator agreement: have three people label the same 200 examples independently and calculate the overlap. If annotators agree less than 80% of the time, your label definitions are ambiguous and the model will inherit that confusion. Rewrite labeling guidelines, add examples of edge cases, and re-annotate.</p>
+<p><strong>Class balance.</strong> If 95% of your data belongs to one class, the model learns to predict that class every time and achieves 95% accuracy while being completely useless. Techniques to address imbalance include: oversampling the minority class (SMOTE), undersampling the majority class, adjusting class weights in the loss function, or collecting more examples of the rare class specifically.</p>
+<p><strong>Feature completeness.</strong> If 40% of your records have missing values for a key feature, the model either ignores that feature (losing signal) or imputes values (introducing noise). Before training, audit your dataset for completeness. Features with more than 30% missing values should be either enriched through data collection efforts or dropped from the model.</p>
+<p><strong>Temporal consistency.</strong> Data collected under one set of business conditions may not be relevant under changed conditions. A churn prediction model trained on pre-pandemic data will perform poorly if customer behavior shifted permanently during 2020-2021. Identify regime changes in your data and either train only on post-change data or include a feature that captures the regime.</p>
+<p><strong>Representativeness.</strong> Training data must represent the full distribution of cases the model will encounter in production. If your training data contains only enterprise customers but the model will score SMB leads too, predictions for the SMB segment will be unreliable. Audit your data for gaps in geography, customer size, product usage patterns, and time periods.</p>
+<h2>The Build vs. Buy Data Strategy</h2>
+<p>When your own data is insufficient, you have three options for closing the gap.</p>
+<p><strong>Augment with synthetic data.</strong> For image-based models, apply transformations (rotation, cropping, color adjustment, noise injection) to multiply your existing dataset by 5-10x. For text models, use LLMs to generate paraphrases of your existing examples. For tabular data, techniques like CTGAN can generate realistic synthetic records that preserve statistical properties of your real data. Synthetic data is not a perfect substitute for real data, but it meaningfully improves model performance when real data is scarce.</p>
+<p><strong>Purchase or license external datasets.</strong> Industry-specific datasets are available for purchase. Real estate transaction data from providers like ATTOM or CoreLogic, financial market data from Bloomberg or Refinitiv, consumer behavior data from Nielsen or Statista. These datasets fill gaps in your historical data and add features your internal systems do not capture.</p>
+<p><strong>Partner for data sharing.</strong> Non-competitive companies in adjacent spaces sometimes share anonymized data for mutual benefit. A property management company might share anonymized tenant behavior data with a real estate analytics company in exchange for market benchmarking data. These partnerships require careful legal structuring (data processing agreements, anonymization guarantees) but can provide data assets that would take years to build internally.</p>
+<h2>Establishing Your Minimum Viable Dataset</h2>
+<p>Rather than waiting until you have &ldquo;enough&rdquo; data, define the minimum viable dataset (MVD) that lets you ship a v1 AI feature and improve iteratively.</p>
+<p><strong>Step 1: Define the accuracy threshold for business viability.</strong> Not every AI feature needs 99% accuracy. A product recommendation that is relevant 70% of the time still drives incremental revenue. A fraud detection system might need 95% precision (few false positives) but can tolerate 80% recall (missing some real fraud). Define the threshold where the feature creates more value than it costs in errors.</p>
+<p><strong>Step 2: Run a data audit.</strong> Inventory all data sources available: databases, CRM exports, log files, third-party integrations, spreadsheets. For each source, document: the number of records, the time span covered, the key features available, and the data quality (completeness, accuracy, consistency).</p>
+<p><strong>Step 3: Build a rapid prototype.</strong> Train a simple model (logistic regression, random forest, or a few-shot LLM prompt) on whatever data you have today. Measure accuracy against your threshold. If you are at 75% and need 85%, the gap tells you how much additional data or feature engineering is required. If you are at 60% and need 95%, you likely need a fundamentally different data strategy.</p>
+<p><strong>Step 4: Implement a data flywheel.</strong> Design the AI feature so that every user interaction generates labeled training data. A search ranking feature where users click results provides implicit relevance labels. A classification feature where users can correct the AI&rsquo;s output provides explicit training labels. Over time, the model improves as usage grows, creating a compounding advantage.</p>
+<h2>When to Use Foundation Models Instead of Custom Training</h2>
+<p>The emergence of large pre-trained models has fundamentally changed the data equation. For many business applications, the right approach is not training a custom model at all.</p>
+<p>Use foundation models (GPT-4, Claude, Gemini) when: the task involves general language understanding, you have fewer than 1,000 training examples, the domain is well-represented in public knowledge, and you need to ship quickly.</p>
+<p>Use custom-trained models when: the task involves proprietary patterns not present in public data, inference cost at scale matters (custom models are 10-100x cheaper per prediction), latency requirements are strict (sub-50ms), or the data contains sensitive information that cannot be sent to third-party APIs.</p>
+<p>A common hybrid approach is to start with a foundation model for the initial launch, collect training data from user interactions, and train a custom model once you have accumulated 5,000-10,000 high-quality examples. The foundation model buys you time while the data flywheel spins up.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>At The Proper Motion Company, we help businesses assess their AI readiness, design data collection strategies, and build AI features calibrated to the data they actually have. If you are considering adding AI capabilities to your product, <a href="/contact.html">let us help you plan the data foundation</a>.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Data Requirements: How Much Data Do You Actually Need",
@@ -158,7 +77,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/ai-data-requirements-how-much-data-do-you-actually-need/",
   "articleSection": "AI"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

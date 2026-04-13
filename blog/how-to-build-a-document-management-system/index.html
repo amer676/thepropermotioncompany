@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,152 +6,67 @@
   <title>How to Build a Document Management System | Proper Motion</title>
   <meta name="description" content="How to Build a Document Management System. document management Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/how-to-build-a-document-management-system/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="How to Build a Document Management System | Proper Motion">
-  <meta property="og:description" content="How to Build a Document Management System. document management Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-build-a-document-management-system/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How to Build a Document Management System | Proper Motion">
-  <meta name="twitter:description" content="How to Build a Document Management System. document management Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="How to Build a Document Management System | Proper Motion"><meta property="og:description" content="How to Build a Document Management System. document management Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-build-a-document-management-system/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Build a Document Management System | Proper Motion"><meta name="twitter:description" content="How to Build a Document Management System. document management Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">December 18, 2022</span>
-              <span class="blog-card-read">7 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">documents</span>
-            </div>
-            <h1 class="blog-post-title">How to Build a Document Management System</h1>
-            <p class="blog-post-desc">How to Build a Document Management System. document management Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>How to Build a Document Management System</h1>
-<p>document management</p>
-<p>We wrote this because we kept having the same conversation with clients. The questions come up in almost every discovery call, and the answers are nuanced enough that they deserve a thorough treatment.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Architecture Patterns That Work</h2>
-<p>For how to build a projects, certain architectural patterns consistently deliver better outcomes.</p>
-<p><strong>Start with a monolith.</strong> Microservices add complexity that early-stage projects do not need. Build a well-structured monolith first, then extract services when you have enough traffic and team size to justify the operational overhead.</p>
-<p><strong>Use managed services where possible.</strong> Managed databases, managed hosting, managed authentication — these save hundreds of hours of infrastructure maintenance. Your team should be building features, not managing servers.</p>
-<p><strong>Design for replaceability.</strong> Every third-party integration should be wrapped in an abstraction layer. When (not if) you need to swap out a vendor, the change should be isolated to one module, not spread across your codebase.</p>
-<p><strong>Cache strategically.</strong> Identify the most frequently accessed data and cache it close to the user. A simple caching layer can improve performance by 10x and reduce infrastructure costs significantly.</p>
-<h2>A Decision Framework for How To Build A</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality how to build a typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a how to build a project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>We worked with a SaaS startup that had been in development for fourteen months with no launch in sight. Their team kept adding features because they were afraid the product was not ready. We helped them cut scope to the core workflow, launched in six weeks, and their first paying customers told them exactly what to build next.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>When How To Build A Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for how to build a.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<h2>What Most Teams Get Wrong About How To Build A</h2>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For how to build a, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Not defining success criteria upfront.</strong> If you cannot articulate what success looks like for your how to build a initiative, you will not know when you have achieved it. Define specific, measurable outcomes before development begins.</p>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about how to build a, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">December 18, 2022</span><span class="blog-card-read">8 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">documents</span></div><h1 class="blog-post-title">How to Build a Document Management System</h1><p class="blog-post-desc">How to Build a Document Management System. document management Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>How to Build a Document Management System</h1>
+<p>Every growing organization reaches a point where documents are scattered across email attachments, shared drives, Slack messages, and individual desktops, and no one can find anything. A 2023 IDC study found that knowledge workers spend 2.5 hours per day searching for information &ndash; 30% of the workday &ndash; and still fail to find what they need 50% of the time. That is not an inconvenience; it is a quantifiable drag on productivity that costs a 500-person company approximately $5 million per year in lost time.</p>
+<p>A document management system (DMS) solves this by providing a structured, searchable, version-controlled repository for every document your organization produces and consumes. This guide covers how to build one that people will actually use, from storage architecture through access control, version management, and search.</p>
+<h2>Storage Architecture and File Handling</h2>
+<p>The storage layer is the foundation of your DMS. The key decisions are where files physically live, how they are organized, and how you handle the sheer variety of file types that a business generates.</p>
+<p><strong>Object storage as the backbone</strong>: Store files in an object storage service like AWS S3, Google Cloud Storage, or Azure Blob Storage rather than a traditional filesystem. Object storage provides virtually unlimited capacity, built-in redundancy (99.999999999% durability for S3), lifecycle management (automatically move old files to cheaper storage tiers), and fine-grained access control. Files are stored as immutable objects identified by unique keys, which simplifies version management &ndash; each version is a separate object rather than an overwrite.</p>
+<p><strong>Database for metadata</strong>: Store file metadata (name, type, size, owner, created date, modified date, tags, folder path, version history, access permissions) in a relational database like PostgreSQL. This separation of concerns &ndash; files in object storage, metadata in a database &ndash; allows fast, complex queries against metadata (find all PDFs uploaded by Jane in the last 30 days) without scanning the file storage.</p>
+<p><strong>Upload handling</strong>: Large file uploads require chunked upload support. Break files into 5-10MB chunks, upload each chunk independently (with retry capability for failed chunks), and reassemble on the server. This prevents timeout failures on large files and allows progress tracking in the UI. For files over 100MB, use presigned URLs that allow the client to upload directly to object storage, bypassing your application server entirely and avoiding memory constraints.</p>
+<p><strong>File processing pipeline</strong>: After upload, files should pass through an asynchronous processing pipeline:
+1. <strong>Virus scanning</strong>: ClamAV or a cloud-based scanning service checks every uploaded file before it becomes available to other users.
+2. <strong>Thumbnail generation</strong>: Generate preview thumbnails for images, PDFs, and common document types. This enables visual browsing and preview without downloading the full file.
+3. <strong>Text extraction</strong>: Extract text content from PDFs (using a library like Apache PDFBox or pdf.js), Office documents (using Apache POI or LibreOffice in headless mode), and images with text (using OCR via Tesseract or a cloud OCR service). The extracted text feeds the full-text search index.
+4. <strong>Metadata extraction</strong>: Pull embedded metadata (EXIF data from images, author and title from Office documents, creation dates from PDFs) and store it alongside user-provided metadata.</p>
+<h2>Version Control and Document Lifecycle</h2>
+<p>Version control is what separates a DMS from a shared folder. Without version control, the latest version of &ldquo;Q4_Budget_Final_v3_REVISED_FINAL2.xlsx&rdquo; is anyone&rsquo;s guess. With version control, there is one document with a clean history of every change.</p>
+<p><strong>Automatic versioning</strong>: Every file save creates a new version. The previous version is retained and accessible, but the latest version is always what users see by default. Display a version history panel showing the version number, timestamp, author, and (optionally) a change description for each version.</p>
+<p><strong>Check-out/check-in for collaborative editing</strong>: When a user opens a document for editing, the system can optionally &ldquo;check out&rdquo; the document, preventing other users from editing simultaneously and creating conflicting versions. This is essential for organizations that work with complex documents (legal contracts, engineering drawings, financial models) where merge conflicts are not feasible. Display a clear indicator showing who has the document checked out and when.</p>
+<p><strong>Comparison and rollback</strong>: Allow users to compare any two versions visually (diff view for text documents, side-by-side for images) and roll back to any previous version. Rollback creates a new version that is a copy of the selected historical version &ndash; it does not delete the intermediate versions.</p>
+<p><strong>Retention policies</strong>: Configure retention rules that define how long documents and their versions are kept. Common policies include:
+- Keep all versions for the first 90 days.
+- After 90 days, keep only the latest version plus any version explicitly marked as a milestone.
+- After the retention period expires (varies by document type and regulatory requirement), either archive to cold storage or delete permanently with an audit trail of the deletion.</p>
+<p><strong>Document lifecycle states</strong>: Beyond versioning, documents progress through lifecycle states: Draft, In Review, Approved, Published, Archived, and Obsolete. Each state transition can trigger notifications, require approvals, and restrict actions (for example, an Approved document cannot be edited without first moving it back to Draft status, which requires appropriate permissions).</p>
+<h2>Access Control and Permissions</h2>
+<p>A DMS that does not control who can see, edit, and share documents is a liability, not an asset. Especially in regulated industries (healthcare, finance, legal), document access must be auditable and enforceable.</p>
+<p><strong>Folder-level and document-level permissions</strong>: Define permissions at the folder level (all documents in the &ldquo;Legal Contracts&rdquo; folder inherit the folder&rsquo;s permissions) with the ability to override at the document level (this specific contract is restricted to the legal team lead only). Permission inheritance simplifies management for large document collections.</p>
+<p><strong>Permission types</strong>: At minimum, support Read (view and download), Write (edit and upload new versions), Admin (change permissions, delete, manage lifecycle), and No Access. Some organizations also need Comment (add annotations without editing the document) and Share (create links or grant access to others within defined limits).</p>
+<p><strong>External sharing</strong>: When documents need to be shared outside the organization &ndash; with clients, vendors, or auditors &ndash; provide secure sharing links with configurable expiration (7 days, 30 days, custom), password protection, download restrictions (view-only in browser, no download), and watermarking (overlay the viewer&rsquo;s name/email on each page to discourage unauthorized redistribution).</p>
+<p><strong>Audit trail</strong>: Log every access event: who viewed, downloaded, edited, shared, printed, or deleted each document, with a timestamp and IP address. The audit trail should be tamper-evident (append-only storage) and retained for the same period as the document itself. In regulated industries, the audit trail is often as important as the document.</p>
+<h2>Search: Full-Text, Metadata, and Semantic</h2>
+<p>Search is the make-or-break feature of any DMS. If users cannot find documents quickly, they abandon the system and go back to emailing files around.</p>
+<p><strong>Full-text search</strong> indexes the extracted text content of every document, enabling searches that match words and phrases within the document body, not just the filename. Use Elasticsearch or a similar search engine with support for stemming, fuzzy matching, phrase matching, and relevance ranking. Weight title and filename matches higher than body content matches.</p>
+<p><strong>Metadata search and faceted filtering</strong>: Allow users to filter results by metadata fields: document type (contract, invoice, specification), date range (created/modified), author, department, project, tags, and lifecycle state. Faceted filtering displays the available filter values with result counts, helping users narrow results efficiently.</p>
+<p><strong>OCR search</strong>: Documents that exist as scanned images (PDFs from a scanner, photographed receipts, faxed documents) contain no extractable text. OCR (Optical Character Recognition) converts the image content to searchable text. Tesseract OCR handles standard printed text well. For handwritten documents, specialized OCR services (Google Cloud Vision, AWS Textract) achieve higher accuracy. Index the OCR output alongside natively extracted text so that scanned and digital documents are equally searchable.</p>
+<p><strong>Saved searches and smart folders</strong>: Allow users to save frequently used search queries and display them as virtual folders. A saved search for &ldquo;all contracts modified in the last 7 days&rdquo; appears as a dynamic folder that always shows current results without manual maintenance.</p>
+<h2>Workflow and Approval Integration</h2>
+<p>Documents rarely exist in isolation. They flow through business processes: a contract is drafted, reviewed by legal, revised, approved by management, signed by both parties, and archived. A DMS that integrates document workflows eliminates the email chains, manual tracking, and lost-in-the-shuffle delays that plague document-heavy processes.</p>
+<p><strong>Workflow engine basics</strong>: Define workflow templates with sequential or parallel approval steps. Each step has an assignee (or a role from which an available user is selected), an action (approve, reject, request changes), a deadline, and escalation rules (if not acted upon within 48 hours, escalate to the assignee&rsquo;s manager).</p>
+<p><strong>Notification and reminders</strong>: Send email and in-app notifications when a document arrives for review, when a deadline is approaching (24 hours before), and when a decision is made. Include a direct link to the document and a one-click approve/reject action to minimize friction.</p>
+<p><strong>Electronic signatures</strong>: For documents that require formal signatures, integrate with an e-signature service (DocuSign, Adobe Sign, HelloSign) or build a basic e-signature capability (capture a typed name, timestamp, and IP address as a legally recognized electronic signature under the ESIGN Act and UETA). The signed document should be locked as a new version with the signature embedded and the unsigned version retained in the version history.</p>
+<p><strong>Automated routing</strong>: Rules-based routing directs documents to the appropriate workflow based on metadata. Invoices over $10,000 route to VP approval. Contracts with a new vendor route to legal review. Standard purchase orders under $500 are auto-approved. These rules reduce manual routing overhead and ensure compliance with approval policies.</p>
+<h2>Regulatory Considerations by Industry</h2>
+<p>Different industries have specific requirements that shape DMS architecture:</p>
+<p><strong>Healthcare (HIPAA)</strong>: Documents containing PHI require encryption at rest and in transit, access controls with audit logging, and retention policies that comply with state medical record retention laws (typically 7 to 10 years). Business Associate Agreements must be in place with the DMS hosting provider.</p>
+<p><strong>Financial services (SEC, FINRA)</strong>: Broker-dealers must retain communications and documents per SEC Rule 17a-4, which requires WORM (Write Once, Read Many) storage that prevents modification or deletion during the retention period. The DMS must support regulatory hold and litigation hold features.</p>
+<p><strong>Legal</strong>: Attorney-client privilege requires strict access controls on privileged documents. Legal document management also requires robust conflict checking (ensuring that documents from opposing parties in a matter are not accessible to conflicted attorneys) and matter-centric organization.</p>
+<p><strong>Manufacturing (ISO 9001, FDA)</strong>: Quality management documents (SOPs, work instructions, specifications) must follow a controlled document process with formal review, approval, and distribution tracking. The DMS must demonstrate that only the current approved version is accessible to production staff, and that all previous versions are archived with complete revision history.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>A well-built document management system pays for itself in recovered productivity, reduced risk, and organizational sanity. If your organization is drowning in unstructured files and manual document workflows, <a href="/contact.html">contact us to discuss a custom DMS solution</a>. We build document management systems tailored to your industry&rsquo;s regulatory requirements, your team&rsquo;s workflow needs, and your existing technology ecosystem.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Build a Document Management System",
@@ -173,7 +86,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/how-to-build-a-document-management-system/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,150 +6,86 @@
   <title>Web Application Performance Optimization Guide | Proper Motion</title>
   <meta name="description" content="Web Application Performance Optimization Guide. web performance optimization Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/web-application-performance-optimization-guide/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Web Application Performance Optimization Guide | Proper Motion">
-  <meta property="og:description" content="Web Application Performance Optimization Guide. web performance optimization Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/web-application-performance-optimization-guide/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Web Application Performance Optimization Guide | Proper Motion">
-  <meta name="twitter:description" content="Web Application Performance Optimization Guide. web performance optimization Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Web Application Performance Optimization Guide | Proper Motion"><meta property="og:description" content="Web Application Performance Optimization Guide. web performance optimization Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/web-application-performance-optimization-guide/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Web Application Performance Optimization Guide | Proper Motion"><meta name="twitter:description" content="Web Application Performance Optimization Guide. web performance optimization Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">March 03, 2023</span>
-              <span class="blog-card-read">7 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">performance</span>
-            </div>
-            <h1 class="blog-post-title">Web Application Performance Optimization Guide</h1>
-            <p class="blog-post-desc">Web Application Performance Optimization Guide. web performance optimization Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Web Application Performance Optimization Guide</h1>
-<p>If you are researching web application performance optimization, you have probably noticed that most guides online are either too surface-level to be useful or too technical to be actionable. This guide sits in the middle — practical enough to inform real decisions, detailed enough to be worth your time.</p>
-<p>web performance optimization</p>
-<h2>A Decision Framework for Web Application Performance Optimization</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality web application performance optimization typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for web application performance optimization.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A healthcare organization needed to digitize a paper-based intake process while maintaining HIPAA compliance. Their previous vendor quoted twelve months and half a million dollars. We delivered a compliant system in eight weeks at a fraction of the cost. The difference: we did not build a platform. We built exactly what they needed.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a web application performance optimization project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>What Most Teams Get Wrong About Web Application Performance Optimization</h2>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning web application performance optimization.</p>
-<h2>The Build Process</h2>
-<p>Building web application performance optimization well requires discipline in a few specific areas.</p>
-<p><strong>Requirements documentation</strong> does not need to be a 50-page spec. It needs to be specific enough that two different developers reading it would build the same thing. User stories with acceptance criteria work well for most projects.</p>
-<p><strong>Design before development.</strong> Wireframes and prototypes are cheap to change. Production code is expensive to change. Invest a week in design review before starting development. This single practice prevents more problems than any other.</p>
-<p><strong>Weekly delivery cadence.</strong> Ship something testable every week. Not a demo — a working piece of software that a real person can use and give feedback on. Weekly delivery creates accountability and catches problems early.</p>
-<p><strong>Automated testing</strong> is an investment that pays for itself within weeks. Manual testing does not scale. Every feature should have tests that run automatically on every code change. This is what allows you to move fast without breaking things.</p>
-<h2>When Web Application Performance Optimization Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about web application performance optimization, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">March 03, 2023</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">performance</span></div><h1 class="blog-post-title">Web Application Performance Optimization Guide</h1><p class="blog-post-desc">Web Application Performance Optimization Guide. web performance optimization Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Web Application Performance Optimization Guide</h1>
+<p>Performance is not a feature. It is the foundation on which every other feature rests. A beautifully designed application that takes 5 seconds to load is, for practical purposes, a broken application. Users do not analyze why a page is slow &mdash; they feel it, and they leave. Google&rsquo;s research shows that 53 percent of mobile users abandon a site that takes more than 3 seconds to load. For every additional second of load time, conversion rates drop by an average of 4.42 percent.</p>
+<p>This guide is not a theoretical overview of web performance. It is a technical playbook for identifying and fixing the specific bottlenecks that make business applications slow: database queries, API response times, frontend rendering, network optimization, and caching strategies.</p>
+<h2>Measuring Before Optimizing</h2>
+<p>Optimizing without measurement is guessing. Before touching any code, establish baseline metrics and identify where time is actually spent.</p>
+<p><strong>Core Web Vitals</strong> are the standard for measuring user-perceived performance:</p>
+<ul>
+<li><strong>Largest Contentful Paint (LCP):</strong> How long until the largest visible element renders. Target: under 2.5 seconds. This measures perceived load speed.</li>
+<li><strong>Interaction to Next Paint (INP):</strong> How long until the page responds to a user interaction. Target: under 200 milliseconds. This measures responsiveness.</li>
+<li><strong>Cumulative Layout Shift (CLS):</strong> How much the page layout shifts during loading. Target: under 0.1. This measures visual stability.</li>
+</ul>
+<p>Measure these in the field (real user monitoring) using tools like Google&rsquo;s <code>web-vitals</code> library, Vercel&rsquo;s Speed Insights, or PostHog. Lab measurements (Lighthouse, WebPageTest) are useful for debugging but do not reflect real-world conditions: actual users have slower devices, weaker connections, and more browser extensions than your development machine.</p>
+<p><strong>Backend performance</strong> requires a different set of measurements:</p>
+<ul>
+<li><strong>p50, p95, and p99 response times</strong> for each API endpoint. The p50 (median) tells you the typical experience. The p95 and p99 tell you how bad it gets for unlucky users. A p50 of 100ms with a p99 of 3000ms means 1 in 100 requests is painfully slow.</li>
+<li><strong>Database query times</strong> broken down by query. Use slow query logs (PostgreSQL&rsquo;s <code>log_min_duration_statement</code>, MySQL&rsquo;s <code>slow_query_log</code>) to identify queries that exceed 100ms.</li>
+<li><strong>External API call times.</strong> If your application calls Stripe, a third-party search API, or a microservice, measure each call&rsquo;s latency independently.</li>
+</ul>
+<p>Set up a performance budget: LCP under 2.5s, API p95 under 500ms, database p95 under 100ms. Alert when any metric exceeds its budget for more than 5 minutes.</p>
+<h2>Database Query Optimization</h2>
+<p>The database is the most common performance bottleneck in business applications. Here are the patterns we fix most frequently:</p>
+<p><strong>The N+1 query problem.</strong> The application loads a list of 50 orders, then executes a separate query for each order&rsquo;s customer information. Result: 51 queries instead of 1 or 2. Fix: use eager loading (ActiveRecord&rsquo;s <code>includes</code>, Django&rsquo;s <code>select_related</code>/<code>prefetch_related</code>, Prisma&rsquo;s <code>include</code>) to load related data in a single query or a batched set.</p>
+<p>How to detect it: enable query logging in development and watch for patterns like &ldquo;SELECT * FROM customers WHERE id = ?&rdquo; repeated 50 times within a single request.</p>
+<p><strong>Missing indexes.</strong> A query that filters or sorts on a column without an index triggers a full table scan. On a table with 1 million rows, the difference between an indexed and unindexed query is typically 2ms versus 2000ms &mdash; a 1000x performance difference.</p>
+<p>Identify missing indexes by running <code>EXPLAIN ANALYZE</code> on slow queries. Look for &ldquo;Seq Scan&rdquo; on large tables. Add a B-tree index on the filtered/sorted column. For queries that filter on multiple columns, a composite index on those columns (in the correct order) is more effective than individual indexes.</p>
+<p>Common indexing mistakes:
+- Indexing a boolean column with low cardinality (e.g., <code>is_active</code>). A column with only two values does not benefit much from a B-tree index. Use a partial index instead: <code>CREATE INDEX idx_active_users ON users (email) WHERE is_active = true</code>.
+- Over-indexing. Every index slows down writes (INSERT, UPDATE, DELETE). A table with 15 indexes will have slow writes. Index only the columns that appear in WHERE, JOIN, and ORDER BY clauses of queries that are actually slow.</p>
+<p><strong>Unoptimized aggregations.</strong> A dashboard that computes &ldquo;total revenue this month&rdquo; by scanning every order row is doing work that should be precomputed. For aggregations that are queried frequently, maintain a materialized view or a summary table that is updated incrementally (triggered by new inserts) or refreshed periodically (every 5 minutes via a cron job).</p>
+<p><strong>Connection pool exhaustion.</strong> If your application opens a new database connection for every request and forgets to close it, you will hit the connection limit (typically 100-200 in PostgreSQL) and all subsequent requests will queue. Use a connection pooler (PgBouncer for PostgreSQL) that maintains a pool of reusable connections. Set the pool size to 2-3x the number of application threads.</p>
+<h2>API and Backend Response Time Reduction</h2>
+<p>Beyond the database, backend response time is determined by how efficiently your application code processes requests.</p>
+<p><strong>Serialize less data.</strong> A common pattern: the API endpoint returns the entire database record when the client needs only three fields. A response with 50 fields and nested relationships might be 15KB of JSON. Selecting only the fields the client uses might produce 800 bytes. Smaller responses mean less serialization time, less network transfer, and faster client-side parsing.</p>
+<p><strong>Parallelize independent operations.</strong> If a request handler needs data from three sources (a database query, a cache lookup, and an external API call), execute them concurrently rather than sequentially. In Node.js, use <code>Promise.all()</code>. In Python, use <code>asyncio.gather()</code>. In Go, use goroutines with a WaitGroup. If each call takes 100ms, sequential execution takes 300ms while parallel execution takes 100ms.</p>
+<p><strong>Offload non-critical work.</strong> When a user submits an order, the response should confirm the order &mdash; not wait for the email confirmation to send, the analytics event to fire, and the inventory system to update. Use a background job queue (Sidekiq, Celery, BullMQ) for non-blocking operations. The API responds in 50ms; the background work completes in its own time.</p>
+<p><strong>Compress responses.</strong> Enable gzip or Brotli compression for API responses. JSON compresses extremely well &mdash; a 50KB response typically compresses to 5-8KB. Most web servers and frameworks support this with a single configuration line. Brotli achieves 15-20 percent better compression than gzip at similar CPU cost.</p>
+<h2>Frontend Performance: Rendering and Loading</h2>
+<p>Modern web applications often do more work in the browser than on the server. Frontend performance optimization targets three areas:</p>
+<p><strong>Reduce JavaScript bundle size.</strong> A business application built with React can easily ship 500KB to 2MB of JavaScript. Every kilobyte must be downloaded, parsed, and executed before the application is interactive. Strategies:</p>
+<ul>
+<li><strong>Code splitting.</strong> Load only the code needed for the current page. React&rsquo;s <code>lazy()</code> and dynamic <code>import()</code> split the bundle into chunks loaded on demand. A user visiting the dashboard does not need the settings page code.</li>
+<li><strong>Tree shaking.</strong> Modern bundlers (Webpack 5, Vite, esbuild) eliminate unused exports. But tree shaking only works with ES modules. If you import a utility library like lodash with <code>import _ from 'lodash'</code>, you get the entire library. Use <code>import debounce from 'lodash/debounce'</code> to import only what you use.</li>
+<li><strong>Audit dependencies.</strong> Run <code>npx bundlephobia</code> or use Webpack Bundle Analyzer to identify heavy dependencies. A charting library might add 300KB. A date library might add 70KB. Often, smaller alternatives exist (date-fns instead of moment.js saves 60KB gzipped).</li>
+</ul>
+<p><strong>Optimize images.</strong> Images are typically the largest assets on a page. Use modern formats (WebP saves 25-35 percent over JPEG, AVIF saves 50 percent), serve responsive sizes (a 400px thumbnail does not need a 4000px source image), and lazy-load images below the fold. A single unoptimized hero image can add 2-3 seconds to LCP.</p>
+<p><strong>Minimize layout shifts.</strong> Reserve space for images and dynamic content using explicit width/height attributes or aspect-ratio CSS. The most common CLS offenders: images without dimensions, fonts that load and reflow text (use <code>font-display: swap</code> with a fallback that matches the web font&rsquo;s metrics), and dynamically injected content (ads, cookie banners) that push existing content down.</p>
+<h2>Caching Strategy: The Biggest Performance Win</h2>
+<p>Caching is the single most impactful performance optimization. The fastest request is the one that never reaches your server.</p>
+<p><strong>Browser caching.</strong> Set <code>Cache-Control</code> headers to tell browsers to cache static assets (JS, CSS, images, fonts) for long periods (1 year). Use content hashing in filenames (<code>app.a1b2c3.js</code>) so that when the content changes, the filename changes, and the browser fetches the new version. For HTML and API responses, use <code>Cache-Control: no-cache</code> with <code>ETag</code> headers for revalidation.</p>
+<p><strong>CDN caching.</strong> Serve static assets from a CDN (Cloudflare, Fastly, Vercel Edge Network) that caches them at edge locations worldwide. A user in Tokyo downloading a JavaScript file from a CDN edge server in Tokyo gets a 20ms response. The same file from a US origin server gets a 200ms response. CDN caching is the single fastest way to improve global performance.</p>
+<p><strong>Application-level caching.</strong> Cache expensive computations and database queries in Redis or Memcached. Common patterns:</p>
+<ul>
+<li><strong>Read-through cache:</strong> On a cache miss, fetch from the database, store in cache with a TTL, and return. Subsequent requests hit the cache.</li>
+<li><strong>Cache aside with invalidation:</strong> When data changes, explicitly delete the cached value. The next read fetches from the database and repopulates the cache.</li>
+<li><strong>Cache warming:</strong> For data that is expensive to compute and frequently requested (a dashboard&rsquo;s summary statistics), precompute and cache it on a schedule rather than waiting for the first request.</li>
+</ul>
+<p>Set TTLs (time-to-live) based on data freshness requirements. Product catalog: 5 minutes. User session data: 30 minutes. Exchange rates: 1 hour. Static configuration: 24 hours.</p>
+<h2>Performance as an Ongoing Practice</h2>
+<p>Performance optimization is not a one-time project. It is a continuous practice. Code changes, data grows, and usage patterns shift. A query that was fast with 10,000 rows becomes slow with 10 million rows.</p>
+<p>Build performance into your development workflow:</p>
+<ul>
+<li>Run Lighthouse in CI/CD. Fail the build if LCP exceeds 3 seconds or bundle size exceeds a threshold.</li>
+<li>Review slow query logs weekly. New slow queries appear as features are added and data accumulates.</li>
+<li>Load test before major launches. Use k6 or Artillery to simulate 10x expected traffic and identify breaking points.</li>
+<li>Monitor real user metrics continuously. A performance regression in production is a bug with the same severity as a functional bug.</li>
+</ul>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If your web application is slower than it should be, <a href="/contact.html">contact The Proper Motion Company</a>. We diagnose performance bottlenecks and implement targeted optimizations that make your application fast for every user.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Web Application Performance Optimization Guide",
@@ -171,7 +105,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/web-application-performance-optimization-guide/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

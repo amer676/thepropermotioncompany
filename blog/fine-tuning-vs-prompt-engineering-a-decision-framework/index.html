@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,149 +6,82 @@
   <title>Fine-Tuning vs Prompt Engineering: A Decision Framework</title>
   <meta name="description" content="Fine-Tuning vs Prompt Engineering: A Decision Framework. When to customize AI models and when to craft better prompts. Expert insights from The Proper Motion Co">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/fine-tuning-vs-prompt-engineering-a-decision-framework/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Fine-Tuning vs Prompt Engineering: A Decision Framework">
-  <meta property="og:description" content="Fine-Tuning vs Prompt Engineering: A Decision Framework. When to customize AI models and when to craft better prompts. Expert insights from The Proper Motion Co">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/fine-tuning-vs-prompt-engineering-a-decision-framework/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Fine-Tuning vs Prompt Engineering: A Decision Framework">
-  <meta name="twitter:description" content="Fine-Tuning vs Prompt Engineering: A Decision Framework. When to customize AI models and when to craft better prompts. Expert insights from The Proper Motion Co">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Fine-Tuning vs Prompt Engineering: A Decision Framework"><meta property="og:description" content="Fine-Tuning vs Prompt Engineering: A Decision Framework. When to customize AI models and when to craft better prompts. Expert insights from The Proper Motion Co"><meta property="og:url" content="https://thepropermotioncompany.com/blog/fine-tuning-vs-prompt-engineering-a-decision-framework/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Fine-Tuning vs Prompt Engineering: A Decision Framework"><meta name="twitter:description" content="Fine-Tuning vs Prompt Engineering: A Decision Framework. When to customize AI models and when to craft better prompts. Expert insights from The Proper Motion Co"><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">April 04, 2024</span>
-              <span class="blog-card-read">7 min read</span>
-              <span class="blog-card-tag">AI</span><span class="blog-card-tag">engineering</span>
-            </div>
-            <h1 class="blog-post-title">Fine-Tuning vs Prompt Engineering: A Decision Framework</h1>
-            <p class="blog-post-desc">Fine-Tuning vs Prompt Engineering: A Decision Framework. When to customize AI models and when to craft better prompts. Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Fine-Tuning vs Prompt Engineering: A Decision Framework</h1>
-<p>There is a lot of noise around fine-tuning vs prompt engineering:. Vendors want to sell you their platform. Consultants want to sell you their time. This guide has no agenda beyond sharing what we have learned from building production software since 2022.</p>
-<p>When to customize AI models and when to craft better prompts.</p>
-<h2>When Fine-Tuning Vs Prompt Engineering: Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a fine-tuning vs prompt engineering: project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A logistics company came to us after spending eight months with a development shop that delivered a system their team refused to use. The interface was confusing, the reports were wrong, and the integrations broke weekly. We rebuilt it in ten weeks. The difference was not technical skill — it was the three days we spent shadowing their operations team before writing a single line of code.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>A Decision Framework for Fine-Tuning Vs Prompt Engineering:</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality fine-tuning vs prompt engineering: typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for fine-tuning vs prompt engineering:.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<h2>Architecture Patterns That Work</h2>
-<p>For fine-tuning vs prompt engineering: projects, certain architectural patterns consistently deliver better outcomes.</p>
-<p><strong>Start with a monolith.</strong> Microservices add complexity that early-stage projects do not need. Build a well-structured monolith first, then extract services when you have enough traffic and team size to justify the operational overhead.</p>
-<p><strong>Use managed services where possible.</strong> Managed databases, managed hosting, managed authentication — these save hundreds of hours of infrastructure maintenance. Your team should be building features, not managing servers.</p>
-<p><strong>Design for replaceability.</strong> Every third-party integration should be wrapped in an abstraction layer. When (not if) you need to swap out a vendor, the change should be isolated to one module, not spread across your codebase.</p>
-<p><strong>Cache strategically.</strong> Identify the most frequently accessed data and cache it close to the user. A simple caching layer can improve performance by 10x and reduce infrastructure costs significantly.</p>
-<h2>What Most Teams Get Wrong About Fine-Tuning Vs Prompt Engineering:</h2>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For fine-tuning vs prompt engineering:, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning fine-tuning vs prompt engineering:.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Taking Action</h2>
-<p>Reading about fine-tuning vs prompt engineering: is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">April 04, 2024</span><span class="blog-card-read">8 min read</span><span class="blog-card-tag">AI</span><span class="blog-card-tag">engineering</span></div><h1 class="blog-post-title">Fine-Tuning vs Prompt Engineering: A Decision Framework</h1><p class="blog-post-desc">Fine-Tuning vs Prompt Engineering: A Decision Framework. When to customize AI models and when to craft better prompts. Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Fine-Tuning vs Prompt Engineering: A Decision Framework</h1>
+<p>You have decided to integrate AI into your product. You have chosen a foundation model &ndash; GPT-4, Claude, Gemini, Llama, or one of their successors. Now comes a decision that will determine your project&rsquo;s cost, timeline, performance ceiling, and ongoing maintenance burden: do you customize the model&rsquo;s behavior through prompt engineering, or do you fine-tune the model on your own data?</p>
+<p>This decision is more nuanced than most guides suggest. The answer is not always &ldquo;start with prompts and fine-tune later,&rdquo; nor is it &ldquo;fine-tuning is always better for production.&rdquo; Each approach solves different problems, has different cost curves, and is appropriate for different use cases. Here is how to decide.</p>
+<h2>Understanding What Each Approach Actually Does</h2>
+<p><strong>Prompt engineering</strong> is the practice of crafting the input (prompt) to a foundation model so that it produces the desired output. This includes system prompts that set the model&rsquo;s role and behavior, few-shot examples that demonstrate the desired input-output pattern, structured output formats that constrain the response shape, and chain-of-thought instructions that guide the model&rsquo;s reasoning process.</p>
+<p>Prompt engineering does not change the model. You are using the same model as everyone else &ndash; you are just talking to it more effectively. The model&rsquo;s weights, its training data, and its fundamental capabilities are unchanged.</p>
+<p><strong>Fine-tuning</strong> is the process of further training a pre-trained model on your own data. You provide a dataset of input-output examples, and the training process adjusts the model&rsquo;s weights to better match the patterns in your data. The result is a new model that retains the base model&rsquo;s general capabilities but is specialized for your specific task.</p>
+<p>Fine-tuning changes the model itself. Your fine-tuned model is different from the base model &ndash; it will behave differently even with the same prompt. The model&rsquo;s internal representations have shifted to better handle your specific use case.</p>
+<p>There is a third option gaining traction: <strong>Retrieval-Augmented Generation (RAG)</strong>, which does not modify the model but dynamically provides it with relevant context from your own data at inference time. RAG is not a replacement for either prompting or fine-tuning &ndash; it solves a different problem (knowledge grounding) &ndash; but it is often the right first step and can reduce the need for fine-tuning in many scenarios.</p>
+<h2>When Prompt Engineering Is Sufficient</h2>
+<p>Prompt engineering is sufficient &ndash; and preferable &ndash; more often than most teams realize. It should be your default approach unless you have a specific reason to fine-tune.</p>
+<p><strong>Classification with well-defined categories</strong>: If you need to classify text into 5-15 categories and can describe each category clearly, a well-crafted prompt with 2-3 examples per category will often achieve 85-92 percent accuracy. For a customer support ticket classifier with categories like &ldquo;billing,&rdquo; &ldquo;technical issue,&rdquo; &ldquo;feature request,&rdquo; &ldquo;account access,&rdquo; and &ldquo;general inquiry,&rdquo; a prompt with clear category definitions and representative examples typically performs within 5 percentage points of a fine-tuned model.</p>
+<p><strong>Structured data extraction</strong>: Extracting specific fields from unstructured text &ndash; names, dates, dollar amounts, addresses, product identifiers &ndash; is a task where prompt engineering excels. Define the schema you want, provide a few examples of the input format and desired output, and specify the output as JSON. Modern models handle this reliably when the prompt is clear.</p>
+<p><strong>Content generation with style guidelines</strong>: If you need the model to generate content in a specific voice, tone, or format, detailed system prompts with style examples are often enough. A prompt that says &ldquo;Write in a professional but conversational tone, similar to the following example: [example paragraph]&rdquo; is simpler and more flexible than fine-tuning on a corpus of on-brand content.</p>
+<p><strong>Reasoning and analysis tasks</strong>: Summarization, comparison, pro/con analysis, and other reasoning-heavy tasks are areas where foundation models are strong out of the box. Prompt engineering with chain-of-thought instructions (&ldquo;First, identify the key points. Then, evaluate each point against the criteria. Finally, provide a recommendation with supporting evidence.&rdquo;) is the right approach.</p>
+<p>The key advantage of prompt engineering is iteration speed. You can test a new prompt in minutes, compare results across 50 test cases in an hour, and deploy a prompt change with zero downtime. There is no training pipeline, no GPU provisioning, no model hosting, and no risk of catastrophic forgetting (where fine-tuning on new data causes the model to lose capabilities it had before).</p>
+<h2>When Fine-Tuning Is Worth the Investment</h2>
+<p>Fine-tuning makes sense when prompt engineering hits a ceiling that matters for your use case. Specific scenarios include the following.</p>
+<p><strong>Highly specialized terminology or patterns</strong>: If your domain uses terminology that foundation models handle incorrectly or inconsistently &ndash; medical coding (ICD-10/CPT), legal citation formats, financial instrument nomenclature, engineering specifications &ndash; fine-tuning on domain-specific data teaches the model the conventions that prompts alone cannot fully convey. A model fine-tuned on 5,000 examples of properly formatted ICD-10 code assignments will outperform even an expertly prompted base model because the pattern is too specific and convention-dependent for general training data to cover.</p>
+<p><strong>Consistent output formatting at scale</strong>: If you need the model to produce output in a very specific format &ndash; a particular JSON schema, a specific report structure, a constrained vocabulary &ndash; and deviations from that format cause downstream failures, fine-tuning provides more reliable formatting than prompts. At 10,000 daily inferences, even a 2 percent formatting error rate from prompt-only approaches means 200 daily failures that need error handling.</p>
+<p><strong>Latency-sensitive applications</strong>: Fine-tuned smaller models (Llama 7B, Mistral 7B) can match or exceed the performance of prompted larger models on narrow tasks while running 5-10x faster and at a fraction of the cost. If your application needs sub-200ms inference times and the task is well-defined, fine-tuning a small model is often the right architecture. A fine-tuned 7B model serving a single classification task can run at 50-80ms per inference on a single GPU, compared to 500-2000ms for a prompted API call to GPT-4.</p>
+<p><strong>Proprietary behavior patterns</strong>: If your product requires the AI to exhibit behavior that cannot be easily described in a prompt &ndash; a specific conversational style learned from thousands of examples, a nuanced decision-making pattern based on historical data, or a complex multi-step workflow &ndash; fine-tuning captures these implicit patterns better than explicit instructions.</p>
+<h2>The Cost Comparison in Detail</h2>
+<p>The cost structures are fundamentally different and need to be evaluated for your specific use case.</p>
+<p><strong>Prompt engineering costs</strong>:
+- Development: 20-80 hours of engineering time to develop, test, and optimize prompts. At $150/hour fully loaded, that is $3,000-$12,000.
+- Inference: API costs per request. For GPT-4 Turbo, roughly $0.01-$0.03 per request depending on input/output token counts. For Claude, similar pricing tiers. At 100,000 monthly requests: $1,000-$3,000/month.
+- Ongoing: Prompt maintenance is minimal &ndash; perhaps 4-8 hours per month to handle edge cases and adjust for model updates.
+- Total year-one cost: $20,000-$60,000 for a moderately used feature.</p>
+<p><strong>Fine-tuning costs</strong>:
+- Data preparation: 40-200 hours of engineering and domain expert time to prepare, clean, and validate training data. $6,000-$30,000.
+- Training: GPU compute costs for fine-tuning. For a 7B parameter model on a dataset of 10,000 examples, expect 4-12 GPU hours at $2-$8/hour, totaling $8-$96. For larger models or larger datasets, costs scale linearly. The compute cost of training itself is usually trivial compared to data preparation.
+- Model hosting: If self-hosting the fine-tuned model, expect $500-$3,000/month for a GPU instance capable of serving a 7B model at production latency. If using a provider&rsquo;s fine-tuning API (OpenAI, Anthropic), inference costs for fine-tuned models are typically 3-8x higher per token than the base model.
+- Ongoing: Retraining as data distributions shift, monitoring for performance degradation, maintaining the training pipeline. 20-40 hours/month of engineering time.
+- Total year-one cost: $50,000-$150,000+ depending on scale and hosting model.</p>
+<p>Fine-tuning has a higher upfront cost but can reduce per-inference costs when using smaller self-hosted models. Prompt engineering has lower upfront costs but higher per-inference costs when using large API-served models. The crossover point depends on volume: below 50,000 monthly requests, prompt engineering is almost always cheaper. Above 500,000 monthly requests, fine-tuning a smaller model and self-hosting often wins.</p>
+<h2>The Evaluation Pipeline: How to Measure What Works</h2>
+<p>Regardless of which approach you choose, you need a systematic way to measure performance. Ad hoc testing (&ldquo;I tried 10 examples and it looks good&rdquo;) is insufficient for production AI features.</p>
+<p>Build an evaluation dataset of at least 200-500 examples that represent the full range of inputs your system will encounter. Each example should have a verified correct output (the &ldquo;gold standard&rdquo;) produced by a domain expert. Partition this dataset into categories that matter: common cases, edge cases, adversarial cases, and cases representing each class or category.</p>
+<p>Define quantitative metrics appropriate to your task. For classification: accuracy, precision, recall, and F1 score per category. For extraction: exact match rate and partial match rate. For generation: BLEU or ROUGE scores as automated proxies, plus human evaluation on a random subset.</p>
+<p>Run every prompt change and every model version against this evaluation dataset before deploying. Track performance over time in a dashboard. If accuracy drops below a threshold after a prompt change or model update, the deployment should be blocked automatically.</p>
+<p>This evaluation pipeline is the same for prompt engineering and fine-tuning. The difference is how you iterate: prompt engineers adjust the prompt and re-evaluate. Fine-tuning teams adjust the training data or hyperparameters, retrain, and re-evaluate. The evaluation pipeline itself is the constant.</p>
+<h2>A Practical Decision Flowchart</h2>
+<p>Start here and follow the branches:</p>
+<ol>
+<li>
+<p>Can you describe the desired behavior clearly in natural language? If yes, try prompt engineering first. If no (the behavior is implicit in examples rather than describable in rules), fine-tuning may be necessary.</p>
+</li>
+<li>
+<p>Does prompt engineering achieve your accuracy threshold on 500+ test cases? If yes, ship it. If no, proceed.</p>
+</li>
+<li>
+<p>Do you have at least 1,000 high-quality labeled examples of the desired behavior? If no, invest in data collection before fine-tuning &ndash; garbage data produces a garbage model. If yes, proceed.</p>
+</li>
+<li>
+<p>Is latency or per-inference cost a binding constraint? If yes, fine-tune a small model for self-hosting. If no, try RAG (augmenting prompts with relevant retrieved examples) before fine-tuning.</p>
+</li>
+<li>
+<p>If RAG does not close the accuracy gap, fine-tune. Start with the smallest model that achieves your accuracy threshold and scale up only if needed.</p>
+</li>
+</ol>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>The prompt engineering vs fine-tuning decision is ultimately about matching complexity to necessity. Prompt engineering is simpler, cheaper, and faster to iterate. Fine-tuning is more powerful for narrow tasks but comes with significant overhead. Most production AI features should start with prompt engineering, graduate to RAG if knowledge grounding is needed, and only move to fine-tuning when there is a documented performance gap that the simpler approaches cannot close.</p>
+<p>If your team is building AI features and needs help choosing the right approach for your specific use case, <a href="/contact.html">contact us</a>. We help companies implement AI features that are production-grade from day one, using the simplest approach that meets the performance requirements.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Fine-Tuning vs Prompt Engineering: A Decision Framework",
@@ -170,7 +101,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/fine-tuning-vs-prompt-engineering-a-decision-framework/",
   "articleSection": "AI"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

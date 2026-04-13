@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,142 +6,65 @@
   <title>Accessibility in Software Design: Requirements and Implementat</title>
   <meta name="description" content="Accessibility in Software Design: Requirements and Implementation. accessibility design Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/accessibility-in-software-design-requirements-and-implementation/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Accessibility in Software Design: Requirements and Implementat">
-  <meta property="og:description" content="Accessibility in Software Design: Requirements and Implementation. accessibility design Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/accessibility-in-software-design-requirements-and-implementation/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Accessibility in Software Design: Requirements and Implementat">
-  <meta name="twitter:description" content="Accessibility in Software Design: Requirements and Implementation. accessibility design Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Accessibility in Software Design: Requirements and Implementat"><meta property="og:description" content="Accessibility in Software Design: Requirements and Implementation. accessibility design Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/accessibility-in-software-design-requirements-and-implementation/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Accessibility in Software Design: Requirements and Implementat"><meta name="twitter:description" content="Accessibility in Software Design: Requirements and Implementation. accessibility design Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">August 02, 2024</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">design</span><span class="blog-card-tag">accessibility</span>
-            </div>
-            <h1 class="blog-post-title">Accessibility in Software Design: Requirements and Implementation</h1>
-            <p class="blog-post-desc">Accessibility in Software Design: Requirements and Implementation. accessibility design Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Accessibility in Software Design: Requirements and Implementation</h1>
-<p>There is a lot of noise around accessibility in software design:. Vendors want to sell you their platform. Consultants want to sell you their time. This guide has no agenda beyond sharing what we have learned from building production software since 2022.</p>
-<p>accessibility design</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A healthcare organization needed to digitize a paper-based intake process while maintaining HIPAA compliance. Their previous vendor quoted twelve months and half a million dollars. We delivered a compliant system in eight weeks at a fraction of the cost. The difference: we did not build a platform. We built exactly what they needed.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>When Accessibility In Software Design: Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Technical Considerations</h2>
-<p>The architecture decisions you make early in a accessibility in software design: project have outsized impact on long-term costs and capabilities.</p>
-<p><strong>Data model design</strong> matters more than most teams realize. A well-designed data model makes features easier to build, queries faster to run, and integrations simpler to maintain. A poorly designed one creates friction that compounds with every new feature.</p>
-<p><strong>API design</strong> determines how easily your system can evolve and integrate with other tools. REST is the safe default for most business applications. GraphQL makes sense when your frontend needs flexibility in data fetching. The choice should be driven by your specific integration requirements, not industry trends.</p>
-<p><strong>Authentication and authorization</strong> need to be right from the start. Retrofitting security is expensive and risky. Plan your permission model before you build your first feature, even if it seems like overkill for the initial scope.</p>
-<p><strong>Monitoring and observability</strong> are not optional extras. You need to know when something breaks before your users tell you. Set up error tracking, performance monitoring, and uptime alerting from day one.</p>
-<h2>What Most Teams Get Wrong About Accessibility In Software Design:</h2>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning accessibility in software design:.</p>
-<p><strong>Skipping user research.</strong> Building accessibility in software design: without talking to the people who will actually use it is like designing a house without asking who lives there. Five conversations with real users will save you more money than any amount of internal brainstorming.</p>
-<h2>A Decision Framework for Accessibility In Software Design:</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality accessibility in software design: typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for accessibility in software design:.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<h2>Taking Action</h2>
-<p>Reading about accessibility in software design: is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">August 02, 2024</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">design</span><span class="blog-card-tag">accessibility</span></div><h1 class="blog-post-title">Accessibility in Software Design: Requirements and Implementation</h1><p class="blog-post-desc">Accessibility in Software Design: Requirements and Implementation. accessibility design Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Accessibility in Software Design: Requirements and Implementation</h1>
+<p>Accessibility is not a feature you bolt on before launch. It is a design constraint that, when integrated from the start, produces better software for everyone. Products built with accessibility in mind are more usable, more resilient, and reach a larger market. Products that retrofit accessibility after the fact spend 3 to 10 times more and still end up with a compromised experience.</p>
+<p>This guide covers the legal landscape, the technical implementation details, and the organizational practices that make accessibility a sustainable part of your development process.</p>
+<h2>The Legal and Business Case You Cannot Ignore</h2>
+<p>The legal landscape for digital accessibility has shifted dramatically. In the United States, the Department of Justice published its final rule under Title II of the ADA in April 2024, establishing WCAG 2.1 Level AA as the technical standard for state and local government websites. While Title III (which covers private businesses) does not yet have a formal rule, federal courts have consistently held that websites are &ldquo;places of public accommodation&rdquo; under the ADA. In 2023, over 4,600 digital accessibility lawsuits were filed in the U.S., up from 2,300 in 2018.</p>
+<p>The European Accessibility Act takes effect in June 2025, requiring that digital products and services sold in the EU meet accessibility standards. This applies to any company with EU customers, regardless of where the company is headquartered.</p>
+<p>Beyond legal compliance, the business case is straightforward. Over 1.3 billion people worldwide live with some form of disability. In the U.S. alone, the disability community controls over $490 billion in disposable income. An inaccessible product excludes this market entirely.</p>
+<p>There is also the curb-cut effect: features designed for accessibility benefit everyone. Closed captions help users in noisy environments. Keyboard navigation helps power users work faster. High-contrast interfaces are more readable in bright sunlight. Accessible design is simply good design.</p>
+<h2>WCAG 2.1 Level AA: What It Actually Requires</h2>
+<p>The Web Content Accessibility Guidelines are organized around four principles: Perceivable, Operable, Understandable, and Robust (POUR). Level AA compliance requires meeting 50 specific success criteria. Here are the ones that most commonly trip up development teams.</p>
+<p><strong>Color contrast.</strong> Text must have a contrast ratio of at least 4.5:1 against its background (3:1 for large text, defined as 18px bold or 24px regular). Use a tool like the WebAIM Contrast Checker to verify. Common failure: light gray text (#999999) on a white background has a ratio of 2.85:1. Bump it to #767676 for a compliant 4.54:1.</p>
+<p><strong>Keyboard navigation.</strong> Every interactive element must be reachable and operable via keyboard alone. Users must be able to Tab through focusable elements in a logical order, activate buttons and links with Enter or Space, and navigate menus with arrow keys. The focus indicator must be visible (at least 2px solid outline with sufficient contrast). Custom components built with <code>&lt;div&gt;</code> elements need <code>tabindex</code>, <code>role</code>, and keyboard event handlers to function equivalently to native HTML elements.</p>
+<p><strong>Form labels and error handling.</strong> Every form input must have a programmatically associated <code>&lt;label&gt;</code> element (connected via the <code>for</code> attribute matching the input&rsquo;s <code>id</code>). Error messages must identify the field in error, describe the error clearly, and be announced to screen readers via <code>aria-live="assertive"</code> or <code>role="alert"</code>.</p>
+<p><strong>Alternative text for images.</strong> Informative images need descriptive alt text. Decorative images need <code>alt=""</code> (empty alt attribute, not missing). Complex images like charts and infographics need both brief alt text and a longer text alternative (via <code>aria-describedby</code> or a linked description).</p>
+<p><strong>Heading hierarchy.</strong> Use heading levels (h1 through h6) to create a logical document outline. Do not skip levels (going from h2 to h4). Screen reader users navigate by headings, so a well-structured heading hierarchy is equivalent to a table of contents.</p>
+<h2>Implementing Accessible Components in Practice</h2>
+<p>The most reliable path to accessible components is using semantic HTML elements whenever possible. A <code>&lt;button&gt;</code> element is keyboard-focusable, activatable with Enter and Space, and announced correctly by screen readers, all without a single line of JavaScript. A <code>&lt;div onClick={handleClick}&gt;</code> provides none of these behaviors by default.</p>
+<p><strong>Modals and dialogs.</strong> Use the native <code>&lt;dialog&gt;</code> element or implement the WAI-ARIA dialog pattern. Requirements: focus must move to the dialog when it opens, Tab must be trapped within the dialog (cycling from the last focusable element back to the first), Escape must close the dialog, and focus must return to the triggering element when the dialog closes. On the dialog element itself, set <code>role="dialog"</code>, <code>aria-modal="true"</code>, and <code>aria-labelledby</code> pointing to the dialog&rsquo;s heading.</p>
+<p><strong>Dropdown menus.</strong> Implement the WAI-ARIA menu button pattern. The trigger button needs <code>aria-haspopup="true"</code> and <code>aria-expanded="false"</code> (toggled to &ldquo;true&rdquo; when open). Menu items need <code>role="menuitem"</code>. Arrow keys navigate between items, Enter or Space activates the focused item, and Escape closes the menu.</p>
+<p><strong>Data tables.</strong> Use proper <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> elements. Add <code>scope="col"</code> to column headers and <code>scope="row"</code> to row headers. For complex tables with merged cells, use <code>headers</code> attributes. For sortable columns, add <code>aria-sort="ascending"</code>, <code>"descending"</code>, or <code>"none"</code> to the <code>&lt;th&gt;</code> element. Avoid using <code>&lt;div&gt;</code>-based grid layouts for tabular data.</p>
+<p><strong>Single-page application routing.</strong> When the route changes, announce the new page to screen readers. Set focus to the main content heading or use an <code>aria-live</code> region to announce the page title. Without this, screen reader users have no indication that navigation occurred.</p>
+<h2>Testing Accessibility: Automated and Manual Approaches</h2>
+<p>Automated testing catches approximately 30 to 40 percent of accessibility issues. The remainder requires manual testing and assistive technology verification.</p>
+<p><strong>Automated testing tools.</strong> Integrate axe-core into your CI/CD pipeline using @axe-core/playwright or jest-axe. Run automated checks on every pull request. axe-core identifies missing alt text, insufficient color contrast, missing form labels, and incorrect ARIA usage. Lighthouse accessibility audits provide a complementary check. Set a minimum score threshold (we recommend 90) and fail the build if it drops below.</p>
+<p><strong>Keyboard testing (manual, 15 minutes per page).</strong> Tab through every interactive element on the page. Verify that focus is visible, that the tab order is logical, that all functionality is operable without a mouse, and that no keyboard traps exist (places where Tab cannot escape). This single test catches more usability issues than any automated tool.</p>
+<p><strong>Screen reader testing.</strong> Test with at least two screen readers: VoiceOver on macOS (free, built into the OS) and NVDA on Windows (free, open-source). Navigate the page using only the screen reader and keyboard. Listen for: correct heading announcements, meaningful link text (not &ldquo;click here&rdquo;), form label associations, dynamic content updates, and image descriptions.</p>
+<p><strong>Assistive technology matrix.</strong> For thorough coverage, test these combinations:
+- VoiceOver + Safari on macOS
+- NVDA + Chrome on Windows
+- TalkBack + Chrome on Android
+- VoiceOver + Safari on iOS</p>
+<p>You do not need to test every combination on every sprint. Rotate through them, covering each combination at least once per quarter.</p>
+<h2>Building Accessibility Into Your Development Workflow</h2>
+<p>Accessibility is sustainable only when it is integrated into existing workflows rather than treated as a separate workstream.</p>
+<p><strong>Design phase.</strong> Designers annotate mockups with accessibility information: heading levels, alt text for images, focus order for interactive elements, and color contrast ratios. Use a Figma plugin like Stark or A11y Annotation Kit. This takes 15 to 20 minutes per screen and saves hours of developer guesswork.</p>
+<p><strong>Development phase.</strong> Use an ESLint plugin like eslint-plugin-jsx-a11y to catch common issues during development. Developers run keyboard tests on their own components before requesting code review. The pull request template includes an accessibility checklist: semantic HTML used, keyboard navigation works, ARIA attributes correct, focus management handled.</p>
+<p><strong>Code review phase.</strong> At least one reviewer checks accessibility concerns. Look for: custom components that should be native elements, missing or incorrect ARIA attributes, click handlers without keyboard equivalents, and dynamic content without screen reader announcements.</p>
+<p><strong>QA phase.</strong> Dedicated accessibility testing occurs before each release. Run automated scans, perform keyboard testing on all new or modified pages, and conduct screen reader testing on critical user flows (sign-up, core feature, checkout).</p>
+<p><strong>Ongoing monitoring.</strong> Schedule quarterly accessibility audits covering the full application. Track the count of known accessibility issues over time. Set a target: no critical (Level A) violations, fewer than five moderate (Level AA) violations at any time.</p>
+<h2>Common Mistakes and How to Avoid Them</h2>
+<p><strong>Overusing ARIA.</strong> The first rule of ARIA is: do not use ARIA if you can use native HTML. A <code>&lt;button&gt;</code> is always better than <code>&lt;div role="button"&gt;</code>. ARIA should extend HTML semantics, not replace them.</p>
+<p><strong>Hiding content from screen readers with display:none when it should be visually hidden.</strong> Use a &ldquo;visually hidden&rdquo; CSS class (position: absolute, clip: rect(0,0,0,0), width: 1px, height: 1px, overflow: hidden) for content that screen readers need but sighted users do not.</p>
+<p><strong>Relying solely on color to convey information.</strong> A form field with a red border to indicate an error is invisible to color-blind users. Always pair color with text, icons, or patterns.</p>
+<p><strong>Placeholder text as labels.</strong> Placeholder text disappears when the user starts typing, removing the only indication of what the field expects. Always use a visible <code>&lt;label&gt;</code> element.</p>
+<p>Accessibility is an ongoing practice, not a one-time project. The teams that build it into their process from day one spend less total effort and produce fundamentally better products.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If your product needs to meet accessibility standards or you want to build accessibility into your development process from the ground up, <a href="/contact.html">get in touch</a>. The Proper Motion Company helps teams build software that works for everyone.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Accessibility in Software Design: Requirements and Implementation",
@@ -163,7 +84,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/accessibility-in-software-design-requirements-and-implementation/",
   "articleSection": "design"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

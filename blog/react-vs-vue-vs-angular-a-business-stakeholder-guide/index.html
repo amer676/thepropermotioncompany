@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,151 +6,60 @@
   <title>React vs Vue vs Angular: A Business Stakeholder Guide</title>
   <meta name="description" content="Comparing frontend frameworks from a business perspective, not a developer perspective.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/react-vs-vue-vs-angular-a-business-stakeholder-guide/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="React vs Vue vs Angular: A Business Stakeholder Guide">
-  <meta property="og:description" content="Comparing frontend frameworks from a business perspective, not a developer perspective.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/react-vs-vue-vs-angular-a-business-stakeholder-guide/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="React vs Vue vs Angular: A Business Stakeholder Guide">
-  <meta name="twitter:description" content="Comparing frontend frameworks from a business perspective, not a developer perspective.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="React vs Vue vs Angular: A Business Stakeholder Guide"><meta property="og:description" content="Comparing frontend frameworks from a business perspective, not a developer perspective."><meta property="og:url" content="https://thepropermotioncompany.com/blog/react-vs-vue-vs-angular-a-business-stakeholder-guide/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="React vs Vue vs Angular: A Business Stakeholder Guide"><meta name="twitter:description" content="Comparing frontend frameworks from a business perspective, not a developer perspective."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">February 08, 2025</span>
-              <span class="blog-card-read">7 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">frontend</span>
-            </div>
-            <h1 class="blog-post-title">React vs Vue vs Angular: A Business Stakeholder Guide</h1>
-            <p class="blog-post-desc">Comparing frontend frameworks from a business perspective, not a developer perspective.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>React vs Vue vs Angular: A Business Stakeholder Guide</h1>
-<p>The conventional wisdom about react vs vue vs is about five years out of date. Cloud infrastructure, AI capabilities, and development tooling have changed the calculus significantly. Here is what the landscape actually looks like today.</p>
-<p>Comparing frontend frameworks from a business perspective, not a developer perspective.</p>
-<h2>The Build Process</h2>
-<p>Building react vs vue vs well requires discipline in a few specific areas.</p>
-<p><strong>Requirements documentation</strong> does not need to be a 50-page spec. It needs to be specific enough that two different developers reading it would build the same thing. User stories with acceptance criteria work well for most projects.</p>
-<p><strong>Design before development.</strong> Wireframes and prototypes are cheap to change. Production code is expensive to change. Invest a week in design review before starting development. This single practice prevents more problems than any other.</p>
-<p><strong>Weekly delivery cadence.</strong> Ship something testable every week. Not a demo — a working piece of software that a real person can use and give feedback on. Weekly delivery creates accountability and catches problems early.</p>
-<p><strong>Automated testing</strong> is an investment that pays for itself within weeks. Manual testing does not scale. Every feature should have tests that run automatically on every code change. This is what allows you to move fast without breaking things.</p>
-<h2>A Decision Framework for React Vs Vue Vs</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality react vs vue vs typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for react vs vue vs.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>We worked with a SaaS startup that had been in development for fourteen months with no launch in sight. Their team kept adding features because they were afraid the product was not ready. We helped them cut scope to the core workflow, launched in six weeks, and their first paying customers told them exactly what to build next.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a react vs vue vs project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>What Most Teams Get Wrong About React Vs Vue Vs</h2>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For react vs vue vs, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning react vs vue vs.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<h2>When React Vs Vue Vs Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about react vs vue vs, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">February 08, 2025</span><span class="blog-card-read">8 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">frontend</span></div><h1 class="blog-post-title">React vs Vue vs Angular: A Business Stakeholder Guide</h1><p class="blog-post-desc">Comparing frontend frameworks from a business perspective, not a developer perspective.</p></div><div class="blog-post-content"><h1>React vs Vue vs Angular: A Business Stakeholder Guide</h1>
+<p>If you are a business leader who has been told your company needs to choose a frontend framework, the conversation probably went something like this: your engineering team presented three options with strong opinions, used jargon you did not fully follow, and asked you to approve a direction. You nodded, asked a few questions, and either deferred to the team&rsquo;s preference or picked the name you had heard most often.</p>
+<p>This guide is for you. Not for the developers who will write the code, but for the stakeholders who need to understand how this decision affects hiring costs, development speed, long-term maintenance, and your ability to change direction if something goes wrong. Frontend framework choice is a business decision disguised as a technical one, and the factors that matter most are not the ones that dominate developer debates.</p>
+<h2>What a Frontend Framework Actually Does for Your Business</h2>
+<p>A frontend framework is the foundation on which your application&rsquo;s user interface is built. Every button, form, page transition, and interactive element your users see is constructed using this framework. Choosing a framework is like choosing the structural system for a building — steel frame, wood frame, or concrete. Each is capable, but each has different cost profiles, construction speeds, and labor market implications.</p>
+<p>React, Vue, and Angular are the three dominant choices. They all produce the same end result: an interactive web application running in the user&rsquo;s browser. The differences are in how developers build with them, which affects how fast features can be delivered, how many bugs are introduced, and how easy it is to find and onboard developers.</p>
+<p>None of these frameworks will be visible to your users. A user cannot tell whether an application is built with React, Vue, or Angular. The choice affects your internal costs and velocity, not your customer experience directly. This is important because it means the &ldquo;best&rdquo; framework is the one that minimizes your total cost of development over the product&rsquo;s lifetime — hiring, building, maintaining, and eventually migrating.</p>
+<h2>Hiring Pool and Talent Costs</h2>
+<p>The single most impactful business factor in framework selection is the hiring market. A technically superior framework that nobody in your region knows how to use is worse than an average framework with a large talent pool.</p>
+<p>React has the largest developer community by a significant margin. As of the latest developer surveys, React is used by roughly 40 percent of frontend developers worldwide. This means more candidates in your hiring pipeline, more competitive salary dynamics (high demand but also high supply), and a lower risk of being unable to replace a departing developer. React developers are available at every experience level, from junior to principal engineer.</p>
+<p>Angular has a strong presence in enterprise environments. Developers with Angular experience tend to come from larger organizations and are comfortable with structured, opinionated codebases. The Angular talent pool is smaller than React&rsquo;s but still substantial. Angular developers often command slightly higher salaries because the framework&rsquo;s learning curve is steeper, which means fewer junior developers have it on their resume.</p>
+<p>Vue has the smallest talent pool of the three in most Western markets, though it has significant adoption in China and parts of Asia. Vue developers are often self-taught or come from agencies and smaller companies. If you are building a team in a major tech hub (San Francisco, New York, London, Berlin), finding Vue developers is feasible. In smaller markets, it may take significantly longer to fill positions.</p>
+<p>The practical recommendation: if hiring speed and cost predictability are priorities, React minimizes hiring risk. If you are building an enterprise application and value developers with experience in structured environments, Angular is a reasonable choice. If your existing team already knows Vue and you are not planning to scale the team significantly, Vue&rsquo;s smaller talent pool is less of a concern.</p>
+<h2>Development Speed and Time to Market</h2>
+<p>How quickly your team can build features depends on the framework&rsquo;s learning curve, its ecosystem of pre-built components, and how much boilerplate is required to add functionality.</p>
+<p>Vue has the gentlest learning curve. A developer who knows HTML, CSS, and JavaScript can become productive in Vue within one to two weeks. Vue&rsquo;s single-file components — where template, logic, and styles live in one file — are intuitive and reduce context switching. For projects where you need to move fast and your team includes developers who are not frontend specialists, Vue reduces ramp-up time.</p>
+<p>React has a moderate learning curve. The core library is small and learnable in a week, but React&rsquo;s ecosystem requires additional decisions: state management (Redux, Zustand, Jotai, Context API), routing (React Router, TanStack Router), form handling (React Hook Form, Formik), and styling (CSS Modules, Tailwind, styled-components). A new React developer can write components quickly but needs time to learn the ecosystem and the team&rsquo;s chosen conventions. This decision overhead can slow down the start of a project, but once patterns are established, experienced React teams move quickly.</p>
+<p>Angular has the steepest learning curve. Angular is not just a view library — it is a complete framework that includes routing, forms, HTTP client, dependency injection, and a module system. A developer new to Angular needs four to eight weeks to become productive. However, once learned, Angular&rsquo;s opinionated structure means developers spend less time making architectural decisions and more time writing features. Large teams benefit from Angular&rsquo;s consistency: a new developer joining an Angular project can navigate the codebase quickly because Angular projects are structured similarly.</p>
+<p>For a new product where time to market is critical and the team is small (two to five developers), Vue or React will get you to launch faster. For a large application with a team of ten or more developers that will be maintained for years, Angular&rsquo;s upfront investment in learning pays back through consistency.</p>
+<h2>Long-Term Maintenance and Technical Debt</h2>
+<p>Applications live for years. The framework choice affects how expensive they are to maintain over that lifespan.</p>
+<p>Angular has the most structured upgrade path. Google releases a new major version of Angular roughly annually, and each release includes automated migration tools (schematics) that update your codebase. Breaking changes are documented with clear migration guides. For an enterprise application with a five- to ten-year expected lifespan, Angular&rsquo;s predictable upgrade cycle reduces maintenance risk.</p>
+<p>React&rsquo;s upgrade path has historically been smooth within major versions but occasionally disruptive across major versions (the shift from class components to hooks, for example, changed the recommended coding style without breaking existing code). React&rsquo;s backward compatibility record is strong — code written five years ago still runs today — but the ecosystem evolves quickly, and keeping up with best practices requires ongoing investment.</p>
+<p>Vue had a significant breaking change between version 2 and version 3 that required substantial migration effort for large codebases. The Vue team has since stabilized, and Vue 3 is the clear standard going forward, but the version 2 to 3 migration experience left some organizations cautious. Vue&rsquo;s ecosystem is smaller, which means some third-party libraries are maintained by single developers — a risk if that developer abandons the project.</p>
+<p>For all three frameworks, the biggest maintenance cost is not the framework itself but the code your team writes on top of it. A well-structured React application is cheaper to maintain than a poorly structured Angular application. The framework&rsquo;s inherent qualities matter less than your team&rsquo;s engineering discipline.</p>
+<h2>Integration With Your Existing Technology Stack</h2>
+<p>Your frontend framework does not exist in isolation. It connects to your backend API, your authentication system, your analytics tools, and your deployment infrastructure. Compatibility with your existing stack is a practical consideration.</p>
+<p>If your backend is a .NET or Java enterprise stack, Angular is a natural fit. The TypeScript-first approach aligns with the type-safety expectations of enterprise backend teams, and Angular&rsquo;s structured patterns mirror the architecture of enterprise backend frameworks. The developer profile that writes C# or Java services is often comfortable with Angular&rsquo;s dependency injection and module system.</p>
+<p>If your backend is Node.js, Python, or Ruby, React is the most common pairing. The JavaScript ecosystem overlap means frontend and backend developers share tools (npm, TypeScript, testing libraries), which simplifies the development environment and reduces context switching.</p>
+<p>If you are building a content-heavy site with a CMS backend (WordPress, Strapi, Sanity), Vue integrates naturally through frameworks like Nuxt, which provides server-side rendering and static site generation with minimal configuration. React&rsquo;s equivalent is Next.js, which is equally capable. Angular&rsquo;s SSR story has improved but remains less mature for content-centric applications.</p>
+<p>For mobile applications, React has a clear advantage through React Native, which lets your team share code and skills between web and mobile. Vue has limited mobile options (Capacitor wrapping a web view). Angular has Ionic, which follows a similar wrapping approach. If a native mobile application is on your roadmap within the next two years, React&rsquo;s ecosystem advantage is significant.</p>
+<h2>Making the Decision: A Framework for Framework Choice</h2>
+<p>Rather than asking &ldquo;which framework is best,&rdquo; ask these five questions and let the answers guide your choice.</p>
+<p>First, what does your existing team know? If you have three developers who are productive in Vue, switching to React for a hypothetical future hiring advantage wastes their existing expertise and adds months to your timeline.</p>
+<p>Second, how large will the development team be in two years? Teams of two to five developers benefit from Vue&rsquo;s simplicity or React&rsquo;s flexibility. Teams of ten or more benefit from Angular&rsquo;s enforced structure that keeps code consistent across many contributors.</p>
+<p>Third, what is the expected lifespan of this application? A prototype or MVP that might be rebuilt in a year should use whatever your team ships fastest with. An enterprise application expected to run for five or more years should weight maintainability and upgrade paths more heavily.</p>
+<p>Fourth, do you need mobile applications? If yes and your budget favors code sharing between web and mobile, React plus React Native is the strongest option.</p>
+<p>Fifth, what is your risk tolerance? React is the safest bet by market share and ecosystem size. Angular is the safest bet by governance structure (backed by Google with predictable releases). Vue carries slightly more risk due to its smaller ecosystem and community governance model, but it is a mature and stable framework used in production by many organizations.</p>
+<p>There is no universally correct answer. There is only the answer that best fits your constraints. If your team cannot articulate why a specific framework matches your business constraints — not just their personal preferences — push back until they can.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Frontend framework selection affects your hiring pipeline, development velocity, and maintenance costs for years. It deserves the same analytical rigor you apply to other long-term business investments.</p>
+<p>If you are facing a technology choice and want an objective assessment based on your specific business constraints rather than developer preferences, <a href="/contact.html">schedule a conversation with our team</a>. We help business leaders make technology decisions that serve the business, not the resume.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "React vs Vue vs Angular: A Business Stakeholder Guide",
@@ -172,7 +79,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/react-vs-vue-vs-angular-a-business-stakeholder-guide/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

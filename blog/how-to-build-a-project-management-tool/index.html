@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,137 +6,60 @@
   <title>How to Build a Project Management Tool | Proper Motion</title>
   <meta name="description" content="How to Build a Project Management Tool. project management tool Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/how-to-build-a-project-management-tool/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="How to Build a Project Management Tool | Proper Motion">
-  <meta property="og:description" content="How to Build a Project Management Tool. project management tool Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-build-a-project-management-tool/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How to Build a Project Management Tool | Proper Motion">
-  <meta name="twitter:description" content="How to Build a Project Management Tool. project management tool Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="How to Build a Project Management Tool | Proper Motion"><meta property="og:description" content="How to Build a Project Management Tool. project management tool Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/how-to-build-a-project-management-tool/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Build a Project Management Tool | Proper Motion"><meta name="twitter:description" content="How to Build a Project Management Tool. project management tool Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">April 26, 2025</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">project management</span>
-            </div>
-            <h1 class="blog-post-title">How to Build a Project Management Tool</h1>
-            <p class="blog-post-desc">How to Build a Project Management Tool. project management tool Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>How to Build a Project Management Tool</h1>
-<p>If you are researching how to build a, you have probably noticed that most guides online are either too surface-level to be useful or too technical to be actionable. This guide sits in the middle — practical enough to inform real decisions, detailed enough to be worth your time.</p>
-<p>project management tool</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for how to build a.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<h2>What Most Teams Get Wrong About How To Build A</h2>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For how to build a, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For how to build a, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning how to build a.</p>
-<h2>A Decision Framework for How To Build A</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality how to build a typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>When How To Build A Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>One of our clients, a real estate investment firm, was manually scoring leads in spreadsheets. Their sales team spent more time on data entry than on selling. We built an automated scoring system that ranked leads by conversion probability. Within 90 days, their close rate improved significantly — not because the AI was magic, but because the sales team could finally focus on the leads that mattered.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Technical Considerations</h2>
-<p>The architecture decisions you make early in a how to build a project have outsized impact on long-term costs and capabilities.</p>
-<p><strong>Data model design</strong> matters more than most teams realize. A well-designed data model makes features easier to build, queries faster to run, and integrations simpler to maintain. A poorly designed one creates friction that compounds with every new feature.</p>
-<p><strong>API design</strong> determines how easily your system can evolve and integrate with other tools. REST is the safe default for most business applications. GraphQL makes sense when your frontend needs flexibility in data fetching. The choice should be driven by your specific integration requirements, not industry trends.</p>
-<p><strong>Authentication and authorization</strong> need to be right from the start. Retrofitting security is expensive and risky. Plan your permission model before you build your first feature, even if it seems like overkill for the initial scope.</p>
-<p><strong>Monitoring and observability</strong> are not optional extras. You need to know when something breaks before your users tell you. Set up error tracking, performance monitoring, and uptime alerting from day one.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about how to build a, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">April 26, 2025</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">project management</span></div><h1 class="blog-post-title">How to Build a Project Management Tool</h1><p class="blog-post-desc">How to Build a Project Management Tool. project management tool Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>How to Build a Project Management Tool</h1>
+<p>The project management software market is enormous — Jira, Asana, Monday, Linear, Notion, ClickUp, Basecamp, and dozens of others. And yet, teams continue to build custom project management tools. Not because they want to compete with Jira, but because their work does not fit Jira&rsquo;s assumptions. A construction company managing permits, inspections, and subcontractor schedules does not think in sprints. A law firm tracking matter deadlines, filings, and billable hours does not think in story points. A video production studio coordinating shoots, post-production, and client reviews does not think in kanban columns.</p>
+<p>When the domain has enough specific structure that a generic tool requires more configuration than it saves, a custom project management tool becomes the right investment. This post covers the core systems you need to build, the data model decisions that determine flexibility, and the features that separate a usable tool from one that collects dust.</p>
+<h2>The Data Model: Projects, Tasks, and the Things Between Them</h2>
+<p>Every project management tool starts with a deceptively simple question: what is a task? In a generic tool, a task is a flat record with a title, description, assignee, status, and due date. In a domain-specific tool, a task carries the structure of the domain itself.</p>
+<p>For a construction project management tool, a &ldquo;task&rdquo; might be a permit application that has a submission date, a jurisdiction, an expected review period, a set of required attachments, and dependencies on other permits. For a law firm, a &ldquo;task&rdquo; might be a filing that has a court, a deadline type (statutory vs. court-ordered, with different extension rules), related documents, and associated billable time.</p>
+<p>The data model should accommodate this domain structure without becoming rigid. A practical approach uses three layers:</p>
+<p><strong>Core entities</strong> are common across all use cases: Project, Task, User, Comment, Attachment, Activity. These have fixed schemas with well-defined relationships.</p>
+<p><strong>Custom fields</strong> extend core entities with domain-specific attributes. A custom field definition specifies a name, data type (text, number, date, single-select, multi-select, user reference), and which entity type it belongs to. Field values are stored in a separate table, linked to the entity by a foreign key. This EAV (Entity-Attribute-Value) pattern is flexible but requires careful indexing — a GIN index on a JSONB column in PostgreSQL is more practical than a traditional EAV table for most applications.</p>
+<p><strong>Workflow definitions</strong> govern how tasks move through states. Rather than hardcoding a status enum (To Do, In Progress, Done), define workflows as state machines: a set of states, a set of transitions between states, and guards on each transition (which roles can trigger it, what fields must be populated). A construction tool might have: Draft -&gt; Submitted -&gt; Under Review -&gt; Approved / Revision Required. A legal tool might have: Drafted -&gt; Internal Review -&gt; Filed -&gt; Acknowledged -&gt; Closed. The workflow engine evaluates transition guards and records the full state-change history for audit purposes.</p>
+<h2>Dependencies, Scheduling, and the Critical Path</h2>
+<p>For many domains, the relationships between tasks matter more than the tasks themselves. A permit cannot be submitted until the engineering drawings are complete. Electrical rough-in cannot start until framing passes inspection. Post-production cannot begin until all footage is shot.</p>
+<p>Task dependencies come in four types (from project management theory):
+- <strong>Finish-to-Start (FS):</strong> Task B cannot start until Task A finishes. The most common type.
+- <strong>Start-to-Start (SS):</strong> Task B cannot start until Task A starts.
+- <strong>Finish-to-Finish (FF):</strong> Task B cannot finish until Task A finishes.
+- <strong>Start-to-Finish (SF):</strong> Task B cannot finish until Task A starts. Rare in practice.</p>
+<p>The dependency graph enables two critical features:</p>
+<p><strong>Automatic scheduling.</strong> Given task durations and dependencies, the system can compute the earliest possible start date for each task. When a task slips (the actual duration exceeds the estimated duration), all downstream tasks are automatically rescheduled. This forward-scheduling algorithm is a topological sort of the dependency graph combined with date arithmetic.</p>
+<p><strong>Critical path identification.</strong> The critical path is the longest chain of dependent tasks through the project. Any delay on a critical-path task delays the entire project. Highlighting the critical path on a Gantt chart (or a timeline view appropriate to the domain) focuses attention on the tasks that actually determine delivery date.</p>
+<p>Implementing the Gantt chart itself is a significant frontend effort. Libraries like DHTMLX Gantt, Bryntum, or Frappe Gantt provide the rendering, but the interaction design — dragging to resize tasks, drawing dependency arrows, zooming between day/week/month views — requires thoughtful customization to feel natural in your specific domain.</p>
+<h2>Real-Time Collaboration and Activity Streams</h2>
+<p>Project management is inherently collaborative. Multiple people update the same project, often simultaneously. The system must handle this gracefully.</p>
+<p><strong>Optimistic UI updates</strong> let users see their changes immediately without waiting for a server round trip. The client applies the change locally, sends it to the server, and reconciles if the server rejects it. For most project management operations (updating a status, adding a comment, changing an assignee), conflicts are rare and resolution is straightforward: last-write-wins per field.</p>
+<p><strong>Real-time updates</strong> via WebSocket connections (or Server-Sent Events for simpler architectures) push changes from one user to all other users viewing the same project. When a team member marks a task as complete, other users&rsquo; task boards update within seconds. The implementation is a pub/sub pattern: each project is a channel, connected clients subscribe to the channel, and any mutation publishes an update event.</p>
+<p><strong>Activity streams</strong> record every change as a structured event: &ldquo;Sarah changed the status of &lsquo;Foundation Pour&rsquo; from &lsquo;Scheduled&rsquo; to &lsquo;Completed&rsquo; at 2:14 PM.&rdquo; The activity stream serves three purposes: it provides a chronological narrative of project progress, it enables undo (by replaying events in reverse), and it satisfies audit requirements for regulated industries.</p>
+<p>The activity stream should be filterable: show only status changes, show only comments, show changes by a specific team member, show changes to a specific task. For long-running projects, the activity stream can accumulate thousands of entries; pagination and efficient time-range queries (a BRIN index on the timestamp column in PostgreSQL) keep performance manageable.</p>
+<h2>Notifications and Escalation</h2>
+<p>A project management tool generates a firehose of events. The notification system&rsquo;s job is to filter that firehose down to the information each user actually needs.</p>
+<p><strong>Subscription-based notifications:</strong> Users are automatically subscribed to tasks they are assigned to, tasks they created, and tasks they have commented on. They can manually subscribe to additional tasks or projects. Each event is evaluated against each user&rsquo;s subscriptions to determine who should be notified.</p>
+<p><strong>Notification channels:</strong> In-app notifications (a bell icon with an unread count), email digests (aggregated notifications sent hourly or daily rather than per-event), and push notifications (for mobile users who need time-sensitive alerts). Users should control which channels they receive and for which event types.</p>
+<p><strong>Escalation rules</strong> handle the critical case: a task is overdue and no one is acting on it. Escalation is a chain: 24 hours overdue, notify the assignee. 48 hours overdue, notify the assignee&rsquo;s manager. 72 hours overdue, notify the project owner. Each step in the chain fires only if the task remains in the triggering state (not updated, not reassigned). Escalation rules are implemented as scheduled jobs that query for tasks matching the trigger criteria.</p>
+<p><strong>Digest intelligence:</strong> A daily digest email that simply lists all 47 changes from the previous day is not useful. A digest that groups changes by project, highlights overdue items, and surfaces tasks that need the user&rsquo;s action is genuinely valuable. The digest template should be structured around &ldquo;things you need to act on&rdquo; rather than &ldquo;things that happened.&rdquo;</p>
+<h2>Reporting and Visibility</h2>
+<p>Every stakeholder needs a different view of project status.</p>
+<p><strong>For team members:</strong> A personal dashboard showing their assigned tasks sorted by due date, grouped by project. Tasks overdue are highlighted. Tasks due this week are prominent. Tasks due later are present but de-emphasized.</p>
+<p><strong>For project managers:</strong> A project-level dashboard showing overall progress (percentage of tasks completed, weighted by estimated effort), the current critical path, a burndown or burnup chart (depending on the methodology), and a risk register — tasks that are approaching their due date with no recent activity.</p>
+<p><strong>For executives:</strong> A portfolio view showing all active projects, their health status (on track, at risk, off track — computed from schedule variance and the ratio of overdue to total tasks), and resource allocation (how many hours of each team member are committed across projects).</p>
+<p><strong>Custom reports</strong> should be buildable without developer intervention. A report builder that lets users select dimensions (project, assignee, status, custom fields), measures (count, sum of estimated hours, average days in status), filters, and grouping levels covers most ad-hoc reporting needs. The implementation is a dynamic SQL query builder with parameterized filters — carefully sanitized to prevent injection.</p>
+<p>Export to CSV, Excel, and PDF ensures reports can be shared with stakeholders who do not have access to the tool.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If your team&rsquo;s work does not fit the assumptions of off-the-shelf project management tools, <a href="/contact.html">let us discuss</a> what a custom solution built around your actual workflow would look like. We have built project management systems for industries from construction to legal to creative production, and the common thread is always the same: the tool should adapt to the work, not the other way around.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Build a Project Management Tool",
@@ -158,7 +79,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/how-to-build-a-project-management-tool/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

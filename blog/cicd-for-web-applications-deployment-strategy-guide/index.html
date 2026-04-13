@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,145 +6,57 @@
   <title>CI/CD for Web Applications: Deployment Strategy Guide</title>
   <meta name="description" content="CI/CD for Web Applications: Deployment Strategy Guide. CI/CD deployment Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/cicd-for-web-applications-deployment-strategy-guide/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="CI/CD for Web Applications: Deployment Strategy Guide">
-  <meta property="og:description" content="CI/CD for Web Applications: Deployment Strategy Guide. CI/CD deployment Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/cicd-for-web-applications-deployment-strategy-guide/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CI/CD for Web Applications: Deployment Strategy Guide">
-  <meta name="twitter:description" content="CI/CD for Web Applications: Deployment Strategy Guide. CI/CD deployment Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="CI/CD for Web Applications: Deployment Strategy Guide"><meta property="og:description" content="CI/CD for Web Applications: Deployment Strategy Guide. CI/CD deployment Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/cicd-for-web-applications-deployment-strategy-guide/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="CI/CD for Web Applications: Deployment Strategy Guide"><meta name="twitter:description" content="CI/CD for Web Applications: Deployment Strategy Guide. CI/CD deployment Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">September 14, 2025</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">DevOps</span>
-            </div>
-            <h1 class="blog-post-title">CI/CD for Web Applications: Deployment Strategy Guide</h1>
-            <p class="blog-post-desc">CI/CD for Web Applications: Deployment Strategy Guide. CI/CD deployment Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>CI/CD for Web Applications: Deployment Strategy Guide</h1>
-<p>Most content about ci/cd for web applications: is written by people who have never done it. They aggregate other articles, add a few stock photos, and call it a guide. This is different. Every recommendation here comes from shipping real software.</p>
-<p>CI/CD deployment</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A professional services firm was running their client communication through a combination of email, Slack, shared drives, and a CRM that nobody updated. Their clients were frustrated. Their team was drowning. We built a single portal that unified everything. The first month after launch, client satisfaction scores jumped and internal time spent on admin tasks dropped measurably.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>The Build Process</h2>
-<p>Building ci/cd for web applications: well requires discipline in a few specific areas.</p>
-<p><strong>Requirements documentation</strong> does not need to be a 50-page spec. It needs to be specific enough that two different developers reading it would build the same thing. User stories with acceptance criteria work well for most projects.</p>
-<p><strong>Design before development.</strong> Wireframes and prototypes are cheap to change. Production code is expensive to change. Invest a week in design review before starting development. This single practice prevents more problems than any other.</p>
-<p><strong>Weekly delivery cadence.</strong> Ship something testable every week. Not a demo — a working piece of software that a real person can use and give feedback on. Weekly delivery creates accountability and catches problems early.</p>
-<p><strong>Automated testing</strong> is an investment that pays for itself within weeks. Manual testing does not scale. Every feature should have tests that run automatically on every code change. This is what allows you to move fast without breaking things.</p>
-<h2>When Ci/Cd For Web Applications: Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>A Decision Framework for Ci/Cd For Web Applications:</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality ci/cd for web applications: typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a ci/cd for web applications: project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for ci/cd for web applications:.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<h2>Taking Action</h2>
-<p>Reading about ci/cd for web applications: is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">September 14, 2025</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">DevOps</span></div><h1 class="blog-post-title">CI/CD for Web Applications: Deployment Strategy Guide</h1><p class="blog-post-desc">CI/CD for Web Applications: Deployment Strategy Guide. CI/CD deployment Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>CI/CD for Web Applications: Deployment Strategy Guide</h1>
+<p>Continuous integration and continuous deployment are no longer optional for serious web applications. The gap between teams that deploy multiple times per day with confidence and teams that dread their monthly release window isn&rsquo;t talent &ndash; it&rsquo;s pipeline maturity. A well-designed CI/CD pipeline transforms deployment from a stressful, error-prone event into a routine, automated process that lets you ship faster while breaking less. This guide covers the practical decisions involved in building that pipeline for web applications.</p>
+<h2>Designing Your Build and Test Pipeline</h2>
+<p>A CI pipeline has one job: determine whether a code change is safe to merge and deploy. Every step in the pipeline should serve that goal. Steps that don&rsquo;t contribute to that judgment are waste.</p>
+<p>Start with the basics: install dependencies, compile or transpile code, run linters and formatters, execute tests, and build the deployable artifact. Each step should fail fast &ndash; put the fastest checks first so developers get feedback in seconds rather than waiting for a 20-minute test suite to discover a syntax error.</p>
+<p>For a typical modern web application, a good pipeline sequence looks like this. First, install dependencies from a lockfile (not the latest resolution &ndash; you want deterministic builds). Second, run static analysis: TypeScript type checking, ESLint, Prettier format verification. These catch obvious issues in under a minute. Third, run unit tests. For a well-structured application, these should complete in one to three minutes. Fourth, run integration tests that verify API routes, database queries, and service interactions. Fifth, build the production artifact &ndash; the Docker image, the bundled static files, or whatever your deployment target requires. Sixth, run a small set of smoke tests against the built artifact to verify it starts correctly and serves basic requests.</p>
+<p>Cache aggressively. Node modules, build caches, Docker layer caches, and test fixtures should persist between pipeline runs. GitHub Actions caches, GitLab CI caches, and CircleCI workspaces all support this. A pipeline that reinstalls 2,000 npm packages on every run is wasting three to five minutes per build.</p>
+<p>Parallelize where possible. Unit tests and integration tests can run simultaneously on different runners. Linting and type checking can run in parallel with each other. The build step typically depends on linting and type checking succeeding, so structure your pipeline as a directed acyclic graph rather than a linear sequence.</p>
+<h2>Branch Strategy and Merge Policies</h2>
+<p>Your branching strategy determines how code flows from a developer&rsquo;s machine to production, and it has a direct impact on deployment frequency and integration risk.</p>
+<p>Trunk-based development &ndash; where developers merge to the main branch at least once per day, typically multiple times &ndash; is the highest-performing pattern according to the DORA research. Short-lived feature branches (lasting hours to two days) get rebased onto main, reviewed, and merged quickly. The main branch is always deployable.</p>
+<p>This requires two supporting practices. First, feature flags to hide incomplete work from users. A half-finished feature merged behind a flag doesn&rsquo;t affect production behavior. Tools like LaunchDarkly, Unleash, or even a simple environment variable can manage flags. Second, comprehensive automated testing so that merging to main doesn&rsquo;t require manual verification.</p>
+<p>If trunk-based development feels too aggressive for your team&rsquo;s current maturity level, use short-lived feature branches with a strict two-day maximum lifetime. Enforce this socially and through tooling &ndash; a dashboard showing open PR age creates healthy pressure. Branches older than two days should be either merged or broken into smaller pieces.</p>
+<p>Protect the main branch with merge requirements: passing CI pipeline, at least one code review approval, no merge conflicts, and up-to-date with the latest main branch commits (requiring a rebase before merge ensures the CI results are accurate for the actual merged state).</p>
+<h2>Environment Architecture: Preview, Staging, Production</h2>
+<p>Most web applications benefit from three environment tiers, each serving a different purpose.</p>
+<p>Preview environments (also called ephemeral or per-PR environments) spin up automatically for each pull request. They give reviewers a deployed version of the changes to interact with, not just a code diff to read. Vercel, Netlify, and Railway provide this natively for their platforms. For custom infrastructure, you can create preview environments using Docker Compose on a shared server, Kubernetes namespaces, or lightweight VMs.</p>
+<p>Preview environments should use production-like configuration but with isolated databases seeded with test data. They don&rsquo;t need to be performance-tuned, but they should accurately reflect the application&rsquo;s behavior. Every PR description should include a link to its preview deployment.</p>
+<p>Staging mirrors production as closely as possible: same infrastructure provider, same database engine, same environment variables (with different values), same monitoring. Its purpose is to catch configuration and infrastructure issues that don&rsquo;t appear in preview environments. Deploy to staging automatically when the main branch is updated. Run your end-to-end test suite against staging after each deployment.</p>
+<p>Production receives deployments that have passed staging validation. The deployment mechanism should be identical between staging and production &ndash; only the configuration differs. If you deploy to staging with a Docker image and a Helm chart, you deploy to production with the same Docker image and the same Helm chart, just pointed at different infrastructure.</p>
+<h2>Deployment Strategies: Zero Downtime and Safe Rollbacks</h2>
+<p>How you roll out code to production determines your blast radius when something goes wrong. The deployment strategy you choose should match your risk tolerance and your application&rsquo;s architecture.</p>
+<p>Rolling deployments replace instances of the old version with the new version one at a time (or in small batches). At any point during the rollout, some instances serve the old version and others serve the new. This works well for stateless web servers behind a load balancer. Kubernetes rolling deployments handle this natively with configurable parameters for max surge (how many extra instances to create during the rollout) and max unavailable (how many instances can be down simultaneously).</p>
+<p>Blue-green deployments maintain two identical production environments. One (blue) serves live traffic while the other (green) is updated with the new version. After the green environment passes health checks, traffic switches from blue to green. If the new version has issues, traffic switches back to blue instantly. The downside is cost: you need double the infrastructure during the transition, though cloud platforms make this practical for short deployment windows.</p>
+<p>Canary deployments route a small percentage of traffic (typically 1 to 5 percent) to the new version while the majority continues on the old version. If error rates, latency, or other health metrics degrade for the canary cohort, the deployment is automatically rolled back. If metrics remain healthy, traffic gradually shifts to the new version over minutes to hours. This provides the safest rollout for high-traffic applications. AWS App Mesh, Istio, and Argo Rollouts support canary deployments with automated metric analysis.</p>
+<p>For all strategies, define health check endpoints that verify the application is genuinely functional, not just that the process is running. A health check should verify database connectivity, cache availability, and any critical external service dependencies. Use readiness probes (is this instance ready to receive traffic?) separately from liveness probes (is this instance alive at all?).</p>
+<h2>Database Migrations in a CI/CD World</h2>
+<p>Database schema changes are the trickiest part of continuous deployment because they&rsquo;re often not backward-compatible. If you deploy new code that expects a column that doesn&rsquo;t exist yet, or drop a column that the old code still references, you&rsquo;ll have downtime.</p>
+<p>The expand-contract pattern solves this. In the expand phase, you add the new schema elements (new columns, new tables, new indexes) without removing anything. Deploy the code that can work with both the old and new schema. In the contract phase, after all instances are running the new code, remove the old schema elements that are no longer needed.</p>
+<p>For example, renaming a column from &ldquo;username&rdquo; to &ldquo;display_name&rdquo; becomes three steps: (1) add the &ldquo;display_name&rdquo; column and populate it from &ldquo;username&rdquo; in a migration, (2) deploy code that reads from &ldquo;display_name&rdquo; and writes to both columns, (3) after all instances are updated, remove the &ldquo;username&rdquo; column and the dual-write logic.</p>
+<p>Use a migration tool that tracks which migrations have been applied: Flyway for JVM applications, Alembic for Python, Prisma Migrate or Knex migrations for Node.js, or ActiveRecord migrations for Ruby. Run migrations as part of the deployment pipeline, before the application starts. Never run migrations manually in production &ndash; automate them and test them in staging first.</p>
+<p>For large tables, be aware that schema changes can lock the table for the duration of the migration. Tools like gh-ost (for MySQL) and pg_repack (for PostgreSQL) perform schema changes without locking by creating a shadow table, syncing data, and swapping tables atomically.</p>
+<h2>Monitoring, Alerting, and Deployment Observability</h2>
+<p>A deployment pipeline without monitoring is driving blindfolded. You need to know whether a deployment improved or degraded the application&rsquo;s behavior, and you need to know quickly.</p>
+<p>Instrument your application with three types of telemetry. Metrics track numeric measurements over time: request latency (p50, p95, p99), error rate, throughput, CPU and memory utilization, and database query duration. Use Prometheus, Datadog, or CloudWatch to collect and visualize metrics. Logs record discrete events with context: every error should include a stack trace, request ID, and relevant business context. Centralize logs with Elasticsearch, Loki, or a managed service. Traces follow individual requests across service boundaries, showing where time is spent. Use OpenTelemetry with Jaeger, Zipkin, or a commercial APM like New Relic.</p>
+<p>After every deployment, automatically compare key metrics between the pre-deployment and post-deployment windows. If the error rate increases by more than a threshold (say, 2x the baseline) or p95 latency exceeds the SLO, trigger an automated rollback. This &ldquo;metric-based rollback&rdquo; is the safety net that makes frequent deployment sustainable.</p>
+<p>Set up alerts for conditions that require human attention: sustained error rate above threshold, deployment pipeline failure on the main branch, certificate expiration approaching, disk usage above 80 percent, and any manual rollback. Route alerts to the on-call engineer through PagerDuty, Opsgenie, or your team&rsquo;s communication channel. Avoid alert fatigue by tuning thresholds aggressively &ndash; every alert should be actionable.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>A mature CI/CD pipeline is the foundation of reliable, fast software delivery. If your team is still deploying manually or struggling with unreliable pipelines, <a href="/contact.html">get in touch</a> and we&rsquo;ll help you build a deployment workflow that lets you ship with confidence.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "CI/CD for Web Applications: Deployment Strategy Guide",
@@ -166,7 +76,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/cicd-for-web-applications-deployment-strategy-guide/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

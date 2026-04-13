@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,145 +6,63 @@
   <title>Notification Design: UX Patterns That Inform Without Annoying</title>
   <meta name="description" content="Notification Design: UX Patterns That Inform Without Annoying. notification UX design Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/notification-design-ux-patterns-that-inform-without-annoying/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Notification Design: UX Patterns That Inform Without Annoying">
-  <meta property="og:description" content="Notification Design: UX Patterns That Inform Without Annoying. notification UX design Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/notification-design-ux-patterns-that-inform-without-annoying/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Notification Design: UX Patterns That Inform Without Annoying">
-  <meta name="twitter:description" content="Notification Design: UX Patterns That Inform Without Annoying. notification UX design Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Notification Design: UX Patterns That Inform Without Annoying"><meta property="og:description" content="Notification Design: UX Patterns That Inform Without Annoying. notification UX design Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/notification-design-ux-patterns-that-inform-without-annoying/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Notification Design: UX Patterns That Inform Without Annoying"><meta name="twitter:description" content="Notification Design: UX Patterns That Inform Without Annoying. notification UX design Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">October 21, 2023</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">design</span><span class="blog-card-tag">notifications</span>
-            </div>
-            <h1 class="blog-post-title">Notification Design: UX Patterns That Inform Without Annoying</h1>
-            <p class="blog-post-desc">Notification Design: UX Patterns That Inform Without Annoying. notification UX design Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Notification Design: UX Patterns That Inform Without Annoying</h1>
-<p>If you are researching notification design: ux patterns, you have probably noticed that most guides online are either too surface-level to be useful or too technical to be actionable. This guide sits in the middle — practical enough to inform real decisions, detailed enough to be worth your time.</p>
-<p>notification UX design</p>
-<h2>What Most Teams Get Wrong About Notification Design: Ux Patterns</h2>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For notification design: ux patterns, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Not defining success criteria upfront.</strong> If you cannot articulate what success looks like for your notification design: ux patterns initiative, you will not know when you have achieved it. Define specific, measurable outcomes before development begins.</p>
-<p><strong>Skipping user research.</strong> Building notification design: ux patterns without talking to the people who will actually use it is like designing a house without asking who lives there. Five conversations with real users will save you more money than any amount of internal brainstorming.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a notification design: ux patterns project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for notification design: ux patterns.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>When Notification Design: Ux Patterns Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Architecture Patterns That Work</h2>
-<p>For notification design: ux patterns projects, certain architectural patterns consistently deliver better outcomes.</p>
-<p><strong>Start with a monolith.</strong> Microservices add complexity that early-stage projects do not need. Build a well-structured monolith first, then extract services when you have enough traffic and team size to justify the operational overhead.</p>
-<p><strong>Use managed services where possible.</strong> Managed databases, managed hosting, managed authentication — these save hundreds of hours of infrastructure maintenance. Your team should be building features, not managing servers.</p>
-<p><strong>Design for replaceability.</strong> Every third-party integration should be wrapped in an abstraction layer. When (not if) you need to swap out a vendor, the change should be isolated to one module, not spread across your codebase.</p>
-<p><strong>Cache strategically.</strong> Identify the most frequently accessed data and cache it close to the user. A simple caching layer can improve performance by 10x and reduce infrastructure costs significantly.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A professional services firm was running their client communication through a combination of email, Slack, shared drives, and a CRM that nobody updated. Their clients were frustrated. Their team was drowning. We built a single portal that unified everything. The first month after launch, client satisfaction scores jumped and internal time spent on admin tasks dropped measurably.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about notification design: ux patterns, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">October 21, 2023</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">design</span><span class="blog-card-tag">notifications</span></div><h1 class="blog-post-title">Notification Design: UX Patterns That Inform Without Annoying</h1><p class="blog-post-desc">Notification Design: UX Patterns That Inform Without Annoying. notification UX design Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Notification Design: UX Patterns That Inform Without Annoying</h1>
+<p>Notifications exist in a paradox. Users need them to stay informed about events that require their attention. Users also hate them because most applications abuse the channel, treating every minor update as worthy of interruption. The result is notification fatigue: users disable notifications entirely, missing the critical ones buried under the trivial ones. A 2023 survey by Localytics found that 52% of users find push notifications annoying, and users who disable notifications have 2.5x higher churn rates than those who keep them enabled.</p>
+<p>The design challenge is not whether to notify but how to notify in a way that respects the user&rsquo;s attention, delivers genuine value, and maintains the trust that keeps the notification channel open.</p>
+<h2>Categorizing Notifications by Urgency and Action Required</h2>
+<p>Not all notifications are created equal, and treating them as a single channel is the root cause of notification fatigue. Establish a taxonomy based on two dimensions: urgency (how time-sensitive is this?) and action required (does the user need to do something?).</p>
+<p><strong>Critical + Action Required.</strong> Your server is down. A payment failed and needs retry authorization. A security breach was detected. These demand immediate attention and should use the most interruptive channel available: push notification, SMS, or even a phone call for on-call scenarios. The notification should state the problem, its severity, and the specific action needed. &ldquo;Payment of $2,450 to Vendor X failed. Authorize retry or update payment method.&rdquo; Never send a critical notification that says &ldquo;Something needs your attention&rdquo; without saying what.</p>
+<p><strong>Important + Action Required.</strong> A client submitted a document for your review. An approval is pending that blocks a team member&rsquo;s work. A deadline is approaching in 48 hours. These are time-sensitive but not emergent. Email with a clear subject line is appropriate. In-app badges and notification center entries ensure the user sees it on their next visit. Push notifications are optional and should respect the user&rsquo;s preference.</p>
+<p><strong>Informational + No Action Required.</strong> A team member commented on a shared document. A weekly summary report is ready. A shipment status changed from &ldquo;processing&rdquo; to &ldquo;shipped.&rdquo; These are useful context but do not require the user to do anything. In-app notification center is the right channel. Email digests (daily or weekly, user-configurable) are appropriate. Push notifications for these are almost never appropriate and are the primary driver of notification fatigue.</p>
+<p><strong>Ambient + No Action Required.</strong> A team member logged in. A document was viewed. A minor system status changed. These should never generate a notification. They belong in an activity feed that users can check when they choose to, not in any notification channel.</p>
+<p>Build your notification system with these categories as first-class concepts. Every notification event in your application should be assigned a category, and the delivery logic should consult the category to determine which channels to use.</p>
+<h2>Designing the In-App Notification Center</h2>
+<p>The in-app notification center is your primary notification channel &ndash; it is less interruptive than email or push, it is always available within the application, and it provides a historical log that users can review at their convenience.</p>
+<p><strong>The bell icon pattern</strong> is well-understood: a bell or notification icon in the application header, with a badge showing the count of unread notifications. Clicking the icon opens a dropdown or panel listing recent notifications. This pattern works because it is familiar, unobtrusive, and provides a clear signal of pending items without interrupting the user&rsquo;s current task.</p>
+<p>Design each notification entry with four elements:</p>
+<ol>
+<li><strong>Icon or avatar</strong> indicating the source (a person&rsquo;s avatar for a comment, a system icon for an automated alert, a colored dot for a status change).</li>
+<li><strong>Title</strong> that is specific and scannable: &ldquo;Sarah approved the Q3 budget proposal&rdquo; not &ldquo;New approval.&rdquo;</li>
+<li><strong>Timestamp</strong> in relative format for recent items (&ldquo;3 minutes ago,&rdquo; &ldquo;2 hours ago&rdquo;) and absolute format for older items (&ldquo;Nov 14 at 2:30 PM&rdquo;).</li>
+<li><strong>Action affordance</strong> &ndash; clicking the notification should navigate directly to the relevant item (the specific comment, the specific document, the specific order), not to a generic dashboard.</li>
+</ol>
+<p>Mark notifications as read when the user clicks them, not when they open the notification panel. A user who scans the notification list and decides to address items later should not lose track of which items they have seen but not acted on.</p>
+<p>Provide a &ldquo;Mark all as read&rdquo; action for users who have accumulated many notifications and want to clear the queue. This is a power-user pattern that prevents the notification count from becoming meaninglessly large (and therefore ignored).</p>
+<p>Group related notifications. If five team members commented on the same document within an hour, show a single notification: &ldquo;Sarah and 4 others commented on Q3 Budget Proposal.&rdquo; Expanding the group shows individual comments. This prevents notification floods during collaborative work sessions.</p>
+<h2>Email Notification Strategy</h2>
+<p>Email is the most abused notification channel and the one most likely to get your application&rsquo;s notifications filtered into spam or an ignored folder. Use it deliberately.</p>
+<p><strong>Every notification email should pass the &ldquo;Would I want to receive this?&rdquo; test.</strong> If you would not want an email about this event from an application you use, your users do not want it either. When in doubt, route to the in-app notification center instead.</p>
+<p><strong>Subject lines should be specific and front-loaded.</strong> The first 40 characters determine whether the email is opened or ignored. &ldquo;Action Required: Approve invoice #4521 from Acme Corp ($3,200)&rdquo; gives the user everything they need to prioritize. &ldquo;Notification from ProjectApp&rdquo; gives them nothing.</p>
+<p><strong>Email body should enable action without logging in when possible.</strong> If the notification is about an approval, include the key details (what is being approved, who requested it, the amount) and a prominent &ldquo;Approve&rdquo; button that deep-links to the approval screen. If the notification is about a comment, include the comment text. Users should be able to triage email notifications without opening the application for each one.</p>
+<p><strong>Offer granular email preferences.</strong> At minimum, let users choose between real-time emails, daily digest, weekly digest, and no email for each notification category. A project manager might want real-time emails for approvals but a weekly digest for comments. A team member might want no emails at all, relying entirely on in-app notifications. The preference center should be accessible from within every notification email (a link in the footer) and from the application settings.</p>
+<p><strong>Set sensible defaults that lean toward less email, not more.</strong> Users who want more notifications will opt in. Users who receive too many will not opt out &ndash; they will mark your emails as spam, which damages your sender reputation and degrades deliverability for all users.</p>
+<h2>Push Notification Discipline</h2>
+<p>Push notifications on mobile and desktop are the most interruptive channel. A push notification vibrates the user&rsquo;s phone, lights up their screen, and competes with notifications from every other application on the device. The bar for using this channel should be high.</p>
+<p><strong>Gate push notifications behind explicit, specific opt-in.</strong> Do not ask for notification permission on first visit. Ask when the user encounters a scenario where push notifications would help: &ldquo;Would you like to be notified when a client responds to your proposal?&rdquo; This contextual ask has 3-4x higher opt-in rates than a generic &ldquo;Allow notifications?&rdquo; prompt on page load, because the user understands the value proposition.</p>
+<p><strong>Never send marketing through push notifications.</strong> Product announcements, feature updates, and promotional messages belong in email or in-app banners. Sending them as push notifications trains users to disable the channel, which means they will miss the genuinely urgent notifications.</p>
+<p><strong>Respect time zones and quiet hours.</strong> A notification sent at 3 AM local time is hostile, regardless of its content. Unless the notification is genuinely critical (server down, security breach), queue it for delivery during business hours. Most push notification services support scheduling in the recipient&rsquo;s time zone.</p>
+<p><strong>Include enough context that the notification is useful on its own.</strong> &ldquo;You have a new message&rdquo; is useless &ndash; the user has to open the app to find out anything. &ldquo;Message from Sarah Chen: Can we push the deadline to Friday?&rdquo; is complete &ndash; the user can decide whether to respond now or later without leaving what they are doing.</p>
+<h2>Measuring Notification Effectiveness</h2>
+<p>Track these metrics to understand whether your notification system is working:</p>
+<p><strong>Notification open rate by category.</strong> What percentage of notifications in each category lead to the user clicking through? A low open rate on informational notifications is expected. A low open rate on action-required notifications indicates that users are not finding them useful or urgent enough &ndash; or that you are sending too many of them.</p>
+<p><strong>Time to action after notification.</strong> For notifications that require action (approvals, responses, reviews), how long does it take the user to complete the action after the notification is sent? If the median time is 4 hours but the 95th percentile is 5 days, you may need escalation logic for stale notifications.</p>
+<p><strong>Notification opt-out rate by channel.</strong> If 30% of users disable push notifications within the first week, you are pushing too aggressively. If email unsubscribe rates exceed 2% per month, your email volume or relevance needs adjustment.</p>
+<p><strong>Notification-to-churn correlation.</strong> Segment users by notification engagement (high engagement, low engagement, opted out) and compare retention rates. If opted-out users churn at higher rates, investigate whether the absence of notifications caused them to miss important events that led to disengagement.</p>
+<p>Review these metrics monthly and adjust your notification strategy. The goal is a system where users trust that every notification they receive is worth their attention &ndash; because it consistently is.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If notification fatigue is driving your users away, or if critical alerts are getting lost in noise, <a href="/contact.html">we can help</a> you design a notification system that earns your users&rsquo; trust.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Notification Design: UX Patterns That Inform Without Annoying",
@@ -166,7 +82,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/notification-design-ux-patterns-that-inform-without-annoying/",
   "articleSection": "design"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

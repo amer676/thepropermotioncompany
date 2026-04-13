@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,150 +6,61 @@
   <title>Continuous Integration and Deployment Best Practices</title>
   <meta name="description" content="Continuous Integration and Deployment Best Practices. CI/CD pipelines that improve code quality and accelerate delivery. Expert insights from The Proper Motion ">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/continuous-integration-and-deployment-best-practices/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Continuous Integration and Deployment Best Practices">
-  <meta property="og:description" content="Continuous Integration and Deployment Best Practices. CI/CD pipelines that improve code quality and accelerate delivery. Expert insights from The Proper Motion ">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/continuous-integration-and-deployment-best-practices/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Continuous Integration and Deployment Best Practices">
-  <meta name="twitter:description" content="Continuous Integration and Deployment Best Practices. CI/CD pipelines that improve code quality and accelerate delivery. Expert insights from The Proper Motion ">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Continuous Integration and Deployment Best Practices"><meta property="og:description" content="Continuous Integration and Deployment Best Practices. CI/CD pipelines that improve code quality and accelerate delivery. Expert insights from The Proper Motion "><meta property="og:url" content="https://thepropermotioncompany.com/blog/continuous-integration-and-deployment-best-practices/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Continuous Integration and Deployment Best Practices"><meta name="twitter:description" content="Continuous Integration and Deployment Best Practices. CI/CD pipelines that improve code quality and accelerate delivery. Expert insights from The Proper Motion "><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">January 18, 2024</span>
-              <span class="blog-card-read">7 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">DevOps</span>
-            </div>
-            <h1 class="blog-post-title">Continuous Integration and Deployment Best Practices</h1>
-            <p class="blog-post-desc">Continuous Integration and Deployment Best Practices. CI/CD pipelines that improve code quality and accelerate delivery. Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Continuous Integration and Deployment Best Practices</h1>
-<p>CI/CD pipelines that improve code quality and accelerate delivery.</p>
-<p>We wrote this because we kept having the same conversation with clients. The questions come up in almost every discovery call, and the answers are nuanced enough that they deserve a thorough treatment.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A logistics company came to us after spending eight months with a development shop that delivered a system their team refused to use. The interface was confusing, the reports were wrong, and the integrations broke weekly. We rebuilt it in ten weeks. The difference was not technical skill — it was the three days we spent shadowing their operations team before writing a single line of code.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>A Decision Framework for Continuous Integration And Deployment</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality continuous integration and deployment typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for continuous integration and deployment.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>What does post-launch support look like?</strong> Ask about availability for bug fixes, maintenance contracts, and feature development after delivery. The best partners stay available.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a continuous integration and deployment project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>What Most Teams Get Wrong About Continuous Integration And Deployment</h2>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For continuous integration and deployment, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Skipping user research.</strong> Building continuous integration and deployment without talking to the people who will actually use it is like designing a house without asking who lives there. Five conversations with real users will save you more money than any amount of internal brainstorming.</p>
-<p><strong>Not defining success criteria upfront.</strong> If you cannot articulate what success looks like for your continuous integration and deployment initiative, you will not know when you have achieved it. Define specific, measurable outcomes before development begins.</p>
-<h2>Technical Considerations</h2>
-<p>The architecture decisions you make early in a continuous integration and deployment project have outsized impact on long-term costs and capabilities.</p>
-<p><strong>Data model design</strong> matters more than most teams realize. A well-designed data model makes features easier to build, queries faster to run, and integrations simpler to maintain. A poorly designed one creates friction that compounds with every new feature.</p>
-<p><strong>API design</strong> determines how easily your system can evolve and integrate with other tools. REST is the safe default for most business applications. GraphQL makes sense when your frontend needs flexibility in data fetching. The choice should be driven by your specific integration requirements, not industry trends.</p>
-<p><strong>Authentication and authorization</strong> need to be right from the start. Retrofitting security is expensive and risky. Plan your permission model before you build your first feature, even if it seems like overkill for the initial scope.</p>
-<p><strong>Monitoring and observability</strong> are not optional extras. You need to know when something breaks before your users tell you. Set up error tracking, performance monitoring, and uptime alerting from day one.</p>
-<h2>When Continuous Integration And Deployment Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Taking Action</h2>
-<p>Reading about continuous integration and deployment is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">January 18, 2024</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">DevOps</span></div><h1 class="blog-post-title">Continuous Integration and Deployment Best Practices</h1><p class="blog-post-desc">Continuous Integration and Deployment Best Practices. CI/CD pipelines that improve code quality and accelerate delivery. Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Continuous Integration and Deployment Best Practices</h1>
+<p>Shipping software should not require a three-hour deployment window on Saturday night. It should not involve a developer SSH-ing into a production server, running a script, and holding their breath. Yet in 2024, a surprising number of companies still deploy this way. Continuous integration and continuous deployment (CI/CD) is the set of practices and infrastructure that transforms deployment from a high-stakes manual ritual into a routine, automated event that happens dozens of times per day with confidence.</p>
+<h2>What a Modern CI Pipeline Actually Does</h2>
+<p>A CI pipeline triggers automatically when code is pushed to a repository. Its job is to answer one question as fast as possible: &ldquo;Is this change safe to merge?&rdquo; A well-constructed pipeline answers that question in under 10 minutes.</p>
+<p><strong>Step 1: Dependency installation and caching.</strong> Install project dependencies from the lockfile (<code>package-lock.json</code>, <code>poetry.lock</code>, <code>Gemfile.lock</code>). Cache the dependency directory between runs. A Node.js project with 800 dependencies takes 45 seconds to install fresh but under 5 seconds with a warm cache. GitHub Actions, GitLab CI, and CircleCI all support dependency caching natively.</p>
+<p><strong>Step 2: Static analysis and linting.</strong> Run linters (ESLint, Rubocop, Ruff, golangci-lint) and type checkers (TypeScript compiler, mypy, Sorbet) before running tests. These checks catch entire categories of bugs in seconds: undefined variables, type mismatches, unused imports, security anti-patterns. A single ESLint rule like <code>no-floating-promises</code> has prevented countless async bugs in production. Fail the pipeline if linting fails. No exceptions, no bypass flags.</p>
+<p><strong>Step 3: Unit and integration tests.</strong> Run your test suite with coverage reporting. Parallelize test execution across multiple workers: Jest supports <code>--maxWorkers</code>, pytest supports <code>pytest-xdist</code>, and RSpec supports parallel_tests. A test suite that takes 12 minutes on one worker often completes in 3 minutes across 4 workers. The pipeline should report coverage to a service like Codecov or Coveralls, not to enforce a coverage threshold (which incentivizes writing bad tests) but to track coverage trends over time.</p>
+<p><strong>Step 4: Build verification.</strong> Compile the application, generate production bundles, and verify the build succeeds. For frontend applications, check that bundle sizes have not regressed unexpectedly. Tools like <code>bundlesize</code> or <code>size-limit</code> fail the pipeline if the JavaScript bundle exceeds a configured threshold. An extra 100 KB of JavaScript costs real money in user engagement metrics.</p>
+<p><strong>Step 5: Security scanning.</strong> Run dependency vulnerability scanning (npm audit, pip-audit, Snyk, Dependabot) and static application security testing (SAST) with tools like Semgrep or CodeQL. These catch known CVEs in dependencies and common security issues (SQL injection, XSS, hardcoded credentials) before they reach production. Configure severity thresholds: fail on critical and high vulnerabilities, warn on medium.</p>
+<p>The entire pipeline should run in under 10 minutes for most web applications. If it takes longer, you have an optimization problem, not a tooling problem. Common culprits: test suites with excessive database setup, unparallelized test execution, unnecessary Docker image builds, and uncached dependencies.</p>
+<h2>Deployment Strategies That Reduce Risk</h2>
+<p>The goal of continuous deployment is not just speed. It is safe speed. Every deployment should be reversible within minutes, and the blast radius of a bad deployment should be minimized.</p>
+<p><strong>Rolling deployments</strong> update instances gradually. If you have 10 servers behind a load balancer, a rolling deployment updates 2 at a time, waits for health checks to pass, then moves to the next 2. If any instance fails its health check after the update, the deployment halts and rolls back. Kubernetes supports this natively through deployment strategies. AWS ECS and Fly.io handle it with configurable update parameters. For a 10-instance deployment, the full rollout typically completes in 5-8 minutes.</p>
+<p><strong>Blue-green deployments</strong> maintain two identical environments. The &ldquo;blue&rdquo; environment serves current production traffic. The &ldquo;green&rdquo; environment receives the new deployment. After the green environment passes health checks and smoke tests, traffic is switched from blue to green. Rollback is instant: switch traffic back to blue. The cost is maintaining double the infrastructure during the transition, but for critical applications, the near-zero-downtime guarantee justifies it.</p>
+<p><strong>Canary deployments</strong> route a small percentage of traffic (1-5%) to the new version while the rest continues hitting the current version. Monitor error rates, latency, and business metrics for the canary population. If metrics remain healthy for 15-30 minutes, gradually increase the canary percentage to 25%, 50%, then 100%. If metrics degrade, route all traffic back to the stable version. LaunchDarkly, Unleash, and Kubernetes with Istio or Linkerd support canary routing.</p>
+<p><strong>Feature flags decouple deployment from release.</strong> Deploy code to production behind a feature flag that is disabled by default. Verify the deployment is stable. Then enable the flag for internal users, then a subset of customers, then everyone. This separates the risk of deployment (infrastructure change) from the risk of release (behavior change). A broken feature flag can be disabled in seconds without redeploying code.</p>
+<h2>Branch Strategy and Merge Discipline</h2>
+<p>Your branching strategy directly affects CI/CD effectiveness. The two dominant approaches each have trade-offs.</p>
+<p><strong>Trunk-based development</strong> has all developers committing to a single main branch (or very short-lived feature branches that merge within 1-2 days). This minimizes merge conflicts, keeps the main branch in a continuously deployable state, and forces small, incremental changes. Google, Meta, and Microsoft all use trunk-based development for their largest codebases. The prerequisite is a robust CI pipeline and feature flags: you must be able to commit incomplete features to main without exposing them to users.</p>
+<p><strong>GitHub Flow</strong> uses longer-lived feature branches that go through pull request review before merging to main. This provides a natural review checkpoint and lets CI run against the feature branch before it reaches main. The risk is branches that diverge significantly from main, creating painful merges and integration bugs that only surface after merging. Mitigate this by enforcing a maximum branch lifetime (3-5 days) and requiring branches to be up-to-date with main before merging.</p>
+<p>Regardless of strategy, enforce these rules:</p>
+<ul>
+<li>Main branch is always deployable. If main is broken, everything stops until it is fixed.</li>
+<li>CI runs on every push to every branch, not just main.</li>
+<li>Pull requests require passing CI before merge. No manual overrides.</li>
+<li>Merge commits are deployed to a staging environment automatically for verification before production deployment.</li>
+</ul>
+<h2>Environment Management and Configuration</h2>
+<p>A mature CI/CD pipeline operates across multiple environments, each serving a distinct purpose.</p>
+<p><strong>Development/Preview environments</strong> spin up automatically for each pull request. Vercel, Netlify, Railway, and Render all create preview deployments that give reviewers a live URL to test against. For backend services, use containerized preview environments with ephemeral databases seeded with test data. This lets reviewers test the full stack, not just the frontend rendering.</p>
+<p><strong>Staging</strong> mirrors production as closely as possible: same infrastructure configuration, same database engine (with sanitized data), same third-party integrations (in sandbox mode). Every deployment to main goes through staging first. Automated smoke tests run against staging before promotion to production. If staging and production drift in configuration, you lose the safety net.</p>
+<p><strong>Production</strong> receives deployments only after staging validation. Production deployments should be the least eventful part of the process: if the code has been reviewed, tested by CI, and validated on staging, the production deployment is a formality.</p>
+<p><strong>Configuration management</strong> keeps environment-specific values out of code. Use environment variables for anything that changes between environments: database URLs, API keys, feature flag configurations, third-party service endpoints. Tools like Vault, AWS Secrets Manager, or Doppler manage secrets. Never store secrets in CI/CD configuration files, environment variable UIs, or (obviously) source code.</p>
+<h2>Pipeline Performance Optimization</h2>
+<p>A slow pipeline erodes developer productivity and discourages frequent commits. Optimizing pipeline speed is an investment in team velocity.</p>
+<p><strong>Parallelize everything possible.</strong> Linting, type checking, unit tests, and security scanning can all run simultaneously. GitHub Actions&rsquo; <code>jobs</code> run in parallel by default. Structure your pipeline as a directed acyclic graph (DAG) where independent steps execute concurrently and dependent steps wait only for their actual prerequisites.</p>
+<p><strong>Use incremental test execution.</strong> On a pull request, only run tests affected by the changed files. Tools like <code>jest --changedSince</code>, <code>nx affected:test</code>, and <code>pytest --co</code> (combined with a dependency analyzer) identify which tests to run. A monorepo with 15,000 tests might only need to run 200 tests for a change that touches a single module.</p>
+<p><strong>Cache aggressively.</strong> Beyond dependency caches, cache Docker layers, compiled artifacts, and test fixtures. A Docker build that takes 3 minutes can complete in 20 seconds when intermediate layers are cached. Use BuildKit&rsquo;s cache mounts for language-specific package managers inside Docker builds.</p>
+<p><strong>Right-size your CI runners.</strong> A CPU-bound test suite running on a 2-core CI runner takes twice as long as on a 4-core runner. The cost difference between a small and medium runner is a few cents per run, but the time savings across hundreds of daily runs is significant. For large test suites, dedicated CI runners (self-hosted or larger cloud instances) pay for themselves in developer time.</p>
+<p><strong>Fail fast.</strong> Order pipeline steps so that the fastest checks run first. Linting takes 15 seconds. If it fails, there is no reason to run a 5-minute test suite. Structure the pipeline so cheap, fast checks gate expensive, slow ones.</p>
+<p>A pipeline that runs in 3 minutes creates a fundamentally different development experience than one that runs in 20 minutes. At 3 minutes, developers wait for the result. At 20 minutes, they context-switch, start another task, and lose flow state. The investment in pipeline optimization is an investment in engineering focus and output.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Want to modernize your deployment pipeline so your team ships with confidence every day? <a href="/contact.html">Let us help you build it</a>. We set up CI/CD pipelines that make deployment boring, in the best possible way.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Continuous Integration and Deployment Best Practices",
@@ -171,7 +80,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/continuous-integration-and-deployment-best-practices/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

@@ -1,157 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Building Resilient API Integrations | The Proper Motion Company</title>
+  <title>Building Resilient API Integrations | Proper Motion</title>
   <meta name="description" content="Building Resilient API Integrations. Architecture for integrations that handle failures. Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/building-resilient-api-integrations/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Building Resilient API Integrations | The Proper Motion Company">
-  <meta property="og:description" content="Building Resilient API Integrations. Architecture for integrations that handle failures. Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/building-resilient-api-integrations/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Building Resilient API Integrations | The Proper Motion Company">
-  <meta name="twitter:description" content="Building Resilient API Integrations. Architecture for integrations that handle failures. Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Building Resilient API Integrations | Proper Motion"><meta property="og:description" content="Building Resilient API Integrations. Architecture for integrations that handle failures. Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/building-resilient-api-integrations/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Building Resilient API Integrations | Proper Motion"><meta name="twitter:description" content="Building Resilient API Integrations. Architecture for integrations that handle failures. Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">November 18, 2022</span>
-              <span class="blog-card-read">7 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">integrations</span>
-            </div>
-            <h1 class="blog-post-title">Building Resilient API Integrations</h1>
-            <p class="blog-post-desc">Building Resilient API Integrations. Architecture for integrations that handle failures. Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Building Resilient API Integrations</h1>
-<p>Let us cut straight to what matters about building resilient api integrations. No filler, no padding, no obvious advice dressed up as insight. Just the practical knowledge that actually affects outcomes.</p>
-<p>Architecture for integrations that handle failures.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a building resilient api integrations project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for building resilient api integrations.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<h2>When Building Resilient Api Integrations Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Architecture Patterns That Work</h2>
-<p>For building resilient api integrations projects, certain architectural patterns consistently deliver better outcomes.</p>
-<p><strong>Start with a monolith.</strong> Microservices add complexity that early-stage projects do not need. Build a well-structured monolith first, then extract services when you have enough traffic and team size to justify the operational overhead.</p>
-<p><strong>Use managed services where possible.</strong> Managed databases, managed hosting, managed authentication — these save hundreds of hours of infrastructure maintenance. Your team should be building features, not managing servers.</p>
-<p><strong>Design for replaceability.</strong> Every third-party integration should be wrapped in an abstraction layer. When (not if) you need to swap out a vendor, the change should be isolated to one module, not spread across your codebase.</p>
-<p><strong>Cache strategically.</strong> Identify the most frequently accessed data and cache it close to the user. A simple caching layer can improve performance by 10x and reduce infrastructure costs significantly.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A healthcare organization needed to digitize a paper-based intake process while maintaining HIPAA compliance. Their previous vendor quoted twelve months and half a million dollars. We delivered a compliant system in eight weeks at a fraction of the cost. The difference: we did not build a platform. We built exactly what they needed.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>A Decision Framework for Building Resilient Api Integrations</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality building resilient api integrations typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>What Most Teams Get Wrong About Building Resilient Api Integrations</h2>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For building resilient api integrations, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<p><strong>Confusing features with value.</strong> More features do not make a better product. The best software does fewer things but does them exceptionally well. For building resilient api integrations, identify the three things that matter most and make those excellent before adding anything else.</p>
-<p><strong>Underestimating the integration layer.</strong> The features themselves are rarely the hard part. Connecting your new system to existing tools — your CRM, your accounting software, your communication platforms — is where complexity lives. Budget at least 30% of your timeline for integrations when planning building resilient api integrations.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Taking Action</h2>
-<p>Reading about building resilient api integrations is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">November 18, 2022</span><span class="blog-card-read">8 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">integrations</span></div><h1 class="blog-post-title">Building Resilient API Integrations</h1><p class="blog-post-desc">Building Resilient API Integrations. Architecture for integrations that handle failures. Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Building Resilient API Integrations</h1>
+<p>Every modern application depends on external APIs. Payment processors, identity verification services, email providers, shipping carriers, CRM platforms, analytics tools. A typical SaaS application integrates with 10 to 20 third-party services, and each one is a potential point of failure that your users will blame on you, not on your vendor.</p>
+<p>The difference between an integration that works in demo conditions and one that survives production is resilience engineering. Resilient integrations handle failures gracefully, recover automatically, and degrade in ways that preserve the user experience. This article covers the specific patterns, configurations, and architectural decisions that make integrations production-grade.</p>
+<h2>Failure Modes You Must Design For</h2>
+<p>Third-party APIs fail in ways that are more varied and insidious than internal service failures. Understanding the specific failure modes is the first step to handling them.</p>
+<p>Timeout failures are the most common. The API accepts your request but does not respond within a reasonable window. This can happen because of network congestion, provider-side load, or a request that triggers an expensive operation on their end. The danger is not the timeout itself but what your system does during the wait. If you are holding a database transaction open while waiting for an external API response, a slow provider can exhaust your connection pool and cascade into a full system outage.</p>
+<p>Partial failures occur when an API returns a 200 status code but the response body is incomplete, malformed, or contains an error in a nested field. A payment API might return HTTP 200 with <code>{"status": "error", "message": "insufficient funds"}</code>. If you only check the HTTP status code, you will treat this as a success. Validate the response body against expected schemas, not just status codes.</p>
+<p>Rate limiting failures happen when you exceed the provider&rsquo;s throughput limits. Most APIs return HTTP 429 with a <code>Retry-After</code> header, but some return 503 or even 200 with an error payload. Rate limits are often poorly documented, and actual limits may differ from published ones, especially on shared-tenant plans.</p>
+<p>Behavioral changes are the most dangerous because they are silent. The API continues responding successfully, but the semantics of the response change. A field that used to contain a string now contains an array. A date format shifts from ISO 8601 to Unix timestamps. An endpoint that used to return all results now paginates. These changes break your parsing logic without triggering error handlers.</p>
+<p>Infrastructure-level failures include DNS resolution failures, TLS certificate expiration, IP address changes, and provider-side region outages. These are rare but catastrophic when they happen.</p>
+<h2>Circuit Breakers and Retry Strategies</h2>
+<p>The circuit breaker pattern prevents a failing integration from consuming resources indefinitely. When failures exceed a threshold, the circuit &ldquo;opens&rdquo; and subsequent requests fail immediately without calling the external API. After a cooldown period, the circuit moves to &ldquo;half-open&rdquo; and allows a single test request through. If it succeeds, the circuit closes and normal traffic resumes.</p>
+<p>Configure circuit breakers with three parameters: the failure threshold (typically 5 to 10 failures within a 60-second window), the cooldown period (30 to 120 seconds), and the success threshold for closing (typically 2 to 3 consecutive successes in half-open state). These values should be tuned per integration based on the provider&rsquo;s reliability profile and the cost of false opens.</p>
+<p>Retry strategies must be paired with circuit breakers. Use exponential backoff with jitter: the first retry after 200ms, the second after 400ms plus random jitter of 0-200ms, the third after 800ms plus jitter, up to a maximum of three to five retries. The jitter prevents the thundering herd problem, where many clients that timed out simultaneously all retry at the same moment and overwhelm the recovering service.</p>
+<p>Critically, only retry idempotent operations. A GET request is always safe to retry. A POST request that creates a resource is not, unless the API supports idempotency keys. If the API supports them (Stripe&rsquo;s <code>Idempotency-Key</code> header is the gold standard), always include one. If not, you need to verify whether the original request succeeded before retrying. Blindly retrying a payment charge can result in double-charging a customer.</p>
+<p>Here is a concrete retry configuration we use as a starting point:</p>
+<pre><code>Max retries: 3
+Initial delay: 200ms
+Backoff multiplier: 2
+Max delay: 5000ms
+Jitter: random 0-50% of calculated delay
+Retryable status codes: 408, 429, 500, 502, 503, 504
+Non-retryable: 400, 401, 403, 404, 409, 422
+</code></pre>
+<h2>Timeout Configuration and Connection Management</h2>
+<p>Default HTTP client timeouts are almost always wrong for production use. Most HTTP libraries default to 30 seconds or infinite timeouts, both of which are inappropriate for API integrations.</p>
+<p>Configure three separate timeouts. The connection timeout (how long to wait for a TCP connection to establish) should be 3 to 5 seconds. If you cannot connect in 5 seconds, the endpoint is likely unreachable. The read timeout (how long to wait for the first byte of the response) should be set based on the API&rsquo;s expected response time, typically 5 to 15 seconds for most APIs, up to 30 seconds for known-slow operations like report generation. The total timeout (maximum time for the entire request-response cycle including redirects) should be the outer bound, typically 30 to 60 seconds.</p>
+<p>Connection pooling is essential for high-throughput integrations. Creating a new TCP connection and TLS handshake for every request adds 100 to 300ms of overhead. Maintain a pool of persistent connections to each external host. Configure the pool size based on your expected concurrency: if you make up to 50 concurrent requests to Stripe, set the pool to 50 connections with a maximum of 75. Set idle connection timeouts to 90 seconds to avoid using stale connections that the remote end has closed.</p>
+<p>DNS caching introduces a subtle failure mode. If a provider rotates IP addresses (common with cloud-hosted APIs behind load balancers), stale DNS cache entries can cause all requests to hit a decommissioned IP. Set DNS TTL in your HTTP client to respect the provider&rsquo;s DNS TTL rather than caching indefinitely. Most cloud providers use 60-second DNS TTLs.</p>
+<h2>Graceful Degradation and Fallback Strategies</h2>
+<p>When an integration fails, the user experience should degrade gracefully rather than break entirely. The right degradation strategy depends on how critical the integration is to the user&rsquo;s immediate workflow.</p>
+<p>For non-critical integrations, use asynchronous processing with queued retries. If your analytics service is down, queue the event and process it later. If your email provider is unreachable, add the message to a send queue with exponential backoff retries. The user&rsquo;s primary workflow (placing an order, submitting a form) should not block on these secondary systems.</p>
+<p>For critical integrations, implement fallback paths. If your primary payment processor is down, route transactions to a secondary processor. If your identity verification service is unavailable, switch to a manual review queue rather than rejecting all new signups. These fallbacks should be configured in advance and tested regularly, not built in a panic during an outage.</p>
+<p>Cached responses provide another fallback option. If a pricing API that updates daily is unreachable, serve the last known good response with a staleness indicator. If a geolocation API is down, fall back to the last cached result for that IP address. Set explicit staleness limits: a cached price from 2 hours ago is probably fine; a cached price from 2 weeks ago is not.</p>
+<p>Feature flags tied to integration health enable dynamic degradation. When the circuit breaker for your recommendation engine opens, automatically disable the &ldquo;recommended for you&rdquo; section in the UI rather than showing an error. When the circuit closes, the section reappears. This keeps the user experience clean without requiring manual intervention.</p>
+<h2>Observability and Alerting</h2>
+<p>You cannot fix what you cannot see. Every external API call should produce structured telemetry that lets you detect, diagnose, and resolve integration issues quickly.</p>
+<p>Log every external API call with: timestamp, target URL (redacting sensitive path parameters), HTTP method, request duration in milliseconds, response status code, response body size, and a correlation ID that ties the call back to the originating user request. Store these logs in a queryable system (Elasticsearch, Datadog, or your preferred observability platform) with at least 30 days of retention.</p>
+<p>Build dashboards that track four key metrics per integration: request volume (calls per minute), error rate (4xx and 5xx responses as a percentage of total), latency distribution (p50, p95, p99), and circuit breaker state (open, half-open, closed). These four metrics give you a complete picture of each integration&rsquo;s health at a glance.</p>
+<p>Set alerts at two thresholds. Warning alerts trigger when error rates exceed 5% or p99 latency exceeds 2x the normal baseline. These go to a monitoring channel for awareness. Critical alerts trigger when error rates exceed 20%, the circuit breaker opens, or latency exceeds 5x baseline. These page the on-call engineer.</p>
+<p>Synthetic monitoring complements real-traffic monitoring. Schedule lightweight health check calls to each external API every 60 seconds from multiple regions. These synthetic checks detect outages before they affect real users and provide a clean signal that is not muddied by request-specific failures.</p>
+<h2>Contract Testing and Version Management</h2>
+<p>APIs change, and those changes break integrations. Contract testing is your defense against silent breaking changes.</p>
+<p>Write contract tests that validate the structure and semantics of API responses against your expectations. A contract test for a user API endpoint might assert that the response contains a <code>user</code> object with string fields <code>id</code>, <code>email</code>, and <code>name</code>, and that <code>email</code> matches a valid email pattern. Run these tests on a schedule (daily or hourly) against the provider&rsquo;s sandbox or production API.</p>
+<p>When contract tests fail, you have early warning of a breaking change, often days or weeks before it would have caused a production incident. This gives you time to update your integration code, test the fix, and deploy before users are affected.</p>
+<p>Pin API versions explicitly. Use version headers (<code>Accept: application/vnd.api+json; version=2</code>), versioned URLs (<code>/v2/users</code>), or whatever mechanism the provider offers. Never use the &ldquo;latest&rdquo; or default version, because an unversioned endpoint can change under you without notice.</p>
+<p>Maintain a vendor dependency registry that tracks, for each integration: the API version you are using, the latest available version, the deprecation timeline for your version, and the changelog URL. Review this registry monthly. Proactively upgrading before a version is deprecated is far cheaper than emergency-fixing a broken integration after the provider sunsets an old version.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Resilient API integrations are not built by accident. They require deliberate architecture, careful configuration, and ongoing operational attention. If you are dealing with flaky integrations or planning a system that depends on external services, <a href="/contact.html">reach out to our team</a> to discuss how we can help you build integrations that survive real-world conditions.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building Resilient API Integrations",
@@ -171,7 +86,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/building-resilient-api-integrations/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

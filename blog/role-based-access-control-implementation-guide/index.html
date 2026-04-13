@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,134 +6,76 @@
   <title>Role-Based Access Control: Implementation Guide | Proper Motion</title>
   <meta name="description" content="Role-Based Access Control: Implementation Guide. RBAC implementation Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/role-based-access-control-implementation-guide/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Role-Based Access Control: Implementation Guide | Proper Motion">
-  <meta property="og:description" content="Role-Based Access Control: Implementation Guide. RBAC implementation Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/role-based-access-control-implementation-guide/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Role-Based Access Control: Implementation Guide | Proper Motion">
-  <meta name="twitter:description" content="Role-Based Access Control: Implementation Guide. RBAC implementation Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="Role-Based Access Control: Implementation Guide | Proper Motion"><meta property="og:description" content="Role-Based Access Control: Implementation Guide. RBAC implementation Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/role-based-access-control-implementation-guide/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Role-Based Access Control: Implementation Guide | Proper Motion"><meta name="twitter:description" content="Role-Based Access Control: Implementation Guide. RBAC implementation Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">July 29, 2022</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">security</span>
-            </div>
-            <h1 class="blog-post-title">Role-Based Access Control: Implementation Guide</h1>
-            <p class="blog-post-desc">Role-Based Access Control: Implementation Guide. RBAC implementation Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>Role-Based Access Control: Implementation Guide</h1>
-<p>There is a lot of noise around role-based access control: implementation. Vendors want to sell you their platform. Consultants want to sell you their time. This guide has no agenda beyond sharing what we have learned from building production software since 2022.</p>
-<p>RBAC implementation</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a role-based access control: implementation project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>We worked with a SaaS startup that had been in development for fourteen months with no launch in sight. Their team kept adding features because they were afraid the product was not ready. We helped them cut scope to the core workflow, launched in six weeks, and their first paying customers told them exactly what to build next.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>When Role-Based Access Control: Implementation Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>What Most Teams Get Wrong About Role-Based Access Control: Implementation</h2>
-<p><strong>Not defining success criteria upfront.</strong> If you cannot articulate what success looks like for your role-based access control: implementation initiative, you will not know when you have achieved it. Define specific, measurable outcomes before development begins.</p>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<h2>Technical Considerations</h2>
-<p>The architecture decisions you make early in a role-based access control: implementation project have outsized impact on long-term costs and capabilities.</p>
-<p><strong>Data model design</strong> matters more than most teams realize. A well-designed data model makes features easier to build, queries faster to run, and integrations simpler to maintain. A poorly designed one creates friction that compounds with every new feature.</p>
-<p><strong>API design</strong> determines how easily your system can evolve and integrate with other tools. REST is the safe default for most business applications. GraphQL makes sense when your frontend needs flexibility in data fetching. The choice should be driven by your specific integration requirements, not industry trends.</p>
-<p><strong>Authentication and authorization</strong> need to be right from the start. Retrofitting security is expensive and risky. Plan your permission model before you build your first feature, even if it seems like overkill for the initial scope.</p>
-<p><strong>Monitoring and observability</strong> are not optional extras. You need to know when something breaks before your users tell you. Set up error tracking, performance monitoring, and uptime alerting from day one.</p>
-<h2>Taking Action</h2>
-<p>Reading about role-based access control: implementation is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">July 29, 2022</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">security</span></div><h1 class="blog-post-title">Role-Based Access Control: Implementation Guide</h1><p class="blog-post-desc">Role-Based Access Control: Implementation Guide. RBAC implementation Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>Role-Based Access Control: Implementation Guide</h1>
+<p>Access control is one of those systems that every application needs and most applications get wrong. The common pattern is ad hoc permission checks scattered throughout the codebase: <code>if (user.isAdmin)</code> in one place, <code>if (user.role === 'manager')</code> in another, and a growing tangle of conditional logic that becomes impossible to audit or reason about. When a new role needs to be added or a permission needs to change, developers touch dozens of files and hope they did not miss any.</p>
+<p>Role-Based Access Control (RBAC) replaces this chaos with a structured system where permissions are assigned to roles, roles are assigned to users, and every access decision flows through a single, auditable mechanism. This guide covers how to design, implement, and maintain an RBAC system that is secure, flexible, and maintainable.</p>
+<h2>Designing Your Permission Model</h2>
+<p>Before writing code, map out your permission model on paper. The quality of your RBAC implementation depends entirely on getting this design right.</p>
+<p><strong>Identify your resources.</strong> List every entity in your system that needs access control: users, projects, invoices, reports, settings, API keys, audit logs. Be specific. &ldquo;Reports&rdquo; is not granular enough if some reports contain sensitive financial data and others are public dashboards. Distinguish between &ldquo;financial reports&rdquo; and &ldquo;operational dashboards&rdquo; as separate resources if they require different access rules.</p>
+<p><strong>Define your actions.</strong> For each resource, identify the actions that can be performed: create, read, update, delete, export, share, approve, archive. Not every resource needs every action. An audit log might support only &ldquo;read&rdquo; and &ldquo;export&rdquo; &mdash; nobody should be able to create, update, or delete audit entries through the application.</p>
+<p><strong>Construct permissions</strong> as resource-action pairs. <code>invoice:create</code>, <code>invoice:read</code>, <code>invoice:update</code>, <code>invoice:delete</code>, <code>invoice:export</code>. This naming convention is machine-readable, self-documenting, and easy to query. You will end up with 50-200 permissions for a typical business application. That is normal &mdash; the granularity is what makes the system flexible.</p>
+<p><strong>Design your roles</strong> by grouping permissions that represent a job function. Common starter roles:</p>
+<ul>
+<li><strong>Viewer:</strong> Read access to non-sensitive resources. Typically <code>project:read</code>, <code>report:read</code>, <code>dashboard:read</code>.</li>
+<li><strong>Member/Contributor:</strong> Viewer permissions plus create and update access. <code>project:create</code>, <code>project:update</code>, <code>task:create</code>, <code>task:update</code>, <code>comment:create</code>.</li>
+<li><strong>Manager:</strong> Member permissions plus team management, approval authority, and access to sensitive reports. <code>user:invite</code>, <code>user:remove</code>, <code>report:export</code>, <code>project:archive</code>.</li>
+<li><strong>Admin:</strong> Full access to all resources except system-level configuration. All permissions within the organizational scope.</li>
+<li><strong>Super Admin/Owner:</strong> Full system access including billing, security settings, and audit log access.</li>
+</ul>
+<p>Resist the temptation to create too many roles upfront. Start with 4-6 roles that cover your primary user personas. You can always add roles later when a genuine need arises. Organizations with 15+ roles often find that the proliferation creates confusion rather than clarity.</p>
+<h2>Database Schema and Core Implementation</h2>
+<p>The RBAC database schema is straightforward but must be designed for both query performance and administrative flexibility.</p>
+<p>The core tables:</p>
+<p><strong>permissions:</strong> Stores every permission in the system. Fields: <code>id</code>, <code>resource</code> (e.g., &ldquo;invoice&rdquo;), <code>action</code> (e.g., &ldquo;create&rdquo;), <code>description</code>. The combination of resource and action should be unique.</p>
+<p><strong>roles:</strong> Stores role definitions. Fields: <code>id</code>, <code>name</code>, <code>description</code>, <code>is_system_role</code> (to distinguish built-in roles from custom roles), <code>created_at</code>.</p>
+<p><strong>role_permissions:</strong> Join table linking roles to permissions. Fields: <code>role_id</code>, <code>permission_id</code>. This is the table you modify when you need to change what a role can do.</p>
+<p><strong>user_roles:</strong> Join table linking users to roles within a specific scope. Fields: <code>user_id</code>, <code>role_id</code>, <code>scope_type</code> (e.g., &ldquo;organization&rdquo;, &ldquo;project&rdquo;, &ldquo;team&rdquo;), <code>scope_id</code> (the ID of the specific organization, project, or team). This scoping mechanism is critical &mdash; a user might be an Admin in one project and a Viewer in another.</p>
+<p>The authorization check function is the heart of the system. It answers the question: &ldquo;Does user X have permission to perform action Y on resource Z in scope S?&rdquo; The function:</p>
+<ol>
+<li>Looks up all roles assigned to the user within the relevant scope (and any parent scopes, if you implement scope hierarchy)</li>
+<li>Collects all permissions associated with those roles</li>
+<li>Checks whether the required permission exists in that collection</li>
+<li>Returns true or false</li>
+</ol>
+<p>Cache this aggressively. The role-permission mappings change rarely (only when an admin modifies role definitions), so cache them in memory or in Redis with a TTL of 5-15 minutes and invalidate on changes. User-role assignments change more frequently but are still cacheable with shorter TTLs. A well-cached RBAC check should complete in under 1 millisecond.</p>
+<h2>Implementing Scope-Based Access</h2>
+<p>Flat RBAC (global roles applied to the entire system) is insufficient for most business applications. Users need different permissions in different contexts. A project manager should have full control over their projects but should not access projects belonging to other teams. A regional sales director should see their region&rsquo;s data but not other regions.</p>
+<p><strong>Hierarchical scoping</strong> models this by organizing access scopes into a tree: Organization &gt; Team &gt; Project. Permissions granted at a higher scope cascade down to child scopes unless explicitly overridden. A user with the Admin role at the Organization scope has Admin access to all Teams and Projects within that organization.</p>
+<p>Implement scope resolution as an upward traversal: when checking if a user has a permission for a specific Project, check the Project scope first, then the parent Team scope, then the Organization scope. Return the first match found. This allows broad permissions at higher scopes to apply everywhere while still permitting specific overrides at lower scopes.</p>
+<p><strong>Resource-level permissions</strong> handle cases where the scope hierarchy is not sufficient. Sometimes access depends on the specific resource instance, not just its type. A document might be shared with specific users regardless of their organizational role. Implement this with a separate <code>resource_grants</code> table that links users to specific resource instances with specific permissions. Check resource-level grants in addition to role-based permissions during authorization.</p>
+<p><strong>Row-level filtering</strong> extends RBAC to database queries. Rather than fetching all records and filtering in application code (which is wasteful and insecure), inject scope-based filters into database queries. If a user has access to projects 1, 5, and 12, the query should include <code>WHERE project_id IN (1, 5, 12)</code> rather than fetching all projects and filtering afterward. PostgreSQL Row-Level Security (RLS) policies can enforce this at the database layer as a defense-in-depth measure.</p>
+<h2>Middleware Integration and API Protection</h2>
+<p>Every API endpoint must enforce access control. The most reliable approach is middleware that runs before the route handler and rejects unauthorized requests before business logic executes.</p>
+<p>The middleware pattern:</p>
+<ol>
+<li><strong>Authentication:</strong> Verify the user&rsquo;s identity from their session token or JWT. This is a prerequisite for authorization, not a substitute for it.</li>
+<li><strong>Permission extraction:</strong> Determine which permission is required for this endpoint. This can be declared as metadata on the route definition (e.g., <code>@requirePermission('invoice:create')</code>) or derived from the HTTP method and resource path using a convention (<code>POST /api/invoices</code> requires <code>invoice:create</code>).</li>
+<li><strong>Authorization check:</strong> Call the RBAC check function with the authenticated user, the required permission, and the relevant scope. Return 403 Forbidden if the check fails.</li>
+<li><strong>Scope filtering:</strong> For list endpoints, inject scope-based filters into the query so the user only sees resources they have access to.</li>
+</ol>
+<p>Implement the middleware once and apply it globally. Every new endpoint should be protected by default, with explicit opt-out for the rare truly public endpoints (login, password reset, public API documentation). This &ldquo;deny by default&rdquo; approach prevents the most common RBAC vulnerability: forgetting to add permission checks to new endpoints.</p>
+<p>For frontend applications, expose the user&rsquo;s effective permissions through an API endpoint that the frontend calls on authentication. The frontend uses this permission set to conditionally render UI elements: hide the &ldquo;Delete&rdquo; button if the user lacks <code>resource:delete</code>, disable the &ldquo;Settings&rdquo; tab if they lack <code>settings:read</code>. This is a UX convenience, not a security measure. The backend middleware is the actual enforcement layer.</p>
+<h2>Administration, Auditing, and Maintenance</h2>
+<p>RBAC is an ongoing operational concern, not a build-once feature. Provide administrative tools and processes to keep the system healthy.</p>
+<p><strong>Role management UI</strong> allows authorized administrators to create custom roles, assign permissions to roles, and assign roles to users &mdash; all without developer involvement. Build this UI with the same RBAC protections: only users with <code>role:update</code> and <code>user_role:assign</code> permissions can make these changes.</p>
+<p><strong>Audit all access control changes.</strong> Every role creation, permission modification, and role assignment must produce an audit log entry recording who made the change, what changed, and when. This audit trail is essential for compliance (SOC 2, HIPAA, and most regulatory frameworks require it) and for debugging access issues.</p>
+<p><strong>Conduct regular access reviews.</strong> At least quarterly, generate a report of all user-role assignments and have managers verify that each user&rsquo;s access is still appropriate. This catches accumulated permissions that should have been revoked when an employee changed roles or left a project. Automate the review process: send each manager a list of their team members&rsquo; roles and ask them to confirm or revoke.</p>
+<p><strong>Test your permissions matrix.</strong> Maintain an automated test suite that verifies every role-permission combination. For each role, test that the expected permissions are granted and that permissions outside the role&rsquo;s scope are denied. When you add a new permission or modify a role, these tests catch unintended changes.</p>
+<p><strong>Plan for emergency access.</strong> Define a break-glass procedure for situations where the normal RBAC system is insufficient. This might be a time-limited super-admin token that can be activated by two authorized personnel acting together, with full audit logging of all actions taken during the emergency access window. Without a defined procedure, emergencies lead to permanent backdoors that become security liabilities.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If you are building an application that needs robust access control &mdash; multi-tenant SaaS, internal enterprise tools, healthcare platforms, or financial systems &mdash; <a href="/contact.html">contact our team</a>. We design and implement RBAC systems that are secure, auditable, and flexible enough to grow with your organization.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Role-Based Access Control: Implementation Guide",
@@ -155,7 +95,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/role-based-access-control-implementation-guide/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

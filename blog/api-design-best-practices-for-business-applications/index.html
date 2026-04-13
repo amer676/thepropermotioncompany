@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,149 +6,90 @@
   <title>API Design Best Practices for Business Applications</title>
   <meta name="description" content="API Design Best Practices for Business Applications. API design Expert insights from The Proper Motion Company.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/api-design-best-practices-for-business-applications/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="API Design Best Practices for Business Applications">
-  <meta property="og:description" content="API Design Best Practices for Business Applications. API design Expert insights from The Proper Motion Company.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/api-design-best-practices-for-business-applications/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="API Design Best Practices for Business Applications">
-  <meta name="twitter:description" content="API Design Best Practices for Business Applications. API design Expert insights from The Proper Motion Company.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="API Design Best Practices for Business Applications"><meta property="og:description" content="API Design Best Practices for Business Applications. API design Expert insights from The Proper Motion Company."><meta property="og:url" content="https://thepropermotioncompany.com/blog/api-design-best-practices-for-business-applications/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="API Design Best Practices for Business Applications"><meta name="twitter:description" content="API Design Best Practices for Business Applications. API design Expert insights from The Proper Motion Company."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">December 01, 2025</span>
-              <span class="blog-card-read">7 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">APIs</span>
-            </div>
-            <h1 class="blog-post-title">API Design Best Practices for Business Applications</h1>
-            <p class="blog-post-desc">API Design Best Practices for Business Applications. API design Expert insights from The Proper Motion Company.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>API Design Best Practices for Business Applications</h1>
-<p>If you are researching api design best practices, you have probably noticed that most guides online are either too surface-level to be useful or too technical to be actionable. This guide sits in the middle — practical enough to inform real decisions, detailed enough to be worth your time.</p>
-<p>API design</p>
-<h2>Technical Considerations</h2>
-<p>The architecture decisions you make early in a api design best practices project have outsized impact on long-term costs and capabilities.</p>
-<p><strong>Data model design</strong> matters more than most teams realize. A well-designed data model makes features easier to build, queries faster to run, and integrations simpler to maintain. A poorly designed one creates friction that compounds with every new feature.</p>
-<p><strong>API design</strong> determines how easily your system can evolve and integrate with other tools. REST is the safe default for most business applications. GraphQL makes sense when your frontend needs flexibility in data fetching. The choice should be driven by your specific integration requirements, not industry trends.</p>
-<p><strong>Authentication and authorization</strong> need to be right from the start. Retrofitting security is expensive and risky. Plan your permission model before you build your first feature, even if it seems like overkill for the initial scope.</p>
-<p><strong>Monitoring and observability</strong> are not optional extras. You need to know when something breaks before your users tell you. Set up error tracking, performance monitoring, and uptime alerting from day one.</p>
-<h2>What Most Teams Get Wrong About Api Design Best Practices</h2>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<p><strong>Starting with technology instead of outcomes.</strong> Teams pick a framework, a database, or a cloud provider before they understand what they are building. Technology should serve the business case, not the other way around. For api design best practices, the right technology depends entirely on your specific requirements — there is no universally correct answer.</p>
-<h2>When Api Design Best Practices Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for api design best practices.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>Can you show us working software from a previous project?</strong> Portfolios of screenshots are easy to fake. Ask for a live demo of something they built. The quality of their past work predicts the quality of yours.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A professional services firm was running their client communication through a combination of email, Slack, shared drives, and a CRM that nobody updated. Their clients were frustrated. Their team was drowning. We built a single portal that unified everything. The first month after launch, client satisfaction scores jumped and internal time spent on admin tasks dropped measurably.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a api design best practices project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>A Decision Framework for Api Design Best Practices</h2>
-<p>Before committing resources, answer these five questions honestly:</p>
-<p><strong>1. What problem are you solving?</strong> Write it in one sentence. If you cannot, you are not ready to build. The sentence should describe a pain point that a specific person experiences regularly.</p>
-<p><strong>2. Who will use this daily?</strong> Not who will approve the budget — who will sit in front of this software every day? Their workflow, frustrations, and habits should drive every design decision.</p>
-<p><strong>3. What does success look like in six months?</strong> Define a specific metric: time saved, revenue increased, errors reduced, customers retained. If your success criteria is vague, your project will be too.</p>
-<p><strong>4. What is your budget reality?</strong> Quality api design best practices typically requires an investment proportional to its complexity. Underfunding leads to cutting corners that compound as technical debt. Be honest about what you can afford, then scope accordingly.</p>
-<p><strong>5. What happens if you do nothing?</strong> Sometimes the cost of inaction exceeds the cost of action. Calculate the ongoing cost of your current process — manual hours, errors, missed opportunities — and compare it to the investment required.</p>
-<h2>Taking Action</h2>
-<p>Reading about api design best practices is useful. Acting on it is what creates results.</p>
-<p>The single most productive thing you can do this week is write a one-page brief describing what you need. Not a technical spec — a business document that answers: What problem are we solving? Who benefits? How will we know it worked?</p>
-<p>That document is the starting point for every productive development conversation. Without it, you will get generic proposals that do not address your actual needs.</p>
-<p>If you would like help refining that brief or evaluating your options, <a href="/contact.html">contact our team</a>. We respond within one business day and the initial conversation is always free.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">December 01, 2025</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">APIs</span></div><h1 class="blog-post-title">API Design Best Practices for Business Applications</h1><p class="blog-post-desc">API Design Best Practices for Business Applications. API design Expert insights from The Proper Motion Company.</p></div><div class="blog-post-content"><h1>API Design Best Practices for Business Applications</h1>
+<p>APIs are the connective tissue of modern business software. Every integration, mobile app, partner connection, and internal service depends on APIs that are well-designed, predictable, and maintainable. Yet API design is treated as an afterthought in many projects &ndash; the team builds the UI first, then exposes whatever endpoints the frontend happened to need. The result is an API that&rsquo;s tightly coupled to one client, inconsistent across endpoints, and painful to extend. Here&rsquo;s how to design APIs that serve your business for years, not just your current sprint.</p>
+<h2>Resource Modeling: Think in Nouns, Not Verbs</h2>
+<p>The most common API design mistake is modeling endpoints around actions rather than resources. You end up with <code>/createUser</code>, <code>/updateUserEmail</code>, <code>/getUserOrders</code>, <code>/cancelOrder</code> &ndash; a collection of RPC-style endpoints that each do one thing and don&rsquo;t compose into a coherent data model.</p>
+<p>REST&rsquo;s core insight is that your API should expose resources (nouns) and let HTTP methods (verbs) express the operations. A user is a resource at <code>/users/{id}</code>. Creating one is <code>POST /users</code>. Reading one is <code>GET /users/{id}</code>. Updating one is <code>PATCH /users/{id}</code>. This isn&rsquo;t pedantic &ndash; it produces APIs that are predictable. A developer who has worked with <code>GET /users/{id}</code> can correctly guess how <code>GET /invoices/{id}</code> works without reading any documentation.</p>
+<p>For business applications, resource modeling requires careful thought about your domain entities. Start with the core entities: users, organizations, invoices, products, orders. Each gets a top-level resource path. Related entities nest naturally: <code>/organizations/{id}/members</code>, <code>/orders/{id}/line-items</code>, <code>/invoices/{id}/payments</code>.</p>
+<p>Avoid deep nesting beyond two levels. <code>/organizations/{orgId}/teams/{teamId}/members/{memberId}/permissions</code> is too deep &ndash; it creates long, fragile URLs and implies a rigid hierarchy that may not match all access patterns. Instead, expose members as a top-level resource (<code>/members/{id}</code>) with query parameters for filtering by organization or team.</p>
+<p>When you genuinely need an action that doesn&rsquo;t map cleanly to CRUD, use a sub-resource that represents the action&rsquo;s result. Instead of <code>POST /orders/{id}/cancel</code>, consider <code>POST /orders/{id}/cancellation</code> &ndash; the cancellation is a resource that was created. This maintains the resource-oriented model while supporting non-CRUD operations.</p>
+<h2>Pagination, Filtering, and the Performance Cliff</h2>
+<p>Business applications deal with large datasets. An API that returns all 50,000 invoices in a single response will work in development and fail catastrophically in production. Pagination, filtering, and sorting must be designed into every list endpoint from the beginning.</p>
+<p><strong>Cursor-based pagination</strong> outperforms offset-based pagination for almost every business use case. Offset pagination (<code>?page=3&amp;per_page=25</code>) has a fundamental problem: if records are inserted or deleted between page requests, items shift between pages. A user paging through invoices might see the same invoice twice or miss one entirely. Cursor pagination (<code>?after=inv_abc123&amp;limit=25</code>) anchors to a specific record and returns the next N records after it, which is stable regardless of concurrent modifications.</p>
+<p>The response format should include pagination metadata:</p>
+<pre><code class="language-json">{
+  &quot;data&quot;: [...],
+  &quot;pagination&quot;: {
+    &quot;has_more&quot;: true,
+    &quot;next_cursor&quot;: &quot;inv_xyz789&quot;,
+    &quot;total_count&quot;: 48230
+  }
+}
+</code></pre>
+<p>Include <code>total_count</code> only when it&rsquo;s cheap to compute. For tables with millions of rows, <code>COUNT(*)</code> can be expensive. Consider providing an approximate count or omitting it for very large collections.</p>
+<p><strong>Filtering</strong> should follow a consistent pattern across all list endpoints. A simple approach: allow filtering on any indexed field via query parameters. <code>GET /invoices?status=overdue&amp;customer_id=cust_123&amp;created_after=2025-01-01</code>. Document which fields are filterable for each endpoint. Don&rsquo;t allow filtering on non-indexed fields &ndash; it&rsquo;s a performance trap that works fine in testing and causes database timeouts in production.</p>
+<p><strong>Sorting</strong> follows a similar pattern: <code>?sort=created_at&amp;order=desc</code>. Support sorting on indexed fields only. For multi-field sorting, use comma-separated values: <code>?sort=status,created_at&amp;order=asc,desc</code>.</p>
+<h2>Error Responses That Help Developers Debug</h2>
+<p>API error responses are documentation. A good error response tells the developer exactly what went wrong and how to fix it. A bad error response sends them on a debugging expedition.</p>
+<p>Adopt a structured error format and use it consistently across every endpoint:</p>
+<pre><code class="language-json">{
+  &quot;error&quot;: {
+    &quot;code&quot;: &quot;validation_error&quot;,
+    &quot;message&quot;: &quot;The request body contains invalid fields.&quot;,
+    &quot;details&quot;: [
+      {
+        &quot;field&quot;: &quot;email&quot;,
+        &quot;issue&quot;: &quot;must be a valid email address&quot;,
+        &quot;value&quot;: &quot;not-an-email&quot;
+      },
+      {
+        &quot;field&quot;: &quot;plan&quot;,
+        &quot;issue&quot;: &quot;must be one of: starter, professional, enterprise&quot;,
+        &quot;value&quot;: &quot;premium&quot;
+      }
+    ],
+    &quot;request_id&quot;: &quot;req_7f3a9b2c&quot;
+  }
+}
+</code></pre>
+<p>Key principles: use machine-readable error codes (<code>validation_error</code>, <code>not_found</code>, <code>rate_limited</code>, <code>insufficient_permissions</code>) alongside human-readable messages. Include a request ID that correlates to your server logs so support teams can trace a specific failure. For validation errors, enumerate every field that failed, not just the first one &ndash; developers hate fixing one error, resubmitting, and discovering the next error.</p>
+<p>HTTP status codes should be meaningful and consistent. 400 for client errors (bad input), 401 for unauthenticated requests, 403 for unauthorized requests (authenticated but lacking permission), 404 for resources that don&rsquo;t exist, 409 for conflict (trying to create a resource that already exists), 422 for semantically invalid input (syntactically valid JSON but business logic violations), and 429 for rate limiting. Reserve 500 for genuine server errors that the client can&rsquo;t fix.</p>
+<h2>Versioning Strategy for Long-Lived APIs</h2>
+<p>Business APIs live for years. Partners build integrations against them. Internal tools depend on them. You will need to make breaking changes eventually, and your versioning strategy determines whether that&rsquo;s a smooth transition or a crisis.</p>
+<p><strong>URL-based versioning</strong> (<code>/v1/users</code>, <code>/v2/users</code>) is the most explicit and easiest to understand. Each major version is a separate set of endpoints. Clients opt into a new version when they&rsquo;re ready. The downside: you&rsquo;re maintaining multiple versions of your API simultaneously, and the deployment infrastructure needs to route requests to the correct version&rsquo;s handlers.</p>
+<p><strong>Header-based versioning</strong> (<code>Accept: application/vnd.myapp.v2+json</code>) keeps URLs clean but is less visible in logs and documentation. It&rsquo;s harder for developers to test with a browser or curl since they need to set headers explicitly.</p>
+<p>Our recommendation for business applications: <strong>use URL-based versioning with a strict deprecation policy.</strong> When you release v2, announce a deprecation timeline for v1 (typically 12-18 months for B2B APIs). During the deprecation period, v1 continues to work but returns a <code>Deprecation</code> header with the sunset date. After the sunset date, v1 returns 410 Gone.</p>
+<p>Minimize the need for version bumps by designing for extensibility. Adding new fields to a response is not a breaking change. Adding new optional parameters to a request is not a breaking change. Adding new endpoints is not a breaking change. The changes that force a version bump are: removing or renaming fields, changing field types, changing the meaning of a field, removing endpoints, and changing authentication mechanisms. If you design your initial API with optional fields and extensible schemas, you can evolve it significantly within a single version.</p>
+<h2>Authentication and Rate Limiting for Production APIs</h2>
+<p>API authentication for business applications needs to support multiple use cases: user-initiated requests (from the frontend), server-to-server integration (from partner systems), and automated processes (from cron jobs or background workers).</p>
+<p><strong>API keys</strong> are appropriate for server-to-server integration. They&rsquo;re simple, stateless, and easy for partners to manage. Issue keys per integration (not per organization), so you can revoke a compromised integration without affecting others. Prefix keys with an environment indicator: <code>sk_live_...</code> for production, <code>sk_test_...</code> for sandbox. This prevents accidental production calls from test environments.</p>
+<p><strong>JWT tokens</strong> suit user-initiated requests. The frontend authenticates the user, receives a short-lived JWT (15-60 minutes), and includes it in API requests. The API validates the JWT signature and extracts user context without a database lookup. Pair JWTs with refresh tokens for session continuity.</p>
+<p><strong>Rate limiting</strong> protects your infrastructure and ensures fair usage. Implement rate limits per API key or user, not per IP address (IPs are shared, spoofable, and unstable). Use a sliding window algorithm: &ldquo;100 requests per minute per API key.&rdquo; Return rate limit headers on every response:</p>
+<pre><code>X-RateLimit-Limit: 100
+X-RateLimit-Remaining: 73
+X-RateLimit-Reset: 1640995200
+</code></pre>
+<p>When the limit is exceeded, return 429 with a <code>Retry-After</code> header. For business APIs, consider tiered rate limits based on pricing plan &ndash; your enterprise customers generating revenue need higher limits than free-tier integrations.</p>
+<h2>Documentation as a Product, Not an Afterthought</h2>
+<p>API documentation is the developer experience. Poor documentation drives developers to competitors or to building workarounds that increase your support burden. Good documentation is a product asset that reduces support costs and accelerates partner integrations.</p>
+<p>Generate documentation from your API specification (OpenAPI/Swagger), but supplement it with hand-written guides. The specification documents what the API does; the guides explain how to use it. Every API should have: a getting started guide (authentication, first request, common patterns), endpoint reference (auto-generated from the spec), code examples in at least three languages (Python, JavaScript, and your customers&rsquo; most common stack), a changelog (what changed in each release, with migration notes for breaking changes), and error handling guide (common errors and their solutions).</p>
+<p>Interactive documentation (try-it-in-the-browser tools like Swagger UI or Redocly) lets developers experiment without writing code. Provide a sandbox environment with test data so developers can explore the API safely. The sandbox should behave identically to production except with fake data and no real-world side effects.</p>
+<p>Invest in your documentation as continuously as you invest in your code. Every API change should include a documentation update in the same pull request. Stale documentation is worse than no documentation &ndash; it builds false confidence that leads to harder debugging.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>If you&rsquo;re designing an API for your business application and want it built for the long term, <a href="/contact.html">we&rsquo;d like to help</a>. We design APIs that partners love integrating with and that scale gracefully as your business grows.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "API Design Best Practices for Business Applications",
@@ -170,7 +109,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/api-design-best-practices-for-business-applications/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>

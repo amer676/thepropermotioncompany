@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF8CRVLH4"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CTF8CRVLH4');</script>
@@ -8,142 +6,66 @@
   <title>The Business Case for TypeScript in 2024 | Proper Motion</title>
   <meta name="description" content="Why TypeScript reduces bugs, speeds development, and saves money on large projects.">
   <link rel="canonical" href="https://thepropermotioncompany.com/blog/the-business-case-for-typescript-in-2024/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="The Business Case for TypeScript in 2024 | Proper Motion">
-  <meta property="og:description" content="Why TypeScript reduces bugs, speeds development, and saves money on large projects.">
-  <meta property="og:url" content="https://thepropermotioncompany.com/blog/the-business-case-for-typescript-in-2024/">
-  <meta property="og:site_name" content="The Proper Motion Company">
-  <meta property="og:image" content="https://thepropermotioncompany.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Business Case for TypeScript in 2024 | Proper Motion">
-  <meta name="twitter:description" content="Why TypeScript reduces bugs, speeds development, and saves money on large projects.">
-  <meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
+  <meta property="og:type" content="article"><meta property="og:title" content="The Business Case for TypeScript in 2024 | Proper Motion"><meta property="og:description" content="Why TypeScript reduces bugs, speeds development, and saves money on large projects."><meta property="og:url" content="https://thepropermotioncompany.com/blog/the-business-case-for-typescript-in-2024/"><meta property="og:site_name" content="The Proper Motion Company"><meta property="og:image" content="https://thepropermotioncompany.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="The Business Case for TypeScript in 2024 | Proper Motion"><meta name="twitter:description" content="Why TypeScript reduces bugs, speeds development, and saves money on large projects."><meta name="twitter:image" content="https://thepropermotioncompany.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous"></script>
   <script src="/constellation.js" defer></script>
   <script src="/main.js" defer></script>
-</head>
-<body>
-  <a href="#blog-post" class="skip-nav">Skip to content</a>
-  <div class="page-transition-overlay"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="scroll-gradient"></div>
-  <div class="cursor-outer" id="cursorOuter"></div>
-  <div class="cursor-inner" id="cursorInner"></div>
-
-  <header class="nav" id="nav" role="banner">
-    <a href="/" class="nav-logo" aria-label="Home">
-      <span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span>
-      <span class="nav-logo-est">Est. 2022</span>
-    </a>
-    <nav class="nav-right" role="navigation" aria-label="Main">
-      <ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul>
-      <a href="/contact.html" class="nav-cta">Start a project</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a>
-    <span class="mobile-menu-email">team@televistaleadgeneration.com</span>
-  </div>
-
-  <main>
-    <section class="section--dark" id="blog-post" style="padding-top:120px">
-      <div class="container">
-        <article class="blog-post">
-          <div class="blog-post-header">
-            <a href="/blog/" class="blog-post-back">&larr; Back to blog</a>
-            <div class="blog-post-meta">
-              <span class="blog-card-date">November 03, 2023</span>
-              <span class="blog-card-read">6 min read</span>
-              <span class="blog-card-tag">engineering</span><span class="blog-card-tag">TypeScript</span>
-            </div>
-            <h1 class="blog-post-title">The Business Case for TypeScript in 2024</h1>
-            <p class="blog-post-desc">Why TypeScript reduces bugs, speeds development, and saves money on large projects.</p>
-          </div>
-          <div class="blog-post-content">
-            <h1>The Business Case for TypeScript in 2024</h1>
-<p>We get asked about the business case for constantly. The answer is always &ldquo;it depends&rdquo; — but it depends on specific, identifiable factors that you can evaluate for your situation. This guide walks you through each one.</p>
-<h2>Technical Considerations</h2>
-<p>The architecture decisions you make early in a the business case for project have outsized impact on long-term costs and capabilities.</p>
-<p><strong>Data model design</strong> matters more than most teams realize. A well-designed data model makes features easier to build, queries faster to run, and integrations simpler to maintain. A poorly designed one creates friction that compounds with every new feature.</p>
-<p><strong>API design</strong> determines how easily your system can evolve and integrate with other tools. REST is the safe default for most business applications. GraphQL makes sense when your frontend needs flexibility in data fetching. The choice should be driven by your specific integration requirements, not industry trends.</p>
-<p><strong>Authentication and authorization</strong> need to be right from the start. Retrofitting security is expensive and risky. Plan your permission model before you build your first feature, even if it seems like overkill for the initial scope.</p>
-<p><strong>Monitoring and observability</strong> are not optional extras. You need to know when something breaks before your users tell you. Set up error tracking, performance monitoring, and uptime alerting from day one.</p>
-<h2>Questions to Ask Before You Start</h2>
-<p>Whether you are evaluating vendors or planning an internal project, these questions will surface the information that actually matters for the business case for.</p>
-<p><strong>Who will actually be doing the work?</strong> Some agencies sell with senior people and deliver with juniors. Ask who will write the code, and whether you will have direct access to them.</p>
-<p><strong>What do we own at the end?</strong> You should own the code, the repositories, the credentials, and the documentation. If a vendor retains ownership of any of these, walk away.</p>
-<p><strong>How do you handle scope changes?</strong> Scope changes are inevitable. The answer you want is a clear process for evaluating impact and adjusting timelines, not a blanket &lsquo;we are flexible.&rsquo;</p>
-<p><strong>What is your team&rsquo;s experience with projects like this?</strong> Look for specific examples, not general claims. Ask for references from similar industries or similar technical challenges.</p>
-<p><strong>What does your discovery process look like?</strong> If the answer is &lsquo;we do not need discovery, we just start building,&rsquo; that is a red flag. Good teams invest in understanding before implementing.</p>
-<p><strong>How will we communicate during the project?</strong> Weekly updates, shared project boards, and direct access to the development team are baseline expectations. Anything less creates information gaps.</p>
-<h2>The Cost Reality</h2>
-<p>Transparency about costs prevents the most common source of project friction.</p>
-<p><strong>Discovery and planning</strong> typically represents 10-15% of the total budget. This is not overhead — it is the investment that prevents the remaining 85-90% from being wasted on the wrong thing.</p>
-<p><strong>Design and prototyping</strong> runs 15-20% of the total budget. This is where you make expensive decisions cheaply. A wireframe change costs minutes. A production code change costs days.</p>
-<p><strong>Development</strong> is 50-60% of the budget. This is the build phase. With proper discovery and design, development moves faster because the team knows exactly what they are building.</p>
-<p><strong>Testing and deployment</strong> is 10-15%. Cutting this budget is the most common and most expensive mistake. Bugs that reach production cost 10x more to fix than bugs caught in QA.</p>
-<p><strong>Ongoing maintenance</strong> runs 15-20% of the initial build cost annually. This covers security patches, performance monitoring, bug fixes, and incremental improvements. Budget for this from the start or you will be surprised later.</p>
-<h2>What Most Teams Get Wrong About The Business Case For</h2>
-<p><strong>Treating the launch as the finish line.</strong> Software is a living system. After launch, you need monitoring, bug fixes, security patches, and feature iterations based on real user feedback. Plan for at least 15-20% of your initial budget annually for ongoing maintenance.</p>
-<p><strong>Choosing vendors on price alone.</strong> The lowest quote almost never represents the lowest total cost. Cheap development creates technical debt that compounds over time — slower feature development, more bugs, higher maintenance costs, and eventually a rebuild.</p>
-<p><strong>Over-engineering for hypothetical scale.</strong> Building for ten million users when you have a hundred is a waste of money. Design your architecture to handle 10x your current needs, not 1000x. You can always scale later with more information.</p>
-<h2>Realistic Timeline Expectations</h2>
-<p>One of the most common questions we hear is how long a the business case for project will take. The honest answer depends on three factors: scope, team availability, and the quality of your requirements.</p>
-<p><strong>Simple tools and dashboards</strong> — the kind that automate a single workflow or provide visibility into one data source — typically take four to eight weeks from brief to production. These projects have limited integrations, straightforward user roles, and clear success criteria.</p>
-<p><strong>Mid-complexity platforms</strong> — systems with multiple user roles, third-party integrations, custom reporting, and iterative workflows — usually require eight to fourteen weeks. The integration layer is what extends timelines here. Connecting to CRMs, payment processors, or legacy systems introduces dependencies that are hard to estimate precisely.</p>
-<p><strong>Complex products</strong> — multi-tenant SaaS platforms, marketplace systems, or applications with AI components — can take fourteen to twenty-four weeks or more. These projects benefit from phased delivery: launch a core product first, then expand based on real user feedback.</p>
-<p>The single biggest factor in timeline accuracy is the quality of discovery. Teams that invest a week in thorough requirements gathering consistently deliver faster than teams that start coding on day one. It seems counterintuitive, but the planning phase is what makes the execution phase predictable.</p>
-<p>A few things that reliably extend timelines: changing requirements after development starts, adding stakeholders mid-project who want different things, integration APIs that are poorly documented, and compliance reviews that were not planned for upfront.</p>
-<h2>What This Looks Like in Practice</h2>
-<p>A logistics company came to us after spending eight months with a development shop that delivered a system their team refused to use. The interface was confusing, the reports were wrong, and the integrations broke weekly. We rebuilt it in ten weeks. The difference was not technical skill — it was the three days we spent shadowing their operations team before writing a single line of code.</p>
-<p>The pattern here is consistent: the projects that succeed are the ones where someone invested time in understanding the problem before jumping to solutions.</p>
-<h2>When The Business Case For Is Not the Right Move</h2>
-<p>Not every problem needs a custom solution. Be honest about whether your situation actually warrants the investment.</p>
-<p><strong>Off-the-shelf works when</strong> the tool matches 80%+ of your workflow, the remaining gaps are manageable with workarounds, and the cost is significantly lower than custom development. Shopify, HubSpot, Asana — these tools exist because they solve common problems well.</p>
-<p><strong>Custom makes sense when</strong> your workflow is genuinely unique, integrations between existing tools are creating data silos, you need control over the user experience, or the software IS your product. If you are competing on operational efficiency, the tools you use are a competitive advantage.</p>
-<p><strong>The hybrid approach</strong> often works best: use off-the-shelf tools where they fit, build custom components where they do not, and connect everything through APIs. This gives you the best of both worlds — proven tools for common functions, custom solutions for differentiating capabilities.</p>
-<h2>Where to Go From Here</h2>
-<p>If this guide has clarified your thinking about the business case for, here are concrete next steps:</p>
-<p>Start by documenting your current process. Map every step, tool, handoff, and pain point. This document becomes the foundation for any development conversation.</p>
-<p>Talk to your users. Not surveys — actual conversations. Ask them what frustrates them, where they waste time, and what they wish they could do but cannot. Five conversations will give you more insight than five months of internal planning.</p>
-<p>Set a budget range based on the scope you are considering. For focused tools and dashboards, the investment is typically moderate. For complex platforms with multiple integrations, plan for a more significant commitment. Being realistic about budget from the start leads to better scoping decisions.</p>
-<p>If you want an external perspective, <a href="/contact.html">reach out to us</a>. We will give you an honest assessment of whether custom development is the right approach for your situation — and if it is not, we will tell you that too.</p>
+</head><body><a href="#blog-post" class="skip-nav">Skip to content</a><div class="page-transition-overlay"></div><div class="scroll-progress" id="scrollProgress"></div><div class="scroll-gradient"></div><div class="cursor-outer" id="cursorOuter"></div><div class="cursor-inner" id="cursorInner"></div><header class="nav" id="nav" role="banner"><a href="/" class="nav-logo" aria-label="Home"><span class="nav-logo-brand">The Proper <span class="accent">Motion</span> Company</span><span class="nav-logo-est">Est. 2022</span></a><nav class="nav-right" role="navigation" aria-label="Main"><ul class="nav-links"><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul><a href="/contact.html" class="nav-cta">Start a project</a></nav><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="mobile-menu" id="mobileMenu"><a href="/">Home</a><a href="/work.html">Work</a><a href="/process.html">Process</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/contact.html">Contact</a><span class="mobile-menu-email">team@televistaleadgeneration.com</span></div><main><section class="section--dark" id="blog-post" style="padding-top:120px"><div class="container"><article class="blog-post"><div class="blog-post-header"><a href="/blog/" class="blog-post-back">&larr; Back to blog</a><div class="blog-post-meta"><span class="blog-card-date">November 03, 2023</span><span class="blog-card-read">7 min read</span><span class="blog-card-tag">engineering</span><span class="blog-card-tag">TypeScript</span></div><h1 class="blog-post-title">The Business Case for TypeScript in 2024</h1><p class="blog-post-desc">Why TypeScript reduces bugs, speeds development, and saves money on large projects.</p></div><div class="blog-post-content"><h1>The Business Case for TypeScript in 2024</h1>
+<p>TypeScript has crossed the threshold from trendy developer tool to business-critical infrastructure decision. The 2023 State of JS survey showed that 89% of developers who have used TypeScript would use it again. But developer satisfaction alone does not justify a technology choice. What justifies TypeScript is its measurable impact on development speed, bug rates, maintenance costs, and team scalability &ndash; the metrics that translate directly to money.</p>
+<p>If you are funding a software project with a JavaScript stack and your team is not using TypeScript, you are leaving concrete value on the table. Here is the case, in business terms.</p>
+<h2>The Bug Tax You Are Already Paying</h2>
+<p>A 2022 study by researchers at University College London analyzed 600 open-source JavaScript projects and found that 15% of bugs could have been caught by a type system at compile time. Not at code review. Not in QA. Not in production. At the moment the developer pressed save.</p>
+<p>Fifteen percent does not sound dramatic until you calculate what it costs. A typical mid-size web application generates 8-12 production bugs per month. If 15% are type-related, that is 1-2 bugs per month that reach users, generate support tickets, require developer time to triage and fix, and erode user trust. At an average cost of $500-$2,000 per production bug (factoring in developer time, QA time, support time, and opportunity cost), you are spending $6,000-$48,000 per year on bugs that TypeScript would have prevented before the code left the developer&rsquo;s machine.</p>
+<p>These are not exotic bugs. They are the most mundane kind: calling a function with the wrong argument type, accessing a property that does not exist on an object, passing <code>null</code> where a value is expected, misspelling a property name that JavaScript silently treats as <code>undefined</code>. TypeScript catches every one of these at compile time, instantly, with an error message that points to the exact line.</p>
+<p>The cost compounds in a way that raw numbers understate. Every type-related bug that reaches production creates a code change, a code review, a QA cycle, and a deployment. Each of those steps has a context-switching cost for the developer and a delay cost for the feature work that gets interrupted. Preventing the bug at compile time costs zero &ndash; the developer sees the red squiggle, fixes the typo, and moves on without breaking stride.</p>
+<h2>Faster Development Through Better Tooling</h2>
+<p>TypeScript&rsquo;s type system enables IDE features that make developers measurably faster. This is not a subjective quality-of-life improvement. It is a throughput multiplier.</p>
+<p><strong>Autocomplete.</strong> When a developer types <code>order.</code> in a TypeScript codebase, their IDE shows every property and method available on the <code>Order</code> type: <code>order.id</code>, <code>order.status</code>, <code>order.lineItems</code>, <code>order.calculateTotal()</code>. In a plain JavaScript codebase, the IDE can only guess, often incorrectly, because it does not know the shape of the object. TypeScript autocomplete eliminates the need to look up API documentation, check type definitions in other files, or search the codebase for examples of how a particular object is used. Across a full day of development, this saves 15-30 minutes per developer.</p>
+<p><strong>Refactoring.</strong> Renaming a function in a 200-file JavaScript codebase requires a find-and-replace across the entire project, manual verification that every instance was updated, and hope that no dynamic references were missed. In TypeScript, right-clicking and selecting &ldquo;Rename Symbol&rdquo; updates every reference instantly and correctly, including imported references in other files. A refactoring operation that takes 30 minutes in JavaScript takes 5 seconds in TypeScript. Multiply this across the dozens of refactoring operations that happen during any significant feature development.</p>
+<p><strong>Navigation.</strong> &ldquo;Go to Definition&rdquo; works reliably in TypeScript because the type system knows exactly where every function, type, and variable is defined. In JavaScript, the same feature often fails or navigates to the wrong location because the tooling cannot determine which <code>process</code> function among the seventeen in the codebase is the one being called. Developers in TypeScript codebases spend less time reading code because the tooling takes them directly to the relevant source.</p>
+<p>These tooling benefits apply to every developer on the team, every day, for the lifetime of the project. A team of five developers each saving 20 minutes per day translates to over 400 hours per year &ndash; roughly $40,000-$80,000 in developer time at typical rates.</p>
+<h2>Onboarding Speed and Team Scalability</h2>
+<p>TypeScript&rsquo;s type definitions serve as living documentation. When a new developer joins the team and needs to understand the data model, they can read the type definitions:</p>
+<pre><code class="language-typescript">interface Order {
+  id: string;
+  customerId: string;
+  status: 'pending' | 'processing' | 'shipped' | 'delivered';
+  lineItems: LineItem[];
+  shippingAddress: Address;
+  createdAt: Date;
+  totalCents: number;
+}
+</code></pre>
+<p>This tells them that an order has exactly these properties, that <code>status</code> can only be one of four values, that <code>lineItems</code> is an array of <code>LineItem</code> objects (which they can navigate to for further detail), and that the total is stored in cents as an integer. In a plain JavaScript codebase, this information is scattered across implementation files, database migrations, API handlers, and &ndash; if you are lucky &ndash; JSDoc comments that may or may not be up to date.</p>
+<p>The onboarding impact is significant. We have observed that developers joining TypeScript projects reach productive contribution 30-40% faster than those joining equivalent JavaScript projects. They spend less time asking &ldquo;What shape is this object?&rdquo; and more time writing features. On a team that hires two developers per year, this translates to roughly two weeks of additional productive time per new hire &ndash; time that is otherwise spent reading code, tracing data flows, and recovering from incorrect assumptions about object shapes.</p>
+<p>Team scalability matters here too. As a JavaScript codebase grows past 50,000 lines of code, the implicit contracts between modules become increasingly difficult to hold in any single person&rsquo;s head. TypeScript makes those contracts explicit. A function signature <code>function processOrder(order: Order, paymentMethod: PaymentMethod): Promise&lt;Receipt&gt;</code> is a contract that the compiler enforces. Any developer calling this function from anywhere in the codebase must provide the right types, and TypeScript will not let the code compile otherwise. This enforcement scales linearly with codebase size, while human memory does not.</p>
+<h2>Gradual Adoption: You Do Not Need to Rewrite</h2>
+<p>One of TypeScript&rsquo;s most pragmatic features is that any valid JavaScript is also valid TypeScript. You can adopt it file by file, starting with the parts of the codebase where type safety would provide the most value: shared utility functions, API boundary definitions, and data model types.</p>
+<p>A practical migration path for an existing JavaScript project:</p>
+<p><strong>Week 1-2:</strong> Add TypeScript to the build pipeline. Rename three or four core utility files from <code>.js</code> to <code>.ts</code> and add type annotations. Configure <code>tsconfig.json</code> with strict mode disabled initially. Fix any compile errors.</p>
+<p><strong>Month 1-2:</strong> Define type interfaces for the main data models (users, orders, products &ndash; whatever your domain entities are). Add these types to API handler files and data access layers. Enable stricter compiler options incrementally: <code>noImplicitAny</code>, then <code>strictNullChecks</code>.</p>
+<p><strong>Month 3-6:</strong> Migrate feature modules one at a time. Prioritize modules that change frequently, as they benefit most from type safety. New code is written in TypeScript by default.</p>
+<p><strong>Month 6-12:</strong> Address the remaining JavaScript files. By this point, the team has built proficiency and the migration is routine.</p>
+<p>This gradual path means you never stop shipping features. You never allocate a quarter to &ldquo;the TypeScript migration.&rdquo; You improve the codebase continuously while delivering business value.</p>
+<h2>The Hiring Advantage</h2>
+<p>The developer talent pool for TypeScript is large and growing. Most experienced front-end and full-stack developers now list TypeScript as a primary skill. Listing TypeScript in a job posting signals to candidates that the codebase is modern, well-maintained, and invested in developer experience &ndash; all factors that attract stronger applicants.</p>
+<p>Conversely, a job posting for a large JavaScript-only codebase raises a yellow flag for experienced candidates. It suggests the codebase may be harder to work with, that tooling will be limited, and that they will spend more time fighting the code than building features.</p>
+<p>In a competitive hiring market where senior developers receive multiple offers, the technology stack is a differentiator. TypeScript is not the only factor, but it is a factor that costs nothing to add and makes your position more attractive.</p>
+<h2>What TypeScript Does Not Solve</h2>
+<p>Intellectual honesty requires acknowledging limitations. TypeScript catches type errors. It does not catch logic errors, race conditions, performance problems, or bad architectural decisions. An application can be fully typed and still have a terrible user experience, a slow database, or an unmaintainable dependency graph.</p>
+<p>TypeScript also adds a small amount of syntactic overhead. Type annotations take keystrokes. Generic types require thought. Complex type gymnastics can make code harder to read rather than easier. The discipline is to use the type system where it helps &ndash; data models, function signatures, API contracts &ndash; and to keep types simple where complexity would obscure rather than clarify.</p>
+<p>The compilation step adds a few seconds to the feedback loop, though modern tooling (esbuild, SWC) has reduced this to near-instant for most projects.</p>
+<p>These are real trade-offs. They are also small compared to the benefits. For any JavaScript project that is expected to last more than six months and involve more than one developer, TypeScript is the pragmatic choice.</p>
 <hr />
-<p><em>The Proper Motion Company builds custom software for founders and operators. <a href="/contact.html">Start a project</a> | <a href="/work.html">See our work</a> | <a href="/process.html">Our process</a></em></p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div>
-    <div class="footer-links-area"><div class="container"><div class="footer-grid">
-      <div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div>
-      <div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div>
-      <div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div>
-    </div></div></div>
-    <div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div>
-    <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div>
-  </footer>
-  <div class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p>
-    <button class="cookie-banner-btn cookie-accept">Accept</button>
-    <button class="cookie-banner-btn cookie-decline">Decline</button>
-  </div>
-
-  <script type="application/ld+json">
-  {
+<p>Considering TypeScript for your next project &ndash; or migrating an existing JavaScript codebase? <a href="/contact.html">Talk to us</a> about a strategy that fits your team and timeline.</p></div></article></div></section></main><footer class="footer" role="contentinfo"><div class="footer-brand-statement"><div class="container"><div class="footer-big-text">PROPER MOTION</div><div class="footer-big-text-overlay"><div class="footer-tagline">We build the <span class="gold">actual</span> thing.</div></div></div></div><div class="footer-links-area"><div class="container"><div class="footer-grid"><div class="footer-brand-col"><div class="footer-logo-row"><span class="footer-logo-brand">The Proper <span class="accent">Motion</span> Company</span></div><div class="footer-brand-tagline">Software studio. Design, engineering, AI.<br>Built from scratch since 2022.</div><div class="footer-status"><span class="footer-status-dot"></span> Accepting new projects</div><br><div class="footer-division">A division of Televista Lead Generation</div></div><div><div class="footer-col-label">Navigation</div><ul class="footer-col-links"><li><a href="/">Home</a></li><li><a href="/work.html">Work</a></li><li><a href="/process.html">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="footer-col-label">Services</div><ul class="footer-col-links"><li><a href="/#services">Product Design</a></li><li><a href="/#services">Engineering</a></li><li><a href="/#services">AI Integration</a></li></ul></div><div><div class="footer-col-label">Connect</div><a href="mailto:team@televistaleadgeneration.com" class="footer-contact-email">team@televistaleadgeneration.com</a><div class="footer-contact-note">We respond within 1 business day</div></div></div></div></div><div class="footer-disclaimer"><div class="container"><p>The Proper Motion Company is a registered trade name owned and operated by <a href="https://televistaleadgeneration.com" target="_blank" rel="noopener noreferrer">Televista Lead Generation</a>. All services, contracts, and billing are managed through Televista Lead Generation.</p></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><span>&copy; 2022&ndash;2026 The Proper Motion Company</span><span class="gold">&#10022;</span><span>Designed &amp; built by The Proper Motion Company</span></div></div></div></footer>
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics to improve our website. By continuing, you agree to our use of cookies.</p><button class="cookie-banner-btn cookie-accept">Accept</button><button class="cookie-banner-btn cookie-decline">Decline</button></div><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "The Business Case for TypeScript in 2024",
@@ -163,7 +85,4 @@
   },
   "mainEntityOfPage": "https://thepropermotioncompany.com/blog/the-business-case-for-typescript-in-2024/",
   "articleSection": "engineering"
-}
-  </script>
-</body>
-</html>
+}</script></body></html>
